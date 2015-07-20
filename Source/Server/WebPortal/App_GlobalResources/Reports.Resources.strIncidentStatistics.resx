@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Issues Statistics</value>
+	</data>
+	<data name="All">
+		<value>All</value>
+	</data>
+	<data name="WithoutProject">
+		<value>Without Project</value>
+	</data>
+	<data name="HDM">
+		<value>Help Desk Managers</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="IBN35">
+		<value>IBN36</value>
+	</data>
+	<data name="IssueStatistics">
+		<value>Issue Statistics Report</value>
+	</data>
+	<data name="TotalIncCount">
+		<value>Total Issues Count</value>
+	</data>
+	<data name="TotalExternalIncCount">
+		<value>Total External Issues Count</value>
+	</data>
+	<data name="NewIncidentsCount">
+		<value>New Issues Count</value>
+	</data>
+	<data name="ActiveIncidentsCount">
+		<value>Active Issues Count</value>
+	</data>
+	<data name="TotalCountByType">
+		<value>Total issues count for each issue type</value>
+	</data>
+	<data name="TotalCountByGeneralCategory">
+		<value>Total issues count for each general category</value>
+	</data>
+	<data name="TotalCountByIncidentCategory">
+		<value>Total issues count for each issue category</value>
+	</data>
+	<data name="ATNewState">
+		<value>Average time in new state</value>
+	</data>
+	<data name="ATActiveState">
+		<value>Average time in active state</value>
+	</data>
+	<data name="ATClosedInc">
+		<value>Average time for resolve by closed issues</value>
+	</data>
+	<data name="ATAllInc">
+		<value>Average time for resolve by all issues</value>
+	</data>
+	<data name="ClosedIncidentsCount">
+		<value>Closed Issues Count</value>
+	</data>
+	<data name="Apply">
+		<value>Apply</value>
+	</data>
+	<data name="Print">
+		<value>Print</value>
+	</data>
+	<data name="Export">
+		<value>Export</value>
+	</data>
+	<data name="New">
+		<value>New</value>
+	</data>
+	<data name="Active">
+		<value>Active</value>
+	</data>
+	<data name="Closed">
+		<value>Closed</value>
+	</data>
+	<data name="IncDistribution">
+		<value>Issues Distribution by Status</value>
+	</data>
+	<data name="TypeName">
+		<value>Type Name</value>
+	</data>
+	<data name="Count">
+		<value>Count</value>
+	</data>
+	<data name="CategoryName">
+		<value>Category Name</value>
+	</data>
+	<data name="IncByType">
+		<value>Issues Distributions ByType</value>
+	</data>
+	<data name="IncByGenCat">
+		<value>Issues Distributions By General Category</value>
+	</data>
+	<data name="IncByIncCat">
+		<value>Issues Distributions By Issue Category</value>
+	</data>
+	<data name="StartedBy">
+		<value>Started By</value>
+	</data>
+	<data name="StartedAt">
+		<value>Started At</value>
+	</data>
+	<data name="FilterValues">
+		<value>Filter Values</value>
+	</data>
+	<data name="TotalCountByManager">
+		<value>Total issues count for each manager</value>
+	</data>
+	<data name="IncByMan">
+		<value>Issues Distributions By Issue Box</value>
+	</data>
+	<data name="ProjectName">
+		<value>Project</value>
+	</data>
+	<data name="IncByProj">
+		<value>Issues Distributions By Projects</value>
+	</data>
+	<data name="TotalCountByProject">
+		<value>Total issues count for each project</value>
+	</data>
+	<data name="ManagerName">
+		<value>Manager</value>
+	</data>
+	<data name="oOverallIssuesSnapshot">
+		<value>Overall Help Desk Issues Snapshot Report</value>
+	</data>
+	<data name="oTotalHDM">
+		<value>Total Help Desk Managers</value>
+	</data>
+	<data name="oTotalIT">
+		<value>Total Issues Tracked</value>
+	</data>
+	<data name="oProjectIssues">
+		<value>Project Issues</value>
+	</data>
+	<data name="oGeneralIssues">
+		<value>General Issues</value>
+	</data>
+	<data name="oInboundEmailIssues">
+		<value>Inbound e-mail Issues</value>
+	</data>
+	<data name="oSnapshotGraphs">
+		<value>Snapshot Graphs</value>
+	</data>
+	<data name="oCounts">
+		<value>Counts and Responsiveness Index</value>
+	</data>
+	<data name="oBreakdownByProject">
+		<value>Breakdown by Project</value>
+	</data>
+	<data name="oBreakdownforManagers">
+		<value>Breakdown for Managers</value>
+	</data>
+	<data name="oProject">
+		<value>Project</value>
+	</data>
+	<data name="oNew">
+		<value>New</value>
+	</data>
+	<data name="oActive">
+		<value>Active</value>
+	</data>
+	<data name="oClosed">
+		<value>Closed</value>
+	</data>
+	<data name="oTotal">
+		<value>Total</value>
+	</data>
+	<data name="oOverallTotal">
+		<value>Overall Total</value>
+	</data>
+	<data name="oManager">
+		<value>Manager</value>
+	</data>
+	<data name="oHighPriorityIssues">
+		<value>High Priority Open Issues</value>
+	</data>
+	<data name="oPriority">
+		<value>Priority</value>
+	</data>
+	<data name="oTitle">
+		<value>Title</value>
+	</data>
+	<data name="oStatus">
+		<value>Status</value>
+	</data>
+	<data name="oCreated">
+		<value>Created</value>
+	</data>
+	<data name="oModified">
+		<value>Modified</value>
+	</data>
+	<data name="oAvgTimeToResolve">
+		<value>Average Time to Resolve</value>
+	</data>
+	<data name="oAvgTimeToApprove">
+		<value>Average Time To Approve e-mail Issues</value>
+	</data>
+	<data name="oIssuesAnalysys">
+		<value>Issues Analysis - View by Status</value>
+	</data>
+	<data name="oNewIssues">
+		<value>New Issues</value>
+	</data>
+	<data name="oOpenIssues">
+		<value>Open Issues</value>
+	</data>
+	<data name="oClosedIssuesText">
+		<value>There are {0} issue(s) that have been closed to date. To see the closed issues report use the closed issues report</value>
+	</data>
+	<data name="oClosedIssues">
+		<value>Closed Issues</value>
+	</data>
+	<data name="tPrint">
+		<value>Print</value>
+	</data>
+	<data name="oIssuesAnalysisByManager">
+		<value>Issues Analysis - View by Manager</value>
+	</data>
+	<data name="oStatus">
+		<value>Status</value>
+	</data>
+	<data name="oIssuesAnalysisByCategory">
+		<value>Issues Analysis - View by Category</value>
+	</data>
+	<data name="oIssuesAnalysisClosed">
+		<value>Issues Analysis - View Closed Issues</value>
+	</data>
+	<data name="oIssuesAnalysisByType">
+		<value>Issues Analysis - View by Type</value>
+	</data>
+	<data name="oCreationDate">
+		<value>Creation Date</value>
+	</data>
+	<data name="oActivationDate">
+		<value>Activation Date</value>
+	</data>
+	<data name="oClosedDate">
+		<value>Close Date</value>
+	</data>
+	<data name="oType">
+		<value>Type</value>
+	</data>
+	<data name="oIssuesAnalysisProject">
+		<value>Project Issues Analysis</value>
+	</data>
+	<data name="tStartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="tFinishDate">
+		<value>Finish Date</value>
+	</data>
+	<data name="tProjInf">
+		<value>Project Information</value>
+	</data>
+	<data name="tProjectTitle">
+		<value>Project Title</value>
+	</data>
+	<data name="tTargetEndDate">
+		<value>Target End Date</value>
+	</data>
+	<data name="tActualEndDate">
+		<value>Actual End Date</value>
+	</data>
+	<data name="tProjectStatus">
+		<value>Project Status</value>
+	</data>
+	<data name="tCustomer">
+		<value>Customer</value>
+	</data>
+	<data name="tProjectType">
+		<value>Project Type</value>
+	</data>
+	<data name="tNA">
+		<value>N/A</value>
+	</data>
+	<data name="tSponsors">
+		<value>Sponsors</value>
+	</data>
+	<data name="tStakeholders">
+		<value>Stakeholders</value>
+	</data>
+	<data name="tEmpty">
+		<value>Empty</value>
+	</data>
+	<data name="QuickCounts">
+		<value>QuickCounts</value>
+	</data>
+</root>

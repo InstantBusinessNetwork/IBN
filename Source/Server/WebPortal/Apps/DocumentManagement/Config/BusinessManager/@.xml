@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Documents.DocumentType" metaClass="DocumentType" method="*" type="Mediachase.IBN.Business.Documents.DocumentTypeRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Documents.DocumentTemplate" metaClass="DocumentTemplate" method="*" type="Mediachase.IBN.Business.Documents.DocumentTemplateRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Documents.DocumentContentVersion" metaClass="DocumentContentVersion" method="*" type="Mediachase.IBN.Business.Documents.DocumentContentVersionRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Documents.Document" metaClass="Document" method="*" type="Mediachase.IBN.Business.Documents.DocumentRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Documents.Document_Card" metaClass="Document_*" method="*" type="Mediachase.IBN.Business.Documents.DocumentRequestHandler, Mediachase.IBN.Business"/>
+		</add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

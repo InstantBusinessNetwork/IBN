@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalTitle">
+		<value>Добро пожаловать в портал!</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Настройки системы уведомлений</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Настройки для внешних инцидентов</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Информация о компании</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Настройки портала сохранены</value>
+	</data>
+	<data name="s1Description">
+		<value>Alerts Setup Text</value>
+	</data>
+	<data name="s1EnableAlerts">
+		<value>Активировать систему уведомлений</value>
+	</data>
+	<data name="s1AlertSenderFirstName">
+		<value>Первая часть имени отправителя</value>
+	</data>
+	<data name="s1AlertSenderLastName">
+		<value>Вторая часть имени отправителя</value>
+	</data>
+	<data name="s1AlertSenderEmail">
+		<value>E-mail отправителя</value>
+	</data>
+	<data name="tPeriod">
+		<value>Проверять каждые</value>
+	</data>
+	<data name="tServer">
+		<value>Сервер</value>
+	</data>
+	<data name="tPort">
+		<value>Порт</value>
+	</data>
+	<data name="tUser">
+		<value>Пользователь</value>
+	</data>
+	<data name="tPassword">
+		<value>Пароль</value>
+	</data>
+	<data name="tAutoApprove">
+		<value>Принимать, если получено от известных пользователей</value>
+	</data>
+	<data name="tAutoDelete">
+		<value>Удалять, если получено от неизвестных пользователей</value>
+	</data>
+	<data name="tUseExternal">
+		<value>Использовать только инциденты, полученные от внешних пользователей</value>
+	</data>
+	<data name="tSave">
+		<value>Сохранить</value>
+	</data>
+	<data name="tCancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tIncSets">
+		<value>Настройки</value>
+	</data>
+	<data name="tPopSets">
+		<value>POP3 настройки</value>
+	</data>
+	<data name="tbTitle">
+		<value>Внешние инциденты</value>
+	</data>
+	<data name="tCheck">
+		<value>Проверить</value>
+	</data>
+	<data name="tError">
+		<value>Настройки неверны!</value>
+	</data>
+	<data name="tOK">
+		<value>Настройки верны.</value>
+	</data>
+	<data name="t10min">
+		<value>10 мин</value>
+	</data>
+	<data name="t30min">
+		<value>30 мин</value>
+	</data>
+	<data name="t60min">
+		<value>1 час</value>
+	</data>
+	<data name="t180min">
+		<value>3 часа</value>
+	</data>
+	<data name="tUse">
+		<value>Включать в систему внешние инциденты</value>
+	</data>
+	<data name="tSystemSets">
+		<value>Внешние инциденты</value>
+	</data>
+	<data name="s3Title1">
+		<value>Текст для домашней страницы Заголовок 1:</value>
+	</data>
+	<data name="s3Text1">
+		<value>Текст для домашней страницы 1:</value>
+	</data>
+	<data name="s3Title2">
+		<value>Текст для домашней страницы Заголовок 2:</value>
+	</data>
+	<data name="s3Text2">
+		<value>Текст для домашней страницы 2:</value>
+	</data>
+	<data name="IdentityGraphic">
+		<value>Изображение для домашней страницы:</value>
+	</data>
+	<data name="Logo">
+		<value>Логотип компании:</value>
+	</data>
+	<data name="s4Success">
+		<value>Поздравляем!</value>
+	</data>
+	<data name="s4SText">
+		<value>Все сделанные вами изменения сохранены. Нажмите кнопку "Закрыть", чтобы вернуться к работе в портале.</value>
+	</data>
+	<data name="Finish">
+		<value>Сохранить</value>
+	</data>
+	<data name="ShowOnNextLogin">
+		<value>Запускать мастер при каждом входе администратора в портал</value>
+	</data>
+	<data name="Close">
+		<value>Закрыть</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Система уведомления позволяет пользователям получать сообщения обо всех изменениях и обновлениях.&lt;br&gt;
+Используйте эти настройки, чтобы активировать систему уведомления, установить адрес, с которого пользователи будут получать сообщения по электронной почте, и имя отправителя сообщений.</value>
+	</data>
+	<data name="s1TopText">
+		<value>To text for the first page</value>
+	</data>
+	<data name="AlertDuplicatedEmail">
+		<value>Вы не можете использовать e-mail адрес пользователя зарегистрированного в портале</value>
+	</data>
+	<data name="s1Invite">
+		<value>Пригласите пользователей в портал.</value>
+	</data>
+	<data name="s2Invite">
+		<value>Пользователи добавлены.</value>
+	</data>
+	<data name="tClose">
+		<value>Закрыть</value>
+	</data>
+	<data name="tFinish">
+		<value>Закрыть</value>
+	</data>
+	<data name="InviteGlobalTitle">
+		<value>Добро пожаловать в портал</value>
+	</data>
+	<data name="s1TopDivInvite">
+		<value>Вы  можете добавить пользователей в портал прямо сейчас.</value>
+	</data>
+	<data name="tFirstName">
+		<value>Имя</value>
+	</data>
+	<data name="tLastName">
+		<value>Фамилия</value>
+	</data>
+	<data name="teMail">
+		<value>E-mail</value>
+	</data>
+	<data name="s2TopText">
+		<value>Пользователи успешно добавлены в систему и теперь могут работать в ней.</value>
+	</data>
+	<data name="tTitle">
+		<value>Название</value>
+	</data>
+	<data name="tCompanyInfo">
+		<value>Информация о компании</value>
+	</data>
+	<data name="tFirstDayOfWeek">
+		<value>Первый день рабочей недели</value>
+	</data>
+</root>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" extension=".cs" template="Templates\RowObjectTemplate3.aspx">
+	<TableObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn48portal;Integrated Security=SSPI;</ConnectionString>
+		<Table>SYNCHRONIZATION_REPLICA</Table>
+		<Params>
+			<add key="Namespace" value="Mediachase.Sync.EntityObjectProvider" />
+			<add key="ClassName" value="SynchronizationReplicaRow" />
+		</Params>
+	</TableObject>
+</mcgen>

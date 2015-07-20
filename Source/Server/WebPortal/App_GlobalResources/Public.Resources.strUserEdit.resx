@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="login">
+		<value>Login</value>
+	</data>
+	<data name="password">
+		<value>Password</value>
+	</data>
+	<data name="confirm">
+		<value>Confirm Password</value>
+	</data>
+	<data name="first_name">
+		<value>First Name</value>
+	</data>
+	<data name="last_name">
+		<value>Last Name</value>
+	</data>
+	<data name="email">
+		<value>E-mail</value>
+	</data>
+	<data name="time_zone">
+		<value>Default Time Zone</value>
+	</data>
+	<data name="lang">
+		<value>Default Language</value>
+	</data>
+	<data name="groups">
+		<value>Groups</value>
+	</data>
+	<data name="im_groups">
+		<value>Contact Group:</value>
+	</data>
+	<data name="photo">
+		<value>Photo</value>
+	</data>
+	<data name="phone">
+		<value>Phone</value>
+	</data>
+	<data name="mobile">
+		<value>Mobile</value>
+	</data>
+	<data name="fax">
+		<value>Fax</value>
+	</data>
+	<data name="job_title">
+		<value>Job Title</value>
+	</data>
+	<data name="department">
+		<value>Department</value>
+	</data>
+	<data name="location">
+		<value>Location</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Send</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="company">
+		<value>Company</value>
+	</data>
+	<data name="active">
+		<value>Active</value>
+	</data>
+	<data name="BackToTheList">
+		<value>Back to the Users List</value>
+	</data>
+	<data name="EditPendingUser">
+		<value>Edit Pending User</value>
+	</data>
+	<data name="CreatePendingUser">
+		<value>Create Pending User</value>
+	</data>
+	<data name="EditExternalUser">
+		<value>Edit External User</value>
+	</data>
+	<data name="CreateExternalUser">
+		<value>Create External User</value>
+	</data>
+	<data name="EditUser">
+		<value>Edit User Information</value>
+	</data>
+	<data name="CreateUser">
+		<value>Create User</value>
+	</data>
+	<data name="Available">
+		<value>Available</value>
+	</data>
+	<data name="Selected">
+		<value>Selected</value>
+	</data>
+	<data name="PasswordRequest">
+		<value>Please, fill the Password Field.</value>
+	</data>
+	<data name="DuplicatedLogin">
+		<value>Selecteted Login already exists. Please, try another.</value>
+	</data>
+	<data name="Header">
+		<value>The {0} is a secure platform and can only be accessed if the owning company of the {0} business portal grants you permission. If you need an account on this system, use the simple form below to make a request. This request will be automatically sent to the appropriate person who will respond back to you with an account approval or denial.</value>
+	</data>
+	<data name="AccessRequest">
+		<value>Access Request Form</value>
+	</data>
+	<data name="tTitle">
+		<value>Registration</value>
+	</data>
+	<data name="tWrongFormat">
+		<value>Wrong Format</value>
+	</data>
+	<data name="tPendingWasCreated">
+		<value>Your request was sent to administrator for approve. After approving you will be notified by e-mail.</value>
+	</data>
+	<data name="tBackToHome">
+		<value>Back to Home Page</value>
+	</data>
+</root>

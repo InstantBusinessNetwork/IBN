@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTitle">
+		<value>Информация о поручении</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="Back">
+		<value>Вернуться к списку поручений</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="BelongsToProject">
+		<value>В рамках проекта</value>
+	</data>
+	<data name="BelongsToTask">
+		<value>В рамках задачи</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="PercCompleted">
+		<value>% завершено</value>
+	</data>
+	<data name="tbView">
+		<value>Информация о задаче</value>
+	</data>
+	<data name="View">
+		<value>Просмотреть</value>
+	</data>
+	<data name="Category">
+		<value>Общие категории</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="DueDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="OverallStatus">
+		<value>Выполнено</value>
+	</data>
+	<data name="Completed">
+		<value>Завершено</value>
+	</data>
+	<data name="NotApproved">
+		<value>Неутверждено</value>
+	</data>
+	<data name="SummaryTask">
+		<value>Суммарная задача</value>
+	</data>
+	<data name="Milestone">
+		<value>Веха</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="Created">
+		<value>Создано</value>
+	</data>
+	<data name="Updated">
+		<value>Обновил</value>
+	</data>
+	<data name="CompletionType">
+		<value>Тип завершения</value>
+	</data>
+	<data name="ConstaraintType">
+		<value>Тип</value>
+	</data>
+	<data name="Yes">
+		<value>Да</value>
+	</data>
+	<data name="No">
+		<value>Нет</value>
+	</data>
+	<data name="NA">
+		<value>---------</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Должно быть подтверждено менеджером</value>
+	</data>
+	<data name="UserName">
+		<value>Имя пользователя</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="Modified">
+		<value>Изменено</value>
+	</data>
+	<data name="Modify">
+		<value>Изменить</value>
+	</data>
+	<data name="ToDoResources">
+		<value>Исполнители</value>
+	</data>
+	<data name="Waiting">
+		<value>Нет ответа</value>
+	</data>
+	<data name="Accepted">
+		<value>Принял</value>
+	</data>
+	<data name="Denied">
+		<value>Отклонил</value>
+	</data>
+	<data name="BelongsToIncident">
+		<value>В рамках инцидента</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить это поручение?</value>
+	</data>
+	<data name="NotSet">
+		<value>не установлен</value>
+	</data>
+	<data name="Overdue">
+		<value>Просрочено</value>
+	</data>
+	<data name="ActualFinishDate">
+		<value>Фактическая дата окончания</value>
+	</data>
+	<data name="Suspended">
+		<value>Приостановлено</value>
+	</data>
+	<data name="CompletedByManager">
+		<value>Завершено</value>
+	</data>
+	<data name="CompletedByResource">
+		<value>Завершено</value>
+	</data>
+	<data name="NotCompleted">
+		<value>Не завершено</value>
+	</data>
+	<data name="DeleteAll">
+		<value>Удалить все</value>
+	</data>
+	<data name="DeleteToDo">
+		<value>Удалить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="DeleteTxt">
+		<value>
+			&lt;p align="left" class="text"&gt;Удаляемое поручение может быть связано с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить поручение и листы учета времени, нажмите кнопку "Удалить все".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить только поручение, нажмите кнопку "Удалить".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+		</value>
+	</data>
+	<data name="Add">
+		<value>Новый исполнитель</value>
+	</data>
+	<data name="AssignWizard">
+		<value>Исполнители поручения</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Добавить в Избранное</value>
+	</data>
+	<data name="tbDocView">
+		<value>Информация о документе</value>
+	</data>
+	<data name="timeline">
+		<value>Временные рамки</value>
+	</data>
+	<data name="Location">
+		<value>Расположение</value>
+	</data>
+	<data name="FullCompleted">
+		<value>Завершено</value>
+	</data>
+	<data name="Issue">
+		<value>Инцидент</value>
+	</data>
+	<data name="Task">
+		<value>Задача</value>
+	</data>
+	<data name="Document">
+		<value>Документ</value>
+	</data>
+	<data name="LatestVersion">
+		<value>Последняя версия</value>
+	</data>
+	<data name="None">
+		<value>(Отсутствует)</value>
+	</data>
+	<data name="State">
+		<value>Состояние</value>
+	</data>
+	<data name="tClient">
+		<value>Клиент</value>
+	</data>
+	<data name="tClients">
+		<value>Клиенты</value>
+	</data>
+	<data name="tToDos">
+		<value>Поручения</value>
+	</data>
+	<data name="Keyword">
+		<value>Ключевое слово</value>
+	</data>
+	<data name="tApply">
+		<value>Применить</value>
+	</data>
+	<data name="tReset">
+		<value>Очистить</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Снять фильтр</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Показать панель фильтра</value>
+	</data>
+	<data name="HideFilter">
+		<value>Скрыть панель фильтра</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Фильтр не установлен</value>
+	</data>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="NoneProject">
+		<value>Поручения, не принадлежащие проектам</value>
+	</data>
+	<data name="Any2">
+		<value>Любые</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Только указанные</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Все, кроме указанных</value>
+	</data>
+	<data name="tNoClient">
+		<value>Поручения без клиента</value>
+	</data>
+</root>

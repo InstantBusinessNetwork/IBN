@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tLists" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="tAdvView" xml:space="preserve">
+    <value>Tree View</value>
+  </data>
+  <data name="tGenView" xml:space="preserve">
+    <value>Folder View</value>
+  </data>
+  <data name="tListView" xml:space="preserve">
+    <value>List Watcher</value>
+  </data>
+  <data name="tSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ListName" xml:space="preserve">
+    <value>List Name</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Owner</value>
+  </data>
+  <data name="LastUpdated" xml:space="preserve">
+    <value>Last Updated</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tEditList" xml:space="preserve">
+    <value>Edit List</value>
+  </data>
+  <data name="tAddList" xml:space="preserve">
+    <value>Add List</value>
+  </data>
+  <data name="NameOfList" xml:space="preserve">
+    <value>Name Of List</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ReturnToInfo" xml:space="preserve">
+    <value>Return to List Info page</value>
+  </data>
+  <data name="ReturnToList" xml:space="preserve">
+    <value>Return To Lists</value>
+  </data>
+  <data name="tListInfo" xml:space="preserve">
+    <value>List Info</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="MoveTo" xml:space="preserve">
+    <value>Move To ...</value>
+  </data>
+  <data name="ViewDetalis" xml:space="preserve">
+    <value>View Details</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="UpdatedBy" xml:space="preserve">
+    <value>Updated By</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Fields" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Do you really want to delete this list ?</value>
+  </data>
+  <data name="SelectedFields" xml:space="preserve">
+    <value>Selected Fields</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Display</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="tListData" xml:space="preserve">
+    <value>Data Records Manager</value>
+  </data>
+  <data name="AddRow" xml:space="preserve">
+    <value>Add Row</value>
+  </data>
+  <data name="WarningRow" xml:space="preserve">
+    <value>Do you really want to delete this row ?</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="tRowHistory" xml:space="preserve">
+    <value>Row History</value>
+  </data>
+  <data name="tRowInfo" xml:space="preserve">
+    <value>Row Info</value>
+  </data>
+  <data name="tAddFolder" xml:space="preserve">
+    <value>Add Folder</value>
+  </data>
+  <data name="tSecurity" xml:space="preserve">
+    <value>Security Settings</value>
+  </data>
+  <data name="tAvailable" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="tSelected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="tGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tRights" xml:space="preserve">
+    <value>Rights</value>
+  </data>
+  <data name="tEditSec" xml:space="preserve">
+    <value>Security Settings for List</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="tAddGroup" xml:space="preserve">
+    <value>Add Group</value>
+  </data>
+  <data name="tRead" xml:space="preserve">
+    <value>Read</value>
+  </data>
+  <data name="tWrite" xml:space="preserve">
+    <value>Write</value>
+  </data>
+  <data name="tAdmin" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Do you really want to delete this item?</value>
+  </data>
+  <data name="tPrivateLists" xml:space="preserve">
+    <value>Private Lists</value>
+  </data>
+  <data name="tPublicLists" xml:space="preserve">
+    <value>Public Lists</value>
+  </data>
+  <data name="WarningF" xml:space="preserve">
+    <value>Do you really want to delete this folder ?</value>
+  </data>
+  <data name="tPrjLists" xml:space="preserve">
+    <value>Projects Lists</value>
+  </data>
+  <data name="tProject" xml:space="preserve">
+    <value>[Project]</value>
+  </data>
+  <data name="tManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="tTeam" xml:space="preserve">
+    <value>Team Members</value>
+  </data>
+  <data name="tSponsors" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
+  <data name="tStake" xml:space="preserve">
+    <value>Stakeholders</value>
+  </data>
+  <data name="tExMan" xml:space="preserve">
+    <value>Executive Manager</value>
+  </data>
+  <data name="tAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="tReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="tKeyword" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="tFolderMove" xml:space="preserve">
+    <value>List Folder Move</value>
+  </data>
+  <data name="tListMove" xml:space="preserve">
+    <value>List Move</value>
+  </data>
+  <data name="tFolder" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="tMove" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="tMoveTo" xml:space="preserve">
+    <value>Move To</value>
+  </data>
+  <data name="tMoveAssign" xml:space="preserve">
+    <value>Move &amp; Assign</value>
+  </data>
+  <data name="tAddStandardList" xml:space="preserve">
+    <value>Standard List Create</value>
+  </data>
+  <data name="NameOfTemplate" xml:space="preserve">
+    <value>Standard List Title</value>
+  </data>
+  <data name="Dictionary" xml:space="preserve">
+    <value>Lookup Values</value>
+  </data>
+  <data name="tListTemplates" xml:space="preserve">
+    <value>Standard Lists</value>
+  </data>
+  <data name="tDefineFields" xml:space="preserve">
+    <value>Define List Fields Using</value>
+  </data>
+  <data name="tCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="tSaveAsTemplate" xml:space="preserve">
+    <value>Save As Template</value>
+  </data>
+  <data name="tTemplateInfo" xml:space="preserve">
+    <value>Standard List Info</value>
+  </data>
+  <data name="tYouAreCreatingPublicList" xml:space="preserve">
+    <value>You are creating a public list in the following location</value>
+  </data>
+  <data name="tYouAreCreatingPrivateList" xml:space="preserve">
+    <value>You are creating a private list in the following location</value>
+  </data>
+  <data name="tYouAreCreatingProjectList" xml:space="preserve">
+    <value>You are adding a list to the following project</value>
+  </data>
+  <data name="EditDictionary" xml:space="preserve">
+    <value>Edit Dictionary</value>
+  </data>
+  <data name="tGenCats" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="tNumRecords" xml:space="preserve">
+    <value>Number of Records</value>
+  </data>
+  <data name="tRelatedProject" xml:space="preserve">
+    <value>Related Project</value>
+  </data>
+  <data name="ResetFilter" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="tAny" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="SelectedOnly" xml:space="preserve">
+    <value>Only following</value>
+  </data>
+  <data name="ExcludeSelected" xml:space="preserve">
+    <value>Exclude following</value>
+  </data>
+  <data name="FilterNotSet" xml:space="preserve">
+    <value>Filter is not set.</value>
+  </data>
+  <data name="ShowFilter" xml:space="preserve">
+    <value>Show filter</value>
+  </data>
+  <data name="HideFilter" xml:space="preserve">
+    <value>Hide Filter</value>
+  </data>
+  <data name="tSaveAssign" xml:space="preserve">
+    <value>Save &amp; Assign</value>
+  </data>
+  <data name="tImport" xml:space="preserve">
+    <value>Lists Import</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Add To Favorites</value>
+  </data>
+  <data name="ExcelExport" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="XMLExport" xml:space="preserve">
+    <value>Export to XML</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="tFind" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="tSaveAsTemplateWithData" xml:space="preserve">
+    <value>Save As Template With Data</value>
+  </data>
+  <data name="tAuto" xml:space="preserve">
+    <value>auto</value>
+  </data>
+</root>

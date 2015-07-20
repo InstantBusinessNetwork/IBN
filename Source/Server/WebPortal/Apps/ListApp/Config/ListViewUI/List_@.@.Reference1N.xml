@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<!--<Button id="NewItemButton" text="{IbnFramework.ListInfo:NewRow}" imageUrl="~/Layouts/Images/listsnew.gif" commandName="MC_MUI_Ref1N_NewItem" itemSplitter="Right"></Button>-->
+			<Button id="AddButton" text="{IbnFramework.Common:tAddEntities}" imageUrl="~/Layouts/Images/addselected.gif" commandName="MC_MUI_AddSelected" itemSplitter="Right"></Button>
+			<Button id="ExcludeSelectedButton" text="{IbnFramework.Common:ExcludeSelected}" imageUrl="~/Images/IbnFramework/RecordDelete.png" commandName="MC_MUI_ExcludeSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_MUI_Columns">
+				<Column id="472F004E-AF2F-4d64-91A0-17B37248A71C" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_MUI_ViewItem" paddingRight="5" tooltip="{IbnFramework.ListInfo:ItemView}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="MC_MUI_EditItem" paddingRight="5" tooltip="{IbnFramework.ListInfo:Edit}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_MUI_AddSelected">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes={HttpContext:Reference1N_ClassName}&amp;refreshName=SelectItems_Refresh&amp;ReturnCommand=MC_MUI_AddSelected&amp;MultipleSelect=1&amp;CanCreate=1&amp;ContainerFieldName={HttpContext:Reference1N_FieldName}&amp;ContainerId={HttpContext:Reference1N_FieldValue}</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MUI_Ref1N_NewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:NewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className={HttpContext:Reference1N_ClassName}&amp;CommandName=MC_MUI_Ref1_NeedToDataBind&amp;ContainerFieldName={HttpContext:Reference1N_FieldName}&amp;ContainerId={HttpContext:Reference1N_FieldValue}</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MUI_Ref1_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_MUI_ExcludeSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:ExcludeSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ExcludeSelectedEntityHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_MUI_ViewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:ViewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityViewPopup.aspx?formName=[MC_GeneralViewForm]&amp;className={HttpContext:Reference1N_ClassName}&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_EditItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:EditRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className={HttpContext:Reference1N_ClassName}&amp;ObjectId=[ClientParam:primaryKeyId]&amp;CommandName=MC_MUI_Ref1_NeedToDataBind</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

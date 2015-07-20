@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tbBudgetInfo" xml:space="preserve">
+    <value>Суммарная информация о бюджете</value>
+  </data>
+  <data name="Budget" xml:space="preserve">
+    <value>Бюджет</value>
+  </data>
+  <data name="ActualCost" xml:space="preserve">
+    <value>Затраты</value>
+  </data>
+  <data name="EstimatedCost" xml:space="preserve">
+    <value>Смета</value>
+  </data>
+  <data name="tbItems" xml:space="preserve">
+    <value>Фиксированные статьи расходов</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Estimate" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="tbAdd" xml:space="preserve">
+    <value>Новая статья</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту статью? </value>
+  </data>
+  <data name="tbExpenses" xml:space="preserve">
+    <value>Прочие расходы</value>
+  </data>
+  <data name="tbExpensesAdd" xml:space="preserve">
+    <value>Новая статья</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="FixedBudget" xml:space="preserve">
+    <value>Установленный бюджет</value>
+  </data>
+  <data name="tbLaborItems" xml:space="preserve">
+    <value>Затраты на рабочее время</value>
+  </data>
+  <data name="tPrjFinance" xml:space="preserve">
+    <value>Финансы проекта</value>
+  </data>
+  <data name="tTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="tTarget" xml:space="preserve">
+    <value>Бюджет</value>
+  </data>
+  <data name="tCurrent" xml:space="preserve">
+    <value>Текущий остаток</value>
+  </data>
+  <data name="tSub" xml:space="preserve">
+    <value>На подсчетах</value>
+  </data>
+  <data name="tSum" xml:space="preserve">
+    <value>Сумма</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tChVal" xml:space="preserve">
+    <value>Изменение значения</value>
+  </data>
+  <data name="tEditAcc" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tSaveParVal" xml:space="preserve">
+    <value>Не изменять родительский счет</value>
+  </data>
+  <data name="tDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tNewAcc" xml:space="preserve">
+    <value>Новый счет</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="tAccount" xml:space="preserve">
+    <value>Счет</value>
+  </data>
+  <data name="tNewActual" xml:space="preserve">
+    <value>Новая статья</value>
+  </data>
+  <data name="tActualDate" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="tModifiedBy" xml:space="preserve">
+    <value>Изменил</value>
+  </data>
+  <data name="tObjTitle" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="tRoot" xml:space="preserve">
+    <value>Основной счет</value>
+  </data>
+  <data name="tMoveAcc" xml:space="preserve">
+    <value>Переместить счет</value>
+  </data>
+  <data name="tMoveTo" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="tAccounts" xml:space="preserve">
+    <value>Счета</value>
+  </data>
+  <data name="tActFinances" xml:space="preserve">
+    <value>Доходы и расходы</value>
+  </data>
+  <data name="accWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот счет?</value>
+  </data>
+  <data name="tNoItems" xml:space="preserve">
+    <value>Буфер обмена пуст</value>
+  </data>
+  <data name="tAddFromClip" xml:space="preserve">
+    <value>Добавить связанный проект</value>
+  </data>
+  <data name="Clipboard" xml:space="preserve">
+    <value>Буфер обмена</value>
+  </data>
+  <data name="tEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Пусто</value>
+  </data>
+  <data name="DeletePlanMsg" xml:space="preserve">
+    <value>Вы уверены что хотите удалить этот план?</value>
+  </data>
+  <data name="ActivateMsg" xml:space="preserve">
+    <value>Финансы для данного проекта не активированы. Если вы хотите активировать их нажмите</value>
+  </data>
+  <data name="Activate" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="ActivateSettings" xml:space="preserve">
+    <value>Настройки для активации</value>
+  </data>
+  <data name="ActivateHere" xml:space="preserve">
+    <value>сюда</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>До</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="tSpreadSheet" xml:space="preserve">
+    <value>Планирование</value>
+  </data>
+  <data name="LastSaved" xml:space="preserve">
+    <value>Последнее сохранение</value>
+  </data>
+  <data name="SpreadSheetType" xml:space="preserve">
+    <value>Детализация</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="tMonthQuarterYear" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="tWeekYear" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="tQuarterYear" xml:space="preserve">
+    <value>Квартал</value>
+  </data>
+  <data name="tYear" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="tTotal" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="YearLimit" xml:space="preserve">
+    <value>Дата должна быть между 1995 и 2015 годами</value>
+  </data>
+  <data name="tYearTotal" xml:space="preserve">
+    <value>Итого за год</value>
+  </data>
+  <data name="tProjectTotal" xml:space="preserve">
+    <value>Итого за проект</value>
+  </data>
+  <data name="tQuartalTotal" xml:space="preserve">
+    <value>Итого за квартал</value>
+  </data>
+  <data name="tGridHeader1" xml:space="preserve">
+    <value>Денежные средства / Время</value>
+  </data>
+  <data name="tLoadingMsg" xml:space="preserve">
+    <value>З А Г Р У З К А . . .</value>
+  </data>
+  <data name="tNone" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Fact" xml:space="preserve">
+    <value>Факт</value>
+  </data>
+  <data name="Current" xml:space="preserve">
+    <value>План</value>
+  </data>
+  <data name="NotSelected" xml:space="preserve">
+    <value>Не выбрано</value>
+  </data>
+  <data name="tNewItem" xml:space="preserve">
+    <value>Новый элемент</value>
+  </data>
+  <data name="ActivateMsg2" xml:space="preserve">
+    <value>Система финансов проекта не активирована.</value>
+  </data>
+  <data name="ReactivateMsg" xml:space="preserve">
+    <value>Все текущие данные по финансам в этом проекте будут утеряны без возможности восстановления. Вы уверены что хотите деактивировать финансы для текущего проекта?</value>
+  </data>
+  <data name="ReactivateText" xml:space="preserve">
+    <value>Деактивировать финансы</value>
+  </data>
+  <data name="tbEdit" xml:space="preserve">
+    <value>Редактирование статьи</value>
+  </data>
+  <data name="CantAddRow" xml:space="preserve">
+    <value>Вы не можете добавить запись в данный блок, так как для этого блока есть одна или более записей в закладке "Доходов и расходов"</value>
+  </data>
+</root>

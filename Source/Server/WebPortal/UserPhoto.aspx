@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="UserPhoto.aspx.cs" Inherits="Mediachase.UI.Web.UserPhoto" %>

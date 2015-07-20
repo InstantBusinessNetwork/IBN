@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tLists">
+		<value>Списки</value>
+	</data>
+	<data name="tAdvView">
+		<value>Проводник</value>
+	</data>
+	<data name="tGenView">
+		<value>Папки</value>
+	</data>
+	<data name="tListView">
+		<value>Перечень</value>
+	</data>
+	<data name="tSearch">
+		<value>Поиск</value>
+	</data>
+	<data name="ListName">
+		<value>Название</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="Owner">
+		<value>Создал</value>
+	</data>
+	<data name="LastUpdated">
+		<value>Последнее обновление</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="tEditList">
+		<value>Редактирование списка</value>
+	</data>
+	<data name="tAddList">
+		<value>Новый список</value>
+	</data>
+	<data name="NameOfList">
+		<value>Название</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="ReturnToInfo">
+		<value>Вернуться к информации о списке</value>
+	</data>
+	<data name="ReturnToList">
+		<value>Вернуться к спискам</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tListInfo">
+		<value>Настройка списка</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="MoveTo">
+		<value>Переместить...</value>
+	</data>
+	<data name="ViewDetalis">
+		<value>Просмотреть детали</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="CreatedBy">
+		<value>Создал</value>
+	</data>
+	<data name="UpdatedBy">
+		<value>Обновил</value>
+	</data>
+	<data name="Created">
+		<value>Дата создания</value>
+	</data>
+	<data name="LastUpdated">
+		<value>Обновлен</value>
+	</data>
+	<data name="Fields">
+		<value>Поля</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот список?</value>
+	</data>
+	<data name="SelectedFields">
+		<value>Выбранные поля</value>
+	</data>
+	<data name="Display">
+		<value>Отображать</value>
+	</data>
+	<data name="Yes">
+		<value>Да</value>
+	</data>
+	<data name="No">
+		<value>Нет</value>
+	</data>
+	<data name="tListData">
+		<value>Данные</value>
+	</data>
+	<data name="AddRow">
+		<value>Новая запись</value>
+	</data>
+	<data name="WarningRow">
+		<value>Вы действительно хотите удалить эту запись?</value>
+	</data>
+	<data name="History">
+		<value>История изменений</value>
+	</data>
+	<data name="tRowHistory">
+		<value>История изменений</value>
+	</data>
+	<data name="tRowInfo">
+		<value>Информация о записи</value>
+	</data>
+	<data name="tAddFolder">
+		<value>Новая папка</value>
+	</data>
+	<data name="tSecurity">
+		<value>Настройки безопасности</value>
+	</data>
+	<data name="tAvailable">
+		<value>Доступны</value>
+	</data>
+	<data name="tSelected">
+		<value>Выбраны</value>
+	</data>
+	<data name="tGroup">
+		<value>Группа</value>
+	</data>
+	<data name="tUser">
+		<value>Пользователь</value>
+	</data>
+	<data name="tRights">
+		<value>Права</value>
+	</data>
+	<data name="tEditSec">
+		<value>Настройки безопасности для списка</value>
+	</data>
+	<data name="tAdd">
+		<value>Добавить</value>
+	</data>
+	<data name="tAddGroup">
+		<value>Добавить группу</value>
+	</data>
+	<data name="tRead">
+		<value>Чтение</value>
+	</data>
+	<data name="tWrite">
+		<value>Запись</value>
+	</data>
+	<data name="tAdmin">
+		<value>Управление</value>
+	</data>
+	<data name="tName">
+		<value>Имя</value>
+	</data>
+	<data name="tWarning">
+		<value>Вы действительно хотите удалить эту запись?</value>
+	</data>
+	<data name="tPrivateLists">
+		<value>Мои списки</value>
+	</data>
+	<data name="tPublicLists">
+		<value>Общие списки</value>
+	</data>
+	<data name="WarningF">
+		<value>Вы действительно хотите удалить эту папку?</value>
+	</data>
+	<data name="tPrjLists">
+		<value>Проектные списки</value>
+	</data>
+	<data name="tProject">
+		<value>[Проект]</value>
+	</data>
+	<data name="tManager">
+		<value>Менеджер</value>
+	</data>
+	<data name="tTeam">
+		<value>Команда проекта</value>
+	</data>
+	<data name="tSponsors">
+		<value>Спонсоры</value>
+	</data>
+	<data name="tStake">
+		<value>Заинтересованные лица</value>
+	</data>
+	<data name="tExMan">
+		<value>Исполнительный менеджер</value>
+	</data>
+	<data name="tAll">
+		<value>Любой</value>
+	</data>
+	<data name="tApply">
+		<value>Применить</value>
+	</data>
+	<data name="tReset">
+		<value>Сбросить</value>
+	</data>
+	<data name="tKeyword">
+		<value>Строка поиска</value>
+	</data>
+	<data name="tFolderMove">
+		<value>Перемещение папки списков</value>
+	</data>
+	<data name="tListMove">
+		<value>Перемещение списка</value>
+	</data>
+	<data name="tFolder">
+		<value>Папка</value>
+	</data>
+	<data name="tMove">
+		<value>Переместить</value>
+	</data>
+	<data name="tMoveTo">
+		<value>Переместить</value>
+	</data>
+	<data name="tMoveAssign">
+		<value>Переместить и назначить</value>
+	</data>
+	<data name="tAddStandardList">
+		<value>Новый шаблон списка</value>
+	</data>
+	<data name="NameOfTemplate">
+		<value>Название</value>
+	</data>
+	<data name="Dictionary">
+		<value>Элементы справочника</value>
+	</data>
+	<data name="tListTemplates">
+		<value>Шаблоны списков</value>
+	</data>
+	<data name="tDefineFields">
+		<value>Шаблон</value>
+	</data>
+	<data name="tCustom">
+		<value>Не использовать</value>
+	</data>
+	<data name="tSaveAsTemplate">
+		<value>Сохранить структуру как шаблон</value>
+	</data>
+	<data name="tTemplateInfo">
+		<value>Информация о шаблоне списка</value>
+	</data>
+	<data name="tYouAreCreatingPublicList">
+		<value>Вы создаете общедоступный список в папке</value>
+	</data>
+	<data name="tYouAreCreatingPrivateList">
+		<value>Вы создаете список, который будет доступен только вам, в папке</value>
+	</data>
+	<data name="tYouAreCreatingProjectList">
+		<value>Вы создаете список в проекте</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Редактировать справочник</value>
+	</data>
+	<data name="tGenCats">
+		<value>Общие категории</value>
+	</data>
+	<data name="tNumRecords">
+		<value>Количество записей</value>
+	</data>
+	<data name="tRelatedProject">
+		<value>Связанный проект</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Снять фильтр</value>
+	</data>
+	<data name="tAny">
+		<value>Любые</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Только указанные</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Все, кроме указанных</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Фильтр не установлен.</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Показать панель фильтра</value>
+	</data>
+	<data name="HideFilter">
+		<value>Скрыть панель фильтра</value>
+	</data>
+	<data name="tSaveAssign">
+		<value>Сохранить и назначить</value>
+	</data>
+	<data name="tImport">
+		<value>Импорт списка</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Добавить в Избранное</value>
+	</data>
+	<data name="ExcelExport">
+		<value>Экспорт в  Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Экспорт в XML</value>
+	</data>
+	<data name="Template">
+		<value>Шаблон</value>
+	</data>
+	<data name="tFind">
+		<value>Найти</value>
+	</data>
+	<data name="tSaveAsTemplateWithData">
+		<value>Сохранить структуру и данные как шаблон</value>
+	</data>
+	<data name="tAuto">
+		<value>авто</value>
+	</data>
+</root>

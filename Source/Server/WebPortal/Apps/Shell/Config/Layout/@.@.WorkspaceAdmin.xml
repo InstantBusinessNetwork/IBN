@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="InfoBlock">
+			<Placeholder id="InfoBlock.Placeholder_1" />
+			<Placeholder id="InfoBlock.Placeholder_2" />
+			<Placeholder id="InfoBlock.Placeholder_3" />
+			<Placeholder id="InfoBlock.Placeholder_4" />
+		</Block>
+		<Block id="ViewBlock_Tab1" name="{IbnFramework.Common:ControlSet}">
+			<Placeholder id="ViewBlock_Tab1.Placeholder_1">
+				<Control id="ViewBlock_Tab1.Placeholder_1.Control_1" path="~/Apps/WidgetEngine/Modules/AddFramePopup.ascx">
+					<Property name="ViewMode" value="0" />
+					<Property name="IsAdmin" value="true" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="ViewBlock_Tab1.Placeholder_2" />
+			<Placeholder id="ViewBlock_Tab1.Placeholder_3" />
+			<Placeholder id="ViewBlock_Tab1.Placeholder_4" />
+		</Block>
+		<Block id="ViewBlock_Tab2" name="{IbnFramework.Common:PageTemplate}">
+			<Placeholder id="ViewBlock_Tab2.Placeholder_1">
+				<Control id="ViewBlock_Tab2.Placeholder_2.Control_1" path="~/Apps/WidgetEngine/Modules/AddFramePopup.ascx">
+					<Property name="ViewMode" value="1" />
+					<Property name="IsAdmin" value="true" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="ViewBlock_Tab2.Placeholder_2"></Placeholder>
+			<Placeholder id="ViewBlock_Tab2.Placeholder_3" />
+			<Placeholder id="ViewBlock_Tab2.Placeholder_4" />
+		</Block>
+
+	</add>
+</Layout>

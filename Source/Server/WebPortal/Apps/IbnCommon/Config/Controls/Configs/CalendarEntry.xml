@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>D1D46A87-7478-4068-A467-758BE89A9535</Uid>
+	<Title>{IbnFramework.Global:_mc_Calendar}</Title>
+	<Description>{IbnFramework.Global:_mc_CalendarDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/CalendarEntry.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/calendar.png</IconPath>
+</DynamicControlInfo>

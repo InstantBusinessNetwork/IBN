@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ibnportal.ru/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://ibnportal.ru/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ibnportal.ru/">
+      <s:element name="CompanyRequestTrial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sizeOfGroup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resellerGuid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locale" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyRequestTrialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyRequestTrialResult" type="tns:TrialResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="TrialResult">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="RequestPending" />
+          <s:enumeration value="WaitingForActivation" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="UserRegistered" />
+          <s:enumeration value="DomainExists" />
+          <s:enumeration value="InvalidRequest" />
+          <s:enumeration value="AlreadyActivated" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="CompanyRequestTrial2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sizeOfGroup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resellerGuid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locale" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="referrer" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CompanyRequestTrial2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CompanyRequestTrial2Result" type="tns:TrialResult" />
+            <s:element minOccurs="1" maxOccurs="1" name="requestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateTrialCompany">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateTrialCompanyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActivateTrialCompanyResult" type="tns:TrialResult" />
+            <s:element minOccurs="0" maxOccurs="1" name="portalUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateTrialCompany2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="requestId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="requestGuid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActivateTrialCompany2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActivateTrialCompany2Result" type="tns:TrialResult" />
+            <s:element minOccurs="0" maxOccurs="1" name="portalUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DomainExists">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domain" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DomainExistsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DomainExistsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrialPeriod">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTrialPeriodResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetTrialPeriodResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetParentDomain">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetParentDomainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetParentDomainResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCompanyInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetCompanyInfoResult" type="tns:CompanyInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CompanyInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Scheme" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Host" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Port" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PortalUrl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DatabaseSize" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UsersCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxDatabaseSize" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxUsersCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxExternalUsersCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TrialStartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="TrialEndDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsTrial" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactEmail" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendNotifications" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="TariffId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TariffName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TariffDescription" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TariffMonthlyCost" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TariffStartDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="TariffCurrencySymbol" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Discount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreditLimit" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="AlertThreshold" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddPayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="amount" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="orderNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddPaymentResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDailyLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="days" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDailyLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDailyLogResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="days" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPaymentInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPaymentInfoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTariffs">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTariffsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTariffsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTariffRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="companyId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tariffId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTariffRequestResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CompanyRequestTrialSoapIn">
+    <wsdl:part name="parameters" element="tns:CompanyRequestTrial" />
+  </wsdl:message>
+  <wsdl:message name="CompanyRequestTrialSoapOut">
+    <wsdl:part name="parameters" element="tns:CompanyRequestTrialResponse" />
+  </wsdl:message>
+  <wsdl:message name="CompanyRequestTrial2SoapIn">
+    <wsdl:part name="parameters" element="tns:CompanyRequestTrial2" />
+  </wsdl:message>
+  <wsdl:message name="CompanyRequestTrial2SoapOut">
+    <wsdl:part name="parameters" element="tns:CompanyRequestTrial2Response" />
+  </wsdl:message>
+  <wsdl:message name="ActivateTrialCompanySoapIn">
+    <wsdl:part name="parameters" element="tns:ActivateTrialCompany" />
+  </wsdl:message>
+  <wsdl:message name="ActivateTrialCompanySoapOut">
+    <wsdl:part name="parameters" element="tns:ActivateTrialCompanyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActivateTrialCompany2SoapIn">
+    <wsdl:part name="parameters" element="tns:ActivateTrialCompany2" />
+  </wsdl:message>
+  <wsdl:message name="ActivateTrialCompany2SoapOut">
+    <wsdl:part name="parameters" element="tns:ActivateTrialCompany2Response" />
+  </wsdl:message>
+  <wsdl:message name="DomainExistsSoapIn">
+    <wsdl:part name="parameters" element="tns:DomainExists" />
+  </wsdl:message>
+  <wsdl:message name="DomainExistsSoapOut">
+    <wsdl:part name="parameters" element="tns:DomainExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrialPeriodSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrialPeriod" />
+  </wsdl:message>
+  <wsdl:message name="GetTrialPeriodSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrialPeriodResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetParentDomainSoapIn">
+    <wsdl:part name="parameters" element="tns:GetParentDomain" />
+  </wsdl:message>
+  <wsdl:message name="GetParentDomainSoapOut">
+    <wsdl:part name="parameters" element="tns:GetParentDomainResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetCompanyInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddPaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:AddPayment" />
+  </wsdl:message>
+  <wsdl:message name="AddPaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:AddPaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDailyLogSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDailyLog" />
+  </wsdl:message>
+  <wsdl:message name="GetDailyLogSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDailyLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPaymentInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetPaymentInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPaymentInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTariffsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTariffs" />
+  </wsdl:message>
+  <wsdl:message name="GetTariffsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTariffsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTariffRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTariffRequest" />
+  </wsdl:message>
+  <wsdl:message name="AddTariffRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTariffRequestResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TrialSoap">
+    <wsdl:operation name="CompanyRequestTrial">
+      <wsdl:input message="tns:CompanyRequestTrialSoapIn" />
+      <wsdl:output message="tns:CompanyRequestTrialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CompanyRequestTrial2">
+      <wsdl:input message="tns:CompanyRequestTrial2SoapIn" />
+      <wsdl:output message="tns:CompanyRequestTrial2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany">
+      <wsdl:input message="tns:ActivateTrialCompanySoapIn" />
+      <wsdl:output message="tns:ActivateTrialCompanySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany2">
+      <wsdl:input message="tns:ActivateTrialCompany2SoapIn" />
+      <wsdl:output message="tns:ActivateTrialCompany2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DomainExists">
+      <wsdl:input message="tns:DomainExistsSoapIn" />
+      <wsdl:output message="tns:DomainExistsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialPeriod">
+      <wsdl:input message="tns:GetTrialPeriodSoapIn" />
+      <wsdl:output message="tns:GetTrialPeriodSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDomain">
+      <wsdl:input message="tns:GetParentDomainSoapIn" />
+      <wsdl:output message="tns:GetParentDomainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfo">
+      <wsdl:input message="tns:GetCompanyInfoSoapIn" />
+      <wsdl:output message="tns:GetCompanyInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPayment">
+      <wsdl:input message="tns:AddPaymentSoapIn" />
+      <wsdl:output message="tns:AddPaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyLog">
+      <wsdl:input message="tns:GetDailyLogSoapIn" />
+      <wsdl:output message="tns:GetDailyLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentInfo">
+      <wsdl:input message="tns:GetPaymentInfoSoapIn" />
+      <wsdl:output message="tns:GetPaymentInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffs">
+      <wsdl:input message="tns:GetTariffsSoapIn" />
+      <wsdl:output message="tns:GetTariffsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTariffRequest">
+      <wsdl:input message="tns:AddTariffRequestSoapIn" />
+      <wsdl:output message="tns:AddTariffRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TrialSoap" type="tns:TrialSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CompanyRequestTrial">
+      <soap:operation soapAction="http://ibnportal.ru/CompanyRequestTrial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyRequestTrial2">
+      <soap:operation soapAction="http://ibnportal.ru/CompanyRequestTrial2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany">
+      <soap:operation soapAction="http://ibnportal.ru/ActivateTrialCompany" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany2">
+      <soap:operation soapAction="http://ibnportal.ru/ActivateTrialCompany2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainExists">
+      <soap:operation soapAction="http://ibnportal.ru/DomainExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialPeriod">
+      <soap:operation soapAction="http://ibnportal.ru/GetTrialPeriod" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDomain">
+      <soap:operation soapAction="http://ibnportal.ru/GetParentDomain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfo">
+      <soap:operation soapAction="http://ibnportal.ru/GetCompanyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPayment">
+      <soap:operation soapAction="http://ibnportal.ru/AddPayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyLog">
+      <soap:operation soapAction="http://ibnportal.ru/GetDailyLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentInfo">
+      <soap:operation soapAction="http://ibnportal.ru/GetPaymentInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffs">
+      <soap:operation soapAction="http://ibnportal.ru/GetTariffs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTariffRequest">
+      <soap:operation soapAction="http://ibnportal.ru/AddTariffRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TrialSoap12" type="tns:TrialSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CompanyRequestTrial">
+      <soap12:operation soapAction="http://ibnportal.ru/CompanyRequestTrial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CompanyRequestTrial2">
+      <soap12:operation soapAction="http://ibnportal.ru/CompanyRequestTrial2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany">
+      <soap12:operation soapAction="http://ibnportal.ru/ActivateTrialCompany" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActivateTrialCompany2">
+      <soap12:operation soapAction="http://ibnportal.ru/ActivateTrialCompany2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DomainExists">
+      <soap12:operation soapAction="http://ibnportal.ru/DomainExists" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrialPeriod">
+      <soap12:operation soapAction="http://ibnportal.ru/GetTrialPeriod" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetParentDomain">
+      <soap12:operation soapAction="http://ibnportal.ru/GetParentDomain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfo">
+      <soap12:operation soapAction="http://ibnportal.ru/GetCompanyInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPayment">
+      <soap12:operation soapAction="http://ibnportal.ru/AddPayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDailyLog">
+      <soap12:operation soapAction="http://ibnportal.ru/GetDailyLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPaymentInfo">
+      <soap12:operation soapAction="http://ibnportal.ru/GetPaymentInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTariffs">
+      <soap12:operation soapAction="http://ibnportal.ru/GetTariffs" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTariffRequest">
+      <soap12:operation soapAction="http://ibnportal.ru/AddTariffRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Trial">
+    <wsdl:port name="TrialSoap" binding="tns:TrialSoap">
+      <soap:address location="http://ibn47asp.mediachase.net/WebServices/Trial.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TrialSoap12" binding="tns:TrialSoap12">
+      <soap12:address location="http://ibn47asp.mediachase.net/WebServices/Trial.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

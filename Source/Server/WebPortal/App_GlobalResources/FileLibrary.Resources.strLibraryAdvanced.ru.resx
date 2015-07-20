@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="UpdatedBy">
+		<value>Обновил</value>
+	</data>
+	<data name="UpdatedDate">
+		<value>Обновлен</value>
+	</data>
+	<data name="Size">
+		<value>Размер</value>
+	</data>
+	<data name="Path">
+		<value>Путь</value>
+	</data>
+	<data name="QuickAdd">
+		<value>Добавить</value>
+	</data>
+	<data name="tAdd">
+		<value>Новая папка</value>
+	</data>
+	<data name="tAddD">
+		<value>Новый файл</value>
+	</data>
+	<data name="tAddL">
+		<value>Новая ссылка</value>
+	</data>
+	<data name="tFolderSec">
+		<value>Безопасность</value>
+	</data>
+	<data name="tDeleteF">
+		<value>Удалить</value>
+	</data>
+	<data name="tEditF">
+		<value>Редактировать</value>
+	</data>
+	<data name="tViewDetails">
+		<value>Просмотреть детали</value>
+	</data>
+	<data name="tEditDoc">
+		<value>Редактировать</value>
+	</data>
+	<data name="tDelDoc">
+		<value>Удалить</value>
+	</data>
+	<data name="FileLibrary">
+		<value>Библиотека</value>
+	</data>
+	<data name="DelCheck">
+		<value>Удалить выделенные</value>
+	</data>
+	<data name="tMoveto">
+		<value>Переместить...</value>
+	</data>
+	<data name="tMoveAlert">
+		<value>Эта папка не может быть перемещена. Попробуйте переместить другую.</value>
+	</data>
+	<data name="DeleteText">
+		<value>Если среди удаляемых элементов есть файлы, то они будут удалены со связанными листами учета времени!</value>
+	</data>
+	<data name="MoveCheck">
+		<value>Переместить выделенные</value>
+	</data>
+	<data name="tbTitle">
+		<value>Перемещение папок и файлов</value>
+	</data>
+	<data name="Save">
+		<value>Переместить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="MoveTo">
+		<value>Переместить в папку</value>
+	</data>
+	<data name="MesDeleteF">
+		<value>Вы хотите удалить эту папку со всем ее содержимым?</value>
+	</data>
+	<data name="MesDeletePop3F">
+		<value>Эта папка используется e-mail ящиком. Вы хотите удалить ее со всем ее содержимым?</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот файл?</value>
+	</data>
+	<data name="tStatus">
+		<value>Статус</value>
+	</data>
+	<data name="tPasteFromClip">
+		<value>Вставить из буфера обмена</value>
+	</data>
+	<data name="tName">
+		<value>Название</value>
+	</data>
+	<data name="tFileStorage">
+		<value>Файлы и папки</value>
+	</data>
+	<data name="tActions">
+		<value>Действия</value>
+	</data>
+	<data name="tRoot">
+		<value>Начало</value>
+	</data>
+	<data name="tWarningAll">
+		<value>Вы действительно хотите удалить все выделенные файлы и папки со всем их содержимым?</value>
+	</data>
+	<data name="tSendFiles">
+		<value>Отправить выделенные</value>
+	</data>
+	<data name="CopyToClipboard">
+		<value>Копировать выделенные</value>
+	</data>
+	<data name="tWereAdded">
+		<value>{0} файл(ов) скопирован(ы) в буфер обмена!</value>
+	</data>
+	<data name="tClose">
+		<value>Закрыть</value>
+	</data>
+	<data name="tThumbnails">
+		<value>Эскизы страниц</value>
+	</data>
+	<data name="tListView">
+		<value>Список</value>
+	</data>
+	<data name="tDetailsView">
+		<value>Детали</value>
+	</data>
+	<data name="tGlobal">
+		<value>Общие файлы и папки</value>
+	</data>
+	<data name="tDescription">
+		<value>Описание</value>
+	</data>
+	<data name="tView">
+		<value>Вид</value>
+	</data>
+	<data name="tCopyLink">
+		<value>Скопировать ссылку в буфер обмена</value>
+	</data>
+	<data name="tEditedBy">
+		<value>Редактирует</value>
+	</data>
+</root>

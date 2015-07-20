@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tViewDoc">
+		<value>Просмотр документа</value>
+	</data>
+	<data name="tDocument">
+		<value>Документ</value>
+	</data>
+	<data name="tLocation">
+		<value>Расположение</value>
+	</data>
+	<data name="tCreatedBy">
+		<value>Создан</value>
+	</data>
+	<data name="tUpdatedBy">
+		<value>Обновил</value>
+	</data>
+	<data name="tDownCount">
+		<value>Количество закачек</value>
+	</data>
+	<data name="tCreated">
+		<value>Дата создания</value>
+	</data>
+	<data name="tLastUpdate">
+		<value>Обновлен</value>
+	</data>
+	<data name="tViewCount">
+		<value>Количество просмотров</value>
+	</data>
+	<data name="tDescription">
+		<value>Описание</value>
+	</data>
+	<data name="tDocumentSize">
+		<value>Размер файла</value>
+	</data>
+	<data name="tVerHistory">
+		<value>Версии файла</value>
+	</data>
+	<data name="tVerNum">
+		<value>№ версии</value>
+	</data>
+	<data name="tUpdDate">
+		<value>Обновлен</value>
+	</data>
+	<data name="tTitle">
+		<value>Название</value>
+	</data>
+	<data name="tSize">
+		<value>Размер</value>
+	</data>
+	<data name="tGenInf">
+		<value>Информация о документе</value>
+	</data>
+	<data name="tbEdit">
+		<value>Редактировать</value>
+	</data>
+	<data name="tDelete">
+		<value>Удалить</value>
+	</data>
+	<data name="tbBack">
+		<value>Библиотека</value>
+	</data>
+	<data name="tbSend">
+		<value>Отправить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы хотите удалить этот документ?</value>
+	</data>
+	<data name="tbAdd">
+		<value>Новое поручение</value>
+	</data>
+	<data name="ViewAll">
+		<value>Просмотреть все</value>
+	</data>
+	<data name="DocInfo">
+		<value>Информация о файле</value>
+	</data>
+	<data name="FullInfo">
+		<value>Полная информация</value>
+	</data>
+	<data name="tProject">
+		<value>Проект</value>
+	</data>
+	<data name="tbBackToProject">
+		<value>Вернуться к проекту</value>
+	</data>
+	<data name="tbBackToIncident">
+		<value>Вернуться к инциденту</value>
+	</data>
+	<data name="tbBackToEvent">
+		<value>Вернуться к мероприятию</value>
+	</data>
+	<data name="tbBackToTask">
+		<value>Вернуться к задаче</value>
+	</data>
+	<data name="tbBackToToDo">
+		<value>Вернуться к поручению</value>
+	</data>
+	<data name="tIncidents">
+		<value>Инциденты</value>
+	</data>
+	<data name="tTasks">
+		<value>Задачи</value>
+	</data>
+	<data name="tToDo">
+		<value>Поручения</value>
+	</data>
+	<data name="tEvents">
+		<value>Мероприятия</value>
+	</data>
+	<data name="tSendObject">
+		<value>Отправка объекта</value>
+	</data>
+	<data name="Send">
+		<value>Отправить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="Selected">
+		<value>Выбраны</value>
+	</data>
+	<data name="Available">
+		<value>Доступны</value>
+	</data>
+	<data name="Group">
+		<value>Группа</value>
+	</data>
+	<data name="Search">
+		<value>Поиск</value>
+	</data>
+	<data name="Users">
+		<value>Пользователи</value>
+	</data>
+	<data name="eMail">
+		<value>E-mail</value>
+	</data>
+	<data name="FindNow">
+		<value>Найти</value>
+	</data>
+	<data name="Add">
+		<value>Добавить</value>
+	</data>
+	<data name="tabMetaData">
+		<value>Настраиваемые поля</value>
+	</data>
+	<data name="tabGeneral">
+		<value>Общее</value>
+	</data>
+	<data name="tStatus">
+		<value>Статус</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Добавить в Избранное</value>
+	</data>
+	<data name="CopyToClipboard">
+		<value>Скопировать документ в буфер обмена</value>
+	</data>
+	<data name="tError">
+		<value>При отправке данных произошли ошибки</value>
+	</data>
+	<data name="tbBackToDocument">
+		<value>Вернуться к документу</value>
+	</data>
+	<data name="tDocuments">
+		<value>Документы</value>
+	</data>
+	<data name="tRoot">
+		<value>Начало</value>
+	</data>
+	<data name="tName">
+		<value>Название</value>
+	</data>
+	<data name="tCreator">
+		<value>Создал</value>
+	</data>
+	<data name="tKeepHistory">
+		<value>Хранить историю изменений</value>
+	</data>
+	<data name="tHistoryIsNot">
+		<value>История изменений файла не ведется</value>
+	</data>
+  <data name="tAddEMails">
+    <value>Получатели</value>
+  </data>
+  <data name="tClose">
+    <value>Закрыть</value>
+  </data>
+  <data name="tSelect">
+    <value>Выбрать</value>
+  </data>
+</root>

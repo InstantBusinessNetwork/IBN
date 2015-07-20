@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;labelAdminPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBoxAdminFirstName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxIisPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 150</value>
+  </data>
+  <data name="labelAdminAccountName.Text" xml:space="preserve">
+    <value>Login Name:</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="textBoxAdminFirstName.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="labelAdminFirstName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxCompanyName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;labelHost.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguage.Name" xml:space="preserve">
+    <value>comboBoxDefaultLanguage</value>
+  </data>
+  <data name="textBoxCompanyName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminAccountName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 20</value>
+  </data>
+  <data name="labelHost.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="textBoxAdminPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 14</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPasswordRe.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelHSplit.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxAdminPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="groupBoxCompany.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPasswordRe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAdminEmail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="groupBoxCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="labelAdminAccountName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminFirstName.Name" xml:space="preserve">
+    <value>textBoxAdminFirstName</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="panelHSplit.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Name" xml:space="preserve">
+    <value>textBoxHost</value>
+  </data>
+  <data name="textBoxAdminPassword.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="groupBoxCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 3</value>
+  </data>
+  <data name="labelHost.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelAdminAccountName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="groupBoxCompany.Text" xml:space="preserve">
+    <value>Company Settings</value>
+  </data>
+  <data name="labelAdminPassword.Text" xml:space="preserve">
+    <value>Choose a password:</value>
+  </data>
+  <data name="&gt;&gt;labelDefaultLanguage.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>494, 476</value>
+  </data>
+  <data name="comboBoxIisPool.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxAdminPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 132</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelDefaultLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAdminFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 14</value>
+  </data>
+  <data name="buttonCancel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminEmail.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelIisIPAddress.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelCompanyName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelAdminLastName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxAdminLastName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxAdminEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 104</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CreateCompanyForm</value>
+  </data>
+  <data name="labelAdminPasswordRe.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxAdminFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="panelHSplit.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguage.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelDefaultLanguage.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBoxCompany.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="comboBoxIisPool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAdminLastName.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAdminEmail.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxAdministrator.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminFirstName.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;labelCompanyName.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="labelAdminLastName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxAdministrator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 196</value>
+  </data>
+  <data name="labelIisPort.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelDefaultLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 14</value>
+  </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="labelIisIPAddress.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelIisPort.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panelHSplit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 1</value>
+  </data>
+  <data name="groupBoxAdministrator.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAdministrator.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="panelHSplit.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelIisPool.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAdminPasswordRe.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxCompanyName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="panelHSplit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 430</value>
+  </data>
+  <data name="&gt;&gt;labelAdminLastName.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBoxIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="checkBoxIsActive.Text" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="labelAdminEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 108</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelDefaultLanguage.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAdminAccountName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 14</value>
+  </data>
+  <data name="textBoxIisPort.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelDefaultLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="buttonOk.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Name" xml:space="preserve">
+    <value>labelHost</value>
+  </data>
+  <data name="&gt;&gt;labelAdminFirstName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;labelAdminFirstName.Name" xml:space="preserve">
+    <value>labelAdminFirstName</value>
+  </data>
+  <data name="labelAdminAccountName.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelCompanyName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelIisIPAddress.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelCompanyName.Name" xml:space="preserve">
+    <value>labelCompanyName</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPassword.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="labelIisPort.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 46</value>
+  </data>
+  <data name="labelAdminPasswordRe.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAdminEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 14</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxCompanyName.Name" xml:space="preserve">
+    <value>textBoxCompanyName</value>
+  </data>
+  <data name="groupBoxAdministrator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 221</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPasswordRe.Name" xml:space="preserve">
+    <value>textBoxAdminPasswordRe</value>
+  </data>
+  <data name="labelAdminFirstName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxCompanyName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="textBoxAdminPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 20</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPassword.Name" xml:space="preserve">
+    <value>labelAdminPassword</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminLastName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="&gt;&gt;labelDefaultLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPasswordRe.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelAdminPasswordRe.Text" xml:space="preserve">
+    <value>Re-enter password:</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxAdminAccountName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBoxIsActive.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelAdminAccountName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 24</value>
+  </data>
+  <data name="textBoxCompanyName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 20</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="textBoxIisPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAdminLastName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Name" xml:space="preserve">
+    <value>panelHSplit</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
+  </data>
+  <data name="labelIisPort.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxHost.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelAdminPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Name" xml:space="preserve">
+    <value>comboBoxIisIPAddress</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminEmail.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAdministrator.Name" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="mainPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelIisPool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;labelDefaultLanguage.Name" xml:space="preserve">
+    <value>labelDefaultLanguage</value>
+  </data>
+  <data name="&gt;&gt;textBoxCompanyName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAdminLastName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 430</value>
+  </data>
+  <data name="labelAdminPasswordRe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 164</value>
+  </data>
+  <data name="labelCompanyName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="checkBoxIsActive.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelAdminPassword.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPasswordRe.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="textBoxAdminEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 124</value>
+  </data>
+  <data name="textBoxCompanyName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxHost.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIisPort.Text" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="textBoxAdminFirstName.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelCompanyName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelAdminFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 52</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxAdminLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="checkBoxIsActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 74</value>
+  </data>
+  <data name="labelCompanyName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelAdminFirstName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxAdminAccountName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 20</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPassword.Name" xml:space="preserve">
+    <value>textBoxAdminPassword</value>
+  </data>
+  <data name="&gt;&gt;labelAdminAccountName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelIisIPAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;labelAdminEmail.Name" xml:space="preserve">
+    <value>labelAdminEmail</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAdministrator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAdminLastName.Text" xml:space="preserve">
+    <value>Last Name:</value>
+  </data>
+  <data name="groupBoxAdministrator.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminPassword.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="labelHost.Text" xml:space="preserve">
+    <value>Host:</value>
+  </data>
+  <data name="textBoxAdminFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 48</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="labelCompanyName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="labelIisPool.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="comboBoxIisIPAddress.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelDefaultLanguage.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 14</value>
+  </data>
+  <data name="labelIisIPAddress.Text" xml:space="preserve">
+    <value>IP Address:</value>
+  </data>
+  <data name="checkBoxIsActive.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 439</value>
+  </data>
+  <data name="labelHost.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxIisPort.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="labelAdminFirstName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;labelCompanyName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelHost.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminPasswordRe.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="buttonOk.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminAccountName.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="textBoxIisPort.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="checkBoxIsActive.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="groupBoxAdministrator.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelAdminEmail.Text" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="labelHost.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelIisPool.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminAccountName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelIisPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAdminPasswordRe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="buttonOk.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelIisPool.Text" xml:space="preserve">
+    <value>IIS Application Pool:</value>
+  </data>
+  <data name="textBoxAdminLastName.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelCompanyName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIisIPAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAdminFirstName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 98</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelIisPort.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminFirstName.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelDefaultLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
+  <data name="textBoxHost.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelAdminEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelIisPool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 179</value>
+  </data>
+  <data name="labelAdminEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxAdminAccountName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminEmail.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxHost.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="labelAdminEmail.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 14</value>
+  </data>
+  <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mainPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxAdminEmail.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxAdminPasswordRe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIisPort.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="textBoxCompanyName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="labelDefaultLanguage.Text" xml:space="preserve">
+    <value>Default language:</value>
+  </data>
+  <data name="labelIisIPAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAdminFirstName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADPdjMA0Xo5ANF6OgDTfj8A035AANSCRgDVg0gA1odMANeITQDYi1IA2Y1VANqQWQDakFoA25JbANyU
+        XwDclWAA3JVhAN2XYgDdmGYA3plmAN6aaADem2kA4J1tAOCebgDfnm8A4J9vAOCgcADhonMA4qN1AOGj
+        dgDipHYA46d7AOSofADjqX0A5Kl9AOatgwDlrYQA5q6EAOWvhwDjr4gA57CHAOSwiQDksYoA6LGJAOSx
+        iwDksosA57KKAOWyjADososA5bONAOWzjgDns44A5bSOAOW0jwDmtI8A5rWQAOm1jwDmtZEA5raRAOm2
+        kADmtpIA6raRAOm3kgDnt5MA57iUAOe4lQDpuJUA67qWAOe6mADoupgA6LuYAOi7mQDsu5gA67uZAOi8
+        mgDpvJoA6b2bAOm9nADrvZwA6b2dAOm+nQDpvp4A6r+eAO2/nQDpv58A6r+fAO7AngDqwKAA7cCfAOrA
+        oQDqwaEA6sGiAO3CpADvw6IA78SkAO7FpgDxyKoA78irAPHIrADwya0A882wAPHNswDyzrQA9dG3APPR
+        uQDz0roA9dbBAPbXwAD33MgA9tzJAPfdygD34M8A+ODPAPnizwD75dQA+uXVAPvm1wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbkRAPzw6NzY0MS8tKikpaEUwJSIeGhURDQoIBgQCACdFMCUiHhoVEQ0KCAYEAgAnRj11dSJ1
+        dXV1dXV1dXUBKUdIdXUjdXV1dXV1dXV1AypLVnV1K3V1HBkUEAx1dQUsTF51dTh1dSAcFxQPdXUHL01g
+        dXVDdXV1dXV1E3V1CTFQZHV1U3V1dXV1dRZ1dQsyUmd1dV11dTgodXUbdXUONVVrdXVidXVDO3V1H3V1
+        EjdXbXV1ZmNfWEk+LiR1dRg5WXF1dXV1dXV1dXV1dXUdPFpydXV1dXV1dXV1dXV1IURbdHRzb2xqaWVh
+        XE5CMyZBdEpbW1tZV1RRT0xKR0VEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelAdminPassword.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxCompanyName.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="labelAdminFirstName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPasswordRe.Name" xml:space="preserve">
+    <value>labelAdminPasswordRe</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminLastName.Name" xml:space="preserve">
+    <value>textBoxAdminLastName</value>
+  </data>
+  <data name="&gt;&gt;labelAdminFirstName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="labelAdminAccountName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mainPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;buttonOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 439</value>
+  </data>
+  <data name="buttonCancel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminLastName.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelIisPool.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxAdminAccountName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="labelHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 101</value>
+  </data>
+  <data name="groupBoxCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 212</value>
+  </data>
+  <data name="checkBoxIsActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 18</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="labelAdminAccountName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 136</value>
+  </data>
+  <data name="&gt;&gt;comboBoxDefaultLanguage.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxAdminLastName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="comboBoxIisPool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 176</value>
+  </data>
+  <data name="textBoxAdminEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAdminEmail.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="comboBoxIisPool.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Name" xml:space="preserve">
+    <value>labelIisPort</value>
+  </data>
+  <data name="labelIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 14</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="panelHSplit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="labelAdminEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAdminLastName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxAdminAccountName.Text" xml:space="preserve">
+    <value>admin</value>
+  </data>
+  <data name="labelIisPool.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIisPool.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAdminPasswordRe.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminEmail.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminAccountName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="comboBoxIisPool.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminAccountName.Name" xml:space="preserve">
+    <value>textBoxAdminAccountName</value>
+  </data>
+  <data name="textBoxAdminEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="buttonCancel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 20</value>
+  </data>
+  <data name="labelIisPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;labelAdminEmail.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="labelAdminLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 80</value>
+  </data>
+  <data name="labelAdminPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 14</value>
+  </data>
+  <data name="textBoxAdminLastName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Name" xml:space="preserve">
+    <value>checkBoxIsActive</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminFirstName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminFirstName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 22</value>
+  </data>
+  <data name="&gt;&gt;labelAdminAccountName.Name" xml:space="preserve">
+    <value>labelAdminAccountName</value>
+  </data>
+  <data name="textBoxAdminPassword.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Name" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Name" xml:space="preserve">
+    <value>buttonOk</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupBoxCompany.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelAdminAccountName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Name" xml:space="preserve">
+    <value>comboBoxIisPool</value>
+  </data>
+  <data name="labelAdminFirstName.Text" xml:space="preserve">
+    <value>First Name:</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelDefaultLanguage.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;labelIisPool.Name" xml:space="preserve">
+    <value>labelIisPool</value>
+  </data>
+  <data name="labelCompanyName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Create a new company</value>
+  </data>
+  <data name="buttonOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 160</value>
+  </data>
+  <data name="labelCompanyName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="labelAdminPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 14</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBoxAdminFirstName.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelIisPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 153</value>
+  </data>
+  <data name="checkBoxIsActive.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminLastName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxIisIPAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="textBoxAdminPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxCompanyName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="textBoxAdminAccountName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="&gt;&gt;labelAdminLastName.Name" xml:space="preserve">
+    <value>labelAdminLastName</value>
+  </data>
+  <data name="textBoxIisPort.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Name" xml:space="preserve">
+    <value>labelIisIPAddress</value>
+  </data>
+  <data name="labelDefaultLanguage.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="labelDefaultLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="groupBoxAdministrator.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAdminPasswordRe.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="labelAdminLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 14</value>
+  </data>
+  <data name="comboBoxIisIPAddress.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="comboBoxIisPool.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminFirstName.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="labelAdminLastName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAdminLastName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;labelAdminPasswordRe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAdminAccountName.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBoxCompany.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="textBoxHost.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminEmail.Name" xml:space="preserve">
+    <value>textBoxAdminEmail</value>
+  </data>
+  <data name="labelAdminPassword.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Name" xml:space="preserve">
+    <value>textBoxIisPort</value>
+  </data>
+  <data name="labelAdminAccountName.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAdminPassword.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="labelAdminPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelCompanyName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 14</value>
+  </data>
+  <data name="labelHost.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAdministrator.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelAdminLastName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="buttonOk.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxAdminAccountName.Parent" xml:space="preserve">
+    <value>groupBoxAdministrator</value>
+  </data>
+  <data name="labelIisIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 127</value>
+  </data>
+  <data name="textBoxAdminLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 76</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBoxIsActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBoxAdministrator.Text" xml:space="preserve">
+    <value>Administrator Settings</value>
+  </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

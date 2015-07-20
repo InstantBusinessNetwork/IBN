@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="ApproveSelectedButton" text="{IbnFramework.Incident:tApproveChecked}" imageUrl="~/Layouts/Images/icon-key.gif" commandName="MC_Pend_Selected_Approve" itemSplitter="Right"></Button>
+			<Button id="AddToExistSelectedButton" text="{IbnFramework.Incident:tAddToExist}" imageUrl="~/Layouts/Images/icons/incident_plus.gif" commandName="MC_Pend_Selected_AddToExist" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Incident:tDeleteChecked}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_Pend_Selected_Delete" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Pend_Columns" primaryKey="PendingMessageId">
+				<Column id="3C5E3FCD-4C06-4577-827A-5AC6E49B7B16" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_Pend_NewIssue" paddingRight="5" />
+					<Item imageUrl="~/Layouts/Images/icons/incident_plus.gif" commandName="MC_Pend_Item_AddToExist" paddingRight="5" />
+					<Item imageUrl="~/Layouts/Images/icon-key.gif" commandName="MC_Pend_Item_Approve" paddingRight="5" />
+					<Item imageUrl="~/layouts/Images/delete.gif" commandName="MC_Pend_Item_Delete" paddingRight="5" />
+				</Column>
+				<Column id="colId" type="default" width="70" title="{IbnFramework.Incident:tPendId}" sortExpression="PendingMessageId" dataField="PendingMessageId" />
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.Incident:tPendSubj}" sortExpression="Subject" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.PendingMessage.Subject.ascx" />
+				<Column id="colFrom" type="default" width="150" title="{IbnFramework.Incident:tPendFrom}" sortExpression="From" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.PendingMessage.From.ascx" />
+				<Column id="colTo" type="default" width="150" title="{IbnFramework.Incident:tPendTo}" sortExpression="To" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.PendingMessage.To.ascx" />
+				<Column id="colCreated" type="default" width="150" title="{IbnFramework.Incident:tPendCreated}" sortExpression="Created" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.PendingMessage.Created.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Pend_NewIssue">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentEdit.aspx?EMailMessageId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_Pend_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:tDeleteCheckedWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteSelectedPendingHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Pend_Selected_Approve">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:tApproveCheckedWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.ApproveSelectedPendingHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Pend_Selected_AddToExist">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tSelectIncident}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Incident&amp;GridId=[ClientParam:GridId]&amp;ReturnCommand=MC_Pend_Selected_AddToExistServer</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>38</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Pend_Item_AddToExist">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tSelectIncident}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Incident&amp;ObjectId=[ClientParam:primaryKeyId]&amp;ReturnCommand=MC_Pend_Selected_AddToExistServer</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>38</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Pend_Selected_AddToExistServer">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.AddToExistSelectedPendingHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Pend_Item_Approve">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:tApproveWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.ApproveItemPendingHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Pend_Item_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:tDeleteWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteItemPendingHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

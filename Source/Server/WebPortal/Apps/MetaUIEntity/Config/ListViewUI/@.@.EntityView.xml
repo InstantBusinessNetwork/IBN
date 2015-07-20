@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Text text="{IbnFramework.Common:Information}"	cssClass="ibn-WPTitle"></Text>
+			<Menu id="ActionsMenu" text="{IbnFramework.Global:_mc_Actions}" align="Right">
+				<Button id="EditButton" text="{IbnFramework.Common:Edit}"  imageUrl="~/Images/IbnFramework/edit.gif" commandName="EntityEdit" ></Button>
+				<Button id="DeleteButton" text="{IbnFramework.Common:Delete}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="EntityDelete"></Button>
+				<Button id="ListButton" text="{IbnFramework.Global:_mc_BackToList}" imageUrl="~/Images/IbnFramework/cancel.gif" commandName="EntityList" ></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="EntityEdit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName={QueryString:ClassName}&amp;ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+			</Command>
+			<Command id="EntityDelete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteEntityHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			</Command>
+			<Command id="EntityList">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName={QueryString:ClassName}</Url>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

@@ -1,0 +1,1 @@
+<%@ Application Inherits="Mediachase.IBN.Web.Global" Language="C#" Codebehind="Global.asax.cs" %>

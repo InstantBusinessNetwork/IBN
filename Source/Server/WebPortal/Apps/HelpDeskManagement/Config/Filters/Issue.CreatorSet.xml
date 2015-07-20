@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Filters>
+	<FilterElementCollection id="CreatorSet" name="{IbnFramework.Incident:CreatorSet}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<FilterElement>
+			<Source>IncidentCreatorId</Source>
+			<ValueIsTemplate>true</ValueIsTemplate>
+			<Value xsi:type="xsd:string">{Security:CurrentUserId}</Value>
+		</FilterElement>
+	</FilterElementCollection>
+</Filters>

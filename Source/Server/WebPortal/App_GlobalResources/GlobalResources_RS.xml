@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GlobalResources>
+	<String name="Edition">RS</String>
+	<String name="DocumentationLink">http://friends.pmbox.ru/files/folders/ibn/tags/IBN+4.7+_14043E043A0443043C0435043D0442043004460438044F04_/default.aspx</String>
+	<Boolean name="ShowQuickHelpLink">False</Boolean>
+	<Boolean name="ShowDocumentationLink">False</Boolean>
+	<Boolean name="ShowForumLink">False</Boolean>
+	<Boolean name="ShowSupportLink">False</Boolean>
+	<String name="QuickHelpLink"></String>
+	<String name="QuickHelpTextKey"></String>
+	<Boolean name="ShowTutorialLink">False</Boolean>
+	<String name="TutorialLink"></String>
+	<String name="ForumsLink"></String>
+
+	<Boolean name="LoggedInCopyrightVisible">False</Boolean>
+	<String name="CompanyWebUrl">http://radius-soft.ru/</String>
+	<String name="CopyrightText">© 2006&amp;mdash;2011 ООО «Радиус-Софт».</String>
+	<Boolean name="PrivacyLinkVisible">False</Boolean>
+	<String name="PrivacyLink"></String>
+	<String name="PrivacyStatementTextKey"></String>
+	<Boolean name="TermsOfUseVisible">False</Boolean>
+	<String name="TermsOfUseLink"></String>
+	<String name="TermsOfUseTextKey"></String>
+	<String name="VersionPostfix"> RS</String>
+
+	<String name="SupportEmail">sup@magrul.com</String>
+	<String name="SalesEmail"></String>
+
+	<String name="LicenseExpiredText">Срок действия вашей лицензии закончен!</String>
+	<String name="SendToMCPurchase">Пожалуйста, обратитесь к поставщику решения компании «Радиус-Софт» для покупки коммерческой версии продукта.</String>
+	<String name="BuyProductText">По вопросам покупки MagRul обратитесь к поставщику решения компании «Радиус-Софт»</String>
+	<String name="TechText">По вопросам технической поддержки MagRul обратитесь к поставщику решения компании «Радиус-Софт»</String>
+	<String name="PhonesText"></String>
+
+	<String name="IMGroupLogoUrl">~/layouts/images/default_group_image.jpg</String>
+	<String name="BottomsTextResourceKey">{IbnFramework.Global:bottomtextsingleMagRul}</String>
+	<String name="AttachFromProductUrl">../layouts/images/attachfrommagrul.png</String>
+	<Boolean name="TableContactUsVisible">False</Boolean>
+	<Boolean name="TableFeedbackVisible">False</Boolean>
+	<String name="SingleCompanyContactUsResourceKey">Single</String>
+
+	<String name="HelpBottomTextKey">{IbnFramework.Global:HelpTextBottom}</String>
+	<String name="HelpBottomPhoneTextKey">{IbnFramework.Global:HelpTextBottomPhone}</String>
+	<String name="SupportPhone"></String>
+
+	<Boolean name="BuyLinkVisible">False</Boolean>
+	<String name="BuyNowLink"></String>
+</GlobalResources>

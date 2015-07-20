@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- List of additional addresses for contact view page -->
+<ListViewUI>
+	<Toolbar>
+		<add beforeId="DeleteSelectedAddress">
+			<Button id="NewAddress" text="{IbnFramework.Client:AddressNew}" imageUrl="~/Layouts/images/NEWITEM.GIF" commandName="MC_OrgAddress_NewItem"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="CM_Adresses_Columns">
+			<Column id="AddressColumn" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+				<add>
+					<Item imageUrl="~/Layouts/Images/accept_green.gif" commandName="MC_OrgAddress_SetDefault" paddingRight="5" tooltip="{IbnFramework.Client:SetDefaultAddress}" />
+				</add>
+			</Column>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_OrgAddress_NewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:AddressNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className=Address&amp;ContainerFieldName=OrganizationId&amp;ContainerId={QueryString:ObjectId}</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_OrgAddress_SetDefault">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.SetDefaultOrgAddressEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.SetDefaultOrgAddressHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

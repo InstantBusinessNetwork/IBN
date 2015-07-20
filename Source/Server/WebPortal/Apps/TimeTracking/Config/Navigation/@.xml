@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MMain" create="True">
+			<add>
+				<Link order="200" id="MMain022" text="{IbnShell.Navigation:tMyTimesh}" iconUrl="" iconCss="" command="cmd_MMain92">
+					<Link order="300" id="MMain03" text="{IbnShell.Navigation:tMyTimeshDetails}" iconUrl="" iconCss="" command="cmd_MMain9" />
+					<Link order="900" id="MMain91" text="{IbnFramework.TimeTracking:_mc_TT_MyRejectedGroupByWeekProject}" iconUrl="" iconCss="" command="cmd_MMain91" />
+				</Link>
+			</add>
+		</Tab>
+		<Tab id="MResActs" create="True">
+			<add>
+				<Link order="600" id="MResActs6" text="{IbnFramework.TimeTracking:_mc_ManagerTimesh}" iconUrl="" iconCss="" command="cmd_MResActs60">
+					<Link order="100" id="MResActs61" text="{IbnFramework.TimeTracking:_mc_ManagerGroupByUserProject}" iconUrl="" iconCss="" command="cmd_MResActs61" />
+					<Link order="200" id="MResActs62" text="{IbnFramework.TimeTracking:_mc_ManagerGroupByProjectUser}" iconUrl="" iconCss="" command="cmd_MResActs62" />
+				</Link>
+			</add>
+		</Tab>
+		<Tab id="MAdmin" create="True">
+			<add>
+				<Link order="700" id="MAdmin7" text="{IbnFramework.TimeTracking:TTConfig}" iconUrl="" iconCss="" command="cmd_MAdmin7">
+					<Link order="100" id="MAdmin71" text="{IbnFramework.TimeTracking:TTBlock}" iconUrl="" iconCss="" command="cmd_MAdmin71" />
+					<Link order="200" id="MAdmin72" text="{IbnFramework.TimeTracking:TTEntry}" iconUrl="" iconCss="" command="cmd_MAdmin72" />
+					<Link order="300" id="MAdmin73" text="{IbnFramework.TimeTracking:TTBlockTypeInstance}" iconUrl="" iconCss="" command="cmd_MAdmin73" />
+					<Link order="400" id="MAdmin74" text="{IbnFramework.TimeTracking:BlockTypes}" iconUrl="" iconCss="" command="cmd_MAdmin74" />
+				</Link>
+			</add>
+		</Tab>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MMain9">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingNew.aspx?ViewName=TT_MyGroupByWeekProject</Url>
+			</Command>
+			<Command id="cmd_MMain91">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingNew.aspx?ViewName=TT_MyRejectedGroupByWeekProject</Url>
+			</Command>
+			<Command id="cmd_MMain92">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingWeek.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.TTModuleEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+
+			<Command id="cmd_MResActs60">
+				<CommandType></CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.TTModuleEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs61">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingNew.aspx?ViewName=TT_ManagerGroupByUserProject</Url>
+			</Command>
+			<Command id="cmd_MResActs62">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingNew.aspx?ViewName=TT_ManagerGroupByProjectUser</Url>
+			</Command>
+
+			<Command id="cmd_MAdmin7">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Admin/default.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.TTConfigHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin71">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaDataBase/Pages/Admin/MetaClassView.aspx?class=TimeTrackingBlock</Url>
+			</Command>
+			<Command id="cmd_MAdmin72">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaDataBase/Pages/Admin/MetaClassView.aspx?class=TimeTrackingEntry</Url>
+			</Command>
+			<Command id="cmd_MAdmin73">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaDataBase/Pages/Admin/MetaClassView.aspx?class=TimeTrackingBlockTypeInstance</Url>
+			</Command>
+			<Command id="cmd_MAdmin74">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/TimeTracking/Pages/Admin/TimeTrackingBlockTypeList.aspx</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

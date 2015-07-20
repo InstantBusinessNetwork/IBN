@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dictionaries>
+	<dictionary name="BasePlanSlot" lang="single">
+		<item BasePlanSlotId="0" Name="Текущий" IsDefault="0" />
+		<item BasePlanSlotId="1" Name="Базовый план " IsDefault="1" />
+		<item BasePlanSlotId="2" Name="Базовый план 2" IsDefault="0" />
+		<item BasePlanSlotId="3" Name="Базовый план 3" IsDefault="0" />
+		<item BasePlanSlotId="4" Name="Базовый план 4" IsDefault="0" />
+		<item BasePlanSlotId="5" Name="Базовый план 5" IsDefault="0" />
+		<item BasePlanSlotId="6" Name="Базовый план 6" IsDefault="0" />
+		<item BasePlanSlotId="7" Name="Базовый план 7" IsDefault="0" />
+		<item BasePlanSlotId="8" Name="Базовый план 8" IsDefault="0" />
+		<item BasePlanSlotId="9" Name="Базовый план 9" IsDefault="0" />
+		<item BasePlanSlotId="10" Name="Базовый план 10" IsDefault="0" />
+	</dictionary>
+	<dictionary name="BusinessScore" lang="single">
+		<item BusinessScoreId="1" Key="NetIncome" Name="Чистый доход" />
+	</dictionary>
+	<dictionary name="CATEGORIES" lang="single">
+		<item CategoryId="1" CategoryName="Категория 1" />
+		<item CategoryId="2" CategoryName="Категория 2" />
+	</dictionary>
+	<dictionary name="CONTENT_TYPES" lang="single">
+		<item ContentTypeId="1" Extension="" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Бинарный файл" />
+		<item ContentTypeId="2" Extension="txt" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/plain" FriendlyName="Текстовый документ" />
+		<item ContentTypeId="3" Extension="xml" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/xml" FriendlyName="XML документ" />
+		<item ContentTypeId="4" Extension="htm" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/html" FriendlyName="HTML Document" />
+		<item ContentTypeId="5" Extension="html" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/html" FriendlyName="HTML Document" />
+		<item ContentTypeId="6" Extension="url" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/url" FriendlyName="Ссылка" />
+		<item ContentTypeId="7" Extension="mht" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="message/rfc822" FriendlyName="Документ MHT" />
+		<item ContentTypeId="8" Extension="eml" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="message/rfc822" FriendlyName="Письмо" />
+		<item ContentTypeId="9" Extension="msg" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/msoutlook" FriendlyName="Сообщение MS Outlook" />
+		<item ContentTypeId="10" Extension="avi" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/avi" FriendlyName="AVI Видео" />
+		<item ContentTypeId="11" Extension="mpg" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/mpeg" FriendlyName="MPEG Видео" />
+		<item ContentTypeId="12" Extension="wmv" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/x-ms-wmv" FriendlyName="WMV Видео" />
+		<item ContentTypeId="13" Extension="bmp" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/bmp" FriendlyName="BMP изображение" />
+		<item ContentTypeId="14" Extension="gif" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/gif" FriendlyName="GIF изображение" />
+		<item ContentTypeId="15" Extension="jpg" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/jpeg" FriendlyName="JPG изображение" />
+		<item ContentTypeId="16" Extension="png" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/png" FriendlyName="PNG изображение" />
+		<item ContentTypeId="17" Extension="psd" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/x-photoshop" FriendlyName="PSD изображение" />
+		<item ContentTypeId="18" Extension="tif" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/tif" FriendlyName="TIF изображение" />
+		<item ContentTypeId="19" Extension="doc" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-word" FriendlyName="Документ MS Word" />
+		<item ContentTypeId="20" Extension="docx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.wordprocessingml.document" FriendlyName="Документ MS Word 2007" />
+		<item ContentTypeId="21" Extension="mdb" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/vnd.ms-access" FriendlyName="База данных MS Access" />
+		<item ContentTypeId="22" Extension="mpp" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-project" FriendlyName="Файл MS Project" />
+		<item ContentTypeId="23" Extension="ppt" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-powerpoint" FriendlyName="Презентация MS Power Point" />
+		<item ContentTypeId="24" Extension="pptx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.presentationml.presentation" FriendlyName="Презентация MS Power Point 2007" />
+		<item ContentTypeId="25" Extension="pub" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/x-mspublisher" FriendlyName="Файл MS Publisher" />
+		<item ContentTypeId="26" Extension="vsd" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.visio" FriendlyName="Документ MS Visio" />
+		<item ContentTypeId="27" Extension="xls" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-excel" FriendlyName="Таблица MS Excel" />
+		<item ContentTypeId="28" Extension="xlsx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" FriendlyName="Таблица MS Excel 2007" />
+		<item ContentTypeId="29" Extension="pdf" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/pdf" FriendlyName="PDF документ" />
+		<item ContentTypeId="30" Extension="zip" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/zip" FriendlyName="WinZIP архив" />
+		<item ContentTypeId="31" Extension="rar" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/rar" FriendlyName="WinRAR архив" />
+		<item ContentTypeId="32" Extension="dll" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Динамическая библиотека" />
+		<item ContentTypeId="33" Extension="exe" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Исполняемый файл" />
+	</dictionary>
+	<dictionary name="EMailIncidentMapping" lang="single">
+		<item EMailIncidentMappingId="1" Name="По умолчанию" Type="Mediachase.IBN.Business.EMail.DefaultEMailIncidentMapping, Mediachase.IBN.Business" UserControl="EMailMCDefaultMapping.ascx" />
+	</dictionary>
+	<dictionary name="INCIDENT_SEVERITY" lang="single">
+		<item SeverityId="1" SeverityName="Ничего" />
+		<item SeverityId="2" SeverityName="Отказ компьютера" />
+		<item SeverityId="3" SeverityName="Отказ системы" />
+		<item SeverityId="4" SeverityName="Отказ приложения" />
+		<item SeverityId="5" SeverityName="Сбой приложения" />
+		<item SeverityId="6" SeverityName="Ошибка приложения" />
+		<item SeverityId="7" SeverityName="Сообщение об ошибке" />
+		<item SeverityId="8" SeverityName="Снижение быстродействия системы" />
+		<item SeverityId="9" SeverityName="Прочее" />
+	</dictionary>
+	<dictionary name="INCIDENT_STATE_LANGUAGE" lang="multi">
+		<item StateId="1" StateName="Новый" />
+		<item StateId="2" StateName="Открыт" />
+		<item StateId="3" StateName="Просрочен" />
+		<item StateId="4" StateName="Приостановлен" />
+		<item StateId="5" StateName="Закрыт" />
+		<item StateId="6" StateName="Открыто повторно" />
+		<item StateId="7" StateName="На контроле" />
+	</dictionary>
+	<dictionary name="INCIDENT_TYPES" lang="single">
+		<item TypeId="1" TypeName="Не установлен" />
+		<item TypeId="2" TypeName="Обнаружена ошибка" />
+		<item TypeId="3" TypeName="Недокументированная возможность" />
+		<item TypeId="4" TypeName="Пожелания и предложения" />
+		<item TypeId="5" TypeName="Предложение по улучшению интерфейса" />
+	</dictionary>
+	<dictionary name="IncidentBox" lang="single" order="2">
+		<item IncidentBoxId="1" Name="Папка 1" IdentifierMask="BOX1" IsDefault="1" ManagerId="{ManagerId}" ControllerId="[=NULL=]" Document="&lt;IncidentBoxDocument&gt;&lt;Block Type=&quot;Mediachase.IBN.Business.EMail.GeneralIncidentBoxBlock, Mediachase.IBN.Business&quot;&gt;&lt;Param Name=&quot;Manager&quot; Type=&quot;System.Int32, mscorlib&quot; Value=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;int&amp;gt;{ManagerId}&amp;lt;/int&amp;gt;&quot; /&gt;&lt;Param Name=&quot;CalendarId&quot; Type=&quot;System.Int32, mscorlib&quot; Value=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;int&amp;gt;1&amp;lt;/int&amp;gt;&quot; /&gt;&lt;/Block&gt;&lt;/IncidentBoxDocument&gt;" CalendarId="1" ExpectedDuration="10080" ExpectedResponseTime="1440" Index="0" />
+	</dictionary>
+	<dictionary name="PROJECT_PHASES" lang="single">
+		<item PhaseId="1" PhaseName="Анализ" Weight="100" />
+		<item PhaseId="2" PhaseName="Проектирование" Weight="200" />
+		<item PhaseId="3" PhaseName="Реализация" Weight="300" />
+		<item PhaseId="4" PhaseName="Релиз" Weight="400" />
+		<item PhaseId="5" PhaseName="Доработка" Weight="500" />
+	</dictionary>
+	<dictionary name="RISK_LEVELS" lang="single">
+		<item RiskLevelId="1" RiskLevelName="Не определен" Weight="0" />
+	</dictionary>
+	<dictionary name="CALENDARS" lang="single">
+		<item CalendarId="1" CalendarName="24/7" ProjectId="[=NULL=]" TimeZoneId="0" />
+	</dictionary>
+	<dictionary name="DOCUMENT_STATUS" lang="single">
+		<item StatusId="1" StatusName="[ Не установлен ]" IsInternal="1" StateId="[=NULL=]" />
+		<item StatusId="2" StatusName="На рассмотрении" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="3" StatusName="Утвержден" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="4" StatusName="Первая редакция" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="5" StatusName="Утверждение первой редакции" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="6" StatusName="Вторая редакция" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="7" StatusName="Утверждение второй редакции" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="8" StatusName="Финальная редакция" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="9" StatusName="Утверждение финальной редакции" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="10" StatusName="PDF версия" IsInternal="0" StateId="[=NULL=]" />
+	</dictionary>
+	<dictionary name="OBJECT_FORMS" lang="single">
+		<item FormId="1" ObjectTypeId="3" FormName="Общий" />
+		<item FormId="2" ObjectTypeId="3" FormName="Исследования" />
+		<item FormId="3" ObjectTypeId="3" FormName="Творческий проект" />
+		<item FormId="4" ObjectTypeId="3" FormName="Поддержка клиентов" />
+		<item FormId="5" ObjectTypeId="3" FormName="Проектирование" />
+		<item FormId="6" ObjectTypeId="3" FormName="Документация" />
+		<item FormId="7" ObjectTypeId="3" FormName="Кадры" />
+		<item FormId="8" ObjectTypeId="3" FormName="ИТ инфраструктура/Сеть" />
+		<item FormId="9" ObjectTypeId="3" FormName="Маркетинговое исследование" />
+		<item FormId="10" ObjectTypeId="3" FormName="Совершенствование технологий" />
+		<item FormId="11" ObjectTypeId="3" FormName="Выпуск нового продукта" />
+		<item FormId="12" ObjectTypeId="3" FormName="Обеспечение качества" />
+		<item FormId="13" ObjectTypeId="3" FormName="Контроль качества" />
+		<item FormId="14" ObjectTypeId="3" FormName="Системная интеграция" />
+		<item FormId="15" ObjectTypeId="3" FormName="Программа обучения персонала" />
+		<item FormId="16" ObjectTypeId="3" FormName="Разработка веб сайта" />
+	</dictionary>
+	<dictionary name="OBJECT_ROLES" lang="single">
+		<item ObjectRoleId="0" ObjectRoleName="Все роли" ObjectTypeId="[=NULL=]" />
+		<item ObjectRoleId="1" ObjectRoleName="Менеджер проекта" ObjectTypeId="3" />
+		<item ObjectRoleId="2" ObjectRoleName="Исполнительный менеджер проекта" ObjectTypeId="3" />
+		<item ObjectRoleId="3" ObjectRoleName="Член команды исполнителей проекта" ObjectTypeId="3" />
+		<item ObjectRoleId="4" ObjectRoleName="Спонсор проекта" ObjectTypeId="3" />
+		<item ObjectRoleId="5" ObjectRoleName="Заинтересованное в реализации проекта лицо" ObjectTypeId="3" />
+		<item ObjectRoleId="6" ObjectRoleName="Организатор мероприятия" ObjectTypeId="4" />
+		<item ObjectRoleId="7" ObjectRoleName="Участник мероприятия" ObjectTypeId="4" />
+		<item ObjectRoleId="8" ObjectRoleName="Менеджер задачи" ObjectTypeId="5" />
+		<item ObjectRoleId="9" ObjectRoleName="Исполнитель задачи" ObjectTypeId="5" />
+		<item ObjectRoleId="10" ObjectRoleName="Менеджер поручения" ObjectTypeId="6" />
+		<item ObjectRoleId="11" ObjectRoleName="Исполнитель поручения" ObjectTypeId="6" />
+		<item ObjectRoleId="12" ObjectRoleName="Автор сообщения об инциденте" ObjectTypeId="7" />
+		<item ObjectRoleId="13" ObjectRoleName="Менеджер инцидента" ObjectTypeId="7" />
+		<item ObjectRoleId="14" ObjectRoleName="Исполнитель инцидента" ObjectTypeId="7" />
+		<item ObjectRoleId="15" ObjectRoleName="Менеджер документа" ObjectTypeId="16" />
+		<item ObjectRoleId="16" ObjectRoleName="Исполнитель документа" ObjectTypeId="16" />
+		<item ObjectRoleId="17" ObjectRoleName="Ответственный за решение инцидента" ObjectTypeId="7" />
+		<item ObjectRoleId="18" ObjectRoleName="Контроллер инцидента" ObjectTypeId="7" />
+		<item ObjectRoleId="19" ObjectRoleName="Исполнитель назначения" ObjectTypeId="30" />
+		<item ObjectRoleId="20" ObjectRoleName="Менеджер назначения" ObjectTypeId="30" />
+	</dictionary>
+	<dictionary name="ACTIVATION_TYPE_LANGUAGE" lang="multi">
+		<item ActivationTypeId="1" ActivationTypeName="Проверять зависимости" />
+		<item ActivationTypeId="2" ActivationTypeName="Автоматически без проверок" />
+		<item ActivationTypeId="3" ActivationTypeName="Вручную" />
+	</dictionary>
+	<dictionary name="COMPLETION_REASON_LANGUAGE" lang="multi">
+		<item ReasonId="-1" ReasonName="Не завершено" />
+		<item ReasonId="1" ReasonName="Завершено" />
+		<item ReasonId="2" ReasonName="Завершено автоматически" />
+		<item ReasonId="3" ReasonName="Приостановлено" />
+		<item ReasonId="4" ReasonName="Приостановлено автоматически" />
+	</dictionary>
+	<dictionary name="COMPLETION_TYPE_LANGUAGE" lang="multi">
+		<item CompletionTypeId="1" CompletionTypeName="Каждый должен завершить" />
+		<item CompletionTypeId="2" CompletionTypeName="Любой может завершить" />
+	</dictionary>
+	<dictionary name="CONSTRAINT_TYPE_LANGUAGE" lang="multi">
+		<item ConstraintTypeId="0" ConstraintTypeName="Как можно раньше" />
+		<item ConstraintTypeId="4" ConstraintTypeName="Начать не ранее" />
+		<item ConstraintTypeId="5" ConstraintTypeName="Начать не позднее" />
+	</dictionary>
+	<dictionary name="EVENT_TYPE_LANGUAGE" lang="multi">
+		<item TypeId="1" TypeName="Мероприятие" />
+		<item TypeId="2" TypeName="Совещание" />
+		<item TypeId="3" TypeName="Деловая встреча" />
+	</dictionary>
+	<dictionary name="OBJECT_MENUS_LANGUAGE" lang="multi">
+		<item MenuId="1" MenuXML="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;Menus&gt;&lt;Menu Name=&quot;Действия&quot; PictureUrl=&quot;~/Layouts/Images/downbtn.gif&quot; Pos=&quot;1&quot;&gt;&lt;Item Name=&quot;Редактировать инцидент&quot; PictureUrl=&quot;~/Layouts/Images/edit.gif&quot; Pos=&quot;1&quot; NavigateUrl=&quot;~/Incidents/IncidentEdit.aspx?IncidentId=&quot; /&gt;&lt;Item Name=&quot;Вернуться к списку инцидентов&quot; PictureUrl=&quot;~/Layouts/Images/cancel.gif&quot; Pos=&quot;2&quot; NavigateUrl=&quot;~/Incidents/default.aspx&quot;/&gt;&lt;/Menu&gt;&lt;/Menus&gt;" />
+	</dictionary>
+	<dictionary name="OBJECT_STATE_LANGUAGE" lang="multi">
+		<item StateId="1" StateName="Предстоит" />
+		<item StateId="2" StateName="Активно" />
+		<item StateId="3" StateName="Просрочено" />
+		<item StateId="4" StateName="Приостановлено" />
+		<item StateId="5" StateName="Завершено" />
+		<item StateId="6" StateName="Открыто повторно" />
+		<item StateId="7" StateName="На контроле" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_PAGES_LANGUAGE" lang="multi">
+		<item ViewPageLanguageId="2" ViewPageId="2" Title="Просмотр инцидента" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_TABS_LANGUAGE" lang="multi">
+		<item TabId="1" Title="Общее" />
+		<item TabId="2" Title="Информация" />
+		<item TabId="3" Title="Библиотека" />
+		<item TabId="4" Title="Финансы" />
+		<item TabId="5" Title="Обсуждение" />
+	</dictionary>
+	<dictionary name="PRIORITY_LANGUAGE" lang="multi">
+		<item PriorityId="0" PriorityName="Низкий" />
+		<item PriorityId="500" PriorityName="Нормальный" />
+		<item PriorityId="750" PriorityName="Высокий" />
+		<item PriorityId="900" PriorityName="Очень высокий" />
+		<item PriorityId="1000" PriorityName="Экстренный" />
+	</dictionary>
+	<dictionary name="PROJECT_STATUS_LANGUAGE" lang="multi">
+		<item StatusId="1" StatusName="Активен" />
+		<item StatusId="2" StatusName="Приостановлен" />
+		<item StatusId="3" StatusName="Завершён" />
+		<item StatusId="4" StatusName="На рассмотрении" />
+		<item StatusId="5" StatusName="Под угрозой" />
+		<item StatusId="6" StatusName="Отменён" />
+	</dictionary>
+	<dictionary name="TIMEZONES_LANGUAGE" lang="multi">
+		<item TimeZoneId="0" DisplayName="(GMT)" />
+		<item TimeZoneId="1" DisplayName="(GMT+04:30) Кабул" />
+		<item TimeZoneId="2" DisplayName="(GMT-09:00) Аляска" />
+		<item TimeZoneId="3" DisplayName="(GMT+03:00) Эль-Кувейт, Эр-Рияд" />
+		<item TimeZoneId="4" DisplayName="(GMT+04:00) Абу-Даби, Маскат" />
+		<item TimeZoneId="5" DisplayName="(GMT+03:00) Багдад" />
+		<item TimeZoneId="6" DisplayName="(GMT-04:00) Атлантическое время (Канада)" />
+		<item TimeZoneId="7" DisplayName="(GMT+09:30) Дарвин" />
+		<item TimeZoneId="8" DisplayName="(GMT+10:00) Канберра, Мельбурн, Сидней" />
+		<item TimeZoneId="9" DisplayName="(GMT-01:00) Азорские о-ва" />
+		<item TimeZoneId="10" DisplayName="(GMT-06:00) Саскачеван" />
+		<item TimeZoneId="11" DisplayName="(GMT-01:00) Кабо-Верде" />
+		<item TimeZoneId="12" DisplayName="(GMT+04:00) Баку, Тбилиси, Ереван" />
+		<item TimeZoneId="13" DisplayName="(GMT+09:30) Аделаида" />
+		<item TimeZoneId="14" DisplayName="(GMT-06:00) Центральная Америка" />
+		<item TimeZoneId="15" DisplayName="(GMT+06:00) Астана, Дака" />
+		<item TimeZoneId="16" DisplayName="(GMT+01:00) Белград, Братислава, Будапешт, Любляна, Прага" />
+		<item TimeZoneId="17" DisplayName="(GMT+01:00) Сараево, Скопье, Варшава, Загреб" />
+		<item TimeZoneId="18" DisplayName="(GMT+11:00) Магадан, Соломоновы о-ва, Новая Каледония" />
+		<item TimeZoneId="19" DisplayName="(GMT-06:00) Центральное время (США, Канада)" />
+		<item TimeZoneId="20" DisplayName="(GMT+08:00) Пекин, Чунцин, Гонконг, Урумчи" />
+		<item TimeZoneId="21" DisplayName="(GMT-12:00) Международная линия смены дат" />
+		<item TimeZoneId="22" DisplayName="(GMT+03:00) Найроби" />
+		<item TimeZoneId="23" DisplayName="(GMT+10:00) Брисбен" />
+		<item TimeZoneId="24" DisplayName="(GMT+02:00) Бухарест" />
+		<item TimeZoneId="25" DisplayName="(GMT-03:00) Бразилиа" />
+		<item TimeZoneId="26" DisplayName="(GMT-05:00) Восточное время (США, Канада)" />
+		<item TimeZoneId="27" DisplayName="(GMT+02:00) Каир" />
+		<item TimeZoneId="28" DisplayName="(GMT+05:00) Екатеринбург" />
+		<item TimeZoneId="29" DisplayName="(GMT+12:00) Фиджи, Камчатка, Маршалловы о-ва" />
+		<item TimeZoneId="30" DisplayName="(GMT+02:00) Хельсинки, Киев, Рига, София, Таллин, Вильнюс" />
+		<item TimeZoneId="31" DisplayName="(GMT) Время по Гинвичу : Дублин, Эдинбург, Лиссабон, Лондон" />
+		<item TimeZoneId="32" DisplayName="(GMT-03:00) Гренландия" />
+		<item TimeZoneId="33" DisplayName="(GMT) Касабланка, Монровия" />
+		<item TimeZoneId="34" DisplayName="(GMT+02:00) Афины, Стамбул, Минск" />
+		<item TimeZoneId="35" DisplayName="(GMT-10:00) Гавайские о-ва" />
+		<item TimeZoneId="36" DisplayName="(GMT+05:30) Мадрас, Калькутта, Бомбей, Дели" />
+		<item TimeZoneId="37" DisplayName="(GMT+03:30) Тегеран" />
+		<item TimeZoneId="38" DisplayName="(GMT+02:00) Иерусалим" />
+		<item TimeZoneId="39" DisplayName="(GMT+09:00) Сеул" />
+		<item TimeZoneId="40" DisplayName="(GMT-06:00) Гвадалахара, Мехико, Монтеррей" />
+		<item TimeZoneId="41" DisplayName="(GMT-07:00) Чихуахуа, Ла-Пас, Мастлан" />
+		<item TimeZoneId="42" DisplayName="(GMT-02:00) Среднеатлантическое время" />
+		<item TimeZoneId="43" DisplayName="(GMT-07:00) Горное время (США, Канада)" />
+		<item TimeZoneId="44" DisplayName="(GMT+06:30) Рангун" />
+		<item TimeZoneId="45" DisplayName="(GMT+06:00) Алма-Ата, Новосибирск" />
+		<item TimeZoneId="46" DisplayName="(GMT+05:45) Катманду" />
+		<item TimeZoneId="47" DisplayName="(GMT+12:00) Окленд, Веллингтон" />
+		<item TimeZoneId="48" DisplayName="(GMT-03:30) Ньюфаундленд" />
+		<item TimeZoneId="49" DisplayName="(GMT+08:00) Иркутск, Улан-Батор" />
+		<item TimeZoneId="50" DisplayName="(GMT+07:00) Красноярск" />
+		<item TimeZoneId="51" DisplayName="(GMT-04:00) Сантьяго" />
+		<item TimeZoneId="52" DisplayName="(GMT-08:00) Тихоокеанское время (США, Канада); Тихуана" />
+		<item TimeZoneId="53" DisplayName="(GMT+01:00) Брюссель, Копенгаген, Мадрид, Париж" />
+		<item TimeZoneId="54" DisplayName="(GMT+03:00) Москва, Санкт-Петербург, Волгоград" />
+		<item TimeZoneId="55" DisplayName="(GMT-03:00) Буэнос-Айрес, Джорджтаун" />
+		<item TimeZoneId="56" DisplayName="(GMT-05:00) Богота, Лима, Кито" />
+		<item TimeZoneId="57" DisplayName="(GMT-04:00) Каракас, Ла Пас" />
+		<item TimeZoneId="58" DisplayName="(GMT-11:00) о-в Мидуэй, Самоа" />
+		<item TimeZoneId="59" DisplayName="(GMT+07:00) Бангкок, Ханой, Джакарта" />
+		<item TimeZoneId="60" DisplayName="(GMT+08:00) Куала-Лумпур, Сингапур" />
+		<item TimeZoneId="61" DisplayName="(GMT+02:00) Хараре, Претория" />
+		<item TimeZoneId="62" DisplayName="(GMT+06:00) Шри Джаяварденепура" />
+		<item TimeZoneId="63" DisplayName="(GMT+08:00) Тайвань" />
+		<item TimeZoneId="64" DisplayName="(GMT+10:00) Хобарт" />
+		<item TimeZoneId="65" DisplayName="(GMT+09:00) Осака, Саппоро, Токио" />
+		<item TimeZoneId="66" DisplayName="(GMT+13:00) Нуку Алофа" />
+		<item TimeZoneId="67" DisplayName="(GMT-05:00) Индиана (Восток)" />
+		<item TimeZoneId="68" DisplayName="(GMT-07:00) Аризона" />
+		<item TimeZoneId="69" DisplayName="(GMT+10:00) Владивосток" />
+		<item TimeZoneId="70" DisplayName="(GMT+08:00) Перт" />
+		<item TimeZoneId="71" DisplayName="(GMT+01:00) Западная и центральная Африка" />
+		<item TimeZoneId="72" DisplayName="(GMT+01:00) Амстердам, Берлин, Берн, Рим, Стокгольм, Вена" />
+		<item TimeZoneId="73" DisplayName="(GMT+05:00) Исламабад, Карачи, Ташкент" />
+		<item TimeZoneId="74" DisplayName="(GMT+10:00) Гуам, Порт Морсби" />
+		<item TimeZoneId="75" DisplayName="(GMT+09:00) Якутск" />
+	</dictionary>
+</dictionaries>

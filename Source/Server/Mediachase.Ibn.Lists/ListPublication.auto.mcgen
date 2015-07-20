@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" extension="cs" template="Templates\ibn50mcp.aspx">
+	<BusinessObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn46portal;User ID=dev;Password=</ConnectionString>
+		<MetaClass>ListPublication</MetaClass>
+		<Params>
+			<add key="Namespace" value="Mediachase.Ibn.Lists"/>
+		</Params>
+	</BusinessObject>
+</mcgen>

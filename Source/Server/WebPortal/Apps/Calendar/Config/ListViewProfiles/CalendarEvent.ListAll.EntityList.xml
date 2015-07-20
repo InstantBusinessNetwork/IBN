@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>CalendarEventsListAll</Id>
+	<Name>{IbnFramework.Calendar:AllCalendarEvents}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>AllCalendarEvents</FieldSetName>
+	<FieldSet>
+		<string>Subject</string>
+		<string>Start</string>
+		<string>End</string>
+	</FieldSet>
+	<Filters>
+		<FilterElement>
+			<Source>Start</Source>
+			<Type>LessOrEqual</Type>
+			<Value xsi:type="xsd:string">01/01/2010</Value>
+			<ValueIsTemplate>false</ValueIsTemplate>
+		</FilterElement>
+		<FilterElement>
+			<Source>Start</Source>
+			<Type>GreaterOrEqual</Type>
+			<Value xsi:type="xsd:string">01/01/2000</Value>
+			<ValueIsTemplate>false</ValueIsTemplate>
+		</FilterElement>
+	</Filters>
+	<ColumnsUI>
+		<Column field="Subject" width="500" />
+		<Column field="Start" width="120" />
+		<Column field="End" width="120" />
+	</ColumnsUI>
+</ListViewProfile>

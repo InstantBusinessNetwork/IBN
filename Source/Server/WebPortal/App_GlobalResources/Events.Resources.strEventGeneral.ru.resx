@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTitle">
+		<value>Информация о мероприятии</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="Location">
+		<value>Место</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="Category">
+		<value>Общие категории</value>
+	</data>
+	<data name="Reminder">
+		<value>Напоминание</value>
+	</data>
+	<data name="Manager">
+		<value>Организатор</value>
+	</data>
+	<data name="Created">
+		<value>Создано</value>
+	</data>
+	<data name="Updated">
+		<value>Обновление</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="EndDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="Back">
+		<value>Вернуться</value>
+	</data>
+	<data name="NotSet">
+		<value>Не установлено</value>
+	</data>
+	<data name="Min">
+		<value>мин.</value>
+	</data>
+	<data name="EventParticipants">
+		<value>Участники</value>
+	</data>
+	<data name="Modify">
+		<value>Изменить</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить это мероприятие?</value>
+	</data>
+	<data name="TimeZone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="DeleteAll">
+		<value>Удалить все</value>
+	</data>
+	<data name="DeleteEvent">
+		<value>Удалить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="MustBeConfirmed">
+		<value>Должен подтвердить</value>
+	</data>
+	<data name="Waiting">
+		<value>Нет ответа</value>
+	</data>
+	<data name="Accepted">
+		<value>Принял</value>
+	</data>
+	<data name="Denied">
+		<value>Отклонил</value>
+	</data>
+	<data name="DeleteTxt">
+		<value>
+			&lt;p align="left" class="text"&gt;Удаляемое мероприятие может быть связано с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить мероприятие и связанные листы учета времени, нажмите кнопку "Удалить 
+			все".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить только мероприятие, нажмите кнопку "Удалить".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+		</value>
+	</data>
+	<data name="SharedEntry">
+		<value>Доступ к этому мероприятию открыт</value>
+	</data>
+	<data name="tNotSet">
+		<value>Не установлен</value>
+	</data>
+	<data name="Hour">
+		<value>ч.</value>
+	</data>
+	<data name="Day">
+		<value>дн.</value>
+	</data>
+	<data name="Week">
+		<value>нед.</value>
+	</data>
+	<data name="AssignWizard">
+		<value>Участники</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Добавить в Избранное</value>
+	</data>
+	<data name="EditEvent">
+		<value>Мероприятие</value>
+	</data>
+	<data name="tClient">
+		<value>Клиент</value>
+	</data>
+</root>

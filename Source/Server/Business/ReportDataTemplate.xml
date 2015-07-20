@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<IBNReportTemplate>
+	<!--	Common Informaiton -->
+	<Version>4.0</Version>
+	<Name>Report Name</Name>
+	<Created>2004-12-01T12:32:15</Created>
+	<Author>Vasa Pupkin</Author>
+	<ViewType>OldView/NewView</ViewType>
+	<ObjectName></ObjectName>
+	<!--	Selected Fields -->
+	<Fields>
+		<Field Name="" DataType=""/>
+	</Fields>
+	<!--	Selected Groups -->
+	<Groups	ShowEmpty="1" >
+		<Field Name="" DataType=""/>
+	</Groups>
+	<!--	Selectd Filters -->
+	<Filters>
+		<Filter	FieldName=""	DataType="">
+			<Value>123123</Value>
+			<Value>123123</Value>
+		</Filter>
+	</Filters>
+	<!--	Sorting -->
+	<Sorting>
+		<Sort FieldName="" DataType="" Asc="1" />
+		<Sort FieldName="" DataType="" Asc="0" />
+	</Sorting>
+</IBNReportTemplate>

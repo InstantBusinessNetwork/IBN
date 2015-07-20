@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" extension="cs" template="Templates\RowObjectTemplate3.aspx">
+	<TableObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn46portal;User ID=dev;Password=</ConnectionString>
+		<Table>WebDavStorageElementProperties</Table>
+		<Params>
+			<add key="Namespace" value="Mediachase.IBN.Database.WebDAV"/>
+			<add key="ClassName" value="WebDavStorageElementPropertiesRow"/>
+		</Params>
+	</TableObject>
+</mcgen>

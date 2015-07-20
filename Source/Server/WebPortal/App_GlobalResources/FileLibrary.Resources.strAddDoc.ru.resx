@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tEditDoc">
+		<value>Редактирование файла</value>
+	</data>
+	<data name="tAddDoc">
+		<value>Новый файл</value>
+	</data>
+	<data name="CreateDocF">
+		<value>Новый файл в папке</value>
+	</data>
+	<data name="Create">
+		<value>Создать</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="DocTitle">
+		<value>Название файла</value>
+	</data>
+	<data name="Required">
+		<value>* необходимо ввести название файла</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="File">
+		<value>Файл</value>
+	</data>
+	<data name="Link">
+		<value>Ссылка</value>
+	</data>
+	<data name="CreateDocI">
+		<value>Новый файл в инциденте</value>
+	</data>
+	<data name="CreateDocTk">
+		<value>Новый файл в задаче</value>
+	</data>
+	<data name="CreateDocTd">
+		<value>Новый файл в поручении</value>
+	</data>
+	<data name="CreateDocE">
+		<value>Новый файл в мероприятии</value>
+	</data>
+	<data name="tBackF">
+		<value>Файлы</value>
+		<comment></comment>
+	</data>
+	<data name="tBackI">
+		<value>Вернуться к инциденту</value>
+	</data>
+	<data name="tBackTk">
+		<value>Вернуться к задаче</value>
+	</data>
+	<data name="tBackTd">
+		<value>Вернуться к поручению</value>
+	</data>
+	<data name="tBackE">
+		<value>Вернуться к мероприятию</value>
+	</data>
+	<data name="tBackP">
+		<value>Файлы проекта</value>
+	</data>
+	<data name="HTML">
+		<value>HTML текст</value>
+	</data>
+	<data name="Comments">
+		<value>Вы редактируете информацию, связанную с документом. Если вы хотите создать новую версию этого документа, выберите интересующий вас файл, воспользовавшись кнопкой "Обзор". Портал автоматически создаст новую версию документа и сохранит текущую.</value>
+	</data>
+	<data name="History">
+		<value>История изменений документа</value>
+	</data>
+	<data name="Updated">
+		<value>Последнее обновление</value>
+	</data>
+	<data name="Created">
+		<value>Создан</value>
+	</data>
+	<data name="Version">
+		<value>Текущая версия</value>
+	</data>
+	<data name="DocSize">
+		<value>Размер файла</value>
+	</data>
+	<data name="Views">
+		<value>Количество просмотров</value>
+	</data>
+	<data name="Downloads">
+		<value>Количество закачек</value>
+	</data>
+	<data name="By">
+		<value></value>
+	</data>
+	<data name="MaxDiskSpace">
+		<value>Достигнут максимальный размер дискового пространства</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="tKeepHistory">
+		<value>Сохранять историю версий документа</value>
+	</data>
+	<data name="CreateDocD">
+		<value>Новый файл в документе</value>
+	</data>
+	<data name="tBackD">
+		<value>Вернуться к документу</value>
+	</data>
+	<data name="tNewVersion">
+		<value>Новая версия документа</value>
+	</data>
+	<data name="tWaitForUploading">
+		<value>Ожидайте начала загрузки файла</value>
+	</data>
+	<data name="tUploadCancel">
+		<value>Загрузка файла отменена.</value>
+	</data>
+	<data name="tUploadFailed">
+		<value>При загрузке файла произошла ошибка</value>
+	</data>
+	<data name="tUploadSuccess">
+		<value>Загрузка файла успешно завершена</value>
+	</data>
+	<data name="tInProgress">
+		<value>Загружается</value>
+	</data>
+	<data name="tUploadStatus">
+		<value>Состояние загрузки</value>
+	</data>
+	<data name="tSize">
+		<value>Размер</value>
+	</data>
+	<data name="tOf">
+		<value>из</value>
+	</data>
+	<data name="tTime">
+		<value>Время</value>
+	</data>
+	<data name="tEstimatedTime">
+		<value>Предполагаемое время</value>
+	</data>
+	<data name="tRemainingTime">
+		<value>Оставшееся время</value>
+	</data>
+	<data name="tCompleted">
+		<value>Загружено</value>
+	</data>
+	<data name="tInitializing">
+		<value>Инициализация</value>
+	</data>
+	<data name="tUpload">
+		<value>Загрузить</value>
+	</data>
+	<data name="tReplace">
+		<value>Перезаписать</value>
+	</data>
+	<data name="tRename">
+		<value>Переименовать</value>
+	</data>
+	<data name="tFileExists">
+		<value>Файл с таким именем уже существует. Вы можете перезаписать или переименовать его.</value>
+	</data>
+	<data name="tDuplicateName">
+		<value>* Файл с таким именем уже существует</value>
+	</data>
+	<data name="tReNewVer">
+		<value>Новая версия</value>
+	</data>
+	<data name="tBrowse">
+		<value>Выберите файл для загрузки.</value>
+	</data>
+	<data name="tSelectFolder">
+		<value>Выберите папку, в которую хотите поместить ваш файл.</value>
+	</data>
+	<data name="tClickUpload">
+		<value>Загрузите ваш файл, нажав на кнопку.</value>
+	</data>
+	<data name="tAnotherOne">
+		<value>Остаться на странице &quot;Новый файл&quot;</value>
+	</data>
+  <data name="tAddIBNFiles">
+    <value>Выбор файлов портала</value>
+  </data>
+  <data name="tRoot">
+    <value>Начало</value>
+  </data>
+  <data name="tDelete">
+    <value>Удалить</value>
+  </data>
+  <data name="tPath">
+    <value>Путь</value>
+  </data>
+  <data name="tAddSelected">
+    <value>Выбрать все отмеченные файлы</value>
+  </data>
+  <data name="tAddFile">
+    <value>Выбрать файл</value>
+  </data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+</root>

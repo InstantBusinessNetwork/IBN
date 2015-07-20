@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<add>
+			<Tab order="800" id="MClients" text="{IbnShell.Navigation:tClientsContacts}" contentType="default" imageUrl="~/layouts/images/contact.gif" configUrl="">
+				<Link order="400" id="MClients4" text="{IbnShell.Navigation:Organizations}" iconUrl="" iconCss="" command="cmd_MClients4" />
+				<Link order="500" id="MClients5" text="{IbnShell.Navigation:Contacts}" iconUrl="" iconCss="" command="cmd_MClients5" />
+			</Tab>
+		</add>
+		<Tab id="MAdmin" create="True">
+			<add>
+				<Link order="750" id="MAdmin75" text="{IbnFramework.Client:ClientConfig}" iconUrl="" iconCss="" command="cmd_MAdmin75">
+					<Link order="100" id="MAdmin751" text="{IbnFramework.Client:Organization}" iconUrl="" iconCss="" command="cmd_MAdmin751" />
+					<Link order="200" id="MAdmin752" text="{IbnFramework.Client:Contact}" iconUrl="" iconCss="" command="cmd_MAdmin752" />
+				</Link>
+			</add>
+		</Tab>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MClients4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=Organization</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.OrganizationsEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MClients5">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=Contact</Url>
+			</Command>
+
+			<Command id="cmd_MAdmin75">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin75</Url>
+			</Command>
+			<Command id="cmd_MAdmin751">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaDataBase/Pages/Admin/MetaClassView.aspx?Class=Organization</Url>
+			</Command>
+			<Command id="cmd_MAdmin752">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaDataBase/Pages/Admin/MetaClassView.aspx?Class=Contact</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_HDM_RecipEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tExternalRecipients}</PopupTitle>
+				<Url>~/Incidents/RecipientsEditor.aspx?IncidentId={QueryString:IncidentId}</Url>
+				<Width>500</Width>
+				<Height>380</Height>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_ResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:IssueRes}</PopupTitle>
+				<Url>~/Incidents/ResourcesEditor.aspx?IncidentId={QueryString:IncidentId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_RelatedIss">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Incident&amp;ObjectId={QueryString:IncidentId}&amp;exclude={QueryString:IncidentId}&amp;ReturnCommand=MC_HDM_RelatedIssAdd&amp;MultipleSelect=1</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_RelatedIssAdd">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.RelatedIssueAddHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_HDM_RelatedIssClip">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:AddRelFromClip}</PopupTitle>
+				<Url>~/Incidents/AddRelFromClip.aspx?IncidentId={QueryString:IncidentId}</Url>
+				<Width>500</Width>
+				<Height>300</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_Redirect">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RedirectHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_Client_Recip">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=Contact&amp;refreshName=SelectClient_Refresh&amp;ReturnCommand=MC_Client_Recip&amp;MultipleSelect=1</Url>
+				<Width>480</Width>
+				<Height>345</Height>
+				<Left>10</Left>
+				<Top>5</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_SelectResource">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:SelectRes}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=User&amp;ReturnCommand=MC_HDM_SelectResource&amp;refreshName=RefreshFromMore&amp;MultipleSelect=0</Url>
+				<Width>532</Width>
+				<Height>399</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_SelectResourceInFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:SelectRes}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=User&amp;ReturnCommand=MC_HDM_SelectResourceInFrame&amp;refreshName=RefreshFromMore&amp;MultipleSelect=0</Url>
+				<Width>532</Width>
+				<Height>310</Height>
+				<Top>5</Top>
+				<Left>10</Left>
+				<Drag>True</Drag>
+			</Command>
+			
+			<Command id="MC_HDM_GroupResponsibility">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup</RefreshMethod>
+				<Url>~/Incidents/ResponsiblePool.aspx?sUsers=[ClientParam:sUsersKey]&amp;Command=MC_HDM_GroupResponsibility&amp;notchange=[ClientParam:NotChangeKey]</Url>
+				<Width>600</Width>
+				<Height>300</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_GroupResponsibilityInFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup</RefreshMethod>
+				<Url>~/Incidents/ResponsiblePool.aspx?sUsers=[ClientParam:sUsersKey]&amp;Command=MC_HDM_GroupResponsibilityInFrame&amp;notchange=[ClientParam:NotChangeKey]</Url>
+				<Width>600</Width>
+				<Height>300</Height>
+				<Top>5</Top>
+				<Left>10</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_AdminResponsiblePool">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup</RefreshMethod>
+				<Url>~/Admin/ChangePool.aspx?sUsers=[ClientParam:sUsersKey]&amp;Command=MC_HDM_AdminResponsiblePool</Url>
+				<Width>600</Width>
+				<Height>302</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_AdminResponsiblePool2">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup2</RefreshMethod>
+				<Url>~/Admin/ChangePool.aspx?sUsers=[ClientParam:sUsersKey]&amp;Command=MC_HDM_AdminResponsiblePool</Url>
+				<Width>600</Width>
+				<Height>302</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_PrintPreviewSettings">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:PrintPreviewSettings}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/IssuePrintPeviewSettings.aspx?IncidentId=[ClientParam:IncidentId]</Url>
+				<Width>600</Width>
+				<Height>550</Height>
+				<Top>10</Top>
+				<Left>30</Left>
+				<Drag>False</Drag>
+			</Command>
+			<Command id="MC_HDM_PrintIssue">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/HelpDeskManagement/Pages/IssuePrintPreview.aspx?IncidentId=[ClientParam:IncidentId]</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Resize>True</Resize>
+				<Scroll>True</Scroll>
+			</Command>
+
+			<Command id="MC_HDM_PM_ObjectDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Project&amp;refreshName=ObjectDD_Refresh&amp;ReturnCommand=MC_HDM_PM_ObjectDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>600</Width>
+				<Height>440</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_MarkAsSpam">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:MarkAsSpam}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/MarkAsSpam.aspx?ReturnCommand=MC_HDM_MarkAsSpamHandler</Url>
+				<Width>360</Width>
+				<Height>240</Height>
+				<Left>25</Left>
+				<Top>25</Top>
+				<Drag>True</Drag>
+				<DependCommand>MC_HDM_MarkAsSpamHandler</DependCommand>
+			</Command>
+			<Command id="MC_HDM_MarkAsSpamHandler">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.MarkAsSpamSelectedIssuesHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_HDM_User_ObjectDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=User&amp;refreshName=ObjectDD_Refresh&amp;ReturnCommand=MC_HDM_User_ObjectDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>640</Width>
+				<Height>440</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

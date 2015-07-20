@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tabSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="tabGeneral" xml:space="preserve">
+    <value>Data/Info</value>
+  </data>
+  <data name="tabLibrary" xml:space="preserve">
+    <value>File Library</value>
+  </data>
+  <data name="tabDiscussions" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="tabFinances" xml:space="preserve">
+    <value>Finances</value>
+  </data>
+  <data name="tabIncidents" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="tabActivities" xml:space="preserve">
+    <value>Activities</value>
+  </data>
+  <data name="tabTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tabExportImport" xml:space="preserve">
+    <value>Export/Import</value>
+  </data>
+  <data name="tabWorkspace" xml:space="preserve">
+    <value>Project Space</value>
+  </data>
+  <data name="tabSetup" xml:space="preserve">
+    <value>Setup</value>
+  </data>
+  <data name="tabReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="CreateTask" xml:space="preserve">
+    <value>Create Task</value>
+  </data>
+  <data name="CreateEvent" xml:space="preserve">
+    <value>Create Calendar Entry</value>
+  </data>
+  <data name="CreateToDo" xml:space="preserve">
+    <value>Create ToDo</value>
+  </data>
+  <data name="CreateIncident" xml:space="preserve">
+    <value>Create Issue</value>
+  </data>
+  <data name="CreateComment" xml:space="preserve">
+    <value>Add Comment</value>
+  </data>
+  <data name="ModifyTeam" xml:space="preserve">
+    <value>Modify Team</value>
+  </data>
+  <data name="ModifyStakeholders" xml:space="preserve">
+    <value>Modify Stakeholders</value>
+  </data>
+  <data name="ModifySponsors" xml:space="preserve">
+    <value>Modify Sponsors</value>
+  </data>
+  <data name="AddTimeSheet" xml:space="preserve">
+    <value>Add Timesheet</value>
+  </data>
+  <data name="ExportImport" xml:space="preserve">
+    <value>Export/Import Project</value>
+  </data>
+  <data name="People" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="QuickTools" xml:space="preserve">
+    <value>Project Information</value>
+  </data>
+  <data name="tabMetaData" xml:space="preserve">
+    <value>Custom Fields</value>
+  </data>
+  <data name="CreateTemplate" xml:space="preserve">
+    <value>Create Project Template</value>
+  </data>
+  <data name="tGlobalTitle" xml:space="preserve">
+    <value>Project Template Creation</value>
+  </data>
+  <data name="tSubTitle1" xml:space="preserve">
+    <value>Roles Assigning</value>
+  </data>
+  <data name="s1TopDiv" xml:space="preserve">
+    <value>You can assign roles to project resources and give the name for your template.</value>
+  </data>
+  <data name="tResRoles" xml:space="preserve">
+    <value>Resources &amp; Roles</value>
+  </data>
+  <data name="tResource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="tRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="tTitleTemplate" xml:space="preserve">
+    <value>Template Title</value>
+  </data>
+  <data name="tOnlyForMe" xml:space="preserve">
+    <value>Available Only For Me</value>
+  </data>
+  <data name="tCreateFromTemplate" xml:space="preserve">
+    <value>Generating New Project</value>
+  </data>
+  <data name="tGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="tSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tFindNow" xml:space="preserve">
+    <value>Find Now</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tAssigned" xml:space="preserve">
+    <value>Assigned</value>
+  </data>
+  <data name="tAvailable" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="tNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Do you really want to delete this user from this role?</value>
+  </data>
+  <data name="AddRelated" xml:space="preserve">
+    <value>Add Related Project</value>
+  </data>
+  <data name="EditProject" xml:space="preserve">
+    <value>Edit Project</value>
+  </data>
+  <data name="Customize" xml:space="preserve">
+    <value>Customize</value>
+  </data>
+  <data name="tSaveSnapshot" xml:space="preserve">
+    <value>Save Project Snapshot</value>
+  </data>
+  <data name="tabCalendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="tabResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="AssignWarning" xml:space="preserve">
+    <value>Your browser blocks the pop-up windows which are required for the proper portal
+functionality.&lt;br&gt;Use the following link to open blocked window manually:</value>
+  </data>
+  <data name="tabLists" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="tParticipants" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>View Snapshot</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Add To Favorites</value>
+  </data>
+  <data name="tCopyPrjToClipboard" xml:space="preserve">
+    <value>Copy Project To Clipboard</value>
+  </data>
+  <data name="tPastePrjFromClipboard" xml:space="preserve">
+    <value>Add Related Project From Clipboard</value>
+  </data>
+  <data name="tClearClipboard" xml:space="preserve">
+    <value>Clear Clipboard</value>
+  </data>
+  <data name="tXMLError" xml:space="preserve">
+    <value>There was a problem retrieving the XML data</value>
+  </data>
+  <data name="tabDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreateDocument" xml:space="preserve">
+    <value>Create Document</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditTargetTimeline" xml:space="preserve">
+    <value>Change Target Timeline</value>
+  </data>
+  <data name="EditActualTimeline" xml:space="preserve">
+    <value>Change Actual Timeline</value>
+  </data>
+  <data name="EditReminder" xml:space="preserve">
+    <value>Change Reminder</value>
+  </data>
+  <data name="EditStateInfo" xml:space="preserve">
+    <value>State Info</value>
+  </data>
+  <data name="EditGeneralInfo" xml:space="preserve">
+    <value>General Info</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="EditConfigurationInfo" xml:space="preserve">
+    <value>Configuration Info</value>
+  </data>
+  <data name="EditCategories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="EditManagers" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="EditClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="SystemNotifications" xml:space="preserve">
+    <value>System Notifications</value>
+  </data>
+  <data name="tMy" xml:space="preserve">
+    <value>My Work</value>
+  </data>
+  <data name="tManagement" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="step1TopDiv" xml:space="preserve">
+    <value>Save the system fields</value>
+  </data>
+  <data name="step1Title" xml:space="preserve">
+    <value>List of project system fields</value>
+  </data>
+  <data name="step1ImportBox" xml:space="preserve">
+    <value>To save system fields</value>
+  </data>
+  <data name="tStep1SubTitle" xml:space="preserve">
+    <value>Step 1. Select fields to save</value>
+  </data>
+  <data name="step1ImportMeta" xml:space="preserve">
+    <value>Save Meta fields</value>
+  </data>
+  <data name="step2ImportRoles" xml:space="preserve">
+    <value>Save roles</value>
+  </data>
+  <data name="tStep2SubTitle" xml:space="preserve">
+    <value>Step 2. Select roles to save</value>
+  </data>
+  <data name="step2Title" xml:space="preserve">
+    <value>Roles list</value>
+  </data>
+  <data name="tStep3SubTitle" xml:space="preserve">
+    <value>Step 3. Save task structure and roles</value>
+  </data>
+  <data name="step3Radio1" xml:space="preserve">
+    <value>Do not save task structure</value>
+  </data>
+  <data name="step3Radio2" xml:space="preserve">
+    <value>Save task structure with </value>
+  </data>
+  <data name="step3Radio3" xml:space="preserve">
+    <value>Save task structure with defined roles</value>
+  </data>
+  <data name="SaveBasePlan" xml:space="preserve">
+    <value>Save base plan</value>
+  </data>
+  <data name="tAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="MSProjectExchange" xml:space="preserve">
+    <value>MS Project Data Exchange</value>
+  </data>
+  <data name="MSProjSync" xml:space="preserve">
+    <value>Synchronization</value>
+  </data>
+  <data name="SyncMode" xml:space="preserve">
+    <value>The project stands in MS Project synchronization mode.</value>
+  </data>
+	<data name="ToMSProjSync" xml:space="preserve">
+    <value>Switch to synchronization mode</value>
+  </data>
+	<data name="ToMSProjSyncWarning" xml:space="preserve">
+    <value>Do you really want to switch to synchronization mode?</value>
+  </data>
+	<data name="Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+	<data name="tToMsPrjDescription" xml:space="preserve">
+    <value>Synchronization mode enables to update portal project according to changes made in this project in the MS Project.</value>
+  </data>
+</root>

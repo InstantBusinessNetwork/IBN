@@ -1,0 +1,152 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.IbnNext.TimeTracking</RootNamespace>
+    <AssemblyName>Mediachase.IbnNext.TimeTracking</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a80a980127cd9f5a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.XmlTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.XmlTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="..\CommonFiles\License.cs" />
+    <Compile Include="..\CommonFiles\Log.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Principal.auto.cs" />
+    <Compile Include="Principal.cs" />
+    <Compile Include="PrincipalCardName.cs" />
+    <Compile Include="PrincipalTypes.cs" />
+    <Compile Include="TimeTrackingBlock.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTrackingBlock.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTrackingBlock.cs" />
+    <Compile Include="TimeTrackingBlockType.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTrackingBlockType.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTrackingBlockTypeInstance.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTrackingBlockTypeInstance.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTrackingEntry.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TimeTrackingEntry.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="TimeTrackingEntry.cs" />
+    <Compile Include="TimeTrackingManager.cs" />
+    <Compile Include="TimeTrackingObjectFactory.cs" />
+    <Compile Include="TimeTrackingSecurityTemplateSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TimeTrackingBlock.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>TimeTrackingBlock.auto.cs</LastGenOutput>
+    </None>
+    <None Include="TimeTrackingBlockTypeInstance.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>TimeTrackingBlockTypeInstance.auto.cs</LastGenOutput>
+    </None>
+    <None Include="TimeTrackingEntry.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>TimeTrackingEntry.auto.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Principal.auto.mcgen" />
+    <None Include="TimeTrackingBlockType.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>TimeTrackingBlockType.auto.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

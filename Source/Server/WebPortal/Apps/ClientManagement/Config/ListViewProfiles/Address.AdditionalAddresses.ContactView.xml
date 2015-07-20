@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>ContactAddresses</Id>
+	<Name>Additional Adresses</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSet>
+		<string>City</string>
+		<string>Line1</string>
+		<string>Line2</string>
+		<string>Line3</string>
+		<string>Telephone1</string>
+	</FieldSet>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters>
+		<FilterElement>
+			<Source>ContactId</Source>
+			<Type>Equal</Type>
+			<Value xsi:type="xsd:string">{QueryString:ObjectId}</Value>
+			<ValueIsTemplate>true</ValueIsTemplate>
+		</FilterElement>
+<!--		<FilterElement>
+			<Source>IsDefaultContactElement</Source>
+			<Type>Equal</Type>
+			<Value xsi:type="xsd:boolean">false</Value>
+			<ValueIsTemplate>false</ValueIsTemplate>
+		</FilterElement> -->
+	</Filters>
+	<ColumnsUI>
+		<Column field="City" width="20%" />
+		<Column field="Line1" width="25%" />
+		<Column field="Line2" width="20%" />
+		<Column field="Line3" width="20%"/>
+		<Column field="Telephone1" width="15%"/>
+	</ColumnsUI>
+</ListViewProfile>

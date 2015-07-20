@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Security" xml:space="preserve">
+    <value>Настройки безопасности</value>
+  </data>
+  <data name="tEditSec" xml:space="preserve">
+    <value>Настройки безопасности для</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Выбраны</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Доступны</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Rights" xml:space="preserve">
+    <value>Право</value>
+  </data>
+  <data name="AllowDeny" xml:space="preserve">
+    <value>Разрешить / Запретить</value>
+  </data>
+  <data name="tAny" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="tRead" xml:space="preserve">
+    <value>Чтение</value>
+  </data>
+  <data name="tWrite" xml:space="preserve">
+    <value>Запись</value>
+  </data>
+  <data name="tAdmin" xml:space="preserve">
+    <value>Админ</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Вы хотите удалить эту запись?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tAllow" xml:space="preserve">
+    <value>Разрешить</value>
+  </data>
+  <data name="tDeny" xml:space="preserve">
+    <value>Запретить</value>
+  </data>
+  <data name="tInherit" xml:space="preserve">
+    <value> Добавить к явно заданным настройкам настройки родительской папки.</value>
+  </data>
+  <data name="tCopy" xml:space="preserve">
+    <value>Преобразовать</value>
+  </data>
+  <data name="tRemove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="tText" xml:space="preserve">
+    <value>Выбор этой возможности означает, что настройки родительской папки 
+		больше не будут применяться к текущей папке.</value>
+  </data>
+  <data name="tTextCopy" xml:space="preserve">
+    <value>- Чтобы преобразовать настройки родительской папки к явно заданным,
+		 нажмите кнопку "Преобразовать"</value>
+  </data>
+  <data name="tTextRemove" xml:space="preserve">
+    <value>- Чтобы удалить настройки родительской папки, и
+		 сохранить только явно заданные, нажмите кнопку "Удалить".</value>
+  </data>
+  <data name="tTextCancel" xml:space="preserve">
+    <value>- Чтобы отменить это действие, нажмите кнопку "Отменить".</value>
+  </data>
+  <data name="tAttention" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="tAttentionText" xml:space="preserve">
+    <value>Доступ к этой папке будет закрыт для вас!&lt;br&gt;Продолжить?</value>
+  </data>
+  <data name="tRoot" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="tPPManager" xml:space="preserve">
+    <value>Руководители</value>
+  </data>
+  <data name="tHDM" xml:space="preserve">
+    <value>Служба поддержки</value>
+  </data>
+  <data name="tGlobalPManager" xml:space="preserve">
+    <value>Проект-менеджеры</value>
+  </data>
+  <data name="tGlobalEManager" xml:space="preserve">
+    <value>Исполнительные менеджеры</value>
+  </data>
+  <data name="tPManager" xml:space="preserve">
+    <value>Менеджер проекта</value>
+  </data>
+  <data name="tExMan" xml:space="preserve">
+    <value>Исполнительный менеджер</value>
+  </data>
+  <data name="tTeam" xml:space="preserve">
+    <value>Команда проекта</value>
+  </data>
+  <data name="tSponsors" xml:space="preserve">
+    <value>Спонсоры</value>
+  </data>
+  <data name="tStake" xml:space="preserve">
+    <value>Заинтересованные лица</value>
+  </data>
+  <data name="tRoles" xml:space="preserve">
+    <value>[Роли]</value>
+  </data>
+  <data name="tEmpty" xml:space="preserve">
+    <value>--Нет элементов--</value>
+  </data>
+  <data name="tAdmins" xml:space="preserve">
+    <value>Администраторы</value>
+  </data>
+  <data name="tICreator" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="tIManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tIResource" xml:space="preserve">
+    <value>Ответственные</value>
+  </data>
+  <data name="tITodoResource" xml:space="preserve">
+    <value>Исполнители поручений</value>
+  </data>
+  <data name="tTkCreator" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="tTkManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tTkResource" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="tTkTodoResource" xml:space="preserve">
+    <value>Исполнители поручений</value>
+  </data>
+  <data name="tDocCreator" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="tDocManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tDocResource" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="tDocTodoResource" xml:space="preserve">
+    <value>Исполнители поручений</value>
+  </data>
+  <data name="tEvCreator" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="tEvManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tEvResources" xml:space="preserve">
+    <value>Участники</value>
+  </data>
+  <data name="tTdCreator" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="tTdManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tTdResources" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="tTM" xml:space="preserve">
+    <value>Менеджеры по учёту времени</value>
+  </data>
+</root>

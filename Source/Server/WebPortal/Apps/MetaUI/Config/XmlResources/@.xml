@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<XmlResources>
+	<add>
+		<!-- Scripts/IbnFramework -->
+		<Item id="39289450-B579-4a85-96FB-C5BEBB2BAF9A" path="~/Scripts/IbnFramework/animation-min.js" versionUid="1" />
+		<Item id="E14769F4-054D-466c-A789-EF7FB5A7274E" path="~/Scripts/IbnFramework/common.js" versionUid="1" />
+		<Item id="D6C65323-D187-4013-BBD1-C7FDDFDCE73E" path="~/Scripts/IbnFramework/DDLayoutExtender.js" versionUid="4" />
+		<Item id="D6C65323-D187-4013-BBD1-C7FDDFDCE73E" path="~/Scripts/IbnFramework/WsLayoutExtender.js" versionUid="9" />
+		<Item id="25574511-78A4-42f0-A864-4E2DEA2319DF" path="~/Scripts/IbnFramework/dom-min.js" versionUid="1" />
+		<Item id="6616CDCA-CA98-4612-8150-5EB287498F03" path="~/Scripts/IbnFramework/event-min.js" versionUid="1" />
+		<Item id="0453B79A-D6D3-4d67-B8D0-193F9F7C0AF0" path="~/Scripts/IbnFramework/CSJSRequestObject.js" versionUid="1" />
+		<Item id="FE15F651-22AF-4ddf-918F-CF67977C2C17" path="~/Scripts/IbnFramework/jquery-1.2.1.min.js" versionUid="1" />
+		<Item id="32489F4B-9729-456a-B088-17428DC35F77" path="~/Scripts/IbnFramework/List2List.js" versionUid="1" />
+		<Item id="9AB9CA8E-D04A-4fff-8CBD-30AE6E3E590F" path="~/Scripts/IbnFramework/main.js" versionUid="1" />
+		<Item id="B71E2435-1D64-400d-88AA-52C7F318DAD8" path="~/Scripts/IbnFramework/mcCalendScript.js" versionUid="1" />
+		<Item id="04BEE0CD-FC66-4a45-A67E-CFC13683FA21" path="~/Scripts/IbnFramework/Portal.js" versionUid="1" />
+		<Item id="E5D6A433-A99E-4d44-8987-13326B500726" path="~/Scripts/IbnFramework/PortalColumn.js" versionUid="1" />
+		<Item id="898CACAB-134B-49b7-A694-CF77A6D804CC" path="~/Scripts/IbnFramework/Portlet.js" versionUid="1" />
+		<Item id="CF058852-E8C3-4c37-9A4B-70A3B6234FB3" path="~/Scripts/IbnFramework/yahoo-min.js" versionUid="1" />
+		<Item id="7393130F-B908-442b-A1D1-7E23EF98D3EA" path="~/Scripts/IbnFramework/yui-utilities.js" versionUid="1" />
+		<Item id="BDCF5435-6971-4095-88C3-4BF839FC9387" path="~/Scripts/IbnFramework/ext-all.js" versionUid="1" />
+		<Item id="39A4D488-8108-44c3-A0CB-9BC34A34416F" path="~/Scripts/IbnFramework/ext-base.js" versionUid="1" />
+		<Item id="A41F31FD-727C-4462-BFE0-4D04D36C3759" path="~/Scripts/IbnFramework/MenuActions.js" verstionUid="1" />
+
+		<!-- Scripts/Shell -->
+		<Item id="64980289-5E1F-460a-BE43-81807F948DC0" path="~/Scripts/Shell/mainHistory.js" versionUid="1" />
+		<Item id="AD279241-6826-4b14-A08E-CE9363A36C07" path="~/Scripts/Shell/mainLayout.js" versionUid="2" />
+		<Item id="7D3F43EF-7E58-4900-ADB5-ABC2B833E6FD" path="~/Scripts/Shell/mainLeftTemplate.js" versionUid="2" />
+		<Item id="75217074-456A-4a32-875B-DDFB008CD401" path="~/Scripts/Shell/mainLeftTemplateResizer.js" versionUid="2" />		
+
+		<!-- Scripts/Ext -->
+		<Item id="6B9AB7CA-4BBC-43d7-A588-68B68D603B3D" path="~/Scripts/ext/ext-all.js" versionUid="1" />
+		<Item id="07A11C80-2562-4a60-8905-40F25F451E7E" path="~/Scripts/ext/ext-base.js" versionUid="1" />
+		<Item id="7EA880A4-2ABC-4fe6-B879-A9CA580E3CDC" path="~/Scripts/ext/ext21.js" versionUid="1" />
+
+		<!-- Scripts/dhtmlGrid -->
+		<Item id="4F7E98C8-3A56-4dff-88F0-9006AD2D6712" path="~/Scripts/dhtmlGrid/dhtmlXGrid.js" versionUid ="1" />
+
+		<!-- Scripts -->
+		<Item id="DC68E894-34E4-4664-8F12-B9AE7CFCF649" path="~/Scripts/browser.js" versionUid="1" />
+		<Item id="9BBE3B05-007B-4d67-9C9E-5448788E319B" path="~/Scripts/buttons.js" versionUid="1" />
+		<Item id="8FB7C6EF-E5BA-4a11-A3D8-C9F52105D4EE" path="~/Scripts/common.js" versionUid="1" />
+		<Item id="868AE91A-7245-409f-A8F3-6668B4129695" path="~/Scripts/toptabsnew.js" versionUid="1" />
+		<Item id="63D72048-5798-4abb-9185-174259320095" path="~/Scripts/mcCalendScript.js" versionUid="1" />	
+
+		<!-- Styles/IbnFramework -->
+		<Item id="92F8DA9B-7E1E-4631-8C18-437BFE8ACB74" path="~/Styles/IbnFramework/Calendar.css" versionUid="2" />
+		<Item id="8F0B773C-7ECA-407f-B1CC-81942912AD81" path="~/Styles/IbnFramework/ext-all2.css" versionUid="3" />
+		<Item id="A3306E80-4EAE-43d3-BCF1-42E008C7A8EE" path="~/Styles/IbnFramework/FilterBuilder.css" versionUid="2" />
+		<Item id="A6621D1F-77F0-4064-9D62-87056C6EF384" path="~/Styles/IbnFramework/Forum.css" versionUid="2" />
+		<Item id="9FD7E585-23C4-45dd-9E7B-B5B791EE2987" path="~/Styles/IbnFramework/FrameworkUtilsTopTabs.css" versionUid="2" />
+		<Item id="E41E7E71-2382-46af-9741-131B78158FDE" path="~/Styles/IbnFramework/Grid.css" versionUid="4" />
+		<Item id="ED3BD900-35FB-4582-BD16-A80ECDF8CB5A" path="~/Styles/IbnFramework/ibn.css" versionUid="6" />
+		<Item id="CD4EAF31-C5C2-4f66-A610-C117D8C8B05D" path="~/Styles/IbnFramework/mcBlockMenu.css" versionUid="2" />
+		<Item id="96856A5F-0949-4263-8AF8-62C5108434A2" path="~/Styles/IbnFramework/mcCalendClient.css" versionUid="2" />
+		<Item id="DA818F24-CC12-49fd-A348-05537A92110E" path="~/Styles/IbnFramework/menuStyle.css" versionUid="3" />
+		<Item id="7F644C01-B46C-4320-8C9D-96EFF52836EA" path="~/Styles/IbnFramework/navStyle.css" versionUid="2" />
+		<Item id="BB5A113F-5010-4709-8FEB-1E0546D8359B" path="~/Styles/IbnFramework/tabStyle.css" versionUid="2" />
+		<Item id="B5A9915B-425E-4d2c-AB43-3527746A37D3" path="~/Styles/IbnFramework/tabStyle2.css" versionUid="2" />
+		<Item id="31498720-AC5B-47ec-BAF7-5628FEDD5DC4" path="~/Styles/IbnFramework/Theme.css" versionUid="5" />
+		<Item id="07E08B93-AF51-4444-A1A5-3B299F40868B" path="~/Styles/IbnFramework/TimeSheetStyle.css" versionUid="2" />
+		<Item id="F857E29E-03FA-4c92-BED3-FD58819EF8B9" path="~/Styles/IbnFramework/treeStyle.css" versionUid="3" />
+		<Item id="F57805F3-F64B-4f99-9501-0947704C9F6B" path="~/Styles/IbnFramework/windows.css" versionUid="6" />
+		<Item id="1FD56097-EC61-4476-A98C-9B13AA5202AA" path="~/Styles/IbnFramework/assignment.css" versionUid="2" />
+		<Item id="7F644C01-B46C-4320-8C9D-96EFF52836EA" path="~/Styles/IbnFramework/public.css" versionUid="1" />
+		<Item id="7F644C01-B46C-4320-8C9D-96EFF52836EA" path="~/Styles/IbnFramework/objectDD.css" versionUid="2" />
+		<Item id="68519EBA-016D-4585-B166-A166BBB576F1" path="~/Styles/IbnFramework/Gantt.css" versionUid="2" />
+
+		<!-- Styles/Shell -->
+		<Item id="47D38EA7-3577-4ded-9343-7317F1548010" path="~/Styles/Shell/mainLeftTemplate.css" versionUid="2" />
+	</add>
+</XmlResources>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ibn_server", "IMServer\ibn_server.vcxproj", "{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mediachase.ru:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = IMServer\\ibn_server.vcxproj
+		SccProjectName1 = IMServer
+		SccLocalPath1 = IMServer
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		DebugTrace|Win32 = DebugTrace|Win32
+		DebugTrace|x64 = DebugTrace|x64
+		MagRul Release|Win32 = MagRul Release|Win32
+		MagRul Release|x64 = MagRul Release|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Debug|Win32.Build.0 = Debug|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Debug|x64.ActiveCfg = Debug|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Debug|x64.Build.0 = Debug|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.DebugTrace|Win32.ActiveCfg = DebugTrace|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.DebugTrace|Win32.Build.0 = DebugTrace|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.DebugTrace|x64.ActiveCfg = DebugTrace|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.DebugTrace|x64.Build.0 = DebugTrace|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.MagRul Release|Win32.ActiveCfg = MagRul Release|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.MagRul Release|Win32.Build.0 = MagRul Release|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.MagRul Release|x64.ActiveCfg = MagRul Release|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.MagRul Release|x64.Build.0 = MagRul Release|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Release|Win32.ActiveCfg = Release|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Release|Win32.Build.0 = Release|Win32
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Release|x64.ActiveCfg = Release|x64
+		{A5BF51A0-D06B-41B5-9FC6-D03B3F28AD63}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal

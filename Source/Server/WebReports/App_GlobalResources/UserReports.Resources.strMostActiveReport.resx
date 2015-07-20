@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tViewBy">
+		<value>View By</value>
+	</data>
+	<data name="tType">
+		<value>Type</value>
+	</data>
+	<data name="tGroup">
+		<value>Contact group</value>
+	</data>
+	<data name="tUser">
+		<value>User</value>
+	</data>
+	<data name="tPrint">
+		<value>Print</value>
+	</data>
+	<data name="tMostActGU">
+		<value>Most Active Groups and Users</value>
+	</data>
+	<data name="tMessSent">
+		<value>Messages Sent</value>
+	</data>
+	<data name="tShow">
+		<value>Show</value>
+	</data>
+	<data name="tMessagesSent">
+		<value>Messages Sent</value>
+	</data>
+	<data name="tFilesExchanged">
+		<value>Files Transferred</value>
+	</data>
+	<data name="tCalendarEntries">
+		<value>Calendar Entries Created</value>
+	</data>
+	<data name="tActiveProjects">
+		<value>Projects Created</value>
+	</data>
+	<data name="tFilesPublished">
+		<value>Assets Created</value>
+	</data>
+	<data name="tNoRec">
+		<value>No Records Found</value>
+	</data>
+	<data name="tPeriod">
+		<value>Period</value>
+	</data>
+	<data name="tFrom">
+		<value>From</value>
+	</data>
+	<data name="tTo">
+		<value>To</value>
+	</data>
+	<data name="tAny">
+		<value>Any</value>
+	</data>
+	<data name="tToday">
+		<value>Today</value>
+	</data>
+	<data name="tYesterday">
+		<value>Yesterday</value>
+	</data>
+	<data name="tThisWeek">
+		<value>This Week</value>
+	</data>
+	<data name="tLastWeek">
+		<value>Last Week</value>
+	</data>
+	<data name="tThisMonth">
+		<value>This Month</value>
+	</data>
+	<data name="tLastMonth">
+		<value>Last Month</value>
+	</data>
+	<data name="tThisYear">
+		<value>This Year</value>
+	</data>
+	<data name="tLastYear">
+		<value>Last Year</value>
+	</data>
+	<data name="tCustom">
+		<value>Custom</value>
+	</data>
+	<data name="tSecGroup">
+		<value>Secure Group</value>
+	</data>
+	<data name="tIssuesCreated">
+		<value>Issues Created</value>
+	</data>
+	<data name="tTasksCreated">
+		<value>Tasks Created</value>
+	</data>
+	<data name="tToDosCreated">
+		<value>ToDo`s Created</value>
+	</data>
+	<data name="tFileVersionsPublished">
+		<value>Asset Versions Created</value>
+	</data>
+	<data name="tIMLogins">
+		<value>Total {0} Client Logins</value>
+	</data>
+	<data name="tPortalLogins">
+		<value>Total Portal Logins</value>
+	</data>
+</root>

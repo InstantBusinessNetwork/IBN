@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Статистика по проектам</value>
+	</data>
+	<data name="All">
+		<value>Все</value>
+	</data>
+	<data name="IBN35">
+		<value>IBN36</value>
+	</data>
+	<data name="ProjectStatistics">
+		<value>Отчет "Статистика по проектам"</value>
+	</data>
+	<data name="TotalProjCount">
+		<value>Общее количество выбранных проектов</value>
+	</data>
+	<data name="TotalCountByStatus">
+		<value>Распределение проектов по статусу</value>
+	</data>
+	<data name="TotalCountByType">
+		<value>Распределение проектов по типам</value>
+	</data>
+	<data name="TotalCountByGeneralCategory">
+		<value>Распределение проектов по общим категориям</value>
+	</data>
+	<data name="TotalCountByProjectCategory">
+		<value>Распределение проектов по проектным категориям</value>
+	</data>
+	<data name="Print">
+		<value>Печать</value>
+	</data>
+	<data name="Export">
+		<value>Экспорт</value>
+	</data>
+	<data name="New">
+		<value>Новый</value>
+	</data>
+	<data name="Active">
+		<value>Активный</value>
+	</data>
+	<data name="Closed">
+		<value>Закрытый</value>
+	</data>
+	<data name="ProjDistribution">
+		<value>Распределение проектов по статусу</value>
+	</data>
+	<data name="TypeName">
+		<value>Тип</value>
+	</data>
+	<data name="Count">
+		<value>Количество</value>
+	</data>
+	<data name="CategoryName">
+		<value>Категория</value>
+	</data>
+	<data name="ProjByType">
+		<value>Распределение проектов по типам</value>
+	</data>
+	<data name="ProjByGenCat">
+		<value>Распределение проектов по общим категориям</value>
+	</data>
+	<data name="ProjByProjCat">
+		<value>Распределение проектов по проектным категориям</value>
+	</data>
+	<data name="StartedBy">
+		<value>Создатель</value>
+	</data>
+	<data name="StartedAt">
+		<value>Время создания</value>
+	</data>
+	<data name="FilterValues">
+		<value>Значения фильтра</value>
+	</data>
+	<data name="TotalCountByManager">
+		<value>Распределение проектов по менеджерам</value>
+	</data>
+	<data name="ProjByMan">
+		<value>Распределение проектов по менеджерам</value>
+	</data>
+	<data name="ProjectName">
+		<value>Проект</value>
+	</data>
+	<data name="ProjByBudget">
+		<value>Распределение проектов по бюджету</value>
+	</data>
+	<data name="TotalCountByBudget">
+		<value>Проекты с наибольшим бюджетом</value>
+	</data>
+	<data name="ManagerName">
+		<value>Менеджер</value>
+	</data>
+	<data name="StatusName">
+		<value>Статус</value>
+	</data>
+	<data name="Budget">
+		<value>Бюджет</value>
+	</data>
+	<data name="ProjectTitle">
+		<value>Проект</value>
+	</data>
+	<data name="AllPrjs">
+		<value>Все проекты</value>
+	</data>
+	<data name="tPrjs">
+		<value>Проекты</value>
+	</data>
+	<data name="tApply">
+		<value>Применить</value>
+	</data>
+</root>

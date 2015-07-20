@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Mediachase_StateChanged.TimeTrackingBlock.ascx.cs" Inherits="Mediachase.Ibn.Web.UI.TimeTracking.EventControls.Mediachase_StateChanged_TimeTrackingBlock" %>
+<asp:Label ID="lblStateValue" runat="server"></asp:Label>

@@ -1,0 +1,111 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C3395D1-6106-43AC-885A-AC92DBD41149}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectBusinessUtil</RootNamespace>
+    <AssemblyName>ProjectBusinessUtil</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Algorithm\EmptyIterator.cs" />
+    <Compile Include="Algorithm\GroupingIntervalGenerator.cs" />
+    <Compile Include="Algorithm\GroupingIntervalIterator.cs" />
+    <Compile Include="Algorithm\IntervalGenerator.cs" />
+    <Compile Include="Algorithm\Query.cs" />
+    <Compile Include="Algorithm\RangeIntervalGenerator.cs" />
+    <Compile Include="Algorithm\RangeIntervalIterator.cs" />
+    <Compile Include="Algorithm\TrueFalsePredicate.cs" />
+    <Compile Include="Algorithm\WhereInRangePredicate.cs" />
+    <Compile Include="Assignment\Assignment.cs" />
+    <Compile Include="Assignment\Contour\AbstractContour.cs" />
+    <Compile Include="Assignment\Contour\AbstractContourBucket.cs" />
+    <Compile Include="Assignment\Contour\ContourBucketIntervalGenerator.cs" />
+    <Compile Include="Assignment\Contour\ContourBucketIntervalIterator.cs" />
+    <Compile Include="Assignment\Contour\ContourTypes.cs" />
+    <Compile Include="Assignment\Contour\CountourFactory.cs" />
+    <Compile Include="Assignment\Contour\PersonalContour.cs" />
+    <Compile Include="Assignment\Contour\PersonalContourBucket.cs" />
+    <Compile Include="Assignment\Contour\StandardContour.cs" />
+    <Compile Include="Assignment\Contour\StandardContourBucket.cs" />
+    <Compile Include="Assignment\Functor\AssignmentBaseFunctor.cs" />
+    <Compile Include="Assignment\Functor\DateAtWorkFunctor.cs" />
+    <Compile Include="Assignment\Functor\OverTimeFunctor.cs" />
+    <Compile Include="Assignment\Functor\WorkFunctor.cs" />
+    <Compile Include="Calendar\CalendarHelper.cs" />
+    <Compile Include="Calendar\WorkDayCollection.cs" />
+    <Compile Include="Calendar\WorkDayIterator.cs" />
+    <Compile Include="Calendar\CalendarSettings.cs" />
+    <Compile Include="Calendar\DefaultCalendar.cs" />
+    <Compile Include="Calendar\WorkCalendar.cs" />
+    <Compile Include="Calendar\WorkCalendarBase.cs" />
+    <Compile Include="Calendar\WorkCalendarFactory.cs" />
+    <Compile Include="Calendar\WorkDay.cs" />
+    <Compile Include="Calendar\WorkHours.cs" />
+    <Compile Include="Calendar\WorkRange.cs" />
+    <Compile Include="Calendar\WorkWeek.cs" />
+    <Compile Include="Common\AbstractFactory.cs" />
+    <Compile Include="Common\IAbstractFactory.cs" />
+    <Compile Include="Common\IFactoryMethod.cs" />
+    <Compile Include="Functor\CalculationFunctor.cs" />
+    <Compile Include="Functor\IFunctor.cs" />
+    <Compile Include="Functor\IHasValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\TimePhaseDataGetter.cs" />
+    <Compile Include="Services\TimePhaseDataType.cs" />
+    <Compile Include="Services\TimePhasedService.cs" />
+    <Compile Include="Sheduling\DelayImpl.cs" />
+    <Compile Include="Sheduling\IDelayable.cs" />
+    <Compile Include="Task\Task.cs" />
+    <Compile Include="Time\Interval.cs" />
+    <Compile Include="XmlSerialization\calendarShema.cs">
+      <DependentUpon>calendarShema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XmlSerialization\SerializableCalendar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XmlSerialization\calendarShema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XmlSerialization\calendarShema.xsx">
+      <DependentUpon>calendarShema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

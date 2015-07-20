@@ -1,0 +1,96 @@
+MetaClass:
+-------------------------------------------------------------------------------
+CurrentMetaClassId
+Desc:
+Format: 
+	[%=CurrentMetaClassId=%]
+Output:
+	123 
+-------------------------------------------------------------------------------
+CurrentMetaClass
+Desc:
+Format: 
+	[%=CurrentMetaClass=%]
+	[%=CurrentMetaClass(MetaClassAlias)=%]
+Output:
+	MetaClassName 
+	MetaClassName AAAA
+-------------------------------------------------------------------------------
+MetaFields
+Desc:
+	Returns all meta fields by either current or specified meta class.
+Format: 
+	[%=MetaFields=%]
+	[%=MetaFields(MetaClassAlias)=%]
+	[%=MetaFields(MetaClassAlias,MetaClassName)=%]
+Output:
+	Field1, Field2, Filed3
+-------------------------------------------------------------------------------	
+UserMetaFields
+Desc:
+	Returns all user meta fields by either current or specified meta class.
+Format: 
+	[%=UserMetaFields=%]
+	[%=UserMetaFields(MetaClassAlias)=%]
+	[%=UserMetaFields(MetaClassAlias,MetaClassName)=%]
+Output:
+	Field1, Field2, Filed3
+-------------------------------------------------------------------------------
+SystemMetaFields
+Desc:
+	Returns all sys meta fields by either current or specified meta class.
+Format: 
+	[%=SystemMetaFields=%]
+	[%=SystemMetaFields(MetaClassAlias)=%]
+	[%=SystemMetaFields(MetaClassAlias,MetaClassName)=%]
+Output:
+	Field1, Field2, Filed3
+-------------------------------------------------------------------------------
+SearchByKeyword
+Desc:
+	Returns all meta fields by either current or specified meta class.
+Format: 
+	[%=SearchByKeyword=%]
+	[%=SearchByKeyword(MetaClassAlias)=%]
+	[%=SearchByKeyword(MetaClassAlias,CmpVariable)=%]
+	[%=SearchByKeyword(MetaClassAlias,CmpVariable,MetaClassName)=%]
+	
+	MetaClassAlias's default value 'MDPO'.
+	MetaClassAlias's default value '@Keyword'.
+	
+Output:
+	1<>1
+	MDPO.Field1 LIKE @Keyword 
+	MetaClassAlias.Field1 LIKE CmpVariable OR MetaClassAlias.Field2 LIKE CmpVariable
+-------------------------------------------------------------------------------	
+FullTextQuery
+Desc:
+	Returns all meta fields by either current or specified meta class.
+Format: 
+	[%=FullTextQuery=%]
+	[%=FullTextQuery(MetaClassAlias)=%]
+	[%=FullTextQuery(MetaClassAlias,ContainsSearchCondition )=%]
+	[%=FullTextQuery(MetaClassAlias,ContainsSearchCondition,MetaClassName)=%]
+	
+	MetaClassAlias's default value 'MDPO'.
+	MetaClassAlias's default value '@Keyword'.
+	
+Output:
+	1<>1
+	CONTAINS(MDPO.Field1,@Keyword)
+	CONTAINS(MetaClassAlias.Field1, ContainsSearchCondition) OR CONTAINS(MetaClassAlias.Field1, ContainsSearchCondition)
+-------------------------------------------------------------------------------	
+ForEach
+Desc:
+	Insert lines from the specified sql query.
+Format:
+	[%=ForEach(SqlQuery,UnionLine,FormatLine)=%]
+Output: 
+	1<>1
+	
+	(R.MDPSRoleCreator IS NOT NULL AND A.RoleId=6)	
+	OR
+	(R.MDPSRoleManager IS NOT NULL AND A.RoleId=9)	
+Example:	
+	[%=ForEach("SELECT RoleId, Name FROM MDPSRole WHERE MetaClassId = 12",OR,"(R.MDPSRole{1} IS NOT NULL AND A.RoleId={0})"=%]
+-------------------------------------------------------------------------------	

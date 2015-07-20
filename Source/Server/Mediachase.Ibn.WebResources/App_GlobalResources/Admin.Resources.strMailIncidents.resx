@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema 
+		
+		Version 2.0
+		
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+		
+		Example:
+		
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">2.0</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+				<value>[base64 mime encoded serialized .NET Framework object]</value>
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+				<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+				<comment>This is a comment</comment>
+		</data>
+								
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+		
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+		
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+		
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+		
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value	 : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+						: and then encoded with base64 encoding.
+		
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value	 : The object must be serialized with 
+						: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+						: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value	 : The object must be serialized into a byte array 
+						: using a System.ComponentModel.TypeConverter
+						: and then encoded with base64 encoding.
+		-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tUse" xml:space="preserve">
+		<value>Use e-mail Box</value>
+	</data>
+	<data name="tActive" xml:space="preserve">
+		<value>Active</value>
+	</data>
+	<data name="tDelFromServer" xml:space="preserve">
+		<value>Delete e-mails from server</value>
+	</data>
+	<data name="tPeriod" xml:space="preserve">
+		<value>Check every</value>
+	</data>
+	<data name="tServer" xml:space="preserve">
+		<value>Server</value>
+	</data>
+	<data name="tPort" xml:space="preserve">
+		<value>Port</value>
+	</data>
+	<data name="tUser" xml:space="preserve">
+		<value>User</value>
+	</data>
+	<data name="tPassword" xml:space="preserve">
+		<value>Password</value>
+	</data>
+	<data name="tAutoApprove" xml:space="preserve">
+		<value>Auto Approve For Known Users</value>
+	</data>
+	<data name="tAutoDelete" xml:space="preserve">
+		<value>Ignore e-mails from Unknown Users</value>
+	</data>
+	<data name="tUseExternal" xml:space="preserve">
+		<value>Use External Users Only</value>
+	</data>
+	<data name="tSaveMessageBody" xml:space="preserve">
+		<value>Save Message Body</value>
+	</data>
+	<data name="tSaveMessageBodyEml" xml:space="preserve">
+		<value>Save Message Body In Eml Format</value>
+	</data>
+	<data name="tSaveMessageBodyMsg" xml:space="preserve">
+		<value>Save Message Body In Msg Format</value>
+	</data>
+	<data name="tSaveMessageBodyMht" xml:space="preserve">
+		<value>Save Message Body In Mht Format</value>
+	</data>
+	<data name="tSaveMessageBodyMhtPrev" xml:space="preserve">
+		<value>Save Message Body In Mht Format (Message preview available)</value>
+	</data>
+	<data name="tSave" xml:space="preserve">
+		<value>Save</value>
+	</data>
+	<data name="tCancel" xml:space="preserve">
+		<value>Cancel</value>
+	</data>
+	<data name="tEdit" xml:space="preserve">
+		<value>Edit</value>
+	</data>
+	<data name="tDelete" xml:space="preserve">
+		<value>Delete</value>
+	</data>
+	<data name="tChangeStatusStop" xml:space="preserve">
+		<value>Stop</value>
+	</data>
+	<data name="tChangeStatusRun" xml:space="preserve">
+		<value>Run</value>
+	</data>
+	<data name="tIncSets" xml:space="preserve">
+		<value>Portal Settings</value>
+	</data>
+	<data name="tPopSets" xml:space="preserve">
+		<value>POP3 Box Settings</value>
+	</data>
+	<data name="tActivitySets" xml:space="preserve">
+		<value>Activity Settings</value>
+	</data>
+	<data name="tInfoBlock" xml:space="preserve">
+		<value>Information</value>
+	</data>
+	<data name="tHandlerBlock" xml:space="preserve">
+		<value>Handler</value>
+	</data>
+	<data name="tDescription" xml:space="preserve">
+		<value>Description</value>
+	</data>
+	<data name="tHandlerSets" xml:space="preserve">
+		<value>Handler Settings</value>
+	</data>
+	<data name="tbTitle" xml:space="preserve">
+		<value>E-mail Box Settings</value>
+	</data>
+	<data name="tCheck" xml:space="preserve">
+		<value>Check Settings</value>
+	</data>
+	<data name="tError" xml:space="preserve">
+		<value>Settings are incorrect!</value>
+	</data>
+	<data name="tOK" xml:space="preserve">
+		<value>Settings are correct!</value>
+	</data>
+	<data name="t10min" xml:space="preserve">
+		<value>10 min</value>
+	</data>
+	<data name="t30min" xml:space="preserve">
+		<value>30 min</value>
+	</data>
+	<data name="t60min" xml:space="preserve">
+		<value>1 hour</value>
+	</data>
+	<data name="t180min" xml:space="preserve">
+		<value>3 hours</value>
+	</data>
+	<data name="tMailBoxes" xml:space="preserve">
+		<value>E-mail Boxes</value>
+	</data>
+	<data name="tWarning" xml:space="preserve">
+		<value>Do you really want to delete this e-mail box?</value>
+	</data>
+	<data name="tType" xml:space="preserve">
+		<value>Type</value>
+	</data>
+	<data name="tIssBox" xml:space="preserve">
+		<value>Issues box</value>
+	</data>
+	<data name="tFlsBox" xml:space="preserve">
+		<value>Files box</value>
+	</data>
+	<data name="tMoveto" xml:space="preserve">
+		<value>Go To Folder</value>
+	</data>
+	<data name="tSelectFolder" xml:space="preserve">
+		<value>Select Folder For Inbound e-mails</value>
+	</data>
+	<data name="tFolder" xml:space="preserve">
+		<value>Folder</value>
+	</data>
+	<data name="tFolderPattern" xml:space="preserve">
+		<value>Subfolder Pattern</value>
+	</data>
+	<data name="tCantSelectThisFolder" xml:space="preserve">
+		<value>You Can`t Select This Folder!</value>
+	</data>
+	<data name="tAddBox" xml:space="preserve">
+		<value>New Pop3 Box</value>
+	</data>
+	<data name="tAddIncBox" xml:space="preserve">
+		<value>Add Issues Box</value>
+	</data>
+	<data name="tAddFldBox" xml:space="preserve">
+		<value>Add Files Box</value>
+	</data>
+	<data name="tTitle" xml:space="preserve">
+		<value>Title</value>
+	</data>
+	<data name="tName" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="tStatus" xml:space="preserve">
+		<value>Status</value>
+	</data>
+	<data name="tHandler" xml:space="preserve">
+		<value>Handler Name</value>
+	</data>
+	<data name="tLastReq" xml:space="preserve">
+		<value>Last Request</value>
+	</data>
+	<data name="tLastSuccReq" xml:space="preserve">
+		<value>Last Successful Request</value>
+	</data>
+	<data name="tErrorMessage" xml:space="preserve">
+		<value>Error Text</value>
+	</data>
+	<data name="tNone" xml:space="preserve">
+		<value>None</value>
+	</data>
+	<data name="lblMailDeleteError" xml:space="preserve">
+		<value>Unfortunately, the e-mail Box can not be deleted.</value>
+	</data>
+	<data name="tRoot" xml:space="preserve">
+		<value>Root</value>
+	</data>
+	<data name="tShowHelp" xml:space="preserve">
+		<value>Show Help</value>
+	</data>
+	<data name="tHideHelp" xml:space="preserve">
+		<value>Hide Help</value>
+	</data>
+	<data name="tHelpText" xml:space="preserve">
+		<value>&lt;br&gt;&lt;p&gt;Folder Patterns allow you to store the incoming documents to the subfolders according to their attributes like the creation date, sender’s e-mail address and so on. They are created in the handler’s folder and can be arranged in a hierarchical tree. &lt;/p&gt; 
+&lt;p&gt;For example: &lt;strong&gt;[To]\[Date.Now]\[Subject]&lt;/strong&gt;. &lt;/p&gt;
+&lt;p&gt;The pattern may combine static text and the pattern active tags. &lt;/p&gt;
+&lt;p&gt;For example: &lt;strong&gt;My Documents\[From]&lt;/strong&gt;.&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;There are following active tags:&lt;/p&gt; &lt;table border=1 cellspacing=0 cellpadding=3 class="text"&gt; &lt;tr&gt; &lt;td valign="top"&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt; &lt;td valign="top"&gt;&lt;b&gt;Info&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[UserName]&lt;/td&gt; &lt;td valign="top"&gt;Either Portal User’s last and first names if the document comes from the known person or e-mail address&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[From]&lt;/td&gt; &lt;td valign="top"&gt;The sender e-mail address&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Subject]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail subject&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" nowrap&gt;[Date.Now]&lt;br&gt;
+[Date.Now(yyyy)]&lt;br&gt;
+[Date.Now(yyyy-MM-dd)]&lt;br&gt;
+&lt;br&gt;
+[Date.Now(&lt;em&gt;Params&lt;/em&gt;)]&lt;/td&gt; 
+&lt;td valign="top"&gt; &lt;p&gt;The current date&lt;br&gt; For Date active tags formatting parameters can be specified.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt;– returns date’s year (e.g. 2006)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – returns date’s year and month (e.g. 2006-01)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – returns date’s year, month and date (e.g. 2006-01-10)&lt;br&gt; &lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – returns date’s hour and minute values (e.g. 16:25)&lt;br&gt; &lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – returns date’s hour, minute and second values (e.g. 17:12:23)&lt;br&gt; &lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – returns only date in short format (e.g. 08/17/2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – returns only date in full format (e.g. Thursday, August 17, 2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; - returns date and time in short format (e.g. 08/17/2000 16:32)&lt;/p&gt; &lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" nowrap&gt;[Date.UtcNow]&lt;br&gt;
+[Date.UtcNow(yyyy)]&lt;br&gt;
+[Date.UtcNow(yyyy-MM-dd)]&lt;br&gt;
+&lt;br&gt;
+[Date.UtcNow(&lt;em&gt;Params&lt;/em&gt;)]&lt;/td&gt; 
+&lt;td valign="top"&gt; &lt;p&gt;The current dated in the UTC&lt;br&gt; For Date active tags formatting parameters can be specified.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt; – returns date’s year (e.g. 2006)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – returns date’s year and month (e.g. 2006-01)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – returns date’s year, month and date (e.g. 2006-01-10)&lt;br&gt; &lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – returns date’s hour and minute values (e.g. 16:25)&lt;br&gt; &lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – returns date’s hour, minute and second values (e.g. 17:12:23)&lt;br&gt; &lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – returns only date in short format (e.g. 08/17/2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – returns only date in full format (e.g. Thursday, August 17, 2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; - returns date and time in short format (e.g. 08/17/2000 16:32)&lt;/p&gt; &lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Date(Params)]&lt;/td&gt; &lt;td valign="top"&gt; &lt;p&gt;The e-mail date&lt;br&gt; For Date active tags formatting parameters can be specified.&lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt; – returns date’s year (e.g. 2006)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – returns date’s year and month (e.g. 2006-01)&lt;br&gt; &lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – returns date’s year, month and date (e.g. 2006-01-10)&lt;br&gt; &lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – returns date’s hour and minute values (e.g. 16:25)&lt;br&gt; &lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – returns date’s hour, minute and second values (e.g. 17:12:23)&lt;br&gt; &lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – returns only date in short format (e.g. 08/17/2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – returns only date in full format (e.g. Thursday, August 17, 2000)&lt;br&gt; &lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; - returns date and time in short format (e.g. 08/17/2000 16:32)&lt;/p&gt; &lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Importance]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail priority value&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[MessageID]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail ID taken from the mail server&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Sender]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail sender&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[To]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail addressee&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Header(headerName)]&lt;/td&gt; &lt;td valign="top"&gt;The e-mail header with the &lt;i&gt;headerName&lt;/i&gt; name&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</value>
+	</data>
+	<data name="tActiveTag" xml:space="preserve">
+		<value>Active tag</value>
+	</data>
+	<data name="tNotSupported" xml:space="preserve">
+		<value>is not supported</value>
+	</data>
+	<data name="tEMailPop3" xml:space="preserve">
+		<value>E-mail Pop3 Boxes</value>
+	</data>
+	<data name="tInternalBox" xml:space="preserve">
+		<value>Internal E-mail Pop3 Box</value>
+	</data>
+	<data name="tExternalBoxes" xml:space="preserve">
+		<value>External E-mail Pop3 Boxes</value>
+	</data>
+	<data name="tIsInternal" xml:space="preserve">
+		<value>Is Internal</value>
+	</data>
+	<data name="tInternalEmail" xml:space="preserve">
+		<value>E-mail address</value>
+	</data>
+	<data name="tLogin" xml:space="preserve">
+		<value>Login</value>
+	</data>
+	<data name="tNoIntBox" xml:space="preserve">
+		<value>There is no internal e-mail box. You can create it.</value>
+	</data>
+	<data name="tBlackList" xml:space="preserve">
+		<value>E-mail Black List</value>
+	</data>
+	<data name="tWhiteList" xml:space="preserve">
+		<value>E-mail White List</value>
+	</data>
+	<data name="tAntiSpamList" xml:space="preserve">
+		<value>Anti-Spam Rules</value>
+	</data>
+	<data name="tConfirmPassword" xml:space="preserve">
+		<value>Confirm password</value>
+	</data>
+	<data name="tWarningChecked" xml:space="preserve">
+		<value>Do you really want to delete all checked addresses?</value>
+	</data>
+	<data name="tKeyword" xml:space="preserve">
+		<value>Keyword</value>
+	</data>
+	<data name="tApply" xml:space="preserve">
+		<value>Apply</value>
+	</data>
+	<data name="tReset" xml:space="preserve">
+		<value>Reset</value>
+	</data>
+	<data name="tDeleteChecked" xml:space="preserve">
+		<value>Delete Checked</value>
+	</data>
+	<data name="tAddress" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="tWarning2" xml:space="preserve">
+		<value>Do you really want to delete this address from list?</value>
+	</data>
+	<data name="tQuickAdd" xml:space="preserve">
+		<value>Quick Add</value>
+	</data>
+	<data name="tAdd" xml:space="preserve">
+		<value>Add</value>
+	</data>
+	<data name="tKey" xml:space="preserve">
+		<value>Key</value>
+	</data>
+	<data name="tValue" xml:space="preserve">
+		<value>Value</value>
+	</data>
+	<data name="tWarning3" xml:space="preserve">
+		<value>Do you really want to delete this rule from list?</value>
+	</data>
+	<data name="tAddRule" xml:space="preserve">
+		<value>Add Rule</value>
+	</data>
+	<data name="tContains" xml:space="preserve">
+		<value>Contains</value>
+	</data>
+	<data name="tIsEqual" xml:space="preserve">
+		<value>Is Equal</value>
+	</data>
+	<data name="tIsNotEqual" xml:space="preserve">
+		<value>Is Not Equal</value>
+	</data>
+	<data name="tNotContains" xml:space="preserve">
+		<value>Not Contains</value>
+	</data>
+	<data name="tRegExMatch" xml:space="preserve">
+		<value>RegEx Match</value>
+	</data>
+	<data name="tService" xml:space="preserve">
+		<value>Service</value>
+	</data>
+	<data name="tWeight" xml:space="preserve">
+		<value>Weight</value>
+	</data>
+	<data name="tWhiteList2" xml:space="preserve">
+		<value>White List</value>
+	</data>
+	<data name="tBlackList2" xml:space="preserve">
+		<value>Black List</value>
+	</data>
+	<data name="tTicket" xml:space="preserve">
+		<value>Ticket</value>
+	</data>
+	<data name="tFrom" xml:space="preserve">
+		<value>From</value>
+	</data>
+	<data name="tTo" xml:space="preserve">
+		<value>To</value>
+	</data>
+	<data name="tSubject" xml:space="preserve">
+		<value>Subject</value>
+	</data>
+	<data name="tBody" xml:space="preserve">
+		<value>Body</value>
+	</data>
+	<data name="tAction" xml:space="preserve">
+		<value>Action</value>
+	</data>
+	<data name="tDefIncSettings" xml:space="preserve">
+		<value>Default Incident Settings</value>
+	</data>
+	<data name="tNotSet" xml:space="preserve">
+		<value>Not Set</value>
+	</data>
+	<data name="tIssBoxes" xml:space="preserve">
+		<value>Issue Boxes</value>
+	</data>
+	<data name="tWarningIncBox" xml:space="preserve">
+		<value>Do you really want to delete this issue box?</value>
+	</data>
+	<data name="tIdentMask" xml:space="preserve">
+		<value>Identifier Mask</value>
+	</data>
+	<data name="tIssBoxRules" xml:space="preserve">
+		<value>Rules</value>
+	</data>
+	<data name="tDefaultBox" xml:space="preserve">
+		<value>Default Box</value>
+	</data>
+	<data name="tIssRulesList" xml:space="preserve">
+		<value>Rules List</value>
+	</data>
+	<data name="tIssRuleInfo" xml:space="preserve">
+		<value>Rule Details</value>
+	</data>
+	<data name="tIssRulesSummary" xml:space="preserve">
+		<value>Rules Summary</value>
+	</data>
+	<data name="tNewRule" xml:space="preserve">
+		<value>Add Rule</value>
+	</data>
+	<data name="tMessageCount" xml:space="preserve">
+		<value>Message Count</value>
+	</data>
+	<data name="tPop3BoxEdit" xml:space="preserve">
+		<value>Pop3 Box Edit</value>
+	</data>
+	<data name="tPop3BoxNew" xml:space="preserve">
+		<value>Add Pop3 Box</value>
+	</data>
+	<data name="tRuleEdit" xml:space="preserve">
+		<value>Rule Edit</value>
+	</data>
+	<data name="tRuleNew" xml:space="preserve">
+		<value>Add Rule</value>
+	</data>
+	<data name="tIssueBoxEdit" xml:space="preserve">
+		<value>Issue Box Edit</value>
+	</data>
+	<data name="tIssueBoxNew" xml:space="preserve">
+		<value>Add Issue Box</value>
+	</data>
+	<data name="tPendingMess" xml:space="preserve">
+		<value>Pending Messages</value>
+	</data>
+	<data name="tIndex" xml:space="preserve">
+		<value>Index</value>
+	</data>
+	<data name="tTypeYour" xml:space="preserve">
+		<value>Your Key</value>
+	</data>
+	<data name="tWarningCheckedDelete" xml:space="preserve">
+		<value>Do you really want to delete all checked messages?</value>
+	</data>
+	<data name="tWarningCheckedApprove" xml:space="preserve">
+		<value>Do you really want to approve all checked messages?</value>
+	</data>
+	<data name="tMessView" xml:space="preserve">
+		<value>Message View</value>
+	</data>
+	<data name="tApprove" xml:space="preserve">
+		<value>Approve</value>
+	</data>
+	<data name="tWarningDelete" xml:space="preserve">
+		<value>Do you really want to delete this message?</value>
+	</data>
+	<data name="tWarningApprove" xml:space="preserve">
+		<value>Do you really want to approve this message?</value>
+	</data>
+	<data name="tClose" xml:space="preserve">
+		<value>Close</value>
+	</data>
+	<data name="tIssueboxSettings" xml:space="preserve">
+		<value>Issue Box Settings</value>
+	</data>
+	<data name="tIssManage" xml:space="preserve">
+		<value>Management</value>
+	</data>
+	<data name="tFlags" xml:space="preserve">
+		<value>Responsibility</value>
+	</data>
+	<data name="tIssueControl" xml:space="preserve">
+		<value>Issue Control</value>
+	</data>
+	<data name="tManager" xml:space="preserve">
+		<value>Manager</value>
+	</data>
+	<data name="tController" xml:space="preserve">
+		<value>Controller</value>
+	</data>
+	<data name="tResponsible" xml:space="preserve">
+		<value>Responsible</value>
+	</data>
+	<data name="tExpDuration" xml:space="preserve">
+		<value>Expected resolution deadline</value>
+	</data>
+	<data name="tExpRespTime" xml:space="preserve">
+		<value>Expected reply deadline</value>
+	</data>
+	<data name="tCreator" xml:space="preserve">
+		<value>Creator</value>
+	</data>
+	<data name="tResponsibleType" xml:space="preserve">
+		<value>Responsible Selection Type</value>
+	</data>
+	<data name="tPool" xml:space="preserve">
+		<value>Responsible List</value>
+	</data>
+	<data name="tAllowAddResources" xml:space="preserve">
+		<value>Allow Resources Adding</value>
+	</data>
+	<data name="tAllowAddToDo" xml:space="preserve">
+		<value>Allow To-Do Adding</value>
+	</data>
+	<data name="tAllowControl" xml:space="preserve">
+		<value>Allow Control</value>
+	</data>
+	<data name="tAllowToDeclineResponsibility" xml:space="preserve">
+		<value>Allow responsible to decline responsibility assignment</value>
+	</data>
+	<data name="tAllowToReassignResponsibility" xml:space="preserve">
+		<value>Allow responsible another responsible assigning</value>
+	</data>
+	<data name="tReassignResponsible" xml:space="preserve">
+		<value>Assign another responsible when reopening</value>
+	</data>
+	<data name="tControllerType" xml:space="preserve">
+		<value>Controller Type</value>
+	</data>
+	<data name="tEMailRouterSettings" xml:space="preserve">
+		<value>E-mail Routing Settings</value>
+	</data>
+	<data name="tAllowEMailRouter" xml:space="preserve">
+		<value>Allow internal E-mail Routing</value>
+	</data>
+	<data name="tChange" xml:space="preserve">
+		<value>Change</value>
+	</data>
+	<data name="tWarningPool" xml:space="preserve">
+		<value>Do you really want to delete this user from pool?</value>
+	</data>
+	<data name="tPoolTitle" xml:space="preserve">
+		<value>User List</value>
+	</data>
+	<data name="tFindNow" xml:space="preserve">
+		<value>Find Now</value>
+	</data>
+	<data name="tEmptySearch" xml:space="preserve">
+		<value>Empty Search</value>
+	</data>
+	<data name="Available" xml:space="preserve">
+		<value>Available</value>
+	</data>
+	<data name="Selected" xml:space="preserve">
+		<value>Selected</value>
+	</data>
+	<data name="Group" xml:space="preserve">
+		<value>Group</value>
+	</data>
+	<data name="Search" xml:space="preserve">
+		<value>Search</value>
+	</data>
+	<data name="tExtType" xml:space="preserve">
+		<value>Incoming</value>
+	</data>
+	<data name="tIntType" xml:space="preserve">
+		<value>Outgoing</value>
+	</data>
+	<data name="tRecipients" xml:space="preserve">
+		<value>Recipients List</value>
+	</data>
+	<data name="tMapping" xml:space="preserve">
+		<value>Mapping Fields</value>
+	</data>
+	<data name="tSeverity" xml:space="preserve">
+		<value>Severity</value>
+	</data>
+	<data name="tGenCategories" xml:space="preserve">
+		<value>General Categories</value>
+	</data>
+	<data name="tIssCategories" xml:space="preserve">
+		<value>Issue Categories</value>
+	</data>
+	<data name="tDuplicateName" xml:space="preserve">
+		<value>Duplicate Issue Box Name!</value>
+	</data>
+	<data name="tDuplicateMask" xml:space="preserve">
+		<value>Duplicate Identifier Mask!</value>
+	</data>
+	<data name="tAllowUserToComeResponsible" xml:space="preserve">
+		<value>Allow user to come responsible</value>
+	</data>
+	<data name="tPrjCalendar" xml:space="preserve">
+		<value>Work Time Calendar</value>
+	</data>
+	<data name="tNewMessage" xml:space="preserve">
+		<value>New Message Actions</value>
+	</data>
+	<data name="tCreated" xml:space="preserve">
+		<value>Received</value>
+	</data>
+	<data name="tSMTPSettings" xml:space="preserve">
+		<value>SMTP Settings</value>
+	</data>
+	<data name="tSMTPList" xml:space="preserve">
+		<value>Outgoing email servers (SMTP)</value>
+	</data>
+	<data name="tUseTls" xml:space="preserve">
+		<value>TLS</value>
+	</data>
+	<data name="tAuthenticate" xml:space="preserve">
+		<value>Authenticate</value>
+	</data>
+	<data name="tIssBoxView" xml:space="preserve">
+		<value>Issue Box View</value>
+	</data>
+	<data name="tAND" xml:space="preserve">
+		<value>AND</value>
+	</data>
+	<data name="tOR" xml:space="preserve">
+		<value>OR</value>
+	</data>
+	<data name="tAllowAutoReply" xml:space="preserve">
+		<value>Allow Auto Reply On Issue Creation</value>
+	</data>
+	<data name="tAllowAutoReplyClose" xml:space="preserve">
+		<value>Allow Auto Reply On Issue Closing</value>
+	</data>
+	<data name="tAllowAutoReplyHint1" xml:space="preserve">
+		<value>This option allows to send message automalically to user when new issue is registered. Click </value>
+	</data>
+	<data name="tAllowAutoReplyHint2" xml:space="preserve">
+		<value>to edit message template.</value>
+	</data>
+	<data name="tAllowAutoReplyCloseHint1" xml:space="preserve">
+		<value>This option allows to send message automalically to user when issue is closed. Click </value>
+	</data>
+	<data name="tAllowAutoReplyCloseHint2" xml:space="preserve">
+		<value>to edit message template.</value>
+	</data>
+	<data name="tAutoReplyLinkText" xml:space="preserve">
+		<value>here</value>
+	</data>
+	<data name="tAccept" xml:space="preserve">
+		<value>Accept</value>
+	</data>
+	<data name="tDecline" xml:space="preserve">
+		<value>Decline</value>
+	</data>
+	<data name="tApproveChecked" xml:space="preserve">
+		<value>Approve Checked</value>
+	</data>
+	<data name="tIssueBoxRules" xml:space="preserve">
+		<value>Issue Box Rules Are Not Set</value>
+	</data>
+	<data name="tExportList" xml:space="preserve">
+		<value>Export List</value>
+	</data>
+	<data name="tProject" xml:space="preserve">
+		<value>Project</value>
+	</data>
+	<data name="tFile" xml:space="preserve">
+		<value>File</value>
+	</data>
+	<data name="tImportList" xml:space="preserve">
+		<value>Import List</value>
+	</data>
+	<data name="CustomUser" xml:space="preserve">
+		<value>Custom User</value>
+	</data>
+	<data name="Pool" xml:space="preserve">
+		<value>Pool</value>
+	</data>
+	<data name="Manual" xml:space="preserve">
+		<value>Manual</value>
+	</data>
+	<data name="Creator" xml:space="preserve">
+		<value>Creator</value>
+	</data>
+	<data name="Manager" xml:space="preserve">
+		<value>Manager</value>
+	</data>
+	<data name="tIssBoxAutoSelect" xml:space="preserve">
+		<value>[ autodetection ]</value>
+	</data>
+	<data name="tIssboxCantDeleted" xml:space="preserve">
+		<value>Issue Box Can Not Be Deleted!</value>
+	</data>
+	<data name="tIssRules" xml:space="preserve">
+		<value>Autodetection/Rules</value>
+	</data>
+	<data name="tAddRules" xml:space="preserve">
+		<value>Add Rules</value>
+	</data>
+	<data name="tChangeIndex" xml:space="preserve">
+		<value>Change Index</value>
+	</data>
+	<data name="Operator" xml:space="preserve">
+		<value>Variable</value>
+	</data>
+	<data name="Block" xml:space="preserve">
+		<value>Block</value>
+	</data>
+	<data name="Function" xml:space="preserve">
+		<value>Function</value>
+	</data>
+	<data name="tORBlock" xml:space="preserve">
+		<value>[OR Block]</value>
+	</data>
+	<data name="tANDBlock" xml:space="preserve">
+		<value>[AND Block]</value>
+	</data>
+	<data name="tNoFunction" xml:space="preserve">
+		<value>There are no rules of "Function" type at the current moment. You can design rules of this type on your own. To get the required information see accompanying documentation or make a request for it by e-mail.</value>
+	</data>
+	<data name="tNosubject" xml:space="preserve">
+		<value>[No Subject]</value>
+	</data>
+	<data name="tClient" xml:space="preserve">
+		<value>Client</value>
+	</data>
+	<data name="tAllowMessageAutoSigning" xml:space="preserve">
+		<value>Use Outgoing Message Template</value>
+	</data>
+	<data name="tAllowMessageAutoSigningHint1" xml:space="preserve">
+		<value>This option allows to send formatted message. Click</value>
+	</data>
+	<data name="tAllowMessageAutoSigningHint2" xml:space="preserve">
+		<value>to edit message template .</value>
+	</data>
+	<data name="tEmailLog" xml:space="preserve">
+		<value>E-mail Log</value>
+	</data>
+	<data name="tClearLog" xml:space="preserve">
+		<value>Clear Log</value>
+	</data>
+	<data name="tDirection" xml:space="preserve">
+		<value>Direction</value>
+	</data>
+	<data name="tEmailBox" xml:space="preserve">
+		<value>Box</value>
+	</data>
+	<data name="tAntiSpamResult" xml:space="preserve">
+		<value>Anti-spam result</value>
+	</data>
+	<data name="tAccepted" xml:space="preserve">
+		<value>Accepted</value>
+	</data>
+	<data name="tDenied" xml:space="preserve">
+		<value>Denied</value>
+	</data>
+	<data name="tPending" xml:space="preserve">
+		<value>Pending</value>
+	</data>
+	<data name="tEmailLogSettings" xml:space="preserve">
+		<value>E-mail Log Settings</value>
+	</data>
+	<data name="tEmailLogPeriodHint1" xml:space="preserve">
+		<value>Keep log records for</value>
+	</data>
+	<data name="tEmailLogPeriodHint2" xml:space="preserve">
+		<value>days.</value>
+	</data>
+	<data name="tSetDefault" xml:space="preserve">
+		<value>Set Default</value>
+	</data>
+	<data name="tMappingWarning" xml:space="preserve">
+		<value>There are no mapping settings for this e-mail box! You can set them by clicking the mapping icon.</value>
+	</data>
+	<data name="tDefaultSets" xml:space="preserve">
+		<value>Default settings</value>
+	</data>
+	<data name="tCustomSets" xml:space="preserve">
+		<value>Custom settings</value>
+	</data>
+	<data name="tSetsAreCorrect" xml:space="preserve">
+		<value>The settings for the connection to your inbox message server (SMTP) has been checked.	The settings are correct!</value>
+	</data>
+	<data name="tGuidWasSent" xml:space="preserve">
+		<value>An email with a unique link has been sent to your box ({0}). This e-mail will be used to complete the verification of the Portal SMTP settings.	Check your e-mail and follow the instructions to complete the process.</value>
+	</data>
+	<data name="tNeedToCheck" xml:space="preserve">
+		<value>You have to certain that server of outbox messages (SMTP) is capable of working and set it if it is necessary to make outbox mail processing correct.</value>
+	</data>
+	<data name="tLetterSubj" xml:space="preserve">
+		<value>Checking up settings of outbox mail processing</value>
+	</data>
+	<data name="tLetterBody" xml:space="preserve">
+		<value>Follow the link in order to complete checking up process</value>
+	</data>
+	<data name="tIsCheckedTrue" xml:space="preserve">
+		<value>The connection between the portal and the inbox message server (SMTP) has been checked.	The settings are correct!</value>
+	</data>
+	<data name="tIsCheckedFalse" xml:space="preserve">
+		<value>The settings of inbox messages server have been modified! You have to certain that server of outbox messages (SMTP) is capable of working and set it if it is necessary to make outbox mail processing correct.</value>
+	</data>
+	<data name="tCheckSMTP" xml:space="preserve">
+		<value>Check SMTP Settings</value>
+	</data>
+	<data name="tEditBoxSettings" xml:space="preserve">
+		<value>Edit Box Settings</value>
+	</data>
+	<data name="tEnableAntiSpam" xml:space="preserve">
+		<value>Enable Anti-spam</value>
+	</data>
+	<data name="tNewIntBox" xml:space="preserve">
+		<value>Create Internal Box</value>
+	</data>
+	<data name="tNoAntiSpamMessage" xml:space="preserve">
+		<value>There is an opportunity of inbox messages filtration using Anti-Spam rules. Messages which are considered to be spam are deleted; suspicious messages are placed to temporary store for manual processing; the rest messages are automatically registered as Issues.</value>
+	</data>
+	<data name="tNoExtBoxesMessage" xml:space="preserve">
+		<value>Portal represents the opportunity of collecting e-mal messages from corporate mail boxes. The part of these messages can be automatically converted to Issues. This will enable to follow working with Issues in direct and convenient way.
+It is enough to register at least one mail box in order to activate this feature.</value>
+	</data>
+	<data name="tNoIntBoxMessage" xml:space="preserve">
+		<value>Portal enables to work with Issues which were created from e-mail messages through standard mail software - Microsoft Outlook or Outlook Express, for example. You have to create internal mail box in order to activate this feature.</value>
+	</data>
+	<data name="tSMTPNotChecked" xml:space="preserve">
+		<value>You have to certain that server of outbox messages (SMTP) is capable of working and set it if it is necessary to make outbox mail processing correct.</value>
+	</data>
+	<data name="tRules" xml:space="preserve">
+		<value>Autodetection/Rules</value>
+	</data>
+	<data name="tReturnSMTP" xml:space="preserve">
+		<value>Return to SMTP Settings page</value>
+	</data>
+	<data name="tInIBN" xml:space="preserve">
+		<value>Login to Portal</value>
+	</data>
+	<data name="tEmailRoutingEnabled" xml:space="preserve">
+		<value>E-mail routing enabled</value>
+	</data>
+	<data name="tRulesExist" xml:space="preserve">
+		<value>Fileds Mapping Rules Exist</value>
+	</data>
+	<data name="tNo" xml:space="preserve">
+		<value>No</value>
+	</data>
+	<data name="tUseSecureConnection" xml:space="preserve">
+		<value>Use Secure Connection</value>
+	</data>
+	<data name="tStatistics" xml:space="preserve">
+		<value>Statistics</value>
+	</data>
+	<data name="tIsActive" xml:space="preserve">
+		<value>Is Active</value>
+	</data>
+	<data name="tLastErrText" xml:space="preserve">
+		<value>Last Error Text</value>
+	</data>
+	<data name="tYes" xml:space="preserve">
+		<value>Yes</value>
+	</data>
+	<data name="tDisableAntiSpam" xml:space="preserve">
+		<value>Disable Anti-Spam</value>
+	</data>
+	<data name="tCommonSettings" xml:space="preserve">
+		<value>Common Settings</value>
+	</data>
+	<data name="tHDM" xml:space="preserve">
+		<value>Help Desk Management</value>
+	</data>
+	<data name="tIncComSet" xml:space="preserve">
+		<value>Issue Common Settings</value>
+	</data>
+	<data name="tDisableLog" xml:space="preserve">
+		<value>Disable Log</value>
+	</data>
+	<data name="tEnableLog" xml:space="preserve">
+		<value>Enable Log</value>
+	</data>
+	<data name="tIssBoxRulesService" xml:space="preserve">
+		<value>Issue Box Rules</value>
+	</data>
+	<data name="tAutoFillList" xml:space="preserve">
+		<value>Fill list automatically</value>
+	</data>
+	<data name="tEmailOutgoing" xml:space="preserve">
+		<value>Outgoing E-mail</value>
+	</data>
+	<data name="tGeneration" xml:space="preserve">
+		<value>Generation</value>
+	</data>
+	<data name="tErrorMsg" xml:space="preserve">
+		<value>Error Message</value>
+	</data>
+	<data name="tCreatedReal" xml:space="preserve">
+		<value>Created</value>
+	</data>
+	<data name="tAddToExistIss" xml:space="preserve">
+		<value>Add To Existing Issue</value>
+	</data>
+	<data name="tPriority" xml:space="preserve">
+		<value>Priority</value>
+	</data>
+	<data name="tFromEMail" xml:space="preserve">
+		<value>[ Email Priority ]</value>
+	</data>
+	<data name="tUseSsl3" xml:space="preserve">
+		<value>SSL 3</value>
+	</data>
+	<data name="tUseNone" xml:space="preserve">
+		<value>None</value>
+	</data>
+	<data name="tTestLetterBody" xml:space="preserve">
+		<value>Instant Business Network - Test SMTP Settings</value>
+	</data>
+	<data name="tGuidWasNotSent" xml:space="preserve">
+		<value>Errors occured while email sending. Email message was not send.</value>
+	</data>
+	<data name="tResetGeneration" xml:space="preserve">
+		<value>Reset Generation</value>
+	</data>
+	<data name="tDescriptionAsBody" xml:space="preserve">
+		<value>Mail body as plain text</value>
+	</data>
+	<data name="tNothing" xml:space="preserve">
+		<value>Nothing</value>
+	</data>
+	<data name="tExpAssignTime" xml:space="preserve">
+		<value>Expected assign deadline</value>
+	</data>
+	<data name="tWebDavSettings" xml:space="preserve">
+		<value>WebDAV Settings</value>
+	</data>
+	<data name="tLifeTimeWebDAV" xml:space="preserve">
+		<value>WebDAV Session Life Time (min)</value>
+	</data>
+	<data name="TaskTime" xml:space="preserve">
+		<value>Task Time</value>
+	</data>
+	<data name="tWarningSmtpBox" xml:space="preserve">
+		<value>Do you really want to delete this SMTP box?</value>
+	</data>
+	<data name="tSmtpBoxNew" xml:space="preserve">
+		<value>New SMTP Box</value>
+	</data>
+	<data name="tSmtpBox" xml:space="preserve">
+		<value>Outgoing e-Mail Server (SMTP)</value>
+	</data>
+	<data name="tDefaultValue" xml:space="preserve">
+		<value>[Default SMTP Box]</value>
+	</data>
+	<data name="tTitleFileSMTP" xml:space="preserve">
+		<value>Outgoing e-Mail Server for File Sending</value>
+	</data>
+	<data name="tCantDeleteMailBox" xml:space="preserve">
+		<value>E-mail box cannot be deleted. There are objects related to it.</value>
+	</data>
+	<data name="tExtMessWarning" xml:space="preserve">
+		<value>Select an action to do with Issue in "Closed" status if a new email with Issue ticket is received by external email box.</value>
+	</data>
+	<data name="tIntMessWarning" xml:space="preserve">
+		<value>Select an action to do with Issue in "Closed" status if a new email with Issue ticket is sent from internal email box.</value>
+	</data>
+	<data name="tSmtpListSettings" xml:space="preserve">
+		<value>SMTP Settings</value>
+	</data>
+	<data name="tSmtpSettingsTimeoutHint1" xml:space="preserve">
+		<value>Request timeout</value>
+	</data>
+	<data name="tSmtpSettingsTimeoutHint2" xml:space="preserve">
+		<value>sec.</value>
+	</data>
+</root>

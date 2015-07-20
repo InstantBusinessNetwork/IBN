@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tDateFrom" xml:space="preserve">
+    <value>Date From</value>
+  </data>
+  <data name="tDateTo" xml:space="preserve">
+    <value>Date To</value>
+  </data>
+  <data name="tShow" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="tPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="tGrAndUs" xml:space="preserve">
+    <value>Group and User Statistics</value>
+  </data>
+  <data name="tGrsAndUss" xml:space="preserve">
+    <value>Groups and Users</value>
+  </data>
+  <data name="tGroups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="tUsers" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="tGroupStatToDate" xml:space="preserve">
+    <value>Group Statistics</value>
+  </data>
+  <data name="tAccNum" xml:space="preserve">
+    <value>Number of Users</value>
+  </data>
+  <data name="tActAccs" xml:space="preserve">
+    <value>Active Users</value>
+  </data>
+  <data name="tDeActAccs" xml:space="preserve">
+    <value>Inactive Users</value>
+  </data>
+  <data name="tTotIMMes" xml:space="preserve">
+    <value>Total IM Messages</value>
+  </data>
+  <data name="tTotFilesTran" xml:space="preserve">
+    <value>Total Files Transferred</value>
+  </data>
+  <data name="tTotConfMes" xml:space="preserve">
+    <value>Total Conference Messages</value>
+  </data>
+  <data name="tTotBytesTran" xml:space="preserve">
+    <value>Total Bytes Transferred</value>
+  </data>
+  <data name="tNewPrjs" xml:space="preserve">
+    <value>Projects Created</value>
+  </data>
+  <data name="tFilesPublish" xml:space="preserve">
+    <value>Files Published</value>
+  </data>
+  <data name="tNewIss" xml:space="preserve">
+    <value>Issues Created</value>
+  </data>
+  <data name="tCalEntrs" xml:space="preserve">
+    <value>Calendar Entries Created</value>
+  </data>
+  <data name="tTop10Us" xml:space="preserve">
+    <value>Top 10 Users by Messaging Activity – To Date</value>
+  </data>
+  <data name="tUsrInf" xml:space="preserve">
+    <value>User Information</value>
+  </data>
+  <data name="tIMGroupName" xml:space="preserve">
+    <value>Contact group</value>
+  </data>
+  <data name="tAccCreateDate" xml:space="preserve">
+    <value>Account Create Date</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tSecLevel" xml:space="preserve">
+    <value>Secure Groups</value>
+  </data>
+  <data name="tAccName" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="tEMail" xml:space="preserve">
+    <value>e-Mail</value>
+  </data>
+  <data name="tFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="tLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="tPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="tStatToDate" xml:space="preserve">
+    <value>Statistics – To Date</value>
+  </data>
+  <data name="tLogins" xml:space="preserve">
+    <value>Logins</value>
+  </data>
+  <data name="tPortal" xml:space="preserve">
+    <value>Portal</value>
+  </data>
+  <data name="tClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="tMessages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="tTotalSent" xml:space="preserve">
+    <value>Total Sent</value>
+  </data>
+  <data name="tTotalReceived" xml:space="preserve">
+    <value>Total Received</value>
+  </data>
+  <data name="tConferences" xml:space="preserve">
+    <value>Conferences</value>
+  </data>
+  <data name="tTotalCreated" xml:space="preserve">
+    <value>Total Created</value>
+  </data>
+  <data name="tTotMesSent" xml:space="preserve">
+    <value>Total Messages Sent</value>
+  </data>
+  <data name="tFiles" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="tTotFilesSent" xml:space="preserve">
+    <value>Total Files Sent</value>
+  </data>
+  <data name="tBytes" xml:space="preserve">
+    <value>Bytes</value>
+  </data>
+  <data name="tTotFilesReceived" xml:space="preserve">
+    <value>Total Files Received</value>
+  </data>
+  <data name="tLibrary" xml:space="preserve">
+    <value>Library</value>
+  </data>
+  <data name="tTotFilesPublished" xml:space="preserve">
+    <value>Total Files Published</value>
+  </data>
+  <data name="tCalendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="tTotEntrsCreate" xml:space="preserve">
+    <value>Total Entries Created</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="tTotPrjsCreate" xml:space="preserve">
+    <value>Total Projects Created</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tSent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="tReceived" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="tFilesSent" xml:space="preserve">
+    <value>Files Sent</value>
+  </data>
+  <data name="tProject" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="tPublished" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="tActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="tNotActive" xml:space="preserve">
+    <value>Not Active</value>
+  </data>
+  <data name="tTotVerFilesPublished" xml:space="preserve">
+    <value>Total Versions of Files Published</value>
+  </data>
+  <data name="tMess" xml:space="preserve">
+    <value>User exist in Main DB, but don`t exist in Portal DB</value>
+  </data>
+  <data name="tIMStatistics" xml:space="preserve">
+    <value>{0} Client Statistics</value>
+  </data>
+  <data name="tBusinessObjects" xml:space="preserve">
+    <value>Business Objects</value>
+  </data>
+  <data name="tIssues" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="tTotIsssCreate" xml:space="preserve">
+    <value>Total Issues Created</value>
+  </data>
+  <data name="tToDo" xml:space="preserve">
+    <value>ToDo`s</value>
+  </data>
+  <data name="tTotToDoCreate" xml:space="preserve">
+    <value>Total ToDo Created</value>
+  </data>
+  <data name="tTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tTotTasksCreate" xml:space="preserve">
+    <value>Total Tasks Created</value>
+  </data>
+  <data name="tPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="tAny" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="tToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="tYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="tThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="tLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="tThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="tLastMonth" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="tThisYear" xml:space="preserve">
+    <value>This Year</value>
+  </data>
+  <data name="tLastYear" xml:space="preserve">
+    <value>Last Year</value>
+  </data>
+  <data name="tCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="tExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="tGroupName" xml:space="preserve">
+    <value>Group Name</value>
+  </data>
+  <data name="tNewVersions" xml:space="preserve">
+    <value>Versions of Files Published</value>
+  </data>
+  <data name="tNewToDo" xml:space="preserve">
+    <value>ToDo's Created</value>
+  </data>
+  <data name="tNewTasks" xml:space="preserve">
+    <value>Tasks Created</value>
+  </data>
+  <data name="tPortalLogins" xml:space="preserve">
+    <value>Total Portal Logins</value>
+  </data>
+  <data name="tClientLogins" xml:space="preserve">
+    <value>Total IM Logins</value>
+  </data>
+  <data name="GroupAndUserIM" xml:space="preserve">
+    <value>Group and User {0} Client Session Statistics</value>
+  </data>
+  <data name="ContactGroup" xml:space="preserve">
+    <value>Contact Group</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="min" xml:space="preserve">
+    <value>min.</value>
+  </data>
+  <data name="TotalIM" xml:space="preserve">
+    <value>Total IM Sessions</value>
+  </data>
+  <data name="TotalDuration" xml:space="preserve">
+    <value>Total Duration</value>
+  </data>
+  <data name="NoneDuring" xml:space="preserve">
+    <value>None During Period</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="IMSessions" xml:space="preserve">
+    <value>IM Sessions</value>
+  </data>
+  <data name="tActiveReopenIss" xml:space="preserve">
+    <value>Active Reopened Issues</value>
+  </data>
+</root>

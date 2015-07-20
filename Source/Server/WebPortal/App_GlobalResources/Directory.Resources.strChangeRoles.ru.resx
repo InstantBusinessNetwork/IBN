@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbTitle">
+		<value>Объекты, связанные с пользователем</value>
+	</data>
+	<data name="Projects">
+		<value>Проекты</value>
+	</data>
+	<data name="ToDos">
+		<value>Поручения</value>
+	</data>
+	<data name="Tasks">
+		<value>Задачи</value>
+	</data>
+	<data name="Events">
+		<value>Мероприятия</value>
+	</data>
+	<data name="Incidents">
+		<value>Инциденты</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Roles">
+		<value>Роли</value>
+	</data>
+	<data name="View">
+		<value>Просмотреть</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="ExecutiveManager">
+		<value>Исполнительный менеджер</value>
+	</data>
+	<data name="TeamMemeber">
+		<value>Член команды</value>
+	</data>
+	<data name="Sponsor">
+		<value>Спонсор</value>
+	</data>
+	<data name="Stakeholder">
+		<value>Заинтересованное лицо</value>
+	</data>
+	<data name="Options">
+		<value>Настройки</value>
+	</data>
+	<data name="Resource">
+		<value>Исполнитель</value>
+	</data>
+	<data name="tWarningTodo">
+		<value>Вы действительно хотите удалить это поручение?</value>
+	</data>
+	<data name="tWarningTask">
+		<value>Вы действительно хотите удалить эту задачу?</value>
+	</data>
+	<data name="tWarningEvent">
+		<value>Вы действительно хотите удалить это мероприятие?</value>
+	</data>
+	<data name="tWarningProject">
+		<value>Вы действительно хотите удалить этот проект?</value>
+	</data>
+	<data name="tWarningIssue">
+		<value>Вы действительно хотите удалить этот инцидент?</value>
+	</data>
+	<data name="Documents">
+		<value>Документы</value>
+	</data>
+	<data name="tWarningDocument">
+		<value>Вы действительно хотите удалить этот документ?</value>
+	</data>
+</root>

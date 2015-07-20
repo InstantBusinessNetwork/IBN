@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="title">
+		<value>Title</value>
+	</data>
+	<data name="project">
+		<value>Project</value>
+	</data>
+	<data name="start_date">
+		<value>Start Date</value>
+	</data>
+	<data name="end_date">
+		<value>Finish Date</value>
+	</data>
+	<data name="manager">
+		<value>Manager</value>
+	</data>
+	<data name="priority">
+		<value>Priority</value>
+	</data>
+	<data name="completion">
+		<value>Completion Type</value>
+	</data>
+	<data name="summary">
+		<value>Is Summary Task</value>
+	</data>
+	<data name="milestone">
+		<value>Is Milestone</value>
+	</data>
+	<data name="description">
+		<value>Description</value>
+	</data>
+	<data name="category">
+		<value>General Categories</value>
+	</data>
+	<data name="tbSaveEdit">
+		<value>Edit Task</value>
+	</data>
+	<data name="tbSaveCreate">
+		<value>Create Task</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Save</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Must be confirmed by Manager</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Calendar</value>
+	</data>
+	<data name="CompletedAutomatically">
+		<value>Completed without manager confirmation</value>
+	</data>
+	<data name="StartDateError">
+		<value>Start Date must be greater than Project's Start Date</value>
+	</data>
+	<data name="SaveAssign">
+		<value>Save &amp; Assign</value>
+	</data>
+	<data name="FileLoad">
+		<value>Load File</value>
+	</data>
+	<data name="Resources">
+		<value>Resources</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Edit dictionary</value>
+	</data>
+	<data name="MustBeConfirmed">
+		<value>Must be confirmed</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Wrong Date</value>
+	</data>
+	<data name="tAnotherOne">
+		<value>Create another one</value>
+	</data>
+	<data name="AssignWarning">
+		<value>Your browser blocks the pop-up windows which are required for the proper portal functionality.&lt;br&gt;Use the following link to open blocked window manually:</value>
+	</data>
+	<data name="AssignWizard1">
+		<value>Resources</value>
+	</data>
+	<data name="EndDateError">
+		<value>Finish Date must be greater than Start Date</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Basic Information</value>
+	</data>
+	<data name="tStatusInfo">
+		<value>Status Information</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Additional Information</value>
+	</data>
+	<data name="activation">
+		<value>Activation Type</value>
+	</data>
+	<data name="phase">
+		<value>Project Phase</value>
+	</data>
+	<data name="dontChange">
+		<value>[ Don't Change ]</value>
+	</data>
+	<data name="taskTime">
+		<value>Task Time</value>
+	</data>
+	<data name="tClient">
+		<value>Client</value>
+	</data>
+</root>

@@ -1,0 +1,7 @@
+EXPORTS
+	GetExtensionVersion
+	HttpExtensionProc
+	TerminateExtension
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
+SECTIONS

@@ -1,0 +1,5 @@
+﻿.pp { padding: 0; padding-left: 3px; border-bottom: #e4e4e4 1px solid }
+.pp A { color: #003399; text-decoration: none }
+.pp A:visited { color: #003399 }
+.pp A:hover { color: red }
+.d {height:18px; font-family:Verdana; font-size:8pt; overflow:hidden}

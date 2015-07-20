@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="Task">
+		<value>Задачи</value>
+	</data>
+	<data name="ToDo">
+		<value>Поручения</value>
+	</data>
+	<data name="CalendarEntry">
+		<value>Мероприятие</value>
+	</data>
+	<data name="Event">
+		<value>Мероприятия</value>
+	</data>
+	<data name="Meeting">
+		<value>Совещания</value>
+	</data>
+	<data name="Appointment">
+		<value>Деловые встречи</value>
+	</data>
+	<data name="tTask">
+		<value>Задача</value>
+	</data>
+	<data name="tToDo">
+		<value>Поручение</value>
+	</data>
+	<data name="tEvent">
+		<value>Мероприятие</value>
+	</data>
+	<data name="tMeeting">
+		<value>Совещание</value>
+	</data>
+	<data name="tAppointment">
+		<value>Деловая встреча</value>
+	</data>
+	<data name="People">
+		<value>Люди</value>
+	</data>
+	<data name="Projects">
+		<value>Проекты</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="MyCalendar">
+		<value>Моя работа</value>
+	</data>
+	<data name="Apply">
+		<value>Применить</value>
+	</data>
+	<data name="Reset">
+		<value>Очистить</value>
+	</data>
+	<data name="PD">
+		<value>Предыдущий день</value>
+	</data>
+	<data name="ND">
+		<value>Следующий день</value>
+	</data>
+	<data name="PW">
+		<value>Предыдущая неделя</value>
+	</data>
+	<data name="NW">
+		<value>Следующая неделя</value>
+	</data>
+	<data name="PM">
+		<value>Предыдущий месяц</value>
+	</data>
+	<data name="NM">
+		<value>Следующий месяц</value>
+	</data>
+	<data name="PY">
+		<value>Предыдущий год</value>
+	</data>
+	<data name="NY">
+		<value>Следующий год</value>
+	</data>
+	<data name="NotSet">
+		<value>Не выбран</value>
+	</data>
+	<data name="From">
+		<value>С</value>
+	</data>
+	<data name="To">
+		<value>По</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="FinishDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="AddEvent">
+		<value>Новое мероприятие</value>
+	</data>
+	<data name="AddToDo">
+		<value>Новое поручение</value>
+	</data>
+	<data name="View">
+		<value>Просмотр</value>
+	</data>
+	<data name="AllTeamMembers">
+		<value>Вся команда проекта</value>
+	</data>
+	<data name="AssignedManaged">
+		<value>Любая</value>
+	</data>
+	<data name="Assigned">
+		<value>Исполнитель</value>
+	</data>
+	<data name="Managed">
+		<value>Руководитель</value>
+	</data>
+	<data name="AddTask">
+		<value>Новая задача</value>
+	</data>
+	<data name="tAllday">
+		<value>Весь день:</value>
+	</data>
+	<data name="Export">
+		<value>Экспорт в Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Экспорт в XML</value>
+	</data>
+	<data name="CompletionPercent">
+		<value>Выполнено</value>
+	</data>
+	<data name="Resource">
+		<value>Исполнитель</value>
+	</data>
+	<data name="CollapseAll">
+		<value>Свернуть</value>
+	</data>
+	<data name="ExpandAll">
+		<value>Развернуть</value>
+	</data>
+	<data name="tMileStone">
+		<value>Веха</value>
+	</data>
+	<data name="tPrjListView">
+		<value>Задачи и поручения</value>
+	</data>
+	<data name="tResourceView">
+		<value>Занятость исполнителей в работе над задачами и поручениями</value>
+	</data>
+	<data name="DeleteTxtEvent">
+		<value>
+			&lt;p align="left" class="text"&gt;Удаляемое мероприятие может быть связано с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить мероприятие и связанные листы учета времени, нажмите кнопку "Удалить 
+			все".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить только мероприятие, нажмите кнопку "Удалить".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+		</value>
+	</data>
+	<data name="tCancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tDelete">
+		<value>Удалить</value>
+	</data>
+	<data name="tDeleteAll">
+		<value>Удалить все</value>
+	</data>
+	<data name="tDeleteEvent">
+		<value>Удаление мероприятия</value>
+	</data>
+	<data name="tWarningTodo">
+		<value>Вы действительно хотите удалить это поручение?</value>
+	</data>
+	<data name="tWarningTask">
+		<value>Вы действительно хотите удалить эту задачу?</value>
+	</data>
+	<data name="tWarningEvent">
+		<value>Вы действительно хотите удалить это мероприятие?</value>
+	</data>
+</root>

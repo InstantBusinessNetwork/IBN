@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tUse" xml:space="preserve">
+    <value>Use the links on this page to access a variety of reporting capabilities within the portal. Reports range from project related reports to administrative reports.</value>
+  </data>
+  <data name="tPrjRep" xml:space="preserve">
+    <value>Project Reports</value>
+  </data>
+  <data name="tUse1" xml:space="preserve">
+    <value>Use the links in this section to view projects/tasks related reports.</value>
+  </data>
+  <data name="tStRep" xml:space="preserve">
+    <value>Status Report</value>
+  </data>
+  <data name="tUpTk" xml:space="preserve">
+    <value>Upcoming Tasks</value>
+  </data>
+  <data name="tPrjStRep" xml:space="preserve">
+    <value>Project Status Report</value>
+  </data>
+  <data name="tPrjSnapShot" xml:space="preserve">
+    <value>Project Snapshot</value>
+  </data>
+  <data name="tActPrj" xml:space="preserve">
+    <value>Active Projects</value>
+  </data>
+  <data name="tTimeSh" xml:space="preserve">
+    <value>Timesheet</value>
+  </data>
+  <data name="tPrjTimeSh" xml:space="preserve">
+    <value>Project Time/Cost</value>
+  </data>
+  <data name="tResUtil" xml:space="preserve">
+    <value>Resources Utilization</value>
+  </data>
+  <data name="tAdmPortalRep" xml:space="preserve">
+    <value>Administrative Portal Reports</value>
+  </data>
+  <data name="tUse2" xml:space="preserve">
+    <value>Use the links in this section to view administration related reports.</value>
+  </data>
+  <data name="tUserAuthHist" xml:space="preserve">
+    <value>Trending/Historical User Authentication Patterns</value>
+  </data>
+  <data name="tGroupAndUserStat" xml:space="preserve">
+    <value>Group and User Statistics</value>
+  </data>
+  <data name="tConfHist" xml:space="preserve">
+    <value>Conference History</value>
+  </data>
+  <data name="tMesHist" xml:space="preserve">
+    <value>Message History</value>
+  </data>
+  <data name="tMostActive" xml:space="preserve">
+    <value>Most Active Groups and Users</value>
+  </data>
+  <data name="tStatusReport" xml:space="preserve">
+    <value>Status Report by User</value>
+  </data>
+  <data name="tStatusReportProject" xml:space="preserve">
+    <value>Status Report by Project</value>
+  </data>
+  <data name="tXMLReport" xml:space="preserve">
+    <value>Custom Report</value>
+  </data>
+  <data name="tAlertsHist" xml:space="preserve">
+    <value>Alert History</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>Resources/Users</value>
+  </data>
+  <data name="Issues" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="Library" xml:space="preserve">
+    <value>Library, Files &amp; Assets</value>
+  </data>
+  <data name="Administrative" xml:space="preserve">
+    <value>Administrative</value>
+  </data>
+  <data name="DashboardGraphs" xml:space="preserve">
+    <value>Dashboard Graphs for Projects</value>
+  </data>
+  <data name="ActiveProjects" xml:space="preserve">
+    <value>Active Projects</value>
+  </data>
+  <data name="CompletedProjects" xml:space="preserve">
+    <value>Completed Projects</value>
+  </data>
+  <data name="TotalProjectIssues" xml:space="preserve">
+    <value>Total Project Issues</value>
+  </data>
+  <data name="TotalProjectFiles" xml:space="preserve">
+    <value>Total Project Files</value>
+  </data>
+  <data name="BudgetedDollars" xml:space="preserve">
+    <value>Budgeted Dollars</value>
+  </data>
+  <data name="HoursTracked" xml:space="preserve">
+    <value>Hours Tracked</value>
+  </data>
+  <data name="ActualDollars" xml:space="preserve">
+    <value>Actual Dollars</value>
+  </data>
+  <data name="IncompleteTasks" xml:space="preserve">
+    <value>Incomplete Tasks</value>
+  </data>
+  <data name="OpenProjectIssues" xml:space="preserve">
+    <value>Open Project Issues</value>
+  </data>
+  <data name="ProjByGeneral" xml:space="preserve">
+    <value>Project Distributions By General Category</value>
+  </data>
+  <data name="ProjByProj" xml:space="preserve">
+    <value>Project Distributions By Project Category</value>
+  </data>
+  <data name="Personal" xml:space="preserve">
+    <value>Personal</value>
+  </data>
+  <data name="DashboardIssues" xml:space="preserve">
+    <value>Dashboard graphs for Issues/Help Desk</value>
+  </data>
+  <data name="TotalIssues" xml:space="preserve">
+    <value>Total Issues</value>
+  </data>
+  <data name="OpenIssues" xml:space="preserve">
+    <value>Open Issues</value>
+  </data>
+  <data name="ClosedIssues" xml:space="preserve">
+    <value>Closed Issues</value>
+  </data>
+  <data name="UnassignedIssues" xml:space="preserve">
+    <value>Unassigned Issues</value>
+  </data>
+  <data name="AvgTimeToResolveClosed" xml:space="preserve">
+    <value>Average time to resolve Closed Issues</value>
+  </data>
+  <data name="AvgTimeToResolveAll" xml:space="preserve">
+    <value>Average time to resolve All Issues</value>
+  </data>
+  <data name="IssuesByStatus" xml:space="preserve">
+    <value>Issues Distribution By Status</value>
+  </data>
+  <data name="IssuesByGenCat" xml:space="preserve">
+    <value>Issues Distribution By General Category</value>
+  </data>
+  <data name="TotalFiles" xml:space="preserve">
+    <value>Total Files</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Calendar, Events &amp; Meetings</value>
+  </data>
+  <data name="TotalEntries" xml:space="preserve">
+    <value>Total Calendar Entries</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="Meeting" xml:space="preserve">
+    <value>Meeting</value>
+  </data>
+  <data name="Appointment" xml:space="preserve">
+    <value>Appointment</value>
+  </data>
+  <data name="TotalProjects" xml:space="preserve">
+    <value>Total Projects</value>
+  </data>
+  <data name="ClosedProjectIssues" xml:space="preserve">
+    <value>Closed Project Issues </value>
+  </data>
+  <data name="NewProjectIssues" xml:space="preserve">
+    <value>New Project Issues</value>
+  </data>
+  <data name="TotalTasks" xml:space="preserve">
+    <value>Total Tasks</value>
+  </data>
+  <data name="CompletedTasks" xml:space="preserve">
+    <value>Completed Tasks</value>
+  </data>
+  <data name="TotalToDos" xml:space="preserve">
+    <value>Total To-Do's</value>
+  </data>
+  <data name="IncompleteToDos" xml:space="preserve">
+    <value>Incomplete To-Do's</value>
+  </data>
+  <data name="CompletedToDos" xml:space="preserve">
+    <value>Completed To-Do's</value>
+  </data>
+  <data name="TotalProjectLinks" xml:space="preserve">
+    <value>Total Project Links</value>
+  </data>
+  <data name="TotalLinks" xml:space="preserve">
+    <value>Total Links</value>
+  </data>
+  <data name="tDashTopComment" xml:space="preserve">
+    <value>Portal Dashboard provides you with an overall view of the major information activities in real-time. Choose from the available perspectives.</value>
+  </data>
+  <data name="tAvailableMetrics" xml:space="preserve">
+    <value>Available Metrics</value>
+  </data>
+  <data name="tDashGraphComment" xml:space="preserve">
+    <value>Select the view type and chart/graph option.</value>
+  </data>
+  <data name="tSelectView" xml:space="preserve">
+    <value>Select View</value>
+  </data>
+  <data name="tCustRepComment" xml:space="preserve">
+    <value>The following report templates are available to view in detail based on the chosen perspective.</value>
+  </data>
+  <data name="tCharting" xml:space="preserve">
+    <value>Charting</value>
+  </data>
+  <data name="tAvailCustRep" xml:space="preserve">
+    <value>Available Custom Reports</value>
+  </data>
+  <data name="tPieChart" xml:space="preserve">
+    <value>Pie Chart</value>
+  </data>
+  <data name="tBarGraph" xml:space="preserve">
+    <value>Bar Graph</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="GenCat" xml:space="preserve">
+    <value>General Category</value>
+  </data>
+  <data name="PrjCat" xml:space="preserve">
+    <value>Project Category</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="IssCat" xml:space="preserve">
+    <value>Issue Category</value>
+  </data>
+  <data name="tOnHoldPrj" xml:space="preserve">
+    <value>On Hold Projects</value>
+  </data>
+  <data name="TotalMinutes" xml:space="preserve">
+    <value>Total Minutes</value>
+  </data>
+  <data name="TargetBudget" xml:space="preserve">
+    <value>Target Budget</value>
+  </data>
+  <data name="EstimatedBudget" xml:space="preserve">
+    <value>Estimated Budget</value>
+  </data>
+  <data name="ActualBudget" xml:space="preserve">
+    <value>Actual Budget</value>
+  </data>
+  <data name="ActiveTasks" xml:space="preserve">
+    <value>Active Tasks</value>
+  </data>
+  <data name="MailIssues" xml:space="preserve">
+    <value>Mail Issues</value>
+  </data>
+  <data name="NewIssues" xml:space="preserve">
+    <value>New Issues</value>
+  </data>
+  <data name="ActiveIssues" xml:space="preserve">
+    <value>Open Issues</value>
+  </data>
+  <data name="SuspendedIssues" xml:space="preserve">
+    <value>Suspended Issues</value>
+  </data>
+  <data name="OnCheckIssues" xml:space="preserve">
+    <value>OnCheck Issues</value>
+  </data>
+  <data name="AvgTimeInNewState" xml:space="preserve">
+    <value>Average time in New State</value>
+  </data>
+  <data name="AvgTimeInActiveState" xml:space="preserve">
+    <value>Average time in Open State</value>
+  </data>
+  <data name="tAvailablePerspectives" xml:space="preserve">
+    <value>Available Perspectives</value>
+  </data>
+  <data name="tIncBox" xml:space="preserve">
+    <value>Issue Box</value>
+  </data>
+  <data name="tSelectDiagram" xml:space="preserve">
+    <value>Choose diagram type</value>
+  </data>
+</root>

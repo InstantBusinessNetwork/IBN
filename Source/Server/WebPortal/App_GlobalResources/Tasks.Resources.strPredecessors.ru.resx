@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTitle">
+		<value>Предшественники</value>
+	</data>
+	<data name="Add">
+		<value>Добавить предшественника</value>
+	</data>
+	<data name="ID">
+		<value>ID</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="EndDate">
+		<value>Дата окончания</value>
+	</data>
+	<data name="Lag">
+		<value>Задержка</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="d">
+		<value>д</value>
+	</data>
+	<data name="h">
+		<value>ч</value>
+	</data>
+	<data name="m">
+		<value>м</value>
+	</data>
+	<data name="Hours">
+		<value>Ч</value>
+	</data>
+	<data name="Minutes">
+		<value>М</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этого предшественника?</value>
+	</data>
+	<data name="tTitleAddP">
+		<value>Добавление предшественника</value>
+	</data>
+	<data name="SelectGroup">
+		<value>Выбор задачи</value>
+	</data>
+	<data name="IAdd">
+		<value>Добавить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tTitleAddS">
+		<value>Добавление последователя</value>
+	</data>
+	<data name="tTitleS">
+		<value>Последователи</value>
+	</data>
+	<data name="WarningS">
+		<value>Вы действительно хотите удалить этого последователя?</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="tSave">
+		<value>Сохранить</value>
+	</data>
+	<data name="tEdit">
+		<value>Редактировать</value>
+	</data>
+	<data name="AddSuc">
+		<value>Добавить последователя</value>
+	</data>
+</root>

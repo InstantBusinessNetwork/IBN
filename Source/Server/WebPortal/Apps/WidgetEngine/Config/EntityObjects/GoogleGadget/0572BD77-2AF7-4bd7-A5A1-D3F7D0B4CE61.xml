@@ -1,0 +1,36 @@
+﻿<?xml version="1.0"?>
+<EntityObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<PrimaryKeyId xsi:nil="true" />
+	<Properties>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Created</Name>
+			<Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-05-22T06:18:58.2419331Z</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">CreatorId</Name>
+			<Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Modified</Name>
+			<Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-05-22T06:18:58.2419331Z</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">ModifierId</Name>
+			<Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+		</EntityObjectProperty>
+
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Title</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">{IbnFramework.WidgetEngine:_mc_CalculatorTitle}</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Description</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">{IbnFramework.WidgetEngine:_mc_CalculatorDescription}</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Link</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">http://www.gmodules.com/ig/ifr?url=http://www.creatonic.com/gadget/calculator.xml&amp;up_color=digg&amp;synd=open&amp;w=320&amp;h=155&amp;title=&amp;lang=all&amp;country=ALL&amp;border=%23ffffff%7C3px%2C1px+solid+%23999999&amp;output=js</Value>
+		</EntityObjectProperty>
+
+	</Properties>
+</EntityObject>

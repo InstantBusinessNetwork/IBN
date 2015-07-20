@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.HelpDeskManagement.ColumnTemplates.Text_Grid_PendingMessage_From" %>
+<%# "<a href='mailto:" + Eval("From").ToString() + "'>" + Eval("From").ToString() + "</a>"%>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BlockCard" xml:space="preserve">
+    <value>Расширение блока</value>
+  </data>
+  <data name="BlockTypeName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="BlockTypes" xml:space="preserve">
+    <value>Шаблоны учёта времени</value>
+  </data>
+  <data name="Collapse" xml:space="preserve">
+    <value>Свернуть</value>
+  </data>
+  <data name="EntryCard" xml:space="preserve">
+    <value>Расширение элемента</value>
+  </data>
+  <data name="Expand" xml:space="preserve">
+    <value>Развернуть</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>Пт</value>
+  </data>
+  <data name="GlobalType" xml:space="preserve">
+    <value>Непроектный</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>Пн</value>
+  </data>
+  <data name="ProjectType" xml:space="preserve">
+    <value>Проектный</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>Сб</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>Вс</value>
+  </data>
+  <data name="SuperType" xml:space="preserve">
+    <value>Тип шаблона</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>Чт</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>Вт</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>Ср</value>
+  </data>
+  <data name="_mc_Accounts" xml:space="preserve">
+    <value>Счета</value>
+  </data>
+  <data name="_mc_ThisWeek" xml:space="preserve">
+    <value>Эта неделя</value>
+  </data>
+  <data name="_mc_LastWeek" xml:space="preserve">
+    <value>Прошлая неделя</value>
+  </data>
+  <data name="_mc_ThisMonth" xml:space="preserve">
+    <value>Этот месяц</value>
+  </data>
+  <data name="_mc_LastMonth" xml:space="preserve">
+    <value>Прошлый месяц</value>
+  </data>
+  <data name="_mc_ThisYear" xml:space="preserve">
+    <value>Этот год</value>
+  </data>
+  <data name="_mc_LastYear" xml:space="preserve">
+    <value>Прошлый год</value>
+  </data>
+  <data name="_mc_CustomWeek" xml:space="preserve">
+    <value>Выбрать неделю</value>
+  </data>
+  <data name="_mc_CustomPeriod" xml:space="preserve">
+    <value>Выбрать период</value>
+  </data>
+  <data name="NewBlockType" xml:space="preserve">
+    <value>Новый шаблон учёта времени</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект / Активность</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="AddSelectedElements" xml:space="preserve">
+    <value>Добавить выбранные элементы</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="ObjectType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="SelectElements" xml:space="preserve">
+    <value>Выберите элементы</value>
+  </data>
+  <data name="TTBlock" xml:space="preserve">
+    <value>Блок</value>
+  </data>
+  <data name="TTBlockTypeInstance" xml:space="preserve">
+    <value>Проект / Активность</value>
+  </data>
+  <data name="TTConfig" xml:space="preserve">
+    <value>Настройки учёта времени</value>
+  </data>
+  <data name="TTEntry" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="_mc_GridDeleteWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить выбранные элементы?</value>
+  </data>
+  <data name="_mc_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="_mc_Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AddAnyTTBlock" xml:space="preserve">
+    <value>Создание любых листов учёта времени</value>
+  </data>
+  <data name="AddMyTTBlock" xml:space="preserve">
+    <value>Создание своих листов учёта времени</value>
+  </data>
+  <data name="_mc_BackToThePrj" xml:space="preserve">
+    <value>Вернуться к проекту</value>
+  </data>
+  <data name="_mc_Tab_Fields" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="_mc_Tab_States" xml:space="preserve">
+    <value>Состояния</value>
+  </data>
+  <data name="_mc_Tab_Rights" xml:space="preserve">
+    <value>Права</value>
+  </data>
+  <data name="_mc_Tab_GlobalSec" xml:space="preserve">
+    <value>Общая безопасность</value>
+  </data>
+  <data name="_mc_Tab_ObjRoles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="_mc_Tab_Services" xml:space="preserve">
+    <value>Сервисы</value>
+  </data>
+  <data name="_mc_ManagerTimesh" xml:space="preserve">
+    <value>Листы учета времени</value>
+  </data>
+  <data name="_mc_ManagerGroupByWeekUser" xml:space="preserve">
+    <value>по неделям и пользователям</value>
+  </data>
+  <data name="_mc_ManagerGroupByWeekProject" xml:space="preserve">
+    <value>по неделям и проектам</value>
+  </data>
+  <data name="_mc_ManagerGroupByUserProject" xml:space="preserve">
+    <value>Пользовательские листы учета времени</value>
+  </data>
+  <data name="_mc_ManagerGroupByProjectUser" xml:space="preserve">
+    <value>Проектные листы учета времени</value>
+  </data>
+  <data name="_mc_TT_MyGroupByWeek" xml:space="preserve">
+    <value>Мои листы учета времени</value>
+  </data>
+  <data name="_mc_TT_CurrentProjectGroupByWeekUser" xml:space="preserve">
+    <value>Управление листами</value>
+  </data>
+  <data name="_mc_Approving" xml:space="preserve">
+    <value>На утверждении менеджера по учёту времени</value>
+  </data>
+  <data name="_mc_Final" xml:space="preserve">
+    <value>Утвержден</value>
+  </data>
+  <data name="_mc_Working" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="_mc_OnApproving" xml:space="preserve">
+    <value>На утверждение</value>
+  </data>
+  <data name="_mc_OnFinal" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="_mc_OnWorking" xml:space="preserve">
+    <value>Отклонить</value>
+  </data>
+  <data name="NoGridData" xml:space="preserve">
+    <value>Нет листов учета времени</value>
+  </data>
+  <data name="TimeTrackingBlockType" xml:space="preserve">
+    <value>Шаблон учёта времени</value>
+  </data>
+  <data name="_mc_Approve" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="_mc_Decline" xml:space="preserve">
+    <value>Отклонить</value>
+  </data>
+  <data name="_mc_PMApproving" xml:space="preserve">
+    <value>На утверждении менеджера проекта</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Finances" xml:space="preserve">
+    <value>Финансы</value>
+  </data>
+  <data name="NotRegistered" xml:space="preserve">
+    <value>Не зарегистрированы</value>
+  </data>
+  <data name="Registered" xml:space="preserve">
+    <value>Зарегистрированы</value>
+  </data>
+  <data name="Rate" xml:space="preserve">
+    <value>Ставка</value>
+  </data>
+  <data name="TotalApproved" xml:space="preserve">
+    <value>Итог для финансов</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Зарегистрировать</value>
+  </data>
+  <data name="Unregister" xml:space="preserve">
+    <value>Отменить регистрацию</value>
+  </data>
+  <data name="DayT" xml:space="preserve">
+    <value>Итого</value>
+  </data>
+  <data name="_mc_State" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="_mc_Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="_mc_NoProjAct" xml:space="preserve">
+    <value>Вне проектов</value>
+  </data>
+  <data name="_mc_Prev" xml:space="preserve">
+    <value>Предыдущая неделя</value>
+  </data>
+  <data name="_mc_Next" xml:space="preserve">
+    <value>Следующая неделя</value>
+  </data>
+  <data name="_mc_GoCurWeek" xml:space="preserve">
+    <value>Текущая неделя</value>
+  </data>
+  <data name="NonProject" xml:space="preserve">
+    <value>[ Вне проектов ]</value>
+  </data>
+  <data name="ByProject" xml:space="preserve">
+    <value>[ Проекты ]</value>
+  </data>
+  <data name="AllProjects" xml:space="preserve">
+    <value>[ Все проекты ]</value>
+  </data>
+  <data name="_mc_SelectProject" xml:space="preserve">
+    <value>Выберите проект/активность</value>
+  </data>
+  <data name="_mc_WorkDescription" xml:space="preserve">
+    <value>Название работы</value>
+  </data>
+  <data name="_mc_CloneItems" xml:space="preserve">
+    <value>Скопировать элементы с предыдущей недели...</value>
+  </data>
+  <data name="_mc_MultipleAdd" xml:space="preserve">
+    <value>Использовать существующие задачи, поручения, инциденты...</value>
+  </data>
+  <data name="_mc_YouCanAlso" xml:space="preserve">
+    <value>Вы также можете</value>
+  </data>
+  <data name="_mc_AddClose" xml:space="preserve">
+    <value>Добавить и закрыть</value>
+  </data>
+  <data name="_mc_Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ProjectsNotFound" xml:space="preserve">
+    <value>Нет доступных проектов / активностей.</value>
+  </data>
+  <data name="_mc_Send" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Проекты / Активности</value>
+  </data>
+  <data name="TimeTrackingBlock" xml:space="preserve">
+    <value>Блок учёта времени</value>
+  </data>
+  <data name="TimeTrackingBlocks" xml:space="preserve">
+    <value>Блоки учёта времени</value>
+  </data>
+  <data name="TimeTrackingEntries" xml:space="preserve">
+    <value>Элементы учёта времени</value>
+  </data>
+  <data name="TimeTrackingEntry" xml:space="preserve">
+    <value>Элемент учёта времени</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="EntriesNotFound" xml:space="preserve">
+    <value>Нет доступных элементов для копирования.</value>
+  </data>
+  <data name="_mc_Clone" xml:space="preserve">
+    <value>Клонировать</value>
+  </data>
+  <data name="CurrentWeek" xml:space="preserve">
+    <value>Текущая неделя</value>
+  </data>
+  <data name="_mc_UnableToCloneMsg" xml:space="preserve">
+    <value>Нельзя копировать записи из текущей недели</value>
+  </data>
+  <data name="_mc_TT_MyRejectedGroupByWeekProject" xml:space="preserve">
+    <value>Мои отклоненные листы учета времени</value>
+  </data>
+  <data name="TimeTrackingMenuHeader" xml:space="preserve">
+    <value>Используйте эти ссылки для управления настройками учёта времени.</value>
+  </data>
+  <data name="_mc_TT_MyGroupByWeekProjectAll" xml:space="preserve">
+    <value>Все мои листы учета времени</value>
+  </data>
+  <data name="_mc_SelectUser" xml:space="preserve">
+    <value>Выберите пользователя</value>
+  </data>
+  <data name="UsersNotFound" xml:space="preserve">
+    <value>Нет доступных пользователей.</value>
+  </data>
+  <data name="_mc_DontChange" xml:space="preserve">
+    <value>Не изменять</value>
+  </data>
+  <data name="_mc_Any" xml:space="preserve">
+    <value>Любой период</value>
+  </data>
+  <data name="_mc_Report" xml:space="preserve">
+    <value>Отчет</value>
+  </data>
+  <data name="_mc_IsRejected" xml:space="preserve">
+    <value>Только отклоненные</value>
+  </data>
+  <data name="_mc_PrimaryGroup" xml:space="preserve">
+    <value>Первичная группировка</value>
+  </data>
+  <data name="_mc_SecondaryGroup" xml:space="preserve">
+    <value>Вторичная группировка</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт в Excel</value>
+  </data>
+  <data name="_mc_Group" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="NewItems" xml:space="preserve">
+    <value>Новые элементы</value>
+  </data>
+  <data name="_mc_QuickAdd" xml:space="preserve">
+    <value>Быстрое добавление</value>
+  </data>
+  <data name="SendToApproveConfirmation" xml:space="preserve">
+    <value>Отправить выбранные элементы на утверждение?</value>
+  </data>
+  <data name="_mc_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="CloneSelectedConfirmation" xml:space="preserve">
+    <value>Скопировать выбранные элементы на текущую неделю?</value>
+  </data>
+  <data name="_mc_CloningItems" xml:space="preserve">
+    <value>Копирование элементов с предыдущей недели</value>
+  </data>
+  <data name="_mc_MultipleAdding" xml:space="preserve">
+    <value>Добавление существующих задач, поручений, инцидентов</value>
+  </data>
+  <data name="NonProjectStateMachine" xml:space="preserve">
+    <value>Непроектная</value>
+  </data>
+  <data name="ProjectStateMachine" xml:space="preserve">
+    <value>Проектная</value>
+  </data>
+  <data name="_mc_ToApproving" xml:space="preserve">
+    <value>Менеджеру по учёту времени</value>
+  </data>
+  <data name="_mc_ToPMApproving" xml:space="preserve">
+    <value>Вернуть менеджеру проекта</value>
+  </data>
+  <data name="_mc_ToRework" xml:space="preserve">
+    <value>На доработку</value>
+  </data>
+  <data name="MsgNoTransitions" xml:space="preserve">
+    <value>Вы не можете отправить этот лист на утверждение, так как переходы по состояниям для него не заданы.</value>
+  </data>
+  <data name="MsgReadOnly" xml:space="preserve">
+    <value>Вы не можете отправить этот лист на утверждение, так как он доступен только для чтения.</value>
+  </data>
+  <data name="GeneralReport" xml:space="preserve">
+    <value>Общий отчёт</value>
+  </data>
+  <data name="ProjectReport" xml:space="preserve">
+    <value>Отчёт по проекту</value>
+  </data>
+  <data name="GroupingUserWeek" xml:space="preserve">
+    <value>Пользователь - Неделя</value>
+  </data>
+  <data name="GroupingWeekUser" xml:space="preserve">
+    <value>Неделя - Пользователь</value>
+  </data>
+  <data name="_mc_ChangeListState" xml:space="preserve">
+    <value>Изменение состояния</value>
+  </data>
+  <data name="_mc_CurrentEntry" xml:space="preserve">
+    <value>Текущая запись</value>
+  </data>
+  <data name="_mc_TimetrackingEdit" xml:space="preserve">
+    <value>Редактирование записи</value>
+  </data>
+  <data name="_mc_ReadOnly" xml:space="preserve">
+    <value>Данная запись доступна только для чтения.</value>
+  </data>
+  <data name="ByActivity" xml:space="preserve">
+    <value>Активности</value>
+  </data>
+  <data name="FinancesAreNotRegistered" xml:space="preserve">
+    <value>Финансы не зарегистрированы</value>
+  </data>
+  <data name="FinanceReport" xml:space="preserve">
+    <value>Финансовый отчёт</value>
+  </data>
+  <data name="Cost" xml:space="preserve">
+    <value>Стоимость</value>
+  </data>
+  <data name="ProjectGrouping" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="NoProjectsOrPermissions" xml:space="preserve">
+    <value>Нет доступных проектов или недостаточно прав для выполнения данного отчёта.</value>
+  </data>
+  <data name="ExpendedTime" xml:space="preserve">
+    <value>Затраченное время</value>
+  </data>
+  <data name="_mc_Details" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="_mc_ShowWeekNumbers" xml:space="preserve">
+    <value>Показывать номера недель</value>
+  </data>
+  <data name="FinancesAreNotActive" xml:space="preserve">
+    <value>Финансы не активированы</value>
+  </data>
+  <data name="_mc_TimeTrackingWeek" xml:space="preserve">
+    <value>Мои листы учета времени</value>
+  </data>
+  <data name="WeekNumber" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="WeekPeriod" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="WeekStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="NotCompleted" xml:space="preserve">
+    <value>Нет данных</value>
+  </data>
+  <data name="Rejected" xml:space="preserve">
+    <value>Отклонено</value>
+  </data>
+  <data name="InProcess" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="Submitted" xml:space="preserve">
+    <value>На утверждении</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Утверждено</value>
+  </data>
+  <data name="CloneComments" xml:space="preserve">
+    <value>Вы можете скопировать записи недели {0} на выбранную неделю.</value>
+  </data>
+  <data name="CloneTitle" xml:space="preserve">
+    <value>Копирование листов</value>
+  </data>
+  <data name="BackToList" xml:space="preserve">
+    <value>Вернуться к списку</value>
+  </data>
+  <data name="AllToApprove" xml:space="preserve">
+    <value>Вы действительно хотите отправить лист учета времени на утверждение?</value>
+  </data>
+  <data name="AllSelectedToApprove" xml:space="preserve">
+    <value>Вы действительно хотите отправить все выбранные листы учета времени на утверждение?</value>
+  </data>
+</root>

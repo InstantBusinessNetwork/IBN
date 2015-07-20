@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Commands>
+		<add>
+			<Command id="MC_ListApp_Security">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListSecurity.aspx?ClassName=[ClientParam:ClassName]</Url>
+				<Width>600</Width>
+				<Height>305</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+			<Command id="MC_ListApp_ImportWizard">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ImportWizard.aspx?ListFolderId=[ClientParam:ListFolderId]</Url>
+				<Width>680</Width>
+				<Height>500</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+			
+			<Command id="MC_ListApp_AddMetaFieldFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:tAddField}</PopupTitle>
+				<Url>~/Apps/ListApp/Pages/MetaFieldListEdit.aspx?key=[ClientParam:key]&amp;field=[ClientParam:field]&amp;CommandName=MC_ListApp_MetaFieldEdited</Url>
+				<Width>600</Width>
+				<Height>400</Height>
+				<Left>20</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ListApp_MetaFieldEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.MetaFieldEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_HDM_PM_ObjectDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Project&amp;refreshName=ObjectDD_Refresh&amp;ReturnCommand=MC_HDM_PM_ObjectDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>600</Width>
+				<Height>440</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ListApp_PM_ObjectDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Project&amp;refreshName=ObjectDD_Refresh&amp;ReturnCommand=MC_ListApp_PM_ObjectDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>520</Width>
+				<Height>440</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.ProjectManagement.ColumnTemplates.Text_Grid_Project_Title_SelectObject" %>
+<%# (Eval("ProjectId") == DBNull.Value || Eval("StatusId") == DBNull.Value) ? "" : Mediachase.UI.Web.Util.CommonHelper.GetProjectStatusWL(Eval("Title").ToString(), (int)Eval("StatusId"))%>

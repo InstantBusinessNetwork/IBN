@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>5A5D9A4D-CC58-4774-A9D8-385BCF72F61C</Uid>
+	<Title>{IbnFramework.Global:_mc_LastAlert}</Title>
+	<Description>{IbnFramework.Global:_mc_LastAlertDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/LastAlert.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/lastalert.png</IconPath>
+</DynamicControlInfo>

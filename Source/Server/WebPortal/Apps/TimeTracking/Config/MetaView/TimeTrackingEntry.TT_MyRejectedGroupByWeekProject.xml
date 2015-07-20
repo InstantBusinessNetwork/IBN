@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add beforeId="DeleteSelectedButton">
+			<Button id="SendButton" text="{IbnFramework.TimeTracking:_mc_Send}" imageUrl="~/Images/TimeTracking/send3.gif" commandName="MC_TimeTracking_SendToApprove"></Button>
+		</add>
+		<add>
+			<Splitter align="Right" id="ReportButtonSplitter"></Splitter>
+			<Button align="Right" id="ReportButton" text="{IbnFramework.TimeTracking:_mc_Report}" imageUrl="~/Images/IbnFramework/Planner2.gif" commandName="MC_TimeTracking_UserReports"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns>
+				<Column id="9448D013-41D3-41a0-878B-D80E74ECF8EA" type="ColumnsActions">
+					<Item imageUrl="~/Images/IbnFramework/info.gif" commandName="MC_TimeTracking_InfoFrame" paddingRight="5" tooltip="{IbnFramework.TimeTracking:_mc_Details}" />
+					<Item imageUrl="~/Images/TimeTracking/send3.gif" commandName="MC_TimeTracking_SendToApproveGrid" paddingRight="5" tooltip="{IbnFramework.TimeTracking:_mc_ToApproving}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Schema>
+		<add>
+			<Namespace />
+			<Name>TT_MyRejectedGroupByWeekProject</Name>
+			<FriendlyName> Мои отклоненные листы учета времени(по неделе, по проекту)</FriendlyName>
+			<MetaClass>TimeTrackingEntry</MetaClass>
+			<Attributes>
+				<Attr>
+					<Name>ShowFilters</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>true</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ShowGroups</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>false</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ShowDetails</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>true</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>DetailsHorizontal</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>true</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ClientSorting</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>true</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ColumnChangeOrder</Name>
+					<Type>System.Boolean, mscorlib</Type>
+					<Value>
+						<boolean>true</boolean>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>FormFilterName</Name>
+					<Type>System.String, mscorlib</Type>
+					<Value>
+						<string>TTEntryFilter</string>
+					</Value>
+				</Attr>
+			</Attributes>
+			<AvailableFields>Day1</AvailableFields>
+			<AvailableFields>Day2</AvailableFields>
+			<AvailableFields>Day3</AvailableFields>
+			<AvailableFields>Day4</AvailableFields>
+			<AvailableFields>Day5</AvailableFields>
+			<AvailableFields>Day6</AvailableFields>
+			<AvailableFields>Day7</AvailableFields>
+			<AvailableFields>Title</AvailableFields>
+			<AvailableFields>DayT</AvailableFields>
+			<AvailableFields>StateFriendlyName</AvailableFields>
+			<Filters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+				<FilterElement>
+					<Uid>1a822435-dfc8-4686-9df7-772716fededc</Uid>
+					<Source>OwnerId</Source>
+					<Type>Equal</Type>
+					<Value xsi:type="xsd:string">{Security:CurrentUserId}</Value>
+					<ValueIsTemplate>true</ValueIsTemplate>
+				</FilterElement>
+				<FilterElement>
+					<Uid>32182c2d-a74f-4dcf-bb99-7a05771bd726</Uid>
+					<Source>IsRejected</Source>
+					<Type>Equal</Type>
+					<Value xsi:type="xsd:string">1</Value>
+					<ValueIsTemplate>false</ValueIsTemplate>
+				</FilterElement>
+				<FilterElement>
+					<Uid>2367ebf5-a976-42ee-afc2-740ec97dd73e</Uid>
+					<Source>ParentBlockId</Source>
+					<Type>In</Type>
+					<Value xsi:type="xsd:string">{TimeTrackingSecurity:CanRead}</Value>
+					<ValueIsTemplate>true</ValueIsTemplate>
+				</FilterElement>
+				<FilterElement>
+					<Uid>2F307C67-F5FA-40F3-B994-BA88539F8904</Uid>
+					<Source>ParentBlockId</Source>
+					<Type>In</Type>
+					<Value xsi:type="xsd:string">
+						SELECT TimeTrackingBlockId FROM cls_TimeTrackingBlock WHERE mc_StateId = 1
+					</Value>
+					<ValueIsTemplate>false</ValueIsTemplate>
+				</FilterElement>
+			</Filters>
+			<Sorting>
+				<ArrayOfSortingElementCollection>
+					<SortingElementCollection>
+						<ArrayOfSortingElement>
+							<SortingElement>
+								<Source>ParentBlockId</Source>
+								<Type>Asc</Type>
+							</SortingElement>
+						</ArrayOfSortingElement>
+					</SortingElementCollection>
+				</ArrayOfSortingElementCollection>
+			</Sorting>
+		</add>
+	</Schema>
+	<DefaultPreference>
+		<add>
+			<HidenFields />
+			<Attributes>
+				<Attr>
+					<Name>Day7:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>7</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day6:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>6</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Title:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>0</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>StateFriendlyName:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>9</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>DayT:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>8</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day2:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>2</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day1:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>1</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day3:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>3</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day5:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>5</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day4:Index</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>4</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>BlockTypeInstance:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>BlockTypeInstanceId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Card:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Created:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>CreatorId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day1:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day2:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day3:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day4:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day5:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day6:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Day7:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>DayT:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>65</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Modified:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ModifierId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ObjectId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ObjectTypeId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Owner:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>OwnerId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ParentBlock:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>ParentBlockId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Rate:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>StartDate:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>StateFriendlyName:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>TimeTrackingEntryId:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>Title:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>TotalApproved:Width</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>300</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>MarginTop</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>10</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>MarginLeft</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>10</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>MarginRight</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>10</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>MarginBottom</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>150</int>
+					</Value>
+				</Attr>
+				<Attr>
+					<Name>PageSize</Name>
+					<Type>System.Int32, mscorlib</Type>
+					<Value>
+						<int>-1</int>
+					</Value>
+				</Attr>
+			</Attributes>
+			<Filters />
+			<Sorting />
+		</add>
+	</DefaultPreference>
+</MetaView>

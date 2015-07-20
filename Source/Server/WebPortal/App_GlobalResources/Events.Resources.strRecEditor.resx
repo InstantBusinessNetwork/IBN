@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbEdit">
+		<value>Edit Reccuring Pattern</value>
+	</data>
+	<data name="First">
+		<value>First</value>
+	</data>
+	<data name="Second">
+		<value>Second</value>
+	</data>
+	<data name="Third">
+		<value>Third</value>
+	</data>
+	<data name="Fourth">
+		<value>Fourth</value>
+	</data>
+	<data name="Last">
+		<value>Last</value>
+	</data>
+	<data name="Monday">
+		<value>Monday</value>
+	</data>
+	<data name="Tuesday">
+		<value>Tuesday</value>
+	</data>
+	<data name="Wednesday">
+		<value>Wednesday</value>
+	</data>
+	<data name="Thursday">
+		<value>Thursday</value>
+	</data>
+	<data name="Friday">
+		<value>Friday</value>
+	</data>
+	<data name="Sunday">
+		<value>Sunday</value>
+	</data>
+	<data name="January">
+		<value>January</value>
+	</data>
+	<data name="February">
+		<value>February</value>
+	</data>
+	<data name="March">
+		<value>March</value>
+	</data>
+	<data name="April">
+		<value>April</value>
+	</data>
+	<data name="May">
+		<value>May</value>
+	</data>
+	<data name="June">
+		<value>June</value>
+	</data>
+	<data name="July">
+		<value>July</value>
+	</data>
+	<data name="August">
+		<value>August</value>
+	</data>
+	<data name="September">
+		<value>September</value>
+	</data>
+	<data name="October">
+		<value>October</value>
+	</data>
+	<data name="November">
+		<value>November</value>
+	</data>
+	<data name="December">
+		<value>December</value>
+	</data>
+	<data name="Saturday">
+		<value>Saturday</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Save</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Calendar</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="Recurevery">
+		<value>Recur every</value>
+	</data>
+	<data name="Daily">
+		<value>Daily</value>
+	</data>
+	<data name="Weekly">
+		<value>Weekly</value>
+	</data>
+	<data name="Monthly">
+		<value>Monthly</value>
+	</data>
+	<data name="Yearly">
+		<value>Yearly</value>
+	</data>
+	<data name="Every">
+		<value>Every</value>
+	</data>
+	<data name="Day">
+		<value>Day</value>
+	</data>
+	<data name="weekday">
+		<value>weekday</value>
+	</data>
+	<data name="week(s)on">
+		<value>week(s) on</value>
+	</data>
+	<data name="ofevery">
+		<value>of every</value>
+	</data>
+	<data name="month(s)">
+		<value>month(s)</value>
+	</data>
+	<data name="The">
+		<value>The</value>
+	</data>
+	<data name="of">
+		<value>of</value>
+	</data>
+	<data name="Start">
+		<value>Start</value>
+	</data>
+	<data name="End">
+		<value>End</value>
+	</data>
+	<data name="Endafter">
+		<value>End after</value>
+	</data>
+	<data name="occurrences">
+		<value>occurrences</value>
+	</data>
+	<data name="Endby">
+		<value>End by</value>
+	</data>
+	<data name="TimeSection">
+		<value>Appointment time</value>
+	</data>
+	<data name="PatternSection">
+		<value>Recurrence pattern</value>
+	</data>
+	<data name="RangeSection">
+		<value>Range of recurrence</value>
+	</data>
+	<data name="StartTime">
+		<value>Start</value>
+	</data>
+	<data name="EndTime">
+		<value>End</value>
+	</data>
+	<data name="Pattern">
+		<value>Pattern</value>
+	</data>
+	<data name="NotSet">
+		<value>Recurring Pattern is not set</value>
+	</data>
+	<data name="Recurrence">
+		<value>Recurrence</value>
+	</data>
+	<data name="Modify">
+		<value>Modify</value>
+	</data>
+	<data name="Warning">
+		<value>Do you really want to delete this Recurring Pattern?</value>
+	</data>
+	<data name="Delete">
+		<value>Delete</value>
+	</data>
+	<data name="TimeZone">
+		<value>Time Zone</value>
+	</data>
+	<data name="Add">
+		<value>Add Reccurence</value>
+	</data>
+	<data name="tTitle">
+		<value>Edit Reccuring Pattern</value>
+	</data>
+</root>

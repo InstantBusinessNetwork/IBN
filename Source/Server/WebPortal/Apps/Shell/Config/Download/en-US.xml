@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Download>
+	<add>
+		<Category id="Mediachase" title="Mediachase Software">
+			<Product id="IncidentAddIn" file="IncidentAddIn.msi" build="4" date="2009-07-22" title="IBN Issues for Outlook (beta)" description="Plug-in for Microsoft Outlook e-mail application which enables to organize simple work with users’ requests through the e-mail." />
+			<Product id="ClientTools" file="IBN_Client_Tools_EN.msi" build="718" date="2010-08-10" title="IBN Client Tools" description="&lt;p&gt;Additional tools for installation on user’s computer: IBN Client, IBN Screen Capture, IBN Toolbox.&lt;/p&gt;&lt;p&gt;IBN Client – instant client (resembling ICQ or MSN Messenger) provides messaging, files sending, IBN Portal notifications receiving. Enables to improve users’ communicating in the context of working with IBN Portal.&lt;/p&gt;&lt;p&gt;IBN Screen Capture – tool for taking pictures or video from the screen. Enables to work effectively with interfaces and documents. Provides assignment of tasks, To-Dos and Issues, and publishing screenshots on the IBN Server.&lt;/p&gt;&lt;p&gt;IBN Toolbox – plug-in for Microsoft Office. Additional menu for Microsoft Office enables to publish documents in a few moments on the IBN Server, and create task, To-Do or Issue.&lt;/p&gt;" />
+		</Category>
+		<Category id="ThirdParty" title="Third Party Software">
+			<Product id="WMEncoder" file="WMEncoder.exe" build="2980" date="2002-11-12" title="Windows Media Encoder 9 Series" description="" />
+		</Category>
+	</add>
+</Download>

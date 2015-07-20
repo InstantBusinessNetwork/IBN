@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Priority">
+		<value>Priority</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="CreationDate">
+		<value>Creation Date</value>
+	</data>
+	<data name="ModifiedDate">
+		<value>Last Update</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="Options">
+		<value>Options</value>
+	</data>
+	<data name="CreatedBy">
+		<value>Created By</value>
+	</data>
+	<data name="Warning">
+		<value>Do really want to delete this issue?</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="All">
+		<value>All</value>
+	</data>
+	<data name="NoneProject">
+		<value>None Project Issues</value>
+	</data>
+	<data name="tApply">
+		<value>Apply</value>
+	</data>
+	<data name="tReset">
+		<value>Reset</value>
+	</data>
+	<data name="AssignedTo">
+		<value>Assigned to</value>
+	</data>
+	<data name="Type">
+		<value>Type</value>
+	</data>
+	<data name="Keyword">
+		<value>Keyword</value>
+	</data>
+	<data name="Inactive">
+		<value>Inactive</value>
+	</data>
+	<data name="Active">
+		<value>Hide Inactive</value>
+	</data>
+	<data name="GeneralCats">
+		<value>General Categories</value>
+	</data>
+	<data name="IssuesCats">
+		<value>Issues Categories</value>
+	</data>
+	<data name="AllGenCats">
+		<value>Any General Categories</value>
+	</data>
+	<data name="AllIssCats">
+		<value>Any Issues Categories</value>
+	</data>
+	<data name="HideFilter">
+		<value>Back to Issues</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Set Filter</value>
+	</data>
+	<data name="SetGrouping">
+		<value>Set Group</value>
+	</data>
+	<data name="tIssList">
+		<value>Issues List</value>
+	</data>
+	<data name="tAddRelIncident">
+		<value>Add Related Issue To </value>
+	</data>
+	<data name="tCancel">
+		<value>Back To Issue View</value>
+	</data>
+	<data name="tAdd">
+		<value>Add Related Issue</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Reset Filter</value>
+	</data>
+	<data name="ResetGroup">
+		<value>Reset Group</value>
+	</data>
+	<data name="FilterSet">
+		<value>Filter is set.</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Filter is not set.</value>
+	</data>
+	<data name="Any2">
+		<value>Any</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Only following</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Exclude following</value>
+	</data>
+	<data name="tSeverity">
+		<value>Severity</value>
+	</data>
+	<data name="tMyRole">
+		<value>My Role</value>
+	</data>
+	<data name="tResource">
+		<value>Resource</value>
+	</data>
+	<data name="tGroupBy">
+		<value>Group By</value>
+	</data>
+	<data name="tProjects">
+		<value>Projects</value>
+	</data>
+	<data name="tNoProject">
+		<value>No Project</value>
+	</data>
+	<data name="tWarning">
+		<value>Do you want to delete this issue?</value>
+	</data>
+	<data name="tEdit">
+		<value>Edit</value>
+	</data>
+	<data name="tDelete">
+		<value>Delete</value>
+	</data>
+	<data name="tAddToDo">
+		<value>Add ToDo</value>
+	</data>
+	<data name="tViewInc">
+		<value>View Issue</value>
+	</data>
+	<data name="tShowFilter">
+		<value>Show Filter</value>
+	</data>
+	<data name="tHideFilter">
+		<value>Hide Filter</value>
+	</data>
+	<data name="tIssueNum">
+		<value>Issue #</value>
+	</data>
+	<data name="tIssBox">
+		<value>Issue Box</value>
+	</data>
+	<data name="tResponsible">
+		<value>Responsible</value>
+	</data>
+	<data name="tClient">
+		<value>Client</value>
+	</data>
+	<data name="tNoClient">
+		<value>No Client</value>
+	</data>
+	<data name="tClients">
+		<value>Clients</value>
+	</data>
+	<data name="tUnansweredOnly">
+		<value>Unanswered only</value>
+	</data>
+	<data name="tFieldSet">
+		<value>Field Set</value>
+	</data>
+	<data name="tIncidentsDefault">
+		<value>Standard</value>
+	</data>
+	<data name="tIncidentsLight">
+		<value>Timeline</value>
+	</data>
+	<data name="tView">
+		<value>View</value>
+	</data>
+	<data name="ActualOpenDate">
+		<value>Actual Open Date</value>
+	</data>
+	<data name="ActualFinishDate">
+		<value>Actual Finish Date</value>
+	</data>
+	<data name="ExpectedResponseDate">
+		<value>Expected Response Date</value>
+	</data>
+	<data name="ExpectedResolveDate">
+		<value>Expected Resolve Date</value>
+	</data>
+	<data name="tRespNotAssigned">
+		<value>Not Assigned</value>
+	</data>
+	<data name="tOverdueOnly">
+		<value>Overdue only</value>
+	</data>
+</root>

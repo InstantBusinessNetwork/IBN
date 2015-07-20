@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="Clean_IBN_CreateEvent" storage="c:\projects\outlookibnsynchronization\synchronizationtest\clean_ibn_createevent.orderedtest" id="39625022-6470-421a-9ee2-3f6f5776cefb" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Css projectStructure="" iteration="" />
+  <Execution timeOut="2147483647" />
+  <Owners>
+    <Owner name="" />
+  </Owners>
+  <TestLinks>
+    <TestLink id="c03744c8-a7e1-141f-3073-ea8f5d45c92c" name="CleanupProvider" storage="bin\debug\synchronizationtest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="05c27eaf-9232-1056-6769-79735700f58b" name="CreateIBN_Event" storage="bin\debug\synchronizationtest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="Location">
+		<value>Location</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="EndDate">
+		<value>End Date</value>
+	</data>
+	<data name="Priority">
+		<value>Priority</value>
+	</data>
+	<data name="Type">
+		<value>Type</value>
+	</data>
+	<data name="Categories">
+		<value>General Categories</value>
+	</data>
+	<data name="Reminder">
+		<value>Reminder</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Save</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="tbsave_add">
+		<value>Create Calendar Entry</value>
+	</data>
+	<data name="tbsave_edit">
+		<value>Event Edit</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>not set</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Calendar</value>
+	</data>
+	<data name="FileLoad">
+		<value>Load File</value>
+	</data>
+	<data name="StartDateError">
+		<value>Start Date must be greater than Project's Start Date</value>
+	</data>
+	<data name="SharedEntry">
+		<value>This calendar entry is shared by</value>
+	</data>
+	<data name="SaveAssign">
+		<value>Save &amp; Invite</value>
+	</data>
+	<data name="tDonotremind">
+		<value>[ Do not remind ]</value>
+	</data>
+	<data name="t5Min">
+		<value>5 minutes before</value>
+	</data>
+	<data name="t15Min">
+		<value>15 minutes before</value>
+	</data>
+	<data name="t30Min">
+		<value>30 minutes before</value>
+	</data>
+	<data name="t1Hour">
+		<value>1 hour before</value>
+	</data>
+	<data name="t4Hour">
+		<value>4 hour before</value>
+	</data>
+	<data name="t1Day">
+		<value>1 day before</value>
+	</data>
+	<data name="t2Day">
+		<value>2 days before</value>
+	</data>
+	<data name="t3Day">
+		<value>3 days before</value>
+	</data>
+	<data name="t1Week">
+		<value>1 week before</value>
+	</data>
+	<data name="t2Week">
+		<value>2 weeks before</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Edit dictionary</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Wrong Date</value>
+	</data>
+	<data name="tAnotherOne">
+		<value>Create another one</value>
+	</data>
+	<data name="AssignWarning">
+		<value>Your browser blocks the pop-up windows which are required for the proper portal functionality.&lt;br&gt;Use the following link to open blocked window manually:</value>
+	</data>
+	<data name="AssignWizard1">
+		<value>Participants</value>
+	</data>
+	<data name="EndDateError">
+		<value>End Date must be greater than Start Date</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Basic Information</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Status and Category Information</value>
+	</data>
+</root>

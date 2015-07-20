@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<SpreadSheet>
+	<Template>
+		<Name>Отчет о прибылях и убытках - Упрощенный</Name>
+		<Description>Две группы в наличии: доходы и расходы. Чистый доход формируется из доходов за вычетом расходов.</Description>
+		<Rows>
+			<Block Id="Revenues" Name="Доходы" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			
+			<Block Id="Expenses" Name="Расходы" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+
+			<Row Id="Space1" Name="" ReadOnly="True" />
+			
+			<Row Id="IncomeBeforeTaxes" Name="Прибыль до налогообложения" ReadOnly="True" Expression="[Revenues]-[Expenses]"/>
+			<Row Id="IncomeTaxes" Name="Налог к уплате" ReadOnly="False"/>
+			
+			<Row Id="Space2" Name="" ReadOnly="True" />
+			
+			<Row Id="NetIncome" Name="Чистый доход" ReadOnly="True" Expression="[IncomeBeforeTaxes]-[IncomeTaxes]"/>
+		</Rows>
+	</Template>
+</SpreadSheet>

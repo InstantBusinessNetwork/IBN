@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_mc_Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="_mc_BackToList" xml:space="preserve">
+    <value>Вернуться к списку</value>
+  </data>
+  <data name="_mc_Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="_mc_ColumnEditor" xml:space="preserve">
+    <value>Редактор колонок</value>
+  </data>
+  <data name="_mc_Department" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="_mc_DepartmentList" xml:space="preserve">
+    <value>Список отделов</value>
+  </data>
+  <data name="_mc_DepartmentView" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="_mc_Designer" xml:space="preserve">
+    <value>Настройка</value>
+  </data>
+  <data name="_mc_Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="_mc_General" xml:space="preserve">
+    <value>Главное</value>
+  </data>
+  <data name="_mc_Layout" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="_mc_Location" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="_mc_NotSet" xml:space="preserve">
+    <value>Значение не определено</value>
+  </data>
+  <data name="_mc_PageSize" xml:space="preserve">
+    <value>Размер страницы</value>
+  </data>
+  <data name="_mc_ParentTitle" xml:space="preserve">
+    <value>В рамках</value>
+  </data>
+  <data name="_mc_Records" xml:space="preserve">
+    <value>записей</value>
+  </data>
+  <data name="_mc_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="_mc_Selected" xml:space="preserve">
+    <value>Выделено: %selCount%</value>
+  </data>
+  <data name="_mc_Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="_mc_UserList" xml:space="preserve">
+    <value>Пользователи</value>
+  </data>
+  <data name="_mc_WorkgroupList" xml:space="preserve">
+    <value>Рабочие группы</value>
+  </data>
+  <data name="_mc_WorkgroupView" xml:space="preserve">
+    <value>Рабочая группа</value>
+  </data>
+  <data name="_mc_Reset" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="_mc_All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="_mc_Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="_mc_ObjectForms" xml:space="preserve">
+    <value>Формы объектов</value>
+  </data>
+  <data name="_mc_FieldAdd" xml:space="preserve">
+    <value>Добавление поля</value>
+  </data>
+  <data name="_mc_FieldsAdd" xml:space="preserve">
+    <value>Добавление полей</value>
+  </data>
+  <data name="_mc_FieldProperties" xml:space="preserve">
+    <value>Свойства поля</value>
+  </data>
+  <data name="_mc_FormAdd" xml:space="preserve">
+    <value>Новая форма</value>
+  </data>
+  <data name="_mc_SectionNew" xml:space="preserve">
+    <value>Новая секция</value>
+  </data>
+  <data name="_mc_TabNew" xml:space="preserve">
+    <value>Новая вкладка</value>
+  </data>
+  <data name="_mc_CommonTasks" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="_mc_Class" xml:space="preserve">
+    <value>Класс</value>
+  </data>
+  <data name="_mc_Form" xml:space="preserve">
+    <value>Форма</value>
+  </data>
+  <data name="_mc_Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="_mc_Remove" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="_mc_SaveChanges" xml:space="preserve">
+    <value>Сохранить изменения</value>
+  </data>
+  <data name="_mc_ChangeProperties" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="_mc_DeleteFieldWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенное поле?</value>
+  </data>
+  <data name="_mc_DeleteSectionWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенную секцию?</value>
+  </data>
+  <data name="_mc_DeleteFormWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту форму?</value>
+  </data>
+  <data name="_mc_TitleIsNotEntered" xml:space="preserve">
+    <value>название не задано</value>
+  </data>
+  <data name="_mc_NoTitle" xml:space="preserve">
+    <value>без названия</value>
+  </data>
+  <data name="_mc_AddFieldsText" xml:space="preserve">
+    <value>Выберите поля для добавления в секцию.</value>
+  </data>
+  <data name="_mc_MetaField" xml:space="preserve">
+    <value>Поле</value>
+  </data>
+  <data name="_mc_Tab" xml:space="preserve">
+    <value>Вкладка</value>
+  </data>
+  <data name="_mc_Section" xml:space="preserve">
+    <value>Секция</value>
+  </data>
+  <data name="_mc_FieldAddText" xml:space="preserve">
+    <value>Выберите поле для секции.</value>
+  </data>
+  <data name="_mc_Field" xml:space="preserve">
+    <value>Поле</value>
+  </data>
+  <data name="_mc_FieldPropertiesText" xml:space="preserve">
+    <value>Вы можете редактировать свойства поля.</value>
+  </data>
+  <data name="_mc_Label" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="_mc_LayoutOneColumn" xml:space="preserve">
+    <value>Одна колонка</value>
+  </data>
+  <data name="_mc_LayoutTwoColumn" xml:space="preserve">
+    <value>Две колонки</value>
+  </data>
+  <data name="_mc_Rows" xml:space="preserve">
+    <value>Высота (ряды)</value>
+  </data>
+  <data name="_mc_DisplayLabel" xml:space="preserve">
+    <value>Отображать заголовок на форме.</value>
+  </data>
+  <data name="_mc_FormAddText" xml:space="preserve">
+    <value>Добавление новой формы.</value>
+  </data>
+  <data name="_mc_TitleExistsError" xml:space="preserve">
+    <value>Это название уже используется!</value>
+  </data>
+  <data name="_mc_SectionNewText" xml:space="preserve">
+    <value>Добавление новой секции на форму.</value>
+  </data>
+  <data name="_mc_SectionEdit" xml:space="preserve">
+    <value>Редактирование секции</value>
+  </data>
+  <data name="_mc_SectionEditText" xml:space="preserve">
+    <value>Вы можете изменить свойства секции.</value>
+  </data>
+  <data name="_mc_Region" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="_mc_ShowBorder" xml:space="preserve">
+    <value>Показывать линию границы для секции.</value>
+  </data>
+  <data name="_mc_ShowName" xml:space="preserve">
+    <value>Отображать название секции на форме.</value>
+  </data>
+  <data name="_mc_TopRegion" xml:space="preserve">
+    <value>Верхняя область</value>
+  </data>
+  <data name="_mc_MLeftRegion" xml:space="preserve">
+    <value>Левая средняя область</value>
+  </data>
+  <data name="_mc_MRightRegion" xml:space="preserve">
+    <value>Правая средняя область</value>
+  </data>
+  <data name="_mc_BottomRegion" xml:space="preserve">
+    <value>Нижняя область</value>
+  </data>
+  <data name="_mc_TabNewText" xml:space="preserve">
+    <value>Добавление новой вкладки на форму.</value>
+  </data>
+  <data name="_mc_TabEdit" xml:space="preserve">
+    <value>Редактирование вкладки</value>
+  </data>
+  <data name="_mc_TabEditText" xml:space="preserve">
+    <value>Вы можете изменить свойства вкладки.</value>
+  </data>
+  <data name="_mc_TimeManagement" xml:space="preserve">
+    <value>Листы учета времени</value>
+  </data>
+  <data name="_mc_User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="_mc_TimePeriod" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="_mc_Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="_mc_Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="_mc_NoSelectedItems" xml:space="preserve">
+    <value>Ни одного элемента не выделено</value>
+  </data>
+  <data name="_mc_Total" xml:space="preserve">
+    <value>Итого</value>
+  </data>
+  <data name="_mc_Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="_mc_ReadOnly" xml:space="preserve">
+    <value>Не разрешать редактирование поля.</value>
+  </data>
+  <data name="_mc_Events" xml:space="preserve">
+    <value>События</value>
+  </data>
+  <data name="principalDepartment" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="principalEveryone" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="principalMainCompany" xml:space="preserve">
+    <value>Главная компания</value>
+  </data>
+  <data name="principalPartnerCompany" xml:space="preserve">
+    <value>Компания-партнёр</value>
+  </data>
+  <data name="principalPartners" xml:space="preserve">
+    <value>Партнёры</value>
+  </data>
+  <data name="principalRestricted" xml:space="preserve">
+    <value>Органиченный доступ</value>
+  </data>
+  <data name="principalRole" xml:space="preserve">
+    <value>Роль</value>
+  </data>
+  <data name="principalRoles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="principalTeam" xml:space="preserve">
+    <value>Команда</value>
+  </data>
+  <data name="principalTeams" xml:space="preserve">
+    <value>Команды</value>
+  </data>
+  <data name="principalUser" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="_mc_NoItemSelected" xml:space="preserve">
+    <value>Выберите хотя бы один элемент в списке</value>
+  </data>
+  <data name="_mc_SelectedNoNumber" xml:space="preserve">
+    <value>Выделенное:</value>
+  </data>
+  <data name="_mc_ActiveActivities" xml:space="preserve">
+    <value>Активные&amp;nbsp;задачи/поручения</value>
+  </data>
+  <data name="_mc_ActiveDocuments" xml:space="preserve">
+    <value>Активные&amp;nbsp;документы</value>
+  </data>
+  <data name="_mc_ActiveIssues" xml:space="preserve">
+    <value>Открытые&amp;nbsp;инциденты</value>
+  </data>
+  <data name="_mc_ActiveProjects" xml:space="preserve">
+    <value>Активные&amp;nbsp;проекты</value>
+  </data>
+  <data name="_mc_Calendar" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="_mc_HelpInfo" xml:space="preserve">
+    <value>Помощь&amp;nbsp;и&amp;nbsp;информация</value>
+  </data>
+  <data name="_mc_InActivities" xml:space="preserve">
+    <value>Задачи/поручения,&amp;nbsp; поставленные&amp;nbsp;мне</value>
+  </data>
+  <data name="_mc_OutActivities" xml:space="preserve">
+    <value>Задачи/поручения,&amp;nbsp; поставленные&amp;nbsp;мной</value>
+  </data>
+  <data name="_mc_RssNews" xml:space="preserve">
+    <value>Лента&amp;nbsp;новостей</value>
+  </data>
+  <data name="_mc_ControlVisible" xml:space="preserve">
+    <value>Показывать на странице</value>
+  </data>
+  <data name="_mc_SetDefault" xml:space="preserve">
+    <value>Настройки по умолчанию</value>
+  </data>
+  <data name="_mc_1_1_1Column_Description" xml:space="preserve">
+    <value>Три столбца одинаковой ширины </value>
+  </data>
+  <data name="_mc_1_1_1Column_Name" xml:space="preserve">
+    <value>Шаблон с тремя колонками</value>
+  </data>
+  <data name="_mc_1_1Column_Description" xml:space="preserve">
+    <value>Два столбца одинаковой ширины</value>
+  </data>
+  <data name="_mc_1_1Column_Name" xml:space="preserve">
+    <value>Шаблон с двумя колонками (1 : 1)</value>
+  </data>
+  <data name="_mc_1_2Column_Description" xml:space="preserve">
+    <value>Два столбца с соотношением ширины 1:2</value>
+  </data>
+  <data name="_mc_1_2Column_Name" xml:space="preserve">
+    <value>Шаблон с двумя колонками (1 : 2)</value>
+  </data>
+  <data name="_mc_1Column_Description" xml:space="preserve">
+    <value>Один столбец</value>
+  </data>
+  <data name="_mc_1Column_Name" xml:space="preserve">
+    <value>Шаблон с одной колонкой</value>
+  </data>
+  <data name="_mc_2_1Column_Description" xml:space="preserve">
+    <value>Два столбца с соотношением ширины 2:1</value>
+  </data>
+  <data name="_mc_2_1Column_Name" xml:space="preserve">
+    <value>Шаблон с двумя колонками (2 : 1)</value>
+  </data>
+  <data name="_mc_Forms" xml:space="preserve">
+    <value>Формы</value>
+  </data>
+  <data name="_mc_FavoriteLists" xml:space="preserve">
+    <value>Избранные&amp;nbsp;списки</value>
+  </data>
+  <data name="_mc_ActiveActivitiesDescription" xml:space="preserve">
+    <value>Задачи  и поручения, находящиеся в состоянии «Активно» или «Просрочено», менеджером или исполнителем которых вы являетесь.</value>
+  </data>
+  <data name="_mc_ActiveDocumentsDescription" xml:space="preserve">
+    <value>Документы, находящиеся в состоянии «Активно» или «Просрочено», менеджером или исполнителем которых вы являетесь.</value>
+  </data>
+  <data name="_mc_ActiveIssuesDescription" xml:space="preserve">
+    <value>Инциденты, находящиеся в состоянии «Открыт», ответственными за которые вы являетесь.</value>
+  </data>
+  <data name="_mc_ActiveProjectsDescription" xml:space="preserve">
+    <value>Проекты, находящиеся в состоянии «Активно», вы команду которых вы входите.</value>
+  </data>
+  <data name="_mc_CalendarDescription" xml:space="preserve">
+    <value>Календарь текущего месяца и список запланированных на ближайшие 7 дней мероприятий.</value>
+  </data>
+  <data name="_mc_FavoriteListsDescription" xml:space="preserve">
+    <value>Списки, которые вы добавили ранее в «Избранное».</value>
+  </data>
+  <data name="_mc_HelpInfoDescription" xml:space="preserve">
+    <value>Ссылки на общий отчет по порталу, справочник по работе с порталом и готовые пользовательские шаблоны отчетов; важные сообщения от администратора портала; мастеры создания новых объектов, импорта пользователей, списков и инцидентов.</value>
+  </data>
+  <data name="_mc_InActivitiesDescription" xml:space="preserve">
+    <value>Задачи  и поручения, находящиеся в состоянии «Активно» или «Просрочено», исполнителем которых вы являетесь.</value>
+  </data>
+  <data name="_mc_OutActivitiesDescription" xml:space="preserve">
+    <value>Задачи  и поручения, находящиеся в состоянии «Активно» или «Просрочено», менеджером которых вы являетесь.</value>
+  </data>
+  <data name="_mc_RssNewsDescription" xml:space="preserve">
+    <value>Новости «Медиачеис».</value>
+  </data>
+  <data name="_mc_RemoveBlock" xml:space="preserve">
+    <value>Удалить блок со страницы «Моя работа» ?</value>
+  </data>
+  <data name="_mc_NoItems" xml:space="preserve">
+    <value>В списке нет элементов</value>
+  </data>
+  <data name="_mc_LastAlert" xml:space="preserve">
+    <value>Важные&amp;nbsp;сообщения</value>
+  </data>
+  <data name="_mc_LastAlertDescription" xml:space="preserve">
+    <value>Сообщения администратора портала.</value>
+  </data>
+  <data name="_mc_ControlsSettings" xml:space="preserve">
+    <value>Отображаемые блоки</value>
+  </data>
+  <data name="_mc_TemplateSettings" xml:space="preserve">
+    <value>Вид страницы</value>
+  </data>
+  <data name="GroupAdministrators" xml:space="preserve">
+    <value>Администраторы</value>
+  </data>
+  <data name="GroupEveryone" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="GroupExec" xml:space="preserve">
+    <value>Исполнительные менеджеры</value>
+  </data>
+  <data name="GroupExtranet" xml:space="preserve">
+    <value>Партнеры</value>
+  </data>
+  <data name="GroupHDM" xml:space="preserve">
+    <value>Служба поддержки</value>
+  </data>
+  <data name="GroupIntranet" xml:space="preserve">
+    <value>Внутренние</value>
+  </data>
+  <data name="GroupPM" xml:space="preserve">
+    <value>Проект-менеджеры</value>
+  </data>
+  <data name="GroupPPM" xml:space="preserve">
+    <value>Руководители</value>
+  </data>
+  <data name="GroupRoles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="GroupTM" xml:space="preserve">
+    <value>Менеджеры по учёту времени</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Действие</value>
+  </data>
+  <data name="_mc_ie6update" xml:space="preserve">
+    <value>У вас установлена старая версия обозревателя Internet Explorer 6.0 (или более ранняя версия). Для корректной работы вам необходимо обновить обновить версия обозревателя до версии 7.0 или выше. С сайта компании Микрософт можно бесплатно скачать версию обозревателя &lt;a href='http://www.microsoft.com/windows/downloads/ie/getitnow.mspx'&gt;Internet Explorer 7.0&lt;/a&gt;. </value>
+  </data>
+  <data name="ChangeFilter" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="FilterIsSet" xml:space="preserve">
+    <value>Фильтр установлен</value>
+  </data>
+  <data name="FilterIsNotSet" xml:space="preserve">
+    <value>Фильтр не установлен</value>
+  </data>
+  <data name="ShowGroupInfo" xml:space="preserve">
+    <value>Отображать суммарную информацию по группам</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="_mc_AddClose" xml:space="preserve">
+    <value>Добавить и закрыть</value>
+  </data>
+  <data name="_mc_Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="_mc_TemplateUpdate" xml:space="preserve">
+    <value>Шаблон успешно обновлен</value>
+  </data>
+  <data name="_mc_WorkspaceDefault" xml:space="preserve">
+    <value>Вы уверены что хотите восстановить настройки по умолчанию (шаблон и набор элементов управления)?</value>
+  </data>
+  <data name="MustBeUnique" xml:space="preserve">
+    <value>Значение этого поля должно быть уникальным! Введите другое значение!</value>
+  </data>
+  <data name="_mc_Abort" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="_mc_SaveAndClose" xml:space="preserve">
+    <value>Сохранить и закрыть</value>
+  </data>
+  <data name="SelectWeek" xml:space="preserve">
+    <value>Выберите неделю</value>
+  </data>
+  <data name="_mc_MyWork" xml:space="preserve">
+    <value>Моя&amp;nbsp; работа</value>
+  </data>
+  <data name="_mc_MyWorkDescription" xml:space="preserve">
+    <value>Задачи, поручения и инциденты, находящиеся в состоянии «Активно» или «Просрочено», исполнителем которых вы являетесь.</value>
+  </data>
+  <data name="_mc_WsAdminConfirmation" xml:space="preserve">
+    <value>Персональные настройки данной страницы будут удалены у всех пользователей, использующих данный профиль. Продолжить?</value>
+  </data>
+  <data name="_mc_WsAdminPageApply" xml:space="preserve">
+    <value>Применить настройки этой страницы для всех пользователей, использующих данный профиль</value>
+  </data>
+  <data name="_mc_WsAdminPageEdit" xml:space="preserve">
+    <value>Выберите страницу для редактирования</value>
+  </data>
+  <data name="_mc_Print" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="FieldsTab" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="GroupsTab" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="FiltersTab" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="GeneralTab" xml:space="preserve">
+    <value>Общее</value>
+  </data>
+  <data name="NewViewGeneralTabComment" xml:space="preserve">
+    <value>Все готово для создания нового вида списка. Необходимо ввести название.</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>Введите название вида</value>
+  </data>
+  <data name="IsPublicView" xml:space="preserve">
+    <value>Показывать этот вид всем пользователям</value>
+  </data>
+  <data name="TitleIsRequired" xml:space="preserve">
+    <value>Необходимо ввести название!</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Дата завершения</value>
+  </data>
+  <data name="QuickAddToDo" xml:space="preserve">
+    <value>Новое поручение</value>
+  </data>
+  <data name="_mc_Resources" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="_mc_ProjectTeam" xml:space="preserve">
+    <value>[Команда проекта]</value>
+  </data>
+  <data name="_mc_Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="_mc_FindNow" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="EMail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="bottomtextsingle" xml:space="preserve">
+    <value>
+			&lt;p&gt;&lt;span style="color:red;font-weight:bold"&gt;Внимание&lt;/span&gt;&lt;br /&gt;Портал деактивирован.&lt;/p&gt;
+			&lt;hr /&gt;
+			&lt;p style="font-weight:bold"&gt;Вопросы и служба поддержки&lt;/p&gt;
+			&lt;p&gt;Если в процессе работы у вас возникли какие-либо вопросы, свяжитесь с нами по адресу &lt;a href="mailto:support@mediachase.ru"&gt;support@mediachase.ru&lt;/a&gt;, или по одному из наших телефонов.&lt;/p&gt;
+			&lt;p&gt;Компания Медиачеис&lt;br /&gt;
+			&lt;a href="http://www.pmbox.ru"&gt;www.pmbox.ru&lt;/a&gt;&lt;/p&gt;
+			&lt;table&gt;&lt;tr&gt;&lt;td&gt;Телефон:&lt;/td&gt;&lt;td&gt;+7 (495) 648 61 62 (Москва)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Телефон/факс:&lt;/td&gt;&lt;td&gt;+7 (4012) 36 85 98 (Калининград)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			&lt;p style="text-align:right"&gt;Версия портала: {0}&lt;/p&gt;
+		</value>
+  </data>
+  <data name="bottomtextsingleEN" xml:space="preserve">
+    <value>
+			&lt;p&gt;&lt;span style="color:red;font-weight:bold"&gt;Внимание&lt;/span&gt;&lt;br /&gt;Портал деактивирован.&lt;/p&gt;
+			&lt;hr /&gt;
+			&lt;p style="font-weight:bold"&gt;Вопросы и служба поддержки&lt;/p&gt;
+			&lt;p&gt;Если в процессе работы у вас возникли какие-либо вопросы, свяжитесь с нами по адресу &lt;a href="mailto:support@ibnportal.com"&gt;support@ibnportal.com&lt;/a&gt;, или по одному из наших телефонов.&lt;/p&gt;
+			&lt;p&gt;Компания Медиачеис&lt;br /&gt;
+			&lt;a href="http://www.ibnportal.com"&gt;www.ibnportal.com&lt;/a&gt;&lt;/p&gt;
+			&lt;table&gt;&lt;tr&gt;&lt;td&gt;Телефон:&lt;/td&gt;&lt;td&gt;+7 (495) 648 61 62 (Москва)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Телефон/факс:&lt;/td&gt;&lt;td&gt;+7 (4012) 36 85 98 (Калининград)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+			&lt;p style="text-align:right"&gt;Версия портала: {0}&lt;/p&gt;
+		</value>
+  </data>
+  <data name="bottomtextsingleMagRul" xml:space="preserve">
+    <value>
+			&lt;p&gt;&lt;span style="color:red;font-weight:bold"&gt;Внимание&lt;/span&gt;&lt;br /&gt;Портал деактивирован.&lt;/p&gt;
+			&lt;hr /&gt;
+			&lt;p style="font-weight:bold"&gt;Вопросы и служба поддержки&lt;/p&gt;
+			&lt;p&gt;Если в процессе работы у вас возникли какие-либо вопросы, свяжитесь с нами по адресу &lt;a href="mailto:sup@magrul.com"&gt;sup@magrul.com&lt;/a&gt;, или по одному из наших телефонов.&lt;/p&gt;
+			&lt;p&gt;Компания Радиус-Софт&lt;br /&gt;
+			&lt;a href="http://www.magrul.com"&gt;www.magrul.com&lt;/a&gt;&lt;/p&gt;
+			&lt;p&gt;Телефон/факс: +7 (495) 6 410 410 (Москва)&lt;/p&gt;
+			&lt;p style="text-align:right"&gt;Версия портала: {0}&lt;/p&gt;
+		</value>
+  </data>
+  <data name="GoToViewLink" xml:space="preserve">
+    <value>Перейти к странице просмотра</value>
+  </data>
+  <data name="NoIssues" xml:space="preserve">
+    <value>Не сообщено ни об одном инциденте.</value>
+  </data>
+  <data name="NoDocuments" xml:space="preserve">
+    <value>Нет активных документов.</value>
+  </data>
+  <data name="NoProjects" xml:space="preserve">
+    <value>Нет активных проектов.</value>
+  </data>
+  <data name="NoToDos" xml:space="preserve">
+    <value>Не поставлено задач и поручений.</value>
+  </data>
+  <data name="CreateIssue" xml:space="preserve">
+    <value>Создать инцидент</value>
+  </data>
+  <data name="CreateDocument" xml:space="preserve">
+    <value>Создать документ</value>
+  </data>
+  <data name="CreateProject" xml:space="preserve">
+    <value>Создать проект</value>
+  </data>
+  <data name="CreateToDo" xml:space="preserve">
+    <value>Создать поручение</value>
+  </data>
+  <data name="DoubleClick" xml:space="preserve">
+    <value>Выберите элемент двойным щелчком</value>
+  </data>
+  <data name="UpdateParent" xml:space="preserve">
+    <value>Обновить родительскую страницу</value>
+  </data>
+  <data name="_ce_height" xml:space="preserve">
+    <value>Высота блока</value>
+  </data>
+  <data name="_ce_HtmlText" xml:space="preserve">
+    <value>Разместить HTML блок</value>
+  </data>
+  <data name="_ce_IFrameText" xml:space="preserve">
+    <value>Разместить внешнюю ссылку</value>
+  </data>
+  <data name="_ce_title" xml:space="preserve">
+    <value>Заголовок блока</value>
+  </data>
+  <data name="_ce_DefaultTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="_ce_EmptyBody" xml:space="preserve">
+    <value>Вы можете добавить в этот блок форматированный текст, полезные ссылки, картинки, а также ссылку на внешнюю хтмл страницу.</value>
+  </data>
+  <data name="_mc_ContentEditor" xml:space="preserve">
+    <value>Текстовый редактор</value>
+  </data>
+  <data name="_mc_ContentEditorDescription" xml:space="preserve">
+    <value>Вы можете добавить в этот блок форматированный текст, полезные ссылки, картинки, а также ссылку на внешнюю хтмл страницу.</value>
+  </data>
+  <data name="_mc_Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="HelpTextBottom" xml:space="preserve">
+    <value>Если у вас есть какие-либо вопросы по работе с порталом, пишите на адрес &lt;a href='mailto:{0}'&gt;{0}&lt;/a&gt;</value>
+  </data>
+  <data name="HelpTextBottomPhone" xml:space="preserve">
+    <value>	или звоните по телефону {0}.</value>
+  </data>
+  <data name="QuickHelpText" xml:space="preserve">
+    <value>Справочник по работе с IBN</value>
+  </data>
+  <data name="TermsOfUse" xml:space="preserve">
+    <value>Условия использования.</value>
+  </data>
+  <data name="PrivacyStatement" xml:space="preserve">
+    <value>Соглашение о конфиденциальности.</value>
+  </data>
+  <data name="ResourceEdit" xml:space="preserve">
+    <value>Нажмите для редактирования</value>
+  </data>
+</root>

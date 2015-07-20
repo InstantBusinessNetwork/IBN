@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="CreationDate">
+		<value>Дата создания</value>
+	</data>
+	<data name="ModifiedDate">
+		<value>Изменен</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="Options">
+		<value></value>
+	</data>
+	<data name="CreatedBy">
+		<value>Создан</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот инцидент?</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="NoneProject">
+		<value>Инциденты, не принадлежащие проектам</value>
+	</data>
+	<data name="tApply">
+		<value>Применить</value>
+	</data>
+	<data name="tReset">
+		<value>Очистить</value>
+	</data>
+	<data name="AssignedTo">
+		<value>Назначен</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="Keyword">
+		<value>Ключевое слово</value>
+	</data>
+	<data name="Inactive">
+		<value>Неактивные</value>
+	</data>
+	<data name="Active">
+		<value>Скрыть неактивные</value>
+	</data>
+	<data name="GeneralCats">
+		<value>Общие категории</value>
+	</data>
+	<data name="IssuesCats">
+		<value>Категории инцидентов</value>
+	</data>
+	<data name="AllGenCats">
+		<value>Любые общие категории</value>
+	</data>
+	<data name="AllIssCats">
+		<value>Любые категории инцидентов</value>
+	</data>
+	<data name="HideFilter">
+		<value>Вернуться  к списку инцидентов</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Установить фильтр</value>
+	</data>
+	<data name="SetGrouping">
+		<value>Установить группировку</value>
+	</data>
+	<data name="tIssList">
+		<value>Список инцидентов</value>
+	</data>
+	<data name="tAddRelIncident">
+		<value>Добавление связанного инцидента к </value>
+	</data>
+	<data name="tCancel">
+		<value>Вернуться к инциденту</value>
+	</data>
+	<data name="tAdd">
+		<value>Добавить к списку связанных инцидентов</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Снять фильтр</value>
+	</data>
+	<data name="ResetGroup">
+		<value>Снять группировку</value>
+	</data>
+	<data name="FilterSet">
+		<value>Фильтр установлен</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Фильтр не установлен</value>
+	</data>
+	<data name="Any2">
+		<value>Любые</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Только указанные</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Все, кроме указанных</value>
+	</data>
+	<data name="tSeverity">
+		<value>Проявление</value>
+	</data>
+	<data name="tMyRole">
+		<value>Моя роль</value>
+	</data>
+	<data name="tResource">
+		<value>Исполнитель</value>
+	</data>
+	<data name="tGroupBy">
+		<value>Группировка по</value>
+	</data>
+	<data name="tProjects">
+		<value>Проекты</value>
+	</data>
+	<data name="tNoProject">
+		<value>Инциденты вне проектов</value>
+	</data>
+	<data name="tWarning">
+		<value>Вы действительно хотите удалить этот инцидент?</value>
+	</data>
+	<data name="tEdit">
+		<value>Редактировать</value>
+	</data>
+	<data name="tDelete">
+		<value>Удалить</value>
+	</data>
+	<data name="tAddToDo">
+		<value>Новое поручение по инциденту</value>
+	</data>
+	<data name="tViewInc">
+		<value>Просмотр инцидента</value>
+	</data>
+	<data name="tShowFilter">
+		<value>Показать панель фильтра</value>
+	</data>
+	<data name="tHideFilter">
+		<value>Скрыть панель фильтра</value>
+	</data>
+	<data name="tIssueNum">
+		<value>Номер</value>
+	</data>
+	<data name="tIssBox">
+		<value>Папка инцидентов</value>
+	</data>
+	<data name="tResponsible">
+		<value>Ответственный</value>
+	</data>
+	<data name="tClient">
+		<value>Клиент</value>
+	</data>
+	<data name="tNoClient">
+		<value>Инциденты без клиента</value>
+	</data>
+	<data name="tClients">
+		<value>Клиенты</value>
+	</data>
+	<data name="tUnansweredOnly">
+		<value>Только неотвеченные</value>
+	</data>
+	<data name="tFieldSet">
+		<value>Набор полей</value>
+	</data>
+	<data name="tIncidentsDefault">
+		<value>Базовый</value>
+	</data>
+	<data name="tIncidentsLight">
+		<value>Временные рамки</value>
+	</data>
+	<data name="tView">
+		<value>Вид</value>
+	</data>
+	<data name="ActualOpenDate">
+		<value>Фактическая дата открытия</value>
+	</data>
+	<data name="ActualFinishDate">
+		<value>Фактическая дата закрытия</value>
+	</data>
+	<data name="ExpectedResponseDate">
+		<value>Ожидаемое время ответа</value>
+	</data>
+	<data name="ExpectedResolveDate">
+		<value>Ожидаемое время разрешения</value>
+	</data>
+	<data name="tRespNotAssigned">
+		<value>не назначен</value>
+	</data>
+	<data name="tOverdueOnly">
+		<value>Только просроченные</value>
+	</data>
+</root>

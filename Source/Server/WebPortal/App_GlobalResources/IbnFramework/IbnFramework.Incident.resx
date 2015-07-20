@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteWarning" xml:space="preserve">
+    <value>Do you really want to delete this issue?</value>
+  </data>
+  <data name="ImportExport" xml:space="preserve">
+    <value>Import/Export</value>
+  </data>
+  <data name="ImportIssues" xml:space="preserve">
+    <value>Import Issues</value>
+  </data>
+  <data name="IncidentList" xml:space="preserve">
+    <value>Issues &amp; Incidents</value>
+  </data>
+  <data name="IssClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="IssCode" xml:space="preserve">
+    <value>Issue #</value>
+  </data>
+  <data name="IssIssBox" xml:space="preserve">
+    <value>Issue Box</value>
+  </data>
+  <data name="IssResponsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="IssStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IssTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="IssUpdated" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="NewIssue" xml:space="preserve">
+    <value>New Issue</value>
+  </data>
+  <data name="ViewFieldSet" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="StandardFieldSet" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="TimelineFieldSet" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="ActualOpenDate" xml:space="preserve">
+    <value>Actual Open Date</value>
+  </data>
+  <data name="ActualFinishDate" xml:space="preserve">
+    <value>Actual Finish Date</value>
+  </data>
+  <data name="ExpectedResponseDate" xml:space="preserve">
+    <value>Expected Response Date</value>
+  </data>
+  <data name="ExpectedResolveDate" xml:space="preserve">
+    <value>Expected Resolve Date</value>
+  </data>
+  <data name="PendingMessages" xml:space="preserve">
+    <value>Pending Messages</value>
+  </data>
+  <data name="tNosubject" xml:space="preserve">
+    <value>[No Subject]</value>
+  </data>
+  <data name="tPendId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="tPendSubj" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="tPendFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="tPendTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="tPendCreated" xml:space="preserve">
+    <value>Received</value>
+  </data>
+  <data name="tApproveChecked" xml:space="preserve">
+    <value>Approve Checked</value>
+  </data>
+  <data name="tApproveCheckedWarning" xml:space="preserve">
+    <value>Do you really want to approve all checked messages?</value>
+  </data>
+  <data name="tApproveWarning" xml:space="preserve">
+    <value>Do you really want to approve this message?</value>
+  </data>
+  <data name="tDeleteWarning" xml:space="preserve">
+    <value>Do you really want to delete this message?</value>
+  </data>
+  <data name="tAddToExist" xml:space="preserve">
+    <value>Add To Existing Issue</value>
+  </data>
+  <data name="tDeleteChecked" xml:space="preserve">
+    <value>Delete Checked</value>
+  </data>
+  <data name="tDeleteCheckedWarning" xml:space="preserve">
+    <value>Do you really want to delete all checked messages?</value>
+  </data>
+  <data name="tSelectIncident" xml:space="preserve">
+    <value>Select Issue</value>
+  </data>
+  <data name="ArticlesList" xml:space="preserve">
+    <value>Knowledge Base</value>
+  </data>
+  <data name="AllArticles" xml:space="preserve">
+    <value>All articles</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="TagCloud" xml:space="preserve">
+    <value>Tag Cloud</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>New Article</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="tDeleteArticleWarning" xml:space="preserve">
+    <value>Do you really want to delete this article?</value>
+  </data>
+  <data name="ResponsibleSet" xml:space="preserve">
+    <value>Responsibled issues</value>
+  </data>
+  <data name="CreatorSet" xml:space="preserve">
+    <value>Self-created issues</value>
+  </data>
+  <data name="ManagerSet" xml:space="preserve">
+    <value>Managed issues</value>
+  </data>
+  <data name="AllSet" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="GroupPrj" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="GroupContacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="GroupIssBox" xml:space="preserve">
+    <value>Issue Boxes</value>
+  </data>
+  <data name="GroupNoPrj" xml:space="preserve">
+    <value>[No Project]</value>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="GroupByPrj" xml:space="preserve">
+    <value>Group By Projects</value>
+  </data>
+  <data name="GroupByContacts" xml:space="preserve">
+    <value>Group By Contacts</value>
+  </data>
+  <data name="GroupByIssBoxes" xml:space="preserve">
+    <value>Group By Issue Boxes</value>
+  </data>
+  <data name="GroupByResp" xml:space="preserve">
+    <value>Group By Responsibles</value>
+  </data>
+  <data name="tExternalRecipients" xml:space="preserve">
+    <value>External Recipients</value>
+  </data>
+  <data name="IssueRes" xml:space="preserve">
+    <value>Issue Resources</value>
+  </data>
+  <data name="GenCat" xml:space="preserve">
+    <value>General Category</value>
+  </data>
+  <data name="IssCat" xml:space="preserve">
+    <value>Issue Category</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tIncBox" xml:space="preserve">
+    <value>Issue Box</value>
+  </data>
+  <data name="tSelectDiagram" xml:space="preserve">
+    <value>Choose diagram type</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="_mc_ChartReportDescription" xml:space="preserve">
+    <value>Shows general  information regarding issues</value>
+  </data>
+  <data name="_mc_ChartReportTitle" xml:space="preserve">
+    <value>Issue&amp;nbsp;chart</value>
+  </data>
+  <data name="_mc_ChartReportPP" xml:space="preserve">
+    <value>Please select grouping field</value>
+  </data>
+  <data name="_mc_HdmWs" xml:space="preserve">
+    <value>Help Desk workspace</value>
+  </data>
+  <data name="_mc_MyRole" xml:space="preserve">
+    <value>My Role</value>
+  </data>
+  <data name="_mc_EditFilter" xml:space="preserve">
+    <value>Edit Filter</value>
+  </data>
+  <data name="_mc_ResetFilter" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="_mc_SetName" xml:space="preserve">
+    <value>Set Name</value>
+  </data>
+  <data name="_mc_FilterSetName" xml:space="preserve">
+    <value>FilterSet Name</value>
+  </data>
+  <data name="_mc_FilterSet" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="_mc_CustomFilterSet" xml:space="preserve">
+    <value>[Custom]</value>
+  </data>
+  <data name="_mc_DeleteFilterSet" xml:space="preserve">
+    <value>Delete FilterSet</value>
+  </data>
+  <data name="_mc_DeleteFilterSetWarning" xml:space="preserve">
+    <value>Do you really want to delete this filterset?</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="ResponsibleNotAssigned" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Hide Inactive</value>
+  </data>
+  <data name="OnlyUnanswered" xml:space="preserve">
+    <value>Only unanswered</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="_mc_GroupType" xml:space="preserve">
+    <value>Group by</value>
+  </data>
+  <data name="tRespGroup" xml:space="preserve">
+    <value>Group Responsibility</value>
+  </data>
+  <data name="tRespNotSet" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="QuickTracking" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="GeneralInfo" xml:space="preserve">
+    <value>General Info</value>
+  </data>
+  <data name="NewMessage" xml:space="preserve">
+    <value>New Message</value>
+  </data>
+  <data name="NewIssueView" xml:space="preserve">
+    <value>New View</value>
+  </data>
+  <data name="IssueViewCreation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IssueViewCreationTitle" xml:space="preserve">
+    <value>Issue View Management</value>
+  </data>
+  <data name="IssueViewCreationSubHeader" xml:space="preserve">
+    <value>You can create new issue view</value>
+  </data>
+  <data name="SelectFieldSet" xml:space="preserve">
+    <value>Select Field Set</value>
+  </data>
+  <data name="NewViewStep1Comment" xml:space="preserve">
+    <value>You can create any new issue view with your own fieldset. Please, select a fieldset from the dropdown and proceed to the next step.</value>
+  </data>
+  <data name="NewViewStep2Comment" xml:space="preserve">
+    <value>You can create any new issue view with your own grouping setting. Please, select a grouping field from the dropdown and proceed to the next step.</value>
+  </data>
+  <data name="SelectGroupingField" xml:space="preserve">
+    <value>Select Grouping Field</value>
+  </data>
+  <data name="NoGroupBy" xml:space="preserve">
+    <value>No Grouping</value>
+  </data>
+  <data name="NewViewStep4Comment" xml:space="preserve">
+    <value>Everything is ready to create a new view for issues list. Please, type view name.</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>Enter Issue View Title</value>
+  </data>
+  <data name="IsPublicView" xml:space="preserve">
+    <value>Show this view for all users</value>
+  </data>
+  <data name="_mc_DeleteView" xml:space="preserve">
+    <value>Delete View</value>
+  </data>
+  <data name="_mc_DeleteViewWarning" xml:space="preserve">
+    <value>Do you really want to delete this view?</value>
+  </data>
+  <data name="CurrentUser" xml:space="preserve">
+    <value>[Current User]</value>
+  </data>
+  <data name="AllIssues" xml:space="preserve">
+    <value>All Issues</value>
+  </data>
+  <data name="GroupByPrjSet" xml:space="preserve">
+    <value>Group By Projects</value>
+  </data>
+  <data name="GroupByContactSet" xml:space="preserve">
+    <value>Group By Contacts</value>
+  </data>
+  <data name="GroupByIssBoxSet" xml:space="preserve">
+    <value>Group By Issue Boxes</value>
+  </data>
+  <data name="GroupByRespSet" xml:space="preserve">
+    <value>Group By Responsibles</value>
+  </data>
+  <data name="DeleteIssue" xml:space="preserve">
+    <value>Delete Issue</value>
+  </data>
+  <data name="ViewIssue" xml:space="preserve">
+    <value>View Issue</value>
+  </data>
+  <data name="EditIssue" xml:space="preserve">
+    <value>Edit Issue</value>
+  </data>
+  <data name="QTrackIssue" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="AllDenied" xml:space="preserve">
+    <value>All Denied</value>
+  </data>
+  <data name="GroupResp" xml:space="preserve">
+    <value>Group Responsibility</value>
+  </data>
+  <data name="OutOfPersonalResponsibility" xml:space="preserve">
+    <value>Not Assigned</value>
+  </data>
+  <data name="OutOfPersonalResponsibilityFilter" xml:space="preserve">
+    <value>Not Assigned</value>
+  </data>
+  <data name="NewViewTab1Comment" xml:space="preserve">
+    <value>You can create any new issue view with your own fieldset. Please, select a fieldset from the dropdown.</value>
+  </data>
+  <data name="NewViewTab2Comment" xml:space="preserve">
+    <value>You can create any new issue view with your own grouping setting. Please, select a grouping field from the dropdown.</value>
+  </data>
+  <data name="NewViewTab4Comment" xml:space="preserve">
+    <value>Everything is ready to create a new view for issues list. Please, type view name.</value>
+  </data>
+  <data name="FieldsTab" xml:space="preserve">
+    <value>Fields</value>
+  </data>
+  <data name="GroupsTab" xml:space="preserve">
+    <value>Grouping</value>
+  </data>
+  <data name="FiltersTab" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="GeneralTab" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="TitleIsRequired" xml:space="preserve">
+    <value>Title Is Required!</value>
+  </data>
+  <data name="SystemViews" xml:space="preserve">
+    <value>System Views</value>
+  </data>
+  <data name="UserViews" xml:space="preserve">
+    <value>User Views</value>
+  </data>
+  <data name="ClosedIssues" xml:space="preserve">
+    <value>Closed Issues</value>
+  </data>
+  <data name="ActiveIssues" xml:space="preserve">
+    <value>Opened Issues</value>
+  </data>
+  <data name="UnassignedIssues" xml:space="preserve">
+    <value>Unassigned Issues</value>
+  </data>
+  <data name="QLastForumPost" xml:space="preserve">
+    <value>Last Forum Post View</value>
+  </data>
+  <data name="IssForumPost" xml:space="preserve">
+    <value>Issue Forum Post View</value>
+  </data>
+  <data name="PrevPost" xml:space="preserve">
+    <value>Previous Post</value>
+  </data>
+  <data name="NextPost" xml:space="preserve">
+    <value>Next Post</value>
+  </data>
+  <data name="ExportIssues" xml:space="preserve">
+    <value>Issues Export</value>
+  </data>
+  <data name="AllIssuesExport" xml:space="preserve">
+    <value>All Issues Export</value>
+  </data>
+  <data name="ViewIssuesExport" xml:space="preserve">
+    <value>View Issues Export</value>
+  </data>
+  <data name="VisibleIssuesExport" xml:space="preserve">
+    <value>Current Page Issues Export</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="AddRelFromClip" xml:space="preserve">
+    <value>Add Related Issue From Clipboard</value>
+  </data>
+  <data name="DownPriority" xml:space="preserve">
+    <value>Priority Down</value>
+  </data>
+  <data name="UpPriority" xml:space="preserve">
+    <value>Priority Up</value>
+  </data>
+  <data name="DownPriorityWarning" xml:space="preserve">
+    <value>Do you really want to turn down priority for all selected issues?</value>
+  </data>
+  <data name="UpPriorityWarning" xml:space="preserve">
+    <value>Do you really want to turn up priority for all selected issues?</value>
+  </data>
+  <data name="SelectRes" xml:space="preserve">
+    <value>Select Responsible</value>
+  </data>
+  <data name="TrackingFieldSet" xml:space="preserve">
+    <value>Tracking</value>
+  </data>
+  <data name="AllSetMale" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="ChangeStatus" xml:space="preserve">
+    <value>Change Status</value>
+  </data>
+  <data name="ChangeResponsible" xml:space="preserve">
+    <value>Change Responsible</value>
+  </data>
+  <data name="WereErrors" xml:space="preserve">
+    <value>Some issues have not been changed because of no access allowed!</value>
+  </data>
+  <data name="GroupRespTitle" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>There are no issues selected for status changing!</value>
+  </data>
+  <data name="StatusNotChanged" xml:space="preserve">
+    <value>Status can not be changed to &lt;b&gt;{0}&lt;/b&gt; for the following Issues:&lt;br /&gt;{1}</value>
+  </data>
+  <data name="NoItemsSelectedForResponsible" xml:space="preserve">
+    <value>There are no issues selected for responsible changing!</value>
+  </data>
+  <data name="ResponsibleNotChanged" xml:space="preserve">
+    <value>Responsible can not be changed for the following Issues:&lt;br /&gt;{0}</value>
+  </data>
+  <data name="showClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="showCode" xml:space="preserve">
+    <value>Issue Code</value>
+  </data>
+  <data name="showCreationInfo" xml:space="preserve">
+    <value>Creation Info</value>
+  </data>
+  <data name="showDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="showExpectedDate" xml:space="preserve">
+    <value>Expected Response Date</value>
+  </data>
+  <data name="showGenCats" xml:space="preserve">
+    <value>General categories</value>
+  </data>
+  <data name="showIssBox" xml:space="preserve">
+    <value>Issue Box Title</value>
+  </data>
+  <data name="showIssCats" xml:space="preserve">
+    <value>Issue categories</value>
+  </data>
+  <data name="showLastModifiedInfo" xml:space="preserve">
+    <value>Modified Date</value>
+  </data>
+  <data name="showManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="showOpenDate" xml:space="preserve">
+    <value>Open Date</value>
+  </data>
+  <data name="showPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="showResolveDate" xml:space="preserve">
+    <value>Expected Resolved Date</value>
+  </data>
+  <data name="showResponsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="showStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="showTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="NotPrintForum" xml:space="preserve">
+    <value>Not Print</value>
+  </data>
+  <data name="LastPostPrintForum" xml:space="preserve">
+    <value>Last Post</value>
+  </data>
+  <data name="Last3PostsPrintForum" xml:space="preserve">
+    <value>Last 3 Posts</value>
+  </data>
+  <data name="AllPostsPrintForum" xml:space="preserve">
+    <value>All Posts</value>
+  </data>
+  <data name="IssueGenInfoPrinting" xml:space="preserve">
+    <value>Check fields to print Issue Information</value>
+  </data>
+  <data name="ForumInfoPrinting" xml:space="preserve">
+    <value>Forum Information</value>
+  </data>
+  <data name="PrintPreviewSettings" xml:space="preserve">
+    <value>Print Settings</value>
+  </data>
+  <data name="IssueViewReport" xml:space="preserve">
+    <value>Issue View Report</value>
+  </data>
+  <data name="Overdue" xml:space="preserve">
+    <value>Overdue</value>
+  </data>
+  <data name="SwithToOldView" xml:space="preserve">
+    <value>Old View Turn On</value>
+  </data>
+  <data name="SwitchTitle" xml:space="preserve">
+    <value>Old View Turn On</value>
+  </data>
+  <data name="TurnOn" xml:space="preserve">
+    <value>Turn On</value>
+  </data>
+  <data name="OnlyOverdue" xml:space="preserve">
+    <value>Only overdue</value>
+  </data>
+  <data name="HideOldView" xml:space="preserve">
+    <value>Hide Old View</value>
+  </data>
+  <data name="HideOldViewWarning" xml:space="preserve">
+    <value>Do you want to hide old view?</value>
+  </data>
+  <data name="MakeRelation" xml:space="preserve">
+    <value>Relate issues</value>
+  </data>
+  <data name="MarkAsSpam" xml:space="preserve">
+    <value>Mark As Spam</value>
+  </data>
+  <data name="MarkAsSpamText" xml:space="preserve">
+    <value>These issues are marked as Spam.&lt;br/&gt;
+	Select the next action to do.</value>
+  </data>
+  <data name="DeleteIssue2" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CloseIssue" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="OnCheck" xml:space="preserve">
+    <value>On Check</value>
+  </data>
+  <data name="IssId" xml:space="preserve">
+    <value>ID #</value>
+  </data>
+  <data name="RespAllDenied" xml:space="preserve">
+    <value>[ All Denied ]</value>
+  </data>
+  <data name="RespGroup" xml:space="preserve">
+    <value>[ Group Responsibility ]</value>
+  </data>
+  <data name="RespNotSet" xml:space="preserve">
+    <value>[ Not Set ]</value>
+  </data>
+</root>

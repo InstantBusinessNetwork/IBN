@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.Calendar.ColumnTemplates.Name_ModifyResources" %>
+<div style="cursor:default;"><%# (Eval("Id") == DBNull.Value) ? "" : Eval("Name").ToString() %></div>

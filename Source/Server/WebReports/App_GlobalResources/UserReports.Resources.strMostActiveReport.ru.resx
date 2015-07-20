@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tViewBy">
+		<value>По количеству</value>
+	</data>
+	<data name="tType">
+		<value>Тип</value>
+	</data>
+	<data name="tGroup">
+		<value>Контактная группа</value>
+	</data>
+	<data name="tUser">
+		<value>Пользователь</value>
+	</data>
+	<data name="tPrint">
+		<value>Печать</value>
+	</data>
+	<data name="tMostActGU">
+		<value>Наиболее активные группы и пользователи</value>
+	</data>
+	<data name="tMessSent">
+		<value>Сообщений послано</value>
+	</data>
+	<data name="tShow">
+		<value>Показать</value>
+	</data>
+	<data name="tMessagesSent">
+		<value>Отправленных сообщений</value>
+	</data>
+	<data name="tFilesExchanged">
+		<value>Переданных файлов</value>
+	</data>
+	<data name="tCalendarEntries">
+		<value>Созданных мероприятий</value>
+	</data>
+	<data name="tActiveProjects">
+		<value>Созданных проектов</value>
+	</data>
+	<data name="tFilesPublished">
+		<value>Созданных документов</value>
+	</data>
+	<data name="tNoRec">
+		<value>Записи не найдены</value>
+	</data>
+	<data name="tPeriod">
+		<value>Период</value>
+	</data>
+	<data name="tFrom">
+		<value>С</value>
+	</data>
+	<data name="tTo">
+		<value>По</value>
+	</data>
+	<data name="tAny">
+		<value>Любой</value>
+	</data>
+	<data name="tToday">
+		<value>Сегодня</value>
+	</data>
+	<data name="tYesterday">
+		<value>Вчера</value>
+	</data>
+	<data name="tThisWeek">
+		<value>Текущая неделя</value>
+	</data>
+	<data name="tLastWeek">
+		<value>Прошлая неделя</value>
+	</data>
+	<data name="tThisMonth">
+		<value>Текущий месяц</value>
+	</data>
+	<data name="tLastMonth">
+		<value>Прошлый месяц</value>
+	</data>
+	<data name="tThisYear">
+		<value>Текущий год</value>
+	</data>
+	<data name="tLastYear">
+		<value>Прошлый год</value>
+	</data>
+	<data name="tCustom">
+		<value>Выбрать</value>
+	</data>
+	<data name="tSecGroup">
+		<value>Группа</value>
+	</data>
+	<data name="tIssuesCreated">
+		<value>Созданных инцидентов</value>
+	</data>
+	<data name="tTasksCreated">
+		<value>Созданных задач</value>
+	</data>
+	<data name="tToDosCreated">
+		<value>Созданных поручений</value>
+	</data>
+	<data name="tFileVersionsPublished">
+		<value>Созданных версий документов</value>
+	</data>
+	<data name="tIMLogins">
+		<value>Входов в {0} Клиент</value>
+	</data>
+	<data name="tPortalLogins">
+		<value>Входов в портал</value>
+	</data>
+</root>

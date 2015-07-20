@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_mc_ChartReportDescription" xml:space="preserve">
+    <value>Shows general  information regarding projects</value>
+  </data>
+  <data name="_mc_ChartReportPP" xml:space="preserve">
+    <value>Please select grouping field</value>
+  </data>
+  <data name="_mc_ChartReportTitle" xml:space="preserve">
+    <value>Project&amp;nbsp;chart</value>
+  </data>
+  <data name="_mc_ProjWs" xml:space="preserve">
+    <value>Project Management workspace</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="CEntryParticip" xml:space="preserve">
+    <value>Calendar Entry Participants</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="GenCat" xml:space="preserve">
+    <value>General Category</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="PrjCat" xml:space="preserve">
+    <value>Project Category</value>
+  </data>
+  <data name="PrjMans" xml:space="preserve">
+    <value>Managers</value>
+  </data>
+  <data name="PrjSponsors" xml:space="preserve">
+    <value>Project Sponsors</value>
+  </data>
+  <data name="PrjStake" xml:space="preserve">
+    <value>Project Stakeholders</value>
+  </data>
+  <data name="PrjTeam" xml:space="preserve">
+    <value>Project Team</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="TaskRes" xml:space="preserve">
+    <value>Task Resources</value>
+  </data>
+  <data name="ToDoRes" xml:space="preserve">
+    <value>ToDo Resources</value>
+  </data>
+  <data name="tSelectDiagram" xml:space="preserve">
+    <value>Choose diagram type</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AddRelFromClip" xml:space="preserve">
+    <value>Add Related Project From Clipboard</value>
+  </data>
+  <data name="ProjectList" xml:space="preserve">
+    <value>Project Tracking Center</value>
+  </data>
+  <data name="NewProject" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="DownPriority" xml:space="preserve">
+    <value>Priority Down</value>
+  </data>
+  <data name="UpPriority" xml:space="preserve">
+    <value>Priority Up</value>
+  </data>
+  <data name="DownPriorityWarning" xml:space="preserve">
+    <value>Do you really want to turn down priority for all selected projects?</value>
+  </data>
+  <data name="UpPriorityWarning" xml:space="preserve">
+    <value>Do you really want to turn up priority for all selected projects?</value>
+  </data>
+  <data name="ExportProjects" xml:space="preserve">
+    <value>Export Projects</value>
+  </data>
+  <data name="EditProject" xml:space="preserve">
+    <value>Edit Project</value>
+  </data>
+  <data name="ProjectViewCreationTitle" xml:space="preserve">
+    <value>Project View Management</value>
+  </data>
+  <data name="ViewFieldSet" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="AllProjects" xml:space="preserve">
+    <value>All Projects</value>
+  </data>
+  <data name="ManagerSet" xml:space="preserve">
+    <value>Managed projects</value>
+  </data>
+  <data name="_mc_DeleteView" xml:space="preserve">
+    <value>Delete View</value>
+  </data>
+  <data name="_mc_DeleteViewWarning" xml:space="preserve">
+    <value>Do you really want to delete this view?</value>
+  </data>
+  <data name="SystemViews" xml:space="preserve">
+    <value>System Views</value>
+  </data>
+  <data name="UserViews" xml:space="preserve">
+    <value>User Views</value>
+  </data>
+  <data name="NewProjectView" xml:space="preserve">
+    <value>New View</value>
+  </data>
+  <data name="GroupByPortfolio" xml:space="preserve">
+    <value>Group By Portfolios</value>
+  </data>
+  <data name="GroupByContacts" xml:space="preserve">
+    <value>Group By Contacts</value>
+  </data>
+  <data name="GroupPortfolio" xml:space="preserve">
+    <value>Portfolios</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="GroupContacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="AnyMale" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="GEType" xml:space="preserve">
+    <value>Greater Or Equal</value>
+  </data>
+  <data name="LEType" xml:space="preserve">
+    <value>Lower Or Equal</value>
+  </data>
+  <data name="EType" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="ExecManager" xml:space="preserve">
+    <value>Executive Manager</value>
+  </data>
+  <data name="OnlyMyParticipation" xml:space="preserve">
+    <value>Projects with my participation only</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="PrjTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="PrjCompleted" xml:space="preserve">
+    <value>Overall Status</value>
+  </data>
+  <data name="TargetStartDate" xml:space="preserve">
+    <value>Target Start Date</value>
+  </data>
+  <data name="TargetEndDate" xml:space="preserve">
+    <value>Target End Date</value>
+  </data>
+  <data name="ActualStartDate" xml:space="preserve">
+    <value>Actual Start Date</value>
+  </data>
+  <data name="ActualEndDate" xml:space="preserve">
+    <value>Actual End Date</value>
+  </data>
+  <data name="NewViewStep4Comment" xml:space="preserve">
+    <value>Everything is ready to create a new view for issues list. Please, type view name.</value>
+  </data>
+  <data name="NewViewTab1Comment" xml:space="preserve">
+    <value>You can create any new project view with your own fieldset. Please, select a fieldset from the dropdown.</value>
+  </data>
+  <data name="NewViewTab2Comment" xml:space="preserve">
+    <value>You can create any new project view with your own grouping setting. Please, select a grouping field from the dropdown.</value>
+  </data>
+  <data name="AllProjectsExport" xml:space="preserve">
+    <value>All Projects Export</value>
+  </data>
+  <data name="ViewProjectsExport" xml:space="preserve">
+    <value>View Projects Export</value>
+  </data>
+  <data name="VisibleProjectsExport" xml:space="preserve">
+    <value>Current Page Projects Export</value>
+  </data>
+  <data name="ActiveSet" xml:space="preserve">
+    <value>Active projects</value>
+  </data>
+  <data name="SwithToOldView" xml:space="preserve">
+    <value>Switch To Old View</value>
+  </data>
+  <data name="SwitchTitle" xml:space="preserve">
+    <value>Old View Turn On</value>
+  </data>
+  <data name="TurnOn" xml:space="preserve">
+    <value>Turn On</value>
+  </data>
+  <data name="HideOldView" xml:space="preserve">
+    <value>Hide Old View</value>
+  </data>
+  <data name="HideOldViewWarning" xml:space="preserve">
+    <value>Do you want to hide old view?</value>
+  </data>
+  <data name="MakeRelation" xml:space="preserve">
+    <value>Relate projects</value>
+  </data>
+  <data name="CurrentWork" xml:space="preserve">
+    <value>Current Work</value>
+  </data>
+  <data name="NoUsers" xml:space="preserve">
+    <value>[ No Users ]</value>
+  </data>
+  <data name="ResourceUtilization" xml:space="preserve">
+    <value>Resource Utilization</value>
+  </data>
+  <data name="Labor" xml:space="preserve">
+    <value>Labor</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="GeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="tabActFinances" xml:space="preserve">
+    <value>Actual Finances</value>
+  </data>
+  <data name="tabCalendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="tabDiscussions" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="tabDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="tabFinances" xml:space="preserve">
+    <value>Finances</value>
+  </data>
+  <data name="tabGantt" xml:space="preserve">
+    <value>Gantt Chart</value>
+  </data>
+  <data name="tabGeneral" xml:space="preserve">
+    <value>Data/Info</value>
+  </data>
+  <data name="tabIssues" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="tabLibrary" xml:space="preserve">
+    <value>File Library</value>
+  </data>
+  <data name="tabLists" xml:space="preserve">
+    <value>Lists</value>
+  </data>
+  <data name="tabManagement" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="tabMyIncidents" xml:space="preserve">
+    <value>My Incidents</value>
+  </data>
+  <data name="tabMyWork" xml:space="preserve">
+    <value>My Work</value>
+  </data>
+  <data name="tabParticipants" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="tabReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="tabResourceView" xml:space="preserve">
+    <value>Resource View</value>
+  </data>
+  <data name="tabSpreadSheet" xml:space="preserve">
+    <value>Spread sheets</value>
+  </data>
+  <data name="tabWorkspace" xml:space="preserve">
+    <value>Project Space</value>
+  </data>
+  <data name="SelectPredecessors" xml:space="preserve">
+    <value>Select Predecessors</value>
+  </data>
+  <data name="SelectSuccessors" xml:space="preserve">
+    <value>Select Successors</value>
+  </data>
+  <data name="NoCategory" xml:space="preserve">
+    <value>[ No Category ]</value>
+  </data>
+  <data name="NoClient" xml:space="preserve">
+    <value>[ No Client ]</value>
+  </data>
+  <data name="NoProject" xml:space="preserve">
+    <value>[ No Project ]</value>
+  </data>
+  <data name="CreateTaskTodoGrid" xml:space="preserve">
+    <value>Create Task/To-Do Grid</value>
+  </data>
+  <data name="CreateTaskTodoGridTitle" xml:space="preserve">
+    <value>Create Tasks/To-Dos</value>
+  </data>
+</root>

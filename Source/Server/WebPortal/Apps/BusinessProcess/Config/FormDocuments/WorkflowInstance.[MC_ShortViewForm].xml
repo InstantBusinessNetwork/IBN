@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="0ae06c39424847bb99f4da0f6d7b073c" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="Workflow Instance" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="71b1fb10346143768daaff1c920c4056" cellPadding="5" columns="*;35%">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="02d7012deeb149a5b3b0fd191bc164c4">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Name" readOnly="False" uid="01e8329b7d3e47d198f16a1d960ffaff" />
+					</Item>
+					<Item rowIndex="1" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="8d9a3fe6396a46d68b03d423e6eaad0a">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="State" readOnly="False" uid="0a23ddb44b184f478ba09094eb36c292" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

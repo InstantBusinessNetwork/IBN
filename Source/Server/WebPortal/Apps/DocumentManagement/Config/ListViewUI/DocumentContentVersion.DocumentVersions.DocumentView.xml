@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- List of versions for document view page -->
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Button id="NewVersionButton" text="{IbnFramework.Document:NewVersion}"  imageUrl="~/Layouts/Images/newitem.gif" tooltip="{IbnFramework.Document:NewVersion}" commandName="Document_NewVersion" ></Button>
+			<Splitter id="ActionsSplitter1"></Splitter>
+			<Button id="DeleteVersionButton" text="{IbnFramework.Common:DeleteSelected}"  imageUrl="~/Layouts/Images/delete.gif" tooltip="{IbnFramework.Common:DeleteSelected}" commandName="Document_VersionDelete" ></Button>
+			<Splitter id="ActionsSplitter2"></Splitter>
+			<Menu id="StatusMenu" text="{IbnFramework.Document:State}">
+				<Button id="DraftState" text="{IbnFramework.Document:Draft}" commandName="MC_DM_ChangeStatusDraft"></Button>
+				<Button id="ActiveState" text="{IbnFramework.Document:Active}" commandName="MC_DM_ChangeStatusActive"></Button>
+				<Button id="ObsoleteState" text="{IbnFramework.Document:Obsolete}" commandName="MC_DM_ChangeStatusObsolete"></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="CM_Versions_Columns">
+				<Column id="VersionsColumn" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/newitem.gif" commandName="MC_DocVersions_Clone" paddingRight="5" tooltip="{IbnFramework.Document:CloneVersion}" />
+					<Item imageUrl="~/Layouts/Images/edit.gif" commandName="MC_DocVersions_Edit" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_DocVersions_Clone">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:CloneVersionWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.CloneVersionHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="Document_VersionDelete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:DeleteVersionWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.DeleteSelectedVersionHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_DM_ChangeStatusDraft">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:ChangeStatusDraftWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.StateDraftHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_DM_ChangeStatusActive">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:ChangeStatusActiveWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.StateActiveHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_DM_ChangeStatusObsolete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:ChangeStatusObsoleteWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.StateObsoleteHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			
+			<Command id="Document_NewVersion">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Document:NewVersion}</PopupTitle>
+				<Url>~/Apps/DocumentManagement/Pages/VersionEdit.aspx?DocumentId={QueryString:ObjectId}</Url>
+				<Width>500</Width>
+				<Height>250</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_DocVersions_Edit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Document:EditVersion}</PopupTitle>
+				<Url>~/Apps/DocumentManagement/Pages/VersionEdit.aspx?DocumentId={QueryString:ObjectId}&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>500</Width>
+				<Height>250</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

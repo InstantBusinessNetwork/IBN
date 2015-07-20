@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Incident:NewIssue}" imageUrl="~/Layouts/Images/icons/incident_create.gif" commandName="MC_HDM_NewItem" itemSplitter="Right"></Button>
+
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_HDM_Selected_Delete" itemSplitter="Right"></Button>
+
+			<Menu id="ActionsMenu2" text="{IbnFramework.Incident:Actions}">
+				<Button id="ChangeStatus" text="{IbnFramework.Incident:ChangeStatus}" commandName="MC_HDM_ChangeStatus" imageUrl="~/layouts/Images/icons/incident_active.gif"></Button>
+				<Button id="ChangeResponsible" text="{IbnFramework.Incident:ChangeResponsible}" commandName="MC_HDM_ChangeResponsible" imageUrl="~/layouts/Images/icons/editgroup.gif"></Button>
+				<Button id="UpPriority" text="{IbnFramework.Incident:UpPriority}" imageUrl="~/Layouts/Images/flagorange.gif" commandName="MC_HDM_Selected_UpPriority"></Button>
+				<Button id="DownPriority" text="{IbnFramework.Incident:DownPriority}" imageUrl="~/Layouts/Images/flaggray.gif" commandName="MC_HDM_Selected_DownPriority"></Button>
+				<Button id="RelateIssues" text="{IbnFramework.Incident:MakeRelation}" imageUrl="~/Layouts/Images/icons/relincidents.gif" commandName="MC_HDM_Selected_Relate"></Button>
+				<Button id="MarkAsSpam" text="{IbnFramework.Incident:MarkAsSpam}" imageUrl="~/Layouts/Images/red_denied.gif" commandName="MC_HDM_Selected_MarkAsSpam"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter2"></Splitter>
+			<Menu id="ActionsMenu" text="{IbnFramework.Incident:ImportExport}">
+				<Button id="ImportButton" text="{IbnFramework.Incident:ImportIssues}" commandName="MC_HDM_Import" imageUrl="~/layouts/Images/import.gif"></Button>
+				<Button id="ExportExelButton" text="{IbnFramework.Common:ExportToExcel}" commandName="MC_HDM_ExportExcel2" imageUrl="~/Images/IbnFramework/xlsexport.gif"></Button>
+				<Button id="ExportXmlButton" text="{IbnFramework.Common:ExportToXML}" commandName="MC_HDM_ExportXml2" imageUrl="~/layouts/images/icons/xmlexport.gif"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Columns" primaryKey="IncidentId">
+				<Column id="9BD3F430-B11D-4866-932E-5B13CE935325" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<!--<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_HDM_ViewItem" paddingRight="5" tooltip="{IbnFramework.Incident:ViewIssue}" />-->
+					<Item imageUrl="~/Images/IbnFramework/Contact-Edit.png" commandName="MC_HDM_QuickTracking" paddingRight="5" tooltip="{IbnFramework.Incident:QTrackIssue}" />
+					<Item imageUrl="~/layouts/Images/icons/incident_edit.gif" commandName="MC_HDM_EditGeneralInfo" paddingRight="5" tooltip="{IbnFramework.Incident:EditIssue}" />
+					<Item imageUrl="~/Images/IbnFramework/TreeView-Search.png" commandName="MC_HDM_LastForumPostView" paddingRight="5" tooltip="{IbnFramework.Incident:QLastForumPost}" />
+					<!--<Item imageUrl="~/layouts/Images/delete.gif" commandName="MC_HDM_DeleteItem" paddingRight="5" tooltip="{IbnFramework.Incident:DeleteIssue}" />-->
+				</Column>
+				<Column id="colId" type="default" width="50" title="#" sortExpression="IncidentId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Integer.Grid.Incident.IncidentId.IncidentList.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Incident:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.Title.IncidentList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_HDM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_HDM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentView.aspx?IncidentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_HDM_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentEdit.aspx?IncidentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_HDM_DeleteItem">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:DeleteWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_NewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentEdit.aspx</Url>
+			</Command>
+			<Command id="MC_HDM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_HDM_Selected_UpPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:UpPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.UpPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_Selected_DownPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:DownPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DownPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			
+			<Command id="MC_HDM_Import">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Wizards/ImportDataWizard.aspx?Type=Iss</Url>
+				<Width>600</Width>
+				<Height>400</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+			<Command id="MC_HDM_ExportExcel">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/HelpDeskManagement/Pages/IncidentListNew.aspx?Export=1</Url>
+			</Command>
+			<Command id="MC_HDM_ExportXml">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/HelpDeskManagement/Pages/IncidentListNew.aspx?Export=2</Url>
+			</Command>
+
+			<Command id="MC_HDM_ExportExcel2">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ExportIssues}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/IncidentListExport.aspx?refreshCommand=MC_HDM_ExportTrue&amp;Type=1</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_ExportXml2">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ExportIssues}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/IncidentListExport.aspx?refreshCommand=MC_HDM_ExportTrue&amp;Type=2</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_ExportTrue">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.IncidentListExport, Mediachase.UI.Web</Handler>
+			</Command>
+			
+			<Command id="MC_HDM_FiltersNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:IssueViewCreationTitle}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/FiltersNew.aspx?className=Issue</Url>
+				<Width>620</Width>
+				<Height>400</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_HDM_FiltersEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:IssueViewCreationTitle}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/FiltersNew.aspx?className=Issue&amp;uid=[ClientParam:uid]</Url>
+				<Width>620</Width>
+				<Height>400</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_NewViewCreated">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.NewViewCreatedHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>upFilters,grdMainPanel</UpdatePanelIds>
+			</Command>
+			
+			<Command id="MC_HDM_QuickTracking">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:QuickTracking}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/QuickTracking.aspx?IncidentID=[ClientParam:primaryKeyId]&amp;cmd=MC_HDM_QuickTracking</Url>
+				<Width>700</Width>
+				<Height>350</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_EditGeneralInfo">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:GeneralInfo}</PopupTitle>
+				<Url>~/Incidents/EditGeneralInfo.aspx?IncidentID=[ClientParam:primaryKeyId]&amp;cmd=MC_HDM_EditGeneralInfo</Url>
+				<Width>500</Width>
+				<Height>400</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_LastForumPostView">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:IssForumPost}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/IssueForumPostView.aspx?IncidentID=[ClientParam:primaryKeyId]</Url>
+				<Width>650</Width>
+				<Height>450</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_ChangeStatus">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ChangeStatus}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/AssignStatus.aspx?commandName=MC_HDM_ChangeStatus</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_ChangeResponsible">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ChangeResponsible}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/AssignResponsible.aspx?commandName=MC_HDM_ChangeResponsible</Url>
+				<Width>630</Width>
+				<Height>350</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			
+			<Command id="MC_HDM_GroupResponsibilityList">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup</RefreshMethod>
+				<Url>~/Incidents/ResponsiblePool.aspx?IncidentId=[ClientParam:IncidentId]&amp;Command=MC_HDM_GroupResponsibilityList&amp;notchange=1</Url>
+				<Width>600</Width>
+				<Height>300</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_Client_EntityDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SelectObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=[ClientParam:Classes]&amp;refreshName=EntityDD_Refresh&amp;ReturnCommand=MC_Client_EntityDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]&amp;CanCreate=1</Url>
+				<Width>610</Width>
+				<Height>360</Height>
+				<Left>5</Left>
+				<Top>5</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_HDM_Selected_Relate">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.RelateSelectedIssuesHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_HDM_IssueBoxView">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Incidents/IncidentBoxView.aspx?IssBoxId=[ClientParam:IssBoxId]&amp;IncidentId=[ClientParam:IncidentId]</Url>
+				<Width>600</Width>
+				<Height>400</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+
+			<Command id="MC_HDM_Selected_MarkAsSpam">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:MarkAsSpam}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/MarkAsSpam.aspx?ReturnCommand=MC_HDM_Selected_MarkAsSpamHandler&amp;GridId=[ClientParam:GridId]</Url>
+				<Width>360</Width>
+				<Height>240</Height>
+				<Left>25</Left>
+				<Top>25</Top>
+				<Drag>True</Drag>
+				<DependCommand>MC_HDM_Selected_MarkAsSpamHandler</DependCommand>
+			</Command>
+			<Command id="MC_HDM_Selected_MarkAsSpamHandler">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.MarkAsSpamSelectedIssuesHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

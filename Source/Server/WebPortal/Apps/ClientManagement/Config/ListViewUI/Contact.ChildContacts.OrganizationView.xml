@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- List of child contacts for organization view page -->
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Button id="AddButton" text="{IbnFramework.Global:_mc_Add}" imageUrl="~/Layouts/Images/addselected.gif" commandName="MC_CM_AddSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="Org_Contact_Columns">
+				<Column id="ActionColumn" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/accept_green.gif" commandName="MC_OrgContact_SetPrimary" paddingRight="5" tooltip="{IbnFramework.Client:SetPrimaryContact}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_OrgContact_SetPrimary">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.SetPrimaryContactEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.SetPrimaryContactHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_CM_AddSelected">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=Contact&amp;refreshName=SelectItems_Refresh&amp;ReturnCommand=MC_CM_AddSelected&amp;MultipleSelect=1&amp;CanCreate=1&amp;ContainerFieldName=OrganizationId&amp;ContainerId={QueryString:ObjectId}</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

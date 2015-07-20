@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IncidentId" xml:space="preserve">
+    <value>Код инцидента</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Создан</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Обновил</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Проявление</value>
+  </data>
+  <data name="Activated" xml:space="preserve">
+    <value>Активирован</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="tbView" xml:space="preserve">
+    <value>Информация об инциденте</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="ActivatedNone" xml:space="preserve">
+    <value>нет</value>
+  </data>
+  <data name="tbViewEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Завершен</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="tbToDo" xml:space="preserve">
+    <value>Поручения</value>
+  </data>
+  <data name="tbAdd" xml:space="preserve">
+    <value>Новое поручение</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот инцидент?</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="Workaround" xml:space="preserve">
+    <value>Другие возможные решения</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="tbQuickTracking" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Просмотреть</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Suspended" xml:space="preserve">
+    <value>Приостановил</value>
+  </data>
+  <data name="CompletedByManager" xml:space="preserve">
+    <value>Завершил</value>
+  </data>
+  <data name="CompletedByResource" xml:space="preserve">
+    <value>Завершил</value>
+  </data>
+  <data name="NotCompleted" xml:space="preserve">
+    <value>Не завершено</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Закрыт</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Закрыт</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Удалить все</value>
+  </data>
+  <data name="DeleteIncident" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="DeleteTxt" xml:space="preserve">
+    <value>&lt;p align="left" class="text"&gt;Удаляемый инцидент может быть связан с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+&lt;br&gt;
+- Чтобы удалить инцидент и связанные листы учета времени, нажмите кнопку "Удалить все".&lt;br&gt;
+&lt;br&gt;
+- Чтобы удалить только инцидент, нажмите кнопку "Удалить".&lt;br&gt;
+&lt;br&gt;
+- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+		</value>
+  </data>
+  <data name="IncidentCategory" xml:space="preserve">
+    <value>Категории инцидента</value>
+  </data>
+  <data name="tbIncidentBack" xml:space="preserve">
+    <value>Вернуться к списку инцидентов</value>
+  </data>
+  <data name="tbIncident" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="tbIncidentRes" xml:space="preserve">
+    <value>Исполнители инцидента</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Изменить </value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Нет ответа</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Принял</value>
+  </data>
+  <data name="Declined" xml:space="preserve">
+    <value>Отклонил</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Отклонить</value>
+  </data>
+  <data name="ADText" xml:space="preserve">
+    <value>Менеджер инцидента назначил вас его исполнителем. 
+		&lt;br&gt;
+		Нажмите кнопку "Принять", чтобы принять назначение.
+		&lt;br&gt;
+		Нажмите "Отклонить", чтобы отказаться от него.</value>
+  </data>
+  <data name="CanManage" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="AddResources" xml:space="preserve">
+    <value>Назначить исполнителей</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить инцидент из листа связанных инцидентов ?</value>
+  </data>
+  <data name="tRelIss" xml:space="preserve">
+    <value>Связанные инциденты</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить связанный инцидент</value>
+  </data>
+  <data name="tbIncidentInfo" xml:space="preserve">
+    <value>Информация об инциденте</value>
+  </data>
+  <data name="tbIncidentInfoEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="tbIncidentInfoBack" xml:space="preserve">
+    <value>Вернуться к списку инцидентов</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>не выбран</value>
+  </data>
+  <data name="WarningToDo" xml:space="preserve">
+    <value>Вы действительно хотите удалить это поручение?</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Добавить в избранное</value>
+  </data>
+  <data name="tbAddDoc" xml:space="preserve">
+    <value>Новый файл</value>
+  </data>
+  <data name="tbAddCom" xml:space="preserve">
+    <value>Новый комментарий</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="tbAddTimeSheet" xml:space="preserve">
+    <value>Новая строка листа учета времени</value>
+  </data>
+  <data name="tLocation" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="tCopyToClipboard" xml:space="preserve">
+    <value>Скопировать инцидент в буфер обмена</value>
+  </data>
+  <data name="tPasteFromClipboard" xml:space="preserve">
+    <value>Добавить связанный инцидент из буфера обмена</value>
+  </data>
+  <data name="EditIssue" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>Дополнительная информация</value>
+  </data>
+  <data name="ForumMessages" xml:space="preserve">
+    <value>Сообщения</value>
+  </data>
+  <data name="tbAddMess" xml:space="preserve">
+    <value>Новое сообщение</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Отправлено</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Отправитель</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Вложения</value>
+  </data>
+  <data name="WarningForumNode" xml:space="preserve">
+    <value>Вы действительно хотите удалить это сообщение?</value>
+  </data>
+  <data name="SharedIssue" xml:space="preserve">
+    <value>Доступ к этому инциденту открыт</value>
+  </data>
+  <data name="MessageType" xml:space="preserve">
+    <value>Тип сообщения</value>
+  </data>
+  <data name="NodeType_ExternalQuestion" xml:space="preserve">
+    <value>Внешний запрос</value>
+  </data>
+  <data name="NodeType_ExternalMessage" xml:space="preserve">
+    <value>Внешнее сообщение</value>
+  </data>
+  <data name="NodeType_PrivateMessage" xml:space="preserve">
+    <value>Внутреннее сообщение</value>
+  </data>
+  <data name="NodeType_PublicMessage" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="NodeType_PublicResolution" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="NodeType_PublicWorkaround" xml:space="preserve">
+    <value>Возможное решение</value>
+  </data>
+  <data name="NodeType_Question" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="IssueStatus" xml:space="preserve">
+    <value>Статус инцидента</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>[ Полный текст сообщения ]</value>
+  </data>
+  <data name="MessageView" xml:space="preserve">
+    <value>Просмотр сообщения</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>Сообщений нет</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="ClientNotSet" xml:space="preserve">
+    <value>[ не определён ]</value>
+  </data>
+  <data name="WorkHours" xml:space="preserve">
+    <value>час(ов)</value>
+  </data>
+  <data name="tResponsibility" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="tResponsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="tPoolTitle" xml:space="preserve">
+    <value>Список ответственных</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Доступны</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Выбраны</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="tAdd2" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="tFindNow" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="tEmptySearch" xml:space="preserve">
+    <value>Пользователи не найдены</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="tWarningPool" xml:space="preserve">
+    <value>Вы действительно хотите удалить пользователя из списка?</value>
+  </data>
+  <data name="tAccept" xml:space="preserve">
+    <value>Согласиться принять участие в решении инцидента</value>
+  </data>
+  <data name="tAcceptText" xml:space="preserve">
+    <value>Вы согласились принять участие в решении инцидента</value>
+  </data>
+  <data name="tDecline" xml:space="preserve">
+    <value>Отказаться принимать участие в решении инцидента</value>
+  </data>
+  <data name="tDeclineText" xml:space="preserve">
+    <value>Вы отказались принять участие в решении инцидента</value>
+  </data>
+  <data name="tAcceptYourself" xml:space="preserve">
+    <value>Назначить себя ответственным</value>
+  </data>
+  <data name="tAcceptYourselfText" xml:space="preserve">
+    <value>Вы являетесь ответственным за решение инцидента</value>
+  </data>
+  <data name="tDeclineYourself" xml:space="preserve">
+    <value>Снять с себя ответственность</value>
+  </data>
+  <data name="tDeclineYourselfText" xml:space="preserve">
+    <value>Вы сняли с себя ответственность за решение инцидента</value>
+  </data>
+  <data name="tSend" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="tRespNotSet" xml:space="preserve">
+    <value>не назначен</value>
+  </data>
+  <data name="tRespGroup" xml:space="preserve">
+    <value>Группа ответственных</value>
+  </data>
+  <data name="tRespMore" xml:space="preserve">
+    <value>выбрать...</value>
+  </data>
+  <data name="tbQuickTracking2" xml:space="preserve">
+    <value>Назначение</value>
+  </data>
+  <data name="tSort" xml:space="preserve">
+    <value>Сортировать по дате</value>
+  </data>
+  <data name="tQuests" xml:space="preserve">
+    <value>Вопросы наверху</value>
+  </data>
+  <data name="tResolutions" xml:space="preserve">
+    <value>Решения наверху</value>
+  </data>
+  <data name="tWorkarounds" xml:space="preserve">
+    <value>Возможные решения наверху</value>
+  </data>
+  <data name="tUserDeclined" xml:space="preserve">
+    <value>Пользователь отказался стать ответственным</value>
+  </data>
+  <data name="tController" xml:space="preserve">
+    <value>Контролёр</value>
+  </data>
+  <data name="tExpectedResponseDate" xml:space="preserve">
+    <value>Ответить не позднее</value>
+  </data>
+  <data name="tExpectedResolveDate" xml:space="preserve">
+    <value>Решить не позднее</value>
+  </data>
+  <data name="tIncMetrics" xml:space="preserve">
+    <value>Даты инцидента</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="NodeType_internal" xml:space="preserve">
+    <value>Внутреннее сообщение</value>
+  </data>
+  <data name="NodeType_internal_quest" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="NodeType_Mail_incoming_quest" xml:space="preserve">
+    <value>Внешний запрос</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_quest" xml:space="preserve">
+    <value>Исходящий вопрос</value>
+  </data>
+  <data name="NodeType_internal_resol" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="NodeType_Mail_incoming_resol" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_resol" xml:space="preserve">
+    <value>Решение</value>
+  </data>
+  <data name="NodeType_internal_wa" xml:space="preserve">
+    <value>Возможное решение</value>
+  </data>
+  <data name="NodeType_Mail_incoming_wa" xml:space="preserve">
+    <value>Возможное решение</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_wa" xml:space="preserve">
+    <value>Возможное решение</value>
+  </data>
+  <data name="NodeType_Mail_incoming" xml:space="preserve">
+    <value>Входящее сообщение</value>
+  </data>
+  <data name="NodeType_Mail_outgoing" xml:space="preserve">
+    <value>Исходящее сообщение</value>
+  </data>
+  <data name="NodeType_InfoMessage" xml:space="preserve">
+    <value>Информационное сообщение</value>
+  </data>
+  <data name="tActualFinish" xml:space="preserve">
+    <value>Фактическая дата закрытия</value>
+  </data>
+  <data name="tMarkAsResolution" xml:space="preserve">
+    <value>Пометить как решение инцидента</value>
+  </data>
+  <data name="tMarkAsWA" xml:space="preserve">
+    <value>Пометить как возможное решение инцидента</value>
+  </data>
+  <data name="tMarkAsResolutionWarning" xml:space="preserve">
+    <value>Вы действительно хотите пометить эту запись как решение инцидента?</value>
+  </data>
+  <data name="tMarkAsWAWarning" xml:space="preserve">
+    <value>Вы действительно хотите пометить эту запись как возможное решение инцидента?</value>
+  </data>
+  <data name="tSendToExternal" xml:space="preserve">
+    <value>Отправлять внешним пользователям</value>
+  </data>
+  <data name="tUnMarkAsResolution" xml:space="preserve">
+    <value>Снять пометку "Решение инцидента"</value>
+  </data>
+  <data name="tUnMarkAsWA" xml:space="preserve">
+    <value>Снять пометку "Возможное решение инцидента"</value>
+  </data>
+  <data name="tUnMarkAsResolutionWarning" xml:space="preserve">
+    <value>Вы действительно хотите снять с этой записи пометку "Решение инцидента"?</value>
+  </data>
+  <data name="tUnMarkAsWAWarning" xml:space="preserve">
+    <value>Вы действительно хотите снять с этой записи пометку "Возможное решение инцидента"?</value>
+  </data>
+  <data name="tSettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="tExternalRecipients" xml:space="preserve">
+    <value>Внешние получатели</value>
+  </data>
+  <data name="AddRecipients" xml:space="preserve">
+    <value>Добавить внешних получателей</value>
+  </data>
+  <data name="tEMail" xml:space="preserve">
+    <value>E-mail адрес</value>
+  </data>
+  <data name="tTicket" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="tReSend" xml:space="preserve">
+    <value>Переотправить</value>
+  </data>
+  <data name="tReSendWarning" xml:space="preserve">
+    <value>Вы хотите переотправить это письмо менеджеру, ответственным и внутренним получателям?</value>
+  </data>
+  <data name="tWasResended" xml:space="preserve">
+    <value>Письмо было переотправлено!</value>
+  </data>
+  <data name="tWasNotResended" xml:space="preserve">
+    <value>Письмо не было переотправлено! Попробуйте еще раз или свяжитесь с вашим системным администратором!</value>
+  </data>
+  <data name="tReSendOutWarning" xml:space="preserve">
+    <value>Вы хотите переотправить это письмо внешним получателям?</value>
+  </data>
+  <data name="tShowInfo" xml:space="preserve">
+    <value>Отображать информационные сообщения</value>
+  </data>
+  <data name="tReply" xml:space="preserve">
+    <value>Ответить</value>
+  </data>
+  <data name="tOutlookReply" xml:space="preserve">
+    <value>.msg (MS Outlook)</value>
+  </data>
+  <data name="tEMLReply" xml:space="preserve">
+    <value>.eml (Outlook Express, Thunderbird и т. д.)</value>
+  </data>
+  <data name="tShowNums" xml:space="preserve">
+    <value>Показывать порядок сообщений</value>
+  </data>
+  <data name="tMenuReply" xml:space="preserve">
+    <value>Ответить</value>
+  </data>
+  <data name="tWebReply" xml:space="preserve">
+    <value>Веб интерфейс</value>
+  </data>
+  <data name="tbAddEMail" xml:space="preserve">
+    <value>Написать письмо</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>Кому</value>
+  </data>
+  <data name="tAddEMails" xml:space="preserve">
+    <value>Добавить адреса</value>
+  </data>
+  <data name="tUploadFiles" xml:space="preserve">
+    <value>Загрузить файлы с диска компьютера</value>
+  </data>
+  <data name="tAddIBNfiles" xml:space="preserve">
+    <value>Добавить файлы из библиотеки портала</value>
+  </data>
+  <data name="tAddIBNArticle" xml:space="preserve">
+    <value>Добавить статью из базы знаний портала</value>
+  </data>
+  <data name="tUpload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="tAddIBNPortalfiles" xml:space="preserve">
+    <value>Файлы портала</value>
+  </data>
+  <data name="tAddAttachments" xml:space="preserve">
+    <value>Добавить вложения</value>
+  </data>
+  <data name="tHelpUpload" xml:space="preserve">
+    <value>
+      Нажмите &lt;b&gt;Обзор&lt;/b&gt; и выберите файл, или введите путь к файлу в поле:
+    </value>
+  </data>
+  <data name="tNotFound" xml:space="preserve">
+    <value>Сообщение не найдено!</value>
+  </data>
+  <data name="tCc" xml:space="preserve">
+    <value>Копия</value>
+  </data>
+  <data name="tObjectNotSet" xml:space="preserve">
+    <value>не выбран</value>
+  </data>
+  <data name="tOnTop" xml:space="preserve">
+    <value>Закрепить</value>
+  </data>
+  <data name="tUnOnTop" xml:space="preserve">
+    <value>Открепить</value>
+  </data>
+  <data name="NodeType_OnTop" xml:space="preserve">
+    <value>Закреплено</value>
+  </data>
+  <data name="ActualOpenDate" xml:space="preserve">
+    <value>Дата открытия</value>
+  </data>
+  <data name="ModifiedDate" xml:space="preserve">
+    <value>Последнее изменение</value>
+  </data>
+  <data name="NoRecipients" xml:space="preserve">
+    <value>Не заданы получатели.</value>
+  </data>
+  <data name="ShowFullMessage" xml:space="preserve">
+    <value>Показывать полный текст сообщений</value>
+  </data>
+  <data name="ContactSelect" xml:space="preserve">
+    <value>Выбрать из списка клиентов</value>
+  </data>
+  <data name="PrintIssue" xml:space="preserve">
+    <value>Печать инцидента</value>
+  </data>
+  <data name="PrintSettings" xml:space="preserve">
+    <value>Настройки печати</value>
+  </data>
+  <data name="tExpectedAssignDate" xml:space="preserve">
+    <value>Назначить не позднее</value>
+  </data>
+  <data name="IssueBox" xml:space="preserve">
+    <value>Папка инцидентов</value>
+  </data>
+  <data name="UseNewResponsible" xml:space="preserve">
+    <value>Взять ответственного из папки инцидентов</value>
+  </data>
+</root>

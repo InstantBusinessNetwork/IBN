@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tEditDoc">
+		<value>Edit File</value>
+	</data>
+	<data name="tAddDoc">
+		<value>New File</value>
+	</data>
+	<data name="CreateDocF">
+		<value>Create New File in Folder</value>
+	</data>
+	<data name="Create">
+		<value>Create</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="DocTitle">
+		<value>File Title</value>
+	</data>
+	<data name="Required">
+		<value>* File Title is Required</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="Type">
+		<value>Type</value>
+	</data>
+	<data name="File">
+		<value>File</value>
+	</data>
+	<data name="Link">
+		<value>Link</value>
+	</data>
+	<data name="CreateDocI">
+		<value>Create New Issue File</value>
+	</data>
+	<data name="CreateDocTk">
+		<value>Create New Task File</value>
+	</data>
+	<data name="CreateDocTd">
+		<value>Create New ToDo File</value>
+	</data>
+	<data name="CreateDocE">
+		<value>Create New Event File</value>
+	</data>
+	<data name="tBackF">
+		<value>Back to the File Library</value>
+		<comment></comment>
+	</data>
+	<data name="tBackI">
+		<value>Back to the Issue</value>
+	</data>
+	<data name="tBackTk">
+		<value>Back to the Task</value>
+	</data>
+	<data name="tBackTd">
+		<value>Back to the ToDo</value>
+	</data>
+	<data name="tBackE">
+		<value>Back to the Event</value>
+	</data>
+	<data name="tBackP">
+		<value>Back to the Project</value>
+	</data>
+	<data name="HTML">
+		<value>HTML Text</value>
+	</data>
+	<data name="Comments">
+		<value>You are editing the information regarding this file or asset. If you wish to add a new version of this file, simply browse out to the file you wish and portal will automatically create a new version of this file in the system and retain the existing version that is already published.</value>
+	</data>
+	<data name="History">
+		<value>Revision/Access History</value>
+	</data>
+	<data name="Updated">
+		<value>Last Updated</value>
+	</data>
+	<data name="Created">
+		<value>Originally Created</value>
+	</data>
+	<data name="Version">
+		<value>Current Version</value>
+	</data>
+	<data name="DocSize">
+		<value>File Size</value>
+	</data>
+	<data name="Views">
+		<value># of Views</value>
+	</data>
+	<data name="Downloads">
+		<value># of Downloads</value>
+	</data>
+	<data name="By">
+		<value>by</value>
+	</data>
+	<data name="MaxDiskSpace">
+		<value>Max Disk Space is Reached</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="tKeepHistory">
+		<value>Keep Versions History</value>
+	</data>
+	<data name="CreateDocD">
+		<value>Create New Document File</value>
+	</data>
+	<data name="tBackD">
+		<value>Back to the Document</value>
+	</data>
+	<data name="tNewVersion">
+		<value>New Doument Version</value>
+	</data>
+	<data name="tWaitForUploading">
+		<value>Waiting for the Upload to Start</value>
+	</data>
+	<data name="tUploadCancel">
+		<value>Upload is canceling. Please wait.</value>
+	</data>
+	<data name="tUploadFailed">
+		<value>Uploading Failed</value>
+	</data>
+	<data name="tUploadSuccess">
+		<value>The upload has completed successfully.</value>
+	</data>
+	<data name="tInProgress">
+		<value>In progress</value>
+	</data>
+	<data name="tUploadStatus">
+		<value>Upload status</value>
+	</data>
+	<data name="tSize">
+		<value>Size</value>
+	</data>
+	<data name="tOf">
+		<value>of</value>
+	</data>
+	<data name="tTime">
+		<value>Time</value>
+	</data>
+	<data name="tEstimatedTime">
+		<value>Estimated time is</value>
+	</data>
+	<data name="tRemainingTime">
+		<value>Remaining time is</value>
+	</data>
+	<data name="tCompleted">
+		<value>Completed</value>
+	</data>
+	<data name="tInitializing">
+		<value>Initializing</value>
+	</data>
+	<data name="tUpload">
+		<value>Upload</value>
+	</data>
+	<data name="tReplace">
+		<value>Replace</value>
+	</data>
+	<data name="tRename">
+		<value>Rename</value>
+	</data>
+	<data name="tFileExists">
+		<value>File already exists! You can replace or rename it.</value>
+	</data>
+	<data name="tDuplicateName">
+		<value>* Duplicate File Name</value>
+	</data>
+	<data name="tReNewVer">
+		<value>New Version</value>
+	</data>
+	<data name="tBrowse">
+		<value>Browse to select the file you wish to upload.</value>
+	</data>
+	<data name="tSelectFolder">
+		<value>Select the portal library folder where you wish to place it.</value>
+	</data>
+	<data name="tClickUpload">
+		<value>Click the Upload Button to Upload your file.</value>
+	</data>
+	<data name="tAnotherOne">
+		<value>Create Another One</value>
+	</data>
+  <data name="tAddIBNFiles">
+    <value>Add Portal Files</value>
+  </data>
+  <data name="tRoot">
+    <value>Root</value>
+  </data>
+  <data name="tDelete">
+    <value>Delete</value>
+  </data>
+  <data name="tPath">
+    <value>Path</value>
+  </data>
+  <data name="tAddSelected">
+    <value>Add selected files</value>
+  </data>
+  <data name="tAddFile">
+    <value>Add file</value>
+  </data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+</root>

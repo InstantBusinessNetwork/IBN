@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tAdvView">
+		<value>Проводник</value>
+	</data>
+	<data name="tGenView">
+		<value>Папки</value>
+	</data>
+	<data name="tAdd">
+		<value>Новая папка</value>
+	</data>
+	<data name="tAddD">
+		<value>Новый файл</value>
+	</data>
+	<data name="Security">
+		<value>Безопасность</value>
+	</data>
+	<data name="tListView">
+		<value>Список файлов</value>
+	</data>
+	<data name="tSearch">
+		<value>Поиск</value>
+	</data>
+	<data name="FileLibrary">
+		<value>Библиотека</value>
+	</data>
+	<data name="MesDeleteF">
+		<value>Вы хотите удалить эту папку?</value>
+	</data>
+	<data name="MesDeleteD">
+		<value>Вы хотите удалить этот файл?</value>
+	</data>
+	<data name="DeleteAll">
+		<value>Удалить все</value>
+	</data>
+	<data name="DeleteDocument">
+		<value>Удалить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="DeleteTxt">
+		<value>
+				&lt;p align="left" class="text"&gt;Удаляемый документ может быть связан с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+				&lt;br&gt;
+				- Чтобы удалить документ и связанные листы учета времени, нажмите кнопку "Удалить 
+			все".&lt;br&gt;
+				&lt;br&gt;
+				- Чтобы удалить только документ, нажмите кнопку "Удалить".&lt;br&gt;
+				&lt;br&gt;
+				- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+			</value>
+	</data>
+	<data name="tFileLibrary">
+		<value>Файлы</value>
+	</data>
+	<data name="tMoveFileFolder">
+		<value>Перемещение папок и документов</value>
+	</data>
+	<data name="tUplCompl">
+		<value>% загружено</value>
+	</data>
+	<data name="tWait">
+		<value>Пожалуйста, подождите.</value>
+	</data>
+	<data name="tUploaded">
+		<value>Загружено</value>
+	</data>
+	<data name="tof">
+		<value>из</value>
+	</data>
+	<data name="tUplComplSucces">
+		<value>Загрузка завершена успешно.</value>
+	</data>
+	<data name="tUplFail">
+		<value>Произошла ошибка!</value>
+	</data>
+	<data name="tClose">
+		<value>Закрыть это окно по окончании загрузки.</value>
+	</data>
+	<data name="tUploading">
+		<value>Загрузка</value>
+	</data>
+	<data name="tBtnClose">
+		<value>Закрыть</value>
+	</data>
+	<data name="tPaste">
+		<value>Вставить из буфера</value>
+	</data>
+	<data name="tFrClose">
+		<value>Закрыть</value>
+	</data>
+	<data name="tNoItems">
+		<value>Буфер обмена пуст</value>
+	</data>
+	<data name="tFileStorage">
+		<value>Структура</value>
+	</data>
+	<data name="tFileList">
+		<value>Список файлов</value>
+	</data>
+	<data name="tDownLoadLink">
+		<value>Скачивание скоро начнется. Если загрузка не началось автоматически, воспользуйтесь этой
+			&lt;a href={0}&gt;ссылкой&lt;/a&gt;.&lt;br /&gt;
+				ВНИМАНИЕ!!! Ссылка будет рабочей в течение {1} час(ов).
+		</value>
+	</data>
+	<data name="tDownloadLinkTitle">
+		<value>Открытие файла</value>
+	</data>
+</root>

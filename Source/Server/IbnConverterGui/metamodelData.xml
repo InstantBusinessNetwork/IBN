@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionaries>
+	<dictionary name="cls_CustomizationProfile">
+		<item CustomizationProfileId="-1" Name="{IbnFramework.Admin:DefaultProfile}" />
+	</dictionary>
+</dictionaries>

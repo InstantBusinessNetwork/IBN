@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.DocumentManagement.ColumnTemplates.Document_DocumentId" %>
+<%# Eval("DocumentId") == DBNull.Value ? "" : "#" + Eval("DocumentId").ToString()%>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CalendarEntry_Created" xml:space="preserve">
+    <value>Мероприятие - Создано</value>
+  </data>
+  <data name="CalendarEntry_Deleted" xml:space="preserve">
+    <value>Мероприятие - Удалено</value>
+  </data>
+  <data name="CalendarEntry_FinishDate_Arrived" xml:space="preserve">
+    <value>Мероприятие - Запланированная дата завершения наступила</value>
+  </data>
+  <data name="CalendarEntry_StartDate_Arrived" xml:space="preserve">
+    <value>Мероприятие - Запланированная дата начала наступила</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Мероприятие - Комментарий - Добавлен</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Мероприятие - Комментарий - Удален</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Мероприятие - Комментарий - Изменен</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Мероприятие - Файл - Добавлен</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Мероприятие - Файл - Удален</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Мероприятие - Файл - Изменен</value>
+  </data>
+  <data name="CalendarEntry_Updated_GeneralCategories" xml:space="preserve">
+    <value>Мероприятие - Изменены общие категории</value>
+  </data>
+  <data name="CalendarEntry_Updated_GeneralInfo" xml:space="preserve">
+    <value>Мероприятие - Изменена общая информация</value>
+  </data>
+  <data name="CalendarEntry_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Мероприятие - Менеджер - Назначен</value>
+  </data>
+  <data name="CalendarEntry_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Мероприятие - Менеджер - Освобожден от обязанностей</value>
+  </data>
+  <data name="CalendarEntry_Updated_MetaFields" xml:space="preserve">
+    <value>Мероприятие - Изменена дополнительная информация</value>
+  </data>
+  <data name="CalendarEntry_Updated_Priority" xml:space="preserve">
+    <value>Мероприятие - Изменен приоритет</value>
+  </data>
+  <data name="CalendarEntry_Updated_State" xml:space="preserve">
+    <value>Мероприятие - Изменено состояние</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Мероприятие - Участник - Добавлен</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Мероприятие - Участник - Удален</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Мероприятие - Приглашение - Принято</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Мероприятие - Приглашение - Отправлено</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Мероприятие - Приглашение - Отклонено</value>
+  </data>
+  <data name="CalendarEntry_Updated_Timeline" xml:space="preserve">
+    <value>Мероприятие - Изменены временные рамки</value>
+  </data>
+  <data name="Document_Created" xml:space="preserve">
+    <value>Документ - Создан</value>
+  </data>
+  <data name="Document_Deleted" xml:space="preserve">
+    <value>Документ - Удален</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Документ - Комментарий - Добавлен</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Документ - Комментарий - Удален</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Документ - Комментарий - Изменен</value>
+  </data>
+  <data name="Document_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Документ - Файл - Добавлен</value>
+  </data>
+  <data name="Document_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Документ - Файл - Удален</value>
+  </data>
+  <data name="Document_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Документ - Файл - Изменен</value>
+  </data>
+  <data name="Document_Updated_GeneralCategories" xml:space="preserve">
+    <value>Документ - Изменены общие категории</value>
+  </data>
+  <data name="Document_Updated_GeneralInfo" xml:space="preserve">
+    <value>Документ - Изменена общая информация</value>
+  </data>
+  <data name="Document_Updated_MetaFields" xml:space="preserve">
+    <value>Документ - Изменена дополнительная информация</value>
+  </data>
+  <data name="Document_Updated_Priority" xml:space="preserve">
+    <value>Документ - Изменен приоритет</value>
+  </data>
+  <data name="Document_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Документ - Исполнитель - Добавлен</value>
+  </data>
+  <data name="Document_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Документ - Исполнитель - Удален</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Документ - Состав исполнителей - Пользователь согласился войти в состав</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Документ - Состав исполнителей - Пользователю предложено войти в состав</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Документ - Состав исполнителей - Пользователь отказался войти в состав</value>
+  </data>
+  <data name="Document_Updated_State" xml:space="preserve">
+    <value>Документ - Изменено состояние</value>
+  </data>
+  <data name="Document_Updated_Status" xml:space="preserve">
+    <value>Документ - Изменен статус</value>
+  </data>
+  <data name="Document_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Документ - Поручение - Создано</value>
+  </data>
+  <data name="Document_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Документ - Поручение - Удалено</value>
+  </data>
+  <data name="Document_Updated_VersionList_VersionAdded" xml:space="preserve">
+    <value>Документ - Опубликована новая версия</value>
+  </data>
+  <data name="Issue_Created" xml:space="preserve">
+    <value>Инцидент - Создан</value>
+  </data>
+  <data name="Issue_Deleted" xml:space="preserve">
+    <value>Инцидент - Удален</value>
+  </data>
+  <data name="Issue_Updated_Box" xml:space="preserve">
+    <value>Инцидент - Изменена папка инцидента</value>
+  </data>
+  <data name="Issue_Updated_Controller_Assigned" xml:space="preserve">
+    <value>Инцидент - Контролер - Назначен</value>
+  </data>
+  <data name="Issue_Updated_Controller_Resigned" xml:space="preserve">
+    <value>Инцидент - Контролер - Освобожден от обязанностей</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Инцидент - Комментарий - Добавлен</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Инцидент - Комментарий - Удален</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Инцидент - Комментарий - Изменен</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Инцидент - Файл - Добавлен</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Инцидент - Файл - Удален</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Инцидент - Файл - Изменен</value>
+  </data>
+  <data name="Issue_Updated_Forum_MessageAdded" xml:space="preserve">
+    <value>Инцидент - Форум - Сообщение добавлено</value>
+  </data>
+  <data name="Issue_Updated_GeneralCategories" xml:space="preserve">
+    <value>Инцидент - Изменены общие категории</value>
+  </data>
+  <data name="Issue_Updated_GeneralInfo" xml:space="preserve">
+    <value>Инцидент - Изменена общая информация</value>
+  </data>
+  <data name="Issue_Updated_IssueCategories" xml:space="preserve">
+    <value>Инцидент - Изменены категории инцидентов</value>
+  </data>
+  <data name="Issue_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Инцидент - Менеджер - Назначен</value>
+  </data>
+  <data name="Issue_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Инцидент - Менеджер - Освобожден от обязанностей</value>
+  </data>
+  <data name="Issue_Updated_MetaFields" xml:space="preserve">
+    <value>Инцидент - Изменена дополнительная информация</value>
+  </data>
+  <data name="Issue_Updated_Priority" xml:space="preserve">
+    <value>Инцидент - Изменен приоритет</value>
+  </data>
+  <data name="Issue_Updated_RelatedIssueList_RelatedIssueAdded" xml:space="preserve">
+    <value>Инцидент - Связанный инцидент - Связь добавлена</value>
+  </data>
+  <data name="Issue_Updated_RelatedIssueList_RelatedIssueDeleted" xml:space="preserve">
+    <value>Инцидент - Связанный инцидент - Связь удалена</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Инцидент - Состав исполнителей - Новый пользователь включен в состав</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Инцидент - Состав исполнителей - Пользователь исключен из состава</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Инцидент - Состав исполнителей - Пользователь согласился войти в состав</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Инцидент - Состав исполнителей - Пользователю предложено войти в состав</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Инцидент - Состав исполнителей - Пользователь отказался войти в состав</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Changed" xml:space="preserve">
+    <value>Инцидент - Ответственный - Изменен</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Requested" xml:space="preserve">
+    <value>Инцидент - Ответственный - Пользователю предложено стать ответственным</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Assigned" xml:space="preserve">
+    <value>Инцидент - Ответственный - Назначен</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Resigned" xml:space="preserve">
+    <value>Инцидент - Ответственный - Освобожден от обязанностей</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Rejected" xml:space="preserve">
+    <value>Инцидент - Ответственный - Пользователь отказался стать ответственным</value>
+  </data>
+  <data name="Issue_Updated_Status" xml:space="preserve">
+    <value>Инцидент - Изменено состояние</value>
+  </data>
+  <data name="Issue_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Инцидент - Поручение - Создано</value>
+  </data>
+  <data name="Issue_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Инцидент - Поручение - Удалено</value>
+  </data>
+  <data name="IssueRequest_Approved" xml:space="preserve">
+    <value>Внешнее сообщение об инциденте - Утверждено</value>
+  </data>
+  <data name="IssueRequest_Created" xml:space="preserve">
+    <value>Внешнее сообщение об инциденте - Создано</value>
+  </data>
+  <data name="IssueRequest_Deleted" xml:space="preserve">
+    <value>Внешнее сообщение об инциденте - Удалено</value>
+  </data>
+  <data name="IssueRequest_Updated" xml:space="preserve">
+    <value>Внешнее сообщение об инциденте - Изменено</value>
+  </data>
+  <data name="List_Created" xml:space="preserve">
+    <value>Список - Создан</value>
+  </data>
+  <data name="List_Deleted" xml:space="preserve">
+    <value>Список - Удален</value>
+  </data>
+  <data name="List_Updated_Data" xml:space="preserve">
+    <value>Список - Изменен</value>
+  </data>
+  <data name="List_Updated_GeneralCategories" xml:space="preserve">
+    <value>Список - Изменены общие категории</value>
+  </data>
+  <data name="List_Updated_GeneralInfo" xml:space="preserve">
+    <value>Список - Изменена общая информация</value>
+  </data>
+  <data name="List_Updated_Status" xml:space="preserve">
+    <value>Список - Изменен статус</value>
+  </data>
+  <data name="List_Updated_Structure" xml:space="preserve">
+    <value>Список - Изменена структура</value>
+  </data>
+  <data name="Project_Created" xml:space="preserve">
+    <value>Проект - Создан</value>
+  </data>
+  <data name="Project_Deleted" xml:space="preserve">
+    <value>Проект - Удален</value>
+  </data>
+  <data name="Project_TargetFinishDate_Arrived" xml:space="preserve">
+    <value>Проект - Запланированная дата завершения наступила</value>
+  </data>
+  <data name="Project_TargetStartDate_Arrived" xml:space="preserve">
+    <value>Проект - Запланированная дата начала наступила</value>
+  </data>
+  <data name="Project_Updated_ActualFinishDate" xml:space="preserve">
+    <value>Проект - Изменена фактическая дата завершения</value>
+  </data>
+  <data name="Project_Updated_ActualStartDate" xml:space="preserve">
+    <value>Проект - Изменена фактическая дата начала</value>
+  </data>
+  <data name="Project_Updated_CalendarEntryList_CalendarEntryAdded" xml:space="preserve">
+    <value>Проект - Мероприятие - Создано</value>
+  </data>
+  <data name="Project_Updated_CalendarEntryList_CalendarEntryDeleted" xml:space="preserve">
+    <value>Проект - Мероприятие - Удалено</value>
+  </data>
+  <data name="Project_Updated_Client" xml:space="preserve">
+    <value>Проект - Изменен клиент</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Проект - Комментарий - Добавлен</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Проект - Комментарий - Удален</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Проект - Комментарий - Изменен</value>
+  </data>
+  <data name="Project_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>Проект - Изменены настройки</value>
+  </data>
+  <data name="Project_Updated_DocumentList_DocumentAdded" xml:space="preserve">
+    <value>Проект - Документ - Создан</value>
+  </data>
+  <data name="Project_Updated_DocumentList_DocumentDeleted" xml:space="preserve">
+    <value>Проект - Документ - Удален</value>
+  </data>
+  <data name="Project_Updated_ExecutiveManager_ExecutiveManagerAdded" xml:space="preserve">
+    <value>Проект - Исполнительный менеджер - Назначен</value>
+  </data>
+  <data name="Project_Updated_ExecutiveManager_ExecutiveManagerDeleted" xml:space="preserve">
+    <value>Проект - Исполнительный менеджер - Освобожден от обязанностей</value>
+  </data>
+  <data name="Project_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Проект - Файл - Добавлен</value>
+  </data>
+  <data name="Project_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Проект - Файл - Удален</value>
+  </data>
+  <data name="Project_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Проект - Файл - Изменен</value>
+  </data>
+  <data name="Project_Updated_GeneralCategories" xml:space="preserve">
+    <value>Проект - Изменены общие категории</value>
+  </data>
+  <data name="Project_Updated_GeneralInfo" xml:space="preserve">
+    <value>Проект - Изменена общая информация</value>
+  </data>
+  <data name="Project_Updated_IssueList_IssueAdded" xml:space="preserve">
+    <value>Проект - Инцидент - Создан</value>
+  </data>
+  <data name="Project_Updated_IssueList_IssueDeleted" xml:space="preserve">
+    <value>Проект - Инцидент - Удален</value>
+  </data>
+  <data name="Project_Updated_ListList_ListAdded" xml:space="preserve">
+    <value>Проект - Список - Создан</value>
+  </data>
+  <data name="Project_Updated_ListList_ListDeleted" xml:space="preserve">
+    <value>Проект - Список - Удален</value>
+  </data>
+  <data name="Project_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Проект - Менеджер - Назначен</value>
+  </data>
+  <data name="Project_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Проект - Менеджер - Освобожден от обязанностей</value>
+  </data>
+  <data name="Project_Updated_MetaFields" xml:space="preserve">
+    <value>Проект - Изменена дополнительная информация</value>
+  </data>
+  <data name="Project_Updated_Percent" xml:space="preserve">
+    <value>Проект - Изменен процент выполнения</value>
+  </data>
+  <data name="Project_Updated_Phase" xml:space="preserve">
+    <value>Проект - Изменена фаза</value>
+  </data>
+  <data name="Project_Updated_Priority" xml:space="preserve">
+    <value>Проект - Изменен приоритет</value>
+  </data>
+  <data name="Project_Updated_ProjectCategories" xml:space="preserve">
+    <value>Проект - Изменены проектные категории</value>
+  </data>
+  <data name="Project_Updated_ProjectGroups" xml:space="preserve">
+    <value>Проект - Изменены проектные группы</value>
+  </data>
+  <data name="Project_Updated_RelatedProjectList_RelatedProjectAdded" xml:space="preserve">
+    <value>Проект - Связанный проект - Связь добавлена</value>
+  </data>
+  <data name="Project_Updated_RelatedProjectList_RelatedProjectDeleted" xml:space="preserve">
+    <value>Проект - Связанный проект - Связь удалена</value>
+  </data>
+  <data name="Project_Updated_RiskLevel" xml:space="preserve">
+    <value>Проект - Изменен уровень риска</value>
+  </data>
+  <data name="Project_Updated_SponsorList_SponsorAdded" xml:space="preserve">
+    <value>Проект - Спонсор - Добавлен</value>
+  </data>
+  <data name="Project_Updated_SponsorList_SponsorDeleted" xml:space="preserve">
+    <value>Проект - Спонсор - Удален</value>
+  </data>
+  <data name="Project_Updated_StakeholderList_StakeholderAdded" xml:space="preserve">
+    <value>Проект - Заинтересованное лицо - Добавлено</value>
+  </data>
+  <data name="Project_Updated_StakeholderList_StakeholderDeleted" xml:space="preserve">
+    <value>Проект - Заинтересованное лицо - Удалено</value>
+  </data>
+  <data name="Project_Updated_Status" xml:space="preserve">
+    <value>Проект - Изменен статус</value>
+  </data>
+  <data name="Project_Updated_TargetTimeline" xml:space="preserve">
+    <value>Проект - Изменены запланированные временные рамки</value>
+  </data>
+  <data name="Project_Updated_TaskList_TaskAdded" xml:space="preserve">
+    <value>Проект - Задача - Создана</value>
+  </data>
+  <data name="Project_Updated_TaskList_TaskDeleted" xml:space="preserve">
+    <value>Проект - Задача - Удалена</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberAdded" xml:space="preserve">
+    <value>Проект - Команда - Пользователь включен в команду</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberDeleted" xml:space="preserve">
+    <value>Проект - Команда - Пользователь исключен из команды</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberUpdated" xml:space="preserve">
+    <value>Проект - Команда - Информация о пользователе изменена</value>
+  </data>
+  <data name="Project_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Проект - Поручение - Создано</value>
+  </data>
+  <data name="Project_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Проект - Поручение - Удалено</value>
+  </data>
+  <data name="Task_Created" xml:space="preserve">
+    <value>Задача - Создана</value>
+  </data>
+  <data name="Task_Deleted" xml:space="preserve">
+    <value>Задача - Удалена</value>
+  </data>
+  <data name="Task_FinishDate_Arrived" xml:space="preserve">
+    <value>Задача - Запланированная дата завершения наступила</value>
+  </data>
+  <data name="Task_StartDate_Arrived" xml:space="preserve">
+    <value>Задача - Запланированная дата начала наступила</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Задача - Комментарий - Добавлен</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Задача - Комментарий - Удален</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Задача - Комментарий - Изменен</value>
+  </data>
+  <data name="Task_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>Задача - Изменены настройки</value>
+  </data>
+  <data name="Task_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Задача - Файл - Добавлен</value>
+  </data>
+  <data name="Task_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Задача - Файл - Удален</value>
+  </data>
+  <data name="Task_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Задача - Файл - Изменен</value>
+  </data>
+  <data name="Task_Updated_GeneralCategories" xml:space="preserve">
+    <value>Задача - Изменены общие категории</value>
+  </data>
+  <data name="Task_Updated_GeneralInfo" xml:space="preserve">
+    <value>Задача - Изменена общая информация</value>
+  </data>
+  <data name="Task_Updated_MetaFields" xml:space="preserve">
+    <value>Задача - Изменена дополнительная информация</value>
+  </data>
+  <data name="Task_Updated_Percent" xml:space="preserve">
+    <value>Задача - Изменен процент выполнения</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorAdded" xml:space="preserve">
+    <value>Задача - Задача-предшественник - Добавлена</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorDeleted" xml:space="preserve">
+    <value>Задача - Задача-предшественник - Удалена</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorLagUpdated" xml:space="preserve">
+    <value>Задача - Задача-предшественник - Изменена задержка начала</value>
+  </data>
+  <data name="Task_Updated_Priority" xml:space="preserve">
+    <value>Задача - Изменен приоритет</value>
+  </data>
+  <data name="Task_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Задача - Состав исполнителей - Новый пользователь включен в состав</value>
+  </data>
+  <data name="Task_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Задача - Состав исполнителей - Пользователь исключен из состава</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Задача - Состав исполнителей - Пользователь согласился войти в состав</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Задача - Состав исполнителей - Пользователю предложено войти в состав</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Задача - Состав исполнителей - Пользователь отказался войти в состав</value>
+  </data>
+  <data name="Task_Updated_State" xml:space="preserve">
+    <value>Задача - Изменено состояние</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorAdded" xml:space="preserve">
+    <value>Задача - Задача-последователь - Добавлена</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorDeleted" xml:space="preserve">
+    <value>Задача - Задача-последователь - Удалена</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorLagUpdated" xml:space="preserve">
+    <value>Задача - Задача-последователь - Изменена задержка начала</value>
+  </data>
+  <data name="Task_Updated_Timeline" xml:space="preserve">
+    <value>Задача - Изменены временные рамки</value>
+  </data>
+  <data name="Task_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Задача - Поручение - Создано</value>
+  </data>
+  <data name="Task_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Задача - Поручение - Удалено</value>
+  </data>
+  <data name="Todo_Created" xml:space="preserve">
+    <value>Поручение - Создано</value>
+  </data>
+  <data name="Todo_Deleted" xml:space="preserve">
+    <value>Поручение - Удалено</value>
+  </data>
+  <data name="Todo_FinishDate_Arrived" xml:space="preserve">
+    <value>Поручение - Запланированная дата завершения наступила</value>
+  </data>
+  <data name="Todo_StartDate_Arrived" xml:space="preserve">
+    <value>Поручение - Запланированная дата начала наступила</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Поручение - Комментарий - Добавлен</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Поручение - Комментарий - Удален</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Поручение - Комментарий - Изменен</value>
+  </data>
+  <data name="Todo_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>Поручение - Изменены настройки</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Поручение - Файл - Добавлен</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Поручение - Файл - Удален</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Поручение - Файл - Изменен</value>
+  </data>
+  <data name="Todo_Updated_GeneralCategories" xml:space="preserve">
+    <value>Поручение - Изменены общие категории</value>
+  </data>
+  <data name="Todo_Updated_GeneralInfo" xml:space="preserve">
+    <value>Поручение - Изменена общая информация</value>
+  </data>
+  <data name="Todo_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Поручение - Менеджер - Назначен</value>
+  </data>
+  <data name="Todo_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Поручение - Менеджер - Освобожден от обязанностей</value>
+  </data>
+  <data name="Todo_Updated_MetaFields" xml:space="preserve">
+    <value>Поручение - Изменена дополнительная информация</value>
+  </data>
+  <data name="Todo_Updated_Percent" xml:space="preserve">
+    <value>Поручение - Изменен процент выполнения</value>
+  </data>
+  <data name="Todo_Updated_Priority" xml:space="preserve">
+    <value>Поручение - Изменен приоритет</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Поручение - Состав исполнителей - Новый пользователь включен в состав</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Поручение - Состав исполнителей - Пользователь исключен из состава</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Поручение - Состав исполнителей - Пользователь согласился войти в состав</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Поручение - Состав исполнителей - Пользователю предложено войти в состав</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Поручение - Состав исполнителей - Пользователь отказался войти в состав</value>
+  </data>
+  <data name="Todo_Updated_State" xml:space="preserve">
+    <value>Поручение - Изменено состояние</value>
+  </data>
+  <data name="Todo_Updated_Timeline" xml:space="preserve">
+    <value>Поручение - Изменены временные рамки</value>
+  </data>
+  <data name="User_Activated" xml:space="preserve">
+    <value>Пользователь - Активирован</value>
+  </data>
+  <data name="User_Created" xml:space="preserve">
+    <value>Пользователь - Создан</value>
+  </data>
+  <data name="User_Created_External" xml:space="preserve">
+    <value>Пользователь - Создан внешний</value>
+  </data>
+  <data name="User_Created_Partner" xml:space="preserve">
+    <value>Пользователь - Создан партнер</value>
+  </data>
+  <data name="User_Created_Request" xml:space="preserve">
+    <value>Пользователь - Поступил запрос на создание нового пользователя</value>
+  </data>
+  <data name="User_Deactivated" xml:space="preserve">
+    <value>Пользователь - Деактивирован</value>
+  </data>
+  <data name="User_Deleted" xml:space="preserve">
+    <value>Пользователь - Удален</value>
+  </data>
+  <data name="Issue_Closed" xml:space="preserve">
+    <value>Инцидент - Закрыт</value>
+  </data>
+  <data name="Assignment_Created" xml:space="preserve">
+    <value>Назначение - Создано</value>
+  </data>
+  <data name="Assignment_Deleted" xml:space="preserve">
+    <value>Назначение - Удалено</value>
+  </data>
+  <data name="Assignment_FinishDate_Arrived" xml:space="preserve">
+    <value>Назначение - Запланированная дата завершения наступила</value>
+  </data>
+  <data name="Assignment_Updated_FinishDate" xml:space="preserve">
+    <value>Назначение - Изменен срок</value>
+  </data>
+  <data name="Assignment_Updated_GeneralInfo" xml:space="preserve">
+    <value>Назначение - Изменена общая информация</value>
+  </data>
+  <data name="Assignment_Updated_Participant_Assigned" xml:space="preserve">
+    <value>Назначение - Исполнитель - Назначен</value>
+  </data>
+  <data name="Assignment_Updated_Participant_Resigned" xml:space="preserve">
+    <value>Назначение - Исполнитель - Освобождён от обязанностей</value>
+  </data>
+  <data name="Assignment_Updated_Priority" xml:space="preserve">
+    <value>Назначение - Изменен приоритет</value>
+  </data>
+  <data name="Assignment_Updated_Status" xml:space="preserve">
+    <value>Назначение - Изменено состояние</value>
+  </data>
+</root>

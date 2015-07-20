@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.BusinessProcess.Assignment" metaClass="Assignment" method="*" type="Mediachase.Ibn.Assignments.AssignmentRequestHandler, Mediachase.Ibn.Assignments" />
+			<Handler id="Mediachase.BusinessProcess.AssignmentPrototype" metaClass="AssignmentPrototype" method="*" type="Mediachase.Ibn.Assignments.AssignmentPrototypeRequestHandler, Mediachase.Ibn.Assignments" />
+			<Handler id="Mediachase.BusinessProcess.AssignmentPrototypeProperty" metaClass="AssignmentPrototypeProperty" method="*" type="Mediachase.Ibn.Assignments.AssignmentPrototypePropertyRequestHandler, Mediachase.Ibn.Assignments" />
+			<Handler id="Mediachase.BusinessProcess.WorkflowDefinition" metaClass="WorkflowDefinition" method="*" type="Mediachase.Ibn.Assignments.WorkflowDefinitionRequestHandler, Mediachase.Ibn.Assignments" />
+			<Handler id="Mediachase.BusinessProcess.WorkflowInstance" metaClass="WorkflowInstance" method="*" type="Mediachase.Ibn.Assignments.WorkflowInstanceRequestHandler, Mediachase.Ibn.Assignments" />
+		</add>
+	</Handlers>
+	<Plugins>
+		<add>
+			<Plugin id="AutoCompletePlugin" metaClass="Assignment" method="*" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.Ibn.Assignments.AssignmentAutoCompletePlugin, Mediachase.Ibn.Assignments" />
+			<Plugin id="StickedObjectCleanUpPlugin" metaClass="Assignment" method="*" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.StickedObjectCleanUpPlugin, Mediachase.IBN.Business" />
+			
+			<Plugin id="SyncAclWithBusinessProcessPlugin.Create" metaClass="WorkflowInstance" method="Create" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithBusinessProcessPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithBusinessProcessPlugin.Update" metaClass="WorkflowInstance" method="Update" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithBusinessProcessPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithBusinessProcessPlugin.Delete" metaClass="WorkflowInstance" method="Delete" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithBusinessProcessPlugin, Mediachase.IBN.Business" />
+			<Plugin id="ResetBusinessProcessOwnerReadOnlyPlugin" metaClass="WorkflowInstance" method="Start" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.ResetBusinessProcessOwnerReadOnlyPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SetBusinessProcessOwnerReadOnlyPlugin" metaClass="WorkflowInstance" method="Update" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SetBusinessProcessOwnerReadOnlyPlugin, Mediachase.IBN.Business" />
+			
+			<Plugin id="SyncAclWithAssignmentPlugin.Resume" metaClass="Assignment" method="Resume" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithAssignmentPlugin.Activate" metaClass="Assignment" method="Activate" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithAssignmentPlugin.AssignUser" metaClass="Assignment" method="AssignUser" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithAssignmentPlugin.Close" metaClass="Assignment" method="Close" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithAssignmentPlugin.Suspend" metaClass="Assignment" method="Suspend" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+			<Plugin id="SyncAclWithAssignmentPlugin.Delete" metaClass="Assignment" method="Delete" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.SyncAclWithAssignmentPlugin, Mediachase.IBN.Business" />
+
+			<Plugin id="RaiseAssignmentEventPlugin.Pre" metaClass="Assignment" method="*" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.RaiseAssignmentEventPlugin, Mediachase.IBN.Business" />
+			<Plugin id="RaiseAssignmentEventPlugin.Post" metaClass="Assignment" method="*" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.Assignments.RaiseAssignmentEventPlugin, Mediachase.IBN.Business" />
+		</add>
+	</Plugins>
+</BusinessManager>

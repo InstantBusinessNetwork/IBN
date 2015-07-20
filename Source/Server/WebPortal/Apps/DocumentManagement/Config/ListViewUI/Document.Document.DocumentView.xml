@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Toolbar for OrganizationView page -->
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Text text="{IbnFramework.Document:DocumentInfo}" cssClass="ibn-WPTitle"></Text>
+			<Button id="EditButton" text="{IbnFramework.Common:Edit}"  imageUrl="~/Images/IbnFramework/edit.gif" tooltip="{IbnFramework.Common:Edit}" align="Right" commandName="Document_Edit" ></Button>
+			<Button id="ListButton" text="{IbnFramework.Document:Documents}"  imageUrl="~/Images/IbnFramework/cancel.gif" tooltip="{IbnFramework.Document:Documents}" align="Right" commandName="Document_List" ></Button>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="Document_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/DocumentManagement/Pages/DocumentEdit.aspx?ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+			</Command>
+			<Command id="Document_List">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=Document</Url>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

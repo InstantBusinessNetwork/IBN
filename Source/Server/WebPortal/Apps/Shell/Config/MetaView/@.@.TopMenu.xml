@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<SplitButton id="WorkspaceSplitButton" imageUrl="~/images/IbnFramework/Homepage.gif" commandName="MC_MetaUI_Workspace" itemSplitter="Right">
+				<Button id="WorkspaceButton" text="{IbnFramework.Common:tMyWorks}" imageUrl="~/images/IbnFramework/Homepage.gif" commandName="MC_MetaUI_Workspace"></Button>
+				
+				<Button id="LogoffButton" text="{IbnFramework.Common:tLogOut}" imageUrl="~/layouts/images/exit.gif" commandName="MC_MetaUI_Logoff"></Button>
+			</SplitButton>
+			<Menu id="CreateMenu" text="{IbnFramework.Common:tQuickAdd}" itemSplitter="Right">
+				<Button id="CreateTodoButton" text="{IbnFramework.Common:NewToDo}" imageUrl="~/Layouts/Images/icons/task.gif" commandName="MC_MetaUI_CreateTodo"></Button>
+				<Button id="CreateIssueButton" text="{IbnFramework.Common:NewIssue}" imageUrl="~/Layouts/Images/icons/incident.gif" commandName="MC_MetaUI_CreateIncident"></Button>
+				<Button id="CreateEventButton" text="{IbnFramework.Common:NewEntry}" imageUrl="~/Layouts/Images/icons/event.gif" commandName="MC_MetaUI_CreateEvent"></Button>
+				<Button id="CreateListButton" text="{IbnFramework.Common:NewList}" imageUrl="~/Layouts/Images/lists.gif" commandName="MC_MetaUI_CreateList"></Button>
+				<Button id="CreateProjectButton" text="{IbnFramework.Common:NewProject}" imageUrl="~/Layouts/Images/icons/project.gif" commandName="MC_MetaUI_CreateProject"></Button>
+				<Button id="CreateUserButton" text="{IbnFramework.Common:NewUser}" imageUrl="~/Layouts/Images/icons/newuser.gif" commandName="MC_MetaUI_CreateUser"></Button>
+				<Button id="CreateReportButton" text="{IbnFramework.Common:NewReport}" imageUrl="~/Layouts/Images/icons/newreport.gif" commandName="MC_MetaUI_CreateReport"></Button>
+				<Button id="CreateDocumentButton" text="{IbnFramework.Common:NewDocument}" imageUrl="~/Layouts/Images/icons/document.gif" commandName="MC_MetaUI_CreateDocument"></Button>
+				<Button id="CreateFileButton" text="{IbnFramework.Common:NewFile}" imageUrl="~/Layouts/Images/icons/newfile.gif" commandName="MC_MetaUI_CreateFile"></Button>
+			</Menu>
+
+			<Button id="CreateToDoQuick" text="{IbnFramework.Common:NewToDo}" imageUrl="~/Layouts/Images/icons/task.gif" commandName="MC_MetaUI_CreateTodoQuick" itemSplitter="Right"></Button>
+			
+			<Button id="RequestsButton" text="{IbnFramework.Common:Requests}" imageUrl="~/Images/IbnFramework/ToDoList.png" commandName="MC_MetaUI_Requests"></Button>
+			<Button id="HistoryButton" text="{IbnFramework.Common:History}" imageUrl="~/Images/IbnFramework/Journal.png" commandName="MC_MetaUI_History"></Button>
+			<Button id="ActiveButton" text="{IbnFramework.Common:Active}" imageUrl="~/Images/IbnFramework/StatusBar.png" commandName="MC_MetaUI_Active"></Button>
+			<Button id="UpdatesButton" text="{IbnFramework.Common:Updates}" imageUrl="~/Images/IbnFramework/Information.png" commandName="MC_MetaUI_Updates"></Button>
+			<Button id="FavoritesButton" text="{IbnFramework.Common:Favorites}" imageUrl="~/layouts/images/Favorites.gif" commandName="MC_MetaUI_Favorites" itemSplitter="Right"></Button>
+			
+			<Button id="SearchButton" text="{IbnFramework.Common:Search}"  imageUrl="~/Images/IbnFramework/search.png" tooltip="{IbnFramework.Common:Search}" commandName="MC_MetaUI_Search"></Button>
+			<Button id="PrintButton" imageUrl="~/images/IbnFramework/print.png" cssClass="imageMiddle" tooltip="{IbnFramework.Common:Print}" commandName="MC_MetaUI_Print" align="Right"></Button>
+			<Button id="HelpButton" imageUrl="~/images/IbnFramework/Help-2.png" cssClass="imageMiddle" tooltip="{IbnFramework.Common:Help}" commandName="MC_MetaUI_Help" align="Right" itemSplitter="Right"></Button>
+			<Button id="ShowHideButton" imageUrl="~/images/IbnFramework/SpinButton.gif" cssClass="imageMiddle" tooltip="{IbnFramework.Common:HideShow}" commandName="MC_MetaUI_ExpandCollapse" align="Right"></Button>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="MC_MetaUI_Workspace">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Workspace/default.aspx?Btab=Workspace</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_WorkspaceCustomization">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Directory/UserView.aspx?UserID={Security:CurrentUserId}&amp;Tab=WSCustomize</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_Requests">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/ActiveWork.ascx");</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.RequestsEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_Active">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/Active.ascx");</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ActiveEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_Updates">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/Updates.ascx");</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.UpdatesEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_Favorites">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/Favorites.ascx");</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.FavoritesEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_History">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/History.ascx");</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.HistoryEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_Search">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ShowFrame2("../../../Modules/ControlLoader.aspx?ctrl=../Modules/Search.ascx&amp;reload=false");</ClientScript>
+			</Command>
+			<Command id="MC_MetaUI_CreateProject">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectEdit.aspx</Url>
+				<Target>right</Target>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_CreateList">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListInfoCreate.aspx</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_CreateUser">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Directory/MultipleUserEdit.aspx</Url>
+				<Target>right</Target>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.UserEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_CreateReport">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>OpenSizableWindow('../../../Reports/XMLReport.aspx?Mode=Both',750,466);</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ReportEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_CreateDocument">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Documents/DocumentEdit.aspx</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_CreateIncident">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentEdit.aspx</Url>
+				<Target>right</Target>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.IssueEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_MetaUI_CreateTodo">
+				<CommandType>Navigate</CommandType>
+				<Url>~/ToDo/ToDoEdit.aspx</Url>
+				<Target>right</Target>
+			</Command>
+
+			<Command id="MC_MetaUI_CreateTodoQuick">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Global:QuickAddToDo}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ToDoQuickAdd.aspx?CommandName=MC_MetaUI_CreateTodoQuick</Url>
+				<RefreshMethod>RefreshRightFrame</RefreshMethod>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>100</Top>
+				<Left>200</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MetaUI_CreateEvent">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Events/EventEdit.aspx</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_CreateFile">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>OpenSizableWindow('../../../FileStorage/FileUpload.aspx?ContainerName=FileLibrary', 470, 475);</ClientScript>
+			</Command>
+			<Command id="MC_MetaUI_Logoff">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Logoff.aspx</Url>
+			</Command>
+			<Command id="MC_MetaUI_Print">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>framePrint();</ClientScript>
+			</Command>
+			<Command id="MC_MetaUI_Help">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Home/Help.aspx</Url>
+				<Target>right</Target>
+			</Command>
+			<Command id="MC_MetaUI_ExpandCollapse">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>ExpandCollapse();</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

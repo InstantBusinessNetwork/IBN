@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="1d97fdfd9c5d4561a968a82f24fe7592" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Document:IncDocument}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="342c86f5e54e4b2aa5b2b3141b7d1cc3" cellPadding="5" columns="*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="1ea9c7fb45db4002a2f56c792f07bff5">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Title" readOnly="False" uid="068a58033a504f079497f0bf0b04e293" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

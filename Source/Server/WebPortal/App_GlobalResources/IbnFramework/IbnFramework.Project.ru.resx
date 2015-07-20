@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="_mc_ChartReportDescription" xml:space="preserve">
+    <value>Распределение проектов по различным характеристикам.</value>
+  </data>
+  <data name="_mc_ChartReportPP" xml:space="preserve">
+    <value>Выберите поле для группировки</value>
+  </data>
+  <data name="_mc_ChartReportTitle" xml:space="preserve">
+    <value>Диаграмма&amp;nbsp;распределения&amp;nbsp;проектов</value>
+  </data>
+  <data name="_mc_ProjWs" xml:space="preserve">
+    <value>Обзор проектов</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Активная</value>
+  </data>
+  <data name="CEntryParticip" xml:space="preserve">
+    <value>Участники мероприятия</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="GenCat" xml:space="preserve">
+    <value>Общая категория</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="Phase" xml:space="preserve">
+    <value>Фаза</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Группа проектов</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="PrjCat" xml:space="preserve">
+    <value>Проектная категория</value>
+  </data>
+  <data name="PrjMans" xml:space="preserve">
+    <value>Менеджеры</value>
+  </data>
+  <data name="PrjSponsors" xml:space="preserve">
+    <value>Спонсоры проекта</value>
+  </data>
+  <data name="PrjStake" xml:space="preserve">
+    <value>Заинтересованные лица</value>
+  </data>
+  <data name="PrjTeam" xml:space="preserve">
+    <value>Команда проекта</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="TaskRes" xml:space="preserve">
+    <value>Исполнители задачи</value>
+  </data>
+  <data name="ToDoRes" xml:space="preserve">
+    <value>Исполнители поручения</value>
+  </data>
+  <data name="tSelectDiagram" xml:space="preserve">
+    <value>Выберите вид диаграммы</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="AddRelFromClip" xml:space="preserve">
+    <value>Проекты в буфере обмена</value>
+  </data>
+  <data name="ProjectList" xml:space="preserve">
+    <value>Просмотр проектов</value>
+  </data>
+  <data name="NewProject" xml:space="preserve">
+    <value>Новый проект</value>
+  </data>
+  <data name="DownPriority" xml:space="preserve">
+    <value>Понизить приоритет</value>
+  </data>
+  <data name="UpPriority" xml:space="preserve">
+    <value>Повысить приоритет</value>
+  </data>
+  <data name="DownPriorityWarning" xml:space="preserve">
+    <value>Вы действительно хотите понизить приоритет всех выделенных проектов?</value>
+  </data>
+  <data name="UpPriorityWarning" xml:space="preserve">
+    <value>Вы действительно хотите повысить приоритет всех выделенных проектов?</value>
+  </data>
+  <data name="ExportProjects" xml:space="preserve">
+    <value>Экспорт проектов</value>
+  </data>
+  <data name="EditProject" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="ProjectViewCreationTitle" xml:space="preserve">
+    <value>Управление видом</value>
+  </data>
+  <data name="ViewFieldSet" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="AllProjects" xml:space="preserve">
+    <value>Все проекты</value>
+  </data>
+  <data name="ManagerSet" xml:space="preserve">
+    <value>Проекты, где я менеджер</value>
+  </data>
+  <data name="_mc_DeleteView" xml:space="preserve">
+    <value>Удалить вид</value>
+  </data>
+  <data name="_mc_DeleteViewWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот вид?</value>
+  </data>
+  <data name="SystemViews" xml:space="preserve">
+    <value>Системные виды</value>
+  </data>
+  <data name="UserViews" xml:space="preserve">
+    <value>Пользовательские виды</value>
+  </data>
+  <data name="NewProjectView" xml:space="preserve">
+    <value>Новый вид</value>
+  </data>
+  <data name="GroupByPortfolio" xml:space="preserve">
+    <value>по группам проектов</value>
+  </data>
+  <data name="GroupByContacts" xml:space="preserve">
+    <value>по клиентам</value>
+  </data>
+  <data name="GroupPortfolio" xml:space="preserve">
+    <value>Группы проектов</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Любая</value>
+  </data>
+  <data name="GroupContacts" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="AnyMale" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Завершение</value>
+  </data>
+  <data name="GEType" xml:space="preserve">
+    <value>Не ранее</value>
+  </data>
+  <data name="LEType" xml:space="preserve">
+    <value>Не позднее</value>
+  </data>
+  <data name="EType" xml:space="preserve">
+    <value>Точно</value>
+  </data>
+  <data name="ExecManager" xml:space="preserve">
+    <value>Исполнительный менеджер</value>
+  </data>
+  <data name="OnlyMyParticipation" xml:space="preserve">
+    <value>Проекты только с моим участием</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="PrjTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="PrjCompleted" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="TargetStartDate" xml:space="preserve">
+    <value>Планируемое начало</value>
+  </data>
+  <data name="TargetEndDate" xml:space="preserve">
+    <value>Планируемое завершение</value>
+  </data>
+  <data name="ActualStartDate" xml:space="preserve">
+    <value>Фактическое начало</value>
+  </data>
+  <data name="ActualEndDate" xml:space="preserve">
+    <value>Фактическое завершение</value>
+  </data>
+  <data name="NewViewStep4Comment" xml:space="preserve">
+    <value>Для создания нового вида списка проектов необходимо ввести название.</value>
+  </data>
+  <data name="NewViewTab1Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка проектов, необходимо выбрать один из предложенных наборов полей.</value>
+  </data>
+  <data name="NewViewTab2Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка проектов, необходимо выбрать один из предложенных вариантов группировки.</value>
+  </data>
+  <data name="AllProjectsExport" xml:space="preserve">
+    <value>Все проекты</value>
+  </data>
+  <data name="ViewProjectsExport" xml:space="preserve">
+    <value>Проекты выбранного вида</value>
+  </data>
+  <data name="VisibleProjectsExport" xml:space="preserve">
+    <value>Проекты текущей страницы</value>
+  </data>
+  <data name="ActiveSet" xml:space="preserve">
+    <value>Активные проекты</value>
+  </data>
+  <data name="SwithToOldView" xml:space="preserve">
+    <value>Показать старый вид</value>
+  </data>
+  <data name="SwitchTitle" xml:space="preserve">
+    <value>Включение старого вида</value>
+  </data>
+  <data name="TurnOn" xml:space="preserve">
+    <value>Включить</value>
+  </data>
+  <data name="HideOldView" xml:space="preserve">
+    <value>Скрыть старый вид</value>
+  </data>
+  <data name="HideOldViewWarning" xml:space="preserve">
+    <value>Вы хотите скрыть вкладку со старым видом проектов?</value>
+  </data>
+  <data name="MakeRelation" xml:space="preserve">
+    <value>Связать проекты</value>
+  </data>
+  <data name="CurrentWork" xml:space="preserve">
+    <value>Текущая работа</value>
+  </data>
+  <data name="NoUsers" xml:space="preserve">
+    <value>[ Нет пользователей ]</value>
+  </data>
+  <data name="ResourceUtilization" xml:space="preserve">
+    <value>Занятость исполнителей</value>
+  </data>
+  <data name="Labor" xml:space="preserve">
+    <value>Трудозатраты</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="GeneralCategories" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="tabActFinances" xml:space="preserve">
+    <value>Доходы и расходы</value>
+  </data>
+  <data name="tabCalendar" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="tabDiscussions" xml:space="preserve">
+    <value>Обсуждение</value>
+  </data>
+  <data name="tabDocuments" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="tabFinances" xml:space="preserve">
+    <value>Финансы</value>
+  </data>
+  <data name="tabGantt" xml:space="preserve">
+    <value>Диаграмма Ганта</value>
+  </data>
+  <data name="tabGeneral" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="tabIssues" xml:space="preserve">
+    <value>Инциденты</value>
+  </data>
+  <data name="tabLibrary" xml:space="preserve">
+    <value>Библиотека</value>
+  </data>
+  <data name="tabLists" xml:space="preserve">
+    <value>Списки</value>
+  </data>
+  <data name="tabManagement" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="tabMyIncidents" xml:space="preserve">
+    <value>Мои инциденты</value>
+  </data>
+  <data name="tabMyWork" xml:space="preserve">
+    <value>Моя работа</value>
+  </data>
+  <data name="tabParticipants" xml:space="preserve">
+    <value>Участники</value>
+  </data>
+  <data name="tabReports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="tabResourceView" xml:space="preserve">
+    <value>Занятость исполнителей</value>
+  </data>
+  <data name="tabSpreadSheet" xml:space="preserve">
+    <value>Планирование</value>
+  </data>
+  <data name="tabWorkspace" xml:space="preserve">
+    <value>Главное</value>
+  </data>
+  <data name="SelectPredecessors" xml:space="preserve">
+    <value>Выберите поручения-предшественники</value>
+  </data>
+  <data name="SelectSuccessors" xml:space="preserve">
+    <value>Выберите поручения-последователи</value>
+  </data>
+  <data name="NoCategory" xml:space="preserve">
+    <value>[ Без категории ]</value>
+  </data>
+  <data name="NoClient" xml:space="preserve">
+    <value>[ Без клиента ]</value>
+  </data>
+  <data name="NoProject" xml:space="preserve">
+    <value>[ Без проекта ]</value>
+  </data>
+  <data name="CreateTaskTodoGrid" xml:space="preserve">
+    <value>Задачи/поручения</value>
+  </data>
+  <data name="CreateTaskTodoGridTitle" xml:space="preserve">
+    <value>Создание задач/поручений</value>
+  </data>
+</root>

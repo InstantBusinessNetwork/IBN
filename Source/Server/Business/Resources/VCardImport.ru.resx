@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="VCardTelephoneType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardTelephoneType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardTelephoneType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="VCardTelephoneType_Pager" xml:space="preserve">
+    <value>Пейджер</value>
+  </data>
+  <data name="VCardTelephoneType_Msg" xml:space="preserve">
+    <value>Для сообщений</value>
+  </data>
+  <data name="VCardTelephoneType_Cell" xml:space="preserve">
+    <value>Сотовый</value>
+  </data>
+  <data name="VCardTelephoneType_Video" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="VCardTelephoneType_Bbs" xml:space="preserve">
+    <value>Bbs</value>
+  </data>
+  <data name="VCardTelephoneType_Modem" xml:space="preserve">
+    <value>Модем</value>
+  </data>
+  <data name="VCardTelephoneType_Isdn" xml:space="preserve">
+    <value>Isdn</value>
+  </data>
+  <data name="VCardTelephoneType_Pcs" xml:space="preserve">
+    <value>Pcs</value>
+  </data>
+  <data name="VCardTelephoneType_Pref" xml:space="preserve">
+    <value>Основной</value>
+  </data>
+  <data name="VCardTelephoneType_Voice" xml:space="preserve">
+    <value>Голосовая почта</value>
+  </data>
+  <data name="VCardTelephoneType_Fax" xml:space="preserve">
+    <value>Факс</value>
+  </data>
+  <data name="VCardEMailType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardEMailType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardEMailType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="VCardEMailType_Internet" xml:space="preserve">
+    <value>Интернет</value>
+  </data>
+  <data name="VCardEMailType_X400" xml:space="preserve">
+    <value>X400</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Полное имя</value>
+  </data>
+  <data name="NickName" xml:space="preserve">
+    <value>Обращение</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Род занятий</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Сайт</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="GivenName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="OrganizationUnit" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="AddressType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="AddressPostalCode" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="AddressRegion" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="AddressLocality" xml:space="preserve">
+    <value>Насел. пункт</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Улица</value>
+  </data>
+  <data name="AddressExtraAddress" xml:space="preserve">
+    <value>Дом \ квартира</value>
+  </data>
+  <data name="AddressPreferred" xml:space="preserve">
+    <value>Основной адрес</value>
+  </data>
+  <data name="EmailType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="EmailValue" xml:space="preserve">
+    <value>Адрес эл. почы</value>
+  </data>
+  <data name="VCardAddressType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardAddressType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardAddressType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="DefaultMapping" xml:space="preserve">
+    <value>&lt;?xml version="1.0"?&gt;
+&lt;mappingDocument&gt;
+  &lt;mapping class="" table=""&gt;
+    &lt;map  field="Обращение" column="&amp;quot;Обращение&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Отчество" column="&amp;quot;Отчество&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Фамилия" column="&amp;quot;Фамилия&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Организация" column="&amp;quot;Организация&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Должность" column="&amp;quot;Должность&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="" column="&amp;quot;Язык&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Полное имя" column="&amp;quot;Имя&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Сайт" column="&amp;quot;Веб-страница&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Пол" column="&amp;quot;Пол&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Имя" column="&amp;quot;Имя&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Подразделение" column="&amp;quot;Отдел&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Телефон Основной" column="&amp;quot;Основной телефон организации&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Телефон Домашний" column="&amp;quot;Домашний телефон&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Телефон Рабочий" column="&amp;quot;Рабочий телефон&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Телефон Сотовый" column="&amp;quot;Телефон переносной&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Телефон Факс" column="&amp;quot;Рабочий факс&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Дом, квартира (Домашний)" column="&amp;quot;Область (дом. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Улица (Домашний)" column="&amp;quot;Улица (дом. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Насел. пункт (Домашний)" column="&amp;quot;Город (дом. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Область (Домашний)" column="&amp;quot;Область (дом. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Страна (Домашний)" column="&amp;quot;Страна или регион (дом. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Улица (Рабочий)" column="&amp;quot;Улица (раб. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Насел. пункт (Рабочий)" column="&amp;quot;Город (раб. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Область (Рабочий)" column="&amp;quot;Область (раб. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Индекс (Рабочий)" column="&amp;quot;Индекс (раб. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Страна (Рабочий)" column="&amp;quot;Страна или регион (раб. адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Адрес эл. почы " column="&amp;quot;Адрес эл. почты&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Адрес эл. почы  (1)" column="&amp;quot;Адрес 2 эл. почты&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Адрес эл. почы  (2)" column="&amp;quot;Адрес 3 эл. почты&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Дата рождения" column="&amp;quot;День рождения&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Род занятий" column="&amp;quot;Профессия&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Улица (Дополнительный)" column="&amp;quot;Улица (другой адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Насел. пункт (Дополнительный)" column="&amp;quot;Город  (другой адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Индекс (Дополнительный)" column="&amp;quot;Индекс  (другой адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Область (Дополнительный)" column="&amp;quot;Область  (другой адрес)&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Страна (Дополнительный)" column="&amp;quot;Страна или регион  (другой адрес)&amp;quot;" type="CopyValue" /&gt;
+  &lt;/mapping&gt;
+&lt;/mappingDocument&gt;</value>
+  </data>
+</root>

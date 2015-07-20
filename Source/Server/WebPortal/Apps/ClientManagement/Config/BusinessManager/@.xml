@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Client.Organization" metaClass="Organization" method="*" type="Mediachase.Ibn.Clients.OrganizationRequestHandler, Mediachase.Ibn.Clients"/>
+			<Handler id="Mediachase.Client.Contact" metaClass="Contact" method="*" type="Mediachase.Ibn.Clients.ContactRequestHandler, Mediachase.Ibn.Clients"/>
+			<Handler id="Mediachase.Client.Address" metaClass="Address" method="*" type="Mediachase.Ibn.Clients.AddressRequestHandler, Mediachase.Ibn.Clients"/>
+		</add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

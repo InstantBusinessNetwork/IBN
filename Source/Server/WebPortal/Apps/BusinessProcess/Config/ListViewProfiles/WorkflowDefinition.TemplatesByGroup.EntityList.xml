@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>6d1e8a88-44e0-426e-bcff-e77a1024aad9</Id>
+	<Name>{IbnFramework.BusinessProcess:TemplatesByGroups}</Name>
+	<IsSystem>false</IsSystem>
+	<IsPublic>true</IsPublic>
+	<ReadOnly>false</ReadOnly>
+	<FieldSet>
+		<string>Name</string>
+		<string>Description</string>
+	</FieldSet>
+	<Filters />
+	<Sorting>
+		<ArrayOfSortingElement>
+			<SortingElement>
+				<Source>Name</Source>
+				<Type>Asc</Type>
+			</SortingElement>
+		</ArrayOfSortingElement>
+	</Sorting>
+	<GroupByFieldName>TemplateGroup</GroupByFieldName>
+	<ColumnsUI>
+		<Column field="Name" width="250px" title="{IbnFramework.BusinessProcess:Name}" />
+		<Column field="Description" width="300px" title="{IbnFramework.BusinessProcess:Description}" />
+	</ColumnsUI>
+</ListViewProfile>

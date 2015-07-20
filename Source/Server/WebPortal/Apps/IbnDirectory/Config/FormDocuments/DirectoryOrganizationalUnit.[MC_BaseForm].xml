@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="b4c78af3ed424e239647f7f5d27a64fa" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Directory:OrganizationalUnit}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="7f5560e2bf5c4d3c9acf4ab17fa02545" cellPadding="5" columns="*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="e0023c4db9d54b1baeae0a4cf3235934">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Name" readOnly="False" uid="0b6d2b9236524fcfbb2ae74caaf6c86a" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="0c7a59cb678d467d869d69aeac4ef1c9">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Icon" readOnly="False" uid="8573d1a0e4bd4f178b4a9c7cd42d7f98" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

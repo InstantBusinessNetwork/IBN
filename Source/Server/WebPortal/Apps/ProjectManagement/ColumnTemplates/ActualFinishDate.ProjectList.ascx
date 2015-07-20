@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.ProjectManagement.ColumnTemplates.ActualFinishDate_ProjectList" %>
+<%# (Eval("ActualFinishDate") == DBNull.Value) ? "" : ((DateTime)Eval("ActualFinishDate")).ToShortDateString()%>

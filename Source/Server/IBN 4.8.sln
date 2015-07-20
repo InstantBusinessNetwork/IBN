@@ -1,0 +1,329 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{F76612EC-646A-435D-A649-9C5B66A07906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C51F27A4-7178-4DB0-BF62-12EE4F41011D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Database", "Mediachase.Database\Mediachase.Database.csproj", "{ED474037-35B8-4160-9917-40D2BD5DCDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Converter", "Mediachase.Ibn.Converter\Mediachase.Ibn.Converter.csproj", "{174B3BB2-F91C-4AF1-853D-562504BFD98C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.IMHelper", "Mediachase.Ibn.IMHelper\Mediachase.Ibn.IMHelper.csproj", "{AF10473E-70DA-4682-9DE4-F7DFE3403870}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.MetaDataPlus", "Mediachase.MetaDataPlus\Mediachase.MetaDataPlus.csproj", "{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPortal", "WebPortal\WebPortal.csproj", "{C3FFEB68-F668-4B73-9783-AE298367BE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Lists", "Mediachase.Ibn.Lists\Mediachase.Ibn.Lists.csproj", "{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IbnServerSetup", "IbnServerSetup\IbnServerSetup.csproj", "{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Configuration", "Mediachase.Ibn.Configuration\Mediachase.Ibn.Configuration.csproj", "{564109C3-021D-46B3-AE56-14AEFCC4A822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleService", "ScheduleService\ScheduleService.csproj", "{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OleDBService", "OleDBService\OleDBService.csproj", "{6D958448-0E43-45C1-A07F-216CBC2E7D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IbnConverterGui", "IbnConverterGui\IbnConverterGui.csproj", "{50D0A863-6C59-44ED-9F3B-22E6ED392001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAsp", "WebAsp\WebAsp.csproj", "{83662A84-5B33-40D2-8AAB-EC2300E9E750}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebReports", "WebReports\WebReports.csproj", "{1C04D1E2-C534-46EC-A779-B55EEE7D5783}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTrial", "WebTrial\WebTrial.csproj", "{9918EC49-06A1-426F-9361-2FA15749B593}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.SqlQueryCreator", "Mediachase.SqlQueryCreator\Mediachase.SqlQueryCreator.csproj", "{ACD92555-6DE4-4735-AE24-06FDC4502ECA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.IbnNext.TimeTracking", "Mediachase.IbnNext.TimeTracking\Mediachase.IbnNext.TimeTracking.csproj", "{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Clients", "Mediachase.Ibn.Clients\Mediachase.Ibn.Clients.csproj", "{02A02DF3-E8BD-4393-8374-F543D95FAAD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.ClientsConverter", "Mediachase.Ibn.ClientsConverter\Mediachase.Ibn.ClientsConverter.csproj", "{8C53C3FE-C907-4E3B-8A21-D8205655DF97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.MetaViewConverter", "Mediachase.Ibn.MetaViewConverter\Mediachase.Ibn.MetaViewConverter.csproj", "{68260DDB-BF01-4112-8181-51A33D9750C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Events", "Mediachase.Ibn.Events\Mediachase.Ibn.Events.csproj", "{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.ConfigurationUI", "Mediachase.Ibn.ConfigurationUI\Mediachase.Ibn.ConfigurationUI.csproj", "{08116FA8-8878-40F0-9FE8-A84136E347B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IbnServerUpdate48", "IbnServerUpdate48\IbnServerUpdate48.csproj", "{E40C629E-4B6A-4CFB-926D-68DB24057B02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Assignments", "Mediachase.Ibn.Assignments\Mediachase.Ibn.Assignments.csproj", "{F9510DA4-B188-436A-AB40-7783C3370834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Assignments.UI", "Mediachase.Ibn.Assignments.UI\Mediachase.Ibn.Assignments.UI.csproj", "{AF78C436-6A95-49EF-8E7F-9531EF327B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Web", "Mediachase.Ibn.Web\Mediachase.Ibn.Web.csproj", "{08E59CC5-A093-4AE2-B416-5759D6D1A594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.WebResources", "Mediachase.Ibn.WebResources\Mediachase.Ibn.WebResources.csproj", "{091AD433-657F-4A55-B204-D927F159CE04}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 29
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mediachase.ru:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Business\\Business.csproj
+		SccProjectName1 = Business
+		SccLocalPath1 = Business
+		SccProjectUniqueName2 = Database\\Database.csproj
+		SccProjectName2 = Database
+		SccLocalPath2 = Database
+		SccProjectUniqueName3 = Mediachase.Database\\Mediachase.Database.csproj
+		SccProjectName3 = Mediachase.Database
+		SccLocalPath3 = Mediachase.Database
+		SccProjectUniqueName4 = Mediachase.Ibn.Converter\\Mediachase.Ibn.Converter.csproj
+		SccProjectName4 = Mediachase.Ibn.Converter
+		SccLocalPath4 = Mediachase.Ibn.Converter
+		SccProjectUniqueName5 = Mediachase.Ibn.IMHelper\\Mediachase.Ibn.IMHelper.csproj
+		SccProjectName5 = Mediachase.Ibn.IMHelper
+		SccLocalPath5 = Mediachase.Ibn.IMHelper
+		SccProjectUniqueName6 = Mediachase.MetaDataPlus\\Mediachase.MetaDataPlus.csproj
+		SccProjectName6 = Mediachase.MetaDataPlus
+		SccLocalPath6 = Mediachase.MetaDataPlus
+		SccProjectUniqueName7 = WebPortal\\WebPortal.csproj
+		SccProjectName7 = WebPortal
+		SccLocalPath7 = WebPortal
+		SccProjectUniqueName8 = Mediachase.Ibn.Lists\\Mediachase.Ibn.Lists.csproj
+		SccProjectName8 = Mediachase.Ibn.Lists
+		SccLocalPath8 = Mediachase.Ibn.Lists
+		SccProjectUniqueName9 = IbnServerSetup\\IbnServerSetup.csproj
+		SccProjectName9 = IbnServerSetup
+		SccLocalPath9 = IbnServerSetup
+		SccProjectUniqueName10 = Mediachase.Ibn.Configuration\\Mediachase.Ibn.Configuration.csproj
+		SccProjectName10 = Mediachase.Ibn.Configuration
+		SccLocalPath10 = Mediachase.Ibn.Configuration
+		SccProjectUniqueName11 = ScheduleService\\ScheduleService.csproj
+		SccProjectName11 = ScheduleService
+		SccLocalPath11 = ScheduleService
+		SccProjectUniqueName12 = OleDBService\\OleDBService.csproj
+		SccProjectName12 = OleDBService
+		SccLocalPath12 = OleDBService
+		SccProjectUniqueName13 = IbnConverterGui\\IbnConverterGui.csproj
+		SccProjectName13 = IbnConverterGui
+		SccLocalPath13 = IbnConverterGui
+		SccProjectUniqueName14 = WebAsp\\WebAsp.csproj
+		SccProjectName14 = WebAsp
+		SccLocalPath14 = WebAsp
+		SccProjectUniqueName15 = WebReports\\WebReports.csproj
+		SccProjectName15 = WebReports
+		SccLocalPath15 = WebReports
+		SccProjectUniqueName16 = WebTrial\\WebTrial.csproj
+		SccProjectName16 = WebTrial
+		SccLocalPath16 = WebTrial
+		SccProjectUniqueName17 = Mediachase.SqlQueryCreator\\Mediachase.SqlQueryCreator.csproj
+		SccProjectName17 = Mediachase.SqlQueryCreator
+		SccLocalPath17 = Mediachase.SqlQueryCreator
+		SccProjectUniqueName18 = Mediachase.IbnNext.TimeTracking\\Mediachase.IbnNext.TimeTracking.csproj
+		SccProjectName18 = Mediachase.IbnNext.TimeTracking
+		SccLocalPath18 = Mediachase.IbnNext.TimeTracking
+		SccProjectUniqueName19 = Mediachase.Ibn.Clients\\Mediachase.Ibn.Clients.csproj
+		SccProjectName19 = Mediachase.Ibn.Clients
+		SccLocalPath19 = Mediachase.Ibn.Clients
+		SccProjectUniqueName20 = Mediachase.Ibn.ClientsConverter\\Mediachase.Ibn.ClientsConverter.csproj
+		SccProjectName20 = Mediachase.Ibn.ClientsConverter
+		SccLocalPath20 = Mediachase.Ibn.ClientsConverter
+		SccProjectUniqueName21 = Mediachase.Ibn.MetaViewConverter\\Mediachase.Ibn.MetaViewConverter.csproj
+		SccProjectName21 = Mediachase.Ibn.MetaViewConverter
+		SccLocalPath21 = Mediachase.Ibn.MetaViewConverter
+		SccProjectUniqueName22 = Mediachase.Ibn.Events\\Mediachase.Ibn.Events.csproj
+		SccProjectName22 = Mediachase.Ibn.Events
+		SccLocalPath22 = Mediachase.Ibn.Events
+		SccProjectUniqueName23 = Mediachase.Ibn.ConfigurationUI\\Mediachase.Ibn.ConfigurationUI.csproj
+		SccProjectName23 = Mediachase.Ibn.ConfigurationUI
+		SccLocalPath23 = Mediachase.Ibn.ConfigurationUI
+		SccProjectUniqueName24 = IbnServerUpdate48\\IbnServerUpdate48.csproj
+		SccProjectName24 = IbnServerUpdate48
+		SccLocalPath24 = IbnServerUpdate48
+		SccProjectUniqueName25 = Mediachase.Ibn.Assignments\\Mediachase.Ibn.Assignments.csproj
+		SccProjectName25 = Mediachase.Ibn.Assignments
+		SccLocalPath25 = Mediachase.Ibn.Assignments
+		SccProjectUniqueName26 = Mediachase.Ibn.Assignments.UI\\Mediachase.Ibn.Assignments.UI.csproj
+		SccProjectName26 = Mediachase.Ibn.Assignments.UI
+		SccLocalPath26 = Mediachase.Ibn.Assignments.UI
+		SccProjectUniqueName27 = Mediachase.Ibn.Web\\Mediachase.Ibn.Web.csproj
+		SccProjectName27 = Mediachase.Ibn.Web
+		SccLocalPath27 = Mediachase.Ibn.Web
+		SccProjectUniqueName28 = Mediachase.Ibn.WebResources\\Mediachase.Ibn.WebResources.csproj
+		SccProjectName28 = Mediachase.Ibn.WebResources
+		SccLocalPath28 = Mediachase.Ibn.WebResources
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release Radius|Any CPU = Release Radius|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76612EC-646A-435D-A649-9C5B66A07906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51F27A4-7178-4DB0-BF62-12EE4F41011D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED474037-35B8-4160-9917-40D2BD5DCDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{174B3BB2-F91C-4AF1-853D-562504BFD98C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF10473E-70DA-4682-9DE4-F7DFE3403870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3FFEB68-F668-4B73-9783-AE298367BE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6028BBC5-60B3-4B1E-A328-EE4CCC6ADC0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564109C3-021D-46B3-AE56-14AEFCC4A822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C1BBD1-8874-4F95-B998-2D91E60AF3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D958448-0E43-45C1-A07F-216CBC2E7D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D0A863-6C59-44ED-9F3B-22E6ED392001}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83662A84-5B33-40D2-8AAB-EC2300E9E750}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C04D1E2-C534-46EC-A779-B55EEE7D5783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9918EC49-06A1-426F-9361-2FA15749B593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD92555-6DE4-4735-AE24-06FDC4502ECA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A02DF3-E8BD-4393-8374-F543D95FAAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C53C3FE-C907-4E3B-8A21-D8205655DF97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68260DDB-BF01-4112-8181-51A33D9750C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08116FA8-8878-40F0-9FE8-A84136E347B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40C629E-4B6A-4CFB-926D-68DB24057B02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9510DA4-B188-436A-AB40-7783C3370834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Release Radius|Any CPU.ActiveCfg = Release Radius|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Release Radius|Any CPU.Build.0 = Release Radius|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF78C436-6A95-49EF-8E7F-9531EF327B89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Release Radius|Any CPU.ActiveCfg = Release|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Release Radius|Any CPU.Build.0 = Release|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08E59CC5-A093-4AE2-B416-5759D6D1A594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Release Radius|Any CPU.ActiveCfg = Release|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Release Radius|Any CPU.Build.0 = Release|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091AD433-657F-4A55-B204-D927F159CE04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

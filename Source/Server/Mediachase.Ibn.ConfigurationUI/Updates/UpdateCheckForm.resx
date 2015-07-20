@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxCheckProgress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBoxCheckProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 81</value>
+  </data>
+  <data name="pictureBoxCheckProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pictureBoxCheckProgress.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBoxCheckProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCheckProgress.Name" xml:space="preserve">
+    <value>pictureBoxCheckProgress</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCheckProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCheckProgress.Parent" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxCheckProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 82</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 13</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="labelUpdateCheckProgressText.Text" xml:space="preserve">
+    <value>TODO: Checking Current Step Text  Here</value>
+  </data>
+  <data name="&gt;&gt;labelUpdateCheckProgressText.Name" xml:space="preserve">
+    <value>labelUpdateCheckProgressText</value>
+  </data>
+  <data name="&gt;&gt;labelUpdateCheckProgressText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUpdateCheckProgressText.Parent" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;labelUpdateCheckProgressText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 41</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Сhecking  for available updates...</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="progressBarRssDownload.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarRssDownload.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 57</value>
+  </data>
+  <data name="progressBarRssDownload.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 19</value>
+  </data>
+  <data name="progressBarRssDownload.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;progressBarRssDownload.Name" xml:space="preserve">
+    <value>progressBarRssDownload</value>
+  </data>
+  <data name="&gt;&gt;progressBarRssDownload.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarRssDownload.Parent" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;progressBarRssDownload.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="headerPage1.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="headerPage1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="headerPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="headerPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="headerPage1.Title" xml:space="preserve">
+    <value>Check for Updates</value>
+  </data>
+  <data name="&gt;&gt;headerPage1.Name" xml:space="preserve">
+    <value>headerPage1</value>
+  </data>
+  <data name="&gt;&gt;headerPage1.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerPage1.Parent" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;headerPage1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wizardPage1Checking.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage1Checking.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage1Checking.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPage1Checking.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1Checking.Name" xml:space="preserve">
+    <value>wizardPage1Checking</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1Checking.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1Checking.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage1Checking.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 84</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Click 'Finish' to close wizard.</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>wizardPage5Finish</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 42</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 42</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>The update was successfully downloaded. Now, you can go to company view and update it.</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>wizardPage5Finish</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="header1.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="header1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="header1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="header1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="header1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="header1.Title" xml:space="preserve">
+    <value>Update Downloaded</value>
+  </data>
+  <data name="&gt;&gt;header1.Name" xml:space="preserve">
+    <value>header1</value>
+  </data>
+  <data name="&gt;&gt;header1.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;header1.Parent" xml:space="preserve">
+    <value>wizardPage5Finish</value>
+  </data>
+  <data name="&gt;&gt;header1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizardPage5Finish.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage5Finish.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage5Finish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPage5Finish.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5Finish.Name" xml:space="preserve">
+    <value>wizardPage5Finish</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5Finish.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5Finish.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage5Finish.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pictureBoxDownloadProgress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBoxDownloadProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 82</value>
+  </data>
+  <data name="pictureBoxDownloadProgress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 16</value>
+  </data>
+  <data name="pictureBoxDownloadProgress.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBoxDownloadProgress.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDownloadProgress.Name" xml:space="preserve">
+    <value>pictureBoxDownloadProgress</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDownloadProgress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDownloadProgress.Parent" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;pictureBoxDownloadProgress.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelDownloadingProgressText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelDownloadingProgressText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelDownloadingProgressText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 83</value>
+  </data>
+  <data name="labelDownloadingProgressText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 13</value>
+  </data>
+  <data name="labelDownloadingProgressText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelDownloadingProgressText.Text" xml:space="preserve">
+    <value>TODO: Downloading Current Step Text  Here</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadingProgressText.Name" xml:space="preserve">
+    <value>labelDownloadingProgressText</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadingProgressText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadingProgressText.Parent" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;labelDownloadingProgressText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 41</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Downloading the update ...</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="progressBarUpdateDownloading.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="progressBarUpdateDownloading.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 57</value>
+  </data>
+  <data name="progressBarUpdateDownloading.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 19</value>
+  </data>
+  <data name="progressBarUpdateDownloading.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;progressBarUpdateDownloading.Name" xml:space="preserve">
+    <value>progressBarUpdateDownloading</value>
+  </data>
+  <data name="&gt;&gt;progressBarUpdateDownloading.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progressBarUpdateDownloading.Parent" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;progressBarUpdateDownloading.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="headerPage4.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="headerPage4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="headerPage4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="headerPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="headerPage4.Title" xml:space="preserve">
+    <value>Downloading Update</value>
+  </data>
+  <data name="&gt;&gt;headerPage4.Name" xml:space="preserve">
+    <value>headerPage4</value>
+  </data>
+  <data name="&gt;&gt;headerPage4.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerPage4.Parent" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;headerPage4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wizardPage4DownloadingUpdate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage4DownloadingUpdate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage4DownloadingUpdate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPage4DownloadingUpdate.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4DownloadingUpdate.Name" xml:space="preserve">
+    <value>wizardPage4DownloadingUpdate</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4DownloadingUpdate.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4DownloadingUpdate.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage4DownloadingUpdate.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 105</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 13</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="linkLabelViewUpdateMoreInfo.Text" xml:space="preserve">
+    <value>View more information about this update</value>
+  </data>
+  <data name="&gt;&gt;linkLabelViewUpdateMoreInfo.Name" xml:space="preserve">
+    <value>linkLabelViewUpdateMoreInfo</value>
+  </data>
+  <data name="&gt;&gt;linkLabelViewUpdateMoreInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelViewUpdateMoreInfo.Parent" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;linkLabelViewUpdateMoreInfo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 84</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>367, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>It is strongly recommended that you install this update as soon as possible.</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelRssUpdateTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelRssUpdateTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="labelRssUpdateTitle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelRssUpdateTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 63</value>
+  </data>
+  <data name="labelRssUpdateTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 13</value>
+  </data>
+  <data name="labelRssUpdateTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelRssUpdateTitle.Text" xml:space="preserve">
+    <value>TODO: Title from RSS Here</value>
+  </data>
+  <data name="&gt;&gt;labelRssUpdateTitle.Name" xml:space="preserve">
+    <value>labelRssUpdateTitle</value>
+  </data>
+  <data name="&gt;&gt;labelRssUpdateTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelRssUpdateTitle.Parent" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;labelRssUpdateTitle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 42</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>The following update is available:</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="headerPag3.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="headerPag3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="headerPag3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerPag3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="headerPag3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="headerPag3.Title" xml:space="preserve">
+    <value>Update Available</value>
+  </data>
+  <data name="&gt;&gt;headerPag3.Name" xml:space="preserve">
+    <value>headerPag3</value>
+  </data>
+  <data name="&gt;&gt;headerPag3.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerPag3.Parent" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;headerPag3.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="wizardPage3UpdateAvailable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage3UpdateAvailable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage3UpdateAvailable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPage3UpdateAvailable.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3UpdateAvailable.Name" xml:space="preserve">
+    <value>wizardPage3UpdateAvailable</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3UpdateAvailable.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3UpdateAvailable.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage3UpdateAvailable.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxErrorMessage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 34</value>
+  </data>
+  <data name="textBoxErrorMessage.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxErrorMessage.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="textBoxErrorMessage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>447, 123</value>
+  </data>
+  <data name="textBoxErrorMessage.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="textBoxErrorMessage.Text" xml:space="preserve">
+    <value>Unfortunately, the software update has failed. Try again or download update from developer's site.
+
+Error Description: {0}
+
+More Information: 
+{1}</value>
+  </data>
+  <data name="&gt;&gt;textBoxErrorMessage.Name" xml:space="preserve">
+    <value>textBoxErrorMessage</value>
+  </data>
+  <data name="&gt;&gt;textBoxErrorMessage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxErrorMessage.Parent" xml:space="preserve">
+    <value>wizardPageFailed</value>
+  </data>
+  <data name="&gt;&gt;textBoxErrorMessage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="headerPageFailed.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="headerPageFailed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="headerPageFailed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerPageFailed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="headerPageFailed.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="headerPageFailed.Title" xml:space="preserve">
+    <value>Update Failed</value>
+  </data>
+  <data name="&gt;&gt;headerPageFailed.Name" xml:space="preserve">
+    <value>headerPageFailed</value>
+  </data>
+  <data name="&gt;&gt;headerPageFailed.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerPageFailed.Parent" xml:space="preserve">
+    <value>wizardPageFailed</value>
+  </data>
+  <data name="&gt;&gt;headerPageFailed.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wizardPageFailed.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPageFailed.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPageFailed.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPageFailed.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;wizardPageFailed.Name" xml:space="preserve">
+    <value>wizardPageFailed</value>
+  </data>
+  <data name="&gt;&gt;wizardPageFailed.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPageFailed.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPageFailed.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 69</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Click 'Finish' to close wizard.</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>wizardPage2NoUpdateFound</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 41</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>There are no new updates available.</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>wizardPage2NoUpdateFound</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="headerPage2.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="headerPage2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="headerPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="headerPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 28</value>
+  </data>
+  <data name="headerPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="headerPage2.Title" xml:space="preserve">
+    <value>No Update Found</value>
+  </data>
+  <data name="&gt;&gt;headerPage2.Name" xml:space="preserve">
+    <value>headerPage2</value>
+  </data>
+  <data name="&gt;&gt;headerPage2.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Header, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;headerPage2.Parent" xml:space="preserve">
+    <value>wizardPage2NoUpdateFound</value>
+  </data>
+  <data name="&gt;&gt;headerPage2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wizardPage2NoUpdateFound.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizardPage2NoUpdateFound.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizardPage2NoUpdateFound.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 160</value>
+  </data>
+  <data name="wizardPage2NoUpdateFound.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2NoUpdateFound.Name" xml:space="preserve">
+    <value>wizardPage2NoUpdateFound</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2NoUpdateFound.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.WizardPage, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2NoUpdateFound.Parent" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizardPage2NoUpdateFound.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="wizard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="wizard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="wizard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="wizard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 208</value>
+  </data>
+  <data name="wizard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;wizard.Name" xml:space="preserve">
+    <value>wizard</value>
+  </data>
+  <data name="&gt;&gt;wizard.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Wizard.Wizard, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wizard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;wizard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="rssDownloader.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System" name="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="rssDownloader.RequestUri" type="System.Uri, System">
+    <value>http://update.mediachase.ru/Public/GetRss.aspx</value>
+  </data>
+  <metadata name="updateDownloader.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>142, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>453, 208</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADPdjMA0Xo5ANF6OgDTfj8A035AANSCRgDVg0gA1odMANeITQDYi1IA2Y1VANqQWQDakFoA25JbANyU
+        XwDclWAA3JVhAN2XYgDdmGYA3plmAN6aaADem2kA4J1tAOCebgDfnm8A4J9vAOCgcADhonMA4qN1AOGj
+        dgDipHYA46d7AOSofADjqX0A5Kl9AOatgwDlrYQA5q6EAOWvhwDjr4gA57CHAOSwiQDksYoA6LGJAOSx
+        iwDksosA57KKAOWyjADososA5bONAOWzjgDns44A5bSOAOW0jwDmtI8A5rWQAOm1jwDmtZEA5raRAOm2
+        kADmtpIA6raRAOm3kgDnt5MA57iUAOe4lQDpuJUA67qWAOe6mADoupgA6LuYAOi7mQDsu5gA67uZAOi8
+        mgDpvJoA6b2bAOm9nADrvZwA6b2dAOm+nQDpvp4A6r+eAO2/nQDpv58A6r+fAO7AngDqwKAA7cCfAOrA
+        oQDqwaEA6sGiAO3CpADvw6IA78SkAO7FpgDxyKoA78irAPHIrADwya0A882wAPHNswDyzrQA9dG3APPR
+        uQDz0roA9dbBAPbXwAD33MgA9tzJAPfdygD34M8A+ODPAPnizwD75dQA+uXVAPvm1wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbkRAPzw6NzY0MS8tKikpaEUwJSIeGhURDQoIBgQCACdFMCUiHhoVEQ0KCAYEAgAnRj11dSJ1
+        dXV1dXV1dXUBKUdIdXUjdXV1dXV1dXV1AypLVnV1K3V1HBkUEAx1dQUsTF51dTh1dSAcFxQPdXUHL01g
+        dXVDdXV1dXV1E3V1CTFQZHV1U3V1dXV1dRZ1dQsyUmd1dV11dTgodXUbdXUONVVrdXVidXVDO3V1H3V1
+        EjdXbXV1ZmNfWEk+LiR1dRg5WXF1dXV1dXV1dXV1dXUdPFpydXV1dXV1dXV1dXV1IURbdHRzb2xqaWVh
+        XE5CMyZBdEpbW1tZV1RRT0xKR0VEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Product Update</value>
+  </data>
+  <data name="&gt;&gt;rssDownloader.Name" xml:space="preserve">
+    <value>rssDownloader</value>
+  </data>
+  <data name="&gt;&gt;rssDownloader.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Updates.HttpStreamDownloader, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;updateDownloader.Name" xml:space="preserve">
+    <value>updateDownloader</value>
+  </data>
+  <data name="&gt;&gt;updateDownloader.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.Updates.HttpStreamDownloader, Mediachase.Ibn.ConfigurationUI, Version=4.7.55.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>UpdateCheckForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

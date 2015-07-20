@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>UsersByProfile</Id>
+	<Name>{IbnFramework.Profile:Users}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>ListInfos</FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+	</FieldSet>
+	<GroupByFieldName />
+	<Filters />
+	<ColumnsUI>
+		<Column field="Name" width="500" title="{IbnFramework.Profile:User}"/>
+	</ColumnsUI>
+</ListViewProfile>

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Ibn.Interfaces", "Mediachase.Ibn.Interfaces\Mediachase.Ibn.Interfaces.csproj", "{757D7AA6-2FFE-4F6A-B1B3-F0A864654AA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediachase.Net.Mail", "Mediachase.Net.Mail\Mediachase.Net.Mail.csproj", "{17156E90-BD44-4BAC-AF7A-8836F94EDD3F}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs.mediachase.ru:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Mediachase.Ibn.Interfaces\\Mediachase.Ibn.Interfaces.csproj
+		SccProjectName1 = Mediachase.Ibn.Interfaces
+		SccLocalPath1 = Mediachase.Ibn.Interfaces
+		SccProjectUniqueName2 = Mediachase.Net.Mail\\Mediachase.Net.Mail.csproj
+		SccProjectName2 = Mediachase.Net.Mail
+		SccLocalPath2 = Mediachase.Net.Mail
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{757D7AA6-2FFE-4F6A-B1B3-F0A864654AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757D7AA6-2FFE-4F6A-B1B3-F0A864654AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757D7AA6-2FFE-4F6A-B1B3-F0A864654AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757D7AA6-2FFE-4F6A-B1B3-F0A864654AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17156E90-BD44-4BAC-AF7A-8836F94EDD3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17156E90-BD44-4BAC-AF7A-8836F94EDD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17156E90-BD44-4BAC-AF7A-8836F94EDD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17156E90-BD44-4BAC-AF7A-8836F94EDD3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

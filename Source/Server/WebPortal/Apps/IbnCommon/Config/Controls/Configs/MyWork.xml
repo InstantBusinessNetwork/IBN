@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>3E88A70A-250D-4D16-97F0-D8055438E6EB</Uid>
+	<Title>{IbnFramework.Global:_mc_MyWork}</Title>
+	<Description>{IbnFramework.Global:_mc_MyWorkDescription}</Description>
+	<!--<Path>~/Workspace/Modules/MyWork.ascx</Path>-->
+	<Path>~/Apps/IbnCommon/WidgetControls/MyWork.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/mywork.png</IconPath>
+</DynamicControlInfo>
+

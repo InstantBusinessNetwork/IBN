@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>44CE47EB-66AB-4f77-B61F-E036737310B6</Uid>
+	<Title>{IbnFramework.WidgetEngine:_mc_GoogleGadgetName}</Title>
+	<Description>{IbnFramework.WidgetEngine:_mc_GoogleGadgetDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/GoogleGadget.ascx</Path>
+	<PropertyPagePath>~/Apps/IbnCommon/WidgetControls/GoogleGadgetPropertyPage.ascx</PropertyPagePath>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/googlegadgetico.png</IconPath>
+</DynamicControlInfo>

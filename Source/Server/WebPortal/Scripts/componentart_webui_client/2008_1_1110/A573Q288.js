@@ -1,0 +1,1 @@
+if(!window.ComponentArt_Menu_Keyboard_Loaded){window.ComponentArt_Menu_SetKeyboardFocusedMenu=function(_1){_q136=_1;};window.ComponentArt_Menu_InitKeyboard=function(_2){ComponentArt_Menu_SetKeyboardFocusedMenu(_2);_2.KeyboardEnabled=true;_2.HighlightedItem=_2.Items()[0];document.onkeydown=ComponentArt_HandleKeyPress;};window.ComponentArt_Menu_Keyboard_Loaded=true;}

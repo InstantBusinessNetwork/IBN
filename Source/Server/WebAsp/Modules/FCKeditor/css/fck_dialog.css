@@ -1,0 +1,42 @@
+/*
+ * FCKeditor - The text editor for internet
+ * Copyright (C) 2003 Frederico Caldeira Knabben
+ *
+ * Licensed under the terms of the GNU Lesser General Public License
+ * (http://www.opensource.org/licenses/lgpl-license.php)
+ *
+ * For further information go to http://www.fredck.com/FCKeditor/ 
+ * or contact fckeditor@fredck.com.
+ *
+ * fck_dialog.css: Dialog boxes base CSS.
+ *
+ * Authors:
+ *   Frederico Caldeira Knabben (fckeditor@fredck.com)
+ */
+
+body
+{
+	background-color: buttonface;
+}
+
+body, td, input, select, textarea, button
+{
+	font-size: 11px;
+	font-family: 'Microsoft Sans Serif' , Tahoma, Arial, Verdana, Sans-Serif;
+}
+
+.ImagePreviewArea
+{
+	border-right: #000000 1px solid;
+	padding-right: 5px;
+	border-top: #000000 1px solid;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	overflow: auto;
+	border-left: #000000 1px solid;
+	width: 100%;
+	padding-top: 5px;
+	border-bottom: #000000 1px solid;
+	height: 100%;
+	background-color: #ffffff;
+}

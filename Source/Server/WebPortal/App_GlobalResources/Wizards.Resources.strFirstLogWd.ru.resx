@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTopTitle">
+		<value>Добро пожаловать в портал!</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Изменение личной информации</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Изменение ваших данных</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Изменение ваших настроек</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Изменение настроек доступа к календарю</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Изменение настроек закладок</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>Ваши изменения сохранены.</value>
+	</data>
+	<data name="s1TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="tFirstName">
+		<value>Имя</value>
+	</data>
+	<data name="tLastName">
+		<value>Фамилия</value>
+	</data>
+	<data name="tEMail">
+		<value>E-mail</value>
+	</data>
+	<data name="tWorkPhone">
+		<value>Рабочий телефон</value>
+	</data>
+	<data name="tMobilePhone">
+		<value>Мобильный телефон</value>
+	</data>
+	<data name="s2TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s3TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s4TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s5TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s6TopDiv">
+		<value>Все сделанные изменения сохранены. Нажмите кнопку "Закрыть", чтобы вернуться к работе в портале.</value>
+	</data>
+	<data name="tContactInformation">
+		<value>Персональная информация</value>
+	</data>
+	<data name="s1Comments">
+		<value>С помощью этого мастера вы можете изменить свою личную информацию и настройки.&lt;br&gt;
+		Если вы не хотите этого делать сейчас, нажмите кнопку "Закрыть".&lt;br&gt;Чтобы этот мастер не запускался при каждом  
+		входе в портал, снимите на последней странице флажок "Запускать мастер при каждом входе в портал".
+		</value>
+	</data>
+	<data name="tPhoto">
+		<value>Фото</value>
+	</data>
+	<data name="tCompany">
+		<value>Компания</value>
+	</data>
+	<data name="tDepartment">
+		<value>Подразделение</value>
+	</data>
+	<data name="tPosition">
+		<value>Должность</value>
+	</data>
+	<data name="tLocation">
+		<value>Расположение</value>
+	</data>
+	<data name="tDetails">
+		<value>Прочие данные</value>
+	</data>
+	<data name="tTimeZone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="tLanguage">
+		<value>Язык</value>
+	</data>
+	<data name="From">
+		<value>С</value>
+	</data>
+	<data name="To">
+		<value>По</value>
+	</data>
+	<data name="NotifyDelay">
+		<value>Уведомлять по e-mail</value>
+	</data>
+	<data name="NotifyBy">
+		<value>Уведомлять при помощи</value>
+	</data>
+	<data name="EnableNotify">
+		<value>Информировать о системных событиях</value>
+	</data>
+	<data name="Email">
+		<value>E-mail</value>
+	</data>
+	<data name="Instantly">
+		<value>Немедленно</value>
+	</data>
+	<data name="ByBatch">
+		<value>Периодически</value>
+	</data>
+	<data name="Every">
+		<value>Каждые</value>
+	</data>
+	<data name="30m">
+		<value>30 мин </value>
+	</data>
+	<data name="60m">
+		<value>1 час</value>
+	</data>
+	<data name="240m">
+		<value>4 часа</value>
+	</data>
+	<data name="Selected">
+		<value>Выбраны</value>
+	</data>
+	<data name="Available">
+		<value>Доступны</value>
+	</data>
+	<data name="Group">
+		<value>Группа</value>
+	</data>
+	<data name="Search">
+		<value>Поиск</value>
+	</data>
+	<data name="User">
+		<value>Пользователь</value>
+	</data>
+	<data name="CanManage">
+		<value>Может управлять</value>
+	</data>
+	<data name="Add">
+		<value>Добавить</value>
+	</data>
+	<data name="FindNow">
+		<value>Найти</value>
+	</data>
+	<data name="Warning">
+		<value>Вы хотите удалить этого пользователя из списка?</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Name">
+		<value>Имя</value>
+	</data>
+	<data name="Status">
+		<value>Доступ</value>
+	</data>
+	<data name="Manage">
+		<value>Управление</value>
+	</data>
+	<data name="Read">
+		<value>Чтение</value>
+	</data>
+	<data name="tAllow">
+		<value>Запускать мастер при каждом входе в портал</value>
+	</data>
+	<data name="tFinish">
+		<value>Сохранить</value>
+	</data>
+	<data name="tClose">
+		<value>Закрыть</value>
+	</data>
+</root>

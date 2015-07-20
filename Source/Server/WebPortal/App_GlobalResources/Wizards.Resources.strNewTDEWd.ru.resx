@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalTitle">
+		<value>Создание нового  </value>
+	</data>
+	<data name="Entry">
+		<value>мероприятия</value>
+	</data>
+	<data name="ToDo">
+		<value>поручения</value>
+	</data>
+	<data name="EntryQuest">
+		<value>мероприятия:</value>
+	</data>
+	<data name="ToDoQuest">
+		<value>поручения:</value>
+	</data>
+	<data name="s1TopTextEntry">
+		<value>Календарь - гибкая система совместной работы, позволяющая управлять вашим календарем, а также планировать, контролировать и координировать работу ваших сотрудников. Мастер поможет вам создать новое мероприятие.</value>
+	</data>
+	<data name="s1ToDoEntryTitle">
+		<value>Название</value>
+	</data>
+	<data name="s1Priority">
+		<value>Установите приоритет </value>
+	</data>
+	<data name="s1Description">
+		<value>Описание Вашего</value>
+	</data>
+	<data name="s1EntryType">
+		<value>Выберите тип</value>
+	</data>
+	<data name="s1Location">
+		<value>Место проведения</value>
+	</data>
+	<data name="s1ToDoCompletionType">
+		<value>Выберите тип завершения</value>
+	</data>
+	<data name="s1ToDoMustBeConfirmed">
+		<value>Завершение поручения должно быть подтверждено менеджером</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Комментарии</value>
+	</data>
+	<data name="s2Project">
+		<value>Выберите проект</value>
+	</data>
+	<data name="s2Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="s2QuickTipToDo">
+		<value>Выбирать проект необязательно.  Если вы выбрали какой-то проект, то соответствующий проект-менеджер будет иметь возможность управлять объектом. Тем не менее, вы также сможете управлять им.</value>
+	</data>
+	<data name="s2QuickTipEntry">
+		<value>Выбирать проект необязательно.  Если вы выбрали какой-то проект, то соответствующий проект-менеджер будет иметь возможность управлять объектом. Тем не менее, вы также сможете управлять им.</value>
+	</data>	
+	<data name="s3StartDate">
+		<value>Введите дату начала:</value>
+	</data>
+	<data name="s3EndDate">
+		<value>Введите дату завершения:</value>
+	</data>
+	<data name="s3QuickTip">
+		<value>Если вы выбрали некоторый проект, то дата начала должна попасть в сроки выполнения проекта</value>
+	</data>
+	<data name="s4TopText1Entry">
+		<value>Если мероприятие запланировано только для вас, нажмите кнопку 'Далее'. В противном случае, воспользуйтесь кнопкой ‘Пригласить’, чтобы сформировать список участников Вашего мероприятия</value>
+	</data>
+	<data name="s4TopText1ToDo">
+		<value>Если поручение создается только для вас, нажмите кнопку 'Далее'. В противном случае, воспользуйтесь кнопкой ‘Пригласить’, чтобы сформировать список исполнителей вашего поручения</value>
+	</data>
+	<data name="s4OnlyForMe">
+		<value>Только для меня</value>
+	</data>
+	<data name="s4Selected">
+		<value>Выбраны</value>
+	</data>
+	<data name="s4Available">
+		<value>Доступны</value>
+	</data>
+	<data name="s4Group">
+		<value>Группа</value>
+	</data>
+	<data name="s4Search">
+		<value>Поиск</value>
+	</data>
+	<data name="s5Type">
+		<value>Тип</value>
+	</data>
+	<data name="s5Location">
+		<value>Место проведения</value>
+	</data>
+	<data name="s5Description">
+		<value>Описание</value>
+	</data>
+	<data name="s4User">
+		<value>Пользователь</value>
+	</data>
+	<data name="s5TopText">
+		<value>Проверьте введенную вами информацию и нажмите кнопку 'Создать' или воспользуйтесь кнопкой 'Назад', чтобы вернуться на предыдущую страницу и внести необходимые изменения.</value>
+	</data>
+	<data name="s5ToDoEntryTitle">
+		<value>Название</value>
+	</data>
+	<data name="s5ToDoEntryPriority">
+		<value>Приоритет</value>
+	</data>
+	<data name="s5ProjectTitle">
+		<value>Проект</value>
+	</data>
+	<data name="s5Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="s5CompletionType">
+		<value>Тип завершения</value>
+	</data>
+	<data name="s5MustBeConfirmed">
+		<value>Завершение должно быть подтверждено менеджером</value>
+	</data>
+	<data name="s5StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="s5EndDate">
+		<value>Дата завершения </value>
+	</data>
+	<data name="s5OnlyForMe">
+		<value>Только для меня</value>
+	</data>
+	<data name="s5TeamEntry">
+		<value>Участники</value>
+	</data>
+	<data name="s5TeamToDo">
+		<value>Исполнители</value>
+	</data>
+	<data name="s6TopText">
+		<value>Top Text</value>
+	</data>
+	<data name="s6TextHeader">
+		<value>Header Text</value>
+	</data>
+	<data name="s6Text">
+		<value>Text</value>
+	</data>
+	<data name="s4AssignParticipants">
+		<value>Пригласить</value>
+	</data>
+	<data name="s4AssignResources">
+		<value>Назначить исполнителей</value>
+	</data>
+	<data name="s4NotSet">
+		<value>Не установлен</value>
+	</data>
+	<data name="s6Notify">
+		<value>Сообщить всем членам команды автоматически?</value>
+	</data>
+	<data name="s4FindNow">
+		<value>Найти</value>
+	</data>
+	<data name="s4Add">
+		<value>Добавить</value>
+	</data>
+	<data name="s4Name">
+		<value>Имя</value>
+	</data>
+	<data name="s4Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Основная информация о </value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Выбор проекта, связанного с </value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Установка дат начала и завершения </value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Назначение исполнителей </value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Проверка введенной информации о</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>title 6</value>
+	</data>
+	<data name="s4MustBeConfirmed">
+		<value>Должно быть подтверждено</value>
+	</data>
+	<data name="s4AddGroup">
+		<value>Добавить группу</value>
+	</data>
+	<data name="StartDateError">
+		<value>Дата начала должна следовать за датой начала проекта</value>
+	</data>
+	<data name="EndDateError">
+		<value>Дата завершения должна следовать за датой начала</value>
+	</data>
+	<data name="s1TopTextToDo">
+		<value>Поручения позволяют давать различного рода задания вашим сотрудникам. &lt;br&gt; Мастер поможет вам создать новое поручение.</value>
+	</data>
+	<data name="EntryPP">
+		<value>мероприятии</value>
+	</data>
+	<data name="ToDoPP">
+		<value>поручении</value>
+	</data>
+	<data name="EntryTP">
+		<value>мероприятием</value>
+	</data>
+	<data name="ToDoTP">
+		<value>поручением</value>
+	</data>
+	<data name="EntryIP">
+		<value>мероприятие</value>
+	</data>
+	<data name="ToDoIP">
+		<value>поручение</value>
+	</data>
+</root>

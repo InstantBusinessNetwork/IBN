@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tPersonalSpace" xml:space="preserve">
+    <value>Personal Space</value>
+  </data>
+  <data name="tResActs" xml:space="preserve">
+    <value>Management Center</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="tTabDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="tIssues" xml:space="preserve">
+    <value>Issues/Help Desk</value>
+  </data>
+  <data name="tLibrary" xml:space="preserve">
+    <value>File Library</value>
+  </data>
+  <data name="tLists" xml:space="preserve">
+    <value>Lists &amp; Records</value>
+  </data>
+  <data name="tClientsContacts" xml:space="preserve">
+    <value>Clients/Contacts</value>
+  </data>
+  <data name="tGrpsUsrs" xml:space="preserve">
+    <value>Groups &amp; Users</value>
+  </data>
+  <data name="tAdmin" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="tMyWorks" xml:space="preserve">
+    <value>My Work</value>
+  </data>
+  <data name="tListView" xml:space="preserve">
+    <value>List View</value>
+  </data>
+  <data name="tDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="tWorkWeek" xml:space="preserve">
+    <value>Work Week</value>
+  </data>
+  <data name="tWeek" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="tMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="tYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="tSharedCals" xml:space="preserve">
+    <value>Shared Work</value>
+  </data>
+  <data name="tMyTimesh" xml:space="preserve">
+    <value>My Timesheets</value>
+  </data>
+  <data name="Incidents" xml:space="preserve">
+    <value>Self-created issues</value>
+  </data>
+  <data name="tMyWebStubs" xml:space="preserve">
+    <value>My Web Apps</value>
+  </data>
+  <data name="tReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="tModifyNotif" xml:space="preserve">
+    <value>My Notification Settings</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Get Software Tools</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Help/Feedback</value>
+  </data>
+  <data name="tDashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="tActTrack" xml:space="preserve">
+    <value>Activities Tracking</value>
+  </data>
+  <data name="tActByCat" xml:space="preserve">
+    <value>Activities by Category</value>
+  </data>
+  <data name="tPrjsByPortf" xml:space="preserve">
+    <value>Projects by Portfolio</value>
+  </data>
+  <data name="tPrjsByPhase" xml:space="preserve">
+    <value>Projects by Project Phase</value>
+  </data>
+  <data name="tPrjsByPM" xml:space="preserve">
+    <value>Projects by Project Manager</value>
+  </data>
+  <data name="tPrjsByClient" xml:space="preserve">
+    <value>Projects by Client</value>
+  </data>
+  <data name="tResTracking" xml:space="preserve">
+    <value>Resources Tracking</value>
+  </data>
+  <data name="tUsrsByRole" xml:space="preserve">
+    <value>Users by Role</value>
+  </data>
+  <data name="tResUtil" xml:space="preserve">
+    <value>Resource Utilization</value>
+  </data>
+  <data name="tUtilCE" xml:space="preserve">
+    <value>Calendar Entries</value>
+  </data>
+  <data name="tUtilIssues" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="tUtilDoc" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="tUtilTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tUtilToDo" xml:space="preserve">
+    <value>ToDos</value>
+  </data>
+  <data name="tUtilAll" xml:space="preserve">
+    <value>Advanced View</value>
+  </data>
+  <data name="tPlanFactAnalysis" xml:space="preserve">
+    <value>Project Finances/Milestones</value>
+  </data>
+  <data name="tPlanFactAnalysisFinances" xml:space="preserve">
+    <value>Finances</value>
+  </data>
+  <data name="tPlanFactAnalysisMilestones" xml:space="preserve">
+    <value>Milestones</value>
+  </data>
+  <data name="Projects" mimetype="">
+    <value>My Projects</value>
+  </data>
+  <data name="tAllPrj" xml:space="preserve">
+    <value>All Projects</value>
+  </data>
+  <data name="tViewBy" xml:space="preserve">
+    <value>View by</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tPortfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="tPrjPhases" xml:space="preserve">
+    <value>Project Phases</value>
+  </data>
+  <data name="tGenCat" xml:space="preserve">
+    <value>General Category</value>
+  </data>
+  <data name="tPrjCat" xml:space="preserve">
+    <value>Project Category</value>
+  </data>
+  <data name="tPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="tType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="tPortfolios" xml:space="preserve">
+    <value>Portfolios</value>
+  </data>
+  <data name="tPrjTemps" xml:space="preserve">
+    <value>Project Templates</value>
+  </data>
+  <data name="tMyDocuments" xml:space="preserve">
+    <value>My Documents</value>
+  </data>
+  <data name="tRAssDocuments" xml:space="preserve">
+    <value>Assigned Documents</value>
+  </data>
+  <data name="tRAllDocuments" xml:space="preserve">
+    <value>All Documents</value>
+  </data>
+  <data name="tGroupedBy" xml:space="preserve">
+    <value>Grouped by</value>
+  </data>
+  <data name="tGroupProjects" xml:space="preserve">
+    <value>Grouped by Projects</value>
+  </data>
+  <data name="tGroupClients" xml:space="preserve">
+    <value>Grouped by Clients</value>
+  </data>
+  <data name="tPendingMess" xml:space="preserve">
+    <value>Pending Messages</value>
+  </data>
+  <data name="tResponsibledIssues" xml:space="preserve">
+    <value>Responsibled Issues</value>
+  </data>
+  <data name="tAssgnIss" xml:space="preserve">
+    <value>Assigned Issues</value>
+  </data>
+  <data name="tManIss" xml:space="preserve">
+    <value>Managed Issues</value>
+  </data>
+  <data name="tAllIss" xml:space="preserve">
+    <value>All Issues</value>
+  </data>
+  <data name="tViewByIssBox" xml:space="preserve">
+    <value>View by Issue Box</value>
+  </data>
+  <data name="tArticleList" xml:space="preserve">
+    <value>Knowledge Base</value>
+  </data>
+  <data name="tSeverity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="tIssCat" xml:space="preserve">
+    <value>Issue Category</value>
+  </data>
+  <data name="tGlobal" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="tAllFiles" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="tSimpleEvents" xml:space="preserve">
+    <value>Calendar Entries</value>
+  </data>
+  <data name="tSimpleToDos" xml:space="preserve">
+    <value>ToDos</value>
+  </data>
+  <data name="tSimpleTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tListFolders" xml:space="preserve">
+    <value>List Folders</value>
+  </data>
+  <data name="tPrivLists" xml:space="preserve">
+    <value>Private Lists</value>
+  </data>
+  <data name="tPubLists" xml:space="preserve">
+    <value>Public Lists</value>
+  </data>
+  <data name="tPrjLists" xml:space="preserve">
+    <value>Projects Lists</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Organizations</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="tIncsByClient" xml:space="preserve">
+    <value>Issues by Client</value>
+  </data>
+  <data name="tDocsByClient" xml:space="preserve">
+    <value>Documents by Client</value>
+  </data>
+  <data name="tToDosByClient" xml:space="preserve">
+    <value>To-Dos by Client</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="tSecGroups" xml:space="preserve">
+    <value>Secure Groups</value>
+  </data>
+  <data name="tAllUsers" xml:space="preserve">
+    <value>All Users</value>
+  </data>
+  <data name="tContGroups" xml:space="preserve">
+    <value>Contact Groups</value>
+  </data>
+  <data name="tEveryone" xml:space="preserve">
+    <value>Everyone</value>
+  </data>
+  <data name="tInfoAppearance" xml:space="preserve">
+    <value>Info &amp; Appearance</value>
+  </data>
+  <data name="tCompanyProfile" xml:space="preserve">
+    <value>Company Profile</value>
+  </data>
+  <data name="tSPAppearance" xml:space="preserve">
+    <value>Login Page</value>
+  </data>
+  <data name="tWAppearance" xml:space="preserve">
+    <value>Workspace Appearance</value>
+  </data>
+  <data name="tBusData" xml:space="preserve">
+    <value>Business Data</value>
+  </data>
+  <data name="tWTCalendars" xml:space="preserve">
+    <value>Work Time Calendars</value>
+  </data>
+  <data name="WorkTimeSetup" xml:space="preserve">
+    <value>Work Time Setup</value>
+  </data>
+  <data name="tManDics" xml:space="preserve">
+    <value>Default Lookup Tables</value>
+  </data>
+  <data name="tMetaClassCustomization" xml:space="preserve">
+    <value>Data Dictionary Manager</value>
+  </data>
+  <data name="tObjectCustomEditor" xml:space="preserve">
+    <value>Business Objects Extension</value>
+  </data>
+  <data name="tMdpCustomization" xml:space="preserve">
+    <value>Business Objects Interface</value>
+  </data>
+  <data name="tCommonSettings" xml:space="preserve">
+    <value>Common Settings</value>
+  </data>
+  <data name="tSecurity" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="tLDAPSettings" xml:space="preserve">
+    <value>LDAP Settings</value>
+  </data>
+  <data name="tSMTPSettings" xml:space="preserve">
+    <value>SMTP Settings</value>
+  </data>
+  <data name="teMailBoxes" xml:space="preserve">
+    <value>Inbound E-mail Routing</value>
+  </data>
+  <data name="tReportConfig" xml:space="preserve">
+    <value>Reports Security</value>
+  </data>
+  <data name="tRoutWrkfl" xml:space="preserve">
+    <value>Routing/Workflow</value>
+  </data>
+  <data name="tModifAlertNotif" xml:space="preserve">
+    <value>Alert Notification Parameters</value>
+  </data>
+  <data name="tEventNotification" xml:space="preserve">
+    <value>System Notifications</value>
+  </data>
+  <data name="tReminderNotifications" xml:space="preserve">
+    <value>System Reminders</value>
+  </data>
+  <data name="tMessTempl" xml:space="preserve">
+    <value>Message Templates</value>
+  </data>
+  <data name="tRemTempl" xml:space="preserve">
+    <value>Reminder Templates</value>
+  </data>
+  <data name="tSpecialTempl" xml:space="preserve">
+    <value>Special Templates</value>
+  </data>
+  <data name="tHDM" xml:space="preserve">
+    <value>Help Desk Management</value>
+  </data>
+  <data name="tHDMSettings" xml:space="preserve">
+    <value>Issue Common Settings</value>
+  </data>
+  <data name="tIssRules" xml:space="preserve">
+    <value>Autodetection/Rules</value>
+  </data>
+  <data name="tBlackList" xml:space="preserve">
+    <value>E-mail Black List</value>
+  </data>
+  <data name="tWhiteList" xml:space="preserve">
+    <value>E-mail White List</value>
+  </data>
+  <data name="tEMailLog" xml:space="preserve">
+    <value>E-mail Log</value>
+  </data>
+  <data name="tEmailOutgoing" xml:space="preserve">
+    <value>Outgoing E-mail</value>
+  </data>
+  <data name="tFilesForms" xml:space="preserve">
+    <value>Files &amp; Forms</value>
+  </data>
+  <data name="tWebDAV" xml:space="preserve">
+    <value>Common Settings</value>
+  </data>
+  <data name="tDocTypes" xml:space="preserve">
+    <value>Document Types</value>
+  </data>
+  <data name="tToolsApps" xml:space="preserve">
+    <value>Tools &amp; Apps</value>
+  </data>
+  <data name="tSQLReport" xml:space="preserve">
+    <value>Custom SQL Report</value>
+  </data>
+  <data name="tErrList" xml:space="preserve">
+    <value>Error List</value>
+  </data>
+  <data name="tPortalStatistics" xml:space="preserve">
+    <value>Portal Statistics</value>
+  </data>
+  <data name="tSystemBroadcast" xml:space="preserve">
+    <value>System Broadcast Alerts</value>
+  </data>
+  <data name="tWebStubs" xml:space="preserve">
+    <value>Web Applications</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="tMyTimeshDetails" xml:space="preserve">
+    <value>My Timesheets in Details</value>
+  </data>
+  <data name="tUtilGraph" xml:space="preserve">
+    <value>Graph View</value>
+  </data>
+  <data name="tProjectsNew" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="tIssuesNew" xml:space="preserve">
+    <value>Issues/Help Desk</value>
+  </data>
+  <data name="ItemNotSelected" xml:space="preserve">
+    <value>&lt; nothing is selected &gt;</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="ParentItem" xml:space="preserve">
+    <value>Parent Item</value>
+  </data>
+  <data name="Publication" xml:space="preserve">
+    <value>Publication</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>Portal Profiles</value>
+  </data>
+  <data name="LeftMenuCustomization" xml:space="preserve">
+    <value>Left Menu</value>
+  </data>
+  <data name="tSMTPList" xml:space="preserve">
+    <value>Outgoing email servers (SMTP)</value>
+  </data>
+  <data name="OutActivities" xml:space="preserve">
+    <value>Tasks/To-Dos given by me</value>
+  </data>
+  <data name="CurrentWork" xml:space="preserve">
+    <value>Current Work</value>
+  </data>
+  <data name="MyCurrentWork" xml:space="preserve">
+    <value>Current Work</value>
+  </data>
+  <data name="tWebDavSessions" xml:space="preserve">
+    <value>Edited files</value>
+  </data>
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<SpreadSheet>
+	<Template>
+		<Name>Profit and loss statement - Simple</Name>
+		<Description>Two groups exist: revenues and expenses. Expenses are deducted from revenues to get net income.</Description>
+		<Rows>
+			<Block Id="Revenues" Name="Revenues" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			
+			<Block Id="Expenses" Name="Expenses" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+
+			<Row Id="Space1" Name="" ReadOnly="True" />
+			
+			<Row Id="IncomeBeforeTaxes" Name="Income before taxes" ReadOnly="True" Expression="[Revenues]-[Expenses]"/>
+			<Row Id="IncomeTaxes" Name="Income taxes" ReadOnly="False"/>
+			
+			<Row Id="Space2" Name="" ReadOnly="True" />
+			
+			<Row Id="NetIncome" Name="Net income" ReadOnly="True" Expression="[IncomeBeforeTaxes]-[IncomeTaxes]"/>
+		</Rows>
+	</Template>
+</SpreadSheet>

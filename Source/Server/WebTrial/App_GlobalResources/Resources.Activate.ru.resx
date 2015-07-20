@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="YouAreReady" xml:space="preserve">
+    <value>Все готово для активации триал сайта</value>
+  </data>
+  <data name="PressActivate" xml:space="preserve">
+    <value>Ждите начала процесса активации</value>
+  </data>
+  <data name="Assist" xml:space="preserve">
+    <value>&lt;div  align="right"&gt;&lt;div align="left" style="width:230px;margin-top:100px;" class="ibn-propertysheet"&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span align="right" class="ibn-propertysheet" style="font-size:1.2em"&gt;Поддержка&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+		&lt;a href="mailto:support@mediachase.ru"&gt;support@mediachase.ru&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+    &lt;span class="ibn-propertysheet" style="font-size:1.2em"&gt;Документация по программе IBN&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+		&lt;a href="http://www.pmbox.ru"&gt;www.pmbox.ru&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+    &lt;span class="ibn-propertysheet" style="font-size:1.2em"&gt;Наш телефон +7(495) 648-61-62&lt;/span&gt;
+		&lt;/div&gt;&lt;/div&gt;
+		</value>
+  </data>
+  <data name="ActivationError" xml:space="preserve">
+    <value>Ошибка активации</value>
+  </data>
+  <data name="PleaseCheck" xml:space="preserve">
+    <value>Внимательно проверьте параметры активации</value>
+  </data>
+  <data name="Congratulations" xml:space="preserve">
+    <value>&lt;table width="100%"&gt;&lt;tr&gt;&lt;td class="ibn-sectionheader"&gt;Активация успешно завершена&lt;/td&gt;&lt;td width="230px"&gt;&lt;img align="absmiddle" src="layouts/apply.gif" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="Activated" xml:space="preserve">
+    <value>&lt;div class="ibn-propertysheet"&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span class="ibn-sectionheader"&gt;Вы можете начать использовать IBN прямо сейчас!&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span class="ibn-propertysheet" style="padding-right:5px;font-size:1.2em;"&gt;Адрес Вашего IBN портала:&lt;/span&gt;&lt;a href="{0}" style="font-size:1.4em;"&gt;{0}&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span class="ibn-propertysheet" style="padding-right:5px;font-size:1.1em;"&gt;Логин:&lt;/span&gt;&lt;i&gt;{1}&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span class="ibn-propertysheet" style="padding-right:5px;font-size:1.1em;"&gt;Пароль:&lt;/span&gt;&lt;i&gt;{2}&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+		&lt;/div&gt;
+	</value>
+  </data>
+  <data name="Activate_" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="ActProgress" xml:space="preserve">
+    <value>Идет процесс активации вашего IBN портала...</value>
+  </data>
+</root>

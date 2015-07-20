@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<MetaDataPlusBackup	version="1.0">
+	<MetaClass>
+		<Namespace></Namespace>
+		<Name></Name>
+		<FriendlyName></FriendlyName>
+		<MetaClassType></MetaClassType>
+		<ParentClass></ParentClass>
+		<TableName></TableName>
+		<Description></Description>
+		<FieldListChangedSqlScript></FieldListChangedSqlScript>
+		<Tag></Tag>
+	</MetaClass>
+	<MetaField>
+		<Namespace></Namespace>
+		<Name></Name>
+		<FriendlyName></FriendlyName>
+		<Description></Description>
+		<DataType></DataType>
+		<Length></Length>
+		<AllowNulls></AllowNulls>
+		<SaveHistory></SaveHistory>
+		<AllowSearch></AllowSearch>
+		<MultiLanguageValue></MultiLanguageValue>
+		<Tag></Tag>
+		
+		<OwnerMetaClass></OwnerMetaClass>
+		
+	</MetaField>
+</MetaDataPlusBackup>

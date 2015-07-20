@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Toolbar for WorkflowInstance page -->
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Text text="{IbnFramework.BusinessProcess:WorkflowInfo}" cssClass="ibn-WPTitle"></Text>
+			<Button id="ListButton" text="{IbnFramework.Common:Back}" imageUrl="~/Images/IbnFramework/cancel.gif" align="Right" commandName="WFOwnerObject_View" ></Button>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="WFOwnerObject_View">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.BackToOwnerObjectHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="WFNewActivityPopup">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>no title</PopupTitle>
+				<Url>~/Apps/BusinessProcess/Pages/ActivityEdit.aspx?InstanceId={QueryString:Id}&amp;Parent=_parentName_</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

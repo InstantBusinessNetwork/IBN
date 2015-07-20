@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>E2882759-50B4-4106-9B72-B057C33255FE</Uid>
+	<Title>{IbnFramework.Global:_mc_ActiveIssues}</Title>
+	<Description>{IbnFramework.Global:_mc_ActiveIssuesDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/ActiveIssues.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+</DynamicControlInfo>

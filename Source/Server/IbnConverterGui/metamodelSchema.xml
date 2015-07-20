@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<mediachase.ibn.data.meta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<schema>
+		<!-- Ignore list -->
+		<Exceptions>
+			<!-- Security Service -->
+			<Ignore id="MetaClass" name="*_ExceptionACL" />
+			<Ignore id="MetaClass" name="*_GlobalACL" />
+			<Ignore id="MetaClass" name="*_GlobalACL_State" />
+			<Ignore id="MetaClass" name="*_ReadACL" />
+			<Ignore id="MetaClass" name="*_Rights" />
+
+			<!-- State Machine Service -->
+			<Ignore id="MetaClass" name="*_StateMachine" />
+			<Ignore id="MetaClass" name="*_State" />
+			<Ignore id="MetaClass" name="*_Role_State" />
+			<Ignore id="MetaField" parentKeys="*" name="mc_StateId" />
+			<Ignore id="MetaField" parentKeys="*" name="mc_StateMachineId" />
+
+			<!-- McChange Detection Service -->
+			<Ignore id="MetaField" parentKeys="*" name="CreatorId" />
+			<Ignore id="MetaField" parentKeys="*" name="Created" />
+			<Ignore id="MetaField" parentKeys="*" name="ModifierId" />
+			<Ignore id="MetaField" parentKeys="*" name="Modified" />
+
+			<!-- History Service -->
+			<Ignore id="MetaClass" name="*_History" />
+
+			<!-- Role -->
+			<Ignore id="MetaClass" name="*_Role" />
+			<Ignore id="MetaClass" name="*_Role_Principal" />
+
+			<!-- Event Service -->
+			<Ignore id="MetaClass" name="*_Event" />
+			<Ignore id="MetaClass" name="*_EventType" />
+
+			<!-- Comment Service -->
+			<Ignore id="MetaClass" name="*_Comment" />
+
+			<!-- Tree Service -->
+			<Ignore id="MetaField" parentKeys="*" name="OutlineLevel" />
+			<Ignore id="MetaField" parentKeys="*" name="OutlineNumber" />
+			<Ignore id="MetaField" parentKeys="*" name="HasChildren" />
+			<Ignore id="MetaField" parentKeys="*" name="ParentId" />
+			<Ignore id="MetaField" parentKeys="*" name="Parent" />
+			<Ignore id="MetaField" parentKeys="*" name="ScopeIndex" />
+		</Exceptions>
+
+		<!--Meta Enum-->
+		<Container id="MetaEnum"
+				   path="MetaEnum"
+				   key="Name"
+				   addOrderId="0"
+				   handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data">
+
+			<Container id="MetaEnumItem"
+					   path="EnumItem"
+					   key="@Id"
+					   addOrderId="10"
+					   handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data">
+				<Element id="MetaEnumItem_Name" 
+						 path="@Name" 
+						 datatype="Text"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+				<Element id="MetaEnumItem_OrderId"
+						 path="@OrderId"
+						 datatype="Text"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			</Container>
+
+			<Element id="MetaEnum_Attributes" path="Attributes" datatype="Xml"/>
+		</Container>
+
+		<!--Meta Class (AddOrderId = 1000, Card = 2000, Bridge = 3000)-->
+		<Container id="MetaClass"
+				   friendlyName="Meta Class"
+				   pluralName="Meta Classes"
+				   path="MetaClass"
+				   key="Name"
+				   handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data">
+
+			<!--Meta Field(MetaField(Card) = 1100, 
+					 MetaField(not Reference || not ReferencedField || not BackReferences) = 5000
+					 -->
+			<Container id="MetaField"
+				   friendlyName="Field"
+				   pluralName="Fields"
+				   path="Fields/MetaField"
+				   key="Name"
+				   handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data">
+
+				<Element id="MetaField_FriendlyName" 
+						 path="FriendlyName" 
+						 datatype="Text"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+				<Element id="MetaField_DataSource" 
+						 path="DataSource" 
+						 datatype="Xml"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+				<Element id="MetaField_ReadOnly" 
+						 path="ReadOnly" 
+						 datatype="Text"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+				<Element id="MetaField_DefaultValue" 
+						 path="DefaultValue" 
+						 datatype="Text"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+				<Element id="MetaField_Attributes" 
+						 path="Attributes" 
+						 datatype="Xml"
+						 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+
+			</Container>
+
+			<Element id="MetaClass_FriendlyName" 
+					 path="FriendlyName"
+					 datatype="Text"
+					 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			<Element id="MetaClass_PluralName" 
+					 path="PluralName"
+					 datatype="Text"
+					 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			<Element id="MetaClass_TitleFieldName" 
+					 path="TitleFieldName" 
+					 datatype="Text"
+					 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			<Element id="MetaClass_DataSource" 
+					 path="DataSource"
+					 datatype="Xml"
+					 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			<Element id="MetaClass_Validators" 
+					 path="Validators" 
+					 datatype="Xml"
+					 handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data"/>
+			<Element id="MetaClass_Attributes" path="Attributes" datatype="Xml"/>
+
+			<Container id="Service"
+					   friendlyName="Service"
+					   pluralName="Services"
+					   path="Services/*"
+					   key="name()"
+					   addOrderId="5050" 
+					   handler="Mediachase.Ibn.Data.Meta.Schema.DefaultSchemaElementHandler, Mediachase.Ibn.Data">
+
+				<!--TODO: Add Installed Services Here-->
+
+				<!-- State Machine Service-->
+				<!-- <Container id="StateMachine_State"
+						   path="StateMachine/States/State"
+						   key="Name"
+						   handler="">
+
+					<Element id="StateMachine_State_FriendlyName" path="FriendlyName" datatype="Text"/>
+
+				</Container>
+
+				<Container id="StateMachine_StateMachine"
+						   path="StateMachine/StateMachines/StateMachine"
+						   key="Name"
+						   handler="">
+
+					<Element id="StateMachine_StateMachine_States" path="States" datatype="Xml"/>
+					<Element id="StateMachine_StateMachine_Transitions" path="Transitions" datatype="Xml"/>
+
+				</Container> -->
+
+
+			</Container>
+
+
+		</Container>
+
+		<!--Meta View-->
+	</schema>
+</mediachase.ibn.data.meta>

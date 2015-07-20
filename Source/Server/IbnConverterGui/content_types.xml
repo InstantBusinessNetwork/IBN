@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<content_types>
+	<item contentTypeId="1" fileName="unknown16.png" bigFileName="unknown48.png" />
+	<item contentTypeId="2" fileName="txt16.png" bigFileName="txt48.png" />
+	<item contentTypeId="3" fileName="xml16.png" bigFileName="xml48.png" />
+	<item contentTypeId="4" fileName="htm16.png" bigFileName="htm48.png" />
+	<item contentTypeId="5" fileName="html16.png" bigFileName="html48.png" />
+	<item contentTypeId="6" fileName="url16.png" bigFileName="url48.png" />
+	<item contentTypeId="7" fileName="mht16.png" bigFileName="mht48.png" />
+	<item contentTypeId="8" fileName="eml16.png" bigFileName="eml48.png" />
+	<item contentTypeId="9" fileName="msg16.png" bigFileName="msg48.png" />
+	<item contentTypeId="10" fileName="avi16.png" bigFileName="avi48.png" />
+	<item contentTypeId="11" fileName="mpg16.png" bigFileName="mpg48.png" />
+	<item contentTypeId="12" fileName="wmv16.png" bigFileName="wmv48.png" />
+	<item contentTypeId="13" fileName="bmp16.png" bigFileName="bmp48.png" />
+	<item contentTypeId="14" fileName="gif16.png" bigFileName="gif48.png" />
+	<item contentTypeId="15" fileName="jpg16.png" bigFileName="jpg48.png" />
+	<item contentTypeId="16" fileName="png16.png" bigFileName="png48.png" />
+	<item contentTypeId="17" fileName="psd16.png" bigFileName="psd48.png" />
+	<item contentTypeId="18" fileName="tif16.png" bigFileName="tif48.png" />
+	<item contentTypeId="19" fileName="doc16.png" bigFileName="doc48.png" />
+	<item contentTypeId="20" fileName="docx16.png" bigFileName="docx48.png" />
+	<item contentTypeId="21" fileName="mdb16.png" bigFileName="mdb48.png" />
+	<item contentTypeId="22" fileName="mpp16.png" bigFileName="mpp48.png" />
+	<item contentTypeId="23" fileName="ppt16.png" bigFileName="ppt48.png" />
+	<item contentTypeId="24" fileName="pptx16.png" bigFileName="pptx48.png" />
+	<item contentTypeId="25" fileName="pub16.png" bigFileName="pub48.png" />
+	<item contentTypeId="26" fileName="vsd16.png" bigFileName="vsd48.png" />
+	<item contentTypeId="27" fileName="xls16.png" bigFileName="xls48.png" />
+	<item contentTypeId="28" fileName="xlsx16.png" bigFileName="xlsx48.png" />
+	<item contentTypeId="29" fileName="pdf16.png" bigFileName="pdf48.png" />
+	<item contentTypeId="30" fileName="zip16.png" bigFileName="zip48.gif" />
+	<item contentTypeId="31" fileName="rar16.png" bigFileName="rar48.png" />
+	<item contentTypeId="32" fileName="dll16.png" bigFileName="dll48.png" />
+	<item contentTypeId="33" fileName="exe16.png" bigFileName="exe48.png" />
+</content_types>

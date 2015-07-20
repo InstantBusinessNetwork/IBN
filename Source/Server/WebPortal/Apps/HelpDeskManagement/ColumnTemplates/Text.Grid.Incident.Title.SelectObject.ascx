@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.HelpDeskManagement.ColumnTemplates.Text_Grid_Incident_Title_SelectObject" %>
+<%# (Eval("IncidentId") == DBNull.Value || Eval("StateId") == DBNull.Value) ? "" : Mediachase.UI.Web.Util.CommonHelper.GetIncidentTitleWL(Eval("Title").ToString(), (int)Eval("StateId"), false)%>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_CM_HDM_Selected_Delete" itemSplitter="Right"></Button>
+
+			<Menu id="ActionsMenu2" text="{IbnFramework.Incident:Actions}">
+				<Button id="ChangeStatus" text="{IbnFramework.Incident:ChangeStatus}" commandName="MC_CM_HDM_ChangeStatus" imageUrl="~/layouts/Images/icons/incident_active.gif"></Button>
+				<Button id="ChangeResponsible" text="{IbnFramework.Incident:ChangeResponsible}" commandName="MC_CM_HDM_ChangeResponsible" imageUrl="~/layouts/Images/icons/editgroup.gif"></Button>
+				<Button id="UpPriority" text="{IbnFramework.Incident:UpPriority}" imageUrl="~/Layouts/Images/flagorange.gif" commandName="MC_CM_HDM_Selected_UpPriority"></Button>
+				<Button id="DownPriority" text="{IbnFramework.Incident:DownPriority}" imageUrl="~/Layouts/Images/flaggray.gif" commandName="MC_CM_HDM_Selected_DownPriority"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter2"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Columns" primaryKey="IncidentId">
+				<Column id="E683BB66-6BBF-4eb9-8ADA-19544BCE1BEA" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/Images/IbnFramework/Contact-Edit.png" commandName="MC_CM_HDM_QuickTracking" paddingRight="5" tooltip="{IbnFramework.Incident:QTrackIssue}" />
+					<Item imageUrl="~/layouts/Images/icons/incident_edit.gif" commandName="MC_CM_HDM_EditGeneralInfo" paddingRight="5" tooltip="{IbnFramework.Incident:EditIssue}" />
+					<Item imageUrl="~/Images/IbnFramework/TreeView-Search.png" commandName="MC_CM_HDM_LastForumPostView" paddingRight="5" tooltip="{IbnFramework.Incident:QLastForumPost}" />
+				</Column>
+				<Column id="colId" type="default" width="40" title="#" sortExpression="IncidentId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Integer.Grid.Incident.IncidentId.IncidentList.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Incident:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="250" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.Title.IncidentList.ascx" />
+				<Column id="colState" type="default" width="110" title="{IbnFramework.Incident:IssStatus}" sortExpression="StateName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.StateName.IncidentList.ascx" />
+				<Column id="colResponsible" type="default" width="150" title="{IbnFramework.Incident:IssResponsible}" sortExpression="ResponsibleName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Responsible.IncidentList.ascx" />
+				<Column id="colIssBox" type="default" width="110" title="{IbnFramework.Incident:IssIssBox}" sortExpression="IncidentBoxName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/IssueBox.IncidentList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_CM_HDM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_CM_HDM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentView.aspx?IncidentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_CM_HDM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_CM_HDM_Selected_UpPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:UpPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.UpPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_CM_HDM_Selected_DownPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:DownPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DownPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_CM_HDM_QuickTracking">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:QuickTracking}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/QuickTracking.aspx?IncidentID=[ClientParam:primaryKeyId]&amp;cmd=MC_CM_HDM_QuickTracking</Url>
+				<Width>700</Width>
+				<Height>350</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_CM_HDM_EditGeneralInfo">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:GeneralInfo}</PopupTitle>
+				<Url>~/Incidents/EditGeneralInfo.aspx?IncidentID=[ClientParam:primaryKeyId]&amp;cmd=MC_CM_HDM_EditGeneralInfo</Url>
+				<Width>500</Width>
+				<Height>400</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_CM_HDM_LastForumPostView">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:IssForumPost}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/IssueForumPostView.aspx?IncidentID=[ClientParam:primaryKeyId]</Url>
+				<Width>650</Width>
+				<Height>450</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_CM_HDM_ChangeStatus">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ChangeStatus}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/AssignStatus.aspx?commandName=MC_CM_HDM_ChangeStatus</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_CM_HDM_ChangeResponsible">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:ChangeResponsible}</PopupTitle>
+				<Url>~/Apps/HelpDeskManagement/Pages/AssignResponsible.aspx?commandName=MC_CM_HDM_ChangeResponsible</Url>
+				<Width>630</Width>
+				<Height>350</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_CM_HDM_GroupResponsibilityList">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:tRespGroup}</PopupTitle>
+				<RefreshMethod>RefreshFromGroup</RefreshMethod>
+				<Url>~/Incidents/ResponsiblePool.aspx?IncidentId=[ClientParam:IncidentId]&amp;Command=MC_CM_HDM_GroupResponsibilityList&amp;notchange=1</Url>
+				<Width>600</Width>
+				<Height>300</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

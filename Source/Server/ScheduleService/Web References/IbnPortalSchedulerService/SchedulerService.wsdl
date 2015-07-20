@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://mediachase.com/webservices/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://mediachase.com/webservices/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://mediachase.com/webservices/">
+      <s:element name="Push">
+        <s:complexType />
+      </s:element>
+      <s:element name="PushResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PushSoapIn">
+    <wsdl:part name="parameters" element="tns:Push" />
+  </wsdl:message>
+  <wsdl:message name="PushSoapOut">
+    <wsdl:part name="parameters" element="tns:PushResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SchedulerServiceSoap">
+    <wsdl:operation name="Push">
+      <wsdl:input message="tns:PushSoapIn" />
+      <wsdl:output message="tns:PushSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SchedulerServiceSoap" type="tns:SchedulerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Push">
+      <soap:operation soapAction="http://mediachase.com/webservices/Push" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SchedulerServiceSoap12" type="tns:SchedulerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Push">
+      <soap12:operation soapAction="http://mediachase.com/webservices/Push" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SchedulerService">
+    <wsdl:port name="SchedulerServiceSoap" binding="tns:SchedulerServiceSoap">
+      <soap:address location="http://localhost/ibn48/WebServices/SchedulerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SchedulerServiceSoap12" binding="tns:SchedulerServiceSoap12">
+      <soap12:address location="http://localhost/ibn48/WebServices/SchedulerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

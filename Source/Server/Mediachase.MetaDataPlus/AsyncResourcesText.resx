@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SP_AddMetaField" xml:space="preserve">
+    <value>mdpsp_sys_AddMetaField</value>
+  </data>
+  <data name="SP_CreateMetaClass" xml:space="preserve">
+    <value>mdpsp_sys_CreateMetaClass</value>
+  </data>
+  <data name="SP_DeleteDContrainByTableAndField" xml:space="preserve">
+    <value>mdpsp_sys_DeleteDContrainByTableAndField</value>
+  </data>
+  <data name="SP_DeleteMetaClass" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaClass</value>
+  </data>
+  <data name="SP_DeleteMetaField" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaField</value>
+  </data>
+  <data name="SP_LoadMetaClassById" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaClassById</value>
+  </data>
+  <data name="SP_LoadMetaClassByName" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaClassByName</value>
+  </data>
+  <data name="SP_LoadMetaClassList" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaClassList</value>
+  </data>
+  <data name="SP_LoadMetaFieldListByMetaClassId" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldListByMetaClassId</value>
+  </data>
+  <data name="SP_UpdateMetaClass" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaClass</value>
+  </data>
+  <data name="SP_UpdateMetaField" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaField</value>
+  </data>
+  <data name="CONSTANT_NAME_RANGE_ERR_MSG" xml:space="preserve">
+    <value>Resources constant cannot be empty.</value>
+  </data>
+  <data name="CONSTANT_NAME_NULL_ERR_MSG" xml:space="preserve">
+    <value>Resources constant name cannot be null.</value>
+  </data>
+  <data name="SP_LoadMetaFieldList" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldList</value>
+  </data>
+  <data name="ARG_NULL_ERR_MSG" xml:space="preserve">
+    <value>The passed arguments is a null reference</value>
+  </data>
+  <data name="INHERITED_FIELD_ERR_MSG" xml:space="preserve">
+    <value>The inherited fields is read only.</value>
+  </data>
+  <data name="SYS_CLASS_READ_ONLY_ERR_MSG" xml:space="preserve">
+    <value>The system class has got read only fields.</value>
+  </data>
+  <data name="SP_LoadChildMetaClassList" xml:space="preserve">
+    <value>mdpsp_sys_LoadChildMetaClassList</value>
+  </data>
+  <data name="SP_DeleteMetaFieldFromMetaClass" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaFieldFromMetaClass</value>
+  </data>
+  <data name="SP_AddMetaFieldToMetaClass" xml:space="preserve">
+    <value>mdpsp_sys_AddMetaFieldToMetaClass</value>
+  </data>
+  <data name="SP_LoadMetaClassListByMetaField" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaClassListByMetaField</value>
+  </data>
+  <data name="SP_LoadMetaFieldWeight" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldWeight</value>
+  </data>
+  <data name="SP_UpdateMetaFieldWeight" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaFieldWeight</value>
+  </data>
+  <data name="SP_LoadMetaType" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaType</value>
+  </data>
+  <data name="SPAT_TABLE_Get" xml:space="preserve">
+    <value>mdpsp_avto_{0}_Get</value>
+  </data>
+  <data name="SP_LoadMetaTypeList" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaTypeList</value>
+  </data>
+  <data name="SPAT_TABLE_Update" xml:space="preserve">
+    <value>mdpsp_avto_{0}_Update</value>
+  </data>
+  <data name="SPAT_TABLE_Delete" xml:space="preserve">
+    <value>mdpsp_avto_{0}_Delete</value>
+  </data>
+  <data name="SP_LoadMetaField" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaField</value>
+  </data>
+  <data name="SP_LoadMetaDictionary" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaDictionary</value>
+  </data>
+  <data name="SP_DeleteMetaDictionary" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaDictionary</value>
+  </data>
+  <data name="SP_UpdateMetaDictionary" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaDictionary</value>
+  </data>
+  <data name="SP_AddMetaDictionary" xml:space="preserve">
+    <value>mdpsp_sys_AddMetaDictionary</value>
+  </data>
+  <data name="SP_GetMetaKey" xml:space="preserve">
+    <value>mdpsp_sys_GetMetaKey</value>
+  </data>
+  <data name="SP_ClearMultivalueDictionary" xml:space="preserve">
+    <value>mdpsp_sys_ClearMultivalueDictionary</value>
+  </data>
+  <data name="SP_AddMultivalueDictionary" xml:space="preserve">
+    <value>mdpsp_sys_AddMultivalueDictionary</value>
+  </data>
+  <data name="SP_LoadMultivalueDictionary" xml:space="preserve">
+    <value>mdpsp_sys_LoadMultivalueDictionary</value>
+  </data>
+  <data name="SP_UpdateMetaFile" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaFile</value>
+  </data>
+  <data name="SP_DeleteMetaFile" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaFile</value>
+  </data>
+  <data name="SP_LoadMetaFile" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFile</value>
+  </data>
+  <data name="SP_UpdateMetaSqlScriptTemplate" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaSqlScriptTemplate</value>
+  </data>
+  <data name="SP_UpdateMetaFieldEnabled" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaFieldEnabled</value>
+  </data>
+  <data name="SP_LoadMetaStringDictionary" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaStringDictionary</value>
+  </data>
+  <data name="SP_ClearStringDictionary" xml:space="preserve">
+    <value>mdpsp_sys_ClearStringDictionary</value>
+  </data>
+  <data name="SP_AddMetaStringDictionary" xml:space="preserve">
+    <value>mdpsp_sys_AddMetaStringDictionary</value>
+  </data>
+  <data name="SP_LoadMetaClassByNamespace" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaClassByNamespace</value>
+  </data>
+  <data name="SP_MetaFieldAllowSearch" xml:space="preserve">
+    <value>mdpsp_sys_MetaFieldAllowSearch</value>
+  </data>
+  <data name="SP_LoadMetaObjectValue" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaObjectValue</value>
+  </data>
+  <data name="SP_DeleteMetaObjectValue" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaObjectValue</value>
+  </data>
+  <data name="SP_MetaFieldSaveHistory" xml:space="preserve">
+    <value>mdpsp_sys_MetaFieldSaveHistory</value>
+  </data>
+  <data name="SPAT_TABLE_List" xml:space="preserve">
+    <value>SELECT * FROM {0}</value>
+  </data>
+  <data name="SP_FullTextQueriesEnable" xml:space="preserve">
+    <value>mdpsp_sys_FullTextQueriesEnable</value>
+  </data>
+  <data name="SP_FullTextQueriesActivate" xml:space="preserve">
+    <value>mdpsp_sys_FullTextQueriesActivate</value>
+  </data>
+  <data name="SP_FullTextQueriesDeactivate" xml:space="preserve">
+    <value>mdpsp_sys_FullTextQueriesDeactivate</value>
+  </data>
+  <data name="SP_LoadMetaAttributes" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaAttributes</value>
+  </data>
+  <data name="SP_AddMetaAttribute" xml:space="preserve">
+    <value>mdpsp_sys_AddMetaAttribute</value>
+  </data>
+  <data name="SP_DeleteMetaAttributes" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaAttributes</value>
+  </data>
+  <data name="SP_ClearMetaAttributes" xml:space="preserve">
+    <value>mdpsp_sys_ClearMetaAttributes</value>
+  </data>
+  <data name="SP_LoadMetaFieldByName" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldByName</value>
+  </data>
+  <data name="SP_LoadMetaFieldByNamespace" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldByNamespace</value>
+  </data>
+  <data name="SPAT_TABLE_History" xml:space="preserve">
+    <value>mdpsp_avto_{0}_History</value>
+  </data>
+  <data name="SP_FullTextQueriesAddAllFields" xml:space="preserve">
+    <value>mdpsp_sys_FullTextQueriesAddAllFields</value>
+  </data>
+  <data name="SP_GetUniqueFieldName" xml:space="preserve">
+    <value>mdpsp_sys_GetUniqueFieldName </value>
+  </data>
+  <data name="SP_LoadMetaFileList" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFileList</value>
+  </data>
+  <data name="SP_GetMetaKeyInfo" xml:space="preserve">
+    <value>mdpsp_sys_GetMetaKeyInfo</value>
+  </data>
+  <data name="SP_UpdateMetaRule" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaRule</value>
+  </data>
+  <data name="SP_LoadMetaRuleById" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaRuleById</value>
+  </data>
+  <data name="SP_LoadMetaRuleByMetaClassId" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaRuleByMetaClassId</value>
+  </data>
+  <data name="SP_DeleteMetaRule" xml:space="preserve">
+    <value>mdpsp_sys_DeleteMetaRule</value>
+  </data>
+  <data name="SP_ReplaceUser" xml:space="preserve">
+    <value>mdpsp_sys_ReplaceUser</value>
+  </data>
+  <data name="SP_MetaFieldAllowMultiLanguage" xml:space="preserve">
+    <value>mdpsp_sys_MetaFieldAllowMultiLanguage</value>
+  </data>
+  <data name="SP_LoadMetaFieldIsRequired" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldIsRequired</value>
+  </data>
+  <data name="SP_LoadMetaFieldWidth" xml:space="preserve">
+    <value>mdpsp_sys_LoadMetaFieldWidth</value>
+  </data>
+  <data name="SP_UpdateMetaFieldIsRequired" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaFieldIsRequired</value>
+  </data>
+  <data name="SP_UpdateMetaFieldWidth" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaFieldWidth</value>
+  </data>
+  <data name="SP_UpdateMetaDictionaryIndex" xml:space="preserve">
+    <value>mdpsp_sys_UpdateMetaDictionaryIndex</value>
+  </data>
+</root>

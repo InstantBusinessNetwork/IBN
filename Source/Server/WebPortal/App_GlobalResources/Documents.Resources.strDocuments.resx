@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tDocumentView" xml:space="preserve">
+    <value>Document View</value>
+  </data>
+  <data name="tDocumentEdit" xml:space="preserve">
+    <value>Document Edit</value>
+  </data>
+  <data name="tDocumentAdd" xml:space="preserve">
+    <value>New Document</value>
+  </data>
+  <data name="tDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="Load" xml:space="preserve">
+    <value>Attach</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="LinkTitle" xml:space="preserve">
+    <value>File Name (*.url)</value>
+  </data>
+  <data name="Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="HTMLTitle" xml:space="preserve">
+    <value>HTML Title</value>
+  </data>
+  <data name="HTMLText" xml:space="preserve">
+    <value>HTML Text</value>
+  </data>
+  <data name="EditDictionary" xml:space="preserve">
+    <value>Edit dictionary</value>
+  </data>
+  <data name="ProjectNotSet" xml:space="preserve">
+    <value>[ not set ]</value>
+  </data>
+  <data name="tbSaveEdit" xml:space="preserve">
+    <value>Edit Document</value>
+  </data>
+  <data name="tbSaveCreate" xml:space="preserve">
+    <value>Create Document</value>
+  </data>
+  <data name="tbSaveGoToList" xml:space="preserve">
+    <value>Back to the Documents List</value>
+  </data>
+  <data name="tbSaveSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbSaveCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tOneMoreItem" xml:space="preserve">
+    <value>Create another one</value>
+  </data>
+  <data name="tBasicInfo" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="tCategoryInfo" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="tAttachedFiles" xml:space="preserve">
+    <value>File Attaching</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Do really want to delete this document?</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Keyword" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="ModifiedDate" xml:space="preserve">
+    <value>Modified Date</value>
+  </data>
+  <data name="tNoProject" xml:space="preserve">
+    <value>No Project</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="tReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ResetFilter" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="ResetGroup" xml:space="preserve">
+    <value>Reset Group</value>
+  </data>
+  <data name="tGroupBy" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="NoneProject" xml:space="preserve">
+    <value>None Project Documents</value>
+  </data>
+  <data name="Any2" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="SelectedOnly" xml:space="preserve">
+    <value>Only following</value>
+  </data>
+  <data name="ExcludeSelected" xml:space="preserve">
+    <value>Exclude following</value>
+  </data>
+  <data name="tMyRole" xml:space="preserve">
+    <value>My Role</value>
+  </data>
+  <data name="tResource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="HideFilter" xml:space="preserve">
+    <value>Hide Filter</value>
+  </data>
+  <data name="SetGrouping" xml:space="preserve">
+    <value>Set Group</value>
+  </data>
+  <data name="ShowFilter" xml:space="preserve">
+    <value>Show Filter</value>
+  </data>
+  <data name="tbDocumentsList" xml:space="preserve">
+    <value>Documents Tracking Center</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="XMLExport" xml:space="preserve">
+    <value>Export to XML</value>
+  </data>
+  <data name="DocumentId" xml:space="preserve">
+    <value>Document ID</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created by</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Updated</value>
+  </data>
+  <data name="tbView" xml:space="preserve">
+    <value>Document Information</value>
+  </data>
+  <data name="tbAdd" xml:space="preserve">
+    <value>Add ToDo</value>
+  </data>
+  <data name="AddResources" xml:space="preserve">
+    <value>Add Resources</value>
+  </data>
+  <data name="tbAddDoc" xml:space="preserve">
+    <value>Add File</value>
+  </data>
+  <data name="tbAddCom" xml:space="preserve">
+    <value>Add Comment</value>
+  </data>
+  <data name="tbViewEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="EditCategories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Add To Favorites</value>
+  </data>
+  <data name="tbDocumentBack" xml:space="preserve">
+    <value>Back to the Documents List</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="tbDocumentInfo" xml:space="preserve">
+    <value>Document Information</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="tbDocumentRes" xml:space="preserve">
+    <value>Document Resources</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify Resources</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="CanManage" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="Declined" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="DeleteTxt" xml:space="preserve">
+    <value>&lt;p align="left" class="text"&gt;The deleting Document can have related timesheets. You can delete such timesheets or leave them.&lt;br&gt;
+&lt;br&gt;
+- To delete Document and timesheet records linked with this Document click "Delete All".&lt;br&gt;
+&lt;br&gt;
+-To delete Document without deleting timesheet records click "Delete Document".&lt;br&gt;
+&lt;br&gt;
+-To cancel this action, click "Cancel".&lt;/p&gt;</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Delete All</value>
+  </data>
+  <data name="DeleteDocument" xml:space="preserve">
+    <value>Delete Document</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="WarningToDo" xml:space="preserve">
+    <value>Do you really want to delete this todo ?</value>
+  </data>
+  <data name="tbToDo" xml:space="preserve">
+    <value>To-Dos</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Suspended" xml:space="preserve">
+    <value>Suspended by</value>
+  </data>
+  <data name="CompletedByManager" xml:space="preserve">
+    <value>Completed by</value>
+  </data>
+  <data name="CompletedByResource" xml:space="preserve">
+    <value>Completed by</value>
+  </data>
+  <data name="NotCompleted" xml:space="preserve">
+    <value>Not Completed</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Decline</value>
+  </data>
+  <data name="UpdateTimesheetText" xml:space="preserve">
+    <value>You can fill in your working hours for the certain date</value>
+  </data>
+  <data name="SpentHours" xml:space="preserve">
+    <value>Spent Hours</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>You can set the new status of the Document and fill in your working hours for the certain date.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Change the document status by making a selection from the drop-down menu, then select Update.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Managers are authorized to complete work on the document by making the selection below.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>Managers are authorized to suspend work on the document by making the selection below.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>Work on this document is complete.  However, as a manager, you may re-start the work by clicking the  button below.</value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>The work at this Document is suspended, but as a Manager you can resume it. To resume the work press the "Resume" button below.</value>
+  </data>
+  <data name="Text7" xml:space="preserve">
+    <value>Manager has assigned this Document to you. Press the "Accept" button if 
+you accept the appointment. Press the "Decline" button if you decline the appointment.</value>
+  </data>
+  <data name="Text8" xml:space="preserve">
+    <value>This Document is not active yet, but as a Manager you can activate it. To activate the Document press the "Activate" button below.</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="Suspend" xml:space="preserve">
+    <value>Suspend</value>
+  </data>
+  <data name="Uncomplete" xml:space="preserve">
+    <value>Uncomplete</value>
+  </data>
+  <data name="Resume" xml:space="preserve">
+    <value>Resume</value>
+  </data>
+  <data name="QuickTracking" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="tDocumentVersionAdd" xml:space="preserve">
+    <value>New Document Version</value>
+  </data>
+  <data name="tAddVersion" xml:space="preserve">
+    <value>Add Version</value>
+  </data>
+  <data name="tVesions" xml:space="preserve">
+    <value>Document Versions</value>
+  </data>
+  <data name="tbAddTimeSheet" xml:space="preserve">
+    <value>Add Timesheet Item</value>
+  </data>
+  <data name="SharedDoc" xml:space="preserve">
+    <value>This Document is shared by</value>
+  </data>
+  <data name="FilterNotSet" xml:space="preserve">
+    <value>Filter is not set</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Publish</value>
+  </data>
+  <data name="PublishTo" xml:space="preserve">
+    <value>Select the Folder for publication:</value>
+  </data>
+  <data name="Publication" xml:space="preserve">
+    <value>Publication</value>
+  </data>
+  <data name="ActivateDocument" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="AddVersionText" xml:space="preserve">
+    <value>Select Add Version in order to upload a new version of the document.</value>
+  </data>
+  <data name="AddVersion" xml:space="preserve">
+    <value>Add Version</value>
+  </data>
+  <data name="tDuplicateName" xml:space="preserve">
+    <value>* Duplication file name. Please select another folder.</value>
+  </data>
+  <data name="tClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="tNoClient" xml:space="preserve">
+    <value>No Client</value>
+  </data>
+  <data name="tClients" xml:space="preserve">
+    <value>Clients</value>
+  </data>
+  <data name="tabGeneral" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="tbDetails" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="tabLibrary" xml:space="preserve">
+    <value>File Library</value>
+  </data>
+  <data name="tabFinance" xml:space="preserve">
+    <value>Finance</value>
+  </data>
+  <data name="tabDiscussions" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+	<data name="CreatedDate" xml:space="preserve">
+    <value>Created</value>
+  </data>
+</root>

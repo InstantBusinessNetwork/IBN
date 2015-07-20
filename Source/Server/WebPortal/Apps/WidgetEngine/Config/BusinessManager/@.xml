@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="WidgetEngine.GoogleGadgetRequestHandler" metaClass="GoogleGadget" method="*" type="Mediachase.IBN.Business.WidgetEngine.GoogleGadgetRequestHandler, Mediachase.IBN.Business" />
+			<Handler id="WidgetEngine.CustomPageRequestHandler" metaClass="CustomPage" method="*" type="Mediachase.IBN.Business.WidgetEngine.CustomPageRequestHandler, Mediachase.IBN.Business" />
+		</add>
+	</Handlers>
+	<Plugins>
+		<add>
+			<Plugin id="WidgetEngine.LocalDiskEntityObjectPlugin.Load" metaClass="*" method="Load" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.LocalDiskEntityObjectPlugin, Mediachase.IBN.Business" />
+			<Plugin id="WidgetEngine.LocalDiskEntityObjectPlugin.List" metaClass="*" method="List" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.LocalDiskEntityObjectPlugin, Mediachase.IBN.Business" />
+
+			<Plugin id="WidgetEngine.CustomPageNormalizationPlugin.List" metaClass="CustomPage" method="List" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.IBN.Business.WidgetEngine.CustomPageNormalizationPlugin, Mediachase.IBN.Business" />
+		</add>
+	</Plugins>
+</BusinessManager>

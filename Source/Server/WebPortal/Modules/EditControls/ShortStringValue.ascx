@@ -1,0 +1,3 @@
+<%@ Control Language="c#" Inherits="Mediachase.UI.Web.Modules.EditControls.ShortStringValue" Codebehind="ShortStringValue.ascx.cs" %>
+<asp:TextBox id="txtValue" runat="server" CssClass="text" Wrap="False" Width="300" MaxLength="512"></asp:TextBox>
+<asp:RequiredFieldValidator id="txtValueRFValidator" runat="server" ErrorMessage="*" ControlToValidate="txtValue"	Display="Dynamic"></asp:RequiredFieldValidator>

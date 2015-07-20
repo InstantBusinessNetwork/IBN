@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WorkingTimeSetup" xml:space="preserve">
+    <value>Календари рабочего времени</value>
+  </data>
+  <data name="CompanySiteInfo" xml:space="preserve">
+    <value>Информация о компании</value>
+  </data>
+  <data name="GeneralTop" xml:space="preserve">
+    <value>Используйте ссылки на этой странице для управления порталом. С этой страницы вы можете перейти к административным задачам.  
+</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Администрирование </value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Используйте ссылки этой группы для перехода к административным свойствам сайта.</value>
+  </data>
+  <data name="SiteTheme" xml:space="preserve">
+    <value>Вид портала</value>
+  </data>
+  <data name="ManageDictionaries" xml:space="preserve">
+    <value>Справочники</value>
+  </data>
+  <data name="MessageTemplates" xml:space="preserve">
+    <value>Шаблоны уведомлений</value>
+  </data>
+  <data name="ReminderTemplates" xml:space="preserve">
+    <value>Шаблоны напоминаний</value>
+  </data>
+  <data name="MailIncidents" xml:space="preserve">
+    <value>Настройки для внешних инцидентов</value>
+  </data>
+  <data name="WebStubs" xml:space="preserve">
+    <value>Закладки</value>
+  </data>
+  <data name="DocumentTypes" xml:space="preserve">
+    <value>Типы файлов</value>
+  </data>
+  <data name="PortalSetup" xml:space="preserve">
+    <value>Настройки портала</value>
+  </data>
+  <data name="Dictionaries" xml:space="preserve">
+    <value>Справочники</value>
+  </data>
+  <data name="RoutingWorkflow" xml:space="preserve">
+    <value>Системные сообщения</value>
+  </data>
+  <data name="Reports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="tUserAuthHist" xml:space="preserve">
+    <value>Trending/Historical User Authentication Patterns</value>
+  </data>
+  <data name="tGroupAndUserStat" xml:space="preserve">
+    <value>Статистика групп и пользователей</value>
+  </data>
+  <data name="tConfHist" xml:space="preserve">
+    <value>История конференций</value>
+  </data>
+  <data name="tMesHist" xml:space="preserve">
+    <value>История сообщений</value>
+  </data>
+  <data name="tMostActive" xml:space="preserve">
+    <value>Наиболее активные группы и пользователи</value>
+  </data>
+  <data name="tStatusReport" xml:space="preserve">
+    <value>Отчет о вашей работе</value>
+  </data>
+  <data name="tStatusReportProject" xml:space="preserve">
+    <value>Отчет о работе над проектом</value>
+  </data>
+  <data name="tXMLReport" xml:space="preserve">
+    <value>Создать отчет</value>
+  </data>
+  <data name="tAlertsHist" xml:space="preserve">
+    <value>История уведомлений</value>
+  </data>
+  <data name="tPortalSetupH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования настроек портала.</value>
+  </data>
+  <data name="tDictionariesH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования справочников.</value>
+  </data>
+  <data name="tReportsH" xml:space="preserve">
+    <value>Используйте эти ссылки для просмотра административных отчетов.</value>
+  </data>
+  <data name="tRoutingH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования шаблонов сообщений, настроек системы уведомленя и системы напоминания.</value>
+  </data>
+  <data name="tErrorLog" xml:space="preserve">
+    <value>Список ошибок</value>
+  </data>
+  <data name="tIBNSnapshotInfo" xml:space="preserve">
+    <value>Общая статистика портала</value>
+  </data>
+  <data name="TotalUsers" xml:space="preserve">
+    <value>Пользователей</value>
+  </data>
+  <data name="TotalGroups" xml:space="preserve">
+    <value>Групп пользователей</value>
+  </data>
+  <data name="SecureGroups" xml:space="preserve">
+    <value>Системных групп</value>
+  </data>
+  <data name="PartnerGroups" xml:space="preserve">
+    <value>Партнерских групп</value>
+  </data>
+  <data name="ContactGroups" xml:space="preserve">
+    <value>Контактных групп</value>
+  </data>
+  <data name="ActiveUsers" xml:space="preserve">
+    <value>Активных пользователей</value>
+  </data>
+  <data name="DisabledUsers" xml:space="preserve">
+    <value>Неактивных пользователей</value>
+  </data>
+  <data name="PartnerUsers" xml:space="preserve">
+    <value>Партнеров</value>
+  </data>
+  <data name="RegularUsers" xml:space="preserve">
+    <value>Обычных пользователей</value>
+  </data>
+  <data name="ExternalUsers" xml:space="preserve">
+    <value>Внешних пользователей</value>
+  </data>
+  <data name="UserAndGroupStats" xml:space="preserve">
+    <value>Статистика групп и пользователей</value>
+  </data>
+  <data name="AccessUsageStats" xml:space="preserve">
+    <value>Статистика доступа</value>
+  </data>
+  <data name="IMLoginCount" xml:space="preserve">
+    <value>Подключений к {0} Client</value>
+  </data>
+  <data name="MessagesSent" xml:space="preserve">
+    <value>Сообщений отправлено</value>
+  </data>
+  <data name="MessagesReceived" xml:space="preserve">
+    <value>Сообщений получено</value>
+  </data>
+  <data name="tReport" xml:space="preserve">
+    <value>Административные отчеты</value>
+  </data>
+  <data name="tDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tErrorId" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="tCreationTime" xml:space="preserve">
+    <value>Время возникновения</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить все записи об ошибках ?</value>
+  </data>
+  <data name="AlertUser" xml:space="preserve">
+    <value>Система уведомления</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Имя отправителя</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Фамилия отправителя</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="EmailDuplicate" xml:space="preserve">
+    <value>Пользователь с таким e-mail уже существует.</value>
+  </data>
+  <data name="PortalLoginCount" xml:space="preserve">
+    <value>Входов в портал</value>
+  </data>
+  <data name="UseSSL" xml:space="preserve">
+    <value>Формат ссылок в уведомлениях</value>
+  </data>
+  <data name="tCustomSQLReport" xml:space="preserve">
+    <value>Пользовательский SQL запрос</value>
+  </data>
+  <data name="tProcess" xml:space="preserve">
+    <value>Выполнить</value>
+  </data>
+  <data name="Customization" xml:space="preserve">
+    <value>Object/Custom Field Editor</value>
+  </data>
+  <data name="ElementCustomization" xml:space="preserve">
+    <value>Настройка элемента</value>
+  </data>
+  <data name="SelectElement" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="SelectType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>[ Все элементы ]</value>
+  </data>
+  <data name="AddMarkedFields" xml:space="preserve">
+    <value>Добавить отмеченные поля</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Поле</value>
+  </data>
+  <data name="DataType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="BlockPropertyAvailableFields" xml:space="preserve">
+    <value>Доступные поля</value>
+  </data>
+  <data name="AvailableFields" xml:space="preserve">
+    <value>Доступные поля</value>
+  </data>
+  <data name="NewField" xml:space="preserve">
+    <value>Новое поле</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="CreateField" xml:space="preserve">
+    <value>Новое поле</value>
+  </data>
+  <data name="EditField" xml:space="preserve">
+    <value>Редактирование поля</value>
+  </data>
+  <data name="FieldAllowNulls" xml:space="preserve">
+    <value>Разрешить пустые значения</value>
+  </data>
+  <data name="FieldSaveHistory" xml:space="preserve">
+    <value>Сохранять историю изменений</value>
+  </data>
+  <data name="FieldAllowSearch" xml:space="preserve">
+    <value>Разрешить поиск</value>
+  </data>
+  <data name="FieldName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="FieldFriendlyName" xml:space="preserve">
+    <value>Отображаемое название</value>
+  </data>
+  <data name="FieldDescription" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="FieldType" xml:space="preserve">
+    <value>Тип данных</value>
+  </data>
+  <data name="ElementName" xml:space="preserve">
+    <value>Элемент</value>
+  </data>
+  <data name="DeleteWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить это поле?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="AddFields" xml:space="preserve">
+    <value>Добавить отмеченные поля</value>
+  </data>
+  <data name="FieldDetails" xml:space="preserve">
+    <value>Просмотр поля</value>
+  </data>
+  <data name="BackToCustomization" xml:space="preserve">
+    <value>Вернуться к настройке</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="tMailBoxes" xml:space="preserve">
+    <value>E-mail ящики</value>
+  </data>
+  <data name="DictItems" xml:space="preserve">
+    <value>Элементы справочника</value>
+  </data>
+  <data name="tCustomReports" xml:space="preserve">
+    <value>Созданные отчеты</value>
+  </data>
+  <data name="Dictionary" xml:space="preserve">
+    <value>Справочник</value>
+  </data>
+  <data name="Editable" xml:space="preserve">
+    <value>Расширяемый справочник</value>
+  </data>
+  <data name="Multiline" xml:space="preserve">
+    <value>Разрешить выбор нескольких значений</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Позиция</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Показывать в таблице</value>
+  </data>
+  <data name="BackToListInfo" xml:space="preserve">
+    <value>Вернуться к информации о списке</value>
+  </data>
+  <data name="DisplayColumn" xml:space="preserve">
+    <value>Показывать</value>
+  </data>
+  <data name="FieldNameDuplictaion" xml:space="preserve">
+    <value>Поле с таким именем уже существует. Попробуйте задать другое имя.</value>
+  </data>
+  <data name="tWeightToolTip" xml:space="preserve">
+    <value>Место создаваемого поля в списке полей объекта.</value>
+  </data>
+  <data name="tBlockPropertyCurrentlyUsed" xml:space="preserve">
+    <value>Поля, используемые блоком</value>
+  </data>
+  <data name="tCurrentlyUsed" xml:space="preserve">
+    <value>Используемые поля</value>
+  </data>
+  <data name="tBlockHelpSelectedFields" xml:space="preserve">
+    <value>Вы можете сформировать структуру блоков настраиваемых полей для страницы просмотра каждого из объектов. Воспользуйтесь кнопкой «Новый блок», выберите место расположения создаваемого блока и в его свойствах укажите поля, которые будут отображаться.</value>
+  </data>
+  <data name="tHelpSelectedFields" xml:space="preserve">
+    <value>Используемые поля будут добавлены ко всем указанным объектам. Настройка отображения настраиваемых полей производится на странице "Блоки настраиваемых полей".</value>
+  </data>
+  <data name="tHelpAvailableFields" xml:space="preserve">
+    <value>Выберите поля, которые необходимо включить в объект, и нажмите "Добавить отмеченные поля".</value>
+  </data>
+  <data name="tAllTypes" xml:space="preserve">
+    <value>[Любой]</value>
+  </data>
+  <data name="tAddItem" xml:space="preserve">
+    <value>Добавить элемент справочника</value>
+  </data>
+  <data name="tValue" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tGloballyFields" xml:space="preserve">
+    <value>Список настраиваемых полей</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="tReset" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="tShow" xml:space="preserve">
+    <value>Отобразить</value>
+  </data>
+  <data name="tInUse" xml:space="preserve">
+    <value>Используемые</value>
+  </data>
+  <data name="tNotInUse" xml:space="preserve">
+    <value>Неиспользуемые</value>
+  </data>
+  <data name="tAll" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="tStandardListTemp" xml:space="preserve">
+    <value>Шаблоны списков</value>
+  </data>
+  <data name="tNewList" xml:space="preserve">
+    <value>Новый шаблон</value>
+  </data>
+  <data name="tListTempText" xml:space="preserve">
+    <value>Вы можете создать шаблоны списков, с помощью которых пользователи портала смогут легко и быстро создавать свои собственные списки.</value>
+  </data>
+  <data name="DeleteWarning2" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот шаблон?</value>
+  </data>
+  <data name="tTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="tFields" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="tTemplateInfo" xml:space="preserve">
+    <value>Информация о шаблоне списка</value>
+  </data>
+  <data name="tAddOneField" xml:space="preserve">
+    <value>Добавить поле</value>
+  </data>
+  <data name="tCustomizeHomePage" xml:space="preserve">
+    <value>Вид страницы "Вход в портал"</value>
+  </data>
+  <data name="tCreatedBy" xml:space="preserve">
+    <value>Создал</value>
+  </data>
+  <data name="tCreated" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="tOnlyLettersAndDigits" xml:space="preserve">
+    <value>Разрешены только символы 'A-Z', 'a-z', '0-9' и '_'!</value>
+  </data>
+  <data name="tSystemField" xml:space="preserve">
+    <value>Системное поле</value>
+  </data>
+  <data name="tGlobalField" xml:space="preserve">
+    <value>Глобальное поле</value>
+  </data>
+  <data name="tUserField" xml:space="preserve">
+    <value>Пользовательское поле</value>
+  </data>
+  <data name="tBroadcastAlerts" xml:space="preserve">
+    <value>Важные сообщения</value>
+  </data>
+  <data name="tAlertAdd" xml:space="preserve">
+    <value>Новое сообщение</value>
+  </data>
+  <data name="tWarningGroups" xml:space="preserve">
+    <value>Вы должны выбрать хотя бы одну группу!</value>
+  </data>
+  <data name="tMessageText" xml:space="preserve">
+    <value>Текст сообщения</value>
+  </data>
+  <data name="tSelectGroups" xml:space="preserve">
+    <value>Группы</value>
+  </data>
+  <data name="tExpDate" xml:space="preserve">
+    <value>Срок</value>
+  </data>
+  <data name="tSend" xml:space="preserve">
+    <value>Отправить</value>
+  </data>
+  <data name="tNoItems" xml:space="preserve">
+    <value>Важных сообщений на сегодня нет!</value>
+  </data>
+  <data name="tCustomizationH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования настраиваемых полей.</value>
+  </data>
+  <data name="tDataDictionaryManager" xml:space="preserve">
+    <value>Список настраиваемых полей</value>
+  </data>
+  <data name="tFieldsEditor" xml:space="preserve">
+    <value>Расширение бизнес объектов</value>
+  </data>
+  <data name="tListTemplates" xml:space="preserve">
+    <value>Шаблоны списков</value>
+  </data>
+  <data name="tBlockName" xml:space="preserve">
+    <value>Имя блока</value>
+  </data>
+  <data name="tRepConfig" xml:space="preserve">
+    <value>Настройки безопасности для отчетов</value>
+  </data>
+  <data name="tSecurity" xml:space="preserve">
+    <value>Настройки безопасности</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="Rights" xml:space="preserve">
+    <value>Право</value>
+  </data>
+  <data name="tAllow" xml:space="preserve">
+    <value>Разрешить</value>
+  </data>
+  <data name="tDeny" xml:space="preserve">
+    <value>Запретить</value>
+  </data>
+  <data name="tEditSec" xml:space="preserve">
+    <value>Настройки безопасности для</value>
+  </data>
+  <data name="tRoles" xml:space="preserve">
+    <value>[Роли]</value>
+  </data>
+  <data name="tEmpty" xml:space="preserve">
+    <value>--Нет элементов--</value>
+  </data>
+  <data name="tAdmins" xml:space="preserve">
+    <value>Администраторы</value>
+  </data>
+  <data name="tPPManager" xml:space="preserve">
+    <value>Руководители</value>
+  </data>
+  <data name="tHDM" xml:space="preserve">
+    <value>Служба поддержки</value>
+  </data>
+  <data name="tGlobalPManager" xml:space="preserve">
+    <value>Проект-менеджеры</value>
+  </data>
+  <data name="tGlobalEManager" xml:space="preserve">
+    <value>Исполнительные менеджеры</value>
+  </data>
+  <data name="tAny" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Вы хотите удалить эту запись?</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Доступны</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Выбраны</value>
+  </data>
+  <data name="tNotSet" xml:space="preserve">
+    <value>Не выбрана</value>
+  </data>
+  <data name="tCategory" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="tIsPersonal" xml:space="preserve">
+    <value>Тип отчета</value>
+  </data>
+  <data name="tGlobalType" xml:space="preserve">
+    <value>Общий</value>
+  </data>
+  <data name="tPersonalType" xml:space="preserve">
+    <value>Пользовательский</value>
+  </data>
+  <data name="tProjectType" xml:space="preserve">
+    <value>Проектный</value>
+  </data>
+  <data name="tNewBlock" xml:space="preserve">
+    <value>Новый блок</value>
+  </data>
+  <data name="tMove" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="tProperties" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="tWarningControl" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот блок?</value>
+  </data>
+  <data name="tUseAlerts" xml:space="preserve">
+    <value>Включить систему уведомления</value>
+  </data>
+  <data name="tPPage" xml:space="preserve">
+    <value>Свойства блока</value>
+  </data>
+  <data name="SpecialTemplates" xml:space="preserve">
+    <value>Шаблоны специальных сообщений</value>
+  </data>
+  <data name="tSecurityH" xml:space="preserve">
+    <value>Безопасность</value>
+  </data>
+  <data name="tEnableAD" xml:space="preserve">
+    <value>Разрешить проверку подлинности пользователя Windows</value>
+  </data>
+  <data name="tStartIP" xml:space="preserve">
+    <value>Начальный IP адрес</value>
+  </data>
+  <data name="tEndIP" xml:space="preserve">
+    <value>Конечный IP адрес</value>
+  </data>
+  <data name="tAllowedRange" xml:space="preserve">
+    <value>Разрешенные диапазоны IP адресов</value>
+  </data>
+  <data name="tNewRange" xml:space="preserve">
+    <value>Новый диапазон</value>
+  </data>
+  <data name="tLDAPSettings" xml:space="preserve">
+    <value>LDAP настройки</value>
+  </data>
+  <data name="tLDAPSettingsView" xml:space="preserve">
+    <value>Просмотр LDAP настроек</value>
+  </data>
+  <data name="tLDAPSettingsEdit" xml:space="preserve">
+    <value>Редактирование LDAP настроек</value>
+  </data>
+  <data name="tLDAPSettingsAdd" xml:space="preserve">
+    <value>Новые LDAP настройки</value>
+  </data>
+  <data name="tWarningDelSets" xml:space="preserve">
+    <value>Вы действительно хотите удалить эти настройки?</value>
+  </data>
+  <data name="tDomain" xml:space="preserve">
+    <value>Домен</value>
+  </data>
+  <data name="tAutosync" xml:space="preserve">
+    <value>Автосинхронизация</value>
+  </data>
+  <data name="tUserName" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="tPassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="tConfirm" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="tFilter" xml:space="preserve">
+    <value>Фильтр</value>
+  </data>
+  <data name="tActivate" xml:space="preserve">
+    <value>Активировать</value>
+  </data>
+  <data name="tDeactivate" xml:space="preserve">
+    <value>Деактивировать</value>
+  </data>
+  <data name="tSynchronize" xml:space="preserve">
+    <value>Синхронизировать</value>
+  </data>
+  <data name="tLastSynch" xml:space="preserve">
+    <value>Последняя синхронизация</value>
+  </data>
+  <data name="tInterval" xml:space="preserve">
+    <value>Интервал синхронизации</value>
+  </data>
+  <data name="tStart" xml:space="preserve">
+    <value>Начало синхронизации</value>
+  </data>
+  <data name="Clients" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="tLDAPLogs" xml:space="preserve">
+    <value>Результаты синхронизации</value>
+  </data>
+  <data name="tLDAPLogView" xml:space="preserve">
+    <value>Просмотр результатов синхронизации</value>
+  </data>
+  <data name="tWarningDelLog" xml:space="preserve">
+    <value>Вы действительно хотите удалить эти результаты синхронизации?</value>
+  </data>
+  <data name="tSynchDate" xml:space="preserve">
+    <value>Дата синхронизации</value>
+  </data>
+  <data name="tUserCount" xml:space="preserve">
+    <value>Количество пользователей</value>
+  </data>
+  <data name="tIsBitField" xml:space="preserve">
+    <value>Битовое поле</value>
+  </data>
+  <data name="tIBNName" xml:space="preserve">
+    <value>Поле портала</value>
+  </data>
+  <data name="tLdapName" xml:space="preserve">
+    <value>Поле LDAP</value>
+  </data>
+  <data name="tSettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="tNewValue" xml:space="preserve">
+    <value>Новое значение</value>
+  </data>
+  <data name="tOldValue" xml:space="preserve">
+    <value>Старое значение</value>
+  </data>
+  <data name="tDeleteChecked" xml:space="preserve">
+    <value>Удалить выделенные</value>
+  </data>
+  <data name="tWarningChecked" xml:space="preserve">
+    <value>Вы действительно хотите удалить все выделенные результаты синхронизации?</value>
+  </data>
+  <data name="tDeleteEmpty" xml:space="preserve">
+    <value>Удалить пустые</value>
+  </data>
+  <data name="tWarningEmpty" xml:space="preserve">
+    <value>Вы действительно хотите удалить все пустые результаты синхронизации?</value>
+  </data>
+  <data name="tMdpCustomization" xml:space="preserve">
+    <value>Интерфейс бизнес объектов</value>
+  </data>
+  <data name="Port" xml:space="preserve">
+    <value>Порт</value>
+  </data>
+  <data name="Schema" xml:space="preserve">
+    <value>Схема</value>
+  </data>
+  <data name="sSearchSettings" xml:space="preserve">
+    <value>Настройки поиска</value>
+  </data>
+  <data name="sAllowFTS" xml:space="preserve">
+    <value>Разрешить полнотекстовый поиск (по файлам библиотеки)</value>
+  </data>
+  <data name="tNotInstalled" xml:space="preserve">
+    <value>Полнотекстовый поисковый сервис Microsoft не установлен. Обратитесь за помощью к вашему системному администратору.</value>
+  </data>
+  <data name="tInformation" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="tIndexSize" xml:space="preserve">
+    <value>Размер индекса</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="tUseWebDAV" xml:space="preserve">
+    <value>Использовать WebDAV</value>
+  </data>
+  <data name="tAdditionalSettings" xml:space="preserve">
+    <value>Настройки файлов и форм</value>
+  </data>
+  <data name="tWebDAVSettings" xml:space="preserve">
+    <value>Редактирование документов на сервере</value>
+  </data>
+  <data name="tAllowFTS" xml:space="preserve">
+    <value>Разрешить полнотекстовый поиск</value>
+  </data>
+  <data name="tFTSHit" xml:space="preserve">
+    <value>Наша система позволяет производить полнотекстовый поиск по файлам библиотеки. Вы можете включить или выключить такую возможность. &lt;br/&gt;Следующие типы файлов поддерживаются по умолчанию: PPT (презентации Microsoft PowerPoint), DOC (документы Microsoft Word), XLS (книги Microsoft Excel), документы HTML, документы TXT. &lt;br/&gt; Фильтры для других типов можно скачать со следующих сайтов: &lt;br/&gt;</value>
+  </data>
+  <data name="tFTSNotEnabledMessage" xml:space="preserve">
+    <value>Наша система позволяет производить полнотекстовый поиск по файлам библиотеки. Для этого на SQL-сервере должна работать служба Full-Text Search. В настойщее время эта служба не запущена.</value>
+  </data>
+  <data name="tFTSNotInstalledMessage" xml:space="preserve">
+    <value>Наша система позволяет производить полнотекстовый поиск по файлам библиотеки. Для этого на SQL-сервере должна работать служба Full-Text Search. В настойщее время эта служба не установлена.</value>
+  </data>
+  <data name="tRunFTS" xml:space="preserve">
+    <value>Запустить службу Full-Text Search</value>
+  </data>
+  <data name="tAdditionalInfo" xml:space="preserve">
+    <value>Дополнительная информация </value>
+  </data>
+  <data name="tAllowWebDAV" xml:space="preserve">
+    <value>Разрешить серверное редактирование файлов</value>
+  </data>
+  <data name="tAnd" xml:space="preserve">
+    <value>и</value>
+  </data>
+  <data name="tArchiveFiles" xml:space="preserve">
+    <value>файлы архивов (например CAB, ZIP, RAR или самораспаковывающиеся EXE файлы).</value>
+  </data>
+  <data name="tBrowserPlugins" xml:space="preserve">
+    <value>Плагины для браузеров</value>
+  </data>
+  <data name="tEnableWebDAV" xml:space="preserve">
+    <value>Включить возможность серверного редактирования файлов</value>
+  </data>
+  <data name="tFTS" xml:space="preserve">
+    <value>Полнотекстовый поиск</value>
+  </data>
+  <data name="tHere" xml:space="preserve">
+    <value>здесь</value>
+  </data>
+  <data name="tWebDAV" xml:space="preserve">
+    <value>Серверное редактирование файлов</value>
+  </data>
+  <data name="tWebDAVHint" xml:space="preserve">
+    <value>&lt;b&gt;Примечание.&lt;/b&gt; Серверное редактирование будет работать лишь у тех пользователей, у которых установлены соответствующие плагины к браузерам. Последние версии плагинов для браузеров Microsoft Internet Explorer и Mozilla FireFox Вы всегда можете получить по следующей ссылке:</value>
+  </data>
+  <data name="tWebDAVNotDefinedMessage" xml:space="preserve">
+    <value>Наша система позволяет производить серверное редактирование файлов (посредством протокола WebDav). Вы можете включить или выключить такую возможность.</value>
+  </data>
+  <data name="tCompanyProfile" xml:space="preserve">
+    <value>Профиль компании</value>
+  </data>
+  <data name="tDataH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования таких данных как календари рабочего времени, справочники и др.</value>
+  </data>
+  <data name="tComSetH" xml:space="preserve">
+    <value>Используйте эти ссылки для редактирования общих настроек портала.</value>
+  </data>
+  <data name="tEmailBoxes" xml:space="preserve">
+    <value>E-mail ящики</value>
+  </data>
+  <data name="tReportsSecurity" xml:space="preserve">
+    <value>Безопасность для отчетов</value>
+  </data>
+  <data name="tSMTPSettings" xml:space="preserve">
+    <value>SMTP настройки</value>
+  </data>
+  <data name="tCommonSettings" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="tAddToolsCustSQLRep" xml:space="preserve">
+    <value>Пользовательский SQL запрос</value>
+  </data>
+  <data name="tAddToolsErrList" xml:space="preserve">
+    <value>Список ошибок</value>
+  </data>
+  <data name="tAddToolsH" xml:space="preserve">
+    <value>Используйте эти ссылки для просмотра дополнительной информации в портале.</value>
+  </data>
+  <data name="tAddToolsImpMess" xml:space="preserve">
+    <value>Важные сообщения</value>
+  </data>
+  <data name="tAddToolsStat" xml:space="preserve">
+    <value>Статистика портала</value>
+  </data>
+  <data name="tAddToolsWebstubs" xml:space="preserve">
+    <value>Закладки</value>
+  </data>
+  <data name="tFilesFormsComSet" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="tFilesFormsDocTypes" xml:space="preserve">
+    <value>Типы файлов</value>
+  </data>
+  <data name="tFilesFormsH" xml:space="preserve">
+    <value>Используйте эти ссылки для настроек работы с файлами и формами.</value>
+  </data>
+  <data name="tHelpDeskBlackList" xml:space="preserve">
+    <value>Черный список адресов</value>
+  </data>
+  <data name="tHelpDeskComSet" xml:space="preserve">
+    <value>Общие настройки инцидентов</value>
+  </data>
+  <data name="tHelpDeskEmailLog" xml:space="preserve">
+    <value>E-mail лог</value>
+  </data>
+  <data name="tHelpDeskH" xml:space="preserve">
+    <value>Используйте эти ссылки для настроек работы с инцидентами.</value>
+  </data>
+  <data name="tHelpDeskIssRules" xml:space="preserve">
+    <value>Автоопределение/правила</value>
+  </data>
+  <data name="tHelpDeskWhiteList" xml:space="preserve">
+    <value>Белый список адресов</value>
+  </data>
+  <data name="tFieldsBlocks" xml:space="preserve">
+    <value>Блоки настраиваемых полей</value>
+  </data>
+  <data name="tClearErrorLog" xml:space="preserve">
+    <value>Удалить информацию об ошибках</value>
+  </data>
+  <data name="tAddTools" xml:space="preserve">
+    <value>Дополнительные утилиты</value>
+  </data>
+  <data name="tEnableWinLogin" xml:space="preserve">
+    <value>Разрешить автоматический вход в портал</value>
+  </data>
+  <data name="tIPRangeMessage" xml:space="preserve">
+    <value>Укажите диапазон допустимых IP-адресов, с которых будет разрешён автоматический вход в портал.</value>
+  </data>
+  <data name="tWinLoginDisabledMessage" xml:space="preserve">
+    <value>Портал может быть настроен на автоматический вход в систему (без ввода логина и пароля) на основании проверки подлинности пользователя средствами Windows (Integrated Windows Security). При этом должно быть соответствие между пользователями портала и доменными учётными записями Windows. &lt;br/&gt;&lt;br/&gt;
+&lt;b&gt;Внимание!&lt;/b&gt; Перед настройкой Windows аутентификации ознакомьтесь с подробной инструкцией, представленной в разделе 2.10. &lt;i&gt;Настройки Windows Аутентификации&lt;/i&gt; документа «IBN 4.7 – Администрирование IBN портала».</value>
+  </data>
+  <data name="tWinLoginDisableMessage" xml:space="preserve">
+    <value>Отключить автоматический вход в портал</value>
+  </data>
+  <data name="tWinLoginEnabledMessage" xml:space="preserve">
+    <value>Портал настроен на автоматический вход в систему (без ввода логина и пароля) на основании проверки подлинности пользователя средствами Windows (Integrated Windows Security). &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Внимание!&lt;/b&gt; Убедитесь, что система настроена корректно. Подробная инструкция по настройке Windows Аутентификации описана в разделе 2.10. &lt;i&gt;Настройки Windows Аутентификации&lt;/i&gt; документа "IBN 4.7 - Администрирование IBN портала".</value>
+  </data>
+  <data name="tFilesForms" xml:space="preserve">
+    <value>Файлы и формы</value>
+  </data>
+  <data name="tFTSDisable" xml:space="preserve">
+    <value>Отключить полнотекстовый поиск</value>
+  </data>
+  <data name="tFTSIsWorking" xml:space="preserve">
+    <value>Полнотекстовый поиск по файлам библиотеки работает.</value>
+  </data>
+  <data name="tDisableWebDAV" xml:space="preserve">
+    <value>Отключить серверное редактирование файлов</value>
+  </data>
+  <data name="tWebDAVIsEnabled" xml:space="preserve">
+    <value>Серверное редактирование файлов включено</value>
+  </data>
+  <data name="tRoutingWorkflow" xml:space="preserve">
+    <value>Система сообщений и напоминаний</value>
+  </data>
+  <data name="tFTSError" xml:space="preserve">
+    <value>Возникла следующая ошибка</value>
+  </data>
+  <data name="tFTSErrorHint" xml:space="preserve">
+    <value>Рекомендуем Вам отключить и снова включить полнотекстовый поиск.</value>
+  </data>
+  <data name="tTM" xml:space="preserve">
+    <value>Менеджеры по учёту времени</value>
+  </data>
+  <data name="AnyGroup" xml:space="preserve">
+    <value>[ Любая ]</value>
+  </data>
+  <data name="AnyUser" xml:space="preserve">
+    <value>[ Любой ]</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>С</value>
+  </data>
+  <data name="Generate" xml:space="preserve">
+    <value>Сформировать</value>
+  </data>
+  <data name="status0" xml:space="preserve">
+    <value>Отключен</value>
+  </data>
+  <data name="status1" xml:space="preserve">
+    <value>В сети</value>
+  </data>
+  <data name="status2" xml:space="preserve">
+    <value>Невидим</value>
+  </data>
+  <data name="status3" xml:space="preserve">
+    <value>Не беспокоить</value>
+  </data>
+  <data name="status4" xml:space="preserve">
+    <value>Скоро вернсь</value>
+  </data>
+  <data name="status5" xml:space="preserve">
+    <value>Нет на месте</value>
+  </data>
+  <data name="StatusLog" xml:space="preserve">
+    <value>Лог состояний пользователей</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>По</value>
+  </data>
+  <data name="tIsRequired" xml:space="preserve">
+    <value>Обязательное</value>
+  </data>
+  <data name="tWidth" xml:space="preserve">
+    <value>Ширина</value>
+  </data>
+  <data name="tSearch" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="WorkTimeSetup" xml:space="preserve">
+    <value>Настройки рабочего времени</value>
+  </data>
+  <data name="WorkTimeStart" xml:space="preserve">
+    <value>Начало рабочего дня</value>
+  </data>
+  <data name="WorkTimeFinish" xml:space="preserve">
+    <value>Конец рабочего дня</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="UseImTurnOn" xml:space="preserve">
+    <value>Сервер передачи сообщений включен. Вы можете отключить его.</value>
+  </data>
+  <data name="DisableUseIm" xml:space="preserve">
+    <value>Отключить сервер передачи сообщений</value>
+  </data>
+  <data name="UseImTurnOff" xml:space="preserve">
+    <value>Сервер передачи сообщений выключен. Вы можете включить его.</value>
+  </data>
+  <data name="EnableUseIm" xml:space="preserve">
+    <value>Включить сервер передачи сообщений</value>
+  </data>
+  <data name="IMServer" xml:space="preserve">
+    <value>Сервер передачи сообщений</value>
+  </data>
+  <data name="SubjectTemplate" xml:space="preserve">
+    <value>Шаблон заголовка</value>
+  </data>
+  <data name="DatabaseSize" xml:space="preserve">
+    <value>Размер базы данных (Мб)</value>
+  </data>
+  <data name="Left" xml:space="preserve">
+    <value>осталось</value>
+  </data>
+  <data name="PortalRestrictions" xml:space="preserve">
+    <value>Ограничения портала</value>
+  </data>
+  <data name="Unlimited" xml:space="preserve">
+    <value>неограничено</value>
+  </data>
+  <data name="ExternalActiveUsers" xml:space="preserve">
+    <value>Внешних активных пользователей</value>
+  </data>
+  <data name="ExternalDisabledUsers" xml:space="preserve">
+    <value>Внешних неактивных пользователей</value>
+  </data>
+  <data name="InternalActiveUsers" xml:space="preserve">
+    <value>Внутренних активных пользователей</value>
+  </data>
+  <data name="InternalDisabledUsers" xml:space="preserve">
+    <value>Внутренних неактивных пользователей</value>
+  </data>
+  <data name="TotalActiveUsers" xml:space="preserve">
+    <value>Активных пользователей всего</value>
+  </data>
+  <data name="TotalDisabledUsers" xml:space="preserve">
+    <value>Неактивных пользователей всего</value>
+  </data>
+  <data name="UseIMServer" xml:space="preserve">
+    <value>Использовать IM сервер</value>
+  </data>
+  <data name="DefaultCalendar" xml:space="preserve">
+    <value>Календарь по умолчанию</value>
+  </data>
+</root>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="SelectDictionary">
+		<value>Справочник</value>
+	</data>
+	<data name="AddNewItem">
+		<value>Новый элемент</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="tTitle">
+		<value>Справочники</value>
+	</data>
+	<data name="Categories">
+		<value>Общие категории</value>
+	</data>
+	<data name="IncidentSeverities">
+		<value>Проявления инцидента</value>
+	</data>
+	<data name="ProjectTypes">
+		<value>Типы проекта</value>
+	</data>
+	<data name="IncidentTypes">
+		<value>Типы инцидента</value>
+	</data>
+	<data name="Name">
+		<value>Название</value>
+	</data>
+	<data name="Options">
+		<value>Настройки</value>
+	</data>
+	<data name="Required">
+		<value>Необходимо заполнить это поле</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить эту запись справочника?</value>
+	</data>
+	<data name="ProjectCategories">
+		<value>Категории проектов</value>
+	</data>
+	<data name="IncidentCategories">
+		<value>Категории инцидентов</value>
+	</data>
+	<data name="Clients">
+		<value>Клиенты</value>
+	</data>
+	<data name="Currency">
+		<value>Символы валют</value>
+	</data>
+	<data name="Exit">
+		<value>Выйти</value>
+	</data>
+	<data name="DictItems">
+		<value>Элементы справочника</value>
+	</data>
+	<data name="DocumentStatus">
+		<value>Статусы документа</value>
+	</data>
+	<data name="ListTypes">
+		<value>Типы списков</value>
+	</data>
+	<data name="ProjectPhases">
+		<value>Фазы проекта</value>
+	</data>
+	<data name="tWeight">
+		<value>Приоритеты</value>
+	</data>
+	<data name="Duplication">
+		<value>Такое значение справочника уже существует.</value>
+	</data>
+	<data name="RiskLevels">
+		<value>Уровни риска</value>
+	</data>
+	<data name="NewClient">
+		<value>Новый клиент</value>
+	</data>
+	<data name="Created">
+		<value>Добавлен</value>
+	</data>
+	<data name="tBusinessScore">
+		<value>Бизнес показатели</value>
+	</data>
+	<data name="tKey">
+		<value>Ключ</value>
+	</data>
+	<data name="tBasePlanSlot">
+		<value>Планы</value>
+	</data>
+	<data name="tIsDefault">
+		<value>По умолчанию</value>
+	</data>
+	<data name="tSortAsc">
+		<value>По возрастанию</value>
+	</data>
+	<data name="tSortDesc">
+		<value>По убыванию</value>
+	</data>
+</root>

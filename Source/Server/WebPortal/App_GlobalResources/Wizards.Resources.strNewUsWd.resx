@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTopTitle">
+		<value>You Are Adding/Requesting a New User to the Portal</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Choose the Type of Account</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Enter the Person Name and Contact Information</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Select Groups and Roles For User</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Send Invitation/Request and Instructions to New User</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Your Account Invitation or Request has been sent.</value>
+	</data>
+	<data name="s1TopText">
+		<value>What Type of account do you want this user to have?</value>
+	</data>
+	<data name="tIBNAccount">
+		<value>Portal Account</value>
+	</data>
+	<data name="tExternalAccount">
+		<value>External/e-mail Access</value>
+	</data>
+	<data name="tFirstName">
+		<value>First Name</value>
+	</data>
+	<data name="tOnlyPending">
+		<value>You can add only Pending User</value>
+	</data>
+	<data name="s1Comments">
+		<value>Select ‘Portal Account’ if you want this user to communicate, share, coordinate, and actively contribute to your projects.  Select ‘External/E-mail’ if you want this user to be able to have the portal send notifications or receive feedback through e-mail.</value>
+	</data>
+	<data name="tContactInformation">
+		<value>Personal Information</value>
+	</data>
+	<data name="tLastName">
+		<value>Last Name</value>
+	</data>
+	<data name="tEMail">
+		<value>E-mail</value>
+	</data>
+	<data name="tWorkPhone">
+		<value>Work Phone</value>
+	</data>
+	<data name="tMobilePhone">
+		<value>Mobile Phone</value>
+	</data>
+	<data name="tCompany">
+		<value>Company</value>
+	</data>
+	<data name="tDepartment">
+		<value>Department</value>
+	</data>
+	<data name="tPosition">
+		<value>Job Title</value>
+	</data>
+	<data name="tLocation">
+		<value>Location</value>
+	</data>
+	<data name="tCompanyInformation">
+		<value>Company Information</value>
+	</data>
+	<data name="tPendingAccount">
+		<value>Pending Account</value>
+	</data>
+	<data name="s1TopDiv">
+		<value>Portal supports 2 types of user access paradigms. The first is a standard Portal Account which gives the user working access to the portal. The second type of user is called an external user and it allows e-mail access only for users. This wizard will help you easily set up a new user on the portal.</value>
+	</data>
+	<data name="s2TopDiv">
+		<value>This information is used to establish the basic profile of the user in the system.</value>
+	</data>
+	<data name="s3TopDiv">
+		<value>Portal supports 2 types of group structures, one for structuring teams, and one for communicating.  A User can be in multiple business groups (teams), but only in a single communication group (directory).</value>
+	</data>
+	<data name="tSelectIBNGroups">
+		<value>Select Portal Groups</value>
+	</data>
+	<data name="tBusinessGroup">
+		<value>Business Groups</value>
+	</data>
+	<data name="tSelected">
+		<value>Selected</value>
+	</data>
+	<data name="tAvailable">
+		<value>Available</value>
+	</data>
+	<data name="tLogin">
+		<value>Login</value>
+	</data>
+	<data name="tPassword">
+		<value>Password</value>
+	</data>
+	<data name="tConfirm">
+		<value>Confirm Password</value>
+	</data>
+	<data name="tLanguage">
+		<value>Language</value>
+	</data>
+	<data name="tDefLanguage">
+		<value>Default Language</value>
+	</data>
+	<data name="tCommGroup">
+		<value>Communication Group</value>
+	</data>
+	<data name="tRole">
+		<value>What Role Will They Play?</value>
+	</data>
+	<data name="tPPM">
+		<value>Power Project Manager</value>
+	</data>
+	<data name="tPM">
+		<value>Project Manager</value>
+	</data>
+	<data name="tRegular">
+		<value>Regular User</value>
+	</data>
+	<data name="tTextForRegularAccount">
+		<value>Your user is almost ready to be notified.  If you wish, you can add some special welcome comments below and then click the ‘Create’ button to finalize the invitation.</value>
+	</data>
+	<data name="tTextForPendingAccount">
+		<value>Your user is almost ready to be notified.  If you wish, you can add some special welcome comments below and then click the ‘Create’ button to finalize the invitation.</value>
+	</data>
+	<data name="tTextForExternalAccount">
+		<value>Your user is almost ready to be notified.  If you wish, you can add some special welcome comments below and then click the ‘Create’ button to finalize the invitation.</value>
+	</data>
+	<data name="tHDM">
+		<value>Help Desk Manager</value>
+	</data>
+	<data name="tTextForExternal">
+		<value>You are adding user to the External Group. Go to the next step page!</value>
+	</data>
+	<data name="tExternalAdding">
+		<value>External User Adding</value>
+	</data>
+	<data name="tWelcomeComments">
+		<value>Welcome Comments</value>
+	</data>
+	<data name="tTextForWelcome">
+		<value>Type Welcome Comments And Create New User Account!</value>
+	</data>
+	<data name="s5TopText">
+		<value>You will now be placed into the main user management screen.</value>
+	</data>
+	<data name="s5TextHeader">
+		<value>What Else Can You Do with New User?</value>
+	</data>
+	<data name="s5Text">
+		<value>Some Giant Text</value>
+	</data>
+	<data name="LoginReg">
+		<value>Only letters, numbers and characters: '-', '_', '.'</value>
+	</data>
+	<data name="s1CommentsPM">
+		<value>Select ‘Portal Account’ if you want this user to communicate, share, coordinate, and actively contribute to your projects.  Select ‘External/E-mail’ if you want this user to be able to have the portal send notifications or receive feedback through e-mail.</value>
+	</data>
+	<data name="s1CommentsGU">
+		<value>You can only invite new user to the system.</value>
+	</data>
+	<data name="tPartnerAccount">
+		<value>Partner Account</value>
+	</data>
+	<data name="tTextForPartnerAccount">
+		<value>Your user is almost ready to be notified.  If you wish, you can add some special welcome comments below and then click the ‘Create’ button to finalize the invitation.</value>
+	</data>
+	<data name="tSelectPartnerGroup">
+		<value>Select Partner Groups</value>
+	</data>
+	<data name="tPartnerGroups">
+		<value>Partner Groups</value>
+	</data>
+	<data name="TimeZone">
+		<value>Default Time Zone</value>
+	</data>
+	<data name="MaxUsersCount">
+		<value>Max Users Count is Reached!</value>
+	</data>
+	<data name="DuplicatedLogin">
+		<value>Selecteted Login already exists!</value>
+	</data>
+	<data name="EmailDuplicate">
+		<value>User with the mentioned e-mail already exists!</value>
+	</data>
+	<data name="DuplicateEmail">
+		<value>Duplicate e-mail</value>
+	</data>
+	<data name="s0Convert">
+		<value>Select Import Source</value>
+	</data>
+	<data name="s1Convert">
+		<value>Source Connection</value>
+	</data>
+	<data name="s2Convert">
+		<value>Fields Matching</value>
+	</data>
+	<data name="s3Convert">
+		<value>Users List</value>
+	</data>
+	<data name="s4Convert">
+		<value>User Fields Correction</value>
+	</data>
+	<data name="s5Convert">
+		<value>User Grouping</value>
+	</data>
+	<data name="s6Convert">
+		<value>Finishing</value>
+	</data>
+	<data name="ConvertGlobalTitle">
+		<value>Users Import</value>
+	</data>
+	<data name="s0TopDivConvert">
+		<value>Import From</value>
+	</data>
+	<data name="s1TopDivConvert">
+		<value>Source connection</value>
+	</data>
+	<data name="s3TopDivConvert">
+		<value>Check users for adding to portal</value>
+	</data>
+	<data name="s4TopDivConvert">
+		<value>You will have to actualize user information</value>
+	</data>
+	<data name="s5TopDivConvert">
+		<value>Select secure groups and roles for new users</value>
+	</data>
+	<data name="ConnectToAD">
+		<value>Connect To LDAP Directory</value>
+	</data>
+	<data name="Domain">
+		<value>Domain</value>
+	</data>
+	<data name="UserName">
+		<value>User Name</value>
+	</data>
+	<data name="ConnectError">
+		<value>Connect Error or Invalid User Name &amp; Password!</value>
+	</data>
+	<data name="CompareFields">
+		<value>You can assign another Source Fields to Portal Fields.</value>
+	</data>
+	<data name="tSave">
+		<value>Update</value>
+	</data>
+	<data name="tUserList">
+		<value>Users List</value>
+	</data>
+	<data name="tGroups">
+		<value>Roles &amp; Groups</value>
+	</data>
+	<data name="tUserInfo">
+		<value>User Information</value>
+	</data>
+	<data name="IBNField">
+		<value>Portal Field</value>
+	</data>
+	<data name="ADField">
+		<value>Source Field</value>
+	</data>
+	<data name="tRoles">
+		<value>Portal Roles</value>
+	</data>
+	<data name="GroupSelectError">
+		<value>You must select Group or Role!</value>
+	</data>
+	<data name="tWereErrors">
+		<value>There are some errors occured during creation process.</value>
+	</data>
+	<data name="UsersWereCreated">
+		<value>These users were created</value>
+	</data>
+	<data name="tFax">
+		<value>Fax</value>
+	</data>
+	<data name="s0ConvertComments">
+		<value>You can import users from Domain LDAP Directory or from file</value>
+	</data>
+	<data name="tAD">
+		<value>LDAP Directory</value>
+	</data>
+	<data name="tFile">
+		<value>File</value>
+	</data>
+	<data name="tExcel">
+		<value>Excel</value>
+	</data>
+	<data name="tXML">
+		<value>XML</value>
+	</data>
+	<data name="tLoadToServer">
+		<value>Load your file to server</value>
+	</data>
+	<data name="tNotSet">
+		<value>Not Set</value>
+	</data>
+	<data name="tSourceType">
+		<value>Source Type</value>
+	</data>
+	<data name="tSelectFileType">
+		<value>Select File Type</value>
+	</data>
+	<data name="tSelectFile">
+		<value>Select File</value>
+	</data>
+	<data name="step2Comments">
+		<value>Comments</value>
+	</data>
+	<data name="tChange">
+		<value>Change</value>
+	</data>
+	<data name="tSave1">
+		<value>Save</value>
+	</data>
+	<data name="tCancel">
+		<value>Cancel</value>
+	</data>
+	<data name="tWindowsLogin">
+		<value>Windows Login</value>
+	</data>
+	<data name="DuplicatedWindowsLogin">
+		<value>Selected Windows Login already exists!</value>
+	</data>
+	<data name="tLDAPSettings">
+		<value>LDAP Settings</value>
+	</data>
+	<data name="tChoose">
+		<value>[Enter Settings]</value>
+	</data>
+	<data name="tFilter">
+		<value>Filter</value>
+	</data>
+	<data name="tCommonPassword">
+		<value>Common Password</value>
+	</data>
+</root>

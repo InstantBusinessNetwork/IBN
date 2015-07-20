@@ -1,0 +1,232 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Mediachase.MetaDataPlus</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.MetaDataPlus</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\AsyncResources.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Common\SQLHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaAttributeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaClassCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaClassIdCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaDictionaryItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaFieldCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaFieldType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaInstaller.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configurator\MetaTypeCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="Import\ColumnInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\FillDataMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\FillResult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\FillType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\IIncomingDataParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\ImportExceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\MappingMetaClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\Parser\CsvException.cs" />
+    <Compile Include="Import\Parser\CsvIncomingDataParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\Parser\OleDBIncomingDataParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\Parser\XmlIncomingDataParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\Rule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\RuleItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaDataContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaNamespaceConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaObjectExceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaObjectState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaStringDictionary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="AsyncResourcesText.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Mediachase.MetaDataPlus.mdx" />
+    <Content Include="Import\ReadMe.txt" />
+    <Content Include="Information\ActiveTagSyntaxes.txt" />
+    <Content Include="Information\MetaDataPlusBackup.xml" />
+    <Content Include="Information\WhatSNew.txt" />
+    <Content Include="SqlScripts\MetaDataTypeFill.sql" />
+    <Content Include="SqlScripts\SQLScripts.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

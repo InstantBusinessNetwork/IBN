@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Sender">
+		<value>Отправитель</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="CreationDate">
+		<value>Дата создания</value>
+	</data>
+	<data name="View">
+		<value>Просмотреть</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот инцидент?</value>
+	</data>
+	<data name="Unknown">
+		<value>Неизвестный</value>
+	</data>
+	<data name="External">
+		<value>Внешний</value>
+	</data>
+	<data name="General">
+		<value>Обычный</value>
+	</data>
+	<data name="Email">
+		<value>E-mail</value>
+	</data>
+	<data name="tbTitle">
+		<value>Информация о внешнем инциденте</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="Created">
+		<value>Дата создания</value>
+	</data>
+	<data name="Back">
+		<value>Вернуться к списку инцидентов</value>
+	</data>
+	<data name="EmailBody">
+		<value>Сообщение</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>[ Не выбран ]</value>
+	</data>
+	<data name="Subject">
+		<value>Тема</value>
+	</data>
+	<data name="Received">
+		<value>Получено</value>
+	</data>
+	<data name="MailBox">
+		<value>Почтовый ящик</value>
+	</data>
+	<data name="tbFileTitle">
+		<value>Файлы</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Size">
+		<value>Размер</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот файл?</value>
+	</data>
+	<data name="tbTrackingTitle">
+		<value>Управление</value>
+	</data>
+	<data name="ADText">
+		<value>Нажмите кнопку "Утвердить", если вы хотите принять этот инцидент к рассмотрению.&lt;br&gt;Нажмите кнопку "Удалить", если вы хотите удалить его.
+		</value>
+	</data>
+	<data name="ADTextExternal">
+		<value>Сообщивший об этом инциденте не зарегистрирован в портале.&lt;br&gt;
+		Нажмите кнопку "Утвердить и создать", чтобы принять этот инцидент к рассмотрению и добавить создателя в группу внешних пользователей.&lt;br&gt;
+		Нажмите кнопку "Утвердить", если вы хотите принять этот инцидент к рассмотрению без добавления создателя в группу внешних пользователей.&lt;br&gt;Нажмите кнопку "Удалить", если вы хотите удалить его. 
+		</value>
+	</data>
+	<data name="Approve">
+		<value>Утвердить</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="ApproveCreate">
+		<value>Утвердить и создать</value>
+	</data>
+	<data name="Box">
+		<value>Внешние инциденты</value>
+	</data>
+</root>

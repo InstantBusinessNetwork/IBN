@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tUse" xml:space="preserve">
+    <value>Получать почту с этого ящика</value>
+  </data>
+  <data name="tActive" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="tDelFromServer" xml:space="preserve">
+    <value>Удалять письма с сервера</value>
+  </data>
+  <data name="tPeriod" xml:space="preserve">
+    <value>Проверять каждые</value>
+  </data>
+  <data name="tServer" xml:space="preserve">
+    <value>Сервер</value>
+  </data>
+  <data name="tPort" xml:space="preserve">
+    <value>Порт</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="tPassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="tAutoApprove" xml:space="preserve">
+    <value>Принимать, если получено от известных пользователей</value>
+  </data>
+  <data name="tAutoDelete" xml:space="preserve">
+    <value>Игнорировать, если получено от неизвестных пользователей</value>
+  </data>
+  <data name="tUseExternal" xml:space="preserve">
+    <value>Принимать, полученные только от внешних пользователей</value>
+  </data>
+  <data name="tSaveMessageBody" xml:space="preserve">
+    <value>Сохранять тело сообщения</value>
+  </data>
+  <data name="tSaveMessageBodyEml" xml:space="preserve">
+    <value>Сохранять тело письма в EML формате</value>
+  </data>
+  <data name="tSaveMessageBodyMsg" xml:space="preserve">
+    <value>Сохранять тело письма в Outlook MSG</value>
+  </data>
+  <data name="tSaveMessageBodyMht" xml:space="preserve">
+    <value>Сохранять тело письма в MHT формате</value>
+  </data>
+  <data name="tSaveMessageBodyMhtPrev" xml:space="preserve">
+    <value>Сохранять тело письма в MHT формате (Возможен предпросмотр)</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="tEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="tDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tChangeStatusStop" xml:space="preserve">
+    <value>Остановить</value>
+  </data>
+  <data name="tChangeStatusRun" xml:space="preserve">
+    <value>Запустить</value>
+  </data>
+  <data name="tIncSets" xml:space="preserve">
+    <value>Системные настройки</value>
+  </data>
+  <data name="tPopSets" xml:space="preserve">
+    <value>POP3 настройки</value>
+  </data>
+  <data name="tActivitySets" xml:space="preserve">
+    <value>Активность</value>
+  </data>
+  <data name="tInfoBlock" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="tHandlerBlock" xml:space="preserve">
+    <value>Обработчик</value>
+  </data>
+  <data name="tDescription" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="tHandlerSets" xml:space="preserve">
+    <value>Настройки обработчика</value>
+  </data>
+  <data name="tbTitle" xml:space="preserve">
+    <value>Настройки e-mail ящика</value>
+  </data>
+  <data name="tCheck" xml:space="preserve">
+    <value>Проверить настройки</value>
+  </data>
+  <data name="tError" xml:space="preserve">
+    <value>Настройки неверны</value>
+  </data>
+  <data name="tOK" xml:space="preserve">
+    <value>Настройки верны</value>
+  </data>
+  <data name="t10min" xml:space="preserve">
+    <value>10 минут</value>
+  </data>
+  <data name="t30min" xml:space="preserve">
+    <value>30 минут</value>
+  </data>
+  <data name="t60min" xml:space="preserve">
+    <value>1 час</value>
+  </data>
+  <data name="t180min" xml:space="preserve">
+    <value>3 часа</value>
+  </data>
+  <data name="tMailBoxes" xml:space="preserve">
+    <value>E-mail ящики</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот почтовый ящик?</value>
+  </data>
+  <data name="tType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="tIssBox" xml:space="preserve">
+    <value>Папка инцидентов</value>
+  </data>
+  <data name="tFlsBox" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="tMoveto" xml:space="preserve">
+    <value>Перейти к папке</value>
+  </data>
+  <data name="tSelectFolder" xml:space="preserve">
+    <value>Выберите папку для писем</value>
+  </data>
+  <data name="tFolder" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+  <data name="tFolderPattern" xml:space="preserve">
+    <value>Шаблон пути</value>
+  </data>
+  <data name="tCantSelectThisFolder" xml:space="preserve">
+    <value>Нельзя выбрать эту папку</value>
+  </data>
+  <data name="tAddBox" xml:space="preserve">
+    <value>Новый почтовый ящик</value>
+  </data>
+  <data name="tAddIncBox" xml:space="preserve">
+    <value>Новый ящик для инцидентов</value>
+  </data>
+  <data name="tAddFldBox" xml:space="preserve">
+    <value>Новый ящик для файлов</value>
+  </data>
+  <data name="tTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="tHandler" xml:space="preserve">
+    <value>Имя обработчика</value>
+  </data>
+  <data name="tLastReq" xml:space="preserve">
+    <value>Последний запрос</value>
+  </data>
+  <data name="tLastSuccReq" xml:space="preserve">
+    <value>Последний успешный запрос</value>
+  </data>
+  <data name="tErrorMessage" xml:space="preserve">
+    <value>Текст ошибки</value>
+  </data>
+  <data name="tNone" xml:space="preserve">
+    <value>Не выбран</value>
+  </data>
+  <data name="lblMailDeleteError" xml:space="preserve">
+    <value>К сожалению, невозможно удалить указанный ящик.</value>
+  </data>
+  <data name="tRoot" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="tShowHelp" xml:space="preserve">
+    <value>Показать подсказку</value>
+  </data>
+  <data name="tHideHelp" xml:space="preserve">
+    <value>Скрыть подсказку</value>
+  </data>
+  <data name="tHelpText" xml:space="preserve">
+    <value>&lt;br&gt;
+&lt;p&gt;Шаблоны пути позволяют автоматически создавать папки в библиотеке портала и сохранять в них входящие документы. В названии создаваемых папок могут учитываться различные атрибуты входящих документов: дата создания, адрес отправителя и другие. Вложенные папки автоматически создаются в выбранной папке обработчика и могут быть представлены в виде дерева.&lt;/p&gt; 
+&lt;p&gt;Пример: &lt;strong&gt;[To]\[Date.Now]\[Subject]&lt;/strong&gt;. &lt;/p&gt; 
+&lt;p&gt;Шаблон может содержать как статический текст, так и активные теги. &lt;/p&gt; 
+&lt;p&gt;Пример: &lt;strong&gt;My Documents\[From]&lt;/strong&gt;.&lt;br&gt; &lt;/p&gt; 
+&lt;p&gt;Доступные активные теги:&lt;/p&gt; 
+&lt;table border=1 cellspacing=0 cellpadding=3 class="text"&gt; &lt;tr&gt; &lt;td valign="top"&gt;&lt;strong&gt;Имя&lt;/strong&gt;&lt;/td&gt; 
+&lt;td valign="top"&gt;&lt;b&gt;Информация&lt;/b&gt;&lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[UserName]&lt;/td&gt; 
+&lt;td valign="top"&gt;Фамилия и имя пользователя, если письмо пришло от зарегистрированного пользователя портала или с известного адреса&lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[From]&lt;/td&gt; 
+&lt;td valign="top"&gt;E-mail адрес отправителя &lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Subject]&lt;/td&gt; 
+&lt;td valign="top"&gt;Тема письма &lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" nowrap&gt;[Date.Now]&lt;br&gt; [Date.Now(yyyy)]&lt;br&gt; [Date.Now(yyyy-MM-dd)]&lt;br&gt; &lt;br&gt; [Date.Now(&lt;em&gt;Params&lt;/em&gt;)]&lt;/td&gt; &lt;td valign="top"&gt; &lt;p&gt;Текущая дата &lt;br&gt;
+Для активных тегов даты могут быть установлены различные форматы (Params)&lt;/p&gt; 
+&lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt;– возвращает текущий год (пример: 2006)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – возвращает текущий год и месяц (пример: 2006-01)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – возвращает текущий год, месяц и день (пример: 2006-01-10)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – возвращает текущее время в часах и минутах (пример: 16:25)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – возвращает текущее время в часах, минутах и секундах (пример: 17:12:23)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату в коротком формате (пример: 08/17/2000)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату в полном формате (пример: Thursday, August 17, 2000)&lt;br&gt; 
+&lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату и время в коротком формате (пример: 08/17/2000 16:32)&lt;/p&gt; 
+&lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top" nowrap&gt;[Date.UtcNow]&lt;br&gt; [Date.UtcNow(yyyy)]&lt;br&gt; [Date.UtcNow(yyyy-MM-dd)]&lt;br&gt; &lt;br&gt; [Date.UtcNow(&lt;em&gt;Params&lt;/em&gt;)]&lt;/td&gt; &lt;td valign="top"&gt; &lt;p&gt;Текущая дата в формате UTC&lt;br&gt; 
+Для активных тегов даты могут быть установлены различные форматы &lt;/p&gt; 
+&lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt;– возвращает текущий год UTC (пример: 2006)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – возвращает текущий год и месяц UTC (пример: 2006-01)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – возвращает текущий год, месяц и день UTC (пример: 2006-01-10)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – возвращает текущее время UTC в часах и минутах (пример: 16:25)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – возвращает текущее время в часах, минутах и секундах UTC (пример: 17:12:23)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату UTC в коротком формате (пример: 08/17/2000)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату UTC в полном формате (пример: Thursday, August 17, 2000)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; – возвращает текущую дату и время UTC в коротком формате (пример: 08/17/2000 16:32)&lt;/p&gt; 
+&lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Date(Params)]&lt;/td&gt; &lt;td valign="top"&gt; &lt;p&gt;Дата письма&lt;br&gt;
+Для активных тегов даты могут быть установлены различные форматы &lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;&lt;b&gt;&lt;i&gt;yyyy&lt;/i&gt;&lt;/b&gt;– возвращает год (пример: 2006)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;yyyy-mm&lt;/i&gt;&lt;/b&gt; – возвращает год и месяц (пример: 2006-01)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;yyyy-MM-dd&lt;/i&gt;&lt;/b&gt; – возвращает год, месяц и день (пример: 2006-01-10)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;t&lt;/i&gt;&lt;/b&gt; – возвращает время в часах и минутах (пример: 16:25)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;T&lt;/i&gt;&lt;/b&gt; – возвращает время в часах, минутах и секундах (пример: 17:12:23)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;d&lt;/i&gt;&lt;/b&gt; – возвращает дату в коротком формате (пример: 08/17/2000)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;D&lt;/i&gt;&lt;/b&gt; – возвращает дату в полном формате (пример: Thursday, August 17, 2000)&lt;br&gt;
+&lt;b&gt;&lt;i&gt;G&lt;/i&gt;&lt;/b&gt; – возвращает дату и время в коротком формате (пример: 08/17/2000 16:32)&lt;/p&gt; 
+&lt;/blockquote&gt; &lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Importance]&lt;/td&gt; 
+&lt;td valign="top"&gt;Приоритет письма &lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[MessageID]&lt;/td&gt; 
+&lt;td valign="top"&gt;ID письма. Берется с сервера&lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Sender]&lt;/td&gt; 
+&lt;td valign="top"&gt;Отправитель&lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[To]&lt;/td&gt; 
+&lt;td valign="top"&gt;E-mail адресата&lt;/td&gt; 
+&lt;/tr&gt; &lt;tr&gt; &lt;td valign="top"&gt;[Header(headerName)]&lt;/td&gt; 
+&lt;td valign="top"&gt;Заголовок &lt;i&gt;headerName&lt;/i&gt; письма &lt;/td&gt; 
+&lt;/tr&gt; &lt;/table&gt;</value>
+  </data>
+  <data name="tActiveTag" xml:space="preserve">
+    <value>Активный тег</value>
+  </data>
+  <data name="tNotSupported" xml:space="preserve">
+    <value>не поддерживается</value>
+  </data>
+  <data name="tEMailPop3" xml:space="preserve">
+    <value>Управление e-mail ящиками</value>
+  </data>
+  <data name="tInternalBox" xml:space="preserve">
+    <value>Внутренний e-mail ящик</value>
+  </data>
+  <data name="tExternalBoxes" xml:space="preserve">
+    <value>Внешние e-mail ящики</value>
+  </data>
+  <data name="tIsInternal" xml:space="preserve">
+    <value>Внутренний</value>
+  </data>
+  <data name="tInternalEmail" xml:space="preserve">
+    <value>E-mail адрес</value>
+  </data>
+  <data name="tLogin" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="tNoIntBox" xml:space="preserve">
+    <value>Внутренний e-mail ящик не создан. Вы можете создать его сейчас.</value>
+  </data>
+  <data name="tBlackList" xml:space="preserve">
+    <value>Черный список адресов</value>
+  </data>
+  <data name="tWhiteList" xml:space="preserve">
+    <value>Белый список адресов</value>
+  </data>
+  <data name="tAntiSpamList" xml:space="preserve">
+    <value>Правила борьбы со спамом</value>
+  </data>
+  <data name="tConfirmPassword" xml:space="preserve">
+    <value>Подтверждение пароля</value>
+  </data>
+  <data name="tWarningChecked" xml:space="preserve">
+    <value>Вы действительно хотите удалить все выделенные адреса?</value>
+  </data>
+  <data name="tKeyword" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="tReset" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="tDeleteChecked" xml:space="preserve">
+    <value>Удалить отмеченные</value>
+  </data>
+  <data name="tAddress" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="tWarning2" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот адрес из списка?</value>
+  </data>
+  <data name="tQuickAdd" xml:space="preserve">
+    <value>Новый адрес</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="tKey" xml:space="preserve">
+    <value>Ключ</value>
+  </data>
+  <data name="tValue" xml:space="preserve">
+    <value>Значение</value>
+  </data>
+  <data name="tWarning3" xml:space="preserve">
+    <value>Вы действительно хотите удалить это правило из списка?</value>
+  </data>
+  <data name="tAddRule" xml:space="preserve">
+    <value>Новое правило</value>
+  </data>
+  <data name="tContains" xml:space="preserve">
+    <value>содержит</value>
+  </data>
+  <data name="tIsEqual" xml:space="preserve">
+    <value>равно</value>
+  </data>
+  <data name="tIsNotEqual" xml:space="preserve">
+    <value>не равно</value>
+  </data>
+  <data name="tNotContains" xml:space="preserve">
+    <value>не содержит</value>
+  </data>
+  <data name="tRegExMatch" xml:space="preserve">
+    <value>соответствует шаблону</value>
+  </data>
+  <data name="tService" xml:space="preserve">
+    <value>сервис</value>
+  </data>
+  <data name="tWeight" xml:space="preserve">
+    <value>Вес</value>
+  </data>
+  <data name="tWhiteList2" xml:space="preserve">
+    <value>Белый список</value>
+  </data>
+  <data name="tBlackList2" xml:space="preserve">
+    <value>Черный список</value>
+  </data>
+  <data name="tTicket" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>Кому</value>
+  </data>
+  <data name="tSubject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="tBody" xml:space="preserve">
+    <value>Письмо</value>
+  </data>
+  <data name="tAction" xml:space="preserve">
+    <value>Действие</value>
+  </data>
+  <data name="tDefIncSettings" xml:space="preserve">
+    <value>Настройки по умолчанию для нового инцидента</value>
+  </data>
+  <data name="tNotSet" xml:space="preserve">
+    <value>не установлен</value>
+  </data>
+  <data name="tIssBoxes" xml:space="preserve">
+    <value>Папки инцидентов</value>
+  </data>
+  <data name="tWarningIncBox" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту папку инцидентов?</value>
+  </data>
+  <data name="tIdentMask" xml:space="preserve">
+    <value>Идентификатор</value>
+  </data>
+  <data name="tIssBoxRules" xml:space="preserve">
+    <value>Правила для папки инцидентов</value>
+  </data>
+  <data name="tDefaultBox" xml:space="preserve">
+    <value>Ящик по умолчанию</value>
+  </data>
+  <data name="tIssRulesList" xml:space="preserve">
+    <value>Список правил</value>
+  </data>
+  <data name="tIssRuleInfo" xml:space="preserve">
+    <value>Описание правила</value>
+  </data>
+  <data name="tIssRulesSummary" xml:space="preserve">
+    <value>Правила</value>
+  </data>
+  <data name="tNewRule" xml:space="preserve">
+    <value>Новое правило</value>
+  </data>
+  <data name="tMessageCount" xml:space="preserve">
+    <value>Количество сообщений</value>
+  </data>
+  <data name="tPop3BoxEdit" xml:space="preserve">
+    <value>Редактирование e-mail ящика</value>
+  </data>
+  <data name="tPop3BoxNew" xml:space="preserve">
+    <value>Новый e-mail ящик</value>
+  </data>
+  <data name="tRuleEdit" xml:space="preserve">
+    <value>Редактирование правила</value>
+  </data>
+  <data name="tRuleNew" xml:space="preserve">
+    <value>Новое правило</value>
+  </data>
+  <data name="tIssueBoxEdit" xml:space="preserve">
+    <value>Редактирование папки инцидентов</value>
+  </data>
+  <data name="tIssueBoxNew" xml:space="preserve">
+    <value>Новая папка инцидентов</value>
+  </data>
+  <data name="tPendingMess" xml:space="preserve">
+    <value>Непроверенные сообщения</value>
+  </data>
+  <data name="tIndex" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="tTypeYour" xml:space="preserve">
+    <value>Введите свой</value>
+  </data>
+  <data name="tWarningCheckedDelete" xml:space="preserve">
+    <value>Вы действительно хотите удалить все отмеченные сообщения?</value>
+  </data>
+  <data name="tWarningCheckedApprove" xml:space="preserve">
+    <value>Вы действительно хотите утвердить все отмеченные сообщения?</value>
+  </data>
+  <data name="tMessView" xml:space="preserve">
+    <value>Просмотр сообщения</value>
+  </data>
+  <data name="tApprove" xml:space="preserve">
+    <value>Утвердить</value>
+  </data>
+  <data name="tWarningDelete" xml:space="preserve">
+    <value>Вы действительно хотите удалить это сообщение?</value>
+  </data>
+  <data name="tWarningApprove" xml:space="preserve">
+    <value>Вы действительно хотите утвердить это сообщение?</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tIssueboxSettings" xml:space="preserve">
+    <value>Настройка папки инцидентов</value>
+  </data>
+  <data name="tIssManage" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="tFlags" xml:space="preserve">
+    <value>Настройки ответственных</value>
+  </data>
+  <data name="tIssueControl" xml:space="preserve">
+    <value>Контроль разрешения инцидента</value>
+  </data>
+  <data name="tManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tController" xml:space="preserve">
+    <value>Контролёр</value>
+  </data>
+  <data name="tResponsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="tExpDuration" xml:space="preserve">
+    <value>Ожидаемое время разрешения</value>
+  </data>
+  <data name="tExpRespTime" xml:space="preserve">
+    <value>Ожидаемое время ответа</value>
+  </data>
+  <data name="tCreator" xml:space="preserve">
+    <value>Создатель</value>
+  </data>
+  <data name="tResponsibleType" xml:space="preserve">
+    <value>Тип выбора ответственных</value>
+  </data>
+  <data name="tPool" xml:space="preserve">
+    <value>Список ответственных</value>
+  </data>
+  <data name="tAllowAddResources" xml:space="preserve">
+    <value>Разрешить добавлять исполнителей</value>
+  </data>
+  <data name="tAllowAddToDo" xml:space="preserve">
+    <value>Разрешить добавлять поручения</value>
+  </data>
+  <data name="tAllowControl" xml:space="preserve">
+    <value>Разрешить контроль</value>
+  </data>
+  <data name="tAllowToDeclineResponsibility" xml:space="preserve">
+    <value>Дать ответственному  возможность отказа от назначения</value>
+  </data>
+  <data name="tAllowToReassignResponsibility" xml:space="preserve">
+    <value>Дать ответственному  возможность назначения другого ответственного</value>
+  </data>
+  <data name="tReassignResponsible" xml:space="preserve">
+    <value>Назначать другого ответственного при повторном открытии</value>
+  </data>
+  <data name="tControllerType" xml:space="preserve">
+    <value>Тип контролёра</value>
+  </data>
+  <data name="tEMailRouterSettings" xml:space="preserve">
+    <value>Настройки электронной почты</value>
+  </data>
+  <data name="tAllowEMailRouter" xml:space="preserve">
+    <value>Включить внутреннюю маршрутизацию e-mail сообщений</value>
+  </data>
+  <data name="tChange" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="tWarningPool" xml:space="preserve">
+    <value>Вы действительно хотите удалить этого пользователя из списка?</value>
+  </data>
+  <data name="tPoolTitle" xml:space="preserve">
+    <value>Список пользователей</value>
+  </data>
+  <data name="tFindNow" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="tEmptySearch" xml:space="preserve">
+    <value>Пользователи не найдены</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Доступны</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Выбраны</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tExtType" xml:space="preserve">
+    <value>Входящее</value>
+  </data>
+  <data name="tIntType" xml:space="preserve">
+    <value>Исходящее</value>
+  </data>
+  <data name="tRecipients" xml:space="preserve">
+    <value>Список получателей</value>
+  </data>
+  <data name="tMapping" xml:space="preserve">
+    <value>Правила соответствия полей</value>
+  </data>
+  <data name="tSeverity" xml:space="preserve">
+    <value>Проявление</value>
+  </data>
+  <data name="tGenCategories" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="tIssCategories" xml:space="preserve">
+    <value>Категории инцидента</value>
+  </data>
+  <data name="tDuplicateName" xml:space="preserve">
+    <value>Заданное имя уже используется в системе!</value>
+  </data>
+  <data name="tDuplicateMask" xml:space="preserve">
+    <value>Заданный идентификатор уже используется в системе!</value>
+  </data>
+  <data name="tAllowUserToComeResponsible" xml:space="preserve">
+    <value>Дать возможность стать ответственным</value>
+  </data>
+  <data name="tPrjCalendar" xml:space="preserve">
+    <value>Календарь рабочего времени</value>
+  </data>
+  <data name="tNewMessage" xml:space="preserve">
+    <value>Действия с новыми сообщениями</value>
+  </data>
+  <data name="tCreated" xml:space="preserve">
+    <value>Получено</value>
+  </data>
+  <data name="tSMTPSettings" xml:space="preserve">
+    <value>SMTP настройки</value>
+  </data>
+  <data name="tSMTPList" xml:space="preserve">
+    <value>Серверы исходящей почты (SMTP)</value>
+  </data>
+  <data name="tUseTls" xml:space="preserve">
+    <value>TLS</value>
+  </data>
+  <data name="tAuthenticate" xml:space="preserve">
+    <value>Аутентификация</value>
+  </data>
+  <data name="tIssBoxView" xml:space="preserve">
+    <value>Просмотр папки инцидентов</value>
+  </data>
+  <data name="tAND" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="tOR" xml:space="preserve">
+    <value>ИЛИ</value>
+  </data>
+  <data name="tAllowAutoReply" xml:space="preserve">
+    <value>Разрешить автоматический ответ при создании инцидента</value>
+  </data>
+  <data name="tAllowAutoReplyClose" xml:space="preserve">
+    <value>Разрешить автоматический ответ при закрытии инцидента</value>
+  </data>
+  <data name="tAllowAutoReplyHint1" xml:space="preserve">
+    <value>Данная опция позволяет автоматически отправлять пользователю сообщение при регистрации нового инцидента. Нажмите</value>
+  </data>
+  <data name="tAllowAutoReplyHint2" xml:space="preserve">
+    <value>для редактирования шаблона сообщения.</value>
+  </data>
+  <data name="tAllowAutoReplyCloseHint1" xml:space="preserve">
+    <value>Данная опция позволяет автоматически отправлять пользователю сообщение при закрытии инцидента. Нажмите</value>
+  </data>
+  <data name="tAllowAutoReplyCloseHint2" xml:space="preserve">
+    <value>для редактирования шаблона сообщения.</value>
+  </data>
+  <data name="tAutoReplyLinkText" xml:space="preserve">
+    <value>здесь</value>
+  </data>
+  <data name="tAccept" xml:space="preserve">
+    <value>Принимать</value>
+  </data>
+  <data name="tDecline" xml:space="preserve">
+    <value>Отклонять</value>
+  </data>
+  <data name="tApproveChecked" xml:space="preserve">
+    <value>Утвердить отмеченные</value>
+  </data>
+  <data name="tIssueBoxRules" xml:space="preserve">
+    <value>Правила для папки инцидентов не заданы</value>
+  </data>
+  <data name="tExportList" xml:space="preserve">
+    <value>Экспорт списка</value>
+  </data>
+  <data name="tProject" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="tFile" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="tImportList" xml:space="preserve">
+    <value>Импорт списка</value>
+  </data>
+  <data name="CustomUser" xml:space="preserve">
+    <value>определенный пользователь</value>
+  </data>
+  <data name="Pool" xml:space="preserve">
+    <value>из группы</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>вручную</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>создатель</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>менеджер</value>
+  </data>
+  <data name="tIssBoxAutoSelect" xml:space="preserve">
+    <value>[ автоопределение ]</value>
+  </data>
+  <data name="tIssboxCantDeleted" xml:space="preserve">
+    <value>Папка инцидентов не может быть удалена!</value>
+  </data>
+  <data name="tIssRules" xml:space="preserve">
+    <value>Автоопределение/Правила</value>
+  </data>
+  <data name="tAddRules" xml:space="preserve">
+    <value>Новые правила</value>
+  </data>
+  <data name="tChangeIndex" xml:space="preserve">
+    <value>Изменить порядок</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>Переменная</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Логическое выражение</value>
+  </data>
+  <data name="Function" xml:space="preserve">
+    <value>Функция</value>
+  </data>
+  <data name="tORBlock" xml:space="preserve">
+    <value>Блок [ИЛИ]</value>
+  </data>
+  <data name="tANDBlock" xml:space="preserve">
+    <value>Блок [И]</value>
+  </data>
+  <data name="tNoFunction" xml:space="preserve">
+    <value>В настоящий момент правил типа "Функция" нет. 
+		Вы можете самостоятельно разработать такие правила. 
+		Необходимую информацию вы можете найти в сопроводительной документации или запросить ее 
+		по электронной почте.
+		</value>
+  </data>
+  <data name="tNosubject" xml:space="preserve">
+    <value>[без заголовка]</value>
+  </data>
+  <data name="tClient" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="tAllowMessageAutoSigning" xml:space="preserve">
+    <value>Использовать форматирование исходящего сообщения</value>
+  </data>
+  <data name="tAllowMessageAutoSigningHint1" xml:space="preserve">
+    <value>Данная опция позволяет отсылать форматированное ответное письмо. Нажмите</value>
+  </data>
+  <data name="tAllowMessageAutoSigningHint2" xml:space="preserve">
+    <value>для редактирования шаблона письма.</value>
+  </data>
+  <data name="tEmailLog" xml:space="preserve">
+    <value>E-mail лог</value>
+  </data>
+  <data name="tClearLog" xml:space="preserve">
+    <value>Очистить лог</value>
+  </data>
+  <data name="tDirection" xml:space="preserve">
+    <value>Направление</value>
+  </data>
+  <data name="tEmailBox" xml:space="preserve">
+    <value>Ящик</value>
+  </data>
+  <data name="tAntiSpamResult" xml:space="preserve">
+    <value>Проверка на спам</value>
+  </data>
+  <data name="tAccepted" xml:space="preserve">
+    <value>Принято</value>
+  </data>
+  <data name="tDenied" xml:space="preserve">
+    <value>Отклонено</value>
+  </data>
+  <data name="tPending" xml:space="preserve">
+    <value>На рассмотрении</value>
+  </data>
+  <data name="tEmailLogSettings" xml:space="preserve">
+    <value>Настройки e-mail лога</value>
+  </data>
+  <data name="tEmailLogPeriodHint1" xml:space="preserve">
+    <value>Хранить записи за последние</value>
+  </data>
+  <data name="tEmailLogPeriodHint2" xml:space="preserve">
+    <value>дней.</value>
+  </data>
+  <data name="tSetDefault" xml:space="preserve">
+    <value>Настройки по умолчанию</value>
+  </data>
+  <data name="tMappingWarning" xml:space="preserve">
+    <value>Для этого ящика не заданы настройки полей! Вы можете задать их, щелкнув по выделенной иконке.</value>
+  </data>
+  <data name="tDefaultSets" xml:space="preserve">
+    <value>Настройки по умолчанию</value>
+  </data>
+  <data name="tCustomSets" xml:space="preserve">
+    <value>Собственные настройки</value>
+  </data>
+  <data name="tSetsAreCorrect" xml:space="preserve">
+    <value>Настройки обработки исходящей почты были заданы корректно. Однако, Вы снова можете проверить их работоспособность.</value>
+  </data>
+  <data name="tGuidWasSent" xml:space="preserve">
+    <value>На Ваш адрес ({0}) было выслано письмо с уникальной ссылкой. Для завершения процедуры проверки Вам нужно будет перейти по этой ссылке.</value>
+  </data>
+  <data name="tNeedToCheck" xml:space="preserve">
+    <value>Для корректной обработки исходящей почты Вам необходимо убедиться в работоспособности сервера исходящих сообщений (SMTP) и при необходимости настроить его.</value>
+  </data>
+  <data name="tLetterSubj" xml:space="preserve">
+    <value>Проверка настроек обработки исходящей почты</value>
+  </data>
+  <data name="tLetterBody" xml:space="preserve">
+    <value>Для завершения процедуры проверки Вам необходимо перейти по нижеследующей ссылке</value>
+  </data>
+  <data name="tIsCheckedTrue" xml:space="preserve">
+    <value>Работоспособность сервера исходящих сообщений (SMTP) проверена! Настройки заданы корректно!</value>
+  </data>
+  <data name="tIsCheckedFalse" xml:space="preserve">
+    <value>Настройки сервера исходящих сообщений были изменены! Для корректной обработки исходящей почты Вам необходимо убедиться в работоспособности сервера исходящих сообщений (SMTP) и при необходимости настроить его.</value>
+  </data>
+  <data name="tCheckSMTP" xml:space="preserve">
+    <value>Проверить работу SMTP</value>
+  </data>
+  <data name="tEditBoxSettings" xml:space="preserve">
+    <value>Редактировать настройки</value>
+  </data>
+  <data name="tEnableAntiSpam" xml:space="preserve">
+    <value>Включить Анти-спам</value>
+  </data>
+  <data name="tNewIntBox" xml:space="preserve">
+    <value>Создать внутренний ящик</value>
+  </data>
+  <data name="tNoAntiSpamMessage" xml:space="preserve">
+    <value>Существует возможность фильтрации поступающей почты с помощью правила Anti-Spam. Письма, оцененные как spam удаляются; подозрительные письма поступают во временное хранилище для ручной обработки; остальные автоматически регистрируются как инциденты.</value>
+  </data>
+  <data name="tNoExtBoxesMessage" xml:space="preserve">
+    <value>В портале реализована возможность сбора e-mail сообщений с корпоративных почтовых ящиков. Часть таких сообщений может быть автоматически преобразована в Инциденты, что позволит в удобной и наглядной форме следить за ходом работы над ними. Для того, чтобы активировать данную функциональность, Вам достаточно зарегистрировать хотя бы один почтовый ящик.</value>
+  </data>
+  <data name="tNoIntBoxMessage" xml:space="preserve">
+    <value>Портал позволяет работать с Инцидентами, созданными из e-mail сообщений, через стандартные почтовые программы, например Microsoft Outlook или Outlook Express. Для того, чтобы активировать данную функциональность, Вам необходимо создать внутренний почтовый ящик.</value>
+  </data>
+  <data name="tSMTPNotChecked" xml:space="preserve">
+    <value>Для корректной обработки исходящей почты Вам необходимо убедиться в работоспособности сервера исходящих сообщений (SMTP) и при необходимости настроить его.</value>
+  </data>
+  <data name="tRules" xml:space="preserve">
+    <value>Правила автоопределения</value>
+  </data>
+  <data name="tReturnSMTP" xml:space="preserve">
+    <value>Вернуться на экран редактирования настроек сервера исходящих сообщений (SMTP)</value>
+  </data>
+  <data name="tInIBN" xml:space="preserve">
+    <value>Войти в систему</value>
+  </data>
+  <data name="tEmailRoutingEnabled" xml:space="preserve">
+    <value>E-mail маршрутизация включена</value>
+  </data>
+  <data name="tRulesExist" xml:space="preserve">
+    <value>Правила соответствия полей существуют</value>
+  </data>
+  <data name="tNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="tUseSecureConnection" xml:space="preserve">
+    <value>Использовать безопасное соединение</value>
+  </data>
+  <data name="tStatistics" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="tIsActive" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="tLastErrText" xml:space="preserve">
+    <value>Последняя ошибка</value>
+  </data>
+  <data name="tYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="tDisableAntiSpam" xml:space="preserve">
+    <value>Отключить анти-спам</value>
+  </data>
+  <data name="tCommonSettings" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="tHDM" xml:space="preserve">
+    <value>Управление инцидентами</value>
+  </data>
+  <data name="tIncComSet" xml:space="preserve">
+    <value>Общие настройки инцидентов</value>
+  </data>
+  <data name="tDisableLog" xml:space="preserve">
+    <value>Выключить лог</value>
+  </data>
+  <data name="tEnableLog" xml:space="preserve">
+    <value>Включить лог</value>
+  </data>
+  <data name="tIssBoxRulesService" xml:space="preserve">
+    <value>Правила папки инцидентов</value>
+  </data>
+  <data name="tAutoFillList" xml:space="preserve">
+    <value>Заполнять лист автоматически</value>
+  </data>
+  <data name="tEmailOutgoing" xml:space="preserve">
+    <value>Исходящие сообщения</value>
+  </data>
+  <data name="tGeneration" xml:space="preserve">
+    <value>Попыток отправить</value>
+  </data>
+  <data name="tErrorMsg" xml:space="preserve">
+    <value>Сообщение об ошибке</value>
+  </data>
+  <data name="tCreatedReal" xml:space="preserve">
+    <value>Создано</value>
+  </data>
+  <data name="tAddToExistIss" xml:space="preserve">
+    <value>Добавить к инциденту</value>
+  </data>
+  <data name="tPriority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="tFromEMail" xml:space="preserve">
+    <value>[ приоритет письма ]</value>
+  </data>
+  <data name="tUseSsl3" xml:space="preserve">
+    <value>SSL 3</value>
+  </data>
+  <data name="tUseNone" xml:space="preserve">
+    <value>не использовать</value>
+  </data>
+  <data name="tTestLetterBody" xml:space="preserve">
+    <value>Instant Business Network - проверка SMTP настроек.</value>
+  </data>
+  <data name="tGuidWasNotSent" xml:space="preserve">
+    <value>Во время отправки произошли ошибки. Письмо не отправлено.</value>
+  </data>
+  <data name="tResetGeneration" xml:space="preserve">
+    <value>Сбросить счетчик попыток</value>
+  </data>
+  <data name="tDescriptionAsBody" xml:space="preserve">
+    <value>Письмо в формате plain/text</value>
+  </data>
+  <data name="tNothing" xml:space="preserve">
+    <value>Ничего</value>
+  </data>
+  <data name="tExpAssignTime" xml:space="preserve">
+    <value>Ожидаемое время назначения</value>
+  </data>
+  <data name="tWebDavSettings" xml:space="preserve">
+    <value>Настройки WebDAV</value>
+  </data>
+  <data name="tLifeTimeWebDAV" xml:space="preserve">
+    <value>Время жизни WebDAV сессии (мин)</value>
+  </data>
+  <data name="TaskTime" xml:space="preserve">
+    <value>Планируемые трудозатраты</value>
+  </data>
+  <data name="tWarningSmtpBox" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот сервер исходящей почты?</value>
+  </data>
+  <data name="tSmtpBoxNew" xml:space="preserve">
+    <value>Новый сервер</value>
+  </data>
+  <data name="tSmtpBox" xml:space="preserve">
+    <value>Сервер исходящей почты (SMTP)</value>
+  </data>
+  <data name="tDefaultValue" xml:space="preserve">
+    <value>[по умолчанию]</value>
+  </data>
+  <data name="tTitleFileSMTP" xml:space="preserve">
+    <value>Сервер исходящих сообщений для отправки файлов библиотеки</value>
+  </data>
+  <data name="tCantDeleteMailBox" xml:space="preserve">
+    <value>Почтовый ящик невозможно удалить, так как имеются связанные с ним сущности!</value>
+  </data>
+	<data name="tExtMessWarning" xml:space="preserve">
+		<value>Выберите действие, которое нужно выполнить над инцидентом в состоянии «Закрыт», если на внешний почтовый ящик приходит новое письмо с кодом инцидента.</value>
+	</data>
+	<data name="tIntMessWarning" xml:space="preserve">
+		<value>Выберите действие, которое нужно выполнить над инцидентом в состоянии «Закрыт», если с внутреннего почтового ящика отправляется новое письмо с кодом инцидента.</value>
+	</data>
+	<data name="tSmtpListSettings" xml:space="preserve">
+		<value>Настройки SMTP</value>
+	</data>
+	<data name="tSmtpSettingsTimeoutHint1" xml:space="preserve">
+		<value>Таймаут подключения</value>
+	</data>
+	<data name="tSmtpSettingsTimeoutHint2" xml:space="preserve">
+		<value>сек.</value>
+	</data>
+</root>

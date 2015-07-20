@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="tPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="tExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="tPrjSnap" xml:space="preserve">
+    <value>Project Snapshot</value>
+  </data>
+  <data name="tPrjStats" xml:space="preserve">
+    <value>Project Stats</value>
+  </data>
+  <data name="tTotalNumTsk" xml:space="preserve">
+    <value>Total number of tasks</value>
+  </data>
+  <data name="tCompNumTsk" xml:space="preserve">
+    <value>Number of tasks completed</value>
+  </data>
+  <data name="tCompPercTsk" xml:space="preserve">
+    <value>% of tasks completed</value>
+  </data>
+  <data name="tActNumTsk" xml:space="preserve">
+    <value>Number of active tasks</value>
+  </data>
+  <data name="tPastNumTsk" xml:space="preserve">
+    <value>Number of tasks past due</value>
+  </data>
+  <data name="tTotalHours" xml:space="preserve">
+    <value>Total Hours</value>
+  </data>
+  <data name="tTotalCost" xml:space="preserve">
+    <value>Total Cost</value>
+  </data>
+  <data name="tType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="tBudget" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="tGoals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="tScope" xml:space="preserve">
+    <value>Scope</value>
+  </data>
+  <data name="tDeliverables" xml:space="preserve">
+    <value>Deliverables</value>
+  </data>
+  <data name="tSponsors" xml:space="preserve">
+    <value>Sponsors</value>
+  </data>
+  <data name="tStakeholders" xml:space="preserve">
+    <value>Stakeholders</value>
+  </data>
+  <data name="tcompleted" xml:space="preserve">
+    <value>completed</value>
+  </data>
+  <data name="tTasksPD" xml:space="preserve">
+    <value>Tasks Past Due</value>
+  </data>
+  <data name="tTasksAct" xml:space="preserve">
+    <value>Active Tasks</value>
+  </data>
+  <data name="tTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="tDescr" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="tRes" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="tDueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="tTotalNumToDo" xml:space="preserve">
+    <value>Total number of todo</value>
+  </data>
+  <data name="tCompNumToDo" xml:space="preserve">
+    <value>Number of todo completed</value>
+  </data>
+  <data name="tCompPercToDo" xml:space="preserve">
+    <value>% of todo completed</value>
+  </data>
+  <data name="tActNumToDo" xml:space="preserve">
+    <value>Number of active todo</value>
+  </data>
+  <data name="tPastNumToDo" xml:space="preserve">
+    <value>Number of todo past due</value>
+  </data>
+  <data name="tToDoPD" xml:space="preserve">
+    <value>ToDo Past Due</value>
+  </data>
+  <data name="tToDoAct" xml:space="preserve">
+    <value>Active ToDo</value>
+  </data>
+  <data name="tTotalNumInc" xml:space="preserve">
+    <value>Total number of issues</value>
+  </data>
+  <data name="tCompNumInc" xml:space="preserve">
+    <value>Number of issues closed</value>
+  </data>
+  <data name="tCompPercInc" xml:space="preserve">
+    <value>% of issues closed</value>
+  </data>
+  <data name="tActNumInc" xml:space="preserve">
+    <value>Number of open issues</value>
+  </data>
+  <data name="tIncAct" xml:space="preserve">
+    <value>Open Issues</value>
+  </data>
+  <data name="tMan" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="oProjectSnapshotTitle" xml:space="preserve">
+    <value>Project Snapshot</value>
+  </data>
+  <data name="oProjectStatistics" xml:space="preserve">
+    <value>Project Statistics</value>
+  </data>
+  <data name="oTaskTodoTrackingCounts" xml:space="preserve">
+    <value>Task/Todo Tracking Counts</value>
+  </data>
+  <data name="oTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="oActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="oCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="oPastDue" xml:space="preserve">
+    <value>Past Due</value>
+  </data>
+  <data name="oPercentsCompleted" xml:space="preserve">
+    <value>% Completed</value>
+  </data>
+  <data name="oIssuesTrackingCount" xml:space="preserve">
+    <value>Issues Tracking Counts</value>
+  </data>
+  <data name="oClosed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="oOpen" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="oPercentsClosed" xml:space="preserve">
+    <value>% Closed</value>
+  </data>
+  <data name="oOther" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="oDiscussions" xml:space="preserve">
+    <value>Discussions</value>
+  </data>
+  <data name="oFiles" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="oIssuesGraph" xml:space="preserve">
+    <value>Issues Graph</value>
+  </data>
+  <data name="oIssuesGraphTitle" xml:space="preserve">
+    <value>Issues Distribution by Status</value>
+  </data>
+  <data name="oEtc" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="oNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="oTaskGraph" xml:space="preserve">
+    <value>Tasks/To-do's Graph</value>
+  </data>
+  <data name="oTaskGraphTitle" xml:space="preserve">
+    <value>Tasks/To-do's distribution by status</value>
+  </data>
+  <data name="oResourcesTeam" xml:space="preserve">
+    <value>Resources/Team Breakdown</value>
+  </data>
+  <data name="oFinancialBudget" xml:space="preserve">
+    <value>Financial/Budget Tracking</value>
+  </data>
+  <data name="oPastDueActivities" xml:space="preserve">
+    <value>Past Due Activities (Tasks &amp; To-dos)</value>
+  </data>
+  <data name="oOpenIssues" xml:space="preserve">
+    <value>Open Issues</value>
+  </data>
+  <data name="oTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="oType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="oManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="oDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="oResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="oDueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="oName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="oCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="oRate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="oHours" xml:space="preserve">
+    <value>Hours to Date</value>
+  </data>
+  <data name="oCostsToDate" xml:space="preserve">
+    <value>Costs to date</value>
+  </data>
+  <data name="tStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="tFinishDate" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="tProjInf" xml:space="preserve">
+    <value>Project Information</value>
+  </data>
+  <data name="tProjectTitle" xml:space="preserve">
+    <value>Project Title</value>
+  </data>
+  <data name="tTargetEndDate" xml:space="preserve">
+    <value>Target End Date</value>
+  </data>
+  <data name="tActualEndDate" xml:space="preserve">
+    <value>Actual End Date</value>
+  </data>
+  <data name="tProjectStatus" xml:space="preserve">
+    <value>Project Status</value>
+  </data>
+  <data name="tCustomer" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="tProjectType" xml:space="preserve">
+    <value>Project Type</value>
+  </data>
+  <data name="tNA" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="tEmpty" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="oLaborCosts" xml:space="preserve">
+    <value>Labor Costs</value>
+  </data>
+  <data name="oTotalHours" xml:space="preserve">
+    <value>Total Hours</value>
+  </data>
+  <data name="oResourceCount" xml:space="preserve">
+    <value>Resource Count</value>
+  </data>
+  <data name="oAvgRate" xml:space="preserve">
+    <value>Avg. Rate</value>
+  </data>
+  <data name="oAvg" xml:space="preserve">
+    <value>Avg</value>
+  </data>
+  <data name="oActual" xml:space="preserve">
+    <value>Actual</value>
+  </data>
+  <data name="oFixedCostItems" xml:space="preserve">
+    <value>Fixed Cost Items</value>
+  </data>
+  <data name="oExpenses" xml:space="preserve">
+    <value>Expenses</value>
+  </data>
+  <data name="oSummaryBudget" xml:space="preserve">
+    <value>Summary Budget Information</value>
+  </data>
+  <data name="oCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="oBudget" xml:space="preserve">
+    <value>Budget</value>
+  </data>
+  <data name="oEstimate" xml:space="preserve">
+    <value>Estimate</value>
+  </data>
+  <data name="oFixedBudget" xml:space="preserve">
+    <value>Fixed Budget</value>
+  </data>
+  <data name="oLaborCostItems" xml:space="preserve">
+    <value>Labor Cost Items</value>
+  </data>
+  <data name="oBudgetDelta" xml:space="preserve">
+    <value>Budget Delta</value>
+  </data>
+  <data name="oTotalApproved" xml:space="preserve">
+    <value>Total Approved</value>
+  </data>
+</root>

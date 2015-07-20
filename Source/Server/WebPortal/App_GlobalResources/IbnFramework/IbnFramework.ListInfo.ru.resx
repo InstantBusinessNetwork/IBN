@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="List" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="NewList" xml:space="preserve">
+    <value>Новый список</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="ViewList" xml:space="preserve">
+    <value>Просмотр списка</value>
+  </data>
+  <data name="ListFolderList" xml:space="preserve">
+    <value>Проводник</value>
+  </data>
+  <data name="ListInfoCreate" xml:space="preserve">
+    <value>Новый список</value>
+  </data>
+  <data name="BackToListInfoList" xml:space="preserve">
+    <value>Вернуться к спискам</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Создал</value>
+  </data>
+  <data name="ListManagement" xml:space="preserve">
+    <value>Управление списком</value>
+  </data>
+  <data name="ListTempManagement" xml:space="preserve">
+    <value>Управление шаблоном списка</value>
+  </data>
+  <data name="RecordCount" xml:space="preserve">
+    <value>Количество записей</value>
+  </data>
+  <data name="ListFolderEdit" xml:space="preserve">
+    <value>Редактировать папку</value>
+  </data>
+  <data name="ListFolderCreate" xml:space="preserve">
+    <value>Новая папка</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>* необходимо ввести название папки</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="EditFolder" xml:space="preserve">
+    <value>Редактирование папки</value>
+  </data>
+  <data name="CreateFolder" xml:space="preserve">
+    <value>Новая папка в</value>
+  </data>
+  <data name="FolderTitle" xml:space="preserve">
+    <value>Название папки</value>
+  </data>
+  <data name="tPrivateLists" xml:space="preserve">
+    <value>Мои списки</value>
+  </data>
+  <data name="tPublicLists" xml:space="preserve">
+    <value>Общие списки</value>
+  </data>
+  <data name="WarningF" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту папку?</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="MoveTo" xml:space="preserve">
+    <value>Переместить...</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tLists" xml:space="preserve">
+    <value>Списки</value>
+  </data>
+  <data name="tPrjLists" xml:space="preserve">
+    <value>Проектные списки</value>
+  </data>
+  <data name="tAddFolder" xml:space="preserve">
+    <value>Новая папка</value>
+  </data>
+  <data name="tAddList" xml:space="preserve">
+    <value>Новый список</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Fields" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="MetaView" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="ListInfoMove" xml:space="preserve">
+    <value>Перемещение списка</value>
+  </data>
+  <data name="DefaultField" xml:space="preserve">
+    <value>Поле по умолчанию</value>
+  </data>
+  <data name="DefaultFieldChange" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="DefaultFieldNotSet" xml:space="preserve">
+    <value>Не определено</value>
+  </data>
+  <data name="tSelectProject" xml:space="preserve">
+    <value>Выберите проект</value>
+  </data>
+  <data name="tMove" xml:space="preserve">
+    <value>Переместить</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tListTemplates" xml:space="preserve">
+    <value>Шаблоны списков</value>
+  </data>
+  <data name="tListTemplateCreate" xml:space="preserve">
+    <value>Сохранить как шаблон</value>
+  </data>
+  <data name="tStepByStep" xml:space="preserve">
+    <value>Шаг {0} из {1}</value>
+  </data>
+  <data name="tListTemplateCreateHeader" xml:space="preserve">
+    <value>Новый шаблон списка</value>
+  </data>
+  <data name="tListTemplateCreateSubHeader" xml:space="preserve">
+    <value>Создание нового шаблона на основе списка.</value>
+  </data>
+  <data name="tListTemplateTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="tSaveWithData" xml:space="preserve">
+    <value>Сохранить в шаблоне данные списка</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tNext" xml:space="preserve">
+    <value>Вперед</value>
+  </data>
+  <data name="tPrev" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="tFinishWizardText1" xml:space="preserve">
+    <value>Вы создаете шаблон "&lt;b&gt;{0}&lt;/b&gt;" на основании списка "&lt;b&gt;{1}&lt;/b&gt;".</value>
+  </data>
+  <data name="tFinishWizardText2" xml:space="preserve">
+    <value>Данные списка также будут сохранены в шаблоне.</value>
+  </data>
+  <data name="tTemplate" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="tWithData" xml:space="preserve">
+    <value>Восстановить данные из шаблона</value>
+  </data>
+  <data name="tNotSet" xml:space="preserve">
+    <value>[не выбран]</value>
+  </data>
+  <data name="NewRow" xml:space="preserve">
+    <value>Новая запись</value>
+  </data>
+  <data name="WarningL" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот список?</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История изменений</value>
+  </data>
+  <data name="HistoryIsInstalled" xml:space="preserve">
+    <value>Сервис отслеживания истории изменения полей списка включен. Выберите поля, историю изменения которых необходимо сохранять.
+</value>
+  </data>
+  <data name="HistoryIsNotInstalled" xml:space="preserve">
+    <value>Сервис отслеживания истории изменений выключен. Если вам необходимо контролировать изменения полей списка, включите сервис.
+</value>
+  </data>
+  <data name="InstallHistory" xml:space="preserve">
+    <value>Включить сервис</value>
+  </data>
+  <data name="UninstallHistory" xml:space="preserve">
+    <value>Выключить сервис</value>
+  </data>
+  <data name="FieldList" xml:space="preserve">
+    <value>Список полей</value>
+  </data>
+  <data name="ImportList" xml:space="preserve">
+    <value>Мастер импорта списка</value>
+  </data>
+  <data name="ImportListMenu" xml:space="preserve">
+    <value>Импорт списка</value>
+  </data>
+  <data name="tListImportHeader" xml:space="preserve">
+    <value>Импорт списка</value>
+  </data>
+  <data name="tListImportSubHeader" xml:space="preserve">
+    <value>Вы можете импортировать данные в портал</value>
+  </data>
+  <data name="imExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="imXML" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="imCSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="imStep1Comments" xml:space="preserve">
+    <value>Вы можете импортировать данные из XML файла, таблицы Excel или из CSV файла. Укажите нужный тип и выберите файл, содержащий импортируемые данные.</value>
+  </data>
+  <data name="imSelectSourceType" xml:space="preserve">
+    <value>Выберите тип файла</value>
+  </data>
+  <data name="imSelectSourceFile" xml:space="preserve">
+    <value>Выберите файл</value>
+  </data>
+  <data name="imStep3Comments" xml:space="preserve">
+    <value>Вы можете импортировать данные в новый список или добавить их в уже существующий список.</value>
+  </data>
+  <data name="imStep3NewList" xml:space="preserve">
+    <value>Новый список</value>
+  </data>
+  <data name="imStep3UpdateExList" xml:space="preserve">
+    <value>Расширение существующего списка</value>
+  </data>
+  <data name="imStep3ListTitle" xml:space="preserve">
+    <value>Название списка</value>
+  </data>
+  <data name="imStep3GenCats" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="imStep3Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="imStep3Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="imStep3Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="imStep3SelectList" xml:space="preserve">
+    <value>Выберите список</value>
+  </data>
+  <data name="imWantToCreate" xml:space="preserve">
+    <value>Вы хотите создать новый список?</value>
+  </data>
+  <data name="imNewListCreation" xml:space="preserve">
+    <value>Создание нового списка</value>
+  </data>
+  <data name="imSelectExistingList" xml:space="preserve">
+    <value>Добавление данных в существующий список</value>
+  </data>
+  <data name="tAddField" xml:space="preserve">
+    <value>Новое поле</value>
+  </data>
+  <data name="tDelimeter" xml:space="preserve">
+    <value>Разделитель</value>
+  </data>
+  <data name="tTextQualifier" xml:space="preserve">
+    <value>Ограничитель строк</value>
+  </data>
+  <data name="tEncoding" xml:space="preserve">
+    <value>Кодировка</value>
+  </data>
+  <data name="tCsvParameters" xml:space="preserve">
+    <value>Параметры форматирования</value>
+  </data>
+  <data name="tMapping" xml:space="preserve">
+    <value>Соответствие полей</value>
+  </data>
+  <data name="tMetaField" xml:space="preserve">
+    <value>Поле списка</value>
+  </data>
+  <data name="tAvailable" xml:space="preserve">
+    <value>Поля источника данных</value>
+  </data>
+  <data name="tSelected" xml:space="preserve">
+    <value>Выбрано</value>
+  </data>
+  <data name="tImportInformation" xml:space="preserve">
+    <value>Импорт списка</value>
+  </data>
+  <data name="tNotSetValue" xml:space="preserve">
+    <value>[не определено]</value>
+  </data>
+  <data name="tDefaultValue" xml:space="preserve">
+    <value>[значение по умолчанию]</value>
+  </data>
+  <data name="tSpaceValue" xml:space="preserve">
+    <value>[пробел]</value>
+  </data>
+  <data name="tTabValue" xml:space="preserve">
+    <value>[таб]</value>
+  </data>
+  <data name="tDefault" xml:space="preserve">
+    <value>[по умолчанию]</value>
+  </data>
+  <data name="tImportWasSuccessfull" xml:space="preserve">
+    <value>Процесс импорта успешно завершен!</value>
+  </data>
+  <data name="tImportWithErrors" xml:space="preserve">
+    <value>Процесс импорта завершен!&lt;br  /&gt;При импорте данных возникло несколько ошибок!&lt;br  /&gt;Вы можете скачать {0}.</value>
+  </data>
+  <data name="tErrorList" xml:space="preserve">
+    <value>список ошибок</value>
+  </data>
+  <data name="IsEnum" xml:space="preserve">
+    <value>Справочник</value>
+  </data>
+  <data name="AddField" xml:space="preserve">
+    <value>Добавить поле</value>
+  </data>
+  <data name="AddingField" xml:space="preserve">
+    <value>Добавление поля</value>
+  </data>
+  <data name="ChooseField" xml:space="preserve">
+    <value>Выберите поле</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детальная информация</value>
+  </data>
+  <data name="HistoryView" xml:space="preserve">
+    <value>Вид списка</value>
+  </data>
+  <data name="ListView" xml:space="preserve">
+    <value>Вид списка</value>
+  </data>
+  <data name="SelectColumns" xml:space="preserve">
+    <value>Выбрать поля</value>
+  </data>
+  <data name="FieldListIsEmpty" xml:space="preserve">
+    <value>Список полей пуст</value>
+  </data>
+  <data name="SelectingColumns" xml:space="preserve">
+    <value>Выбор полей</value>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Настройки безопасности</value>
+  </data>
+  <data name="ListStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="ListType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="StatusActive" xml:space="preserve">
+    <value>Активный</value>
+  </data>
+  <data name="StatusArchived" xml:space="preserve">
+    <value>В архиве</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tAnnouncements" xml:space="preserve">
+    <value>Анонсы</value>
+  </data>
+  <data name="tApplications" xml:space="preserve">
+    <value>Приложения</value>
+  </data>
+  <data name="tInfo" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="tNews" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="tRequirements" xml:space="preserve">
+    <value>Требования</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Добавить в Избранное</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Показать всё</value>
+  </data>
+  <data name="NoFavoriteLists" xml:space="preserve">
+    <value>У вас нет избранных списков</value>
+  </data>
+  <data name="ListInfoEdit" xml:space="preserve">
+    <value>Редактирование информации о списке</value>
+  </data>
+  <data name="ListTempInfoEdit" xml:space="preserve">
+    <value>Редактирование информации о шаблоне списка</value>
+  </data>
+  <data name="McOleDbServiceWarning" xml:space="preserve">
+    <value>Возникла проблема с сервисом разбора данных.&lt;br /&gt;Сервис либо не запущен, либо вы неверно указали формат импортируемого файла.</value>
+  </data>
+	<data name="McOleDbServiceWarningXlsx" xml:space="preserve">
+		<value>На сервере не установлен необходимый компонент «&lt;a target="_blank" href="http://www.microsoft.com/downloads/details.aspx?FamilyID=7554F536-8C28-4598-9B72-EF94E038C891"&gt;Microsoft Office Access database engine 2007&lt;/a&gt;».&lt;br&gt;Сообщите об этой проблеме вашему системному администратору.</value>
+	</data>
+  <data name="PublicListItemAddResult" xml:space="preserve">
+    <value>Данные добавлены. Вы можете вернуться на форму ввода.</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Вернуться</value>
+  </data>
+  <data name="MetaViewList" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="tMoveAssign" xml:space="preserve">
+    <value>Переместить и назначить</value>
+  </data>
+  <data name="pagingFirst" xml:space="preserve">
+    <value>На первую страницу</value>
+  </data>
+  <data name="pagingLast" xml:space="preserve">
+    <value>На последнюю страницу</value>
+  </data>
+  <data name="pagingNext" xml:space="preserve">
+    <value>На следующую страницу</value>
+  </data>
+  <data name="pagingPrev" xml:space="preserve">
+    <value>На предыдущую страницу</value>
+  </data>
+  <data name="SystemNotifications" xml:space="preserve">
+    <value>Система уведомления</value>
+  </data>
+  <data name="RefException" xml:space="preserve">
+    <value>Список {0} содержит поля-ссылки на удаляемый класс.</value>
+  </data>
+  <data name="RefItemException" xml:space="preserve">
+    <value>Некоторые из выбранных записей не могут быть удалены. Существуют ссылающиеся на них объекты.</value>
+  </data>
+  <data name="WarningT" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот шаблон?</value>
+  </data>
+  <data name="ItemView" xml:space="preserve">
+    <value>Просмотреть запись</value>
+  </data>
+  <data name="tooltip_Delete" xml:space="preserve">
+    <value>Удалить выделенные элементы</value>
+  </data>
+  <data name="tooltip_New" xml:space="preserve">
+    <value>Создать новую запись</value>
+  </data>
+  <data name="lvpGeneralView" xml:space="preserve">
+    <value>Общий вид</value>
+  </data>
+  <data name="EditRow" xml:space="preserve">
+    <value>Редактирование записи</value>
+  </data>
+  <data name="ViewRow" xml:space="preserve">
+    <value>Просмотр записи</value>
+  </data>
+  <data name="ListsBlock" xml:space="preserve">
+    <value>[ Списки ]</value>
+  </data>
+  <data name="DeleteListFolder" xml:space="preserve">
+    <value>Удалить папку</value>
+  </data>
+  <data name="BusinessObjectOrList" xml:space="preserve">
+    <value>Бизнес-объект / Список</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Опубликовать</value>
+  </data>
+  <data name="Publication" xml:space="preserve">
+    <value>Публикация списка</value>
+  </data>
+</root>

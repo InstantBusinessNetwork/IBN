@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D525797D-5DA7-4622-8E6A-4B238482EC0A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SynchronizationTest</RootNamespace>
+    <AssemblyName>SynchronizationTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>D:\projects\IBN\Mediachase.Ibn.Synchronization\SynchronizationTest\Backup4\</UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.IBN.Business, Version=4.7.48.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\Business\bin\Debug\Mediachase.IBN.Business.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.6.42.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.6.53.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\Business\bin\Debug\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.XmlSerializers, Version=1.6.43.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\IbnNextTfs\4.8\Server\Business\bin\Debug\Mediachase.Ibn.Data.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Tools.Outlook, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Program Files\Reference Assemblies\Microsoft\VSTO\v8.0\Microsoft.Office.Tools.Outlook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Synchronization, Version=2.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyncTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Clean_IBN_CreateEvent.orderedtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\IbnNextTfs\4.8\Server\Mediachase.Ibn.Events\Mediachase.Ibn.Events.csproj">
+      <Project>{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}</Project>
+      <Name>Mediachase.Ibn.Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Sync.Core\Mediachase.Sync.Core.csproj">
+      <Project>{2689D996-1628-4D46-81DA-394BBCB64FA0}</Project>
+      <Name>Mediachase.Sync.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Sync.EntityObjectProvider\Mediachase.Sync.EntityObjectProvider.csproj">
+      <Project>{D5533D48-5723-4D79-A04F-C6A806A00B22}</Project>
+      <Name>Mediachase.Sync.EntityObjectProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

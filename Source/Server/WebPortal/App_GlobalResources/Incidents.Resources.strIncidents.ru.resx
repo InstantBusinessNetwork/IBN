@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbIncidentsList">
+		<value>Инциденты</value>
+	</data>
+	<data name="tAllIncidents">
+		<value>Все инциденты</value>
+	</data>
+	<data name="tMyIncidents">
+		<value>Мои инциденты</value>
+	</data>
+	<data name="tManagedIncidents">
+		<value>Управляемые инциденты</value>
+	</data>
+	<data name="tbIncidentAdd">
+		<value>Новый инцидент</value>
+	</data>
+	<data name="tMailIncidents">
+		<value>Внешние инциденты</value>
+	</data>
+	<data name="Export">
+		<value>Экспорт в Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Экспорт в XML</value>
+	</data>
+	<data name="tReports">
+		<value>Отчеты</value>
+	</data>
+	<data name="Help">
+		<value>Используйте эти ссылки для просмотра отчетов, связанных с инцидентами.</value>
+	</data>
+	<data name="IncidentReports">
+		<value>Отчеты по инцидентам</value>
+	</data>
+	<data name="IncidentStatistics">
+		<value>Статистика по инцидентам</value>
+	</data>
+	<data name="XMLReport">
+		<value>Создать отчет</value>
+	</data>
+	<data name="QuickInfo">
+		<value>Общая информация</value>
+	</data>
+	<data name="TotalIssuesCount">
+		<value>Всего инцидентов</value>
+	</data>
+	<data name="NewIssuesCount">
+		<value>Новых инцидентов</value>
+	</data>
+	<data name="ActiveIssuesCount">
+		<value>Открытых инцидентов</value>
+	</data>
+	<data name="ClosedIssuesCount">
+		<value>Закрытых инцидентов</value>
+	</data>
+	<data name="AvgNewStateTime">
+		<value>Среднее время пребывания в состоянии "Новый"</value>
+	</data>
+	<data name="AvgActiveStateTime">
+		<value>Среднее время пребывания в состоянии "Открыт"</value>
+	</data>
+	<data name="AvgResolveTime">
+		<value>Среднее время решения инцидента</value>
+	</data>
+	<data name="IssuesByStatus">
+		<value>Распределение инцидентов по статусу</value>
+	</data>
+	<data name="IssuesByType">
+		<value>Распределение инцидентов по типу</value>
+	</data>
+	<data name="oClosed">
+		<value>Закрытые</value>
+	</data>
+	<data name="oActive">
+		<value>Открытые</value>
+	</data>
+	<data name="oNew">
+		<value>Новые</value>
+	</data>
+	<data name="HelpDeskReports">
+		<value>Отчеты по инцидентам</value>
+	</data>
+	<data name="OverallSnapshotReport">
+		<value>Общий отчет по инцидентам</value>
+	</data>
+	<data name="IssuesAnalysis">
+		<value>Статистические отчеты</value>
+	</data>
+	<data name="OverallIssuesAnalysis">
+		<value>Распределение по статусу</value>
+	</data>
+	<data name="IssuesAnalysisByType">
+		<value>Распределение по типу</value>
+	</data>
+	<data name="IssuesAnalysisByManager">
+		<value>Распределение по менеджерам</value>
+	</data>
+	<data name="IssuesAnalysisByCategory">
+		<value>Распределение по категориям</value>
+	</data>
+	<data name="IssuesAnalysisClosed">
+		<value>Закрытые инциденты</value>
+	</data>
+	<data name="IncidentsNotAssigned">
+		<value>Новые и неназначенные внутренние инциденты</value>
+	</data>
+	<data name="tNoProject">
+		<value>Вне проектов</value>
+	</data>
+	<data name="tImport">
+		<value>Импорт инцидентов</value>
+	</data>
+	<data name="ImportExport">
+		<value>Импорт/Экспорт</value>
+	</data>
+</root>

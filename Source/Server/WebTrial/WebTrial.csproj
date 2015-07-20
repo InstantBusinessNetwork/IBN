@@ -1,0 +1,317 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9918EC49-06A1-426F-9361-2FA15749B593}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.WebTrial</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.WebTrial</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activate.aspx.cs">
+      <DependentUpon>Activate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Activate.aspx.designer.cs">
+      <DependentUpon>Activate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivatePortal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActivatePortal.aspx.designer.cs">
+      <DependentUpon>ActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AntiRobot.aspx.cs">
+      <DependentUpon>AntiRobot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AntiRobot.aspx.designer.cs">
+      <DependentUpon>AntiRobot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AntiRobotControl.ascx.cs">
+      <DependentUpon>AntiRobotControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_Code_Old\AntiRobotImage.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="App_Code_Old\CManage.cs" />
+    <Compile Include="App_Code_Old\DBHelper.cs" />
+    <Compile Include="AntiRobotControl.ascx.designer.cs">
+      <DependentUpon>AntiRobotControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDomain.aspx.designer.cs">
+      <DependentUpon>CheckDomain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code_Old\Settings.cs" />
+    <Compile Include="App_Code_Old\Trial.cs" />
+    <Compile Include="App_GlobalResources\Resources.Activate.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.Activate.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.Activate.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.Activate.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.Resources.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Resources.Resources.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.Resources.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDomain.aspx.cs">
+      <DependentUpon>CheckDomain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCActivate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MCActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCActivate.aspx.designer.cs">
+      <DependentUpon>MCActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCActivatePortal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MCActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCActivatePortal.aspx.designer.cs">
+      <DependentUpon>MCActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCRegistration.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MCRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCRegistration.aspx.designer.cs">
+      <DependentUpon>MCRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmBoxActivate.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PmBoxActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmBoxActivate.aspx.designer.cs">
+      <DependentUpon>PmBoxActivate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmBoxActivatePortal.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PmBoxActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmBoxActivatePortal.aspx.designer.cs">
+      <DependentUpon>PmBoxActivatePortal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmboxRegistration.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PmboxRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PmboxRegistration.aspx.designer.cs">
+      <DependentUpon>PmboxRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TermsOfService.aspx.cs">
+      <DependentUpon>TermsOfService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsOfService.aspx.designer.cs">
+      <DependentUpon>TermsOfService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\Resources.Activate.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.Activate.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Resources.Activate.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.Activate.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Resources.Resources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.Resources.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\Resources.Resources.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Resources.Resources.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Activate.aspx" />
+    <Content Include="AntiRobot.aspx" />
+    <Content Include="AntiRobotControl.ascx" />
+    <Content Include="CheckDomain.aspx" />
+    <None Include="DBTrial.sql" />
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Layouts\browser.js" />
+    <Content Include="Layouts\buttons.js" />
+    <Content Include="Layouts\ibn2003_masthead.gif" />
+    <Content Include="Layouts\loading6.gif" />
+    <Content Include="Layouts\windows.css" />
+    <Content Include="Layouts\Xp\COLOR1.CSS" />
+    <Content Include="Layouts\Xp\DOT.GIF" />
+    <Content Include="Layouts\Xp\Enter_dis_en.gif" />
+    <Content Include="Layouts\Xp\Enter_dis_ru.gif" />
+    <Content Include="Layouts\Xp\Enter_en.gif" />
+    <Content Include="Layouts\Xp\Enter_ru.gif" />
+    <Content Include="Layouts\Xp\PARTGRAD.GIF" />
+    <Content Include="Layouts\Xp\RTEBNHOV.GIF" />
+    <Content Include="Layouts\Xp\RTEBNSEL.GIF" />
+    <Content Include="Layouts\Xp\Theme.CSS" />
+    <Content Include="Layouts\Xp\theme.gif" />
+    <Content Include="Layouts\Xp\TOOLGRAD.GIF" />
+    <Content Include="Layouts\Xp\TOPGRAD.GIF" />
+    <Content Include="TermsOfService.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IBN35Trial.vsdisco" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\CompanyInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\Trial.wsdl" />
+    <Content Include="ActivatePortal.aspx" />
+    <Content Include="Layouts\apply.gif" />
+    <Content Include="Layouts\busy.gif" />
+    <Content Include="Layouts\free-g.gif" />
+    <Content Include="Layouts\loading8.gif" />
+    <Content Include="MCActivate.aspx" />
+    <Content Include="MCActivatePortal.aspx" />
+    <Content Include="MCRegistration.aspx" />
+    <Content Include="PmBoxActivate.aspx" />
+    <Content Include="PmBoxActivatePortal.aspx" />
+    <Content Include="PmboxRegistration.aspx" />
+    <None Include="Web References\localhost\Trial.disco" />
+    <None Include="Web References\localhost\TrialResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://ibn47asp.mediachase.net/WebServices/Trial.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://ibn47asp.mediachase.net/WebServices/Trial.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Mediachase_Ibn_WebTrial_localhost_Trial</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11227</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost/ibn48trial/</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

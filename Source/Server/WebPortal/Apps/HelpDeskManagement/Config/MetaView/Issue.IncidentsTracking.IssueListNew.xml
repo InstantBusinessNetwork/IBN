@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="HDM_Columns">
+			<clear />
+			<add>
+				<Column id="9BD3F430-B11D-4866-932E-5B13CE935326" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<!--<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_HDM_ViewItem" paddingRight="5" tooltip="{IbnFramework.Incident:ViewIssue}" />-->
+					<Item imageUrl="~/Images/IbnFramework/Contact-Edit.png" commandName="MC_HDM_QuickTracking" paddingRight="5" tooltip="{IbnFramework.Incident:QTrackIssue}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="MC_HDM_EditGeneralInfo" paddingRight="5" tooltip="{IbnFramework.Incident:EditIssue}" />
+					<Item imageUrl="~/Images/IbnFramework/TreeView-Search.png" commandName="MC_HDM_LastForumPostView" paddingRight="5" tooltip="{IbnFramework.Incident:QLastForumPost}" />
+					<!--<Item imageUrl="~/layouts/Images/delete.gif" commandName="MC_HDM_DeleteItem" paddingRight="5" tooltip="{IbnFramework.Incident:DeleteIssue}" />-->
+				</Column>
+				<Column id="colId" type="default" width="50" title="#" sortExpression="IncidentId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Integer.Grid.Incident.IncidentId.IncidentList.ascx" />
+				<Column id="colPriority" type="default" width="110" title="{IbnFramework.Incident:Priority}" sortExpression="PriorityName" dataField="PriorityName" />
+				<Column id="colState" type="default" width="110" title="{IbnFramework.Incident:IssStatus}" dataField="StateName" sortExpression="StateName" />
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.Title.IncidentList.ascx" />
+				<Column id="colCreator" type="default" width="160" title="{IbnFramework.Incident:Creator}" sortExpression="CreatorName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Creator.IncidentList.ascx" />
+				<Column id="colResponsible" type="default" width="160" title="{IbnFramework.Incident:IssResponsible}" sortExpression="ResponsibleName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Responsible.IncidentList.ascx" />
+				<Column id="colModified" type="default" width="100" title="{IbnFramework.Incident:IssUpdated}" sortExpression="ModifiedDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Modified.IncidentList.ascx" />
+				<Column id="colOpenDate" type="default" width="100" title="{IbnFramework.Incident:ActualOpenDate}" sortExpression="ActualOpenDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ActualOpenDate.IncidentList.ascx" />
+				<Column id="colFinishDate" type="default" width="100" title="{IbnFramework.Incident:ActualFinishDate}" sortExpression="ActualFinishDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ActualFinishDate.IncidentList.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

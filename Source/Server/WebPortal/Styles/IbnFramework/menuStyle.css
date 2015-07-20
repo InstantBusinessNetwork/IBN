@@ -1,0 +1,25 @@
+.TopGroup
+{
+  background-color:#DBD7D0; 
+  border:solid 1px gray; 
+  cursor:default; 
+}
+.MenuItem
+{
+  font-family:MS Sans Serif; 
+  font-size:9px; 
+  cursor:default; 
+}
+.MenuItemHover 
+{
+  background-color:#C2C5C8; 
+  font-family:MS Sans Serif; 
+  font-size:9px; 
+  cursor:default; 
+}
+.MenuBreak
+{
+  background-image:url(../../images/IbnFramework/break_bg.gif);
+  width:100%;
+  height:1px;
+}

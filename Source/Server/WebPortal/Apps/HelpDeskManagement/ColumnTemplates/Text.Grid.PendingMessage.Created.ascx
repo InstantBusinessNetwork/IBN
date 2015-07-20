@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.HelpDeskManagement.ColumnTemplates.Text_Grid_PendingMessage_Created" %>
+<%# (Eval("Created") == DBNull.Value) ? "" : ((DateTime)Eval("Created")).ToString("g")%>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="ShortInfo">
+			<Placeholder id="Placeholder_1">
+				<!-- 
+					Toolbar is defined in file 
+					~/Apps/BusinessProcess/Config/ListViewUI/WorkflowInstance.Default.WorkflowInstanceView.xml 
+				-->
+				<Control id="Toolbar" path="~/Apps/MetaUI/Toolbar/MetaToolbar.ascx">
+					<Property name="ClassName" value="WorkflowInstance" />
+					<Property name="ViewName" value="Default" />
+					<Property name="PlaceName" value="WorkflowInstanceView" />
+					<Property name="ToolbarMode" value="ListViewUI" />
+				</Control>
+				<Control id="ShortViewForm" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormName" value="[MC_ShortViewForm]" />
+					<Property name="OuterCssClass" value="ibn-light ibn-underline" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+		<Block id="Details" name="{IbnFramework.Global:_mc_Details}">
+			<Placeholder id="Placeholder_1">
+				<Control id="Assignments" path="~/Apps/BusinessProcess/Modules/AssignmentsInfo.ascx">
+					
+				</Control>
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

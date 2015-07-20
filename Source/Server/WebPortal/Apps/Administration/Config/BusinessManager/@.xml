@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Customization.Item" metaClass="CustomizationItem" method="*" type="Mediachase.Ibn.Business.Customization.CustomizationItemRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Customization.ItemArgument" metaClass="CustomizationItemArgument" method="*" type="Mediachase.Ibn.Business.Customization.CustomizationItemArgumentRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Customization.Profile" metaClass="CustomizationProfile" method="*" type="Mediachase.Ibn.Business.Customization.CustomizationProfileRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Customization.ProfileUser" metaClass="CustomizationProfileUser" method="*" type="Mediachase.Ibn.Business.Customization.CustomizationProfileUserRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Customization.ProfileCommand" metaClass="CustomizationProfileCommand" method="*" type="Mediachase.Ibn.Business.Customization.CustomizationProfileCommandRequestHandler, Mediachase.IBN.Business"/>
+		</add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

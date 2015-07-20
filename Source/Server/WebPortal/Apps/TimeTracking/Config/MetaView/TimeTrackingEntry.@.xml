@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.TimeTracking:_mc_Delete}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_TimeTracking_Delete"></Button>
+			<Splitter id="DeleteSelectedSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<GridAction commandName="MC_TimeTracking_EditGridFrame" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_TimeTracking_BackToTTWeek">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingWeek.aspx</Url>
+			</Command>
+			<Command id="MC_TimeTracking_Delete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.DeleteHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.TimeTracking:_mc_GridDeleteWarning}</ConfirmationText>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_UserReports">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingReport.aspx?ReportType=User</Url>
+			</Command>
+			<Command id="MC_TimeTracking_ManagerReports">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/ListTimeTrackingReport.aspx?ReportType=Admin</Url>
+			</Command>
+			<Command id="MC_TimeTracking_ProjectReport">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/ProjectReport.aspx</Url>
+			</Command>
+			<Command id="MC_TimeTracking_FinanceProjectReport">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/FinanceProjectReport.aspx</Url>
+			</Command>
+			<Command id="MC_TimeTracking_QuickAddFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_QuickAdd}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/QuickAdd.aspx?ViewName={QueryString:ViewName}</Url>
+				<Width>510</Width>
+				<Height>200</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_QuickAddManagerFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_QuickAdd}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/QuickAddManager.aspx?ViewName={QueryString:ViewName}</Url>
+				<Width>510</Width>
+				<Height>230</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_QuickAddGridFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_QuickAdd}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/QuickAdd.aspx?ViewName={QueryString:ViewName}&amp;blockId=[ClientParam:parentBlockId]</Url>
+				<Width>510</Width>
+				<Height>200</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.UI.Web.Apps_Code.TimeTracking.CommandHandlers.QuickAddHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TimeTracking_MultipleAddFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_MultipleAdding}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/MultipleAdd.aspx?ViewName={QueryString:ViewName}</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>30</Top>
+				<Left>50</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_CopyPrevWeekFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_CloningItems}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/Clone.aspx</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>30</Top>
+				<Left>50</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.CopyPrevWeekEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TimeTracking_SendToApprove">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.TimeTracking:SendToApproveConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.SendToApproveHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_CloneSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.TimeTracking:CloneSelectedConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.CloneSelectedHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.CloneEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TimeTracking_ExcelExport">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/TimeTracking/Pages/Public/TimeTrackingExport.aspx?ViewName={QueryString:ViewName}&amp;StartDate={HttpContext:SelectedWeek}</Url>
+				<Width>50</Width>
+				<Height>50</Height>
+				<Left>200</Left>
+				<Top>200</Top>
+				<Resize>True</Resize>
+				<Scroll>True</Scroll>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeSheet_CollapseExpandBlock">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.CollapseExpandBlockTimesheetHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_ChangeStateFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_ChangeListState}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/ChangeState.aspx?blockId=[ClientParam:parentBlockId]&amp;cmd=MC_TimeTracking_ChangeStateFrame</Url>
+				<Width>500</Width>
+				<Height>250</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>				
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.UI.Web.Apps_Code.TimeTracking.CommandHandlers.StateChangeHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TimeTracking_ChangeStateManagerFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_ChangeListState}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/ChangeState.aspx?blockId=[ClientParam:parentBlockId]&amp;cmd=MC_TimeTracking_ChangeStateManagerFrame</Url>
+				<Width>500</Width>
+				<Height>250</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.UI.Web.Apps_Code.TimeTracking.CommandHandlers.StateChangeManagerHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TimeTracking_SendToApproveGrid">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.TimeTracking:SendToApproveConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.SendToApproveHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.UI.Web.Apps_Code.TimeTracking.CommandHandlers.SendToApproveGridHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_EditGridFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:_mc_TimetrackingEdit}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/GridPopupEdit.aspx?primaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>500</Width>
+				<Height>250</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+			</Command>
+			<Command id="MC_TimeTracking_InfoFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:Information}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/Info.aspx?primaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>750</Width>
+				<Height>350</Height>
+				<Left>50</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<UpdatePanelIds>panelGridGeneral</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.InfoEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

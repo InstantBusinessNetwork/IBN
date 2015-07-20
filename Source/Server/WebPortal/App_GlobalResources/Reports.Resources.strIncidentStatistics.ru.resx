@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Статистика по инцидентам</value>
+	</data>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="WithoutProject">
+		<value>Вне проектов</value>
+	</data>
+	<data name="HDM">
+		<value>Служба поддержки</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="IBN35">
+		<value>IBN36</value>
+	</data>
+	<data name="IssueStatistics">
+		<value>Отчет "Статистика по инцидентам"</value>
+	</data>
+	<data name="TotalIncCount">
+		<value>Всего инцидентов</value>
+	</data>
+	<data name="TotalExternalIncCount">
+		<value>Внешних</value>
+	</data>
+	<data name="NewIncidentsCount">
+		<value>Новых</value>
+	</data>
+	<data name="ActiveIncidentsCount">
+		<value>Активных</value>
+	</data>
+	<data name="TotalCountByType">
+		<value>Общее количество инцидентов для каждого типа</value>
+	</data>
+	<data name="TotalCountByGeneralCategory">
+		<value>Общее количество инцидентов для каждой общей категории</value>
+	</data>
+	<data name="TotalCountByIncidentCategory">
+		<value>Общее количество инцидентов для каждой категории инцидента</value>
+	</data>
+	<data name="ATNewState">
+		<value>Среднее время пребывания в состоянии "Новая"</value>
+	</data>
+	<data name="ATActiveState">
+		<value>Среднее время пребывания в состоянии "Активная"</value>
+	</data>
+	<data name="ATClosedInc">
+		<value>Среднее время решения завершенных инцидентов</value>
+	</data>
+	<data name="ATAllInc">
+		<value>Среднее время решения всех инцидентов</value>
+	</data>
+	<data name="ClosedIncidentsCount">
+		<value>Закрытых</value>
+	</data>
+	<data name="Apply">
+		<value>Применить</value>
+	</data>
+	<data name="Print">
+		<value>Печать</value>
+	</data>
+	<data name="Export">
+		<value>Экспорт</value>
+	</data>
+	<data name="New">
+		<value>Новая</value>
+	</data>
+	<data name="Active">
+		<value>Активная</value>
+	</data>
+	<data name="Closed">
+		<value>Закрытая</value>
+	</data>
+	<data name="IncDistribution">
+		<value>Распределение инцидентов по статусу</value>
+	</data>
+	<data name="TypeName">
+		<value>Тип</value>
+	</data>
+	<data name="Count">
+		<value>Количество</value>
+	</data>
+	<data name="CategoryName">
+		<value>Категория</value>
+	</data>
+	<data name="IncByType">
+		<value>Распределение инцидентов по типу</value>
+	</data>
+	<data name="IncByGenCat">
+		<value>Распределение инцидентов по общим категориям</value>
+	</data>
+	<data name="IncByIncCat">
+		<value>Распределение инцидентов по категориям инцидентов</value>
+	</data>
+	<data name="StartedBy">
+		<value>Создатель</value>
+	</data>
+	<data name="StartedAt">
+		<value>Время создания</value>
+	</data>
+	<data name="FilterValues">
+		<value>Фильтр</value>
+	</data>
+	<data name="TotalCountByManager">
+		<value>Общее количество инцидентов для каждого менеджера</value>
+	</data>
+	<data name="IncByMan">
+		<value>Распределение инцидентов по папкам</value>
+	</data>
+	<data name="ProjectName">
+		<value>Проект</value>
+	</data>
+	<data name="IncByProj">
+		<value>Распределение инцидентов по проектам</value>
+	</data>
+	<data name="TotalCountByProject">
+		<value>Общее количество инцидентов для каждого проекта</value>
+	</data>
+	<data name="ManagerName">
+		<value>Менеджер</value>
+	</data>
+	<data name="oOverallIssuesSnapshot">
+		<value>Общий отчет по инцидентам</value>
+	</data>
+	<data name="oTotalHDM">
+		<value>Пользователей в группе "Служба поддержки"</value>
+	</data>
+	<data name="oTotalIT">
+		<value>Всего инцидентов</value>
+	</data>
+	<data name="oProjectIssues">
+		<value>Инцидентов в рамках проектов</value>
+	</data>
+	<data name="oGeneralIssues">
+		<value>Обычных инцидентов</value>
+	</data>
+	<data name="oInboundEmailIssues">
+		<value>Внешних инцидентов</value>
+	</data>
+	<data name="oSnapshotGraphs">
+		<value>Статистика в диаграммах</value>
+	</data>
+	<data name="oCounts">
+		<value>Общая статистика</value>
+	</data>
+	<data name="oBreakdownByProject">
+		<value>Распределение по проектам</value>
+	</data>
+	<data name="oBreakdownforManagers">
+		<value>Распределение по менеджерам</value>
+	</data>
+	<data name="oProject">
+		<value>Проект</value>
+	</data>
+	<data name="oNew">
+		<value>Новые</value>
+	</data>
+	<data name="oActive">
+		<value>Активные</value>
+	</data>
+	<data name="oClosed">
+		<value>Закрытые</value>
+	</data>
+	<data name="oTotal">
+		<value>Всего</value>
+	</data>
+	<data name="oOverallTotal">
+		<value>Всего</value>
+	</data>
+	<data name="oManager">
+		<value>Менеджер</value>
+	</data>
+	<data name="oHighPriorityIssues">
+		<value>Открытые инциденты с высоким приоритетом</value>
+	</data>
+	<data name="oPriority">
+		<value>Приоритет</value>
+	</data>
+	<data name="oTitle">
+		<value>Название</value>
+	</data>
+	<data name="oStatus">
+		<value>Статус</value>
+	</data>
+	<data name="oCreated">
+		<value>Создан</value>
+	</data>
+	<data name="oModified">
+		<value>Изменена</value>
+	</data>
+	<data name="oAvgTimeToResolve">
+		<value>Среднее время решения</value>
+	</data>
+	<data name="oAvgTimeToApprove">
+		<value>Среднее время утверждения внешнего инцидента</value>
+	</data>
+	<data name="oIssuesAnalysys">
+		<value>Статистика распределения инцидентов по статусу</value>
+	</data>
+	<data name="oNewIssues">
+		<value>Новые инциденты</value>
+	</data>
+	<data name="oOpenIssues">
+		<value>Открытые инциденты</value>
+	</data>
+	<data name="oClosedIssuesText">
+		<value>{0} инцидентов закрыто к сегодняшнему дню. Просмотреть их можно с помощью отчета по закрытым инцидентам.</value>
+	</data>
+	<data name="oClosedIssues">
+		<value>Закрытые инциденты</value>
+	</data>
+	<data name="tPrint">
+		<value>Печать</value>
+	</data>
+	<data name="oIssuesAnalysisByManager">
+		<value>Статистика распределения инцидентов по менеджеру</value>
+	</data>
+	<data name="oStatus">
+		<value>Статус</value>
+	</data>
+	<data name="oIssuesAnalysisByCategory">
+		<value>Статистика распределения инцидентов по категориям</value>
+	</data>
+	<data name="oIssuesAnalysisClosed">
+		<value>Статистика закрытых инцидентов</value>
+	</data>
+	<data name="oIssuesAnalysisByType">
+		<value>Статистика распределения инцидентов по типу</value>
+	</data>
+	<data name="oCreationDate">
+		<value>Дата создания</value>
+	</data>
+	<data name="oActivationDate">
+		<value>Дата активизации</value>
+	</data>
+	<data name="oClosedDate">
+		<value>Дата закрытия</value>
+	</data>
+	<data name="oType">
+		<value>Тип</value>
+	</data>
+	<data name="oIssuesAnalysisProject">
+		<value>Статистика инцидентов проекта</value>
+	</data>
+	<data name="tStartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="tFinishDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="tProjInf">
+		<value>Информация по проекту</value>
+	</data>
+	<data name="tProjectTitle">
+		<value>Название проекта</value>
+	</data>
+	<data name="tTargetEndDate">
+		<value>Планируемая дата завершения</value>
+	</data>
+	<data name="tActualEndDate">
+		<value>Фактическая дата завершения</value>
+	</data>
+	<data name="tProjectStatus">
+		<value>Статус проекта</value>
+	</data>
+	<data name="tCustomer">
+		<value>Клиент</value>
+	</data>
+	<data name="tProjectType">
+		<value>Тип проекта</value>
+	</data>
+	<data name="tNA">
+		<value>н/а</value>
+	</data>
+	<data name="tSponsors">
+		<value>Спонсоры</value>
+	</data>
+	<data name="tStakeholders">
+		<value>Заинтересованные лица</value>
+	</data>
+	<data name="tEmpty">
+		<value>нет</value>
+	</data>
+	<data name="QuickCounts">
+		<value>Общая информация</value>
+	</data>
+</root>

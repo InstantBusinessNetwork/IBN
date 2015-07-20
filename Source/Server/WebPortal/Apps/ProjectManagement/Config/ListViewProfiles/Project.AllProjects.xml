@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{F7DCE495-EF0D-4350-A75F-8951C2C88D9F}</Id>
+	<Name>{IbnFramework.Project:AllProjects}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>ProjectsDefault</FieldSetName>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+</ListViewProfile>

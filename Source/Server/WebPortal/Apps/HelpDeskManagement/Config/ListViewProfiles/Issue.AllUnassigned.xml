@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{4A168E1C-377A-42b4-9C07-3525BF5D1EF8}</Id>
+	<Name>{IbnFramework.Incident:UnassignedIssues}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>IncidentsDefault</FieldSetName>
+	<GroupByFieldName>IssueBox</GroupByFieldName>
+	<Filters>
+		<FilterElement>
+			<Source>IncidentStatusId</Source>
+			<Value xsi:type="xsd:string">-1</Value>
+		</FilterElement>
+		<FilterElement>
+			<Source>IncidentResponsibleId</Source>
+			<Value xsi:type="xsd:string">-1</Value>
+		</FilterElement>
+	</Filters>
+</ListViewProfile>

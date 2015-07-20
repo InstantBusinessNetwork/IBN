@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MMain" create="True">
+			<add>
+				<Link order="650" id="MMain065" text="{IbnFramework.Report:RdlReports}" iconUrl="" iconCss="" command="cmd_MMain065" />
+			</add>
+		</Tab>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MMain065">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=Report</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

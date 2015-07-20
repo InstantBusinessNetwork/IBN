@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>ListFailed</Id>
+	<Name>{IbnFramework.Admin:FailedMessages}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>FailedMessages</FieldSetName>
+	<FieldSet>
+		<string>Created</string>
+		<string>Source</string>
+		<string>Email</string>
+		<string>IsDelivered</string>
+		<string>DeliveryAttempts</string>
+		<string>Error</string>
+		<string>Modified</string>
+	</FieldSet>
+	<GroupByFieldName />
+	<Filters>
+		<FilterElement>
+			<Source>DeliveryAttempts</Source>
+			<Type>Greater</Type>
+			<Value xsi:type="xsd:string">100</Value>
+			<ValueIsTemplate>false</ValueIsTemplate>
+		</FilterElement>
+	</Filters>
+	<ColumnsUI>
+		<Column field="Created" width="110px" />
+		<Column field="Source" width="130px" />
+		<Column field="Email" width="320px" title="{IbnFramework.Admin:ClientEmailMessage}" />
+		<Column field="IsDelivered" width="60px" />
+		<Column field="DeliveryAttempts" width="50px" />
+		<Column field="Error" width="200px" />
+		<Column field="Modified" width="110px" />
+	</ColumnsUI>
+</ListViewProfile>

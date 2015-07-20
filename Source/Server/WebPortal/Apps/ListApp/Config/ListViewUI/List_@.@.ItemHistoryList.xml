@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Text id="TextId" text="{IbnFramework.ListInfo:History}" cssClass="ibn-WPTitle"></Text>
+			<Button id="BackButton" text="{IbnFramework.GlobalMetaInfo:Back}" imageUrl="~/Layouts/Images/cancel.gif" commandName="MC_ListApp_Back" align="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_ListApp_Columns">
+				<Column id="C56BB591-F155-4e8e-8BC6-0671393688A5" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/icon-search.gif" commandName="MC_ListApp_ViewHistoryItem" paddingRight="10" tooltip="{IbnFramework.ListInfo:ItemView}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_ListApp_ViewHistoryItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>View Item</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityViewPopup.aspx?formName=[MC_GeneralViewForm]&amp;className={HttpContext:HistoryClassName}&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_ListApp_Back">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName={QueryString:ClassName}</Url>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

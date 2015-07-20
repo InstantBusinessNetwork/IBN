@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_MUI_DeleteSelected" itemSplitter="Right"></Button>
+			<Button id="ResetAttempts" text="{IbnFramework.Common:tResetCounter}" imageUrl="~/layouts/images/reset17.gif" commandName="MC_MUI_ResetSelected" itemSplitter="Right"></Button>
+			<Button id="ChangeSettings" text="{IbnFramework.Common:tSettings}" imageUrl="~/layouts/images/customize.gif" commandName="MC_MUI_ChangeSettings" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_MUI_ProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ProfileEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEditAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNewAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteSelectedEntityHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_MUI_ResetSelected">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.ResetCounterSelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_MUI_ChangeSettings">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:tSettings}</PopupTitle>
+				<Url>~/Apps/Administration/Pages/OutgoingEmailLogSettings.aspx</Url>
+				<Width>350</Width>
+				<Height>240</Height>
+				<Top>25</Top>
+				<Left>25</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

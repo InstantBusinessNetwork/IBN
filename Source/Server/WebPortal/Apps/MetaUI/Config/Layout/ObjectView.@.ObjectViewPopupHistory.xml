@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="ViewBlock">
+			<Placeholder id="ViewBlock.Placeholder_1">
+				<Control id="ViewBlock.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormName" value="[MC_GeneralViewForm_History]" />
+					<Property name="PlaceName" value="ObjectViewPopup" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="ViewBlock.Placeholder_2" />
+			<Placeholder id="ViewBlock.Placeholder_3" />
+			<Placeholder id="ViewBlock.Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

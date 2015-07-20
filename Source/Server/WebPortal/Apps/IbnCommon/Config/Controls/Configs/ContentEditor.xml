@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>0E76CDF9-B029-42c9-ABC2-B03D4003A282</Uid>
+	<Title>{IbnFramework.Global:_mc_ContentEditor}</Title>
+	<Description>{IbnFramework.Global:_mc_ContentEditorDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/ContentEditor.ascx</Path>
+	<PropertyPagePath>~/Apps/IbnCommon/WidgetControls/ContentEditorPropertyPage.ascx</PropertyPagePath>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/contenteditor.png</IconPath>
+</DynamicControlInfo>

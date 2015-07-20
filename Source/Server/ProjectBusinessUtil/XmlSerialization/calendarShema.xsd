@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<xsd:schema xmlns="http://schemas.microsoft.com/project" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/data/udc/soap" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Calendar">
+    <xsd:annotation>
+      <xsd:documentation>Calendars are used to define standard working and non-working times. Projects must have one base calendar. Tasks and resources may have their own non-base calendars which are based on a base calendar.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="UID" type="xsd:integer">
+          <xsd:annotation>
+            <xsd:documentation>The unique identifier of the calendar.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="Name">
+          <xsd:annotation>
+            <xsd:documentation>The name of the calendar.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="512" />
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="IsBaseCalendar" type="xsd:boolean">
+          <xsd:annotation>
+            <xsd:documentation>Whether the calendar is a base calendar.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="BaseCalendarUID" type="xsd:integer">
+          <xsd:annotation>
+            <xsd:documentation>The unique identifier of the base calendar on which this calendar depends. Only applicable if the calendar is not a base calendar.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:element>
+        <xsd:element minOccurs="0" name="WeekDays">
+          <xsd:annotation>
+            <xsd:documentation>The collection of Weekdays that defines this calendar.</xsd:documentation>
+          </xsd:annotation>
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element minOccurs="0" maxOccurs="unbounded" name="WeekDay">
+                <xsd:annotation>
+                  <xsd:documentation>A weekday either defines regular days of the week or exception days in the calendar.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element minOccurs="1" name="DayType">
+                      <xsd:annotation>
+                        <xsd:documentation>The type of day. Values are: 0=Exception, 1=Monday, 2=Tuesday, 3=Wednesday, 4=Thursday, 5=Friday, 6=Saturday, 7=Sunday</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:integer">
+                          <xsd:enumeration value="0" />
+                          <xsd:enumeration value="1" />
+                          <xsd:enumeration value="2" />
+                          <xsd:enumeration value="3" />
+                          <xsd:enumeration value="4" />
+                          <xsd:enumeration value="5" />
+                          <xsd:enumeration value="6" />
+                          <xsd:enumeration value="7" />
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="DayWorking" type="xsd:boolean">
+                      <xsd:annotation>
+                        <xsd:documentation>Whether the specified date or day type is working.</xsd:documentation>
+                      </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="TimePeriod">
+                      <xsd:annotation>
+                        <xsd:documentation>Defines a contiguous set of exception days.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element minOccurs="0" name="FromDate" type="xsd:dateTime">
+                            <xsd:annotation>
+                              <xsd:documentation>The beginning of the exception time.</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element minOccurs="0" name="ToDate" type="xsd:dateTime">
+                            <xsd:annotation>
+                              <xsd:documentation>The end of the exception time.</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="WorkingTimes">
+                      <xsd:annotation>
+                        <xsd:documentation>The collection of working times that define the time worked on the weekday.  One of these must be present, and there may be no more than five.</xsd:documentation>
+                      </xsd:annotation>
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:choice>
+                            <xsd:element minOccurs="0" maxOccurs="5" name="WorkingTime">
+                              <xsd:annotation>
+                                <xsd:documentation>Defines the working time during the weekday.</xsd:documentation>
+                              </xsd:annotation>
+                              <xsd:complexType>
+                                <xsd:sequence>
+                                  <xsd:element minOccurs="0" name="FromTime" type="xsd:time">
+                                    <xsd:annotation>
+                                      <xsd:documentation>The beginning of the working time.</xsd:documentation>
+                                    </xsd:annotation>
+                                  </xsd:element>
+                                  <xsd:element minOccurs="0" name="ToTime" type="xsd:time">
+                                    <xsd:annotation>
+                                      <xsd:documentation>The end of the working time.</xsd:documentation>
+                                    </xsd:annotation>
+                                  </xsd:element>
+                                </xsd:sequence>
+                              </xsd:complexType>
+                            </xsd:element>
+                          </xsd:choice>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

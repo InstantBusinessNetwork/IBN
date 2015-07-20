@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_MUI_EntityDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SelectObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=[ClientParam:Classes]&amp;refreshName=EntityDD_Refresh&amp;ReturnCommand=MC_MUI_EntityDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]&amp;CanCreate=1&amp;FilterName=[ClientParam:FilterName]&amp;FilterValue=[ClientParam:FilterValue]</Url>
+				<Width>640</Width>
+				<Height>440</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_EntityDDSmall">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SelectObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=[ClientParam:Classes]&amp;refreshName=[ClientParam:Refresh]&amp;ReturnCommand=MC_MUI_EntityDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>520</Width>
+				<Height>300</Height>
+				<Left>50</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>			
+		</add>
+	</Commands>
+</ListViewUI>

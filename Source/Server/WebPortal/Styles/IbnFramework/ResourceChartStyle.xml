@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<style>
+	<!--
+	Predefined enums:
+
+	color: Transparent, White, Black, Blue, Gray, Green, Red...
+	shape: None, Rectangle, Ellipse, Circle, Rhombus, RightTriangle, LeftTriangle, Height100Percent, Height50PercentUp...
+	border-style: None, Solid.
+	fill-style: None, Solid, Hatch.
+
+	Default style:
+
+	<rule selector="element[attributeName=attributeValue]">
+		<backgroud-color>Transparent</backgroud-color>
+		<shape>Rectangle</shape>
+		<color>Black</color>
+		<border-style>Solid</border-style>
+		<border-width>1</border-width>
+		<border-color>Black</border-color>
+		<fill-style>None</fill-style>
+		<hatch-style>ForwardDiagonal</hatch-style>
+		<width>15</width>
+		<height>15</height>
+		<alpha>255</alpha>
+	</rule>
+	-->
+
+	<rule selector="*">
+		<alpha>255</alpha>
+		<background-color>White</background-color>
+		<color>Black</color>
+		<border-color>Black</border-color>
+		<border-style>Solid</border-style>
+		<border-width>1</border-width>
+		<fill-style>Solid</fill-style>
+		<width>13</width>
+		<height>11</height>
+	</rule>
+
+
+	<rule selector="data">
+		<shape>None</shape>
+	</rule>
+
+	<rule selector="head">
+		<background-color>LightGray</background-color>
+		<border-color>Gray</border-color>
+	</rule>
+
+	<rule selector="axis">
+		<background-color>Transparent</background-color>
+		<border-style>inherit</border-style>
+		<border-color>inherit</border-color>
+	</rule>
+
+	<rule selector="body">
+		<border-style>None</border-style>
+	</rule>
+
+	<rule selector="calendar">
+		<shape>None</shape>
+	</rule>
+
+	<rule selector="day">
+		<border-style>None</border-style>
+	</rule>
+
+	<rule selector="day[holiday=True]">
+		<fill-style>Hatch</fill-style>
+		<hatch-style>Percent25</hatch-style>
+		<color>LightGray</color>
+	</rule>
+
+	<rule selector="span">
+		<shape>None</shape>
+	</rule>
+
+
+	<rule selector="interval">
+		<height>13</height>
+		<shape>Rectangle</shape>
+		<fill-style>Hatch</fill-style>
+		<hatch-style>Percent50</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=Past]">
+		<height>19</height>
+		<fill-style>Solid</fill-style>
+		<border-style>Solid</border-style>
+		<color>Gray</color>
+		<border-color>Gray</border-color>
+		<background-color>Gray</background-color>
+	</rule>
+
+	<rule selector="interval[type=Off]">
+		<height>20</height>
+		<shape>Interval</shape>
+		<fill-style>Hatch</fill-style>
+		<border-style>Solid</border-style>
+		<background-color>White</background-color>
+		<color>#b3b3b3</color>
+		<border-color>#b3b3b3</border-color>
+		<hatch-style>Percent50</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=Highlight]">
+		<height>16</height>
+		<fill-style>None</fill-style>
+		<border-style>Solid</border-style>
+		<border-width>2</border-width>
+		<color>#7F00FF</color>
+		<border-color>#FF00FF</border-color>
+		<background-color>#FF00FF</background-color>
+	</rule>
+
+	<rule selector="interval[type=CalendarEntry]">
+		<color>Blue</color>
+		<border-color>Blue</border-color>
+	</rule>
+
+	<rule selector="interval[type=WorkLow]">
+		<color>#64af30</color>
+		<border-color>#64af30</border-color>
+		<hatch-style>DarkDownwardDiagonal</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=WorkNormal]">
+		<color>Green</color>
+		<border-color>Green</border-color>
+	</rule>
+
+	<rule selector="interval[type=WorkHigh]">
+		<color>#ff8000</color>
+		<border-color>#ff8000</border-color>
+		<hatch-style>DarkUpwardDiagonal</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=WorkVeryHigh]">
+		<color>Red</color>
+		<border-color>Red</border-color>
+		<hatch-style>DarkUpwardDiagonal</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=WorkUrgent]">
+		<color>Red</color>
+		<border-color>Red</border-color>
+		<background-color>#ff8000</background-color>
+		<hatch-style>DarkUpwardDiagonal</hatch-style>
+	</rule>
+
+	<rule selector="interval[type=WorkPinnedUp]">
+		<color>Yellow</color>
+		<border-color>Blue</border-color>
+		<background-color>Yellow</background-color>
+	</rule>
+</style>

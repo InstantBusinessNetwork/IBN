@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true"  Inherits="Mediachase.Ibn.Web.UI.Controls.Util.BaseType" ClassName="Mediachase.Ibn.Web.UI.MetaUI.Primitives.Date" %>
+<%# (DataItem == null || DataItem.Properties[FieldName].Value == null) ? "" : ((System.DateTime)DataItem.Properties[FieldName].Value).ToShortDateString()%>

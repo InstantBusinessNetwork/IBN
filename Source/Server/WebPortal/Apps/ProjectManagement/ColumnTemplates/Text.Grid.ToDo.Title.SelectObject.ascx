@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.ProjectManagement.ColumnTemplates.Text_Grid_ToDo_Title_SelectObject" %>
+<%# (Eval("Title") == DBNull.Value || Eval("StateId") == DBNull.Value) ? "" : Mediachase.UI.Web.Util.CommonHelper.GetToDoStatusWL(Eval("Title").ToString(), (int)Eval("StateId"), this.Page)%>

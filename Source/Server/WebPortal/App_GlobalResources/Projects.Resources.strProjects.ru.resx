@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tAllProjects" xml:space="preserve">
+    <value>Все проекты</value>
+  </data>
+  <data name="tMyProjects" xml:space="preserve">
+    <value>Мои проекты</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Завершение</value>
+  </data>
+  <data name="TargetStartDate" xml:space="preserve">
+    <value>Планируемое начало</value>
+  </data>
+  <data name="TargetFinishDate" xml:space="preserve">
+    <value>Планируемое завершение</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="AddProject" xml:space="preserve">
+    <value>Новый проект</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Просмотр проектов</value>
+  </data>
+  <data name="ProjectTitle" xml:space="preserve">
+    <value>Название проекта</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="AllFem" xml:space="preserve">
+    <value>Любая</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Внимание! При удалении этого проекта, также будут удалены все связанные с ним задачи и файлы. Вы уверены, что хотите продолжить?</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="GE" xml:space="preserve">
+    <value>Не ранее</value>
+  </data>
+  <data name="LE" xml:space="preserve">
+    <value>Не позднее</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>Точно</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Произвольно</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>оба</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Активный</value>
+  </data>
+  <data name="tActive" xml:space="preserve">
+    <value>Активные</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Неактивный</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="XMLExport" xml:space="preserve">
+    <value>Экспорт в XML</value>
+  </data>
+  <data name="tReports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="GeneralCats" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="ProjectCats" xml:space="preserve">
+    <value>Категории проекта</value>
+  </data>
+  <data name="ShowFilter" xml:space="preserve">
+    <value>Изменить фильтр</value>
+  </data>
+  <data name="HideFilter" xml:space="preserve">
+    <value>Вернуться к списку проектов</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="tAddRelProject" xml:space="preserve">
+    <value>Добавление связанного проекта к </value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Вернуться</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить этот проект</value>
+  </data>
+  <data name="PercentCompleted" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="tProjectExplorer" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="tPortfolios" xml:space="preserve">
+    <value>Группы проектов</value>
+  </data>
+  <data name="tCreationDate" xml:space="preserve">
+    <value>Создана</value>
+  </data>
+  <data name="tCreator" xml:space="preserve">
+    <value>Создал</value>
+  </data>
+  <data name="tLastSavedDate" xml:space="preserve">
+    <value>Изменена</value>
+  </data>
+  <data name="tLastEditor" xml:space="preserve">
+    <value>Изменил</value>
+  </data>
+  <data name="tNewPortfolio" xml:space="preserve">
+    <value>Новая группа проектов</value>
+  </data>
+  <data name="Any2" xml:space="preserve">
+    <value>Любые</value>
+  </data>
+  <data name="SelectedOnly" xml:space="preserve">
+    <value>Только указанные</value>
+  </data>
+  <data name="ExcludeSelected" xml:space="preserve">
+    <value>Все, кроме указанных</value>
+  </data>
+  <data name="Portfolios" xml:space="preserve">
+    <value>Группа проектов</value>
+  </data>
+  <data name="FilterSet" xml:space="preserve">
+    <value>Фильтр установлен.</value>
+  </data>
+  <data name="FilterNotSet" xml:space="preserve">
+    <value>Фильтр не установлен.</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="ResetFilter" xml:space="preserve">
+    <value>Снять фильтр</value>
+  </data>
+  <data name="ResetGroup" xml:space="preserve">
+    <value>Снять группировку</value>
+  </data>
+  <data name="tAddToPortfolio" xml:space="preserve">
+    <value>Добавить к группе проектов</value>
+  </data>
+  <data name="tProjectReports" xml:space="preserve">
+    <value>Проектные отчеты</value>
+  </data>
+  <data name="tPrjPhase" xml:space="preserve">
+    <value>Фаза проекта</value>
+  </data>
+  <data name="tPrjGroup" xml:space="preserve">
+    <value>Группа проектов</value>
+  </data>
+  <data name="tActTrackPrjByPrjGrp" xml:space="preserve">
+    <value>Просмотр проектов по группам проектов</value>
+  </data>
+  <data name="tResources" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="tTasksToDos" xml:space="preserve">
+    <value>Задачи/поручения</value>
+  </data>
+  <data name="tActiveProjects" xml:space="preserve">
+    <value>Активных проектов</value>
+  </data>
+  <data name="tTotalProjects" xml:space="preserve">
+    <value>Проектов</value>
+  </data>
+  <data name="tTheAreNoItems" xml:space="preserve">
+    <value>Нет записей, для данных значений фильтров</value>
+  </data>
+  <data name="tActTrackPrjByPrjPhase" xml:space="preserve">
+    <value>Просмотр проектов по фазам</value>
+  </data>
+  <data name="tActTrackPrjByPrjMan" xml:space="preserve">
+    <value>Просмотр проектов по менеджерам</value>
+  </data>
+  <data name="tOpenTasks" xml:space="preserve">
+    <value>Активные задачи/поручения</value>
+  </data>
+  <data name="tCompletedTasks" xml:space="preserve">
+    <value>Завершенные задачи/поручения</value>
+  </data>
+  <data name="tResTrackUsrByRole" xml:space="preserve">
+    <value>Просмотр исполнителей по группам пользователей</value>
+  </data>
+  <data name="tTHView" xml:space="preserve">
+    <value>Время работы исполнителей над задачами и поручениями</value>
+  </data>
+  <data name="tResource" xml:space="preserve">
+    <value>Исполнитель</value>
+  </data>
+  <data name="tTaskHours" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="tToDoHours" xml:space="preserve">
+    <value>Поручения</value>
+  </data>
+  <data name="tIssuesHours" xml:space="preserve">
+    <value>Инциденты</value>
+  </data>
+  <data name="tOtherHours" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="tTotalHours" xml:space="preserve">
+    <value>Всего часов</value>
+  </data>
+  <data name="tTotal" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="tKeyword" xml:space="preserve">
+    <value>Строка поиска</value>
+  </data>
+  <data name="tGroup" xml:space="preserve">
+    <value>Группа</value>
+  </data>
+  <data name="tResUtilIssues" xml:space="preserve">
+    <value>Занятость исполнителей в работе над инцидентами</value>
+  </data>
+  <data name="tResUtilTasks" xml:space="preserve">
+    <value>Занятость исполнителей в работе над задачами и поручениями</value>
+  </data>
+  <data name="tResUtilProjects" xml:space="preserve">
+    <value>Занятость исполнителей в работе над проектами</value>
+  </data>
+  <data name="tResUtilAll" xml:space="preserve">
+    <value>Общая занятость исполнителей</value>
+  </data>
+  <data name="ActivationDate" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="tProject" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="tRole" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="tTeamMember" xml:space="preserve">
+    <value>Исполнитель</value>
+  </data>
+  <data name="tSponsor" xml:space="preserve">
+    <value>Спонсор</value>
+  </data>
+  <data name="tStakeholder" xml:space="preserve">
+    <value>Заинтересованное лицо</value>
+  </data>
+  <data name="tManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tExeManager" xml:space="preserve">
+    <value>Исполнительный менеджер</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>Просмотреть общий отчет</value>
+  </data>
+  <data name="TemplateWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот шаблон проекта?</value>
+  </data>
+  <data name="PortfolioWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту группу проектов?</value>
+  </data>
+  <data name="PrjTemps" xml:space="preserve">
+    <value>Шаблоны проектов</value>
+  </data>
+  <data name="tDocumentHours" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="tObjects" xml:space="preserve">
+    <value>Типы объектов</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="tEvents" xml:space="preserve">
+    <value>Мероприятия</value>
+  </data>
+  <data name="tIssues" xml:space="preserve">
+    <value>Инциденты</value>
+  </data>
+  <data name="tDocuments" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="tTasks" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="tToDos" xml:space="preserve">
+    <value>Поручения</value>
+  </data>
+  <data name="tPeriod" xml:space="preserve">
+    <value>Период</value>
+  </data>
+  <data name="tNoItems" xml:space="preserve">
+    <value>Нет объектов</value>
+  </data>
+  <data name="tShowCompleted" xml:space="preserve">
+    <value>Завершенные</value>
+  </data>
+  <data name="tShowUpcoming" xml:space="preserve">
+    <value>Планируемые</value>
+  </data>
+  <data name="tResUtiliz" xml:space="preserve">
+    <value>Занятость исполнителей</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="tGroupBy" xml:space="preserve">
+    <value>Группировка по</value>
+  </data>
+  <data name="tNoGrouping" xml:space="preserve">
+    <value>без группировки</value>
+  </data>
+  <data name="tByUser" xml:space="preserve">
+    <value>пользователю</value>
+  </data>
+  <data name="tByManager" xml:space="preserve">
+    <value>менеджеру</value>
+  </data>
+  <data name="tByProject" xml:space="preserve">
+    <value>проекту</value>
+  </data>
+  <data name="tShow" xml:space="preserve">
+    <value>Отображать</value>
+  </data>
+  <data name="tShowGroup" xml:space="preserve">
+    <value>Показать панель группировки</value>
+  </data>
+  <data name="tHideGroup" xml:space="preserve">
+    <value>Скрыть панель группировки</value>
+  </data>
+  <data name="tShowFilter" xml:space="preserve">
+    <value>Изменить фильтр</value>
+  </data>
+  <data name="tHideFilter" xml:space="preserve">
+    <value>Скрыть панель фильтра</value>
+  </data>
+  <data name="FinishDate2" xml:space="preserve">
+    <value>Завершение</value>
+  </data>
+  <data name="tMyActivities" xml:space="preserve">
+    <value>Моя работа - список</value>
+  </data>
+  <data name="tDontShow" xml:space="preserve">
+    <value>Не показывать</value>
+  </data>
+  <data name="tForDay" xml:space="preserve">
+    <value>за день</value>
+  </data>
+  <data name="tForWeek" xml:space="preserve">
+    <value>за неделю</value>
+  </data>
+  <data name="tLastWeek" xml:space="preserve">
+    <value>за прошлую неделю</value>
+  </data>
+  <data name="tForMonth" xml:space="preserve">
+    <value>за месяц</value>
+  </data>
+  <data name="tLastMonth" xml:space="preserve">
+    <value>за прошлый месяц</value>
+  </data>
+  <data name="tForAnyPeriod" xml:space="preserve">
+    <value>за все время</value>
+  </data>
+  <data name="tInDay" xml:space="preserve">
+    <value>на день</value>
+  </data>
+  <data name="tInWeek" xml:space="preserve">
+    <value>на неделю</value>
+  </data>
+  <data name="tNextWeek" xml:space="preserve">
+    <value>на следующую неделю</value>
+  </data>
+  <data name="tInMonth" xml:space="preserve">
+    <value>на месяц</value>
+  </data>
+  <data name="tNextMonth" xml:space="preserve">
+    <value>на следующий месяц</value>
+  </data>
+  <data name="tInAnyPeriod" xml:space="preserve">
+    <value>на все время</value>
+  </data>
+  <data name="tShowActive" xml:space="preserve">
+    <value>Показывать</value>
+  </data>
+  <data name="tDontShowActive" xml:space="preserve">
+    <value>Не показывать</value>
+  </data>
+  <data name="tTask" xml:space="preserve">
+    <value>Задача</value>
+  </data>
+  <data name="tTodo" xml:space="preserve">
+    <value>Поручение</value>
+  </data>
+  <data name="tDoc" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="tIssue" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="tCalEntry" xml:space="preserve">
+    <value>Мероприятие</value>
+  </data>
+  <data name="tPerson" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="tSharedActivities" xml:space="preserve">
+    <value>Работа пользователей</value>
+  </data>
+  <data name="tUserName" xml:space="preserve">
+    <value>Пользователь</value>
+  </data>
+  <data name="ExcelExport" xml:space="preserve">
+    <value>Экспорт в Excel</value>
+  </data>
+  <data name="tPriority" xml:space="preserve">
+    <value>приоритет</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Внимание! При удалении этого объекта также будут удалены все связанные с ним объекты. Вы уверены, что хотите продолжить?</value>
+  </data>
+  <data name="tProjectNum" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="OnlyForUser" xml:space="preserve">
+    <value>Показывать проекты только с моим участием</value>
+  </data>
+  <data name="tActTrackPrjByPrjClient" xml:space="preserve">
+    <value>Просмотр проектов по клиентам</value>
+  </data>
+  <data name="tNoClient" xml:space="preserve">
+    <value>Проекты без клиента</value>
+  </data>
+  <data name="tCustom" xml:space="preserve">
+    <value>Пользовательский</value>
+  </data>
+  <data name="tPrjsByBusScores" xml:space="preserve">
+    <value>Проекты - финансы</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>С</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>По</value>
+  </data>
+  <data name="tFact" xml:space="preserve">
+    <value>Факт</value>
+  </data>
+  <data name="tCurrent" xml:space="preserve">
+    <value>Текущий</value>
+  </data>
+  <data name="tNotSelected" xml:space="preserve">
+    <value>Не выбран</value>
+  </data>
+  <data name="tWeekYear" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="tMonthQuarterYear" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="tQuarterYear" xml:space="preserve">
+    <value>Квартал</value>
+  </data>
+  <data name="tYear" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="tTotalSum" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="tCompare" xml:space="preserve">
+    <value>Сравнить</value>
+  </data>
+  <data name="tPrjsByMilestones" xml:space="preserve">
+    <value>Проекты - вехи</value>
+  </data>
+  <data name="tSelectProjectsToShow" xml:space="preserve">
+    <value>Выбор проектов для показа</value>
+  </data>
+  <data name="tProjectMilestone" xml:space="preserve">
+    <value>Проект \ Вехи</value>
+  </data>
+  <data name="tScale" xml:space="preserve">
+    <value>Шкала</value>
+  </data>
+  <data name="tSelectAll" xml:space="preserve">
+    <value>Выбрать все</value>
+  </data>
+  <data name="tSelectProjects" xml:space="preserve">
+    <value>Выбрать проекты</value>
+  </data>
+  <data name="tByBusinessScore" xml:space="preserve">
+    <value>бизнес показателям</value>
+  </data>
+  <data name="tQuarterTotal" xml:space="preserve">
+    <value>Сумма за квартал</value>
+  </data>
+  <data name="tToday" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="tProjectStartDate" xml:space="preserve">
+    <value>Начало проекта</value>
+  </data>
+  <data name="tProjectEndDate" xml:space="preserve">
+    <value>Завершение проекта</value>
+  </data>
+  <data name="tFieldSet" xml:space="preserve">
+    <value>Набор полей</value>
+  </data>
+  <data name="tProjectsDefault" xml:space="preserve">
+    <value>Базовый</value>
+  </data>
+  <data name="tProjectsLight" xml:space="preserve">
+    <value>Временные рамки</value>
+  </data>
+  <data name="tWorkResourcesDefault" xml:space="preserve">
+    <value>Базовый</value>
+  </data>
+  <data name="tWorkResourcesDates" xml:space="preserve">
+    <value>Временные рамки</value>
+  </data>
+  <data name="tWorkResourcesWorkTime" xml:space="preserve">
+    <value>Трудозатраты</value>
+  </data>
+  <data name="tActualStartDate" xml:space="preserve">
+    <value>Фактическое начало</value>
+  </data>
+  <data name="tActualFinishDate" xml:space="preserve">
+    <value>Фактическое завершение</value>
+  </data>
+  <data name="tTaskTime" xml:space="preserve">
+    <value>Запланировано</value>
+  </data>
+  <data name="tTotalMinutes" xml:space="preserve">
+    <value>Заявлено</value>
+  </data>
+  <data name="tTotalApproved" xml:space="preserve">
+    <value>Проведено</value>
+  </data>
+  <data name="tWorkManagersDefault" xml:space="preserve">
+    <value>Базовый</value>
+  </data>
+  <data name="tWorkManagersDates" xml:space="preserve">
+    <value>Временные рамки</value>
+  </data>
+  <data name="tWorkManagersWorkTime" xml:space="preserve">
+    <value>Трудозатраты</value>
+  </data>
+  <data name="tView" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="ShowChildTodo" xml:space="preserve">
+    <value>Отображать вложенные поручения</value>
+  </data>
+  <data name="Week1" xml:space="preserve">
+    <value>Одна неделя</value>
+  </data>
+  <data name="Week3" xml:space="preserve">
+    <value>Три недели</value>
+  </data>
+  <data name="PeriodNext" xml:space="preserve">
+    <value>Следующий период</value>
+  </data>
+  <data name="PeriodPrev" xml:space="preserve">
+    <value>Предыдущий период</value>
+  </data>
+  <data name="NoCalendar" xml:space="preserve">
+    <value>(нет календаря)</value>
+  </data>
+  <data name="TimeTypeCalendarEntry" xml:space="preserve">
+    <value>Мероприятие</value>
+  </data>
+  <data name="TimeTypeFree" xml:space="preserve">
+    <value>Рабочее время</value>
+  </data>
+  <data name="TimeTypeOff" xml:space="preserve">
+    <value>Нерабочее время</value>
+  </data>
+  <data name="TimeTypePast" xml:space="preserve">
+    <value>Время в прошлом</value>
+  </data>
+  <data name="TimeTypeWorkHigh" xml:space="preserve">
+    <value>Работа с высоким приоритетом</value>
+  </data>
+  <data name="TimeTypeWorkLow" xml:space="preserve">
+    <value>Работа с низким приоритетом</value>
+  </data>
+  <data name="TimeTypeWorkNormal" xml:space="preserve">
+    <value>Работа с нормальным приоритетом</value>
+  </data>
+  <data name="TimeTypeWorkUrgent" xml:space="preserve">
+    <value>Работа с экстренным приоритетом</value>
+  </data>
+  <data name="TimeTypeWorkVeryHigh" xml:space="preserve">
+    <value>Работа с очень высоким приоритетом</value>
+  </data>
+  <data name="TimeTypeHighlight" xml:space="preserve">
+    <value>Текущая работа</value>
+  </data>
+  <data name="tOnlyActive" xml:space="preserve">
+    <value>Скрыть неактивные</value>
+  </data>
+  <data name="tOnlyInactive" xml:space="preserve">
+    <value>Неактивные</value>
+  </data>
+  <data name="Utilization" xml:space="preserve">
+    <value>Занятость</value>
+  </data>
+  <data name="TimeTypeWorkPinnedUp" xml:space="preserve">
+    <value>Закреплённая работа</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Дата создания</value>
+  </data>
+  <data name="CreatedPeriod" xml:space="preserve">
+    <value>Созданные за</value>
+  </data>
+  <data name="tByCategory" xml:space="preserve">
+    <value>категории</value>
+  </data>
+  <data name="tByClient" xml:space="preserve">
+    <value>клиенту</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="CompleteWarning" xml:space="preserve">
+    <value>Завершить?</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Завершить</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+</root>

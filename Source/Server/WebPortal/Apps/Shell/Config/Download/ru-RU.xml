@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Download>
+	<add>
+		<Category id="Mediachase" title="Приложения Mediachase для эффективной работы">
+			<Product id="IncidentAddIn" file="IncidentAddIn.msi" build="4" date="2009-07-22" title="IBN Инциденты для Outlook (бета)" description="Плагин для почтовой программы Microsoft Outlook позволяющий организовать простую работу с запросами пользователей через электронную почту." />
+			<Product id="ClientTools" file="IBN_Client_Tools_RU.msi" build="718" date="2010-08-10" title="IBN Клиентские приложения" description="&lt;p&gt;Пакет дополнительных приложений, устанавливаемых на локальных компьютерах пользователей. Загрузив один файл, вы получите возможность работать с приложениями IBN Client, IBN Screen Capture и Мастером инструментов IBN.&lt;/p&gt;&lt;p&gt;IBN Client – система обмена мгновенными сообщениями и файлами, выполняющая функции стандартного мессенджера и позволяющая получать уведомления об изменениях в IBN Портале.&lt;/p&gt;&lt;p&gt;IBN Screen Capture – набор удобных инструментов снятия скриншотов и видео роликов с возможностью публикации на IBN сервере и создания по ним инцидентов и поручений.&lt;/p&gt;&lt;p&gt;Мастер Инструментов IBN – средства интеграции с MS Office, позволяющие быстро публиковать документы на IBN сервере непосредественно из приложений MS Word и MS Excel, а также экспортировать проекты из MS Project в IBN.&lt;/p&gt;" />
+		</Category>
+		<Category id="ThirdParty" title="Приложения сторонних производителей">
+			<Product id="WMEncoder" file="WMEncoder.exe" build="2980" date="2002-11-12" title="Windows Media Encoder 9 Series" description="" />
+		</Category>
+	</add>
+</Download>

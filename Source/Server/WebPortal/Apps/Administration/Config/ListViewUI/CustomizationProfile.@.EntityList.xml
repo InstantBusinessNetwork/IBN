@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/XSL/Transform http://xsd.mediachase.ru/ListViewUI.xsd">
+	<Toolbar>
+		<remove nodeId="DeleteSelectedButton"/>
+		<add>
+			<Button id="DeleteSelectedCustomizationProfileButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_CustomizationProfile_DeleteSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<remove nodeId="MC_MUI_DeleteSelected"/>
+		<add>
+			<Command id="MC_CustomizationProfile_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.DeleteSelectedCustomizationProfileHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Search">
+		<value>Поиск</value>
+	</data>
+	<data name="EditProfile">
+		<value>Редактировать параметры</value>
+	</data>
+	<data name="Preferences">
+		<value>Настройки</value>
+	</data>
+	<data name="Directory">
+		<value>Пользователи</value>
+	</data>
+	<data name="QuickLinks">
+		<value>Ссылки</value>
+	</data>
+	<data name="Actions">
+		<value>Действия</value>
+	</data>
+	<data name="AddIncident">
+		<value>Инцидент</value>
+	</data>
+	<data name="AddProject">
+		<value>Проект</value>
+	</data>
+	<data name="AddToDo">
+		<value>Поручение</value>
+	</data>
+	<data name="AddEvent">
+		<value>Мероприятие</value>
+	</data>
+	<data name="Incidents">
+		<value>Собственные инциденты</value>
+	</data>
+	<data name="ToDoList">
+		<value>Мои поручения</value>
+	</data>
+	<data name="MyCalendar">
+		<value>Моя работа</value>
+	</data>
+	<data name="ViewProfile">
+		<value>Мои параметры</value>
+	</data>
+	<data name="AddUser">
+		<value>Пользователя</value>
+	</data>
+	<data name="AddExternalUser">
+		<value>Внешнего пользователя</value>
+	</data>
+	<data name="AddTimesheet">
+		<value>Лист учета времени</value>
+	</data>
+	<data name="InviteUser">
+		<value>Пригласить пользователя</value>
+	</data>
+	<data name="SignUp">
+		<value>Регистрация</value>
+	</data>
+	<data name="Home">
+		<value>Домашняя страница</value>
+	</data>
+	<data name="ExternalUser">
+		<value>Внешний пользователь</value>
+	</data>
+	<data name="PendingUser">
+		<value>Ожидающий пользователь</value>
+	</data>
+	<data name="SendIBNMessage">
+		<value>Послать сообщение</value>
+	</data>
+	<data name="SendEmail">
+		<value>Послать e-mail</value>
+	</data>
+	<data name="ViewUserProfile">
+		<value>Просмотреть информацию о пользователе</value>
+	</data>
+	<data name="CreateNew">
+		<value>Добавить</value>
+	</data>
+	<data name="TimeTracking">
+		<value>Учет времени</value>
+	</data>
+	<data name="ViewProfile">
+		<value>Просмотреть настройки</value>
+	</data>
+	<data name="Print">
+		<value>Распечатать текущую страницу</value>
+	</data>
+	<data name="Help">
+		<value>Центр помощи и технической поддержки</value>
+	</data>
+	<data name="NewIssueWizard">
+		<value>Создание нового инцидента</value>
+	</data>
+	<data name="NewToDoWizard">
+		<value>Создание нового поручения</value>
+	</data>
+	<data name="NewEventWizard">
+		<value>Создание нового мероприятия</value>
+	</data>
+	<data name="NewFileWizard">
+		<value>Загрузка нового файла в библиотеку</value>
+	</data>
+	<data name="NewProjectWizard">
+		<value>Создание нового проекта</value>
+	</data>
+	<data name="Hours">
+		<value>часов</value>
+	</data>
+	<data name="Minutes">
+		<value>минут</value>
+	</data>
+	<data name="Days">
+		<value>дней</value>
+	</data>
+	<data name="tFilterparameters">
+		<value>Фильтр отчета</value>
+	</data>
+	<data name="tDateRun">
+		<value>Дата создания</value>
+	</data>
+	<data name="tProducedby">
+		<value>Создал</value>
+	</data>
+	<data name="tPrint">
+		<value>Печать</value>
+	</data>
+	<data name="Projects">
+		<value>Мои проекты</value>
+	</data>
+	<data name="tChooseDate">
+		<value>Календарь</value>
+	</data>
+	<data name="FirstLoginWizard">
+		<value>Помощник пользователя при входе в систему</value>
+	</data>
+	<data name="FirstAdminLoginWizard">
+		<value>Помощник администратора при входе в систему</value>
+	</data>
+	<data name="tbytes">
+		<value>байт(а)</value>
+	</data>
+	<data name="tKBytes">
+		<value>Кб</value>
+	</data>
+	<data name="tMBytes">
+		<value>Мб</value>
+	</data>
+	<data name="Feedback">
+		<value>Помощь и отзывы</value>
+	</data>
+	<data name="FeedbackTip">
+		<value>Выскажите свое мнение о наших продуктах.</value>
+	</data>
+	<data name="ADConvertWizard">
+		<value>Конвертация пользователей из Active Directory</value>
+	</data>
+	<data name="tabMetaData">
+		<value>Настраиваемые поля</value>
+	</data>
+	<data name="Edit">
+		<value>Редактировать</value>
+	</data>
+	<data name="WrongValue">
+		<value>Недопустимое значение</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="BooleanYes">
+		<value>Да</value>
+	</data>
+	<data name="BooleanNo">
+		<value>Нет</value>
+	</data>
+	<data name="WrongURL">
+		<value>Неправильный URL</value>
+	</data>
+	<data name="EmptyValue">
+		<value>[ Пустое значение ]</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Редактировать справочник</value>
+	</data>
+	<data name="tWarning">
+		<value>Вы действительно хотите удалить этот файл?</value>
+	</data>
+	<data name="Show">
+		<value>Показать меню</value>
+	</data>
+	<data name="Hide">
+		<value>Спрятать меню</value>
+	</data>
+	<data name="tReload">
+		<value>Обновить</value>
+	</data>
+	<data name="tNewPrj">
+		<value>Новый проект</value>
+	</data>
+	<data name="tManDic">
+		<value>Изменить словарь</value>
+	</data>
+	<data name="tNewPrtfl">
+		<value>Новая группа проектов</value>
+	</data>
+	<data name="tDelete">
+		<value>Удалить</value>
+	</data>
+	<data name="tCustomize">
+		<value>Настроить</value>
+	</data>
+	<data name="tNewTemplt">
+		<value>Новый шаблон</value>
+	</data>
+	<data name="tMain">
+		<value>Главное</value>
+	</data>
+	<data name="tLists">
+		<value>Списки</value>
+	</data>
+	<data name="tProjects">
+		<value>Проекты</value>
+	</data>
+	<data name="tCalendar">
+		<value>Календарь</value>
+	</data>
+	<data name="tIssues">
+		<value>Инциденты</value>
+	</data>
+	<data name="tTasksToDos">
+		<value>Задачи и поручения</value>
+	</data>
+	<data name="tLibrary">
+		<value>Библиотека</value>
+	</data>
+	<data name="tReports">
+		<value>Отчеты</value>
+	</data>
+	<data name="tGrpsUsrs">
+		<value>Пользователи</value>
+	</data>
+	<data name="tAdmin">
+		<value>Администратор</value>
+	</data>
+	<data name="tWorkspace">
+		<value>Моя работа</value>
+	</data>
+	<data name="tPersonalize">
+		<value>Мои настройки</value>
+	</data>
+	<data name="tPersReports">
+		<value>Мои отчеты</value>
+	</data>
+	<data name="tSharedCals">
+		<value>Работа пользователей</value>
+	</data>
+	<data name="tSchedule">
+		<value>Расписания</value>
+	</data>
+	<data name="tPrivLists">
+		<value>Мои списки</value>
+	</data>
+	<data name="tPubLists">
+		<value>Общие списки</value>
+	</data>
+	<data name="tPrjLists">
+		<value>Проектные списки</value>
+	</data>
+	<data name="tAllLists">
+		<value>Все списки</value>
+	</data>
+	<data name="tOverallPrjRep">
+		<value>Общий отчет по проектам</value>
+	</data>
+	<data name="tViewBy">
+		<value>Просмотр</value>
+	</data>
+	<data name="tAllPrj">
+		<value>Все проекты</value>
+	</data>
+	<data name="tPortfolios">
+		<value>Группы проектов</value>
+	</data>
+	<data name="tPrjTemps">
+		<value>Шаблоны проектов</value>
+	</data>
+	<data name="tPrjReports">
+		<value>Проектные отчеты</value>
+	</data>
+	<data name="tStatus">
+		<value>Статус</value>
+	</data>
+	<data name="tPortfolio">
+		<value>Группа проектов</value>
+	</data>
+	<data name="tGenCat">
+		<value>Общая категория</value>
+	</data>
+	<data name="tPrjCat">
+		<value>Проектная категория</value>
+	</data>
+	<data name="tPriority">
+		<value>Приоритет</value>
+	</data>
+	<data name="tType">
+		<value>Тип</value>
+	</data>
+	<data name="tCustomer">
+		<value>Клиент</value>
+	</data>
+	<data name="tSimpleReps">
+		<value>Простые отчеты</value>
+	</data>
+	<data name="tOverPrjStat">
+		<value>Статистика по проектам</value>
+	</data>
+	<data name="tOverCostTrack">
+		<value>Проектный отчет по листам учета времени</value>
+	</data>
+	<data name="tActivPrjs">
+		<value>Активные проекты</value>
+	</data>
+	<data name="tFilterPrjReps">
+		<value>Отчеты с выбором условий</value>
+	</data>
+	<data name="tStatusPrjRep">
+		<value>Отчет о работе над проектом</value>
+	</data>
+	<data name="tOverPrjSnap">
+		<value>Общий отчет по проекту</value>
+	</data>
+	<data name="tActivsAnalysTyp">
+		<value>Статистика проектных работ</value>
+	</data>
+	<data name="tResTrackAnalys">
+		<value>Статистика работы исполнителей</value>
+	</data>
+	<data name="tPrjIssAnalys">
+		<value>Статистика по инцидентам</value>
+	</data>
+	<data name="tPrjIssStat">
+		<value>Общая статистика по инцидентам</value>
+	</data>
+	<data name="tFullActivAnalys">
+		<value>Статистика по работам</value>
+	</data>
+	<data name="tPrjTrack">
+		<value>Статистика по листам учета времени</value>
+	</data>
+	<data name="tRepWizd">
+		<value>Создать отчет</value>
+	</data>
+	<data name="tOverIssSnap">
+		<value>Общий отчет по инцидентам</value>
+	</data>
+	<data name="tAssgnIss">
+		<value>Назначенные инциденты</value>
+	</data>
+	<data name="tNenotAssgnIss">
+		<value>Новые инциденты</value>
+	</data>
+	<data name="tManIss">
+		<value>Управляемые инциденты</value>
+	</data>
+	<data name="tAllIss">
+		<value>Все инциденты</value>
+	</data>
+	<data name="tIssReports">
+		<value>Отчеты по инцидентам</value>
+	</data>
+	<data name="tIssCat">
+		<value>Категория инцидентов</value>
+	</data>
+	<data name="tSeverity">
+		<value>Проявление</value>
+	</data>
+	<data name="tGroupProjects">
+		<value>по проектам</value>
+	</data>
+	<data name="tHDReps">
+		<value>Отчеты по инцидентам</value>
+	</data>
+	<data name="tHDOverSnap">
+		<value>Общий отчет по инцидентам</value>
+	</data>
+	<data name="tIssActivAnalys">
+		<value>Статистические отчеты</value>
+	</data>
+	<data name="tIssViewByMan">
+		<value>Распределение по менеджерам</value>
+	</data>
+	<data name="tIssViewByStatus">
+		<value>Распределение по статусам</value>
+	</data>
+	<data name="tIssViewByCat">
+		<value>Распределение по категорям</value>
+	</data>
+	<data name="tIssViewByType">
+		<value>Распределение по типам</value>
+	</data>
+	<data name="tClosedIss">
+		<value>Закрытые инциденты</value>
+	</data>
+	<data name="tIntIss">
+		<value>Внутренние инциденты</value>
+	</data>
+	<data name="tResActs">
+		<value>Центр управления</value>
+	</data>
+	<data name="tStatRepByUs">
+		<value>Отчет о Вашей работе</value>
+	</data>
+	<data name="tMesHist">
+		<value>История сообщений</value>
+	</data>
+	<data name="tConfHist">
+		<value>История конференций</value>
+	</data>
+	<data name="tAlertHist">
+		<value>История уведомлений</value>
+	</data>
+	<data name="tTaskMonitor">
+		<value>Главное</value>
+	</data>
+	<data name="tMyTasks">
+		<value>Мои задачи и поручения</value>
+	</data>
+	<data name="tActToDoList">
+		<value>Активные</value>
+	</data>
+	<data name="tOverToDoList">
+		<value>Просроченные</value>
+	</data>
+	<data name="tComplToDoList">
+		<value>Завершенные</value>
+	</data>
+	<data name="tUpcomToDoList">
+		<value>Запланированные</value>
+	</data>
+	<data name="tListView">
+		<value>Список</value>
+	</data>
+	<data name="tMyTimesh">
+		<value>Мои листы учета времени</value>
+	</data>
+	<data name="tActTrack">
+		<value>Группировка</value>
+	</data>
+	<data name="tResTracking">
+		<value>Просмотр исполнителей</value>
+	</data>
+	<data name="tTimeManagement">
+		<value>Листы учета времени</value>
+	</data>
+	<data name="tPendTimeSh">
+		<value>Ожидающие утверждения</value>
+	</data>
+	<data name="tApprTimeSh">
+		<value>Утвержденные</value>
+	</data>
+	<data name="tDashboard">
+		<value>Общий отчет</value>
+	</data>
+	<data name="tAdminReps">
+		<value>Административный отчет</value>
+	</data>
+	<data name="tMostActGrUs">
+		<value>Наиболее активные группы и пользователи</value>
+	</data>
+	<data name="tGrUsStat">
+		<value>Статистика групп и пользователей</value>
+	</data>
+	<data name="tCustReps">
+		<value>Шаблоны отчетов</value>
+	</data>
+	<data name="tPrivTemps">
+		<value>Мои шаблоны</value>
+	</data>
+	<data name="tAllTemps">
+		<value>Все шаблоны</value>
+	</data>
+	<data name="tPortalSetup">
+		<value>Настройки портала</value>
+	</data>
+	<data name="tModCompInfo">
+		<value>Информация о компании</value>
+	</data>
+	<data name="tSiteTheme">
+		<value>Вид портала</value>
+	</data>
+	<data name="tMetaClassCustomization">
+		<value>Все поля</value>
+	</data>
+	<data name="tDics">
+		<value>Справочники</value>
+	</data>
+	<data name="tCalSetup">
+		<value>Календари</value>
+	</data>
+	<data name="tManDics">
+		<value>Справочники</value>
+	</data>
+	<data name="tWebStubs">
+		<value>Закладки</value>
+	</data>
+	<data name="tDocTypes">
+		<value>Типы файлов</value>
+	</data>
+	<data name="tRoutWrkfl">
+		<value>Системные сообщения и e-mail ящики</value>
+	</data>
+	<data name="tMessTempl">
+		<value>Шаблоны сообщений</value>
+	</data>
+	<data name="tRemTempl">
+		<value>Шаблоны напоминаний</value>
+	</data>
+	<data name="tModifAlertNotif">
+		<value>Система уведомления</value>
+	</data>
+	<data name="teMailBoxes">
+		<value>Е-mail ящики</value>
+	</data>
+	<data name="tSecGroups">
+		<value>Группы пользователей</value>
+	</data>
+	<data name="tAllUsers">
+		<value>Все пользователи</value>
+	</data>
+	<data name="tContGroups">
+		<value>Контактные группы</value>
+	</data>
+	<data name="tUsersStats">
+		<value>Статистика по пользователям</value>
+	</data>
+	<data name="tAstsAndFldrs">
+		<value>Проводник</value>
+	</data>
+	<data name="tFileWatcher">
+		<value>Все файлы</value>
+	</data>
+	<data name="tNewTimeSheet">
+		<value>Создание нового листа учета времени</value>
+	</data>
+	<data name="tLogOut">
+		<value>Выйти</value>
+	</data>
+	<data name="tSelectAction">
+		<value>Выберите действие</value>
+	</data>
+	<data name="tNewList">
+		<value>Создание нового списка</value>
+	</data>
+	<data name="tPrjPhases">
+		<value>Фазы проекта</value>
+	</data>
+	<data name="tModifyProfile">
+		<value>Мои настройки</value>
+	</data>
+	<data name="tCustomizeWorkspace">
+		<value>Домашняя страница</value>
+	</data>
+	<data name="tNewDocument">
+		<value>Создание нового документа</value>
+	</data>
+	<data name="tNewReport">
+		<value>Создание нового отчета</value>
+	</data>
+	<data name="tDataEntry">
+		<value>Добавить</value>
+	</data>
+	<data name="AddDocument">
+		<value>Документ</value>
+	</data>
+	<data name="AddList">
+		<value>Список</value>
+	</data>
+	<data name="AddReport">
+		<value>Отчет</value>
+	</data>
+	<data name="tDay">
+		<value>День</value>
+	</data>
+	<data name="tWorkWeek">
+		<value>Рабочая неделя</value>
+	</data>
+	<data name="tWeek">
+		<value>Неделя</value>
+	</data>
+	<data name="tMonth">
+		<value>Месяц</value>
+	</data>
+	<data name="tYear">
+		<value>Год</value>
+	</data>
+	<data name="tQuickAdd">
+		<value>Создать</value>
+	</data>
+	<data name="tCustomizeHomePage">
+		<value>Вид домашней страницы</value>
+	</data>
+	<data name="tCustomFields">
+		<value>Настраиваемые поля</value>
+	</data>
+	<data name="tObjectCustomEditor">
+		<value>Управление полями</value>
+	</data>
+	<data name="tListTemplates">
+		<value>Шаблоны списков</value>
+	</data>
+	<data name="tUtilities">
+		<value>Дополнительные сервисы</value>
+	</data>
+	<data name="tBackup">
+		<value>Backup</value>
+	</data>
+	<data name="tSystemBroadcast">
+		<value>Важные сообщения</value>
+	</data>
+	<data name="tEventNotification">
+		<value>Настройки системы уведомления</value>
+	</data>
+	<data name="tReminderNotifications">
+		<value>Система напоминания</value>
+	</data>
+	<data name="tYouCanAddValuesForCustomFields">
+		<value>Не заполнены следующие настраиваемые поля</value>
+	</data>
+	<data name="tAllActivities">
+		<value>Все задачи и поручения</value>
+	</data>
+	<data name="tAll">
+		<value>All</value>
+	</data>
+	<data name="tOnlyAssigned">
+		<value>Назначенные</value>
+	</data>
+	<data name="tOnlyManaged">
+		<value>Управляемые</value>
+	</data>
+	<data name="tListFolders">
+		<value>Проводник</value>
+	</data>
+	<data name="tGroupedBy">
+		<value>Группировка</value>
+	</data>
+	<data name="tPrjsByPortf">
+		<value>Проекты по группам</value>
+	</data>
+	<data name="tPrjsByPhase">
+		<value>Проекты по фазам</value>
+	</data>
+	<data name="tPrjsByPM">
+		<value>Проекты по менеджерам</value>
+	</data>
+	<data name="tUsrsByRole">
+		<value>по группам пользователей</value>
+	</data>
+	<data name="tResUtil">
+		<value>Занятость исполнителей</value>
+	</data>
+	<data name="tUtilIssues">
+		<value>в инцидентах</value>
+	</data>
+	<data name="tUtilTasks">
+		<value>в задачах</value>
+	</data>
+	<data name="tUtilPrjs">
+		<value>в проектах</value>
+	</data>
+	<data name="tRepProjects">
+		<value>по проектам</value>
+	</data>
+	<data name="tUtilCE">
+		<value>в мероприятиях</value>
+	</data>
+	<data name="tUtilDoc">
+		<value>в документах</value>
+	</data>
+	<data name="tUtilToDo">
+		<value>в поручениях</value>
+	</data>
+	<data name="tUtilAll">
+		<value>выбрать</value>
+	</data>
+	<data name="tRepProjGroups">
+		<value>по группам проектов</value>
+	</data>
+	<data name="tRepIssues">
+		<value>по инцидентам</value>
+	</data>
+	<data name="tRepTodos">
+		<value>по поручениям</value>
+	</data>
+	<data name="tRepTasks">
+		<value>по задачам</value>
+	</data>
+	<data name="tRepEvents">
+		<value>по мероприятиям</value>
+	</data>
+	<data name="tRepDocuments">
+		<value>по документам</value>
+	</data>
+	<data name="tRepUsers">
+		<value>по пользователям</value>
+	</data>
+	<data name="tRecentUpdates">
+		<value>Последние обновления</value>
+	</data>
+	<data name="tRepsByType">
+		<value>Созданные отчеты</value>
+	</data>
+	<data name="tAstMng">
+		<value>Asset Management</value>
+	</data>
+	<data name="tGEOMonitor">
+		<value>GEO Monitor</value>
+	</data>
+	<data name="tAlertsEvents">
+		<value>Alerts/Events</value>
+	</data>
+	<data name="tSiteFacMng">
+		<value>Site/Facility Management</value>
+	</data>
+	<data name="tSiteFacDash">
+		<value>Site/Facility Dashboard</value>
+	</data>
+	<data name="tAllSitesFacs">
+		<value>All Sites/Facilities</value>
+	</data>
+	<data name="tGroupByRegion">
+		<value>Grouped By Region</value>
+	</data>
+	<data name="tGroupByState">
+		<value>Grouped By State</value>
+	</data>
+	<data name="tGroupByType">
+		<value>Grouped By Type</value>
+	</data>
+	<data name="tInventoryMng">
+		<value>Inventory Management</value>
+	</data>
+	<data name="tInventoryDashboard">
+		<value>Inventory Dashboard</value>
+	</data>
+	<data name="tSiteAllocation">
+		<value>Site Allocation</value>
+	</data>
+	<data name="tManageMachines">
+		<value>Manage Machines</value>
+	</data>
+	<data name="tManagePrinters">
+		<value>Manage Printers</value>
+	</data>
+	<data name="tAtlasReporting">
+		<value>Reporting</value>
+	</data>
+	<data name="tSurfaceVis">
+		<value>Surface Visibility</value>
+	</data>
+	<data name="tAtlasUtil">
+		<value>ATLAS Utilization</value>
+	</data>
+	<data name="tActivations">
+		<value>Activations</value>
+	</data>
+	<data name="tRolloutTimeLine">
+		<value>Rollout Timeline</value>
+	</data>
+	<data name="tLabelProduct">
+		<value>Label Production</value>
+	</data>
+	<data name="tRollupByArea">
+		<value>Rollup By Area</value>
+	</data>
+	<data name="tRollupByState">
+		<value>Rollup By State</value>
+	</data>
+	<data name="tRollupBySite">
+		<value>Rollup By Site</value>
+	</data>
+	<data name="tAtlasAdmin">
+		<value>Administration</value>
+	</data>
+	<data name="tMachTables">
+		<value>Machine Tables</value>
+	</data>
+	<data name="tPrntTables">
+		<value>Printer Tables</value>
+	</data>
+	<data name="tOperTables">
+		<value>Operational Tables</value>
+	</data>
+	<data name="tGeoTables">
+		<value>Geographic Tables</value>
+	</data>
+	<data name="tAstTables">
+		<value>Asset Tables</value>
+	</data>
+	<data name="tHideLeftMenu">
+		<value>Скрыть левое меню</value>
+	</data>
+	<data name="tShowLeftMenu">
+		<value>Показать левое меню</value>
+	</data>
+	<data name="Requests">
+		<value>Запросы</value>
+	</data>
+	<data name="Lock">
+		<value>Закрепить</value>
+	</data>
+	<data name="UnLock">
+		<value>Свернуть</value>
+	</data>
+	<data name="Reminder">
+		<value>Скоро</value>
+	</data>
+	<data name="Active">
+		<value>Активно</value>
+	</data>
+	<data name="Updates">
+		<value>Обновления</value>
+	</data>
+	<data name="Favorites">
+		<value>Избранное</value>
+	</data>
+	<data name="History">
+		<value>Журнал</value>
+	</data>
+	<data name="Search">
+		<value>Поиск</value>
+	</data>
+	<data name="tProjectWasAdded">
+		<value>Проект #{0} был добавлен в буфер обмена!</value>
+	</data>
+	<data name="tProjectWasNotAdded">
+		<value>Проект не удалось добавить в буфер обмена!</value>
+	</data>
+	<data name="tCBWasCleared">
+		<value>Буфер обмена очищен!</value>
+	</data>
+	<data name="tCBWasNotCleared">
+		<value>Не удалось очистить буфер обмена!</value>
+	</data>
+	<data name="tFilesAdded">
+		<value>{0} файл(а) скопирован(о) в буфер обмена!</value>
+	</data>
+	<data name="tFilesNotAdded">
+		<value>Файл(ы) не удалось скопировать в буфер обмена!</value>
+	</data>
+	<data name="tTabDocuments">
+		<value>Документы</value>
+	</data>
+	<data name="tRAllDocuments">
+		<value>Все документы</value>
+	</data>
+	<data name="tMyDocuments">
+		<value>Мои документы</value>
+	</data>
+	<data name="tRAssDocuments">
+		<value>Назначенные документы</value>
+	</data>
+	<data name="tRManDocuments">
+		<value>Управляемые документы</value>
+	</data>
+	<data name="tMdpCustomization">
+		<value>Блоки настраиваемых полей</value>
+	</data>
+	<data name="tIssueWasAdded">
+		<value>Инцидент #{0} был добавлен в буфер обмена!</value>
+	</data>
+	<data name="tIssueWasNotAdded">
+		<value>Инцидент не удалось добавить в буфер обмена!</value>
+	</data>
+	<data name="tReportConfig">
+		<value>Настройки отчетов</value>
+	</data>
+	<data name="tSQLReport">
+		<value>Пользовательский SQL запрос</value>
+	</data>
+	<data name="tPersonalSpace">
+		<value>Главное</value>
+	</data>
+	<data name="tMyWorks">
+		<value>Моя работа</value>
+	</data>
+	<data name="HideShow">
+		<value>Спрятать / показать</value>
+	</data>
+	<data name="tActByCat">
+		<value>Работа по категориям</value>
+	</data>
+	<data name="tGlobal">
+		<value>Общие файлы и папки</value>
+	</data>
+	<data name="tAllFiles">
+		<value>Все файлы</value>
+	</data>
+	<data name="tSimpleIssues">
+		<value>Инциденты</value>
+	</data>
+	<data name="tSimpleEvents">
+		<value>Мероприятия</value>
+	</data>
+	<data name="tSimpleToDos">
+		<value>Поручения</value>
+	</data>
+	<data name="tSimpleTasks">
+		<value>Задачи</value>
+	</data>
+	<data name="tMyWebStubs">
+		<value>Мои закладки</value>
+	</data>
+	<data name="tModifyNotif">
+		<value>Мои настройки</value>
+	</data>
+	<data name="tMDEPage">
+		<value>Настраиваемые поля</value>
+	</data>
+	<data name="tMDEBlock">
+		<value>Блок</value>
+	</data>
+	<data name="tMDEBlockName">
+		<value>Имя блока</value>
+	</data>
+	<data name="tSpecialTempl">
+		<value>Шаблоны специальных сообщений</value>
+	</data>
+	<data name="tVersion">
+		<value>Версия</value>
+	</data>
+	<data name="teMailPop3Boxes">
+		<value>Управление e-mail ящиками</value>
+	</data>
+	<data name="tBlackList">
+		<value>Черный список адресов</value>
+	</data>
+	<data name="tWhiteList">
+		<value>Белый список адресов</value>
+	</data>
+	<data name="tAntiSpamList">
+		<value>Правила борьбы со спамом</value>
+	</data>
+	<data name="tSecurity">
+		<value>Безопасность</value>
+	</data>
+	<data name="tDefIncSettings">
+		<value>Настройки по умолчанию для нового инцидента</value>
+	</data>
+	<data name="tIssBoxes">
+		<value>Папки инцидентов</value>
+	</data>
+	<data name="tPendingMess">
+		<value>Непроверенные сообщения</value>
+	</data>
+	<data name="tLDAPSettings">
+		<value>LDAP настройки</value>
+	</data>
+	<data name="Clients">
+		<value>Клиенты</value>
+	</data>
+	<data name="tLDAPLogs">
+		<value>Результаты синхронизации</value>
+	</data>
+	<data name="Contacts">
+		<value>Контакты</value>
+	</data>
+	<data name="Organizations">
+		<value>Организации</value>
+	</data>
+	<data name="Clear">
+		<value>Очистить</value>
+	</data>
+	<data name="Select">
+		<value>Выбрать</value>
+	</data>
+	<data name="tHDM">
+		<value>Управление инцидентами</value>
+	</data>
+	<data name="tSMTPSettings">
+		<value>SMTP настройки</value>
+	</data>
+	<data name="tResponsibledIssues">
+		<value>Мои инциденты</value>
+	</data>
+	<data name="tGroupClients">
+		<value>по клиентам</value>
+	</data>
+	<data name="tPrjsByClient">
+		<value>Проекты по клиентам</value>
+	</data>
+	<data name="tClientsContacts">
+		<value>Клиенты</value>
+	</data>
+	<data name="tIncsByClient">
+		<value>Инциденты по клиентам</value>
+	</data>
+</root>

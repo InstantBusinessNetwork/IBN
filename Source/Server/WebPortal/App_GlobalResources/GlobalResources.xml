@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GlobalResources>
+	<String name="Edition">US</String>
+	<String name="DocumentationLink">http://docs.mediachase.com/doku.php?id=ibn:intro</String>
+	<Boolean name="ShowQuickHelpLink">False</Boolean>
+	<Boolean name="ShowDocumentationLink">True</Boolean>
+	<Boolean name="ShowForumLink">True</Boolean>
+	<Boolean name="ShowSupportLink">True</Boolean>
+	<String name="QuickHelpLink"></String>
+	<String name="QuickHelpTextKey"></String>
+	<Boolean name="ShowTutorialLink">False</Boolean>
+	<String name="TutorialLink"></String>
+	<String name="ForumsLink">http://www.mediachase.com/forums</String>
+
+	<Boolean name="LoggedInCopyrightVisible">True</Boolean>
+	<String name="CompanyWebUrl">http://www.mediachase.com</String>
+	<String name="CopyrightText">© 2006&amp;mdash;2011 Mediachase Ltd. All rights reserved.</String>
+	<Boolean name="PrivacyLinkVisible">True</Boolean>
+	<String name="PrivacyLink">~/Public/PrivacyStatement.aspx</String>
+	<String name="PrivacyStatementTextKey">{IbnFramework.Global:PrivacyStatement}</String>
+	<Boolean name="TermsOfUseVisible">True</Boolean>
+	<String name="TermsOfUseLink">~/Public/TermsOfUse.aspx</String>
+	<String name="TermsOfUseTextKey">{IbnFramework.Global:TermsOfUse}</String>
+	<String name="VersionPostfix"></String>
+
+	<String name="SupportEmail">support@mediachase.com</String>
+	<String name="SalesEmail">sales@mediachase.com</String>
+
+	<String name="LicenseExpiredText">The Time Period for Your License Has Expired.</String>
+	<String name="SendToMCPurchase">Please contact Mediachase or an authorized sales agent or solution provider to obtain the commercial product.</String>
+	<String name="BuyProductText">
+		For purchasing the Instant Business Network collaboration server or for more information on pricing, editions and other options you can contact us via e-mail at
+		&lt;a href="mailto:sales@mediachase.com"&gt;sales@mediachase.com&lt;/a&gt;
+		or visit &lt;a href="http://www.mediachase.com" target="_blank"&gt;http://www.mediachase.com&lt;/a&gt;
+	</String>
+	<String name="TechText">For technical support on the Instant Business Network collaboration server you can visit our forums at &lt;a href="http://www.mediachase.com" target="_blank"&gt;http://www.mediachase.com&lt;/a&gt;</String>
+	<String name="PhonesText">Telephone: U.S. +1 323-988-1071</String>
+
+	<String name="IMGroupLogoUrl">~/layouts/images/default_group_image.jpg</String>
+	<String name="BottomsTextResourceKey">{IbnFramework.Global:bottomtextsingle}</String>
+	<String name="AttachFromProductUrl">../layouts/images/attachfromibn.gif</String>
+	<Boolean name="TableContactUsVisible">True</Boolean>
+	<Boolean name="TableFeedbackVisible">True</Boolean>
+	<String name="SingleCompanyContactUsResourceKey">Single</String>
+
+	<String name="HelpBottomTextKey">{IbnFramework.Global:HelpTextBottom}</String>
+	<String name="HelpBottomPhoneTextKey">{IbnFramework.Global:HelpTextBottomPhone}</String>
+	<String name="SupportPhone"></String>
+
+	<Boolean name="BuyLinkVisible">True</Boolean>
+	<String name="BuyNowLink">http://www.mediachase.com/ibn/overview.aspx</String>
+</GlobalResources>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTopTitle">
+		<value>Создание нового пользователя</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Выбор типа учетной записи</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Личные данные пользователя и контактная информация</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Выбор групп и установка ролей</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Отправка приглашения/запроса и инструкций новому пользователю</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Приглашение или запрос отправлены</value>
+	</data>
+	<data name="s1TopText">
+		<value>Какой тип учетной записи вы хотите предоставить новому пользователю?</value>
+	</data>
+	<data name="tIBNAccount">
+		<value>Учетная запись в портале</value>
+	</data>
+	<data name="tExternalAccount">
+		<value>Внешний/e-mail доступ</value>
+	</data>
+	<data name="tFirstName">
+		<value>Имя</value>
+	</data>
+	<data name="tOnlyPending">
+		<value>Вы можете лишь отправить запрос на предоставление учетной записи</value>
+	</data>
+	<data name="s1Comments">
+		<value>Выберите ‘Учетная запись в портале’ если вы хотите, чтобы пользователь мог полноценно работать в системе. Выберите ‘Внешний/e-mail доступ’, если вы хотите, чтобы пользователь мог работать с системой лишь посредством электронной почты.</value>
+	</data>
+	<data name="tContactInformation">
+		<value>Контактная информация</value>
+	</data>
+	<data name="tLastName">
+		<value>Фамилия</value>
+	</data>
+	<data name="tEMail">
+		<value>E-mail</value>
+	</data>
+	<data name="tWorkPhone">
+		<value>Рабочий телефон</value>
+	</data>
+	<data name="tMobilePhone">
+		<value>Мобильный телефон</value>
+	</data>
+	<data name="tCompany">
+		<value>Компания</value>
+	</data>
+	<data name="tDepartment">
+		<value>Подразделение</value>
+	</data>
+	<data name="tPosition">
+		<value>Должность</value>
+	</data>
+	<data name="tLocation">
+		<value>Расположение</value>
+	</data>
+	<data name="tCompanyInformation">
+		<value>Компания</value>
+	</data>
+	<data name="tPendingAccount">
+		<value>Pending Account</value>
+	</data>
+	<data name="s1TopDiv">
+		<value>Система поддерживает 2 типа доступа пользователей. Первый тип - стандартный доступ через учетную запись. Второй тип - ограниченный доступ через электронную почту.</value>
+	</data>
+	<data name="s2TopDiv">
+		<value>Эта информация используется для создания профиля пользователя в системе.</value>
+	</data>
+	<data name="s3TopDiv">
+		<value>Система поддерживает два типа пользовательских групп. Первый тип - деловые пользовательские группы. Втрой тип - контактные группы. Пользователь может принадлежать любому количеству деловых групп и единственной контактной группе.</value>
+	</data>
+	<data name="tSelectIBNGroups">
+		<value>Выберите группы</value>
+	</data>
+	<data name="tBusinessGroup">
+		<value>Группы</value>
+	</data>
+	<data name="tSelected">
+		<value>Выбраны</value>
+	</data>
+	<data name="tAvailable">
+		<value>Доступны</value>
+	</data>
+	<data name="tLogin">
+		<value>Логин</value>
+	</data>
+	<data name="tPassword">
+		<value>Пароль</value>
+	</data>
+	<data name="tConfirm">
+		<value>Подтверждение пароля</value>
+	</data>
+	<data name="tLanguage">
+		<value>Язык</value>
+	</data>
+	<data name="tDefLanguage">
+		<value>Язык</value>
+	</data>
+	<data name="tCommGroup">
+		<value>Контактная группа</value>
+	</data>
+	<data name="tRole">
+		<value>Какую роль должен выполнять пользователь?</value>
+	</data>
+	<data name="tPPM">
+		<value>Руководитель</value>
+	</data>
+	<data name="tPM">
+		<value>Проект менеджер</value>
+	</data>
+	<data name="tRegular">
+		<value>Обычный пользователь</value>
+	</data>
+	<data name="tTextForRegularAccount">
+		<value>Создание новой учетной записи почти завершено. При желании вы можете отправить пользователю несколько приветственных слов. Введите текст комментария и нажмите кнопку 'Создать'.</value>
+	</data>
+	<data name="tTextForPendingAccount">
+		<value>Создание запроса на предоставление новой учетной записи почти завершено. При желании, вы можете отправить пользователю несколько приветственных слов. Введите текст комментария и нажмите кнопку 'Создать'.</value>
+	</data>
+	<data name="tTextForExternalAccount">
+		<value>Создание нового внешнего пользователя почти завершено. При желании, вы можете отправить пользователю несколько приветственных слов. Введите текст комментария и нажмите кнопку 'Создать'.</value>
+	</data>
+	<data name="tHDM">
+		<value>Служба поддержки</value>
+	</data>
+	<data name="tTextForExternal">
+		<value>Вы включаете пользователя в группу Внешние. Нажмите кнопку 'Вперед'.</value>
+	</data>
+	<data name="tExternalAdding">
+		<value>Создание внешнего пользователя</value>
+	</data>
+	<data name="tWelcomeComments">
+		<value>Приветствие</value>
+	</data>
+	<data name="tTextForWelcome">
+		<value>Введите текст приветствия и нажмите 'Создать'.</value>
+	</data>
+	<data name="s5TopText">
+		<value>Вы окажетесь на странице просмотра информации о пользователе.</value>
+	</data>
+	<data name="s5TextHeader">
+		<value>Что еще вы можете сделать с новым пользователем?</value>
+	</data>
+	<data name="s5Text">
+		<value>Some Giant Text</value>
+	</data>
+	<data name="LoginReg">
+		<value>Только буквы, цифры и символы: '-', '_', '.'</value>
+	</data>
+	<data name="s1CommentsPM">
+		<value>Выберите ‘Учетная запись в портале’ если вы хотите, чтобы пользователь мог полноценно работать в системе, после утверждения администратором. Выберите ‘Внешний/e-mail доступ’, если вы хотите, чтобы пользователь мог работать с системой лишь посредством электронной почты.</value>
+	</data>
+	<data name="s1CommentsGU">
+		<value>После утверждения администратором, созданный пользователь сможет полноценно работать в системе.</value>
+	</data>
+	<data name="tPartnerAccount">
+		<value>Партнер</value>
+	</data>
+	<data name="tTextForPartnerAccount">
+		<value>Создание нового партнера почти завершено. При желании, вы можете отправить пользователю несколько приветственных слов. Введите текст комментария и нажмите кнопку 'Создать'.</value>
+	</data>
+	<data name="tSelectPartnerGroup">
+		<value>Выберите партнерскую группу</value>
+	</data>
+	<data name="tPartnerGroups">
+		<value>Партнерская группа</value>
+	</data>
+	<data name="TimeZone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="MaxUsersCount">
+		<value>Достигнуто максимальное количество пользователей</value>
+	</data>
+	<data name="DuplicatedLogin">
+		<value>Выбранный логин уже зарегистрирован.</value>
+	</data>
+	<data name="EmailDuplicate">
+		<value>Пользователь с указанным e-mail уже зарегистрирован.</value>
+	</data>
+	<data name="DuplicateEmail">
+		<value>E-mail уже существует</value>
+	</data>
+	<data name="s0Convert">
+		<value>Выбор источника данных</value>
+	</data>
+	<data name="s1Convert">
+		<value>Установка соединения с источником данных</value>
+	</data>
+	<data name="s2Convert">
+		<value>Установка соответствий между полями</value>
+	</data>
+	<data name="s3Convert">
+		<value>Список пользователей</value>
+	</data>
+	<data name="s4Convert">
+		<value>Корректировка данных о пользователях</value>
+	</data>
+	<data name="s5Convert">
+		<value>Определение групп и ролей для импортируемых пользователей.</value>
+	</data>
+	<data name="s6Convert">
+		<value>Завершение конвертации</value>
+	</data>
+	<data name="ConvertGlobalTitle">
+		<value>Импорт пользователей</value>
+	</data>
+	<data name="s0TopDivConvert">
+		<value>Тип источника данных</value>
+	</data>
+	<data name="s1TopDivConvert">
+		<value>Установка соединения с источником данных</value>
+	</data>
+	<data name="s3TopDivConvert">
+		<value>Проверьте список пользователей, добавляемых в систему</value>
+	</data>
+	<data name="s4TopDivConvert">
+		<value>После внесения необходимых данных нажмите кнопку "Изменить". Импортированы будут только те пользователи, которым соответствует зеленая иконка.</value>
+	</data>
+	<data name="s5TopDivConvert">
+		<value>Выберите роли и группы для импортируемых пользователей. Импортированы будут только те пользователи, которым соответствует зеленая иконка.</value>
+	</data>
+	<data name="ConnectToAD">
+		<value>Подключение к LDAP Directory</value>
+	</data>
+	<data name="Domain">
+		<value>Домен</value>
+	</data>
+	<data name="UserName">
+		<value>Имя пользователя</value>
+	</data>
+	<data name="ConnectError">
+		<value>Ошибка обращения к серверу или неправильные имя пользователя и пароль!</value>
+	</data>
+	<data name="CompareFields">
+		<value>Вы можете связать с полями портала любые поля источника данных.</value>
+	</data>
+	<data name="tSave">
+		<value>Изменить</value>
+	</data>
+	<data name="tUserList">
+		<value>Список</value>
+	</data>
+	<data name="tGroups">
+		<value>Группы и роли</value>
+	</data>
+	<data name="tUserInfo">
+		<value>Информация о пользователе</value>
+	</data>
+	<data name="IBNField">
+		<value>Поле портала</value>
+	</data>
+	<data name="ADField">
+		<value>Поле источника данных</value>
+	</data>
+	<data name="tRoles">
+		<value>Роли</value>
+	</data>
+	<data name="GroupSelectError">
+		<value>Необходимо выбрать группу или роль.</value>
+	</data>
+	<data name="tWereErrors">
+		<value>Во время создания пользователей произошли ошибки.</value>
+	</data>
+	<data name="UsersWereCreated">
+		<value>Следующие пользователи были добавлены в систему</value>
+	</data>
+	<data name="tFax">
+		<value>Факс</value>
+	</data>
+	<data name="s0ConvertComments">
+		<value>Вы можете импортировать пользователей как из LDAP directory, так и из файла</value>
+	</data>
+	<data name="tAD">
+		<value>LDAP directory</value>
+	</data>
+	<data name="tFile">
+		<value>файла</value>
+	</data>
+	<data name="tExcel">
+		<value>Excel</value>
+	</data>
+	<data name="tXML">
+		<value>XML</value>
+	</data>
+	<data name="tLoadToServer">
+		<value>Загрузка файла на сервер</value>
+	</data>
+	<data name="tNotSet">
+		<value>не выбран</value>
+	</data>
+	<data name="tSourceType">
+		<value>Импортировать из</value>
+	</data>
+	<data name="tSelectFileType">
+		<value>Выберите тип файла</value>
+	</data>
+	<data name="tSelectFile">
+		<value>Выберите файл</value>
+	</data>
+	<data name="step2Comments">
+		<value>Пользователи могут быть имортированы из XML файлов или электронных таблиц Excel</value>
+	</data>
+	<data name="tChange">
+		<value>Изменить</value>
+	</data>
+	<data name="tSave1">
+		<value>Сохранить</value>
+	</data>
+	<data name="tCancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tWindowsLogin">
+		<value>Логин для Windows</value>
+	</data>
+	<data name="DuplicatedWindowsLogin">
+		<value>Выбранный логин для Windows уже существует.</value>
+	</data>
+	<data name="tLDAPSettings">
+		<value>LDAP настройки</value>
+	</data>
+	<data name="tChoose">
+		<value>[вручную]</value>
+	</data>
+	<data name="tFilter">
+		<value>Фильтр</value>
+	</data>
+	<data name="tCommonPassword">
+		<value>Пароль для пользователей</value>
+	</data>
+</root>

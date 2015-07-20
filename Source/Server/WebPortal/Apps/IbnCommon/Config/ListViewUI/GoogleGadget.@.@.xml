@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="GG_PropertyPage">
+				<Column id="D562DF8D-2AA9-4db2-9207-081B25C139DE" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Images/IbnFramework/selectwidget.png" commandName="MC_GG_SelectItem" paddingRight="5" tooltip="{IbnFramework.WidgedEngine:_mc_SelectAndClose}"></Item>
+				</Column>
+			</CustomColumns>
+			<GridAction commandName="MC_GG_SelectItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_GG_SelectItem">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.UI.Web.Apps_Code.IbnCommon.GoogleGadgetRefresh, Mediachase.UI.Web</Handler>
+				<RefreshMethod>workspaceGetRefreshLight</RefreshMethod>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

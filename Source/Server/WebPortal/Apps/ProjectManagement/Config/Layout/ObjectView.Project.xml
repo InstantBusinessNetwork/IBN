@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="ShortInfo">
+			<Placeholder id="Placeholder_1">
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+		<Block id="InfoBlock" name="{IbnFramework.Common:Info}">
+			<Block id="Info" name="{IbnFramework.Project:tabWorkspace}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/Workspaceview.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="Details" name="{IbnFramework.Project:tabGeneral}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/ProjectGeneral2.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="tabRes" name="{IbnFramework.Project:tabParticipants}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/Resources.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="Lists" name="{IbnFramework.Project:tabLists}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/ProjectLists.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="FileLibrary" name="{IbnFramework.Project:tabLibrary}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/FileLibrary.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="tabDiscussions" name="{IbnFramework.Project:tabDiscussions}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/Discussions.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="tabReports" name="{IbnFramework.Project:tabReports}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/ProjectReports.ascx"></Control>
+					<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ReportsEnableHandler, Mediachase.UI.Web</EnableHandler>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="Calendar" name="{IbnFramework.Project:tabCalendar}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Projects/Modules/ProjectCalendar.ascx"></Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+		</Block>
+		<Block id="MyWork" name="{IbnFramework.Project:tabMyWork}">
+			<Block id="MyListView" name="{IbnFramework.Project:tabMyWork}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Projects/Modules/WorksForResource.ascx" />
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="My" name="{IbnFramework.Project:tabMyIncidents}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Incidents/Modules/IncidentsList.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.HelpDeskEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+		</Block>
+		<Block id="Management" name="{IbnFramework.Project:tabManagement}">
+			<Block id="tabGant" name="{IbnFramework.Project:tabGantt}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Projects/Modules/GanttView2.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ManagementEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="ListView" name="{IbnFramework.Project:tabResourceView}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Projects/Modules/WorksForManagers.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ManagementEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="tabIncidents" name="{IbnFramework.Project:tabIssues}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Incidents/Modules/IncidentsList.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.HelpDeskAndManagementEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="tabDocuments" name="{IbnFramework.Project:tabDocuments}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Documents/Modules/DocumentList.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ManagementEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+		</Block>
+		<Block id="Finances" name="{IbnFramework.Project:tabFinances}">
+			<Block id="Spreadsheet" name="{IbnFramework.Project:tabSpreadSheet}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Projects/Modules/FinanceSpreadSheet.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.FinancesEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+			<Block id="ActualFinances" name="{IbnFramework.Project:tabActFinances}">
+				<Placeholder id="Placeholder_1">
+					<Control id="ctrl1" path="~/Modules/BlockControlSingle.ascx">
+						<Property name="InnerControl" value="~/Projects/Modules/FinanceActualList2.ascx" />
+						<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.FinancesEnableHandler, Mediachase.UI.Web</EnableHandler>
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+		</Block>
+	</add>
+</Layout>

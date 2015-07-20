@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ManageSites" xml:space="preserve">
+    <value>Manage Sites</value>
+  </data>
+  <data name="tbTitle" xml:space="preserve">
+    <value>Manage Sites</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="DisksSpace" xml:space="preserve">
+    <value>Disks Space, Mb</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Domain" xml:space="preserve">
+    <value>Domain</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Activity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="CreateSite" xml:space="preserve">
+    <value>Create Site</value>
+  </data>
+  <data name="Billable" xml:space="preserve">
+    <value>Billable</value>
+  </data>
+  <data name="Trial" xml:space="preserve">
+    <value>Trial</value>
+  </data>
+  <data name="DaysLeft" xml:space="preserve">
+    <value>Days Left</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="tbTitle3" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MaxHDD" xml:space="preserve">
+    <value>Allowed Database Size, MB:</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Trial Period, Days:</value>
+  </data>
+  <data name="AllowedInternalUsers" xml:space="preserve">
+    <value>Allowed Internal Users:</value>
+  </data>
+  <data name="AllowedExternalUsers" xml:space="preserve">
+    <value>Allowed External Users:</value>
+  </data>
+  <data name="Use_IM" xml:space="preserve">
+    <value>Use IM</value>
+  </data>
+  <data name="ByMail" xml:space="preserve">
+    <value>Activate By Mail</value>
+  </data>
+  <data name="ByManual" xml:space="preserve">
+    <value>Manual Activation</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbTitle2" xml:space="preserve">
+    <value>Trial Requests</value>
+  </data>
+  <data name="FName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="LName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="eMail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="AdminEMail" xml:space="preserve">
+    <value>Admin e-Mail:</value>
+  </data>
+  <data name="unlimited" xml:space="preserve">
+    <value>unlimited</value>
+  </data>
+  <data name="EMailFrom" xml:space="preserve">
+    <value>Email From (Sender):</value>
+  </data>
+  <data name="OperatorEmail" xml:space="preserve">
+    <value>Operator Email:</value>
+  </data>
+  <data name="tbEdit" xml:space="preserve">
+    <value>Edit Settings</value>
+  </data>
+  <data name="tbBack" xml:space="preserve">
+    <value>Back To The Settings View</value>
+  </data>
+  <data name="CName" xml:space="preserve">
+    <value>Contact Name</value>
+  </data>
+  <data name="tTrialSets" xml:space="preserve">
+    <value>Trial Company Settings</value>
+  </data>
+  <data name="NotifSets" xml:space="preserve">
+    <value>Notification Settings</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Do you really want to delete this request?</value>
+  </data>
+  <data name="WarningA" xml:space="preserve">
+    <value>Do you want to approve this request?</value>
+  </data>
+  <data name="WarningS" xml:space="preserve">
+    <value>Do you really want to delete site</value>
+  </data>
+  <data name="WarningS2" xml:space="preserve">
+    <value>with domain</value>
+  </data>
+  <data name="DnsSettings" xml:space="preserve">
+    <value>DNS Settings</value>
+  </data>
+  <data name="DnsParentDomain" xml:space="preserve">
+    <value>Parent Domain:</value>
+  </data>
+  <data name="DnsRecordType" xml:space="preserve">
+    <value>Record Type:</value>
+  </data>
+  <data name="DnsRecordData" xml:space="preserve">
+    <value>Record Data:</value>
+  </data>
+  <data name="IisSettings" xml:space="preserve">
+    <value>IIS Settings</value>
+  </data>
+  <data name="IisIpAddress" xml:space="preserve">
+    <value>IP Address:</value>
+  </data>
+  <data name="IisPort" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SelectStatus" xml:space="preserve">
+    <value>Select Status</value>
+  </data>
+  <data name="ManageStatuses" xml:space="preserve">
+    <value>Manage Statuses</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="CreateTrial" xml:space="preserve">
+    <value>Create Trial</value>
+  </data>
+  <data name="AutoDeactivateExpired" xml:space="preserve">
+    <value>Auto Deactivate Expired Trials</value>
+  </data>
+  <data name="AutoDeleteOutdated" xml:space="preserve">
+    <value>Auto Delete Outdated Trial Companies</value>
+  </data>
+  <data name="OneDayAfterPeriod" xml:space="preserve">
+    <value>Days after Start:</value>
+  </data>
+  <data name="OneDayBeforePeriod" xml:space="preserve">
+    <value>Days before End:</value>
+  </data>
+  <data name="OneWeekAfterPeriod" xml:space="preserve">
+    <value>Days after Start:</value>
+  </data>
+  <data name="OneWeekBeforePeriod" xml:space="preserve">
+    <value>Days before End:</value>
+  </data>
+  <data name="OutdatePeriod" xml:space="preserve">
+    <value>Outdate Period, Days:</value>
+  </data>
+  <data name="SendSpam" xml:space="preserve">
+    <value>Send Trial Notifications</value>
+  </data>
+  <data name="SendSpamOneDayAfter" xml:space="preserve">
+    <value>Use "UserAfterOneDayIM" Notification</value>
+  </data>
+  <data name="SendSpamOneDayBefore" xml:space="preserve">
+    <value>Use "UserOneDayBefore" Notification</value>
+  </data>
+  <data name="SendSpamOneWeekAfter" xml:space="preserve">
+    <value>Use "UserAfterOneWeek" Notification</value>
+  </data>
+  <data name="SendSpamOneWeekBefore" xml:space="preserve">
+    <value>Use "UserOneWeekBefore" Notification</value>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="TariffSettings" xml:space="preserve">
+    <value>Tariff Settings</value>
+  </data>
+  <data name="UseTariffs" xml:space="preserve">
+    <value>Use Tariffs</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>[ Not Specified ]</value>
+  </data>
+  <data name="SendBillableSpam" xml:space="preserve">
+    <value>Send Billable Notifications</value>
+  </data>
+  <data name="SendBillableSpam1day" xml:space="preserve">
+    <value>Use "Client1DayZeroBalance" Notification</value>
+  </data>
+  <data name="SendBillableSpam3day" xml:space="preserve">
+    <value>Use "Client3DayZeroBalance" Notification</value>
+  </data>
+  <data name="SendBillableSpam7day" xml:space="preserve">
+    <value>Use "Client7DayZeroBalance" Notification</value>
+  </data>
+  <data name="SendBillableSpamNegativeBalance" xml:space="preserve">
+    <value>Use "BillableNegativeBalance" Notification</value>
+  </data>
+  <data name="AutoDeactivateUnpaid" xml:space="preserve">
+    <value>Auto Deactivate Unpaid Companies</value>
+  </data>
+  <data name="SmtpAuthenticate" xml:space="preserve">
+    <value>Authenticate</value>
+  </data>
+  <data name="SmtpPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="SmtpPort" xml:space="preserve">
+    <value>SMTP Port</value>
+  </data>
+  <data name="SmtpSecureConnection" xml:space="preserve">
+    <value>Secure Connection</value>
+  </data>
+  <data name="SmtpServer" xml:space="preserve">
+    <value>SMTP Server</value>
+  </data>
+  <data name="SmtpSettings" xml:space="preserve">
+    <value>SMTP Settings</value>
+  </data>
+  <data name="SmtpUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="DefaultBillablePool" xml:space="preserve">
+    <value>Default Billable Application Pool</value>
+  </data>
+  <data name="DefaultTrialPool" xml:space="preserve">
+    <value>Default Trial Application Pool</value>
+  </data>
+  <data name="NewPool" xml:space="preserve">
+    <value>[ New Application Pool ]</value>
+  </data>
+  <data name="DefaultTariff" xml:space="preserve">
+    <value>Default Tariff</value>
+  </data>
+</root>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewListButton" text="{IbnFramework.ListInfo:tAddList}" imageUrl="~/Layouts/Images/listsnew.gif" commandName="MC_ListApp_NewListInfo" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_ListApp_DeleteSelected" itemSplitter="Right"></Button>
+
+			<Menu id="ActionsMenu" text="{IbnFramework.ListInfo:tActions}">
+				<Button id="NewFolderButton" text="{IbnFramework.ListInfo:tAddFolder}" imageUrl="~/Layouts/Images/nfolder.gif" commandName="MC_ListApp_NewListFolder"></Button>
+				<Button id="EditFolderButton" text="{IbnFramework.ListInfo:ListFolderEdit}" imageUrl="~/layouts/images/edit.gif" commandName="MC_ListApp_EditListFolder"></Button>
+				<Button id="DeleteFolderButton" text="{IbnFramework.ListInfo:DeleteListFolder}" imageUrl="~/layouts/images/delete.gif" commandName="MC_ListApp_DeleteListFolder"></Button>
+				<Button id="ImportListButton" text="{IbnFramework.ListInfo:ImportListMenu}" imageUrl="~/Layouts/Images/import.gif" commandName="MC_ListApp_ImportWizard"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_ListApp_Columns">
+				<Column id="428D01DD-7871-4f4d-8938-E38347F63824" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/layouts/images/customize.gif" commandName="MC_ListApp_Customize" paddingRight="5" tooltip="{IbnFramework.ListInfo:ListManagement}" />
+					<Item imageUrl="~/Layouts/Images/icon-key.gif" commandName="MC_ListApp_Security" paddingRight="5" tooltip="{IbnFramework.ListInfo:Security}" />
+					<Item imageUrl="~/layouts/images/MoveTo.gif" commandName="MC_ListApp_ListMove" paddingRight="5" tooltip="{IbnFramework.ListInfo:MoveTo}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_ListApp_NewListFolder">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListFolderEdit.aspx?parentFolderId={HttpContext:ListFolderId}</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAddFolder, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_EditListFolder">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListFolderEdit.aspx?ListFolderId={HttpContext:ListFolderId}</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanEditFolder, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_DeleteListFolder">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.ListInfo:WarningF}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.DeleteListFolderHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanDeleteFolder, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_NewListInfo">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListInfoCreate.aspx?ListFolderId={HttpContext:ListFolderId}</Url>
+			</Command>
+			<Command id="MC_ListApp_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.DeleteSelectedListsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_ListApp_ImportWizard">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ImportWizard.aspx?ListFolderId={HttpContext:ListFolderId}</Url>
+				<Width>680</Width>
+				<Height>500</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+
+			<Command id="MC_ListApp_Customize">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListInfoView.aspx?class=List_[ClientParam:primaryKeyId]</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAdminList, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_Security">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListSecurity.aspx?ClassName=List_[ClientParam:primaryKeyId]&amp;CommandName=MC_ListApp_Security</Url>
+				<Width>600</Width>
+				<Height>305</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAdminList, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_ListMove">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListInfoMove.aspx?ListId=[ClientParam:primaryKeyId]&amp;CommandName=MC_ListApp_ListMove</Url>
+				<Width>550</Width>
+				<Height>470</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+				<UpdatePanelIds>upFilters,grdMainPanel,upToolbar</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAdminList, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="MC_ListApp_ChangeFolderTree">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.ChangeFolderHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>upFilters,grdMainPanel,upToolbar</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

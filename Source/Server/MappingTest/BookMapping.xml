@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mappingDocument>
+  
+  <mapping  class = "bookstore" table = "bookstore" primaryKey="bookstore_id">
+  </mapping>
+
+  <mapping  class="Book" table="book">
+    <map field="bookstoreId" column="bookstore_Id" relationTo="bookstore"/>
+    <map field="Title" column="title"/>
+    <map field="price" column="price" value="999.99"/>
+  </mapping>
+
+</mappingDocument>

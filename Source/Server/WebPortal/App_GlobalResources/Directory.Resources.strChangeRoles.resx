@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbTitle">
+		<value>Related Objects for User</value>
+	</data>
+	<data name="Projects">
+		<value>Projects</value>
+	</data>
+	<data name="ToDos">
+		<value>ToDo's</value>
+	</data>
+	<data name="Tasks">
+		<value>Tasks</value>
+	</data>
+	<data name="Events">
+		<value>Events</value>
+	</data>
+	<data name="Incidents">
+		<value>Issues</value>
+	</data>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Roles">
+		<value>Roles</value>
+	</data>
+	<data name="View">
+		<value>View</value>
+	</data>
+	<data name="Edit">
+		<value>Edit</value>
+	</data>
+	<data name="Delete">
+		<value>Delete</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="ExecutiveManager">
+		<value>Executive Manager</value>
+	</data>
+	<data name="TeamMemeber">
+		<value>Team Member</value>
+	</data>
+	<data name="Sponsor">
+		<value>Sponsor</value>
+	</data>
+	<data name="Stakeholder">
+		<value>Stakeholder</value>
+	</data>
+	<data name="Options">
+		<value>Options</value>
+	</data>
+	<data name="Resource">
+		<value>Resource</value>
+	</data>
+	<data name="tWarningTodo">
+		<value>Do you really want to delete this todo?</value>
+	</data>
+	<data name="tWarningTask">
+		<value>Do you really want to delete this task?</value>
+	</data>
+	<data name="tWarningEvent">
+		<value>Do you really want to delete this calendar entry?</value>
+	</data>
+	<data name="tWarningProject">
+		<value>Do you really want to delete this project?</value>
+	</data>
+	<data name="tWarningIssue">
+		<value>Do you really want to delete this issue?</value>
+	</data>
+	<data name="Documents">
+		<value>Documents</value>
+	</data>
+	<data name="tWarningDocument">
+		<value>Do you really want to delete this document?</value>
+	</data>
+</root>

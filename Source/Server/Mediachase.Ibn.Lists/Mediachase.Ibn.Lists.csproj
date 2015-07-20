@@ -1,0 +1,153 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{628CEBD7-FDC8-4A4B-9EE3-39E8EC370A91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.Lists</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.Lists</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a80a980127cd9f5a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Web.UI.Controls.Util, Version=1.0.3012.17414, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Web.UI.Controls.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ListInfo.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>ListInfo.auto.cs</LastGenOutput>
+    </None>
+    <None Include="ListFolder.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>ListFolder.auto.CS</LastGenOutput>
+    </None>
+    <None Include="ListPublication.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>ListPublication.auto.cs</LastGenOutput>
+    </None>
+    <Compile Include="AlertManager.cs" />
+    <Compile Include="ListObjectRequestHandler.cs" />
+    <Compile Include="ListCollection.cs" />
+    <Compile Include="ListFolderType.cs" />
+    <Compile Include="ListImportParameters.cs" />
+    <Compile Include="ListInfo.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListInfo.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ListInfo.cs" />
+    <Compile Include="ListFolder.auto.CS">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListFolder.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ListFolder.cs" />
+    <Compile Include="ListRequestHandler.cs" />
+    <Compile Include="ListManager.cs" />
+    <Compile Include="ListPublication.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListPublication.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ListPublication.cs" />
+    <Compile Include="Mapping\ISourceValue.cs" />
+    <Compile Include="Mapping\MappingEngineErrorEventArgs.cs" />
+    <Compile Include="Mapping\MappingException.cs" />
+    <Compile Include="Mapping\MappingRule.cs" />
+    <Compile Include="Mapping\MappingElement.cs" />
+    <Compile Include="Mapping\MappedObject.cs" />
+    <Compile Include="Mapping\MappingDocument.cs" />
+    <Compile Include="Mapping\MappingEngine.cs" />
+    <Compile Include="Mapping\MappingError.cs" />
+    <Compile Include="Mapping\MappingErrorType.cs" />
+    <Compile Include="Mapping\CopySourceValue.cs" />
+    <Compile Include="Mapping\DefaultSourceValue.cs" />
+    <Compile Include="Mapping\BaseSourceValue.cs" />
+    <Compile Include="Mapping\RelationSourceValue.cs" />
+    <Compile Include="Mapping\Type2McDataType.cs" />
+    <Compile Include="NewEnumInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{F76612EC-646A-435D-A649-9C5B66A07906}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="s1TopText">
+		<value>		Проекты позволяют вам координировать работу над задачами, поручениями, инцидентами с любым количеством Ваших сотрудников, не зависимо от их местонахождения. Этот мастер поможет Вам быстро создать новый проект и автоматически сообщить об этом всем членам команды проекта.</value>
+	</data>
+	<data name="s1ProjectTitle">
+		<value>Как бы вы хотели назвать свой проект?</value>
+	</data>
+	<data name="s1ProjectType">
+		<value>Какого типа должен быть ваш проект?</value>
+	</data>
+	<data name="s1Client">
+		<value>Кто заказчик проекта?</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Если вы работаете с Microsoft Project, вы можете воспользоваться инструментами экспорта и импорта проектов для синхронизации своих проектов с порталом. Более подробную информацию вы можете найти в Руководстве пользователя.</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Название и выбор типа вашего проекта</value>
+	</data>
+	<data name="s2StartDate">
+		<value>Когда вы планируете начать проект?</value>
+	</data>
+	<data name="s2EndDate">
+		<value>Когда проект должен завершиться?</value>
+	</data>
+	<data name="s2Executive">
+		<value>У вас есть исполнительный менеджер?</value>
+	</data>
+	<data name="s2ExecutiveComment">
+		<value>Если нет, выберите 'не выбран'.</value>
+	</data>
+	<data name="s2Budget">
+		<value>Вы знаете, какую сумму собираетесь потратить на реализацию проекта?</value>
+	</data>
+	<data name="s2QuickTip">
+		<value>Важно установить даты начала и завершения проекта. Как только проект будет создан, портал будет использовать эти даты для помощи в управлении задачами и связанной с проектом информацией. При необходимости вы всегда сможете изменить их.</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Определение сроков и бюджета</value>
+	</data>
+	<data name="s3Category">
+		<value>К каким категориям можно отнести Ваш проект?</value>
+	</data>
+	<data name="s3QuickTip">
+		<value>Для удобства работы с отчетами и фильтрами, выберите из списка одну или несколько категорий, с которыми связан ваш проект. При необходимости вы всегда сможете изменить их.</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Установка категорий для работы с отчетами и фильтрами</value>
+	</data>
+	<data name="s4TopText">
+		<value>Сформируйте команду проекта, выбрав из списка доступных пользователей интересующих вас людей. Если вам нужен кто-то, кто не является пользователем системы, вы сможете пригласить его сразу после создания проекта.</value>
+	</data>
+	<data name="s4Directory">
+		<value>Группа пользователей</value>
+	</data>
+	<data name="s4AvailableTeam">
+		<value>Доступные пользователи</value>
+	</data>
+	<data name="s4SelectedTeam">
+		<value>Команда</value>
+	</data>
+	<data name="s4QuickTip">
+		<value>You can use the group and search functions to
+the left to show available resources that you can
+then add to the project team.</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Формирование команды</value>
+	</data>
+	<data name="s4SelectGroup">
+		<value>Выберите группу</value>
+	</data>
+	<data name="s4EnterName">
+		<value>Введите имя для поиска...</value>
+	</data>
+	<data name="s4Selected">
+		<value>Выбраны</value>
+	</data>
+	<data name="s4Available">
+		<value>Доступны</value>
+	</data>
+	<data name="s4Name">
+		<value>Имя</value>
+	</data>
+	<data name="s4Code">
+		<value>Код</value>
+	</data>
+	<data name="s4Rate">
+		<value>Ставка</value>
+	</data>
+	<data name="s4FindNow">
+		<value>Найти</value>
+	</data>
+	<data name="s4Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="s4Search">
+		<value>Поиск</value>
+	</data>
+	<data name="s4Group">
+		<value>Группа</value>
+	</data>
+	<data name="s4User">
+		<value>Пользователь</value>
+	</data>
+	<data name="s4Add">
+		<value>Добавить</value>
+	</data>
+	<data name="s6TopText">
+		<value>Проверьте внесенную информацию и нажмите кнопку "Создать".</value>
+	</data>
+	<data name="s6Project">
+		<value>Проект</value>
+	</data>
+	<data name="s6StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="s6EndDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="s6ProjectType">
+		<value>Тип проекта</value>
+	</data>
+	<data name="s6Customer">
+		<value>Клиент</value>
+	</data>
+	<data name="s6Executive">
+		<value>Исполнительный менеджер</value>
+	</data>
+	<data name="s6Budget">
+		<value>Бюджет</value>
+	</data>
+	<data name="s6Team">
+		<value>Команда</value>
+	</data>
+	<data name="s6Notify">
+		<value>Автоматически сообщить всем членам команды?</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>Завершение создания проекта и уведомление членов команды</value>
+	</data>
+	<data name="s4NotSet">
+		<value>Не выбран</value>
+	</data>
+	<data name="s7SubTitle">
+		<value>Проект был успешно создан!</value>
+	</data>
+	<data name="s7TopText">
+		<value>Вы окажетесь сейчас на странице просмотра проекта, где вам доступен ряд дополнительных возможностей для работы с проектом.</value>
+	</data>
+	<data name="s7TextHeader">
+		<value>Что еще вы можете делать со своим проектом?</value>
+	</data>
+	<data name="s7Text">
+		<value>&lt;li&gt;Управление инцидентами, созданными в рамках проекта;&lt;br&gt;
+&lt;li&gt;Присоединение  к проекту файлов и документов;&lt;br&gt;
+&lt;li&gt;Постановка задач перед членами команды проекта;&lt;br&gt;
+&lt;li&gt;Планирование мероприятий в рамках проекта;&lt;br&gt;
+&lt;li&gt;Контроль финансовых расходов;&lt;br&gt;
+&lt;li&gt;Экспорт проектов из MS Project;&lt;br&gt;
+&lt;li&gt;Импорт проектов в MS Project;&lt;br&gt;
+&lt;li&gt;Динамические отчеты о работе над проектом.</value>
+	</data>
+	<data name="GlobalTitle">
+		<value>Создание нового проекта</value>
+	</data>
+	<data name="s5Description">
+		<value>Как бы вы могли описать свой проект?</value>
+	</data>
+	<data name="s5Scope">
+		<value>Каков масштаб вашего проекта?</value>
+	</data>
+	<data name="s5Goals">
+		<value>Каковы цели вашего проекта?</value>
+	</data>
+	<data name="s5Deliverables">
+		<value>Каких результатов вы хотели бы добиться?</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Описание вашего проекта</value>
+	</data>
+	<data name="s6Description">
+		<value>Описание</value>
+	</data>
+	<data name="s6Scope">
+		<value>Масштаб</value>
+	</data>
+	<data name="s6Goals">
+		<value>Цели</value>
+	</data>
+	<data name="s6Deliverables">
+		<value>Результаты</value>
+	</data>
+	<data name="ProjectCurrency">
+		<value>Валюта проекта</value>
+	</data>
+	<data name="s1Priority">
+		<value>Каков приоритет вашего проекта?</value>
+	</data>
+	<data name="s1Phase">
+		<value>В какой фазе находится ваш проект?</value>
+	</data>
+	<data name="s3Portfolio">
+		<value>К каким группам должен принадлежать ваш проект?</value>
+	</data>
+</root>

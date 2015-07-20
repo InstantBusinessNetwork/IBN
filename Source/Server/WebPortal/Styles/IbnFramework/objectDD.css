@@ -1,0 +1,51 @@
+.dropstyle
+{
+	overflow: hidden;
+	border: solid 1px #7F9DB9;
+	padding: 3px;
+	padding-right: 0;
+	white-space: nowrap;
+}
+.dropstyle *
+{
+	vertical-align: middle;
+}
+.btndown
+{
+	background-color: #C5D6FC;
+	border: solid 1px #7F9DB9;
+	border-left: none;
+	padding: 3px;
+	text-align: center;
+	vertical-align: middle;
+	width: 9px;
+}
+.btndown2{
+	vertical-align: middle;
+}
+.cellclass{
+	vertical-align:middle;
+	padding:3px;
+	background-color: #fafafa;
+	border-bottom:1px solid #7F9DB9;
+}
+.cellclass *
+{
+	vertical-align: middle;
+}
+.hovercellclass{
+	vertical-align:middle;
+	padding:3px;
+	background-color: #FFEEC2;
+	border-bottom:1px solid #7F9DB9;
+}
+.hovercellclass *
+{
+	vertical-align: middle;
+}
+.rest-gray{
+	color: #C9A8BD;
+}
+.rest-black{
+	color: black;
+}

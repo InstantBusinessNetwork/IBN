@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" extension="cs" template="Templates\EntityObject.aspx">
+	<BusinessObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn48portal;Integrated Security=SSPI;</ConnectionString>
+		<MetaClass>WorkflowDefinition</MetaClass>
+		<Params>
+			<add key="Namespace" value="Mediachase.Ibn.Assignments"/>
+		</Params>
+	</BusinessObject>
+</mcgen>

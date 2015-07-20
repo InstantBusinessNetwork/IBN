@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Columns" primaryKey="IncidentId">
+				<!--<Column id="9BD3F430-B11D-4866-932E-5B13CE935325" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_HDM_ViewItem" paddingRight="5" tooltip="{IbnFramework.Incident:ViewIssue}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="MC_HDM_EditGeneralInfo" paddingRight="5" tooltip="{IbnFramework.Incident:EditIssue}" />
+					<Item imageUrl="~/layouts/Images/delete.gif" commandName="MC_HDM_DeleteItem" paddingRight="5" tooltip="{IbnFramework.Incident:DeleteIssue}" />
+				</Column>-->
+				<Column id="colPriority" type="default" width="20px" title="!!!" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/Shell/ColumnTemplates/PriorityIcon.ascx" />
+				<Column id="colId" type="default" width="50px" title="#" sortExpression="IncidentId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Integer.Grid.Incident.IncidentId.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="100%" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.Title.IncidentList.ascx" />
+				<!--<Column id="colPriority" type="default" width="100px" title="{IbnFramework.Incident:Priority}" dataField="PriorityName" sortExpression="PriorityId" />-->
+				<Column id="colCreator" type="default" width="150px" templateUrl="~/Apps/Shell/ColumnTemplates/Document.UserStatus.ascx" title="{IbnFramework.Incident:Creator}" />
+				<Column id="colState" type="default" width="100px" title="{IbnFramework.Incident:IssStatus}" dataField="StateName" sortExpression="StateName" />
+			</CustomColumns>
+			<GridAction commandName="MC_HDM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_HDM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/IncidentView.aspx?IncidentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_HDM_DeleteItem">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:DeleteWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_HDM_EditGeneralInfo">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Incident:GeneralInfo}</PopupTitle>
+				<Url>~/Incidents/EditGeneralInfo.aspx?IncidentID=[ClientParam:primaryKeyId]&amp;cmd=MC_HDM_EditGeneralInfo</Url>
+				<Width>500</Width>
+				<Height>400</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>			
+		</add>
+	</Commands>
+</MetaView>

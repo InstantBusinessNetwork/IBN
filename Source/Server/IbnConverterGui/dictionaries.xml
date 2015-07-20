@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dictionaries>
+	<dictionary name="LANGUAGES">
+		<item LanguageId="1" Locale="en-US" FriendlyName="English" />
+		<item LanguageId="2" Locale="ru-RU" FriendlyName="Русский" />
+	</dictionary>
+	<dictionary name="ACTIVATION_TYPES">
+		<item ActivationTypeId="1" ActivationTypeName="Automatically, if there are no uncompleted predecessors" />
+		<item ActivationTypeId="2" ActivationTypeName="Automatically without any checks" />
+		<item ActivationTypeId="3" ActivationTypeName="Manually" />
+	</dictionary>
+	<dictionary name="COMPLETION_REASONS">
+		<item ReasonId="-1" ReasonName="Not Completed" />
+		<item ReasonId="1" ReasonName="Completed" />
+		<item ReasonId="2" ReasonName="Completed Automatically" />
+		<item ReasonId="3" ReasonName="Suspended" />
+		<item ReasonId="4" ReasonName="Suspended Automatically" />
+	</dictionary>
+	<dictionary name="COMPLETION_TYPES">
+		<item CompletionTypeId="1" CompletionTypeName="Everybody must complete" />
+		<item CompletionTypeId="2" CompletionTypeName="Anyone can complete" />
+	</dictionary>
+	<dictionary name="CONSTRAINT_TYPES">
+		<item ConstraintTypeId="0" ConstraintTypeName="As soon as possible" />
+		<item ConstraintTypeId="4" ConstraintTypeName="Start not earlier than" />
+		<item ConstraintTypeId="5" ConstraintTypeName="Start not later than" />
+	</dictionary>
+	<dictionary name="CURRENCY">
+		<item CurrencyId="1" CurrencySymbol="$" />
+		<item CurrencyId="3" CurrencySymbol="€" />
+		<item CurrencyId="2" CurrencySymbol="руб." />
+	</dictionary>
+	<dictionary name="DATE_TYPE_HANDLERS">
+		<item HandlerId="1" HandlerName="SendReminder" />
+		<item HandlerId="2" HandlerName="RaiseSystemEvent" />
+		<item HandlerId="3" HandlerName="BatchAlert" />
+		<item HandlerId="4" HandlerName="LdapSynchronization" />
+	</dictionary>
+	<dictionary name="EMailMessageAntiSpamRule">
+		<item AntiSpamRuleId="1" Accept="1" Key="Ticket" RuleType="3" Value="" Weight="0" />
+		<item AntiSpamRuleId="2" Accept="1" Key="WhiteList" RuleType="3" Value="" Weight="1" />
+		<item AntiSpamRuleId="3" Accept="0" Key="BlackList" RuleType="3" Value="" Weight="2" />
+	</dictionary>
+	<dictionary name="EVENT_TYPES">
+		<item TypeId="1" TypeName="Event" />
+		<item TypeId="2" TypeName="Meeting" />
+		<item TypeId="3" TypeName="Appointment" />
+	</dictionary>
+	<dictionary name="fsc_Directories">
+		<item DirectoryId="1" ContainerKey="ContentType" Name="root" Path="." ParentDirectoryId="[=NULL=]" />
+		<item DirectoryId="2" ContainerKey="SystemPicture" Name="root" Path="." ParentDirectoryId="[=NULL=]" />
+		<item DirectoryId="3" ContainerKey="Workspace" Name="root" Path="." ParentDirectoryId="[=NULL=]" />
+	</dictionary>
+	<dictionary name="fsc_AccessControlLists">
+		<item DirectoryId="1" IsInherited="1" />
+		<item DirectoryId="2" IsInherited="1" />
+		<item DirectoryId="3" IsInherited="1" />
+	</dictionary>
+	<dictionary name="LocalAddressRanges">
+		<item RangeId="1" StartAddress="192.168.0.1" EndAddress="192.168.0.255" />
+	</dictionary>
+	<dictionary name="MESSAGE_TYPES">
+		<item MessageTypeId="1" MessageTypeName="Info" />
+		<item MessageTypeId="2" MessageTypeName="Manager" />
+		<item MessageTypeId="3" MessageTypeName="Resource" />
+	</dictionary>
+	<dictionary name="MetaDataType">
+		<item DataTypeId="0" Name="BigInt" FriendlyName="BigInt" Description="MSSQL Common Type" Length="8" SqlName="bigint" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="1" Name="Binary" FriendlyName="Binary" Description="MSSQL Common Type" Length="8000" SqlName="binary" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="" />
+		<item DataTypeId="2" Name="Bit" FriendlyName="Bit" Description="MSSQL Common Type" Length="1" SqlName="bit" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="3" Name="Char" FriendlyName="Char" Description="MSSQL Common Type" Length="8000" SqlName="char" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="4" Name="DateTime" FriendlyName="Date &amp; Time" Description="MSSQL Common Type" Length="8" SqlName="datetime" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="getdate()" />
+		<item DataTypeId="5" Name="Decimal" FriendlyName="Decimal" Description="MSSQL Common Type" Length="17" SqlName="decimal" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="6" Name="Float" FriendlyName="Float" Description="MSSQL Common Type" Length="8" SqlName="float" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="7" Name="Image" FriendlyName="Sql Image" Description="MSSQL Common Type" Length="16" SqlName="image" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="" />
+		<item DataTypeId="8" Name="Int" FriendlyName="Int" Description="MSSQL Common Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="9" Name="Money" FriendlyName="Currency" Description="MSSQL Common Type" Length="8" SqlName="money" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="10" Name="NChar" FriendlyName="NChar" Description="MSSQL Common Type" Length="8000" SqlName="nchar" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="11" Name="NText" FriendlyName="NText" Description="MSSQL Common Type" Length="16" SqlName="ntext" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="12" Name="NVarChar" FriendlyName="NVarChar" Description="MSSQL Common Type" Length="8000" SqlName="nvarchar" AllowNulls="1" Variable="1" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="13" Name="Real" FriendlyName="Real" Description="MSSQL Common Type" Length="4" SqlName="real" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="14" Name="UniqueIdentifier" FriendlyName="UniqueIdentifier" Description="MSSQL Common Type" Length="16" SqlName="uniqueidentifier" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="newid()" />
+		<item DataTypeId="15" Name="SmallDateTime" FriendlyName="SmallDateTime" Description="MSSQL Common Type" Length="4" SqlName="smalldatetime" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="getdate()" />
+		<item DataTypeId="16" Name="SmallInt" FriendlyName="SmallInt" Description="MSSQL Common Type" Length="2" SqlName="smallint" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="17" Name="SmallMoney" FriendlyName="SmallMoney" Description="MSSQL Common Type" Length="4" SqlName="smallmoney" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="18" Name="Text" FriendlyName="Text" Description="MSSQL Common Type" Length="16" SqlName="text" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="19" Name="Timestamp" FriendlyName="Timestamp" Description="MSSQL Common Type" Length="8" SqlName="timestamp" AllowNulls="0" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="20" Name="TinyInt" FriendlyName="TinyInt" Description="MSSQL Common Type" Length="1" SqlName="tinyint" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="21" Name="VarBinary" FriendlyName="VarBinary" Description="MSSQL Common Type" Length="8000" SqlName="varbinary" AllowNulls="1" Variable="1" IsSQLCommonType="1" DefaultValue="" />
+		<item DataTypeId="22" Name="VarChar" FriendlyName="VarChar" Description="MSSQL Common Type" Length="8000" SqlName="varchar" AllowNulls="1" Variable="1" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="23" Name="Variant" FriendlyName="Sql Variant" Description="MSSQL Common Type" Length="8016" SqlName="sql_variant" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="24" Name="Numeric" FriendlyName="Numeric" Description="MSSQL Common Type" Length="17" SqlName="numeric" AllowNulls="1" Variable="0" IsSQLCommonType="1" DefaultValue="0" />
+		<item DataTypeId="25" Name="Sysname" FriendlyName="Sysname" Description="MSSQL Common Type" Length="256" SqlName="sysname" AllowNulls="0" Variable="1" IsSQLCommonType="1" DefaultValue="''" />
+		<item DataTypeId="26" Name="Integer" FriendlyName="Number" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="27" Name="Boolean" FriendlyName="True/False" Description="Meta Data Type" Length="1" SqlName="bit" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="28" Name="Date" FriendlyName="Date" Description="Meta Data Type" Length="8" SqlName="datetime" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="getdate()" />
+		<item DataTypeId="29" Name="Email" FriendlyName="E-mail Address" Description="Meta Data Type" Length="256" SqlName="varchar" AllowNulls="1" Variable="1" IsSQLCommonType="0" DefaultValue="''" />
+		<item DataTypeId="30" Name="URL" FriendlyName="Web Link/Url" Description="Meta Data Type" Length="512" SqlName="varchar" AllowNulls="1" Variable="1" IsSQLCommonType="0" DefaultValue="''" />
+		<item DataTypeId="31" Name="ShortString" FriendlyName="Short Text" Description="Meta Data Type" Length="512" SqlName="nvarchar" AllowNulls="1" Variable="1" IsSQLCommonType="0" DefaultValue="''" />
+		<item DataTypeId="32" Name="LongString" FriendlyName="Long Text" Description="Meta Data Type" Length="16" SqlName="ntext" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="''" />
+		<item DataTypeId="33" Name="LongHtmlString" FriendlyName="HTML&#xD;&#xA;" Description="Meta Data Type" Length="16" SqlName="ntext" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="''" />
+		<item DataTypeId="34" Name="DictionarySingleValue" FriendlyName="Dictionary Single Value" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="35" Name="DictionaryMultiValue" FriendlyName="Dictionary Multi Value" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="36" Name="EnumSingleValue" FriendlyName="Enum Single Value" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="37" Name="EnumMultiValue" FriendlyName="Enum Multi Value" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="38" Name="StringDictionary" FriendlyName="String Dictionary" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="39" Name="File" FriendlyName="File Attachment" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="40" Name="ImageFile" FriendlyName="Image&#xD;&#xA;" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+		<item DataTypeId="41" Name="MetaObject" FriendlyName="Meta Object" Description="Meta Data Type" Length="4" SqlName="int" AllowNulls="1" Variable="0" IsSQLCommonType="0" DefaultValue="0" />
+	</dictionary>
+	<dictionary name="OBJECT_MENUS">
+		<item MenuId="1" Description="For Issue View" />
+	</dictionary>
+	<dictionary name="OBJECT_STATES">
+		<item StateId="1" StateName="Upcoming" Order="1" />
+		<item StateId="2" StateName="Active" Order="2" />
+		<item StateId="3" StateName="Overdue" Order="3" />
+		<item StateId="4" StateName="Suspended" Order="4" />
+		<item StateId="5" StateName="Completed" Order="7" />
+		<item StateId="6" StateName="ReOpen" Order="5" />
+		<item StateId="7" StateName="OnCheck" Order="6" />
+	</dictionary>
+	<dictionary name="OBJECT_TYPES">
+		<item ObjectTypeId="1" ObjectTypeName="User" />
+		<item ObjectTypeId="2" ObjectTypeName="UserGroup" />
+		<item ObjectTypeId="3" ObjectTypeName="Project" />
+		<item ObjectTypeId="4" ObjectTypeName="CalendarEntry" />
+		<item ObjectTypeId="5" ObjectTypeName="Task" />
+		<item ObjectTypeId="6" ObjectTypeName="ToDo" />
+		<item ObjectTypeId="7" ObjectTypeName="Issue" />
+		<item ObjectTypeId="8" ObjectTypeName="File_FileStorage" />
+		<item ObjectTypeId="10" ObjectTypeName="Folder" />
+		<item ObjectTypeId="11" ObjectTypeName="TimesheetToDo" />
+		<item ObjectTypeId="12" ObjectTypeName="IssueRequest" />
+		<item ObjectTypeId="13" ObjectTypeName="ProjectGroup" />
+		<item ObjectTypeId="14" ObjectTypeName="Timesheet" />
+		<item ObjectTypeId="15" ObjectTypeName="List" />
+		<item ObjectTypeId="16" ObjectTypeName="Document" />
+		<item ObjectTypeId="17" ObjectTypeName="Comment" />
+		<item ObjectTypeId="18" ObjectTypeName="Client" />
+		<item ObjectTypeId="19" ObjectTypeName="IssueBox" />
+		<item ObjectTypeId="20" ObjectTypeName="KnowledgeBase" />
+		<item ObjectTypeId="21" ObjectTypeName="Organization" />
+		<item ObjectTypeId="22" ObjectTypeName="VCard" />
+		<item ObjectTypeId="23" ObjectTypeName="IbnNext_Principal" />
+		<item ObjectTypeId="24" ObjectTypeName="IbnNext_BlockTypeInstance" />
+		<item ObjectTypeId="25" ObjectTypeName="Report" />
+		<item ObjectTypeId="26" ObjectTypeName="File_MetaDataPlus" />
+		<item ObjectTypeId="27" ObjectTypeName="File_MetaData" />
+		<item ObjectTypeId="28" ObjectTypeName="File_Incident" />
+		<item ObjectTypeId="29" ObjectTypeName="CalendarEvent" />
+		<item ObjectTypeId="30" ObjectTypeName="Assignment" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_TEMPLATES">
+		<item TemplateId="1" Preview="[=NULL=]" Description="Empty" />
+		<item TemplateId="2" Preview="[=NULL=]" Description="Two columns" />
+		<item TemplateId="3" Preview="[=NULL=]" Description="T-Template" />
+	</dictionary>
+	<dictionary name="PortalConfig">
+		<item Key="admin.defaultcalendar" Value="1" />
+		<item Key="wrapControl44F7DDAEE0F6482cA55A565CFA387660_f0b6de148264486782b9510062591545:Chart" Value="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;XmlSerializedItem xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;Type&gt;System.String, mscorlib&lt;/Type&gt;&lt;Data&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;&amp;lt;string&amp;gt;Dash_Prj_Man&amp;lt;/string&amp;gt;&lt;/Data&gt;&lt;/XmlSerializedItem&gt;" />
+		<item Key="wrapControl44F7DDAEE0F6482cA55A565CFA387660_7e74d65af1ef4c748befe062b095b566:Chart" Value="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;XmlSerializedItem xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;Type&gt;System.String, mscorlib&lt;/Type&gt;&lt;Data&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;&amp;lt;string&amp;gt;Dash_Prj_Stat&amp;lt;/string&amp;gt;&lt;/Data&gt;&lt;/XmlSerializedItem&gt;" />
+		<item Key="wrapControlB3075B36BB0B4f908E091E85855E1F2F_3ff8316c710e490a867225dd3dafea9d:Chart" Value="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;XmlSerializedItem xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;Type&gt;System.String, mscorlib&lt;/Type&gt;&lt;Data&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;&amp;lt;string&amp;gt;Dash_Iss_Stat&amp;lt;/string&amp;gt;&lt;/Data&gt;&lt;/XmlSerializedItem&gt;" />
+		<item Key="wrapControlB3075B36BB0B4f908E091E85855E1F2F_f21ae3c28ece4156b7fbad261809a978:Chart" Value="&lt;?xml version=&quot;1.0&quot;?&gt;&lt;XmlSerializedItem xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;&lt;Type&gt;System.String, mscorlib&lt;/Type&gt;&lt;Data&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;&amp;lt;string&amp;gt;Dash_Iss_Prj&amp;lt;/string&amp;gt;&lt;/Data&gt;&lt;/XmlSerializedItem&gt;" />
+	</dictionary>
+	<dictionary name="PRINCIPALS">
+		<item PrincipalId="-10" IsGroup="1" />
+		<item PrincipalId="1" IsGroup="1" />
+		<item PrincipalId="2" IsGroup="1" />
+		<item PrincipalId="3" IsGroup="1" />
+		<item PrincipalId="4" IsGroup="1" />
+		<item PrincipalId="5" IsGroup="1" />
+		<item PrincipalId="6" IsGroup="1" />
+		<item PrincipalId="7" IsGroup="1" />
+		<item PrincipalId="8" IsGroup="1" />
+		<item PrincipalId="9" IsGroup="1" />
+	</dictionary>
+	<dictionary name="WorkspaceSettings">
+		<item TemplateUid="0e79eace-c89a-45d5-be33-236b6c319f9d" Uid="57399bd7-2588-4626-a85b-81ba58205246" JsonData="[{&quot;items&quot;:[{&quot;id&quot;:&quot;5A5D9A4D-CC58-4774-A9D8-385BCF72F61C&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;D1D46A87-7478-4068-A467-758BE89A9535&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;DD7E8264-EEF6-44f9-B789-36D242872448&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;83B6457E-85CA-44ff-8130-02CE08A19246&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;}],&quot;id&quot;:&quot;Column2&quot;},{&quot;items&quot;:[{&quot;id&quot;:&quot;3E88A70A-250D-4D16-97F0-D8055438E6EB&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;910a66479cb34f9797c0f97e330fd5a2&quot;},{&quot;id&quot;:&quot;E2882759-50B4-4106-9B72-B057C33255FE&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;D4F40160-8DE4-4959-B50C-186B6041E14F&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;AA6F05A5-8F2F-4227-AAAF-75A74F4A3432&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;42C18D68-CCC9-460b-B9DA-692A6129BFE4&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;},{&quot;id&quot;:&quot;34D7E2D1-1C25-49a0-9C55-24CB159BEB3B&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;&quot;}],&quot;id&quot;:&quot;Column1&quot;}]" />
+		<item TemplateUid="0e79eace-c89a-45d5-be33-236b6c319f9d" Uid="6617334f-b42c-405c-9e43-ad2d8d231b67" JsonData="[{&quot;Id&quot;:&quot;Column2&quot;,&quot;Items&quot;:[{&quot;Id&quot;:&quot;B3075B36-BB0B-4f90-8E09-1E85855E1F2F&quot;,&quot;Collapsed&quot;:&quot;False&quot;,&quot;InstanseUid&quot;:&quot;3ff8316c710e490a867225dd3dafea9d&quot;}]},{&quot;Items&quot;:[{&quot;Id&quot;:&quot;B3075B36-BB0B-4f90-8E09-1E85855E1F2F&quot;,&quot;Collapsed&quot;:&quot;false&quot;,&quot;InstanseUid&quot;:&quot;f21ae3c28ece4156b7fbad261809a978&quot;}],&quot;Id&quot;:&quot;Column1&quot;}]" />
+		<item TemplateUid="0e79eace-c89a-45d5-be33-236b6c319f9d" Uid="dc5503c5-6862-42ef-9d83-d92ba0b5048c" JsonData="[{&quot;items&quot;:[{&quot;id&quot;:&quot;44F7DDAE-E0F6-482c-A55A-565CFA387660&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;7e74d65af1ef4c748befe062b095b566&quot;}],&quot;id&quot;:&quot;Column2&quot;},{&quot;items&quot;:[{&quot;id&quot;:&quot;44F7DDAE-E0F6-482c-A55A-565CFA387660&quot;,&quot;collapsed&quot;:false,&quot;instanseUid&quot;:&quot;f0b6de148264486782b9510062591545&quot;}],&quot;id&quot;:&quot;Column1&quot;}]" />
+	</dictionary>
+	<dictionary name="GROUPS">
+		<item PrincipalId="-10" GroupName="{IbnFramework.Global:GroupTM}" />
+		<item PrincipalId=  "1" GroupName="{IbnFramework.Global:GroupEveryone}" />
+		<item PrincipalId=  "2" GroupName="{IbnFramework.Global:GroupAdministrators}" />
+		<item PrincipalId=  "3" GroupName="{IbnFramework.Global:GroupPM}" />
+		<item PrincipalId=  "4" GroupName="{IbnFramework.Global:GroupPPM}" />
+		<item PrincipalId=  "5" GroupName="{IbnFramework.Global:GroupHDM}" />
+		<item PrincipalId=  "6" GroupName="{IbnFramework.Global:GroupExtranet}" />
+		<item PrincipalId=  "7" GroupName="{IbnFramework.Global:GroupExec}" />
+		<item PrincipalId=  "8" GroupName="{IbnFramework.Global:GroupRoles}" />
+		<item PrincipalId=  "9" GroupName="{IbnFramework.Global:GroupIntranet}" />
+	</dictionary>
+	<dictionary name="PRIORITIES">
+		<item PriorityId="0" PriorityName="Low" />
+		<item PriorityId="500" PriorityName="Normal" />
+		<item PriorityId="750" PriorityName="High" />
+		<item PriorityId="900" PriorityName="Very High" />
+		<item PriorityId="1000" PriorityName="Urgent" />
+	</dictionary>
+	<dictionary name="PROJECT_STATUS">
+		<item StatusId="1" StatusName="Active" IsActive="1" />
+		<item StatusId="2" StatusName="On Hold" IsActive="0" />
+		<item StatusId="3" StatusName="Completed" IsActive="0" />
+		<item StatusId="4" StatusName="Pending" IsActive="1" />
+		<item StatusId="5" StatusName="At Risk" IsActive="1" />
+		<item StatusId="6" StatusName="Cancelled" IsActive="0" />
+	</dictionary>
+	<dictionary name="TIMEZONES">
+		<item TimeZoneId="0" Bias="0" StandardBias="0" DaylightBias="0" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="1" Bias="-270" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="2" Bias="540" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="5" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="3" Bias="-180" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="4" Bias="-240" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="5" Bias="-180" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="5" DaylightWeek="5" DaylightHour="3" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="4" />
+		<item TimeZoneId="6" Bias="240" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="5" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="7" Bias="-570" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="8" Bias="-600" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="3" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="9" Bias="60" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="10" Bias="360" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="11" Bias="60" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="12" Bias="-240" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="13" Bias="-570" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="3" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="14" Bias="360" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="15" Bias="-360" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="16" Bias="-60" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="17" Bias="-60" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="18" Bias="-660" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="19" Bias="360" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="20" Bias="-480" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="21" Bias="720" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="22" Bias="-180" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="23" Bias="-600" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="24" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="0" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="1" />
+		<item TimeZoneId="25" Bias="180" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="2" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="26" Bias="300" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="27" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="5" DaylightDayOfWeek="5" DaylightWeek="5" DaylightHour="2" StandardMonth="9" StandardDayOfWeek="3" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="28" Bias="-300" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="29" Bias="-720" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="30" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="3" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="4" />
+		<item TimeZoneId="31" Bias="0" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="1" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="32" Bias="180" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="33" Bias="0" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="34" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="35" Bias="600" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="36" Bias="-330" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="37" Bias="-210" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="9" StandardDayOfWeek="2" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="38" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="39" Bias="-540" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="40" Bias="360" StandardBias="0" DaylightBias="-60" DaylightMonth="5" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="9" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="41" Bias="420" StandardBias="0" DaylightBias="-60" DaylightMonth="5" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="9" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="42" Bias="120" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="9" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="43" Bias="420" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="44" Bias="-390" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="45" Bias="-360" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="46" Bias="-345" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="47" Bias="-720" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="3" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="48" Bias="210" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="49" Bias="-480" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="50" Bias="-420" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="51" Bias="240" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="6" DaylightWeek="5" DaylightHour="0" StandardMonth="3" StandardDayOfWeek="6" StandardWeek="5" StandardHour="0" />
+		<item TimeZoneId="52" Bias="480" StandardBias="0" DaylightBias="-60" DaylightMonth="4" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="2" />
+		<item TimeZoneId="53" Bias="-60" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="54" Bias="-180" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="55" Bias="180" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="56" Bias="300" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="57" Bias="240" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="58" Bias="660" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="59" Bias="-420" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="60" Bias="-480" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="61" Bias="-120" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="62" Bias="-360" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="63" Bias="-480" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="64" Bias="-600" StandardBias="0" DaylightBias="-60" DaylightMonth="10" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="3" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="65" Bias="-540" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="66" Bias="-780" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="67" Bias="300" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="68" Bias="420" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="69" Bias="-600" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="70" Bias="-480" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="71" Bias="-60" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="72" Bias="-60" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+		<item TimeZoneId="73" Bias="-300" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="74" Bias="-600" StandardBias="0" DaylightBias="-60" DaylightMonth="0" DaylightDayOfWeek="0" DaylightWeek="0" DaylightHour="0" StandardMonth="0" StandardDayOfWeek="0" StandardWeek="0" StandardHour="0" />
+		<item TimeZoneId="75" Bias="-540" StandardBias="0" DaylightBias="-60" DaylightMonth="3" DaylightDayOfWeek="0" DaylightWeek="5" DaylightHour="2" StandardMonth="10" StandardDayOfWeek="0" StandardWeek="5" StandardHour="3" />
+	</dictionary>
+	<dictionary name="CONTAINERSHIP">
+		<item PrincipalId="-10" ParentPrincipalId="8" />
+		<item PrincipalId="2" ParentPrincipalId="8" />
+		<item PrincipalId="3" ParentPrincipalId="8" />
+		<item PrincipalId="4" ParentPrincipalId="3" />
+		<item PrincipalId="5" ParentPrincipalId="8" />
+		<item PrincipalId="6" ParentPrincipalId="1" />
+		<item PrincipalId="7" ParentPrincipalId="8" />
+		<item PrincipalId="8" ParentPrincipalId="1" />
+		<item PrincipalId="9" ParentPrincipalId="1" />
+	</dictionary>
+	<dictionary name="DATE_TYPES">
+		<item DateTypeId="1" ObjectTypeId="3" DateTypeName="ProjectStartDate" />
+		<item DateTypeId="2" ObjectTypeId="3" DateTypeName="ProjectFinishDate" />
+		<item DateTypeId="3" ObjectTypeId="4" DateTypeName="CalendarEntryStartDate" />
+		<item DateTypeId="4" ObjectTypeId="4" DateTypeName="CalendarEntryFinishDate" />
+		<item DateTypeId="5" ObjectTypeId="5" DateTypeName="TaskStartDate" />
+		<item DateTypeId="6" ObjectTypeId="5" DateTypeName="TaskFinishDate" />
+		<item DateTypeId="7" ObjectTypeId="6" DateTypeName="TodoStartDate" />
+		<item DateTypeId="8" ObjectTypeId="6" DateTypeName="TodoFinishDate" />
+		<item DateTypeId="9" ObjectTypeId="1" DateTypeName="BatchAlert" />
+		<item DateTypeId="10" ObjectTypeId="1" DateTypeName="LdapSynchronization" />
+		<item DateTypeId="11" ObjectTypeId="30" DateTypeName="AssignmentFinishDate" />
+	</dictionary>
+	<dictionary name="fsc_Reports">
+		<item ReportId="1" ContainerKey="GlobalReports" Name="AlertHistory_Admin" />
+		<item ReportId="2" ContainerKey="GlobalReports" Name="AlertHistory_Personal" />
+		<item ReportId="3" ContainerKey="GlobalReports" Name="ChatHistory_Admin" />
+		<item ReportId="4" ContainerKey="GlobalReports" Name="ChatHistory_Personal" />
+		<item ReportId="5" ContainerKey="GlobalReports" Name="GroupAndUserImStat" />
+		<item ReportId="6" ContainerKey="GlobalReports" Name="GroupAndUserStat" />
+		<item ReportId="7" ContainerKey="GlobalReports" Name="MessageHistory_Admin" />
+		<item ReportId="8" ContainerKey="GlobalReports" Name="MessageHistory_Personal" />
+		<item ReportId="9" ContainerKey="GlobalReports" Name="MostActiveReport" />
+		<item ReportId="10" ContainerKey="GlobalReports" Name="PortalQuickSnapshot" />
+		<item ReportId="11" ContainerKey="GlobalReports" Name="TimeTracking_Admin" />
+		<item ReportId="12" ContainerKey="GlobalReports" Name="TimeTracking_Personal" />
+		<item ReportId="13" ContainerKey="GlobalReports" Name="TaskTime" />
+	</dictionary>
+	<dictionary name="fsc_ReportAccessControlLists">
+		<item AclId="1" ReportId="1" />
+		<item AclId="2" ReportId="2" />
+		<item AclId="3" ReportId="3" />
+		<item AclId="4" ReportId="4" />
+		<item AclId="5" ReportId="5" />
+		<item AclId="6" ReportId="6" />
+		<item AclId="7" ReportId="7" />
+		<item AclId="8" ReportId="8" />
+		<item AclId="9" ReportId="9" />
+		<item AclId="10" ReportId="10" />
+		<item AclId="11" ReportId="11" />
+		<item AclId="12" ReportId="12" />
+		<item AclId="13" ReportId="13" />
+	</dictionary>
+	<dictionary name="fsc_ReportAccessControlEntries">
+		<item AclId="1" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="2" Role="[=NULL=]" PrincipalId="1" Action="Read" Allow="1" />
+		<item AclId="3" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="4" Role="[=NULL=]" PrincipalId="1" Action="Read" Allow="1" />
+		<item AclId="5" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="6" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="7" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="8" Role="[=NULL=]" PrincipalId="1" Action="Read" Allow="1" />
+		<item AclId="9" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="10" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="11" Role="PPM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="11" Role="GlobalPM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="11" Role="GlobalEM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="12" Role="[=NULL=]" PrincipalId="1" Action="Read" Allow="1" />
+		<item AclId="13" Role="Admin" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="13" Role="PPM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="13" Role="GlobalPM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+		<item AclId="13" Role="GlobalEM" PrincipalId="[=NULL=]" Action="Read" Allow="1" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_PAGES">
+		<item ViewPageId="2" ObjectTypeId="7" MenuId="1" ShortInfoPath="~/Incidents/Modules/IssueShortInfo.ascx" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_TABS">
+		<item TabId="1" ObjectTypeId="7" TemplateId="2" IsDefault="1" RowNum="1" PosNum="1" />
+		<item TabId="2" ObjectTypeId="7" TemplateId="1" IsDefault="0" RowNum="1" PosNum="2" />
+		<item TabId="3" ObjectTypeId="7" TemplateId="1" IsDefault="0" RowNum="1" PosNum="3" />
+		<item TabId="4" ObjectTypeId="7" TemplateId="1" IsDefault="0" RowNum="2" PosNum="4" />
+		<item TabId="5" ObjectTypeId="7" TemplateId="1" IsDefault="0" RowNum="2" PosNum="5" />
+	</dictionary>
+	<dictionary name="SYSTEM_EVENT_TYPES">
+		<item EventTypeId="1" ParentId="0" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Created" IsActive="1" />
+		<item EventTypeId="2" ParentId="0" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Deleted" IsActive="1" />
+		<item EventTypeId="3" ParentId="0" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated" IsActive="0" />
+		<item EventTypeId="4" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="5" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_Priority" IsActive="1" />
+		<item EventTypeId="6" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_ConfigurationInfo" IsActive="1" />
+		<item EventTypeId="8" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_State" IsActive="1" />
+		<item EventTypeId="14" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_Percent" IsActive="1" />
+		<item EventTypeId="15" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="16" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_Timeline" IsActive="1" />
+		<item EventTypeId="17" ParentId="3" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList" IsActive="0" />
+		<item EventTypeId="18" ParentId="17" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList_AssignmentAdded" IsActive="1" />
+		<item EventTypeId="19" ParentId="17" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList_AssignmentDeleted" IsActive="1" />
+		<item EventTypeId="20" ParentId="17" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList_RequestAdded" IsActive="1" />
+		<item EventTypeId="21" ParentId="17" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList_RequestAccepted" IsActive="1" />
+		<item EventTypeId="22" ParentId="17" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_ResourceList_RequestDenied" IsActive="1" />
+		<item EventTypeId="24" ParentId="3" ObjectTypeId="6" RelObjectTypeId="8" Title="Todo_Updated_FileList" IsActive="0" />
+		<item EventTypeId="25" ParentId="24" ObjectTypeId="6" RelObjectTypeId="8" Title="Todo_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="26" ParentId="24" ObjectTypeId="6" RelObjectTypeId="8" Title="Todo_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="27" ParentId="24" ObjectTypeId="6" RelObjectTypeId="8" Title="Todo_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="28" ParentId="3" ObjectTypeId="6" RelObjectTypeId="17" Title="Todo_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="29" ParentId="28" ObjectTypeId="6" RelObjectTypeId="17" Title="Todo_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="30" ParentId="28" ObjectTypeId="6" RelObjectTypeId="17" Title="Todo_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="31" ParentId="28" ObjectTypeId="6" RelObjectTypeId="17" Title="Todo_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="32" ParentId="3" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_Manager" IsActive="0" />
+		<item EventTypeId="33" ParentId="32" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_Manager_ManagerAdded" IsActive="1" />
+		<item EventTypeId="34" ParentId="32" ObjectTypeId="6" RelObjectTypeId="1" Title="Todo_Updated_Manager_ManagerDeleted" IsActive="1" />
+		<item EventTypeId="35" ParentId="3" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="80" ParentId="0" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_StartDate_Arrived" IsActive="1" />
+		<item EventTypeId="81" ParentId="0" ObjectTypeId="6" RelObjectTypeId="[=NULL=]" Title="Todo_FinishDate_Arrived" IsActive="1" />
+		<item EventTypeId="101" ParentId="0" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Created" IsActive="1" />
+		<item EventTypeId="102" ParentId="0" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Deleted" IsActive="1" />
+		<item EventTypeId="103" ParentId="0" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated" IsActive="0" />
+		<item EventTypeId="104" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="105" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_Priority" IsActive="1" />
+		<item EventTypeId="106" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_ConfigurationInfo" IsActive="1" />
+		<item EventTypeId="108" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_State" IsActive="1" />
+		<item EventTypeId="114" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_Percent" IsActive="1" />
+		<item EventTypeId="115" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="116" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_Timeline" IsActive="1" />
+		<item EventTypeId="117" ParentId="103" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList" IsActive="0" />
+		<item EventTypeId="118" ParentId="117" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList_AssignmentAdded" IsActive="1" />
+		<item EventTypeId="119" ParentId="117" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList_AssignmentDeleted" IsActive="1" />
+		<item EventTypeId="120" ParentId="117" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList_RequestAdded" IsActive="1" />
+		<item EventTypeId="121" ParentId="117" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList_RequestAccepted" IsActive="1" />
+		<item EventTypeId="122" ParentId="117" ObjectTypeId="5" RelObjectTypeId="1" Title="Task_Updated_ResourceList_RequestDenied" IsActive="1" />
+		<item EventTypeId="124" ParentId="103" ObjectTypeId="5" RelObjectTypeId="8" Title="Task_Updated_FileList" IsActive="0" />
+		<item EventTypeId="125" ParentId="124" ObjectTypeId="5" RelObjectTypeId="8" Title="Task_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="126" ParentId="124" ObjectTypeId="5" RelObjectTypeId="8" Title="Task_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="127" ParentId="124" ObjectTypeId="5" RelObjectTypeId="8" Title="Task_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="128" ParentId="103" ObjectTypeId="5" RelObjectTypeId="17" Title="Task_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="129" ParentId="128" ObjectTypeId="5" RelObjectTypeId="17" Title="Task_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="130" ParentId="128" ObjectTypeId="5" RelObjectTypeId="17" Title="Task_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="131" ParentId="128" ObjectTypeId="5" RelObjectTypeId="17" Title="Task_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="132" ParentId="103" ObjectTypeId="5" RelObjectTypeId="6" Title="Task_Updated_TodoList" IsActive="0" />
+		<item EventTypeId="133" ParentId="132" ObjectTypeId="5" RelObjectTypeId="6" Title="Task_Updated_TodoList_TodoAdded" IsActive="1" />
+		<item EventTypeId="134" ParentId="132" ObjectTypeId="5" RelObjectTypeId="6" Title="Task_Updated_TodoList_TodoDeleted" IsActive="1" />
+		<item EventTypeId="136" ParentId="103" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_PredecessorList" IsActive="0" />
+		<item EventTypeId="137" ParentId="136" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_PredecessorList_PredecessorAdded" IsActive="1" />
+		<item EventTypeId="138" ParentId="136" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_PredecessorList_PredecessorDeleted" IsActive="1" />
+		<item EventTypeId="139" ParentId="136" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_PredecessorList_PredecessorLagUpdated" IsActive="1" />
+		<item EventTypeId="140" ParentId="103" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_SuccessorList" IsActive="0" />
+		<item EventTypeId="141" ParentId="140" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_SuccessorList_SuccessorAdded" IsActive="1" />
+		<item EventTypeId="142" ParentId="140" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_SuccessorList_SuccessorDeleted" IsActive="1" />
+		<item EventTypeId="143" ParentId="140" ObjectTypeId="5" RelObjectTypeId="5" Title="Task_Updated_SuccessorList_SuccessorLagUpdated" IsActive="1" />
+		<item EventTypeId="144" ParentId="103" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="180" ParentId="0" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_StartDate_Arrived" IsActive="1" />
+		<item EventTypeId="181" ParentId="0" ObjectTypeId="5" RelObjectTypeId="[=NULL=]" Title="Task_FinishDate_Arrived" IsActive="1" />
+		<item EventTypeId="201" ParentId="0" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Created" IsActive="1" />
+		<item EventTypeId="202" ParentId="0" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Deleted" IsActive="1" />
+		<item EventTypeId="203" ParentId="0" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated" IsActive="0" />
+		<item EventTypeId="204" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="205" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_Priority" IsActive="1" />
+		<item EventTypeId="208" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_State" IsActive="1" />
+		<item EventTypeId="215" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="216" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_Timeline" IsActive="1" />
+		<item EventTypeId="217" ParentId="203" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList" IsActive="0" />
+		<item EventTypeId="218" ParentId="217" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList_AssignmentAdded" IsActive="1" />
+		<item EventTypeId="219" ParentId="217" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList_AssignmentDeleted" IsActive="1" />
+		<item EventTypeId="220" ParentId="217" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList_RequestAdded" IsActive="1" />
+		<item EventTypeId="221" ParentId="217" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList_RequestAccepted" IsActive="1" />
+		<item EventTypeId="222" ParentId="217" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_ResourceList_RequestDenied" IsActive="1" />
+		<item EventTypeId="224" ParentId="203" ObjectTypeId="4" RelObjectTypeId="8" Title="CalendarEntry_Updated_FileList" IsActive="0" />
+		<item EventTypeId="225" ParentId="224" ObjectTypeId="4" RelObjectTypeId="8" Title="CalendarEntry_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="226" ParentId="224" ObjectTypeId="4" RelObjectTypeId="8" Title="CalendarEntry_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="227" ParentId="224" ObjectTypeId="4" RelObjectTypeId="8" Title="CalendarEntry_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="228" ParentId="203" ObjectTypeId="4" RelObjectTypeId="17" Title="CalendarEntry_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="229" ParentId="228" ObjectTypeId="4" RelObjectTypeId="17" Title="CalendarEntry_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="230" ParentId="228" ObjectTypeId="4" RelObjectTypeId="17" Title="CalendarEntry_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="231" ParentId="228" ObjectTypeId="4" RelObjectTypeId="17" Title="CalendarEntry_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="232" ParentId="203" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_Manager" IsActive="0" />
+		<item EventTypeId="233" ParentId="232" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_Manager_ManagerAdded" IsActive="1" />
+		<item EventTypeId="234" ParentId="232" ObjectTypeId="4" RelObjectTypeId="1" Title="CalendarEntry_Updated_Manager_ManagerDeleted" IsActive="1" />
+		<item EventTypeId="235" ParentId="203" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="280" ParentId="0" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_StartDate_Arrived" IsActive="1" />
+		<item EventTypeId="281" ParentId="0" ObjectTypeId="4" RelObjectTypeId="[=NULL=]" Title="CalendarEntry_FinishDate_Arrived" IsActive="1" />
+		<item EventTypeId="301" ParentId="0" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Created" IsActive="1" />
+		<item EventTypeId="302" ParentId="0" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Deleted" IsActive="1" />
+		<item EventTypeId="303" ParentId="0" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated" IsActive="0" />
+		<item EventTypeId="304" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="305" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_Priority" IsActive="1" />
+		<item EventTypeId="306" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_ConfigurationInfo" IsActive="1" />
+		<item EventTypeId="307" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_Phase" IsActive="1" />
+		<item EventTypeId="308" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_Status" IsActive="1" />
+		<item EventTypeId="309" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_RiskLevel" IsActive="1" />
+		<item EventTypeId="310" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="311" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_ProjectCategories" IsActive="1" />
+		<item EventTypeId="312" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_ActualStartDate" IsActive="1" />
+		<item EventTypeId="313" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_ActualFinishDate" IsActive="1" />
+		<item EventTypeId="314" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_Percent" IsActive="1" />
+		<item EventTypeId="315" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="316" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_TargetTimeline" IsActive="1" />
+		<item EventTypeId="317" ParentId="303" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_TeamMemberList" IsActive="0" />
+		<item EventTypeId="318" ParentId="317" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_TeamMemberList_TeamMemberAdded" IsActive="1" />
+		<item EventTypeId="319" ParentId="317" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_TeamMemberList_TeamMemberDeleted" IsActive="1" />
+		<item EventTypeId="320" ParentId="317" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_TeamMemberList_TeamMemberUpdated" IsActive="1" />
+		<item EventTypeId="321" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_Client" IsActive="1" />
+		<item EventTypeId="323" ParentId="303" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_Updated_ProjectGroups" IsActive="1" />
+		<item EventTypeId="324" ParentId="303" ObjectTypeId="3" RelObjectTypeId="8" Title="Project_Updated_FileList" IsActive="0" />
+		<item EventTypeId="325" ParentId="324" ObjectTypeId="3" RelObjectTypeId="8" Title="Project_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="326" ParentId="324" ObjectTypeId="3" RelObjectTypeId="8" Title="Project_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="327" ParentId="324" ObjectTypeId="3" RelObjectTypeId="8" Title="Project_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="328" ParentId="303" ObjectTypeId="3" RelObjectTypeId="17" Title="Project_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="329" ParentId="328" ObjectTypeId="3" RelObjectTypeId="17" Title="Project_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="330" ParentId="328" ObjectTypeId="3" RelObjectTypeId="17" Title="Project_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="331" ParentId="328" ObjectTypeId="3" RelObjectTypeId="17" Title="Project_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="332" ParentId="303" ObjectTypeId="3" RelObjectTypeId="6" Title="Project_Updated_TodoList" IsActive="0" />
+		<item EventTypeId="333" ParentId="332" ObjectTypeId="3" RelObjectTypeId="6" Title="Project_Updated_TodoList_TodoAdded" IsActive="1" />
+		<item EventTypeId="334" ParentId="332" ObjectTypeId="3" RelObjectTypeId="6" Title="Project_Updated_TodoList_TodoDeleted" IsActive="1" />
+		<item EventTypeId="335" ParentId="303" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_Manager" IsActive="0" />
+		<item EventTypeId="336" ParentId="335" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_Manager_ManagerAdded" IsActive="1" />
+		<item EventTypeId="337" ParentId="335" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_Manager_ManagerDeleted" IsActive="1" />
+		<item EventTypeId="346" ParentId="303" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_ExecutiveManager" IsActive="0" />
+		<item EventTypeId="347" ParentId="346" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_ExecutiveManager_ExecutiveManagerAdded" IsActive="1" />
+		<item EventTypeId="348" ParentId="346" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_ExecutiveManager_ExecutiveManagerDeleted" IsActive="1" />
+		<item EventTypeId="349" ParentId="303" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_SponsorList" IsActive="0" />
+		<item EventTypeId="350" ParentId="349" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_SponsorList_SponsorAdded" IsActive="1" />
+		<item EventTypeId="351" ParentId="349" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_SponsorList_SponsorDeleted" IsActive="1" />
+		<item EventTypeId="352" ParentId="303" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_StakeholderList" IsActive="0" />
+		<item EventTypeId="353" ParentId="352" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_StakeholderList_StakeholderAdded" IsActive="1" />
+		<item EventTypeId="354" ParentId="352" ObjectTypeId="3" RelObjectTypeId="1" Title="Project_Updated_StakeholderList_StakeholderDeleted" IsActive="1" />
+		<item EventTypeId="355" ParentId="303" ObjectTypeId="3" RelObjectTypeId="5" Title="Project_Updated_TaskList" IsActive="0" />
+		<item EventTypeId="356" ParentId="355" ObjectTypeId="3" RelObjectTypeId="5" Title="Project_Updated_TaskList_TaskAdded" IsActive="1" />
+		<item EventTypeId="357" ParentId="355" ObjectTypeId="3" RelObjectTypeId="5" Title="Project_Updated_TaskList_TaskDeleted" IsActive="1" />
+		<item EventTypeId="358" ParentId="303" ObjectTypeId="3" RelObjectTypeId="4" Title="Project_Updated_CalendarEntryList" IsActive="0" />
+		<item EventTypeId="359" ParentId="358" ObjectTypeId="3" RelObjectTypeId="4" Title="Project_Updated_CalendarEntryList_CalendarEntryAdded" IsActive="1" />
+		<item EventTypeId="360" ParentId="358" ObjectTypeId="3" RelObjectTypeId="4" Title="Project_Updated_CalendarEntryList_CalendarEntryDeleted" IsActive="1" />
+		<item EventTypeId="361" ParentId="303" ObjectTypeId="3" RelObjectTypeId="16" Title="Project_Updated_DocumentList" IsActive="0" />
+		<item EventTypeId="362" ParentId="361" ObjectTypeId="3" RelObjectTypeId="16" Title="Project_Updated_DocumentList_DocumentAdded" IsActive="1" />
+		<item EventTypeId="363" ParentId="361" ObjectTypeId="3" RelObjectTypeId="16" Title="Project_Updated_DocumentList_DocumentDeleted" IsActive="1" />
+		<item EventTypeId="364" ParentId="303" ObjectTypeId="3" RelObjectTypeId="7" Title="Project_Updated_IssueList" IsActive="0" />
+		<item EventTypeId="365" ParentId="364" ObjectTypeId="3" RelObjectTypeId="7" Title="Project_Updated_IssueList_IssueAdded" IsActive="1" />
+		<item EventTypeId="366" ParentId="364" ObjectTypeId="3" RelObjectTypeId="7" Title="Project_Updated_IssueList_IssueDeleted" IsActive="1" />
+		<item EventTypeId="367" ParentId="303" ObjectTypeId="3" RelObjectTypeId="15" Title="Project_Updated_ListList" IsActive="0" />
+		<item EventTypeId="368" ParentId="367" ObjectTypeId="3" RelObjectTypeId="15" Title="Project_Updated_ListList_ListAdded" IsActive="1" />
+		<item EventTypeId="369" ParentId="367" ObjectTypeId="3" RelObjectTypeId="15" Title="Project_Updated_ListList_ListDeleted" IsActive="1" />
+		<item EventTypeId="370" ParentId="303" ObjectTypeId="3" RelObjectTypeId="3" Title="Project_Updated_RelatedProjectList" IsActive="0" />
+		<item EventTypeId="371" ParentId="370" ObjectTypeId="3" RelObjectTypeId="3" Title="Project_Updated_RelatedProjectList_RelatedProjectAdded" IsActive="1" />
+		<item EventTypeId="372" ParentId="370" ObjectTypeId="3" RelObjectTypeId="3" Title="Project_Updated_RelatedProjectList_RelatedProjectDeleted" IsActive="1" />
+		<item EventTypeId="380" ParentId="0" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_TargetStartDate_Arrived" IsActive="1" />
+		<item EventTypeId="381" ParentId="0" ObjectTypeId="3" RelObjectTypeId="[=NULL=]" Title="Project_TargetFinishDate_Arrived" IsActive="1" />
+		<item EventTypeId="401" ParentId="0" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Created" IsActive="1" />
+		<item EventTypeId="402" ParentId="0" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Deleted" IsActive="1" />
+		<item EventTypeId="403" ParentId="0" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated" IsActive="0" />
+		<item EventTypeId="404" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="405" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_Priority" IsActive="1" />
+		<item EventTypeId="408" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_Status" IsActive="1" />
+		<item EventTypeId="410" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="411" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_IssueCategories" IsActive="1" />
+		<item EventTypeId="415" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="417" ParentId="403" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList" IsActive="0" />
+		<item EventTypeId="418" ParentId="417" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList_AssignmentAdded" IsActive="1" />
+		<item EventTypeId="419" ParentId="417" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList_AssignmentDeleted" IsActive="1" />
+		<item EventTypeId="420" ParentId="417" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList_RequestAdded" IsActive="1" />
+		<item EventTypeId="421" ParentId="417" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList_RequestAccepted" IsActive="1" />
+		<item EventTypeId="422" ParentId="417" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_ResourceList_RequestDenied" IsActive="1" />
+		<item EventTypeId="424" ParentId="403" ObjectTypeId="7" RelObjectTypeId="8" Title="Issue_Updated_FileList" IsActive="0" />
+		<item EventTypeId="425" ParentId="424" ObjectTypeId="7" RelObjectTypeId="8" Title="Issue_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="426" ParentId="424" ObjectTypeId="7" RelObjectTypeId="8" Title="Issue_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="427" ParentId="424" ObjectTypeId="7" RelObjectTypeId="8" Title="Issue_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="428" ParentId="403" ObjectTypeId="7" RelObjectTypeId="17" Title="Issue_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="429" ParentId="428" ObjectTypeId="7" RelObjectTypeId="17" Title="Issue_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="430" ParentId="428" ObjectTypeId="7" RelObjectTypeId="17" Title="Issue_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="431" ParentId="428" ObjectTypeId="7" RelObjectTypeId="17" Title="Issue_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="432" ParentId="403" ObjectTypeId="7" RelObjectTypeId="6" Title="Issue_Updated_TodoList" IsActive="0" />
+		<item EventTypeId="433" ParentId="432" ObjectTypeId="7" RelObjectTypeId="6" Title="Issue_Updated_TodoList_TodoAdded" IsActive="1" />
+		<item EventTypeId="434" ParentId="432" ObjectTypeId="7" RelObjectTypeId="6" Title="Issue_Updated_TodoList_TodoDeleted" IsActive="1" />
+		<item EventTypeId="435" ParentId="403" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Manager" IsActive="0" />
+		<item EventTypeId="450" ParentId="403" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_Forum" IsActive="0" />
+		<item EventTypeId="470" ParentId="403" ObjectTypeId="7" RelObjectTypeId="7" Title="Issue_Updated_RelatedIssueList" IsActive="0" />
+		<item EventTypeId="471" ParentId="470" ObjectTypeId="7" RelObjectTypeId="7" Title="Issue_Updated_RelatedIssueList_RelatedIssueAdded" IsActive="1" />
+		<item EventTypeId="472" ParentId="470" ObjectTypeId="7" RelObjectTypeId="7" Title="Issue_Updated_RelatedIssueList_RelatedIssueDeleted" IsActive="1" />
+		<item EventTypeId="473" ParentId="435" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Manager_ManagerAdded" IsActive="1" />
+		<item EventTypeId="474" ParentId="435" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Manager_ManagerDeleted" IsActive="1" />
+		<item EventTypeId="475" ParentId="450" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Updated_Forum_MessageAdded" IsActive="1" />
+		<item EventTypeId="476" ParentId="403" ObjectTypeId="7" RelObjectTypeId="19" Title="Issue_Updated_Box" IsActive="1" />
+		<item EventTypeId="477" ParentId="403" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible" IsActive="0" />
+		<item EventTypeId="478" ParentId="477" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible_Changed" IsActive="1" />
+		<item EventTypeId="479" ParentId="477" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible_Requested" IsActive="1" />
+		<item EventTypeId="480" ParentId="477" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible_Assigned" IsActive="1" />
+		<item EventTypeId="481" ParentId="477" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible_Resigned" IsActive="1" />
+		<item EventTypeId="482" ParentId="477" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Responsible_Rejected" IsActive="1" />
+		<item EventTypeId="483" ParentId="403" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Controller" IsActive="0" />
+		<item EventTypeId="484" ParentId="483" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Controller_Assigned" IsActive="1" />
+		<item EventTypeId="485" ParentId="483" ObjectTypeId="7" RelObjectTypeId="1" Title="Issue_Updated_Controller_Resigned" IsActive="1" />
+		<item EventTypeId="486" ParentId="0" ObjectTypeId="7" RelObjectTypeId="[=NULL=]" Title="Issue_Closed" IsActive="1" />
+		<item EventTypeId="501" ParentId="0" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Created" IsActive="1" />
+		<item EventTypeId="502" ParentId="0" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Deleted" IsActive="1" />
+		<item EventTypeId="503" ParentId="0" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated" IsActive="0" />
+		<item EventTypeId="504" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="505" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_Priority" IsActive="1" />
+		<item EventTypeId="507" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_State" IsActive="1" />
+		<item EventTypeId="508" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_Status" IsActive="1" />
+		<item EventTypeId="510" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_GeneralCategories" IsActive="1" />
+		<item EventTypeId="515" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_MetaFields" IsActive="1" />
+		<item EventTypeId="517" ParentId="503" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList" IsActive="0" />
+		<item EventTypeId="518" ParentId="517" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList_AssignmentAdded" IsActive="1" />
+		<item EventTypeId="519" ParentId="517" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList_AssignmentDeleted" IsActive="1" />
+		<item EventTypeId="520" ParentId="517" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList_RequestAdded" IsActive="1" />
+		<item EventTypeId="521" ParentId="517" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList_RequestAccepted" IsActive="1" />
+		<item EventTypeId="522" ParentId="517" ObjectTypeId="16" RelObjectTypeId="1" Title="Document_Updated_ResourceList_RequestDenied" IsActive="1" />
+		<item EventTypeId="524" ParentId="503" ObjectTypeId="16" RelObjectTypeId="8" Title="Document_Updated_FileList" IsActive="0" />
+		<item EventTypeId="525" ParentId="524" ObjectTypeId="16" RelObjectTypeId="8" Title="Document_Updated_FileList_FileAdded" IsActive="1" />
+		<item EventTypeId="526" ParentId="524" ObjectTypeId="16" RelObjectTypeId="8" Title="Document_Updated_FileList_FileDeleted" IsActive="1" />
+		<item EventTypeId="527" ParentId="524" ObjectTypeId="16" RelObjectTypeId="8" Title="Document_Updated_FileList_FileUpdated" IsActive="1" />
+		<item EventTypeId="528" ParentId="503" ObjectTypeId="16" RelObjectTypeId="17" Title="Document_Updated_CommentList" IsActive="0" />
+		<item EventTypeId="529" ParentId="528" ObjectTypeId="16" RelObjectTypeId="17" Title="Document_Updated_CommentList_CommentAdded" IsActive="1" />
+		<item EventTypeId="530" ParentId="528" ObjectTypeId="16" RelObjectTypeId="17" Title="Document_Updated_CommentList_CommentDeleted" IsActive="1" />
+		<item EventTypeId="531" ParentId="528" ObjectTypeId="16" RelObjectTypeId="17" Title="Document_Updated_CommentList_CommentUpdated" IsActive="1" />
+		<item EventTypeId="532" ParentId="503" ObjectTypeId="16" RelObjectTypeId="6" Title="Document_Updated_TodoList" IsActive="0" />
+		<item EventTypeId="533" ParentId="532" ObjectTypeId="16" RelObjectTypeId="6" Title="Document_Updated_TodoList_TodoAdded" IsActive="1" />
+		<item EventTypeId="534" ParentId="532" ObjectTypeId="16" RelObjectTypeId="6" Title="Document_Updated_TodoList_TodoDeleted" IsActive="1" />
+		<item EventTypeId="573" ParentId="503" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_VersionList" IsActive="0" />
+		<item EventTypeId="574" ParentId="573" ObjectTypeId="16" RelObjectTypeId="[=NULL=]" Title="Document_Updated_VersionList_VersionAdded" IsActive="1" />
+		<item EventTypeId="601" ParentId="0" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Created" IsActive="1" />
+		<item EventTypeId="602" ParentId="0" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Deleted" IsActive="1" />
+		<item EventTypeId="603" ParentId="0" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated" IsActive="0" />
+		<item EventTypeId="604" ParentId="603" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated_Data" IsActive="1" />
+		<item EventTypeId="606" ParentId="603" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated_Structure" IsActive="1" />
+		<item EventTypeId="607" ParentId="603" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="608" ParentId="603" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated_Status" IsActive="1" />
+		<item EventTypeId="609" ParentId="603" ObjectTypeId="15" RelObjectTypeId="[=NULL=]" Title="List_Updated_GeneralCategories" IsActive="0" />
+		<item EventTypeId="701" ParentId="0" ObjectTypeId="12" RelObjectTypeId="[=NULL=]" Title="IssueRequest_Created " IsActive="1" />
+		<item EventTypeId="702" ParentId="0" ObjectTypeId="12" RelObjectTypeId="[=NULL=]" Title="IssueRequest_Deleted" IsActive="1" />
+		<item EventTypeId="703" ParentId="0" ObjectTypeId="12" RelObjectTypeId="[=NULL=]" Title="IssueRequest_Updated" IsActive="1" />
+		<item EventTypeId="704" ParentId="0" ObjectTypeId="12" RelObjectTypeId="[=NULL=]" Title="IssueRequest_Approved" IsActive="1" />
+		<item EventTypeId="801" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Created" IsActive="1" />
+		<item EventTypeId="802" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Created_External" IsActive="1" />
+		<item EventTypeId="803" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Created_Partner" IsActive="1" />
+		<item EventTypeId="804" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Created_Request" IsActive="1" />
+		<item EventTypeId="805" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Deleted" IsActive="1" />
+		<item EventTypeId="806" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Deactivated" IsActive="1" />
+		<item EventTypeId="807" ParentId="0" ObjectTypeId="1" RelObjectTypeId="[=NULL=]" Title="User_Activated" IsActive="1" />
+
+		<item EventTypeId="901" ParentId="0" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Created" IsActive="1" />
+		<item EventTypeId="902" ParentId="0" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Deleted" IsActive="1" />
+		<item EventTypeId="903" ParentId="0" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated" IsActive="0" />
+		<item EventTypeId="904" ParentId="903" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated_GeneralInfo" IsActive="1" />
+		<item EventTypeId="905" ParentId="903" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated_Priority" IsActive="1" />
+		<item EventTypeId="908" ParentId="903" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated_Status" IsActive="1" />
+		<item EventTypeId="916" ParentId="903" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated_FinishDate" IsActive="1" />
+		<item EventTypeId="932" ParentId="903" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_Updated_Participant" IsActive="0" />
+		<item EventTypeId="933" ParentId="932" ObjectTypeId="30" RelObjectTypeId="1" Title="Assignment_Updated_Participant_Assigned" IsActive="1" />
+		<item EventTypeId="934" ParentId="932" ObjectTypeId="30" RelObjectTypeId="1" Title="Assignment_Updated_Participant_Resigned" IsActive="1" />
+		<item EventTypeId="981" ParentId="0" ObjectTypeId="30" RelObjectTypeId="[=NULL=]" Title="Assignment_FinishDate_Arrived" IsActive="1" />
+	</dictionary>
+	<dictionary name="CAL_WEEKDAYS" order="2">
+		<item WeekDayId="1" CalendarId="1" DayOfWeek="1" FromTime="0" ToTime="1440" />
+		<item WeekDayId="2" CalendarId="1" DayOfWeek="2" FromTime="0" ToTime="1440" />
+		<item WeekDayId="3" CalendarId="1" DayOfWeek="3" FromTime="0" ToTime="1440" />
+		<item WeekDayId="4" CalendarId="1" DayOfWeek="4" FromTime="0" ToTime="1440" />
+		<item WeekDayId="5" CalendarId="1" DayOfWeek="5" FromTime="0" ToTime="1440" />
+		<item WeekDayId="6" CalendarId="1" DayOfWeek="6" FromTime="0" ToTime="1440" />
+		<item WeekDayId="7" CalendarId="1" DayOfWeek="7" FromTime="0" ToTime="1440" />
+	</dictionary>
+	<dictionary name="DATE_TYPE_HOOKS">
+		<item HookId="1" DateTypeId="1" Lag="0" HandlerId="2" Params="380" />
+		<item HookId="2" DateTypeId="2" Lag="0" HandlerId="2" Params="381" />
+		<item HookId="3" DateTypeId="3" Lag="0" HandlerId="2" Params="280" />
+		<item HookId="4" DateTypeId="4" Lag="0" HandlerId="2" Params="281" />
+		<item HookId="5" DateTypeId="5" Lag="0" HandlerId="2" Params="180" />
+		<item HookId="6" DateTypeId="6" Lag="0" HandlerId="2" Params="181" />
+		<item HookId="7" DateTypeId="7" Lag="0" HandlerId="2" Params="80" />
+		<item HookId="8" DateTypeId="8" Lag="0" HandlerId="2" Params="81" />
+		<item HookId="9" DateTypeId="9" Lag="0" HandlerId="3" Params="" />
+		<item HookId="10" DateTypeId="10" Lag="0" HandlerId="4" Params="" />
+	</dictionary>
+	<dictionary name="SUBSCRIPTIONS">
+		<item SubscriptionId="2" EventTypeId="2" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="4" EventTypeId="4" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="5" EventTypeId="5" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="6" EventTypeId="6" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="8" EventTypeId="8" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="14" EventTypeId="14" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="15" EventTypeId="15" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="16" EventTypeId="16" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="18" EventTypeId="18" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="19" EventTypeId="19" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="20" EventTypeId="20" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="21" EventTypeId="21" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="22" EventTypeId="22" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="25" EventTypeId="25" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="26" EventTypeId="26" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="27" EventTypeId="27" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="29" EventTypeId="29" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="30" EventTypeId="30" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="31" EventTypeId="31" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="33" EventTypeId="33" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="34" EventTypeId="34" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="35" EventTypeId="35" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="80" EventTypeId="80" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="81" EventTypeId="81" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="102" EventTypeId="102" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="104" EventTypeId="104" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="105" EventTypeId="105" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="106" EventTypeId="106" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="108" EventTypeId="108" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="114" EventTypeId="114" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="115" EventTypeId="115" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="116" EventTypeId="116" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="118" EventTypeId="118" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="119" EventTypeId="119" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="120" EventTypeId="120" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="121" EventTypeId="121" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="122" EventTypeId="122" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="125" EventTypeId="125" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="126" EventTypeId="126" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="127" EventTypeId="127" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="129" EventTypeId="129" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="130" EventTypeId="130" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="131" EventTypeId="131" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="133" EventTypeId="133" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="134" EventTypeId="134" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="137" EventTypeId="137" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="138" EventTypeId="138" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="139" EventTypeId="139" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="141" EventTypeId="141" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="142" EventTypeId="142" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="143" EventTypeId="143" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="144" EventTypeId="144" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="180" EventTypeId="180" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="181" EventTypeId="181" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="202" EventTypeId="202" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="204" EventTypeId="204" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="205" EventTypeId="205" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="208" EventTypeId="208" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="215" EventTypeId="215" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="216" EventTypeId="216" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="218" EventTypeId="218" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="219" EventTypeId="219" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="220" EventTypeId="220" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="221" EventTypeId="221" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="222" EventTypeId="222" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="225" EventTypeId="225" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="226" EventTypeId="226" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="227" EventTypeId="227" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="229" EventTypeId="229" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="230" EventTypeId="230" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="231" EventTypeId="231" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="233" EventTypeId="233" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="234" EventTypeId="234" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="235" EventTypeId="235" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="280" EventTypeId="280" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="281" EventTypeId="281" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="301" EventTypeId="301" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="302" EventTypeId="302" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="304" EventTypeId="304" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="305" EventTypeId="305" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="306" EventTypeId="306" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="307" EventTypeId="307" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="308" EventTypeId="308" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="309" EventTypeId="309" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="310" EventTypeId="310" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="311" EventTypeId="311" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="312" EventTypeId="312" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="313" EventTypeId="313" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="314" EventTypeId="314" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="315" EventTypeId="315" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="316" EventTypeId="316" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="318" EventTypeId="318" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="319" EventTypeId="319" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="320" EventTypeId="320" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="321" EventTypeId="321" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="323" EventTypeId="323" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="325" EventTypeId="325" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="326" EventTypeId="326" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="327" EventTypeId="327" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="329" EventTypeId="329" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="330" EventTypeId="330" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="331" EventTypeId="331" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="333" EventTypeId="333" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="334" EventTypeId="334" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="336" EventTypeId="336" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="337" EventTypeId="337" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="347" EventTypeId="347" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="348" EventTypeId="348" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="350" EventTypeId="350" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="351" EventTypeId="351" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="353" EventTypeId="353" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="354" EventTypeId="354" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="356" EventTypeId="356" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="357" EventTypeId="357" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="359" EventTypeId="359" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="360" EventTypeId="360" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="362" EventTypeId="362" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="363" EventTypeId="363" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="365" EventTypeId="365" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="366" EventTypeId="366" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="368" EventTypeId="368" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="369" EventTypeId="369" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="371" EventTypeId="371" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="372" EventTypeId="372" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="380" EventTypeId="380" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="381" EventTypeId="381" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="401" EventTypeId="401" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="402" EventTypeId="402" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="404" EventTypeId="404" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="405" EventTypeId="405" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="408" EventTypeId="408" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="410" EventTypeId="410" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="411" EventTypeId="411" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="415" EventTypeId="415" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="418" EventTypeId="418" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="419" EventTypeId="419" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="420" EventTypeId="420" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="421" EventTypeId="421" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="422" EventTypeId="422" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="425" EventTypeId="425" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="426" EventTypeId="426" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="427" EventTypeId="427" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="429" EventTypeId="429" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="430" EventTypeId="430" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="431" EventTypeId="431" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="433" EventTypeId="433" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="434" EventTypeId="434" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="471" EventTypeId="471" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="472" EventTypeId="472" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="473" EventTypeId="473" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="474" EventTypeId="474" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="475" EventTypeId="475" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="478" EventTypeId="478" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="482" EventTypeId="482" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="502" EventTypeId="502" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="504" EventTypeId="504" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="505" EventTypeId="505" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="508" EventTypeId="508" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="510" EventTypeId="510" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="515" EventTypeId="515" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="518" EventTypeId="518" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="519" EventTypeId="519" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="520" EventTypeId="520" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="521" EventTypeId="521" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="522" EventTypeId="522" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="525" EventTypeId="525" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="526" EventTypeId="526" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="527" EventTypeId="527" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="529" EventTypeId="529" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="530" EventTypeId="530" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="531" EventTypeId="531" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="533" EventTypeId="533" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="534" EventTypeId="534" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="574" EventTypeId="574" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="701" EventTypeId="701" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="801" EventTypeId="801" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="802" EventTypeId="802" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="803" EventTypeId="803" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+		<item SubscriptionId="804" EventTypeId="804" UserId="[=NULL=]" ObjectId="[=NULL=]" />
+	</dictionary>
+	<dictionary name="REMINDER_SUBSCRIPTIONS">
+		<item SubscriptionId="1" DateTypeId="1" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="2" DateTypeId="2" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="3" DateTypeId="3" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="4" DateTypeId="4" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="5" DateTypeId="5" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="6" DateTypeId="6" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="7" DateTypeId="7" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+		<item SubscriptionId="8" DateTypeId="8" UserId="[=NULL=]" ObjectId="[=NULL=]" Lag="0" IsActive="0" HookId="[=NULL=]" />
+	</dictionary>
+	<dictionary name="SUBSCRIPTION_DETAILS" order="2">
+		<item SubscriptionId="119" ObjectRoleId="8" />
+		<item SubscriptionId="126" ObjectRoleId="8" />
+		<item SubscriptionId="126" ObjectRoleId="9" />
+		<item SubscriptionId="127" ObjectRoleId="8" />
+		<item SubscriptionId="127" ObjectRoleId="9" />
+		<item SubscriptionId="130" ObjectRoleId="8" />
+		<item SubscriptionId="130" ObjectRoleId="9" />
+		<item SubscriptionId="131" ObjectRoleId="8" />
+		<item SubscriptionId="131" ObjectRoleId="9" />
+		<item SubscriptionId="133" ObjectRoleId="8" />
+		<item SubscriptionId="137" ObjectRoleId="8" />
+		<item SubscriptionId="138" ObjectRoleId="8" />
+		<item SubscriptionId="139" ObjectRoleId="8" />
+		<item SubscriptionId="14" ObjectRoleId="10" />
+		<item SubscriptionId="14" ObjectRoleId="11" />
+		<item SubscriptionId="141" ObjectRoleId="8" />
+		<item SubscriptionId="141" ObjectRoleId="9" />
+		<item SubscriptionId="142" ObjectRoleId="8" />
+		<item SubscriptionId="143" ObjectRoleId="8" />
+		<item SubscriptionId="144" ObjectRoleId="8" />
+		<item SubscriptionId="15" ObjectRoleId="10" />
+		<item SubscriptionId="15" ObjectRoleId="11" />
+		<item SubscriptionId="16" ObjectRoleId="10" />
+		<item SubscriptionId="16" ObjectRoleId="11" />
+		<item SubscriptionId="18" ObjectRoleId="10" />
+		<item SubscriptionId="19" ObjectRoleId="10" />
+		<item SubscriptionId="2" ObjectRoleId="10" />
+		<item SubscriptionId="2" ObjectRoleId="11" />
+		<item SubscriptionId="20" ObjectRoleId="10" />
+		<item SubscriptionId="21" ObjectRoleId="10" />
+		<item SubscriptionId="22" ObjectRoleId="10" />
+		<item SubscriptionId="234" ObjectRoleId="6" />
+		<item SubscriptionId="234" ObjectRoleId="7" />
+		<item SubscriptionId="235" ObjectRoleId="6" />
+		<item SubscriptionId="235" ObjectRoleId="7" />
+		<item SubscriptionId="25" ObjectRoleId="10" />
+		<item SubscriptionId="25" ObjectRoleId="11" />
+		<item SubscriptionId="26" ObjectRoleId="10" />
+		<item SubscriptionId="26" ObjectRoleId="11" />
+		<item SubscriptionId="27" ObjectRoleId="10" />
+		<item SubscriptionId="27" ObjectRoleId="11" />
+		<item SubscriptionId="280" ObjectRoleId="6" />
+		<item SubscriptionId="280" ObjectRoleId="7" />
+		<item SubscriptionId="280" ObjectRoleId="8" />
+		<item SubscriptionId="280" ObjectRoleId="9" />
+		<item SubscriptionId="281" ObjectRoleId="6" />
+		<item SubscriptionId="281" ObjectRoleId="7" />
+		<item SubscriptionId="281" ObjectRoleId="8" />
+		<item SubscriptionId="281" ObjectRoleId="9" />
+		<item SubscriptionId="29" ObjectRoleId="10" />
+		<item SubscriptionId="29" ObjectRoleId="11" />
+		<item SubscriptionId="30" ObjectRoleId="10" />
+		<item SubscriptionId="30" ObjectRoleId="11" />
+		<item SubscriptionId="301" ObjectRoleId="0" />
+		<item SubscriptionId="302" ObjectRoleId="0" />
+		<item SubscriptionId="302" ObjectRoleId="1" />
+		<item SubscriptionId="302" ObjectRoleId="2" />
+		<item SubscriptionId="302" ObjectRoleId="3" />
+		<item SubscriptionId="302" ObjectRoleId="4" />
+		<item SubscriptionId="302" ObjectRoleId="5" />
+		<item SubscriptionId="302" ObjectRoleId="8" />
+		<item SubscriptionId="302" ObjectRoleId="9" />
+		<item SubscriptionId="304" ObjectRoleId="1" />
+		<item SubscriptionId="304" ObjectRoleId="2" />
+		<item SubscriptionId="304" ObjectRoleId="3" />
+		<item SubscriptionId="305" ObjectRoleId="1" />
+		<item SubscriptionId="305" ObjectRoleId="2" />
+		<item SubscriptionId="305" ObjectRoleId="3" />
+		<item SubscriptionId="306" ObjectRoleId="1" />
+		<item SubscriptionId="306" ObjectRoleId="2" />
+		<item SubscriptionId="306" ObjectRoleId="3" />
+		<item SubscriptionId="307" ObjectRoleId="1" />
+		<item SubscriptionId="307" ObjectRoleId="2" />
+		<item SubscriptionId="307" ObjectRoleId="3" />
+		<item SubscriptionId="308" ObjectRoleId="1" />
+		<item SubscriptionId="308" ObjectRoleId="2" />
+		<item SubscriptionId="308" ObjectRoleId="3" />
+		<item SubscriptionId="309" ObjectRoleId="1" />
+		<item SubscriptionId="309" ObjectRoleId="2" />
+		<item SubscriptionId="309" ObjectRoleId="3" />
+		<item SubscriptionId="309" ObjectRoleId="8" />
+		<item SubscriptionId="31" ObjectRoleId="10" />
+		<item SubscriptionId="31" ObjectRoleId="11" />
+		<item SubscriptionId="310" ObjectRoleId="1" />
+		<item SubscriptionId="310" ObjectRoleId="2" />
+		<item SubscriptionId="310" ObjectRoleId="3" />
+		<item SubscriptionId="311" ObjectRoleId="1" />
+		<item SubscriptionId="311" ObjectRoleId="2" />
+		<item SubscriptionId="311" ObjectRoleId="3" />
+		<item SubscriptionId="312" ObjectRoleId="1" />
+		<item SubscriptionId="312" ObjectRoleId="2" />
+		<item SubscriptionId="312" ObjectRoleId="3" />
+		<item SubscriptionId="313" ObjectRoleId="1" />
+		<item SubscriptionId="313" ObjectRoleId="2" />
+		<item SubscriptionId="313" ObjectRoleId="3" />
+		<item SubscriptionId="314" ObjectRoleId="1" />
+		<item SubscriptionId="314" ObjectRoleId="2" />
+		<item SubscriptionId="314" ObjectRoleId="3" />
+		<item SubscriptionId="315" ObjectRoleId="1" />
+		<item SubscriptionId="315" ObjectRoleId="10" />
+		<item SubscriptionId="315" ObjectRoleId="11" />
+		<item SubscriptionId="315" ObjectRoleId="2" />
+		<item SubscriptionId="315" ObjectRoleId="3" />
+		<item SubscriptionId="316" ObjectRoleId="1" />
+		<item SubscriptionId="316" ObjectRoleId="2" />
+		<item SubscriptionId="316" ObjectRoleId="3" />
+		<item SubscriptionId="316" ObjectRoleId="8" />
+		<item SubscriptionId="318" ObjectRoleId="1" />
+		<item SubscriptionId="318" ObjectRoleId="2" />
+		<item SubscriptionId="318" ObjectRoleId="3" />
+		<item SubscriptionId="319" ObjectRoleId="1" />
+		<item SubscriptionId="319" ObjectRoleId="2" />
+		<item SubscriptionId="319" ObjectRoleId="3" />
+		<item SubscriptionId="320" ObjectRoleId="1" />
+		<item SubscriptionId="320" ObjectRoleId="2" />
+		<item SubscriptionId="320" ObjectRoleId="3" />
+		<item SubscriptionId="321" ObjectRoleId="1" />
+		<item SubscriptionId="321" ObjectRoleId="2" />
+		<item SubscriptionId="321" ObjectRoleId="3" />
+		<item SubscriptionId="323" ObjectRoleId="1" />
+		<item SubscriptionId="323" ObjectRoleId="2" />
+		<item SubscriptionId="323" ObjectRoleId="3" />
+		<item SubscriptionId="325" ObjectRoleId="1" />
+		<item SubscriptionId="325" ObjectRoleId="2" />
+		<item SubscriptionId="325" ObjectRoleId="3" />
+		<item SubscriptionId="326" ObjectRoleId="1" />
+		<item SubscriptionId="326" ObjectRoleId="2" />
+		<item SubscriptionId="326" ObjectRoleId="3" />
+		<item SubscriptionId="327" ObjectRoleId="1" />
+		<item SubscriptionId="327" ObjectRoleId="2" />
+		<item SubscriptionId="327" ObjectRoleId="3" />
+		<item SubscriptionId="329" ObjectRoleId="1" />
+		<item SubscriptionId="329" ObjectRoleId="2" />
+		<item SubscriptionId="329" ObjectRoleId="3" />
+		<item SubscriptionId="33" ObjectRoleId="10" />
+		<item SubscriptionId="330" ObjectRoleId="1" />
+		<item SubscriptionId="330" ObjectRoleId="2" />
+		<item SubscriptionId="330" ObjectRoleId="3" />
+		<item SubscriptionId="331" ObjectRoleId="1" />
+		<item SubscriptionId="331" ObjectRoleId="2" />
+		<item SubscriptionId="331" ObjectRoleId="3" />
+		<item SubscriptionId="333" ObjectRoleId="1" />
+		<item SubscriptionId="333" ObjectRoleId="2" />
+		<item SubscriptionId="333" ObjectRoleId="3" />
+		<item SubscriptionId="334" ObjectRoleId="1" />
+		<item SubscriptionId="334" ObjectRoleId="2" />
+		<item SubscriptionId="334" ObjectRoleId="3" />
+		<item SubscriptionId="336" ObjectRoleId="1" />
+		<item SubscriptionId="336" ObjectRoleId="2" />
+		<item SubscriptionId="336" ObjectRoleId="3" />
+		<item SubscriptionId="337" ObjectRoleId="1" />
+		<item SubscriptionId="337" ObjectRoleId="2" />
+		<item SubscriptionId="337" ObjectRoleId="3" />
+		<item SubscriptionId="34" ObjectRoleId="10" />
+		<item SubscriptionId="347" ObjectRoleId="1" />
+		<item SubscriptionId="347" ObjectRoleId="2" />
+		<item SubscriptionId="347" ObjectRoleId="3" />
+		<item SubscriptionId="348" ObjectRoleId="1" />
+		<item SubscriptionId="348" ObjectRoleId="2" />
+		<item SubscriptionId="348" ObjectRoleId="3" />
+		<item SubscriptionId="35" ObjectRoleId="10" />
+		<item SubscriptionId="350" ObjectRoleId="1" />
+		<item SubscriptionId="350" ObjectRoleId="2" />
+		<item SubscriptionId="350" ObjectRoleId="3" />
+		<item SubscriptionId="351" ObjectRoleId="1" />
+		<item SubscriptionId="351" ObjectRoleId="2" />
+		<item SubscriptionId="351" ObjectRoleId="3" />
+		<item SubscriptionId="351" ObjectRoleId="8" />
+		<item SubscriptionId="351" ObjectRoleId="9" />
+		<item SubscriptionId="353" ObjectRoleId="1" />
+		<item SubscriptionId="353" ObjectRoleId="2" />
+		<item SubscriptionId="353" ObjectRoleId="3" />
+		<item SubscriptionId="354" ObjectRoleId="1" />
+		<item SubscriptionId="354" ObjectRoleId="2" />
+		<item SubscriptionId="354" ObjectRoleId="3" />
+		<item SubscriptionId="354" ObjectRoleId="8" />
+		<item SubscriptionId="356" ObjectRoleId="1" />
+		<item SubscriptionId="356" ObjectRoleId="2" />
+		<item SubscriptionId="356" ObjectRoleId="3" />
+		<item SubscriptionId="357" ObjectRoleId="1" />
+		<item SubscriptionId="357" ObjectRoleId="2" />
+		<item SubscriptionId="357" ObjectRoleId="3" />
+		<item SubscriptionId="359" ObjectRoleId="1" />
+		<item SubscriptionId="359" ObjectRoleId="10" />
+		<item SubscriptionId="359" ObjectRoleId="11" />
+		<item SubscriptionId="359" ObjectRoleId="2" />
+		<item SubscriptionId="359" ObjectRoleId="3" />
+		<item SubscriptionId="360" ObjectRoleId="1" />
+		<item SubscriptionId="360" ObjectRoleId="2" />
+		<item SubscriptionId="360" ObjectRoleId="3" />
+		<item SubscriptionId="362" ObjectRoleId="1" />
+		<item SubscriptionId="362" ObjectRoleId="2" />
+		<item SubscriptionId="362" ObjectRoleId="3" />
+		<item SubscriptionId="363" ObjectRoleId="1" />
+		<item SubscriptionId="363" ObjectRoleId="2" />
+		<item SubscriptionId="363" ObjectRoleId="3" />
+		<item SubscriptionId="365" ObjectRoleId="1" />
+		<item SubscriptionId="365" ObjectRoleId="2" />
+		<item SubscriptionId="365" ObjectRoleId="3" />
+		<item SubscriptionId="366" ObjectRoleId="1" />
+		<item SubscriptionId="366" ObjectRoleId="2" />
+		<item SubscriptionId="366" ObjectRoleId="3" />
+		<item SubscriptionId="368" ObjectRoleId="1" />
+		<item SubscriptionId="368" ObjectRoleId="2" />
+		<item SubscriptionId="368" ObjectRoleId="3" />
+		<item SubscriptionId="369" ObjectRoleId="1" />
+		<item SubscriptionId="369" ObjectRoleId="2" />
+		<item SubscriptionId="369" ObjectRoleId="3" />
+		<item SubscriptionId="371" ObjectRoleId="1" />
+		<item SubscriptionId="371" ObjectRoleId="2" />
+		<item SubscriptionId="371" ObjectRoleId="3" />
+		<item SubscriptionId="372" ObjectRoleId="1" />
+		<item SubscriptionId="372" ObjectRoleId="2" />
+		<item SubscriptionId="372" ObjectRoleId="3" />
+		<item SubscriptionId="380" ObjectRoleId="0" />
+		<item SubscriptionId="380" ObjectRoleId="1" />
+		<item SubscriptionId="380" ObjectRoleId="2" />
+		<item SubscriptionId="380" ObjectRoleId="3" />
+		<item SubscriptionId="381" ObjectRoleId="0" />
+		<item SubscriptionId="381" ObjectRoleId="1" />
+		<item SubscriptionId="381" ObjectRoleId="2" />
+		<item SubscriptionId="381" ObjectRoleId="3" />
+		<item SubscriptionId="4" ObjectRoleId="10" />
+		<item SubscriptionId="4" ObjectRoleId="11" />
+		<item SubscriptionId="401" ObjectRoleId="13" />
+		<item SubscriptionId="402" ObjectRoleId="0" />
+		<item SubscriptionId="402" ObjectRoleId="12" />
+		<item SubscriptionId="402" ObjectRoleId="13" />
+		<item SubscriptionId="402" ObjectRoleId="14" />
+		<item SubscriptionId="402" ObjectRoleId="17" />
+		<item SubscriptionId="402" ObjectRoleId="18" />
+		<item SubscriptionId="404" ObjectRoleId="13" />
+		<item SubscriptionId="404" ObjectRoleId="14" />
+		<item SubscriptionId="404" ObjectRoleId="17" />
+		<item SubscriptionId="404" ObjectRoleId="18" />
+		<item SubscriptionId="405" ObjectRoleId="13" />
+		<item SubscriptionId="405" ObjectRoleId="14" />
+		<item SubscriptionId="405" ObjectRoleId="17" />
+		<item SubscriptionId="405" ObjectRoleId="18" />
+		<item SubscriptionId="408" ObjectRoleId="13" />
+		<item SubscriptionId="408" ObjectRoleId="14" />
+		<item SubscriptionId="408" ObjectRoleId="17" />
+		<item SubscriptionId="408" ObjectRoleId="18" />
+		<item SubscriptionId="415" ObjectRoleId="13" />
+		<item SubscriptionId="415" ObjectRoleId="14" />
+		<item SubscriptionId="415" ObjectRoleId="17" />
+		<item SubscriptionId="420" ObjectRoleId="6" />
+		<item SubscriptionId="420" ObjectRoleId="7" />
+		<item SubscriptionId="421" ObjectRoleId="13" />
+		<item SubscriptionId="421" ObjectRoleId="17" />
+		<item SubscriptionId="422" ObjectRoleId="13" />
+		<item SubscriptionId="422" ObjectRoleId="6" />
+		<item SubscriptionId="422" ObjectRoleId="7" />
+		<item SubscriptionId="425" ObjectRoleId="13" />
+		<item SubscriptionId="425" ObjectRoleId="14" />
+		<item SubscriptionId="425" ObjectRoleId="17" />
+		<item SubscriptionId="426" ObjectRoleId="13" />
+		<item SubscriptionId="426" ObjectRoleId="14" />
+		<item SubscriptionId="426" ObjectRoleId="17" />
+		<item SubscriptionId="427" ObjectRoleId="13" />
+		<item SubscriptionId="427" ObjectRoleId="14" />
+		<item SubscriptionId="427" ObjectRoleId="17" />
+		<item SubscriptionId="429" ObjectRoleId="13" />
+		<item SubscriptionId="429" ObjectRoleId="14" />
+		<item SubscriptionId="429" ObjectRoleId="17" />
+		<item SubscriptionId="429" ObjectRoleId="18" />
+		<item SubscriptionId="431" ObjectRoleId="13" />
+		<item SubscriptionId="431" ObjectRoleId="14" />
+		<item SubscriptionId="431" ObjectRoleId="17" />
+		<item SubscriptionId="431" ObjectRoleId="18" />
+		<item SubscriptionId="434" ObjectRoleId="13" />
+		<item SubscriptionId="434" ObjectRoleId="14" />
+		<item SubscriptionId="434" ObjectRoleId="17" />
+		<item SubscriptionId="471" ObjectRoleId="13" />
+		<item SubscriptionId="471" ObjectRoleId="14" />
+		<item SubscriptionId="471" ObjectRoleId="17" />
+		<item SubscriptionId="471" ObjectRoleId="6" />
+		<item SubscriptionId="471" ObjectRoleId="7" />
+		<item SubscriptionId="472" ObjectRoleId="13" />
+		<item SubscriptionId="472" ObjectRoleId="14" />
+		<item SubscriptionId="472" ObjectRoleId="17" />
+		<item SubscriptionId="473" ObjectRoleId="6" />
+		<item SubscriptionId="473" ObjectRoleId="7" />
+		<item SubscriptionId="475" ObjectRoleId="12" />
+		<item SubscriptionId="475" ObjectRoleId="13" />
+		<item SubscriptionId="475" ObjectRoleId="14" />
+		<item SubscriptionId="475" ObjectRoleId="17" />
+		<item SubscriptionId="475" ObjectRoleId="18" />
+		<item SubscriptionId="478" ObjectRoleId="13" />
+		<item SubscriptionId="478" ObjectRoleId="17" />
+		<item SubscriptionId="482" ObjectRoleId="13" />
+		<item SubscriptionId="5" ObjectRoleId="10" />
+		<item SubscriptionId="5" ObjectRoleId="11" />
+		<item SubscriptionId="502" ObjectRoleId="15" />
+		<item SubscriptionId="502" ObjectRoleId="16" />
+		<item SubscriptionId="504" ObjectRoleId="15" />
+		<item SubscriptionId="504" ObjectRoleId="16" />
+		<item SubscriptionId="504" ObjectRoleId="6" />
+		<item SubscriptionId="505" ObjectRoleId="15" />
+		<item SubscriptionId="505" ObjectRoleId="16" />
+		<item SubscriptionId="505" ObjectRoleId="6" />
+		<item SubscriptionId="505" ObjectRoleId="7" />
+		<item SubscriptionId="508" ObjectRoleId="15" />
+		<item SubscriptionId="508" ObjectRoleId="16" />
+		<item SubscriptionId="508" ObjectRoleId="6" />
+		<item SubscriptionId="508" ObjectRoleId="7" />
+		<item SubscriptionId="510" ObjectRoleId="15" />
+		<item SubscriptionId="510" ObjectRoleId="16" />
+		<item SubscriptionId="510" ObjectRoleId="6" />
+		<item SubscriptionId="515" ObjectRoleId="15" />
+		<item SubscriptionId="515" ObjectRoleId="16" />
+		<item SubscriptionId="518" ObjectRoleId="15" />
+		<item SubscriptionId="518" ObjectRoleId="16" />
+		<item SubscriptionId="518" ObjectRoleId="6" />
+		<item SubscriptionId="518" ObjectRoleId="7" />
+		<item SubscriptionId="519" ObjectRoleId="15" />
+		<item SubscriptionId="519" ObjectRoleId="16" />
+		<item SubscriptionId="520" ObjectRoleId="15" />
+		<item SubscriptionId="520" ObjectRoleId="16" />
+		<item SubscriptionId="520" ObjectRoleId="6" />
+		<item SubscriptionId="520" ObjectRoleId="7" />
+		<item SubscriptionId="521" ObjectRoleId="15" />
+		<item SubscriptionId="521" ObjectRoleId="6" />
+		<item SubscriptionId="521" ObjectRoleId="7" />
+		<item SubscriptionId="522" ObjectRoleId="15" />
+		<item SubscriptionId="522" ObjectRoleId="6" />
+		<item SubscriptionId="522" ObjectRoleId="7" />
+		<item SubscriptionId="525" ObjectRoleId="15" />
+		<item SubscriptionId="525" ObjectRoleId="16" />
+		<item SubscriptionId="525" ObjectRoleId="6" />
+		<item SubscriptionId="525" ObjectRoleId="7" />
+		<item SubscriptionId="526" ObjectRoleId="15" />
+		<item SubscriptionId="526" ObjectRoleId="16" />
+		<item SubscriptionId="526" ObjectRoleId="6" />
+		<item SubscriptionId="526" ObjectRoleId="7" />
+		<item SubscriptionId="527" ObjectRoleId="15" />
+		<item SubscriptionId="527" ObjectRoleId="16" />
+		<item SubscriptionId="527" ObjectRoleId="6" />
+		<item SubscriptionId="527" ObjectRoleId="7" />
+		<item SubscriptionId="529" ObjectRoleId="15" />
+		<item SubscriptionId="529" ObjectRoleId="16" />
+		<item SubscriptionId="530" ObjectRoleId="15" />
+		<item SubscriptionId="530" ObjectRoleId="16" />
+		<item SubscriptionId="530" ObjectRoleId="6" />
+		<item SubscriptionId="530" ObjectRoleId="7" />
+		<item SubscriptionId="531" ObjectRoleId="15" />
+		<item SubscriptionId="531" ObjectRoleId="16" />
+		<item SubscriptionId="531" ObjectRoleId="6" />
+		<item SubscriptionId="531" ObjectRoleId="7" />
+		<item SubscriptionId="533" ObjectRoleId="15" />
+		<item SubscriptionId="533" ObjectRoleId="16" />
+		<item SubscriptionId="534" ObjectRoleId="15" />
+		<item SubscriptionId="534" ObjectRoleId="16" />
+		<item SubscriptionId="574" ObjectRoleId="15" />
+		<item SubscriptionId="574" ObjectRoleId="16" />
+		<item SubscriptionId="6" ObjectRoleId="10" />
+		<item SubscriptionId="6" ObjectRoleId="11" />
+		<item SubscriptionId="701" ObjectRoleId="0" />
+		<item SubscriptionId="701" ObjectRoleId="6" />
+		<item SubscriptionId="701" ObjectRoleId="7" />
+		<item SubscriptionId="8" ObjectRoleId="10" />
+		<item SubscriptionId="8" ObjectRoleId="11" />
+		<item SubscriptionId="801" ObjectRoleId="0" />
+		<item SubscriptionId="802" ObjectRoleId="0" />
+		<item SubscriptionId="803" ObjectRoleId="0" />
+		<item SubscriptionId="804" ObjectRoleId="0" />
+	</dictionary>
+</dictionaries>

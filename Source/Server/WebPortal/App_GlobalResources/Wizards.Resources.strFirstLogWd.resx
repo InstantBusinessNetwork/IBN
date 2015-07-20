@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTopTitle">
+		<value>Welcome to the First Time User Personalization Assistant</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Change Your Personal Information</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Change Your Personal Details</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Change Your Personal Preferences</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Change Your Calendar Sharing Settings</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Change Your Web Applications Settings</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>Your Changes Were Saved!</value>
+	</data>
+	<data name="s1TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="tFirstName">
+		<value>First Name</value>
+	</data>
+	<data name="tLastName">
+		<value>Last Name</value>
+	</data>
+	<data name="tEMail">
+		<value>E-mail</value>
+	</data>
+	<data name="tWorkPhone">
+		<value>Work Phone</value>
+	</data>
+	<data name="tMobilePhone">
+		<value>Mobile Phone</value>
+	</data>
+	<data name="s2TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s3TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s4TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s5TopDiv">
+		<value>Some Comments</value>
+	</data>
+	<data name="s6TopDiv">
+		<value>Your changes were saved! Click "Close" button for working in Portal.</value>
+	</data>
+	<data name="tContactInformation">
+		<value>Contact Information</value>
+	</data>
+	<data name="s1Comments">
+		<value>You can change your personal information, details and settings here. Also you can modify your calendar sharing. &lt;br>
+		If you don`t want to change anything, click "Close" button.&lt;br>If you don`t want to see this wizard appear on every Log In, reset check box "Show this dialog at startup" at last page.
+		</value>
+	</data>
+	<data name="tPhoto">
+		<value>Photo</value>
+	</data>
+	<data name="tCompany">
+		<value>Company</value>
+	</data>
+	<data name="tDepartment">
+		<value>Department</value>
+	</data>
+	<data name="tPosition">
+		<value>Position</value>
+	</data>
+	<data name="tLocation">
+		<value>Location</value>
+	</data>
+	<data name="tDetails">
+		<value>Your Details</value>
+	</data>
+	<data name="tTimeZone">
+		<value>Time Zone</value>
+	</data>
+	<data name="tLanguage">
+		<value>Language</value>
+	</data>
+	<data name="From">
+		<value>From</value>
+	</data>
+	<data name="To">
+		<value>To</value>
+	</data>
+	<data name="NotifyDelay">
+		<value>Notify Delay</value>
+	</data>
+	<data name="NotifyBy">
+		<value>Notify By</value>
+	</data>
+	<data name="EnableNotify">
+		<value>Notify Me About System Events</value>
+	</data>
+	<data name="Email">
+		<value>E-mail</value>
+	</data>
+	<data name="Instantly">
+		<value>Instantly</value>
+	</data>
+	<data name="ByBatch">
+		<value>By Batch</value>
+	</data>
+	<data name="Every">
+		<value>Every</value>
+	</data>
+	<data name="30m">
+		<value>30 min </value>
+	</data>
+	<data name="60m">
+		<value>1 hour</value>
+	</data>
+	<data name="240m">
+		<value>4 hours</value>
+	</data>
+	<data name="Selected">
+		<value>Selected</value>
+	</data>
+	<data name="Available">
+		<value>Available</value>
+	</data>
+	<data name="Group">
+		<value>Group</value>
+	</data>
+	<data name="Search">
+		<value>Search</value>
+	</data>
+	<data name="User">
+		<value>User</value>
+	</data>
+	<data name="CanManage">
+		<value>Can Manage</value>
+	</data>
+	<data name="Add">
+		<value>Add</value>
+	</data>
+	<data name="FindNow">
+		<value>Find Now</value>
+	</data>
+	<data name="Warning">
+		<value>Do you want to exclude this user from list?</value>
+	</data>
+	<data name="Delete">
+		<value>Delete</value>
+	</data>
+	<data name="Name">
+		<value>Name</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="Manage">
+		<value>Manage</value>
+	</data>
+	<data name="Read">
+		<value>Read</value>
+	</data>
+	<data name="tAllow">
+		<value>Show this dialog at startup</value>
+	</data>
+	<data name="tFinish">
+		<value>Finish</value>
+	</data>
+	<data name="tClose">
+		<value>Close</value>
+	</data>
+</root>

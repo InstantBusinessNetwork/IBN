@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="title">
+		<value>Название</value>
+	</data>
+	<data name="project">
+		<value>Проект</value>
+	</data>
+	<data name="start_date">
+		<value>Дата начала</value>
+	</data>
+	<data name="end_date">
+		<value>Дата завершения</value>
+	</data>
+	<data name="manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="completion">
+		<value>Тип завершения</value>
+	</data>
+	<data name="summary">
+		<value>Суммарная задача</value>
+	</data>
+	<data name="milestone">
+		<value>Веха</value>
+	</data>
+	<data name="description">
+		<value>Описание</value>
+	</data>
+	<data name="category">
+		<value>Общие категории</value>
+	</data>
+	<data name="tbSaveEdit">
+		<value>Редактирование задачи</value>
+	</data>
+	<data name="tbSaveCreate">
+		<value>Новая задача</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Сохранить</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Должно быть подтверждено менеджером</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Вернуться к списку задач</value>
+	</data>
+	<data name="CompletedAutomatically">
+		<value>Завершить без подтверждения менеджером</value>
+	</data>
+	<data name="StartDateError">
+		<value>Задача должна начинаться позже даты начала проекта</value>
+	</data>
+	<data name="SaveAssign">
+		<value>Сохранить и назначить</value>
+	</data>
+	<data name="FileLoad">
+		<value>Загрузить файл</value>
+	</data>
+	<data name="Resources">
+		<value>Исполнители</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Редактировать справочник</value>
+	</data>
+	<data name="MustBeConfirmed">
+		<value>Должны подтвердить</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Неправильная дата</value>
+	</data>
+	<data name="tAnotherOne">
+		<value>Остаться на странице "Новая задача"</value>
+	</data>
+	<data name="AssignWarning">
+		<value>Ваш браузер заблокировал всплывающее окно, которое необходимо для корректной работы портала.&lt;br&gt;Воспользуйтесь данной ссылкой чтобы открыть это окно вручную:</value>
+	</data>
+	<data name="AssignWizard1">
+		<value>Исполнители</value>
+	</data>
+	<data name="EndDateError">
+		<value>Дата завершения должна быть больше даты начала</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Основная информация</value>
+	</data>
+	<data name="tStatusInfo">
+		<value>Информация состояния</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Дополнительная информация</value>
+	</data>
+	<data name="activation">
+		<value>Тип активации</value>
+	</data>
+	<data name="phase">
+		<value>Фаза проекта</value>
+	</data>
+	<data name="dontChange">
+		<value>[ Оставить прежнюю ]</value>
+	</data>
+	<data name="taskTime">
+		<value>Планируемые трудозатраты</value>
+	</data>
+	<data name="tClient">
+		<value>Клиент</value>
+	</data>
+</root>

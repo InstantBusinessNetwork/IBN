@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Menu id="ActionMenu" text="{IbnFramework.MetaForm:AddElement}">
+				<Button id="addSection" text="{IbnFramework.MetaForm:AddSection}" imageUrl="~/Images/IbnFramework/Columns2.png" handler="onAddSectionClick"></Button>
+				<Button id="addField" text="{IbnFramework.MetaForm:AddField}" imageUrl="~/Images/IbnFramework/metainfo/metafield.gif" handler="onAddFieldClick"></Button>
+			</Menu>
+			<Splitter id="split4"></Splitter>
+			<Button id="upButton" imageUrl="~/Images/IbnFramework/Arrows/Arrow_Up_Green.png" cssClass="imageMiddle" handler="onArrowClick"></Button>
+			<Button id="downButton" imageUrl="~/Images/IbnFramework/Arrows/Arrow_Down_Green.png" cssClass="imageMiddle" handler="onArrowClick"></Button>
+			<Button id="leftButton" imageUrl="~/Images/IbnFramework/Arrows/Arrow_Left_Green.png" cssClass="imageMiddle" handler="onArrowClick"></Button>
+			<Button id="rightButton" imageUrl="~/Images/IbnFramework/Arrows/Arrow_Right_Green.png" cssClass="imageMiddle" handler="onArrowClick"></Button>
+			<Splitter id="split1"></Splitter>
+			<Button id="editSection" imageUrl="~/Images/IbnFramework/edit.gif" text="{IbnFramework.MetaForm:EditElement}" handler="onEditClick"></Button>
+			<Splitter id="split5"></Splitter>
+			
+			<Button id="removeElement" imageUrl="~/Images/IbnFramework/delete.gif" text="{IbnFramework.MetaForm:RemoveElement}" handler="onRemoveClick"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+		</add>
+	</Commands>
+</MetaView>

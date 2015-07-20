@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.HelpDeskManagement.ColumnTemplates.Created_IncidentList" %>
+<%# (Eval("CreationDate") == DBNull.Value) ? "" : ((DateTime)Eval("CreationDate")).ToShortDateString()%>

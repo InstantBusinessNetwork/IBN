@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewButton" text="{IbnFramework.BusinessProcess:New}" imageUrl="~/Images/IbnFramework/NEWITEM.GIF" commandName="WorkflowInstance_New" itemSplitter="Right"></Button>
+			<Button id="CreateByTemplateButton" text="{IbnFramework.BusinessProcess:CreateByTemplate}" imageUrl="~/layouts/images/icons/newdatatemplate.gif" commandName="WorkflowInstance_CreateByTemplate" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="WorkflowInstance_DeleteSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="WFInstances_Columns">
+				<Column id="c76ac1b7-d159-4443-a8df-b865d917314d" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx" width="63px">
+<!--					<Item imageUrl="~/Images/IbnFramework/Design.png" commandName="WFInstance_Design" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:Design}" /> -->
+					<Item imageUrl="~/Images/IbnFramework/edit.gif" commandName="WFInstance_Edit" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/Copy.png" commandName="WFInstance_Duplicate" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:Duplicate}" />
+					<Item imageUrl="~/Images/IbnFramework/SaveAsTemplate.png" commandName="WFInstance_SaveAsTemplate" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:SaveAsTemplate}" />
+				</Column>
+				<Column id="472F004E-AF2F-4d64-91A0-17B37248A71C" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx" width="42px">
+					<Item imageUrl="~/Images/IbnFramework/WFStart.png" commandName="WFInstance_Start" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:WFStart}" />
+					<Item imageUrl="~/Images/IbnFramework/WFSuspend.png" commandName="WFInstance_Suspend" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:WFSuspend}" />
+					<Item imageUrl="~/Images/IbnFramework/WFResume.PNG" commandName="WFInstance_Resume" paddingRight="5" tooltip="{IbnFramework.BusinessProcess:WFResume}" />
+					<Item imageUrl="~/Images/IbnFramework/WFTerminate.png" commandName="WFInstance_Terminate" tooltip="{IbnFramework.BusinessProcess:WFTerminate}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="WorkflowInstance_New">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowInstanceEdit.aspx?OwnerName={HttpContext:OwnerName}&amp;OwnerId={HttpContext:OwnerId}</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSecurityEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WorkflowInstance_CreateByTemplate">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.BusinessProcess:New}</PopupTitle>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowDefinitionSelect.aspx?OwnerName={HttpContext:OwnerName}&amp;OwnerId={HttpContext:OwnerId}&amp;OwnerTypeId={HttpContext:OwnerTypeId}</Url>
+				<Width>450</Width>
+				<Height>180</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.CreateByTemplateEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WFInstance_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowInstanceEdit.aspx?Id=[ClientParam:primaryKeyId]</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSecurityEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WFInstance_Design">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowInstanceDesign.aspx?Id=[ClientParam:primaryKeyId]</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSecurityEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WFInstance_Duplicate">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowInstanceEdit.aspx?FromId=[ClientParam:primaryKeyId]&amp;OwnerName={HttpContext:OwnerName}&amp;OwnerId={HttpContext:OwnerId}</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSecurityEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WFInstance_SaveAsTemplate">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowDefinitionEdit.aspx?FromInstanceId=[ClientParam:primaryKeyId]</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSaveAsTemplateEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WorkflowInstance_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteSelectedEntityHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSecurityEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="WFInstance_Start">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceStartEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceStartHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="WFInstance_Terminate">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceTerminateEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceTerminateHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="WFInstance_Suspend">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSuspendEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceSuspendHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="WFInstance_Resume">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceResumeEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFInstanceResumeHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

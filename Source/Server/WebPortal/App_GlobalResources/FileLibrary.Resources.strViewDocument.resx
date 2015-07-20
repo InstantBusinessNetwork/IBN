@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tViewDoc">
+		<value>View Document</value>
+	</data>
+	<data name="tDocument">
+		<value>Document</value>
+	</data>
+	<data name="tLocation">
+		<value>Location</value>
+	</data>
+	<data name="tCreatedBy">
+		<value>Created By</value>
+	</data>
+	<data name="tUpdatedBy">
+		<value>Updated By</value>
+	</data>
+	<data name="tDownCount">
+		<value>Download Count</value>
+	</data>
+	<data name="tCreated">
+		<value>Created</value>
+	</data>
+	<data name="tLastUpdate">
+		<value>Last Update</value>
+	</data>
+	<data name="tViewCount">
+		<value>View Count</value>
+	</data>
+	<data name="tDescription">
+		<value>Description</value>
+	</data>
+	<data name="tDocumentSize">
+		<value>Document Size</value>
+	</data>
+	<data name="tVerHistory">
+		<value>Version History</value>
+	</data>
+	<data name="tVerNum">
+		<value>Ver. #</value>
+	</data>
+	<data name="tUpdDate">
+		<value>Updated Date</value>
+	</data>
+	<data name="tTitle">
+		<value>Title</value>
+	</data>
+	<data name="tSize">
+		<value>Size</value>
+	</data>
+	<data name="tGenInf">
+		<value>Document Information</value>
+	</data>
+	<data name="tbEdit">
+		<value>Edit</value>
+	</data>
+	<data name="tDelete">
+		<value>Delete</value>
+	</data>
+	<data name="tbBack">
+		<value>Back to File Library</value>
+	</data>
+	<data name="tbSend">
+		<value>Send Asset</value>
+	</data>
+	<data name="Warning">
+		<value>Do you really want to delete this document?</value>
+	</data>
+	<data name="tbAdd">
+		<value>Add ToDo</value>
+	</data>
+	<data name="ViewAll">
+		<value>View All</value>
+	</data>
+	<data name="DocInfo">
+		<value>File Information</value>
+	</data>
+	<data name="FullInfo">
+		<value>Full Information</value>
+	</data>
+	<data name="tProject">
+		<value>Project</value>
+	</data>
+	<data name="tbBackToProject">
+		<value>Back to the Project</value>
+	</data>
+	<data name="tbBackToIncident">
+		<value>Back to the Issue</value>
+	</data>
+	<data name="tbBackToEvent">
+		<value>Back to the Event</value>
+	</data>
+	<data name="tbBackToTask">
+		<value>Back to the Task</value>
+	</data>
+	<data name="tbBackToToDo">
+		<value>Back to the ToDo</value>
+	</data>
+	<data name="tIncidents">
+		<value>Issues</value>
+	</data>
+	<data name="tTasks">
+		<value>Tasks</value>
+	</data>
+	<data name="tToDo">
+		<value>ToDo`s</value>
+	</data>
+	<data name="tEvents">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="tSendObject">
+		<value>Send Object</value>
+	</data>
+	<data name="Send">
+		<value>Send</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="Selected">
+		<value>Selected</value>
+	</data>
+	<data name="Available">
+		<value>Available</value>
+	</data>
+	<data name="Group">
+		<value>Group</value>
+	</data>
+	<data name="Search">
+		<value>Search</value>
+	</data>
+	<data name="Users">
+		<value>Users</value>
+	</data>
+	<data name="eMail">
+		<value>E-mail</value>
+	</data>
+	<data name="FindNow">
+		<value>Find Now!</value>
+	</data>
+	<data name="Add">
+		<value>Add</value>
+	</data>
+	<data name="tabMetaData">
+		<value>Custom Fields</value>
+	</data>
+	<data name="tabGeneral">
+		<value>General</value>
+	</data>
+	<data name="tStatus">
+		<value>Status</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Add To Favorites</value>
+	</data>
+	<data name="CopyToClipboard">
+		<value>Copy To Clipboard</value>
+	</data>
+	<data name="tError">
+		<value>There was a problem retrieving the XML data</value>
+	</data>
+	<data name="tbBackToDocument">
+		<value>Back to the Document</value>
+	</data>
+	<data name="tDocuments">
+		<value>Documents</value>
+	</data>
+	<data name="tRoot">
+		<value>Root</value>
+	</data>
+	<data name="tName">
+		<value>Name</value>
+	</data>
+	<data name="tCreator">
+		<value>Creator</value>
+	</data>
+	<data name="tKeepHistory">
+		<value>Keep History</value>
+	</data>
+	<data name="tHistoryIsNot">
+		<value>History is not available</value>
+	</data>
+  <data name="tAddEMails">
+    <value>Add e-mail addresses</value>
+  </data>
+  <data name="tClose">
+    <value>Close</value>
+  </data>
+  <data name="tSelect">
+    <value>Select</value>
+  </data>
+</root>

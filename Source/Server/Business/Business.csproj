@@ -1,0 +1,1347 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F76612EC-646A-435D-A649-9C5B66A07906}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Mediachase.IBN.Business</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.IBN.Business</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>http://localhost/Mediachase.IBN.Business/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Forum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Forum.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a80a980127cd9f5a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.XmlSerializers.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Forum, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Forum.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Interfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cd4e35dcbcd94f2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Web.UI.Controls.Util, Version=1.0.3351.26130, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Web.UI.Controls.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Web.UI.WebControls, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.XmlTools, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.XmlTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Net.Mail, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Net.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Net.Wdom, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52d5b26326ace6aa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Net.Wdom.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Net.WebDavServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=745413b87114505c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Net.WebDavServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ProjectBusinessUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\ProjectBusinessUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.DirectoryServices">
+      <Name>System.DirectoryServices</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Alerts2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AlertTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AlertVariable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assignments\AssignmentCustomProperty.cs" />
+    <Compile Include="Assignments\RaiseAssignmentEventPlugin.cs" />
+    <Compile Include="Assignments\ResetBusinessProcessOwnerReadOnlyPlugin.cs" />
+    <Compile Include="Assignments\SetBusinessProcessOwnerReadOnlyPlugin.cs" />
+    <Compile Include="Assignments\SyncAclWithAssignmentPlugin.cs" />
+    <Compile Include="Assignments\SyncAclWithBusinessProcessPlugin.cs" />
+    <Compile Include="Assignments\StickedObjectCleanUpPlugin.cs" />
+    <Compile Include="BaseConfigBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseConfigDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BusinessProcessSheduler.cs" />
+    <Compile Include="Calendar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarEntry2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CleanupBridgeElementPlugin.cs" />
+    <Compile Include="CommandManagerHandler.cs" />
+    <Compile Include="Common.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Company.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CompanyWebSiteSemaphore.cs" />
+    <Compile Include="ConfigBlockParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\DatabaseConfigurator.cs" />
+    <Compile Include="Configuration\TimeZoneInfo.cs" />
+    <Compile Include="Configuration\User.cs" />
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Customization\NavigationFileProvider.cs" />
+    <Compile Include="Customization\NavigationWriterAttribute.cs" />
+    <Compile Include="Customization\NavigationWriterTag.cs" />
+    <Compile Include="GlobalResourceManager.cs" />
+    <Compile Include="InMemoryFilterElementEvaluator.cs" />
+    <Compile Include="LocalDiskEntityObjectPlugin.cs" />
+    <Compile Include="Messages\SmtpNotConfiguredException.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\AutoCommitedTransactedStream.cs" />
+    <Compile Include="WebDAV\WebDavEditSessionManager.cs" />
+    <Compile Include="WebDAV\WebDavLockInfo.cs" />
+    <Compile Include="WidgetEngine\ControlProperties.cs" />
+    <Compile Include="WidgetEngine\ControlPropertiesBase.cs" />
+    <Compile Include="WidgetEngine\ControlPropertiesProviderCollection.cs" />
+    <Compile Include="WidgetEngine\ControlPropertiesSection.cs" />
+    <Compile Include="WidgetEngine\ControlPropertiesSectionGroup.cs" />
+    <Compile Include="WidgetEngine\CustomPageEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomPageEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetEngine\CustomPageEntity.cs" />
+    <Compile Include="WidgetEngine\CustomPageLevel.cs" />
+    <Compile Include="WidgetEngine\CustomPageManager.cs" />
+    <Compile Include="WidgetEngine\CustomPageNormalizationPlugin.cs" />
+    <Compile Include="WidgetEngine\CustomPageRequestHandler.cs" />
+    <Compile Include="WidgetEngine\DynamicCategoryInfo.cs" />
+    <Compile Include="WidgetEngine\DynamicCategoryInfoLoader.cs" />
+    <Compile Include="WidgetEngine\DynamicControlFactory.cs" />
+    <Compile Include="WidgetEngine\DynamicControlInfo.cs" />
+    <Compile Include="WidgetEngine\DynamicControlInfoLoader.cs" />
+    <None Include="WidgetEngine\CustomPageEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomPageEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="WidgetEngine\GoogleGadgetEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>GoogleGadgetEntity.auto.cs</LastGenOutput>
+    </None>
+    <Compile Include="WidgetEngine\GoogleGadgetEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoogleGadgetEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="WidgetEngine\GoogleGadgetRequestHandler.cs" />
+    <Compile Include="WidgetEngine\MetaClassInstaller.cs" />
+    <Compile Include="WidgetEngine\SqlControlPropertiesProvider.cs" />
+    <Compile Include="WidgetEngine\SqlMetaControlPropertiesProvider.cs" />
+    <Compile Include="WidgetEngine\WorkspaceTemplateFactory.cs" />
+    <Compile Include="WidgetEngine\WorkspaceTemplateInfo.cs" />
+    <Compile Include="WidgetEngine\WorkspaceTemplateLoader.cs" />
+    <Compile Include="WidgetEngine\XmlControlPropertiesProvider.cs" />
+    <Compile Include="ControlSystem\AccessControlEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\AccessControlList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\AssemblyHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\BaseIbnContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DefaultAccessControlList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DirectoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\FileHistoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\FileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\FileStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ForumInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ForumStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ForumThreadInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ForumThreadNodeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ForumThreadNodeSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnContainerConfiguration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnContainerConfigurationHandle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnContainerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnContainerInfoCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnControlInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IbnControlInfoCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IIbnContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\IIbnControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ReportAccessControlEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ReportAccessControlList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ReportCategoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ReportInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\ReportStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\UserRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\WebDavFileUserTicket.cs" />
+    <Compile Include="Customization\ItemArgumentType.cs" />
+    <Compile Include="Customization\CustomizationItemArgumentRequestHandler.cs" />
+    <Compile Include="Customization\ItemCommandType.cs" />
+    <Compile Include="Customization\ProfileManager.cs" />
+    <Compile Include="Customization\CustomizationProfileCommandEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomizationProfileCommandEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\CustomizationProfileCommandRequestHandler.cs" />
+    <Compile Include="Customization\CustomizationProfileRequestHandler.cs" />
+    <Compile Include="Customization\CustomizationProfileEntity.auto.cs">
+      <DependentUpon>CustomizationProfileEntity.auto.mcgen</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Customization\CustomizationItemArgumentEntity.auto.cs">
+      <DependentUpon>CustomizationItemArgumentEntity.auto.mcgen</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Customization\CustomizationItemEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomizationItemEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\CustomizationItemRequestHandler.cs" />
+    <Compile Include="Customization\CustomizationProfileUserEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomizationProfileUserEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Customization\CustomizationProfileUserRequestHandler.cs" />
+    <Compile Include="Customization\NavigationManager.cs" />
+    <Compile Include="Customization\ProfileCommandType.cs" />
+    <Compile Include="Customization\CustomizationStructureType.cs" />
+    <Compile Include="DefautRedirectHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dictionaries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Directory\DirectoryOrganizationalUnitEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectoryOrganizationalUnitEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryOrganizationalUnitMethod.cs" />
+    <Compile Include="Directory\DirectoryOrganizationalUnitRequestHandler.cs" />
+    <Compile Include="Directory\DirectoryManager.cs" />
+    <Compile Include="Directory\DirectoryPrincipalEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectoryPrincipalEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryPrincipalRequestHandler.cs" />
+    <Compile Include="Directory\DirectoryPrincipalType.cs" />
+    <Compile Include="Directory\DirectorySecureRoleEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectorySecureRoleEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectorySecureRoleRequestHandler.cs" />
+    <Compile Include="Directory\DirectoryWorkGroupEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectoryWorkGroupEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryWorkGroupRequestHandler.cs" />
+    <Compile Include="Directory\DirectoryUserEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DirectoryUserEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryUserRequestHandler.cs" />
+    <Compile Include="Directory\MoveTreeNodeRequest.cs" />
+    <Compile Include="Directory\OrganizationalUnitTreeComparer.cs" />
+    <Compile Include="Document.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Document2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Documents\Configuration\DocumentEntitySection.cs" />
+    <Compile Include="Documents\Configuration\TemplateProcessorElement.cs" />
+    <Compile Include="Documents\Configuration\TemplateProcessorElementCollection.cs" />
+    <Compile Include="Documents\DefaultDocumentTemplateProcessor.cs" />
+    <Compile Include="Documents\DocumentContentVersionRequestMethod.cs" />
+    <Compile Include="Documents\DocumentContentVersionRequestParameters.cs" />
+    <Compile Include="Documents\DocumentContentVersionState.cs" />
+    <Compile Include="Documents\DocumentRequestMethod.cs" />
+    <Compile Include="Documents\DocumentContentVersionEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentContentVersionEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\DocumentContentVersionRequestHandler.cs" />
+    <Compile Include="Documents\DocumentEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\DocumentRequestHandler.cs" />
+    <Compile Include="Documents\DocumentRequestParameters.cs" />
+    <Compile Include="Documents\DocumentTemplateEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentTemplateEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\DocumentTemplateRequestHandler.cs" />
+    <Compile Include="Documents\DocumentTypeEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentTypeEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\DocumentTypeRequestHandler.cs" />
+    <Compile Include="Documents\IDocumentTemplateProcessor.cs" />
+    <Compile Include="Documents\RelatedDocumentAction.cs" />
+    <Compile Include="Documents\UpdateStateRequest.cs" />
+    <Compile Include="DSFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMailClient.cs" />
+    <Compile Include="EMail\AttachmentInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\BaseIncidentBoxBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\BlackListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\Crc16.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\DefaultEMailIncidentMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\DefaultEMailIncidentMappingBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\DefaultIncidentBoxRuleFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\DefaultIncidentField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailIncidentMappingHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailIssueExternalRecipient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageAntiSpamRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageAntiSpamRuleRusult.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageAntiSpamRuleType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageLogSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailOutgoingMessage.cs" />
+    <Compile Include="EMail\EMailRouterIncidentBoxBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterOutputMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3Box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3BoxActivity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3BoxMessageLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3BoxSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterScheduleClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\ExceptionAbortEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\GeneralIncidentBoxBlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\HeaderInfoTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IEMailIncidentMapping.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxRule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxRuleFunction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentUserTicket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\MsgHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\MsgMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\NewPop3MessageEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\OutgoingEmailServiceConfig.cs" />
+    <Compile Include="EMail\OutgoingEmailServiceType.cs" />
+    <Compile Include="EMail\OutputMessageCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\Pattern.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\Pop3MessageModifier.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\Pop3SettingsResult.cs" />
+    <Compile Include="EMail\SmtpBox.cs" />
+    <Compile Include="EMail\SmtpClientUtility.cs" />
+    <Compile Include="EMail\SmtpClientException.cs" />
+    <Compile Include="EMail\TicketUidUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\TnefParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\ValidationHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\WhiteListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\XIbnHeaderCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileProviders\DatabaseFileProvider.cs" />
+    <Compile Include="Finance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForumHandlers\Web\BaseCommandManager.cs" />
+    <Compile Include="ForumHandlers\Web\CommandHandler.cs" />
+    <Compile Include="ForumHandlers\Web\ICommandHandler.cs" />
+    <Compile Include="ForumHandlers\NodeActions.cs" />
+    <Compile Include="ForumHandlers\Web\ValidateHandler.cs" />
+    <Compile Include="ForumHandlers\Web\ValidateStruct.cs" />
+    <Compile Include="FullTextSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gantt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GanttManager.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBNPrj2XML.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBNReportTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ImageThumbnail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMManager.cs" />
+    <Compile Include="Import\IncidentMappingMetaClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Import\UserMappingMetaClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Incident.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IncidentForum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Iso8601WeekNumber.cs" />
+    <Compile Include="Issue2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IssueRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JsDebugHandler.cs" />
+    <Compile Include="Ldap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\CommonFiles\License.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ListInfoBus.cs" />
+    <Compile Include="..\CommonFiles\Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DatabaseTransactionBridge.cs" />
+    <Compile Include="Messages\OutgoingMessageUtil.cs" />
+    <Compile Include="Messages\Configuration\MessagesSection.cs" />
+    <Compile Include="Messages\EmailDeliveryProvider.cs" />
+    <Compile Include="Messages\EmailEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\EmailUtil.cs" />
+    <Compile Include="Messages\IbnClientMessageDeliveryProvider.cs" />
+    <Compile Include="Messages\IbnClientMessageEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IbnClientMessageEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\InnerAlertService.cs" />
+    <Compile Include="Messages\InnerEmailAlertAttachment.cs" />
+    <Compile Include="Messages\InnerEmailAlertMessage.cs" />
+    <Compile Include="Messages\InnerIbnAlertMessage.cs" />
+    <Compile Include="Messages\MessageDeliveryProvider.cs" />
+    <Compile Include="Messages\DeliveryProviderConfig.cs" />
+    <Compile Include="Messages\OutgoingMessageQueueEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutgoingMessageQueueEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Messages\OutgoingMessageQueueMethod.cs" />
+    <Compile Include="Messages\OutgoingMessageQueuePlugin.cs" />
+    <Compile Include="Messages\OutgoingMessageQueueRequestHandler.cs" />
+    <Compile Include="Messages\IbnClientMessageRequestHandler.cs" />
+    <Compile Include="Messages\EmailRequestHandler.cs" />
+    <Compile Include="Messages\ResetDeliveryAttemptsRequest.cs" />
+    <Compile Include="MetaDataWrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaFieldFix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MHTHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PasswordUtil.cs" />
+    <Compile Include="Pop3ScheduleClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\BasePop3MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\FileExtendedPop3MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\IPersistPop3MessageHandlerControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\IPop3MessageHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\MsgHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3Box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3Manager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3ManagerConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3ManagerConfigHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3MessageHandlerInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3MessageHandlerInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\Pop3Parameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PortalConfig.cs" />
+    <Compile Include="ProcessHandlerScheduleClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QCalendarEntries.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QDocument.cs" />
+    <Compile Include="QIncident.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QLibrary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QMetaLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QPortfolio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QProject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QToDo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\CommonFiles\RegistrySettings.cs" />
+    <Compile Include="Reminder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReminderTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReportSystem\mcweb_ReportAceRow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mcweb_ReportAceRow.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSystem\ReportAce.cs" />
+    <Compile Include="ReportSystem\ReportAcl.cs" />
+    <Compile Include="ReportSystem\ReportDataRequest.cs" />
+    <Compile Include="ReportSystem\ReportDataResponse.cs" />
+    <Compile Include="ReportSystem\ReportEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSystem\ReportEntity.cs" />
+    <Compile Include="ReportSystem\Report.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Report.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSystem\Report.cs" />
+    <Compile Include="ReportSystem\ReportManager.cs" />
+    <Compile Include="ReportSystem\ReportRequestHandler.cs" />
+    <Compile Include="ReportSystem\ReportRequestMethod.cs" />
+    <Compile Include="ResourceChart.cs" />
+    <Compile Include="Resources\RssResource.ru.Designer.cs">
+      <DependentUpon>RssResource.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\RssResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RssResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Root.cs" />
+    <Compile Include="RssConfigurationHandle.cs" />
+    <Compile Include="Rss\DocumentType.cs" />
+    <Compile Include="Rss\DownloadManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rss\Pluralizer.cs" />
+    <Compile Include="Rss\RssCategory.cs" />
+    <Compile Include="Rss\RssChannel.cs" />
+    <Compile Include="Rss\RssCloud.cs" />
+    <Compile Include="Rss\RssDocument.cs" />
+    <Compile Include="Rss\RssDocumentBase.cs" />
+    <Compile Include="Rss\RssEnclosure.cs" />
+    <Compile Include="Rss\RssGenerator.cs" />
+    <Compile Include="Rss\RssGeneratorParameters.cs" />
+    <Compile Include="Rss\RssGuid.cs" />
+    <Compile Include="Rss\RssImage.cs" />
+    <Compile Include="Rss\RssItem.cs" />
+    <Compile Include="Rss\RssSeverityType.cs" />
+    <Compile Include="Rss\RssSkipDays.cs" />
+    <Compile Include="Rss\RssSkipHours.cs" />
+    <Compile Include="Rss\RssSource.cs" />
+    <Compile Include="Rss\RssTextInput.cs" />
+    <Compile Include="Rss\RssXmlHelper.cs" />
+    <Compile Include="Rss\RssXmlSchemaValidator.cs" />
+    <Compile Include="Schedule2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecureGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Security.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sharing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SkipApplyGlobalSubjectTemplate.cs" />
+    <Compile Include="SpecialMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ActualFinances.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BasePlan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BasePlanSlot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\Block.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BusinessScore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\Cell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\CellFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\CellPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\Column.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ExpressionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ExpressionParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\Function.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ProjectSpreadSheet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\Row.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\SpreadSheetDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\SpreadSheetTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\SpreadSheetTemplateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\SpreadSheetView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\TestSpreadSheetDocumentFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SystemEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Task2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeTracking.cs" />
+    <Compile Include="ToDo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToDo2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserDateTime.cs" />
+    <Compile Include="UserInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserLightProperty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserReport\IUserReportInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserReport\UserReportConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserReport\UserReportConfigHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserReport\UserReportInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserReport\UserReportInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserRoleHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebDAV\Common\ContentTypeResolver.cs" />
+    <Compile Include="WebDAV\Common\WebDavAuthHelper.cs" />
+    <Compile Include="WebDAV\Common\WebDavUrlBuilder.cs" />
+    <Compile Include="WebDAV\Definition\EmailStorageAbsolutePath.cs" />
+    <Compile Include="WebDAV\Definition\FileStorageAbsolutePath.cs" />
+    <Compile Include="WebDAV\Definition\MetaDataAbsolutePath.cs" />
+    <Compile Include="WebDAV\Definition\MetaDataPlusAbsolutePath.cs" />
+    <Compile Include="WebDAV\Definition\PluginTokenTypes.cs" />
+    <Compile Include="WebDAV\Definition\WebDavAbsolutePath.cs" />
+    <Compile Include="WebDAV\Common\WebDavAbstractFactory.cs" />
+    <Compile Include="WebDAV\Definition\WebDavTicket.cs" />
+    <Compile Include="WebDAV\Definition\WebDavTicketRequest.cs" />
+    <Compile Include="WebDAV\Definition\WebDavTicketResponse.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\EmailStorageProvider.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\MetaDataProvider.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\MetaFileStream.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\FileStorageProvider.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\MetaDataPlusProvider.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\FileStorageAutoCommitedTransactedStream.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\RootFolderStorageProvider.cs" />
+    <Compile Include="WebDAV\ElementStorageProvider\WebDavPropertyStorage.cs" />
+    <Compile Include="WebDAV\Handler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebDAV\RootFolderModule.cs" />
+    <Compile Include="WebDAV\Util\AbstractFactory.cs" />
+    <Compile Include="WebDAV\Util\IAbstractFactory.cs" />
+    <Compile Include="WebDAV\Util\IFactoryMethod.cs" />
+    <Compile Include="WebServicesHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebStubs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WeekItemInfo.cs" />
+    <None Include="..\CommonFiles\McLicenseVerify2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\CommonFiles\McLicenseVerify64.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Customization\CustomizationProfileCommandEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomizationProfileCommandEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Customization\CustomizationProfileEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomizationProfileEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Customization\CustomizationItemArgumentEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomizationItemArgumentEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Customization\CustomizationItemEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomizationItemEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Customization\CustomizationProfileUserEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CustomizationProfileUserEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Directory\DirectoryOrganizationalUnitEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DirectoryOrganizationalUnitEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Directory\DirectorySecureRoleEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DirectorySecureRoleEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Directory\DirectoryWorkGroupEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DirectoryWorkGroupEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Directory\DirectoryUserEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DirectoryUserEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Directory\DirectoryPrincipalEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DirectoryPrincipalEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Documents\DocumentContentVersionEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DocumentContentVersionEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Documents\DocumentEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DocumentEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Documents\DocumentTemplateEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DocumentTemplateEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Documents\DocumentTypeEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>DocumentTypeEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Messages\OutgoingMessageQueueEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>OutgoingMessageQueueEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Messages\IbnClientMessageEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>IbnClientMessageEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Messages\EmailEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>EmailEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="ReportSystem\mcweb_ReportAceRow.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>mcweb_ReportAceRow.cs</LastGenOutput>
+    </None>
+    <None Include="ReportSystem\mcweb_ReportAceSp.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>mcweb_ReportAceSp.sql</LastGenOutput>
+    </None>
+    <None Include="ReportSystem\mcweb_ReportAceSp.sql">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mcweb_ReportAceSp.mcgen</DependentUpon>
+    </None>
+    <None Include="ReportSystem\Report.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>Report.auto.cs</LastGenOutput>
+    </None>
+    <None Include="ReportSystem\ReportEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>ReportEntity.auto.cs</LastGenOutput>
+    </None>
+    <Content Include="Documents\Configuration\Document.config.xml" />
+    <Content Include="Messages\Configuration\MessageDelivery.Config.xml" />
+    <Content Include="ReportDataTemplate.xml" />
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RssResource.ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RssResource.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IncidentStateMachine.xml" />
+    <EmbeddedResource Include="Resources\MessageTypes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MessageTypes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Pop3MessageHadlers.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Pop3MessageHadlers.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QObjectsResource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\QObjectsResource.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReminderTemplates.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReminderTemplates.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReminderTypes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReminderTypes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\RssResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RssResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpecialMessageTemplates.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpecialMessageTemplates.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpecialMessageTypes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpecialMessageTypes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpreadSheets.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SpreadSheets.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemEventTemplates.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemEventTemplates.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemEventTypes.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SystemEventTypes.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\template.msg" />
+    <EmbeddedResource Include="Resources\VCardImport.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VCardImport.ru.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{C51F27A4-7178-4DB0-BF62-12EE4F41011D}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Database\Mediachase.Database.csproj">
+      <Project>{ED474037-35B8-4160-9917-40D2BD5DCDB6}</Project>
+      <Name>Mediachase.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Ibn.Assignments\Mediachase.Ibn.Assignments.csproj">
+      <Project>{F9510DA4-B188-436A-AB40-7783C3370834}</Project>
+      <Name>Mediachase.Ibn.Assignments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Ibn.Clients\Mediachase.Ibn.Clients.csproj">
+      <Project>{02A02DF3-E8BD-4393-8374-F543D95FAAD6}</Project>
+      <Name>Mediachase.Ibn.Clients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Ibn.IMHelper\Mediachase.Ibn.IMHelper.csproj">
+      <Project>{AF10473E-70DA-4682-9DE4-F7DFE3403870}</Project>
+      <Name>Mediachase.Ibn.IMHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Ibn.Web\Mediachase.Ibn.Web.csproj">
+      <Project>{08E59CC5-A093-4AE2-B416-5759D6D1A594}</Project>
+      <Name>Mediachase.Ibn.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.IbnNext.TimeTracking\Mediachase.IbnNext.TimeTracking.csproj">
+      <Project>{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}</Project>
+      <Name>Mediachase.IbnNext.TimeTracking</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.MetaDataPlus\Mediachase.MetaDataPlus.csproj">
+      <Project>{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}</Project>
+      <Name>Mediachase.MetaDataPlus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.SqlQueryCreator\Mediachase.SqlQueryCreator.csproj">
+      <Project>{ACD92555-6DE4-4735-AE24-06FDC4502ECA}</Project>
+      <Name>Mediachase.SqlQueryCreator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

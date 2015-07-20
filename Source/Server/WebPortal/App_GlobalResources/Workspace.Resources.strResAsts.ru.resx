@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbTitle">
+		<value>Информация, требующая ответа</value>
+	</data>
+	<data name="NI">
+		<value>Нераспределенные инциденты</value>
+	</data>
+	<data name="TS">
+		<value>Неутвержденные листы учета времени</value>
+	</data>
+	<data name="US">
+		<value>Нерассмотренные заявки на предоставление учетной записи</value>
+	</data>
+	<data name="AssignInc">
+		<value>Назначенные инциденты</value>
+	</data>
+	<data name="ApproveTS">
+		<value>Утвержденные листы учета времени</value>
+	</data>
+	<data name="ApproveUS">
+		<value>Утвержденные новые пользователи</value>
+	</data>
+	<data name="AC">
+		<value>Выполненные задачи и поручения, требующие подтверждения</value>
+	</data>
+	<data name="PA">
+		<value>Задачи и поручения, ожидающие моего решения</value>
+	</data>
+	<data name="NA">
+		<value>Нераспределенные задачи и поручения</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="FinishDate">
+		<value>Срок</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет:</value>
+	</data>
+	<data name="MI">
+		<value>Внешние неутвержденные инциденты</value>
+	</data>
+	<data name="Sender">
+		<value>Отправитель</value>
+	</data>
+	<data name="PendingAssignments">
+		<value>Запросы на участие в мероприятиях, требующие ответа</value>
+	</data>
+	<data name="Location">
+		<value>Расположение</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="UserName">
+		<value>Имя пользователя</value>
+	</data>
+	<data name="Email">
+		<value>E-mail</value>
+	</data>
+	<data name="Created">
+		<value>Создан</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="Organizer">
+		<value>Организатор</value>
+	</data>
+	<data name="From">
+		<value>С</value>
+	</data>
+	<data name="To">
+		<value>До</value>
+	</data>
+	<data name="CreatedBy">
+		<value>Создал</value>
+	</data>
+	<data name="CA">
+		<value>Запланированные мероприятия, ожидающие моего решения</value>
+	</data>
+	<data name="IA">
+		<value>Инциденты, ожидающие подтверждения моего участия</value>
+	</data>
+	<data name="Activation">
+		<value>Дата активации</value>
+	</data>
+	<data name="tPendTimesheets">
+		<value>Листы учета времени, ожидающие утверждения</value>
+	</data>
+	<data name="tWeek">
+		<value>Неделя</value>
+	</data>
+	<data name="tPendTSS">
+		<value>листов, ожидающих утверждения</value>
+	</data>
+	<data name="tActionCenter">
+		<value>Важная информация</value>
+	</data>
+	<data name="AP">
+		<value>Активные проекты</value>
+	</data>
+	<data name="PercentCompleted">
+		<value>Выполнено</value>
+	</data>
+	<data name="tHelpMenuText">
+		<value>Используйте приведенные ниже ссылки для просмотра и управления имеющими к вам отношение проектами, задачами, мероприятиями и инцидентами.</value>
+	</data>
+	<data name="tNoItems">
+		<value>Нет соответствующих объектов</value>
+	</data>
+	<data name="Role">
+		<value>Роль</value>
+	</data>
+	<data name="tTeamMember">
+		<value>Исполнитель</value>
+	</data>
+	<data name="tSponsor">
+		<value>Спонсор</value>
+	</data>
+	<data name="tStakeholder">
+		<value>Заинтересованное лицо</value>
+	</data>
+	<data name="tManager">
+		<value>Менеджер</value>
+	</data>
+	<data name="tExeManager">
+		<value>Исполнительный менеджер</value>
+	</data>
+	<data name="TargetDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="View">
+		<value>Детальная информация</value>
+	</data>
+	<data name="Edit">
+		<value>Утвердить</value>
+	</data>
+	<data name="ND">
+		<value>Нераспределенные документы</value>
+	</data>
+	<data name="DA">
+		<value>Документы, ожидающие моего решения</value>
+	</data>
+	<data name="AI">
+		<value>Открытые инциденты</value>
+	</data>
+	<data name="AD">
+		<value>Активные документы</value>
+	</data>
+	<data name="DR">
+		<value>Отклоненные запросы</value>
+	</data>
+	<data name="tNoDocs">
+		<value>В данный момент вы не работаете ни над одним документом.</value>
+	</data>
+	<data name="tNoIssues">
+		<value>В данный момент вы не работаете ни над одним инцидентом.</value>
+	</data>
+	<data name="tNoPrjs">
+		<value>В данный момент вы не участвуете ни в одном проекте.</value>
+	</data>
+</root>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_SelectObject_Columns" primaryKey="ProjectId">
+				<Column id="colId" type="default" width="80" title="{IbnFramework.Incident:IssCode}" sortExpression="ProjectId" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Text.Grid.Project.ProjectId.SelectObject.ascx" />
+				<Column id="colTitle" type="default" width="400" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Text.Grid.Project.Title.SelectObject.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_Project_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Project_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CheckSelected()</ClientScript>
+			</Command>			 
+		</add>
+	</Commands>
+</MetaView>

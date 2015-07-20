@@ -1,0 +1,450 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C51F27A4-7178-4DB0-BF62-12EE4F41011D}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Mediachase.IBN.Database</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.IBN.Database</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.5.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.WebSaltatoryControl, Version=1.0.2775.28004, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.WebSaltatoryControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Assignments\WorkflowParticipantRow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkflowParticipantRow.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="ControlSystem\DBAccessControlList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBFileStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBFolder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBForum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBReportAccessControList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\DBUserRole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\SqlBlobStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\SqlContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\SQLHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlSystem\SqlParameterList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbActiveDirectory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbAlert2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBCalendar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCalendarEntry2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBCompany.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBContentType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBDocument.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbDocument2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBFinance.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbFullTextSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbHelper2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBIMGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBIncident.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbIssue2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbIssueRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbLdap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBListInfo.cs" />
+    <Compile Include="DbPop3MailRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBPrincipal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBProject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbProject2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBProjectGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBProjectTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBRoot.cs" />
+    <Compile Include="DbSchedule2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBSystemEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbTask2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbTimeTracking.cs" />
+    <Compile Include="DBToDo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbTodo2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBWebStubs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\DbEMailTempFile.cs" />
+    <Compile Include="EMail\DefaultIncidentFieldRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailIncidentMappingRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailIssueExternalRecipientRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageAntiSpamItemRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageAntiSpamRuleRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageLogRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageLogSettingsRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailMessageRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3BoxActivityRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\EMailRouterPop3BoxRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxRuleFunctionRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentBoxRuleRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\IncidentUserTicketRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\ManualAssignEMailMessageRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\OutgoingEmailServiceConfigRow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutgoingEmailServiceConfigRow.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="EMail\PendingEMailMessageRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\CommonFiles\IbnConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EMail\SmtpBoxRow.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmtpBoxRow.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="IbnWebSaltatorySqlSettingsStorage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="McTimeZone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pop3\DBPop3Box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PortalConfigRow.cs" />
+    <Compile Include="SpreadSheet\ActualFinancesRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BasePlanSlotRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BusinessScoreDataRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\BusinessScoreRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ProjectBasePlanInfoRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ProjectSpreadSheetDataRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ProjectSpreadSheetRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpreadSheet\ProjectTaskBasePlanRow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SqlDataReaderWithTimeOffset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebDAV\WebDavStorageElementPropertiesRow.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDavStorageElementPropertiesRow.auto.mcgen</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.MetaDataPlus\Mediachase.MetaDataPlus.csproj">
+      <Project>{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}</Project>
+      <Name>Mediachase.MetaDataPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assignments\WorkflowParticipantSp.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WorkflowParticipantSp.sql</LastGenOutput>
+    </None>
+    <None Include="Assignments\WorkflowParticipantSp.sql">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkflowParticipantSp.mcgen</DependentUpon>
+    </None>
+    <None Include="EMail\OutgoingEmailServiceConfig.Sp.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>OutgoingEmailServiceConfig.Sp.sql</LastGenOutput>
+    </None>
+    <None Include="EMail\OutgoingEmailServiceConfig.Sp.sql">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutgoingEmailServiceConfig.Sp.mcgen</DependentUpon>
+    </None>
+    <None Include="EMail\OutgoingEmailServiceConfigRow.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>OutgoingEmailServiceConfigRow.cs</LastGenOutput>
+    </None>
+    <None Include="EMail\SmtpBox.Sp.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>SmtpBox.Sp.sql</LastGenOutput>
+    </None>
+    <None Include="EMail\SmtpBox.Sp.sql">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SmtpBox.Sp.mcgen</DependentUpon>
+    </None>
+    <None Include="EMail\SmtpBoxRow.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>SmtpBoxRow.cs</LastGenOutput>
+    </None>
+    <None Include="WebDAV\WebDavStorageElementPropertiesRow.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WebDavStorageElementPropertiesRow.auto.cs</LastGenOutput>
+    </None>
+    <None Include="WebDAV\WebDavStorageElementPropertiesSP.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WebDavStorageElementPropertiesSP.sql</LastGenOutput>
+    </None>
+    <None Include="WebDAV\WebDavStorageElementPropertiesSP.sql">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WebDavStorageElementPropertiesSP.mcgen</DependentUpon>
+    </None>
+    <None Include="Assignments\WorkflowParticipantRow.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WorkflowParticipantRow.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

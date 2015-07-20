@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_WF_SelectUser">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.BusinessProcess:SelectNewParticipant}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=User&amp;ReturnCommand=MC_WF_Reassign&amp;ObjectId=[ClientParam:AssignmentId]</Url>
+				<Width>640</Width>
+				<Height>440</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_WF_Reassign">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.ReassignHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_WF_EditAssignment">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.BusinessProcess:AssignmentEditing}</PopupTitle>
+				<Url>~/Apps/BusinessProcess/Pages/AssignmentEdit.aspx?ObjectId=[ClientParam:AssignmentId]&amp;ReturnCommand=MC_WF_EditAssignment</Url>
+				<Width>410</Width>
+				<Height>280</Height>
+				<Left>250</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<RefreshMethod>RefreshAssignments</RefreshMethod>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

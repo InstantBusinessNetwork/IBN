@@ -1,0 +1,1447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanelSqlServerSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanelSqlServerSettings.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxSqlAdminUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="textBoxSqlAdminUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxSqlAdminUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 43</value>
+  </data>
+  <data name="textBoxSqlAdminUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxSqlAdminUser.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxSqlAdminUser.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAdminUser.Name" xml:space="preserve">
+    <value>textBoxSqlAdminUser</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAdminUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAdminUser.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAdminUser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxSqlServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxSqlServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxSqlServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="textBoxSqlServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxSqlServer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxSqlServer.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlServer.Name" xml:space="preserve">
+    <value>textBoxSqlServer</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlServer.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlServer.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelSqlAdminUser.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelSqlAdminUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlAdminUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlAdminUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 40</value>
+  </data>
+  <data name="labelSqlAdminUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelSqlAdminUser.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelSqlAdminUser.Text" xml:space="preserve">
+    <value>Administrator User:</value>
+  </data>
+  <data name="labelSqlAdminUser.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAdminUser.Name" xml:space="preserve">
+    <value>labelSqlAdminUser</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAdminUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAdminUser.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAdminUser.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelSqlAuthentication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelSqlAuthentication.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlAuthentication.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlAuthentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="labelSqlAuthentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelSqlAuthentication.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelSqlAuthentication.Text" xml:space="preserve">
+    <value>Authentication:</value>
+  </data>
+  <data name="labelSqlAuthentication.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAuthentication.Name" xml:space="preserve">
+    <value>labelSqlAuthentication</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAuthentication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAuthentication.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAuthentication.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxSqlAuthentication.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxSqlAuthentication.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxSqlAuthentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 23</value>
+  </data>
+  <data name="textBoxSqlAuthentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxSqlAuthentication.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxSqlAuthentication.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAuthentication.Name" xml:space="preserve">
+    <value>textBoxSqlAuthentication</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAuthentication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAuthentication.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAuthentication.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 63</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxSqlAccountForIbnPortal.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAccountForIbnPortal.Name" xml:space="preserve">
+    <value>textBoxSqlAccountForIbnPortal</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAccountForIbnPortal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAccountForIbnPortal.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;textBoxSqlAccountForIbnPortal.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="labelSqlAccountForIbnPortal.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAccountForIbnPortal.Name" xml:space="preserve">
+    <value>labelSqlAccountForIbnPortal</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAccountForIbnPortal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAccountForIbnPortal.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;labelSqlAccountForIbnPortal.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelSqlServer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelSqlServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlServer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelSqlServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelSqlServer.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelSqlServer.Text" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="labelSqlServer.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServer.Name" xml:space="preserve">
+    <value>labelSqlServer</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServer.Parent" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tableLayoutPanelSqlServerSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="tableLayoutPanelSqlServerSettings.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanelSqlServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 85</value>
+  </data>
+  <data name="tableLayoutPanelSqlServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSqlServerSettings.Name" xml:space="preserve">
+    <value>tableLayoutPanelSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSqlServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSqlServerSettings.Parent" xml:space="preserve">
+    <value>groupBoxSqlSettings</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanelSqlServerSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanelSqlServerSettings.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxSqlAdminUser" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxSqlServer" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelSqlAdminUser" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelSqlAuthentication" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxSqlAuthentication" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="textBoxSqlAccountForIbnPortal" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelSqlAccountForIbnPortal" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="labelSqlServer" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,200,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 104</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonEditSqlServerSettings.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;buttonEditSqlServerSettings.Name" xml:space="preserve">
+    <value>buttonEditSqlServerSettings</value>
+  </data>
+  <data name="&gt;&gt;buttonEditSqlServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonEditSqlServerSettings.Parent" xml:space="preserve">
+    <value>groupBoxSqlSettings</value>
+  </data>
+  <data name="&gt;&gt;buttonEditSqlServerSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBoxSqlSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxSqlSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxSqlSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 241</value>
+  </data>
+  <data name="groupBoxSqlSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 133</value>
+  </data>
+  <data name="groupBoxSqlSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="groupBoxSqlSettings.Text" xml:space="preserve">
+    <value>SQL Server Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSqlSettings.Name" xml:space="preserve">
+    <value>groupBoxSqlSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSqlSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSqlSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxSqlSettings.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxServerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxServerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="textBoxServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxServerName.Text" xml:space="preserve">
+    <value>(localhost)</value>
+  </data>
+  <data name="&gt;&gt;textBoxServerName.Name" xml:space="preserve">
+    <value>textBoxServerName</value>
+  </data>
+  <data name="&gt;&gt;textBoxServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxServerName.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxServerName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>IP Address:</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxIPAddress.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxIPAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 23</value>
+  </data>
+  <data name="textBoxIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxIPAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxIPAddress.Text" xml:space="preserve">
+    <value>127.0.0.1</value>
+  </data>
+  <data name="&gt;&gt;textBoxIPAddress.Name" xml:space="preserve">
+    <value>textBoxIPAddress</value>
+  </data>
+  <data name="&gt;&gt;textBoxIPAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIPAddress.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxIPAddress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelServerName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelServerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelServerName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelServerName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="labelServerName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelServerName.Name" xml:space="preserve">
+    <value>labelServerName</value>
+  </data>
+  <data name="&gt;&gt;labelServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelServerName.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelServerName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxTotalCompanies.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxTotalCompanies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 43</value>
+  </data>
+  <data name="textBoxTotalCompanies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>356, 13</value>
+  </data>
+  <data name="textBoxTotalCompanies.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxTotalCompanies.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxTotalCompanies.Name" xml:space="preserve">
+    <value>textBoxTotalCompanies</value>
+  </data>
+  <data name="&gt;&gt;textBoxTotalCompanies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxTotalCompanies.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxTotalCompanies.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelTotalCompanies.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelTotalCompanies.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelTotalCompanies.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelTotalCompanies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 40</value>
+  </data>
+  <data name="labelTotalCompanies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelTotalCompanies.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelTotalCompanies.Text" xml:space="preserve">
+    <value>Total Companies:</value>
+  </data>
+  <data name="labelTotalCompanies.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelTotalCompanies.Name" xml:space="preserve">
+    <value>labelTotalCompanies</value>
+  </data>
+  <data name="&gt;&gt;labelTotalCompanies.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelTotalCompanies.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;labelTotalCompanies.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 63</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 13</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="textBoxCommonComponentVersion.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommonComponentVersion.Name" xml:space="preserve">
+    <value>textBoxCommonComponentVersion</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommonComponentVersion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommonComponentVersion.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;textBoxCommonComponentVersion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Common Component Version:</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 14</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 83</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>groupBoxServerSettings</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxServerName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxIPAddress" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelServerName" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxTotalCompanies" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelTotalCompanies" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxCommonComponentVersion" Row="3" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="label1" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,200,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,Absolute,20,Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxServerSettings.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxServerSettings.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxServerSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 60</value>
+  </data>
+  <data name="groupBoxServerSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 103</value>
+  </data>
+  <data name="groupBoxServerSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxServerSettings.Text" xml:space="preserve">
+    <value>Server Information</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServerSettings.Name" xml:space="preserve">
+    <value>groupBoxServerSettings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServerSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServerSettings.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxServerSettings.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxLicenseName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxLicenseName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxLicenseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 3</value>
+  </data>
+  <data name="textBoxLicenseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 13</value>
+  </data>
+  <data name="textBoxLicenseName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseName.Name" xml:space="preserve">
+    <value>textBoxLicenseName</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseName.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseName.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelLicenseExpirationDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelLicenseExpirationDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelLicenseExpirationDate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLicenseExpirationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="labelLicenseExpirationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 23</value>
+  </data>
+  <data name="labelLicenseExpirationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelLicenseExpirationDate.Text" xml:space="preserve">
+    <value>Expiration Date:</value>
+  </data>
+  <data name="labelLicenseExpirationDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseExpirationDate.Name" xml:space="preserve">
+    <value>labelLicenseExpirationDate</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseExpirationDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseExpirationDate.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseExpirationDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxLicenseExpirationDate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxLicenseExpirationDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxLicenseExpirationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 23</value>
+  </data>
+  <data name="textBoxLicenseExpirationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>408, 13</value>
+  </data>
+  <data name="textBoxLicenseExpirationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseExpirationDate.Name" xml:space="preserve">
+    <value>textBoxLicenseExpirationDate</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseExpirationDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseExpirationDate.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;textBoxLicenseExpirationDate.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelLicenseName.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelLicenseName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelLicenseName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelLicenseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelLicenseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 20</value>
+  </data>
+  <data name="labelLicenseName.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelLicenseName.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="labelLicenseName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseName.Name" xml:space="preserve">
+    <value>labelLicenseName</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseName.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;labelLicenseName.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 46</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>groupBoxLicense</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxLicenseName" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelLicenseExpirationDate" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxLicenseExpirationDate" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelLicenseName" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,200,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="groupBoxLicense.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxLicense.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxLicense.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 163</value>
+  </data>
+  <data name="groupBoxLicense.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 78</value>
+  </data>
+  <data name="groupBoxLicense.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxLicense.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLicense.Name" xml:space="preserve">
+    <value>groupBoxLicense</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLicense.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLicense.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxLicense.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonAspConfigure.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonAspConfigure.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="buttonAspConfigure.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonAspConfigure.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 82</value>
+  </data>
+  <data name="buttonAspConfigure.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonAspConfigure.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="buttonAspConfigure.Text" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="&gt;&gt;buttonAspConfigure.Name" xml:space="preserve">
+    <value>buttonAspConfigure</value>
+  </data>
+  <data name="&gt;&gt;buttonAspConfigure.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonAspConfigure.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;buttonAspConfigure.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBoxAspDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxAspDatabase.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAspDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 3</value>
+  </data>
+  <data name="textBoxAspDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 13</value>
+  </data>
+  <data name="textBoxAspDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="textBoxAspDatabase.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspDatabase.Name" xml:space="preserve">
+    <value>textBoxAspDatabase</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspDatabase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspDatabase.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspDatabase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelAspSiteId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelAspSiteId.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAspSiteId.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAspSiteId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 20</value>
+  </data>
+  <data name="labelAspSiteId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 23</value>
+  </data>
+  <data name="labelAspSiteId.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="labelAspSiteId.Text" xml:space="preserve">
+    <value>Web Site Id:</value>
+  </data>
+  <data name="labelAspSiteId.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelAspSiteId.Name" xml:space="preserve">
+    <value>labelAspSiteId</value>
+  </data>
+  <data name="&gt;&gt;labelAspSiteId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAspSiteId.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;labelAspSiteId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxAspSiteId.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="textBoxAspSiteId.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAspSiteId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="textBoxAspSiteId.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 13</value>
+  </data>
+  <data name="textBoxAspSiteId.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBoxAspSiteId.Text" xml:space="preserve">
+    <value>sample text</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspSiteId.Name" xml:space="preserve">
+    <value>textBoxAspSiteId</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspSiteId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspSiteId.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;textBoxAspSiteId.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelAspDatabase.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelAspDatabase.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAspDatabase.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAspDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="labelAspDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 20</value>
+  </data>
+  <data name="labelAspDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="labelAspDatabase.Text" xml:space="preserve">
+    <value>Database:</value>
+  </data>
+  <data name="labelAspDatabase.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelAspDatabase.Name" xml:space="preserve">
+    <value>labelAspDatabase</value>
+  </data>
+  <data name="&gt;&gt;labelAspDatabase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAspDatabase.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;labelAspDatabase.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 36</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>505, 46</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="textBoxAspDatabase" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelAspSiteId" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="textBoxAspSiteId" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="labelAspDatabase" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,100,AutoSize,0" /&gt;&lt;Rows Styles="Absolute,20,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="linkLabelAspUrl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="linkLabelAspUrl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="linkLabelAspUrl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelAspUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 19</value>
+  </data>
+  <data name="linkLabelAspUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 14</value>
+  </data>
+  <data name="linkLabelAspUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkLabelAspUrl.Text" xml:space="preserve">
+    <value>http://localhost/asp</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAspUrl.Name" xml:space="preserve">
+    <value>linkLabelAspUrl</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAspUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAspUrl.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;linkLabelAspUrl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelAspUrl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="labelAspUrl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAspUrl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAspUrl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAspUrl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 19</value>
+  </data>
+  <data name="labelAspUrl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 14</value>
+  </data>
+  <data name="labelAspUrl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelAspUrl.Text" xml:space="preserve">
+    <value>URL:</value>
+  </data>
+  <data name="labelAspUrl.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;labelAspUrl.Name" xml:space="preserve">
+    <value>labelAspUrl</value>
+  </data>
+  <data name="&gt;&gt;labelAspUrl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAspUrl.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;labelAspUrl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonUninstallAsp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonUninstallAsp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="buttonUninstallAsp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonUninstallAsp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 82</value>
+  </data>
+  <data name="buttonUninstallAsp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonUninstallAsp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="buttonUninstallAsp.Text" xml:space="preserve">
+    <value>Uninstall</value>
+  </data>
+  <data name="&gt;&gt;buttonUninstallAsp.Name" xml:space="preserve">
+    <value>buttonUninstallAsp</value>
+  </data>
+  <data name="&gt;&gt;buttonUninstallAsp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonUninstallAsp.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;buttonUninstallAsp.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="buttonInstallAsp.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonInstallAsp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="buttonInstallAsp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="buttonInstallAsp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>498, 82</value>
+  </data>
+  <data name="buttonInstallAsp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="buttonInstallAsp.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="buttonInstallAsp.Text" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="&gt;&gt;buttonInstallAsp.Name" xml:space="preserve">
+    <value>buttonInstallAsp</value>
+  </data>
+  <data name="&gt;&gt;buttonInstallAsp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonInstallAsp.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;buttonInstallAsp.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 19</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 48</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>AutoSize</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBoxAsp.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="groupBoxAsp.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxAsp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 374</value>
+  </data>
+  <data name="groupBoxAsp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 116</value>
+  </data>
+  <data name="groupBoxAsp.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBoxAsp.Text" xml:space="preserve">
+    <value>Application Service Provider</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAsp.Name" xml:space="preserve">
+    <value>groupBoxAsp</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAsp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAsp.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBoxAsp.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="logoControl1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOwAAAA5CAIAAAC6QlDfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAALEwAA
+        CxMBAJqcGAAAAXRJREFUeF7t3NFpQmEUBOGT/ktKE2qMiIjRGMGISkpIUsbAtxXsnR0O/C/3ZbfbjSCQ
+        JvAjCMQJzFMQiBOYhyAQJ+ASx6+Q+s8niVmQJ0Di/IQ+gMQcyBPwsIs/atR/PEjMgjwBEucn9AFzFwTi
+        BEgcH1D9+31ugkCcAInjA6p/u823IBAnMFdBIE6AxPEB1b9eScyCPIG5CAJxAiSOD6j+5TJfgkCcwJwF
+        gTgBEscHVP98nk9BIE5gToJAnMAcBYE4ARLHB1T/eJwPQSBOYA6CQJwAieMDqn84zF4QiBMgcXxA9ff7
+        +fvJtiCQJkDi9HzK/xMgMQ/yBGYrCMQJkDg+oPrb7WwEgTgBEscHVH+zmXdBIE5g1oJAnACJ4wOqv17P
+        myAQJzArQSBOgMTxAdVfrWYpCMQJuMROWZ6ASxy/Quovl7MQBOIEXGKnLE+AxPkJfQCJOZAnQOL8hD7A
+        wy7+qFF/sfBXzPgfIdU/neZVEIgT+AUORrl2mCZNwQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="logoControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="logoControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="logoControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>579, 57</value>
+  </data>
+  <data name="logoControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;logoControl1.Name" xml:space="preserve">
+    <value>logoControl1</value>
+  </data>
+  <data name="&gt;&gt;logoControl1.Type" xml:space="preserve">
+    <value>Mediachase.Ibn.ConfigurationUI.LogoControl, Mediachase.Ibn.ConfigurationUI, Version=4.7.52.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logoControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;logoControl1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>585, 511</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ServerFeaturesControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

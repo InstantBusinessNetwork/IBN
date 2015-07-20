@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="AddTask">
+		<value>Add Task</value>
+	</data>
+	<data name="tTitle">
+		<value>Gantt Chart View</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="tLegend">
+		<value>Legend</value>
+	</data>
+	<data name="tActive">
+		<value>Active</value>
+	</data>
+	<data name="tCompleted">
+		<value>Completed</value>
+	</data>
+
+	<data name="PointStart">
+		<value>Target Start</value>
+	</data>
+	<data name="PointFinish">
+		<value>Target Finish</value>
+	</data>
+	<data name="PointActualStart">
+		<value>Actual Start</value>
+	</data>
+	<data name="PointActualFinish">
+		<value>Actual Finish</value>
+	</data>
+	<data name="Interval">
+		<value>Target Interval</value>
+	</data>
+	<data name="IntervalActual">
+		<value>Actual Interval</value>
+	</data>
+	<data name="IntervalProgress">
+		<value>Progress</value>
+	</data>
+	<data name="IntervalSummary">
+		<value>Summary</value>
+	</data>
+	<data name="PointMilestone">
+		<value>Milestone</value>
+	</data>
+	<data name="PointMilestoneBasePlanRight">
+		<value>Milestone - BasePlan/Right</value>
+	</data>
+	<data name="PointMilestoneBasePlanLeft">
+		<value>Milestone - BasePlan/Left</value>
+	</data>
+	<data name="IntervalProject">
+		<value>Project Interval</value>
+	</data>
+</root>

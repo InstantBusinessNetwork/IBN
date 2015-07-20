@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="ViewBlock_Tab1" name="{IbnFramework.Common:ControlSet}">
+			<Placeholder id="ViewBlock_Tab1.Placeholder_1">
+				<Control id="ViewBlock_Tab1.Placeholder_1.Control_1" path="~/Apps/WidgetEngine/Modules/AddFramePopup.ascx">
+					<Property name="ViewMode" value="0" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="ViewBlock_Tab1.Placeholder_2" />
+			<Placeholder id="ViewBlock_Tab1.Placeholder_3" />
+			<Placeholder id="ViewBlock_Tab1.Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

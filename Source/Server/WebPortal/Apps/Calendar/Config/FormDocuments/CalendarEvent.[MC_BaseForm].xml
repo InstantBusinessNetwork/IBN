@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="ed233d1d823c4f75a1eb2b63413ba0c9" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Calendar:CalendarEvent}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="2c19128adaca4e579c804c348f869b5a" cellPadding="5" columns="50%;*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="2249e47ba631449f88eae6abf94debde">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Subject" readOnly="False" uid="6b03938e3d64496e94f80cbeb59ae718" />
+					</Item>
+					<Item rowIndex="1" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="130px" uid="5148e35666144c29b36a829934c971a9">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Start" readOnly="False" uid="20d91f8576e34496bb9c36555948bc4c" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="2" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="613704874e8d4dc3941685e97b6b5d7e">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Body" readOnly="False" uid="5f349c18fecd4e9e81b080ec623c623a" />
+					</Item>
+					<Item rowIndex="2" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="130px" uid="9a3f785566e54fd0b9c9896ad46e6b98">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="End" readOnly="False" uid="1a5f55e2ef124d15be99b3b26302df06" />
+					</Item>
+					<Item rowIndex="3" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="130px" uid="a40913ff5dac46d39191524d39770e11">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Importance" readOnly="False" uid="8f3618c0260046be8158fce054bbd7a7" />
+					</Item>
+					<Item rowIndex="4" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="1447ff7de50247549a70732ac1be53ae">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Location" readOnly="False" uid="5bf99ce373494f72b9c1ac94416ac485" />
+					</Item>
+					<Item rowIndex="4" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="130px" uid="73967901b65141f786cb62607624af3a">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Categories" readOnly="False" uid="c043ce510dd54eb9ab20e5151134e1a2" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

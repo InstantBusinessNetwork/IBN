@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.ListInfo:NewRow}" imageUrl="~/Layouts/Images/listsnew.gif" commandName="MC_MUI_NewItem" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_MUI_DeleteSelected" itemSplitter="Right"></Button>
+
+			<Menu id="ActionsMenu" text="{IbnFramework.ListInfo:tActions}" itemSplitter="Right">
+				<Button id="ManageListButton" text="{IbnFramework.ListInfo:ListManagement}" imageUrl="~/Layouts/Images/customize.gif" commandName="MC_ListApp_ManageList"></Button>
+				<Button id="ImportListButton" text="{IbnFramework.ListInfo:ImportListMenu}" imageUrl="~/Layouts/Images/import.gif" commandName="MC_ListApp_ImportWizard"></Button>
+				<Button id="ExportExelButton" text="{IbnFramework.Common:ExportToExcel}" commandName="MC_ListApp_ExportExcel" imageUrl="~/Images/IbnFramework/xlsexport.gif"></Button>
+				<Button id="ExportXmlButton" text="{IbnFramework.Common:ExportToXML}" commandName="MC_ListApp_ExportXml" imageUrl="~/layouts/images/icons/xmlexport.gif"></Button>
+				<Button id="CreateTemplateButton" text="{IbnFramework.ListInfo:tListTemplateCreate}" imageUrl="~/layouts/images/icons/newtemplate.gif" commandName="MC_ListApp_CreateTemplate"></Button>
+				<Button id="SecurityButton" text="{IbnFramework.ListInfo:Security}" imageUrl="~/Layouts/Images/icon-key.gif" commandName="MC_ListApp_Security"></Button>
+				<Button id="SystemNotificationsButton" text="{IbnFramework.ListInfo:SystemNotifications}" commandName="MC_ListApp_SystemNotifications" imageUrl="~/Layouts/Images/accept_1.gif"></Button>
+				<Button id="AddToFavoritesButton" text="{IbnFramework.ListInfo:AddToFavorites}" commandName="MC_ListApp_AddToFavorites" imageUrl="~/layouts/images/Favorites.gif"></Button>
+			</Menu>
+			<Button id="PrinterVersionButton" text="{IbnFramework.Common:PrinterVersion}" commandName="MC_ListApp_PrinterVersion" imageUrl="~/Images/IbnFramework/Print.png" itemSplitter="Right"></Button>
+			<Button id="FolderButton" text="Rss" imageUrl="~/Images/IbnFramework/rss16.png" commandName="MC_ListApp_RssRedirect" align="Left" itemSplitter="Right"></Button>
+			<!--<Splitter id="ActionsSplitter2"></Splitter>-->
+			<Button id="FolderButton" text="{IbnFramework.ListInfo:ListFolderList}" imageUrl="~/Layouts/Images/cancel.gif" commandName="MC_ListApp_ToFolder" align="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_ListApp_Columns">
+				<Column id="472F004E-AF2F-4d64-91A0-17B37248A71C" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="MC_ListApp_ViewItem" paddingRight="5" tooltip="{IbnFramework.ListInfo:ItemView}" />
+					<Item imageUrl="~/Images/IbnFramework/list_history.gif" commandName="MC_ListApp_ViewHistory" paddingRight="5" tooltip="{IbnFramework.ListInfo:History}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="MC_ListApp_EditItem" paddingRight="5" tooltip="{IbnFramework.ListInfo:Edit}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+
+			<Command id="MC_ListApp_ToFolder">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.ListFolderRedirect, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ListApp_RssRedirect">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.RssLinkHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.RssEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			
+			<Command id="MC_MUI_NewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:NewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className={QueryString:ClassName}&amp;CommandName=MC_ListApp_EditItem</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_EditItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:EditRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className={QueryString:ClassName}&amp;ObjectId=[ClientParam:primaryKeyId]&amp;CommandName=MC_ListApp_EditItem</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_ViewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:ViewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityViewPopup.aspx?formName=[MC_GeneralViewForm]&amp;className=[ClientParam:className]&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ListApp_ViewHistory">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/HistoryDataView.aspx?ClassName={QueryString:ClassName}&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CheckHistoryHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_ListApp_ViewReference">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:ViewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityViewPopup.aspx?formName=[MC_GeneralViewForm]&amp;className=[ClientParam:className]&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Left>10</Left>
+				<Top>10</Top>
+				<Drag>False</Drag>
+			</Command>
+			<Command id="MC_MUI_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteSelectedEntityHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanWriteHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>False</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>False</Drag>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ProfileEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEditAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>False</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNewAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>False</Drag>
+			</Command>
+
+			<Command id="MC_MUI_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_ExportTrue">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.EntityListExport, Mediachase.UI.Web</Handler>
+			</Command>
+
+
+			<Command id="MC_ListApp_ManageList">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListInfoView.aspx?class={QueryString:ClassName}</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAdminHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="MC_ListApp_ImportWizard">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ImportWizard.aspx?ListId={QueryString:ClassName}&amp;CommandName=MC_ListApp_ImportWizard</Url>
+				<Width>680</Width>
+				<Height>500</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_ListApp_ExportExcel">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:ExportToExcel}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityExportSettings.aspx?GridId=[ClientParam:GridId]&amp;ClassName={QueryString:ClassName}&amp;refreshCommand=MC_MUI_ExportTrue&amp;Type=Excel</Url>
+				<Width>400</Width>
+				<Height>255</Height>
+				<Top>50</Top>
+				<Drag>False</Drag>
+			</Command>
+			
+			<Command id="MC_ListApp_ExportXml">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:ExportToXML}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityExportSettings.aspx?GridId=[ClientParam:GridId]&amp;ClassName={QueryString:ClassName}&amp;refreshCommand=MC_MUI_ExportTrue&amp;Type=Xml</Url>
+				<Width>400</Width>
+				<Height>255</Height>
+				<Top>50</Top>
+				<Drag>False</Drag>
+			</Command>
+
+			<Command id="MC_ListApp_PrinterVersion">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.PrinterVersionHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ListApp_CreateTemplate">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListTemplateCreate.aspx?class={QueryString:ClassName}</Url>
+				<Width>500</Width>
+				<Height>375</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+
+			<Command id="MC_ListApp_Security">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListSecurity.aspx?ClassName={QueryString:ClassName}</Url>
+				<Width>600</Width>
+				<Height>305</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.CanAdminHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="MC_ListApp_SystemNotifications">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Directory/SystemNotificationForObject.aspx?ClassName={QueryString:ClassName}</Url>
+			</Command>
+
+			<Command id="MC_ListApp_AddToFavorites">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.AddToFaviritesHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

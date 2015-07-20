@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="User_SelectObject_Columns" primaryKey="PrincipalId">
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.Common:tName}" sortExpression="DisplayName" dataField="DisplayName" />
+				<Column id="colDepartment" type="default" width="150" title="{IbnFramework.Common:tDepartment}" sortExpression="Department" dataField="Department" />
+			</CustomColumns>
+			<GridAction commandName="MC_User_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_User_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CheckSelected()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

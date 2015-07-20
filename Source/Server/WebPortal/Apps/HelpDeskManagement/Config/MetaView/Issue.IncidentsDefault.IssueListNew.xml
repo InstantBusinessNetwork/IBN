@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="HDM_Columns">
+			<add>
+				<Column id="colState" type="default" width="110" title="{IbnFramework.Incident:IssStatus}" sortExpression="StateName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.StateName.IncidentList.ascx" />
+				<Column id="colResponsible" type="default" width="160" title="{IbnFramework.Incident:IssResponsible}" sortExpression="ResponsibleName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Responsible.IncidentList.ascx" />
+				<Column id="colContact" type="default" width="140" title="{IbnFramework.Incident:IssClient}" sortExpression="ClientName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Contact.IncidentList.ascx" />
+				<Column id="colIssBox" type="default" width="140" title="{IbnFramework.Incident:IssIssBox}" sortExpression="IncidentBoxName" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/IssueBox.IncidentList.ascx" />
+				<Column id="colCode" type="default" width="160" title="{IbnFramework.Incident:IssCode}" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Integer.Grid.Incident.IncidentCode.IncidentList.ascx" />
+				<Column id="colModified" type="default" width="100" title="{IbnFramework.Incident:IssUpdated}" sortExpression="ModifiedDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Modified.IncidentList.ascx" />
+				<Column id="colCreated" type="default" width="100" title="{IbnFramework.Incident:Created}" sortExpression="CreationDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Created.IncidentList.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

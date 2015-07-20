@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>1EBE358B-663D-42e8-B8EA-5959C6BDC911</Uid>
+	<Title>{IbnFramework.Global:_mc_InActivities}</Title>
+	<Description>{IbnFramework.Global:_mc_InActivitiesDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/InActivities.ascx</Path>
+	<PropertyPagePath>~/Apps/IbnCommon/WidgetControls/InActivitiesPropertyPage.ascx</PropertyPagePath>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+</DynamicControlInfo>
+

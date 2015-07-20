@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- List of child organizations for organization view page -->
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Text text="{IbnFramework.Client:ChildOrganizations}" cssClass="ibn-WPTitle"></Text>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+		</add>
+	</Commands>
+</ListViewUI>

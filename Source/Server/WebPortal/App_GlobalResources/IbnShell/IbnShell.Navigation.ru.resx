@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tPersonalSpace" xml:space="preserve">
+    <value>Главное</value>
+  </data>
+  <data name="tResActs" xml:space="preserve">
+    <value>Центр управления</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="tTabDocuments" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="tIssues" xml:space="preserve">
+    <value>Инциденты</value>
+  </data>
+  <data name="tLibrary" xml:space="preserve">
+    <value>Библиотека</value>
+  </data>
+  <data name="tLists" xml:space="preserve">
+    <value>Списки</value>
+  </data>
+  <data name="tClientsContacts" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="tGrpsUsrs" xml:space="preserve">
+    <value>Пользователи</value>
+  </data>
+  <data name="tAdmin" xml:space="preserve">
+    <value>Администратор</value>
+  </data>
+  <data name="tMyWorks" xml:space="preserve">
+    <value>Моя работа</value>
+  </data>
+  <data name="tListView" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="tDay" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="tWorkWeek" xml:space="preserve">
+    <value>Рабочая неделя</value>
+  </data>
+  <data name="tWeek" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="tMonth" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="tYear" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="tSharedCals" xml:space="preserve">
+    <value>Работа пользователей</value>
+  </data>
+  <data name="tMyTimesh" xml:space="preserve">
+    <value>Мои листы учета времени</value>
+  </data>
+  <data name="Incidents" xml:space="preserve">
+    <value>Собственные инциденты</value>
+  </data>
+  <data name="tMyWebStubs" xml:space="preserve">
+    <value>Мои закладки</value>
+  </data>
+  <data name="tReports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="tModifyNotif" xml:space="preserve">
+    <value>Мои настройки</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Загрузка</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Помощь и отзывы</value>
+  </data>
+  <data name="tDashboard" xml:space="preserve">
+    <value>Общий отчет</value>
+  </data>
+  <data name="tActTrack" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="tActByCat" xml:space="preserve">
+    <value>Работа по категориям</value>
+  </data>
+  <data name="tPrjsByPortf" xml:space="preserve">
+    <value>Проекты по группам</value>
+  </data>
+  <data name="tPrjsByPhase" xml:space="preserve">
+    <value>Проекты по фазам</value>
+  </data>
+  <data name="tPrjsByPM" xml:space="preserve">
+    <value>Проекты по менеджерам</value>
+  </data>
+  <data name="tPrjsByClient" xml:space="preserve">
+    <value>Проекты по клиентам</value>
+  </data>
+  <data name="tResTracking" xml:space="preserve">
+    <value>Просмотр исполнителей</value>
+  </data>
+  <data name="tUsrsByRole" xml:space="preserve">
+    <value>по группам пользователей</value>
+  </data>
+  <data name="tResUtil" xml:space="preserve">
+    <value>Занятость исполнителей</value>
+  </data>
+  <data name="tUtilCE" xml:space="preserve">
+    <value>в мероприятиях</value>
+  </data>
+  <data name="tUtilIssues" xml:space="preserve">
+    <value>в инцидентах</value>
+  </data>
+  <data name="tUtilDoc" xml:space="preserve">
+    <value>в документах</value>
+  </data>
+  <data name="tUtilTasks" xml:space="preserve">
+    <value>в задачах</value>
+  </data>
+  <data name="tUtilToDo" xml:space="preserve">
+    <value>в поручениях</value>
+  </data>
+  <data name="tUtilAll" xml:space="preserve">
+    <value>выбрать</value>
+  </data>
+  <data name="tPlanFactAnalysis" xml:space="preserve">
+    <value>Проектный анализ План/Факт</value>
+  </data>
+  <data name="tPlanFactAnalysisFinances" xml:space="preserve">
+    <value>Финансы</value>
+  </data>
+  <data name="tPlanFactAnalysisMilestones" xml:space="preserve">
+    <value>Вехи</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Мои проекты</value>
+  </data>
+  <data name="tAllPrj" xml:space="preserve">
+    <value>Все проекты</value>
+  </data>
+  <data name="tViewBy" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="tPortfolio" xml:space="preserve">
+    <value>Группа проектов</value>
+  </data>
+  <data name="tPrjPhases" xml:space="preserve">
+    <value>Фазы проекта</value>
+  </data>
+  <data name="tGenCat" xml:space="preserve">
+    <value>Общая категория</value>
+  </data>
+  <data name="tPrjCat" xml:space="preserve">
+    <value>Проектная категория</value>
+  </data>
+  <data name="tPriority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="tType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="tPortfolios" xml:space="preserve">
+    <value>Группы проектов</value>
+  </data>
+  <data name="tPrjTemps" xml:space="preserve">
+    <value>Шаблоны проектов</value>
+  </data>
+  <data name="tMyDocuments" xml:space="preserve">
+    <value>Мои документы</value>
+  </data>
+  <data name="tRAssDocuments" xml:space="preserve">
+    <value>Назначенные документы</value>
+  </data>
+  <data name="tRAllDocuments" xml:space="preserve">
+    <value>Все документы</value>
+  </data>
+  <data name="tGroupedBy" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="tGroupProjects" xml:space="preserve">
+    <value>по проектам</value>
+  </data>
+  <data name="tGroupClients" xml:space="preserve">
+    <value>по клиентам</value>
+  </data>
+  <data name="tPendingMess" xml:space="preserve">
+    <value>Непроверенные сообщения</value>
+  </data>
+  <data name="tResponsibledIssues" xml:space="preserve">
+    <value>Инциденты в работе</value>
+  </data>
+  <data name="tAssgnIss" xml:space="preserve">
+    <value>Назначенные инциденты</value>
+  </data>
+  <data name="tManIss" xml:space="preserve">
+    <value>Управляемые инциденты</value>
+  </data>
+  <data name="tAllIss" xml:space="preserve">
+    <value>Все инциденты</value>
+  </data>
+  <data name="tViewByIssBox" xml:space="preserve">
+    <value>Просмотр по папкам инцидентов</value>
+  </data>
+  <data name="tArticleList" xml:space="preserve">
+    <value>База знаний</value>
+  </data>
+  <data name="tSeverity" xml:space="preserve">
+    <value>Проявление</value>
+  </data>
+  <data name="tIssCat" xml:space="preserve">
+    <value>Категория инцидентов</value>
+  </data>
+  <data name="tGlobal" xml:space="preserve">
+    <value>Общие файлы и папки</value>
+  </data>
+  <data name="tAllFiles" xml:space="preserve">
+    <value>Все файлы</value>
+  </data>
+  <data name="tSimpleEvents" xml:space="preserve">
+    <value>Мероприятия</value>
+  </data>
+  <data name="tSimpleToDos" xml:space="preserve">
+    <value>Поручения</value>
+  </data>
+  <data name="tSimpleTasks" xml:space="preserve">
+    <value>Задачи</value>
+  </data>
+  <data name="tListFolders" xml:space="preserve">
+    <value>Проводник</value>
+  </data>
+  <data name="tPrivLists" xml:space="preserve">
+    <value>Мои списки</value>
+  </data>
+  <data name="tPubLists" xml:space="preserve">
+    <value>Общие списки</value>
+  </data>
+  <data name="tPrjLists" xml:space="preserve">
+    <value>Проектные списки</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Организации</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="tIncsByClient" xml:space="preserve">
+    <value>Инциденты по клиентам</value>
+  </data>
+  <data name="tDocsByClient" xml:space="preserve">
+    <value>Документы по клиентам</value>
+  </data>
+  <data name="tToDosByClient" xml:space="preserve">
+    <value>Поручения по клиентам</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tSecGroups" xml:space="preserve">
+    <value>Группы пользователей</value>
+  </data>
+  <data name="tAllUsers" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="tContGroups" xml:space="preserve">
+    <value>Контактные группы</value>
+  </data>
+  <data name="tEveryone" xml:space="preserve">
+    <value>Все пользователи</value>
+  </data>
+  <data name="tInfoAppearance" xml:space="preserve">
+    <value>Информация и внешний вид</value>
+  </data>
+  <data name="tCompanyProfile" xml:space="preserve">
+    <value>Профиль компании</value>
+  </data>
+  <data name="tSPAppearance" xml:space="preserve">
+    <value>Вход в портал</value>
+  </data>
+  <data name="tWAppearance" xml:space="preserve">
+    <value>Вид страницы «Моя работа»</value>
+  </data>
+  <data name="tBusData" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="tWTCalendars" xml:space="preserve">
+    <value>Календари рабочего времени</value>
+  </data>
+  <data name="WorkTimeSetup" xml:space="preserve">
+    <value>Настройки рабочего времени</value>
+  </data>
+  <data name="tManDics" xml:space="preserve">
+    <value>Справочники</value>
+  </data>
+  <data name="tMetaClassCustomization" xml:space="preserve">
+    <value>Список настраиваемых полей</value>
+  </data>
+  <data name="tObjectCustomEditor" xml:space="preserve">
+    <value>Расширение бизнес объектов</value>
+  </data>
+  <data name="tMdpCustomization" xml:space="preserve">
+    <value>Интерфейс бизнес объектов</value>
+  </data>
+  <data name="tCommonSettings" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="tSecurity" xml:space="preserve">
+    <value>Безопасность</value>
+  </data>
+  <data name="tLDAPSettings" xml:space="preserve">
+    <value>LDAP настройки</value>
+  </data>
+  <data name="tSMTPSettings" xml:space="preserve">
+    <value>SMTP настройки</value>
+  </data>
+  <data name="teMailBoxes" xml:space="preserve">
+    <value>Е-mail ящики</value>
+  </data>
+  <data name="tReportConfig" xml:space="preserve">
+    <value>Безопасность для отчетов</value>
+  </data>
+  <data name="tRoutWrkfl" xml:space="preserve">
+    <value>Система сообщений и напоминаний</value>
+  </data>
+  <data name="tModifAlertNotif" xml:space="preserve">
+    <value>Система уведомления</value>
+  </data>
+  <data name="tEventNotification" xml:space="preserve">
+    <value>Получатели уведомлений</value>
+  </data>
+  <data name="tReminderNotifications" xml:space="preserve">
+    <value>Система напоминания</value>
+  </data>
+  <data name="tMessTempl" xml:space="preserve">
+    <value>Шаблоны уведомлений</value>
+  </data>
+  <data name="tRemTempl" xml:space="preserve">
+    <value>Шаблоны напоминаний</value>
+  </data>
+  <data name="tSpecialTempl" xml:space="preserve">
+    <value>Шаблоны специальных сообщений</value>
+  </data>
+  <data name="tHDM" xml:space="preserve">
+    <value>Управление инцидентами</value>
+  </data>
+  <data name="tHDMSettings" xml:space="preserve">
+    <value>Общие настройки инцидентов</value>
+  </data>
+  <data name="tIssRules" xml:space="preserve">
+    <value>Автоопределение/Правила</value>
+  </data>
+  <data name="tBlackList" xml:space="preserve">
+    <value>Черный список адресов</value>
+  </data>
+  <data name="tWhiteList" xml:space="preserve">
+    <value>Белый список адресов</value>
+  </data>
+  <data name="tEMailLog" xml:space="preserve">
+    <value>E-mail лог</value>
+  </data>
+  <data name="tEmailOutgoing" xml:space="preserve">
+    <value>Исходящие сообщения</value>
+  </data>
+  <data name="tFilesForms" xml:space="preserve">
+    <value>Файлы и формы</value>
+  </data>
+  <data name="tWebDAV" xml:space="preserve">
+    <value>Общие настройки</value>
+  </data>
+  <data name="tDocTypes" xml:space="preserve">
+    <value>Типы файлов</value>
+  </data>
+  <data name="tToolsApps" xml:space="preserve">
+    <value>Дополнительные утилиты</value>
+  </data>
+  <data name="tSQLReport" xml:space="preserve">
+    <value>Пользовательский SQL запрос</value>
+  </data>
+  <data name="tErrList" xml:space="preserve">
+    <value>Список ошибок</value>
+  </data>
+  <data name="tPortalStatistics" xml:space="preserve">
+    <value>Статистика портала</value>
+  </data>
+  <data name="tSystemBroadcast" xml:space="preserve">
+    <value>Важные сообщения</value>
+  </data>
+  <data name="tWebStubs" xml:space="preserve">
+    <value>Закладки</value>
+  </data>
+  <data name="Miscellaneous" xml:space="preserve">
+    <value>Прочее</value>
+  </data>
+  <data name="tMyTimeshDetails" xml:space="preserve">
+    <value>Просмотр листов учета времени</value>
+  </data>
+  <data name="tUtilGraph" xml:space="preserve">
+    <value>графическое представление</value>
+  </data>
+  <data name="tProjectsNew" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="tIssuesNew" xml:space="preserve">
+    <value>Инциденты</value>
+  </data>
+  <data name="ItemNotSelected" xml:space="preserve">
+    <value>&lt; ничего не выбрано &gt;</value>
+  </data>
+  <data name="Publish" xml:space="preserve">
+    <value>Опубликовать</value>
+  </data>
+  <data name="ParentItem" xml:space="preserve">
+    <value>Родительский элемент</value>
+  </data>
+  <data name="Publication" xml:space="preserve">
+    <value>Публикация</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>Профили портала</value>
+  </data>
+  <data name="LeftMenuCustomization" xml:space="preserve">
+    <value>Левое меню</value>
+  </data>
+  <data name="tSMTPList" xml:space="preserve">
+    <value>Серверы исходящей почты (SMTP)</value>
+  </data>
+  <data name="OutActivities" xml:space="preserve">
+    <value>Задачи, поставленные мной</value>
+  </data>
+  <data name="CurrentWork" xml:space="preserve">
+    <value>текущая работа</value>
+  </data>
+  <data name="MyCurrentWork" xml:space="preserve">
+    <value>Текущая работа</value>
+  </data>
+  <data name="tWebDavSessions" xml:space="preserve">
+    <value>Редактируемые файлы</value>
+  </data>
+</root>

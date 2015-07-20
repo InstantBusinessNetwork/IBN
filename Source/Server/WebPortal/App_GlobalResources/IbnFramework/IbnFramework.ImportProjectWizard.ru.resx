@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ChooseXmlFile" xml:space="preserve">
+    <value>Выберите файл проекта MS Project (.xml)</value>
+  </data>
+  <data name="ColHere" xml:space="preserve">
+    <value>Сопоставление пользователей</value>
+  </data>
+  <data name="ComplType" xml:space="preserve">
+    <value>Тип завершения</value>
+  </data>
+  <data name="IBNUser" xml:space="preserve">
+    <value>Участник проекта</value>
+  </data>
+  <data name="MSPUser" xml:space="preserve">
+    <value>Пользователь MS Poject</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>не выбран</value>
+  </data>
+  <data name="s1Title" xml:space="preserve">
+    <value>Сопоставление пользователей</value>
+  </data>
+  <data name="s2Title" xml:space="preserve">
+    <value>Проект успешно импортирован.</value>
+  </data>
+  <data name="s3Title" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="s7Text" xml:space="preserve">
+    <value>Внутри проекта вы можете создавать задачи, инциденты, поручения, планировать мероприятия.
+		Можете загружать файлы в библиотеку проекта, настраивать безопасность папок.
+		Также в проекте вы можете работать с финансами - создавать структуру счетов и вносить графы расходов по проекту, 
+		а также по всем работам, которые этому проекту принадлежат.</value>
+  </data>
+  <data name="s7TextHeader" xml:space="preserve">
+    <value>Информация по работе с проектом.</value>
+  </data>
+  <data name="s7TopText" xml:space="preserve">
+    <value>После закрытия этого окна, вы будете перемещены на страницу просмотра диаграммы Ганта импортированного проекта.</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="SynchronizationComplete" xml:space="preserve">
+    <value>Синхронизация успешно завершена.</value>
+  </data>
+  <data name="tAttentionText" xml:space="preserve">
+    <value>При импорте все существующие в проекте задачи будут удалены! Файл проекта, с которым Вы пытаетесь делать синхронизацию отличается от уже существующего проекта. Продолжить?</value>
+  </data>
+  <data name="tBack" xml:space="preserve">
+    <value>&lt; Назад</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tComplicationType" xml:space="preserve">
+    <value>Тип завершения</value>
+  </data>
+  <data name="tCTAll" xml:space="preserve">
+    <value>Каждый должен завершить</value>
+  </data>
+  <data name="tCTAny" xml:space="preserve">
+    <value>Любой может завершить</value>
+  </data>
+  <data name="tDownloadIBNProjectXML" xml:space="preserve">
+    <value>Получить XML файл проекта портала для дальнейшего импорта в MS Project</value>
+  </data>
+  <data name="tErrorOccured" xml:space="preserve">
+    <value>При сопоставлении пользователей возникла ошибка. Если вы все равно хотите импортировать проект в портал, нажмите кнопку "Импортировать"</value>
+  </data>
+  <data name="tExportToMSProject" xml:space="preserve">
+    <value>Экспорт проекта портала в MS Project</value>
+  </data>
+  <data name="tFileRequired" xml:space="preserve">
+    <value>Выберите существующий XML файл с проектом из MS Project </value>
+  </data>
+  <data name="tFinish" xml:space="preserve">
+    <value>Завершить</value>
+  </data>
+  <data name="tFinishSynchronization" xml:space="preserve">
+    <value>Завершить синхронизацию</value>
+  </data>
+  <data name="tGenIBNXMLMessage" xml:space="preserve">
+    <value>Нажмите кнопку "Далее", чтобы получить XML файл проекта портала</value>
+  </data>
+  <data name="tGetIBNXMLFile1" xml:space="preserve">
+    <value>Загрузка XML файла проекта должна была начаться автоматически. Если этого не произошло, нажмите</value>
+  </data>
+  <data name="tGetIBNXMLFile2" xml:space="preserve">
+    <value>, чтобы загрузить его. </value>
+  </data>
+  <data name="tHere" xml:space="preserve">
+    <value>здесь</value>
+  </data>
+  <data name="tImport" xml:space="preserve">
+    <value>Импортировать</value>
+  </data>
+  <data name="tImportAnyway" xml:space="preserve">
+    <value>Синхронизировать все равно.</value>
+  </data>
+  <data name="tImportFromMSProject" xml:space="preserve">
+    <value>Импорт проекта из MS Project в портал</value>
+  </data>
+  <data name="tNext" xml:space="preserve">
+    <value>Далее &gt;</value>
+  </data>
+  <data name="tNSExportDecsription" xml:space="preserve">
+    <value>Процедура экспорта позволяет конвертировать и сохранить текущий проект портала в .xml файл формата MS Project. 
+Этот файл будет содержать информацию о структуре задач, календаре и ресурсах экспортируемого проекта портала.
+&lt;br /&gt;&lt;br /&gt;
+Если планируется интенсивный обмен данными между проектами портала и MS Project, то рекомендуется использовать режим синхронизации, поскольку режим импорта/экспорта не гарантирует полную идентичность структуры задач.
+&lt;br /&gt;&lt;br /&gt;</value>
+  </data>
+  <data name="tNSImportDecsription" xml:space="preserve">
+    <value>
+Процедура импорта представляет собой конвертацию файла из формата MS Project (.xml) в проект портала.
+Данную процедуру удобно использовать при первоначальном построении структуры задач проекта. 
+&lt;br /&gt;&lt;br /&gt;
+В процессе импорта структура задач текущего проекта портала будет заменена на структуру задач импортируемого проекта.
+При этом файлы, комментарии, листы учёта времени и прочая информация, связанная задачами существующего проекта, будут утеряны.
+&lt;br /&gt;&lt;br /&gt;
+Если планируется интенсивный обмен данными между проектами портала и MS Project, рекомендуется использовать режим синхронизации, поскольку режим импорта/экспорта не гарантирует полную идентичность структуры задач.</value>
+  </data>
+  <data name="tNSSyncDecsription" xml:space="preserve">
+    <value>
+Механизм синхронизации основан на двустороннем обмене данными между проектами портала и MS Project.
+Режим позволяет использовать развитые возможности проектного планирования MS Project и одновременно осуществлять совместную работу над данными в портале без потери информации.
+Изменения, вносимые на одной стороне, могут быть спроецированы на другую сторону через .xml файл.
+&lt;br /&gt;&lt;br /&gt;
+На проект портала, находящийся в режиме синхронизации с проектом MS Project, накладывается ряд ограничений.
+В частности, в таком проекте нельзя создавать, удалять и перемещать задачи, изменять их временные рамки, управлять предшественниками и последователями. 
+Все эти действия должны производиться средствами MS Project.</value>
+  </data>
+  <data name="tOf" xml:space="preserve">
+    <value>из</value>
+  </data>
+  <data name="ToMSProjSync" xml:space="preserve">
+    <value>Переключение в режим синхронизации</value>
+  </data>
+  <data name="TopTitle" xml:space="preserve">
+    <value>Импортирование проекта</value>
+  </data>
+  <data name="tStep" xml:space="preserve">
+    <value>Шаг</value>
+  </data>
+  <data name="tSyncErrorMessage" xml:space="preserve">
+    <value>Во время синхронизации возникла ошибка.&lt;br/&gt;
+Отметьте «Синхронизировать в любом случае», если хотите закончить процесс синхронизации, несмотря на ошибку. Все данные будут сохранены.</value>
+  </data>
+  <data name="tTopTitle" xml:space="preserve">
+    <value>Мастер обмена данными между порталом и MS Project</value>
+  </data>
+  <data name="tToSynchronizationMode" xml:space="preserve">
+    <value>Режим синхронизации Портал &lt;—&gt; MS Project</value>
+  </data>
+  <data name="tUpdateInIBN" xml:space="preserve">
+    <value>Привести проект портала в соответствие с проектом MS Project</value>
+  </data>
+  <data name="tUpdateInMSProject" xml:space="preserve">
+    <value>Сформировать .xml файл для последующей работы в MS Project</value>
+  </data>
+  <data name="tUpInIBNDescription" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;
+Режим позволяет привести проект портала в соответствие с теми изменениями, которые были сделаны в проекте в MS Project.
+&lt;br /&gt;&lt;br /&gt;
+На следующем шаге вам будет предложено выбрать .xml файл с проектом MS Project для его синхронизации с проектом портала.</value>
+  </data>
+  <data name="tUpInMSDescription" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;
+Режим позволяет сформировать .xml файл с той же структурой, которая была в оригинальном проекте MS Project, но с учётом тех изменений, которые были сделаны в портале.
+&lt;br /&gt;&lt;br /&gt;
+Средствами MS Project вы можете создавать, удалять и перемещать задачи, управлять их длительностью, временными рамками, предшественниками и последователями.
+После этого Вы легко сможете перенести сделанные изменения обратно в портал.</value>
+  </data>
+  <data name="tUploadMSProjectXMLToIBN" xml:space="preserve">
+    <value>Загрузка проекта MS Project в портал</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Внимание!</value>
+  </data>
+  <data name="tWizardFirstStep" xml:space="preserve">
+    <value>Выберите действие</value>
+  </data>
+  <data name="tFirstSynchDescription" xml:space="preserve">
+    <value>&lt;br /&gt;&lt;br /&gt;
+Режим позволяет привести проект портала в соответствие с теми изменениями, которые были сделаны в проекте в MS Project.
+&lt;br /&gt;&lt;br /&gt;
+В процессе синхронизации структура задач текущего проекта портала будет заменена на структуру задач синхронизируемого проекта.
+При этом файлы, комментарии, листы учёта времени и прочая информация, связанная задачами существующего проекта, будут утеряны.
+&lt;br /&gt;&lt;br /&gt;
+На следующем шаге вам будет предложено выбрать .xml файл с проектом MS Project для его синхронизации с проектом портала.</value>
+  </data>
+  <data name="tWizardError" xml:space="preserve">
+    <value>Во время процесса обмена данными возникла ошибка. Процесс завершен. Данные не импортированы.</value>
+  </data>
+</root>

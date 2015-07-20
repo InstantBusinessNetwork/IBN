@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="QuickTrackingAcceptDeny" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="ADText" xml:space="preserve">
+    <value>Manager has assigned this ToDo to you. &lt;br&gt;Press the "Accept" button if 
+you accept the appointment.&lt;br&gt;Press the "Decline" button if you decline the 
+appointment.
+		</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Decline</value>
+  </data>
+  <data name="QuickTracking" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="RPText" xml:space="preserve">
+    <value>Manager has assigned this ToDo to you. &lt;br&gt;Select the new percent from the 
+drop-down list below and press the "Update" button.</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="MPText" xml:space="preserve">
+    <value>This ToDo is completed, but as a Manager you can change the overall status for this ToDo. Select the new percent from the drop-down list below and press the "Update" button. 
+</value>
+  </data>
+  <data name="OverallStatus" xml:space="preserve">
+    <value>Overall Status</value>
+  </data>
+  <data name="MPPText1" xml:space="preserve">
+    <value>As a Manager you can change the overall status for this ToDo. Select the new percent from the drop-down list below and press the "Update" button. 
+</value>
+  </data>
+  <data name="MPPText2" xml:space="preserve">
+    <value>Also you can complete this ToDo entirely. This action is the same as selecting the 100% in the drop-down list above. To complete the ToDo press the "Complete ToDo" button below. 
+</value>
+  </data>
+  <data name="CompleteToDo" xml:space="preserve">
+    <value>Complete ToDo</value>
+  </data>
+  <data name="MCText" xml:space="preserve">
+    <value>As a Manager you can complete this milestone. 
+To do that press the "Complete Milestone" button below.</value>
+  </data>
+  <data name="CompleteMilestone" xml:space="preserve">
+    <value>Complete Milestone</value>
+  </data>
+  <data name="MUText" xml:space="preserve">
+    <value>This milestone is completed. But as a Manager you can uncomplete it. To do that press the "Uncomplete Milestone" button below. 
+</value>
+  </data>
+  <data name="UncompleteMilestone" xml:space="preserve">
+    <value>Uncomplete Milestone</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="Workaround" xml:space="preserve">
+    <value>Workaround</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="PersonalStatus" xml:space="preserve">
+    <value>Personal Status</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Manager has assigned this ToDo to you. 
+Select the new percent from the drop-down list below and press the "Update" button.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Select the new percent from the drop-down list below and press the "Update" button.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>As a Manager you can complete this ToDo entirely. To complete the ToDo press the "Complete ToDo" button below.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>As a Manager you can suspend the execution of the ToDo. To suspend ToDo press the "Suspend ToDo" button below</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>This ToDo is complete.  However, as a manager, you may re-start it by making the selection below. </value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>This ToDo is suspend, but as a Manager you can resume it. To resume the ToDo press the "Resume ToDo" button below.</value>
+  </data>
+  <data name="Text7" xml:space="preserve">
+    <value>Manager has assigned this ToDo to you. Press the "Accept" button if 
+you accept the appointment. Press the "Decline" button if you decline the appointment.</value>
+  </data>
+  <data name="Text8" xml:space="preserve">
+    <value>This ToDo is not active yet, but as a Manager you can activate it. To activate the ToDo press the "Activate ToDo" button below.</value>
+  </data>
+  <data name="SuspendToDo" xml:space="preserve">
+    <value>Suspend ToDo</value>
+  </data>
+  <data name="ResumeToDo" xml:space="preserve">
+    <value>Resume ToDo</value>
+  </data>
+  <data name="UncompleteToDo" xml:space="preserve">
+    <value>Uncomplete ToDo</value>
+  </data>
+  <data name="IncidentTracking" xml:space="preserve">
+    <value>Issue Tracking</value>
+  </data>
+  <data name="SpentHours" xml:space="preserve">
+    <value>Spent Hours</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="UpdateTimesheetText" xml:space="preserve">
+    <value>This ToDo is completed, but you can fill in your working hours for the certain date</value>
+  </data>
+  <data name="ActivateTodo" xml:space="preserve">
+    <value>Activate ToDo</value>
+  </data>
+  <data name="tWrongDate" xml:space="preserve">
+    <value>You can't change the pending or approved timesheet.</value>
+  </data>
+</root>

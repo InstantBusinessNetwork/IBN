@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" Inherits="Mediachase.Ibn.Web.UI.Controls.Util.BaseEntityType" ClassName="Mediachase.Ibn.Web.UI.MetaUI.EntityPrimitives.DateTime_GridEntity" %>
+<%# (DataItem == null || DataItem.Properties[FieldName] == null || DataItem[FieldName] == null) ? "" : String.Format("{0} {1}", ((System.DateTime)DataItem[FieldName]).ToShortDateString(), ((System.DateTime)DataItem[FieldName]).ToShortTimeString())%>

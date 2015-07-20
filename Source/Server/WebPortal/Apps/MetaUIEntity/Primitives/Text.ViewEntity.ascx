@@ -1,0 +1,2 @@
+<%@ Control Language="C#" Inherits="Mediachase.Ibn.Web.UI.Controls.Util.BaseEntityType" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.MetaUI.EntityPrimitives.Text_ViewEntity" %>
+<%# (DataItem == null || DataItem.Properties[FieldName] == null || DataItem[FieldName] == null) ? "" : Mediachase.UI.Web.Util.CommonHelper.GetResFileString(DataItem[FieldName].ToString()) %>

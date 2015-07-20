@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tTitle" xml:space="preserve">
+    <value>Информация о задаче</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Вернуться к списку задач</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="BelongsTo" xml:space="preserve">
+    <value>В рамках проекта</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>Дата завершения</value>
+  </data>
+  <data name="OverallStatus" xml:space="preserve">
+    <value>Выполнено</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="NotApproved" xml:space="preserve">
+    <value>Не утверждено</value>
+  </data>
+  <data name="OutlineNumber" xml:space="preserve">
+    <value>Позиция задачи</value>
+  </data>
+  <data name="SummaryTask" xml:space="preserve">
+    <value>Суммарная задача</value>
+  </data>
+  <data name="Milestone" xml:space="preserve">
+    <value>Веха</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Создана</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Обновил</value>
+  </data>
+  <data name="NA" xml:space="preserve">
+    <value>-----</value>
+  </data>
+  <data name="CompletionType" xml:space="preserve">
+    <value>Тип завершения</value>
+  </data>
+  <data name="ConstaraintType" xml:space="preserve">
+    <value>Тип </value>
+  </data>
+  <data name="OutlineLevel" xml:space="preserve">
+    <value>Уровень задачи</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="Overdue" xml:space="preserve">
+    <value>Просрочена</value>
+  </data>
+  <data name="TaskResources" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Нет ответа</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Принял</value>
+  </data>
+  <data name="Denied" xml:space="preserve">
+    <value>Отклонил</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя пользователя</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>Изменено</value>
+  </data>
+  <data name="MustConfirm" xml:space="preserve">
+    <value>Должно быть подтверждено менеджером</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту задачу?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ActualFinishDate" xml:space="preserve">
+    <value>Фактическая дата завершения</value>
+  </data>
+  <data name="Suspended" xml:space="preserve">
+    <value>Приостановлена</value>
+  </data>
+  <data name="CompletedByManager" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="CompletedByResource" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="NotCompleted" xml:space="preserve">
+    <value>Незавершено</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Удалить все</value>
+  </data>
+  <data name="DeleteTask" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteTxt" xml:space="preserve">
+    <value>
+			&lt;p align="left" class="text"&gt;Удаляемая задача может быть связана с листами учета времени. 
+			Вы можете удалить и их.&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить задачу и связанные листы учета времени, нажмите кнопку "Удалить 
+			все".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы удалить только задачу, нажмите кнопку "Удалить".&lt;br&gt;
+			&lt;br&gt;
+			- Чтобы отменить действие, нажмите кнопку "Отменить".&lt;/p&gt;
+		</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Новый исполнитель</value>
+  </data>
+  <data name="tbAdd" xml:space="preserve">
+    <value>Новое поручение</value>
+  </data>
+  <data name="InProgress" xml:space="preserve">
+    <value>Выполняется</value>
+  </data>
+  <data name="AssignWizard" xml:space="preserve">
+    <value>Исполнители</value>
+  </data>
+  <data name="CanManage" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="tbBudget" xml:space="preserve">
+    <value>Информация о финансах</value>
+  </data>
+  <data name="tTarget" xml:space="preserve">
+    <value>Бюджет</value>
+  </data>
+  <data name="tEstimated" xml:space="preserve">
+    <value>Оценка</value>
+  </data>
+  <data name="tActual" xml:space="preserve">
+    <value>Факт</value>
+  </data>
+  <data name="tUpdate" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="tbBudgetTable" xml:space="preserve">
+    <value>Таблица финансов</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту запись?</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить запись</value>
+  </data>
+  <data name="tEditor" xml:space="preserve">
+    <value>Изменил</value>
+  </data>
+  <data name="tUpdated" xml:space="preserve">
+    <value>Обновил</value>
+  </data>
+  <data name="tHistory" xml:space="preserve">
+    <value>История изменений</value>
+  </data>
+  <data name="tCalcType" xml:space="preserve">
+    <value>Способ расчета</value>
+  </data>
+  <data name="tHandly" xml:space="preserve">
+    <value>Вручную</value>
+  </data>
+  <data name="tAuto" xml:space="preserve">
+    <value>Автоматически</value>
+  </data>
+  <data name="tTable" xml:space="preserve">
+    <value>Таблица</value>
+  </data>
+  <data name="tCalcTypeFull" xml:space="preserve">
+    <value>Тип вычисления</value>
+  </data>
+  <data name="tSum" xml:space="preserve">
+    <value>Всего</value>
+  </data>
+  <data name="tTitleSubTasks" xml:space="preserve">
+    <value>Дочерние задачи</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Добавить в Избранное</value>
+  </data>
+  <data name="EditTask" xml:space="preserve">
+    <value>Задачу</value>
+  </data>
+  <data name="ActivationType" xml:space="preserve">
+    <value>Тип активации</value>
+  </data>
+  <data name="SharedTask" xml:space="preserve">
+    <value>Доступ к этой задаче открыт</value>
+  </data>
+  <data name="ParentTask" xml:space="preserve">
+    <value>Родительская задача</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Сбросить процент</value>
+  </data>
+  <data name="ActualStartDate" xml:space="preserve">
+    <value>Фактическая дата начала</value>
+  </data>
+</root>

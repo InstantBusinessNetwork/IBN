@@ -1,0 +1,50 @@
+.ibn-toolbar {
+   font-size:  8pt; 
+}
+.ibn-viewselect a:link{
+   font-size: 8pt; 
+}
+select {
+   font-size: 8pt; 
+}
+.ibn-input {
+   font-size:    8pt; 
+}
+.ibn-banner a:link {
+   font-size:    8pt; 
+   }
+.ibn-banner a:visited {
+   font-size:    8pt; 
+   }
+.ibn-banner {
+   font-size:    8pt; 
+}
+.ibn-nav td {
+   font-size:    8pt; 
+}
+.ibn-nav th  {
+   font-size:    8pt; 
+}
+.ibn-nav a {
+   font-size:    8pt; 
+}
+.ibn-titlearea { 
+   font-size:     9pt;
+}
+.ibn-pagetitle {
+   font-size: 14pt; 
+}
+.ibn-separator
+{
+   font-size: 10pt; 
+}
+.ibn-sectionheader
+{
+   font-size: 12pt; 
+}
+.ibn-propertysheet {
+   font-size: 8pt; 
+}
+.ibn-propertysheet th {
+   font-size: 8pt; 
+}

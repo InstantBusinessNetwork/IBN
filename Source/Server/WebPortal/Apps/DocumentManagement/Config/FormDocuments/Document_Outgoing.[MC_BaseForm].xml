@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="9658796d335c4bc28bf5e92d455182f8" borderType="1" showLabel="true" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Document:OutDocument}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="d664637f5d8140dca151f058d191c49e" cellPadding="5" columns="50%;*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="a3a2c444700d4247bffc0358727a60f3">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Title" readOnly="False" uid="877e82e76525494180ee540526f30500" />
+					</Item>
+					<Item rowIndex="1" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="b02762dfcc7247aabf2c945208802dd6">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="RegistrationNumber" readOnly="False" uid="f0bbc0abaa5d47d98ab1fead9b6e5cc6" />
+					</Item>
+					<Item rowIndex="5" cellIndex="1" rowSpan="2" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="2d20b92971d34f928d0030aa950eeadd">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Description" readOnly="False" uid="d9aab97372da45b39653219a7c1ff133" />
+					</Item>
+					<Item rowIndex="2" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="fe53fbbf58fc4c72908be21d16d5f751">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="SourceDocumentId" readOnly="False" uid="8429ff5c15e14b1990235340377c25b6" />
+					</Item>
+					<Item rowIndex="3" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="8c270c90525f4936a6c398c0714d5dee">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="DeliveredBy" readOnly="False" uid="d9125591750d46de81abe4f2fae81e42" />
+					</Item>
+					<Item rowIndex="3" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="3b6f64b4dec5416085c64d4e911ab599">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Initiator" readOnly="False" uid="1520c44d7e124b90aa01605d2e521cce" />
+					</Item>
+					<Item rowIndex="4" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="37c4e1b2269a4a2bb7b5578e10fa8791">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="IsOriginal" readOnly="False" uid="b081309502734147bfc7b76a99eedf49" />
+					</Item>
+					<Item rowIndex="4" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="131fbc91ae914f5899cb73eb744e4f1d">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="TotalPageCount" readOnly="False" uid="8a83cdcfa23340409ff1edc97ca867c0" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="69040904460e4033ae2fc247cb9f51db">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="MasterDocumentId" readOnly="False" uid="e1575cf53c8344159653dd615f467bac" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

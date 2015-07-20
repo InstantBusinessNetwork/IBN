@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Button id="ResourceModify" text="{IbnFramework.Calendar:ModifyResources}" imageUrl="~/Layouts/images/Edit.GIF" commandName="MC_CERes_Modify" ></Button>
+			<Button id="ResourceModify2" text="{IbnFramework.Calendar:ModifyResourcesAsSeries}" imageUrl="~/Layouts/images/Edit.GIF" commandName="MC_CERes_Modify_Series" ></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_CERes_Modify">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:EditResources}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/ResourcesEditor.aspx?ObjectId={QueryString:ObjectId}</Url>
+				<Width>700</Width>
+				<Height>440</Height>
+				<Left>30</Left>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_CERes_Modify_Series">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:EditResourcesAsSeries}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/ResourcesEditor.aspx?RealObjectId={QueryString:ObjectId}</Url>
+				<Width>700</Width>
+				<Height>440</Height>
+				<Left>30</Left>
+				<Top>15</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Calendar.CommandHandlers.SeriesEditEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

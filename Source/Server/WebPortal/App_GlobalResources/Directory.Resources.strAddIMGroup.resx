@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="GroupTitle">
+		<value>Group Title</value>
+	</data>
+	<data name="Reqired">
+		<value> * Group Title is Required</value>
+	</data>
+	<data name="EditGroup">
+		<value>Edit Contact Group</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="CreateIMGroup">
+		<value>Create New Contact Group</value>
+	</data>
+	<data name="GroupLogo">
+		<value>Group Logo (227 x 36 )</value>
+	</data>
+	<data name="BackgroundColor">
+		<value>Background Color (Hex)</value>
+	</data>
+	<data name="IsGlobalGroup">
+		<value>Is Global Group</value>
+	</data>
+	<data name="VisibleGroups">
+		<value>This group can see these groups: *</value>
+	</data>
+	<data name="GroupsCU">
+		<value>This group can be seen by these groups: *</value>
+	</data>
+	<data name="UseCtrl">
+		<value>* Use Ctrl key to select multiple values</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="ImageSizeWarning">
+		<value>The logo image must be 227x36</value>
+	</data>
+	<data name="Back">
+		<value>Back to the Groups &amp; Users</value>
+	</data>
+	<data name="CloneGroup">
+		<value>Clone Contact Group</value>
+	</data>
+</root>

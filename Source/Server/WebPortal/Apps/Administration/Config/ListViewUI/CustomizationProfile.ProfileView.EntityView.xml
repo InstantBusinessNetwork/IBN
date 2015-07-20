@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1999/XSL/Transform http://xsd.mediachase.ru/ListViewUI.xsd">
+	<Toolbar>
+		<Menu id="ActionsMenu">
+			<remove nodeId="DeleteButton"/>
+		</Menu>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<remove nodeId="EntityDelete"/>
+	</Commands>
+</ListViewUI>

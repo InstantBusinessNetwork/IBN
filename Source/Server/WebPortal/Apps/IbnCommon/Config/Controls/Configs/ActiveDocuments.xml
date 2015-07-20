@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>42C18D68-CCC9-460b-B9DA-692A6129BFE4</Uid>
+	<Title>{IbnFramework.Global:_mc_ActiveDocuments}</Title>
+	<Description>{IbnFramework.Global:_mc_ActiveDocumentsDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/ActiveDocuments.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+</DynamicControlInfo>

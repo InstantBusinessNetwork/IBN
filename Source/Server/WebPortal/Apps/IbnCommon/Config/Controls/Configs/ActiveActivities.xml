@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>E700B66F-C1D0-42c3-9F2F-F46D376CE244</Uid>
+	<Title>{IbnFramework.Global:_mc_ActiveActivities}</Title>
+	<Description>{IbnFramework.Global:_mc_ActiveActivitiesDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/ActiveActivities.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/activity.png</IconPath>
+</DynamicControlInfo>

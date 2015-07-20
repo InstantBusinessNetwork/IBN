@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="exec_manager" xml:space="preserve">
+    <value>Исполнительный менеджер</value>
+  </data>
+  <data name="start_date" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="target_finish_date" xml:space="preserve">
+    <value>Планируемая дата завершения</value>
+  </data>
+  <data name="goals" xml:space="preserve">
+    <value>Цели</value>
+  </data>
+  <data name="scope" xml:space="preserve">
+    <value>Масштаб</value>
+  </data>
+  <data name="deliverables" xml:space="preserve">
+    <value>Результаты</value>
+  </data>
+  <data name="calendar" xml:space="preserve">
+    <value>Календарь рабочего времени</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="state" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="category" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="tbsave_edit" xml:space="preserve">
+    <value>Редактирование проекта</value>
+  </data>
+  <data name="tbsave_add" xml:space="preserve">
+    <value>Новый проект</value>
+  </data>
+  <data name="status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="finish_date" xml:space="preserve">
+    <value>Фактическая дата завершения</value>
+  </data>
+  <data name="budget" xml:space="preserve">
+    <value>Бюджет</value>
+  </data>
+  <data name="tbsave_save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tbsave_cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="tbsave_gotolist" xml:space="preserve">
+    <value>Вернуться к списку проектов</value>
+  </data>
+  <data name="NotSet" xml:space="preserve">
+    <value>[не выбран]</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="ProjectCategory" xml:space="preserve">
+    <value>Категории проекта</value>
+  </data>
+  <data name="ProjectCurrency" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка импорта проекта</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Редактировать справочник</value>
+  </data>
+  <data name="tWrongDate" xml:space="preserve">
+    <value>Неправильная дата</value>
+  </data>
+  <data name="tTemplate" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="tNewPortfolio" xml:space="preserve">
+    <value>Новая группа проектов</value>
+  </data>
+  <data name="tEditPortfolio" xml:space="preserve">
+    <value>Редактирование группы проектов</value>
+  </data>
+  <data name="tBackPortfolio" xml:space="preserve">
+    <value>Вернуться к списку групп проектов</value>
+  </data>
+  <data name="tPortfolioInfo" xml:space="preserve">
+    <value>Информация о группе проектов</value>
+  </data>
+  <data name="tCreationDate" xml:space="preserve">
+    <value>Создана</value>
+  </data>
+  <data name="tCreator" xml:space="preserve">
+    <value>Создал</value>
+  </data>
+  <data name="tLastSavedDate" xml:space="preserve">
+    <value>Изменена</value>
+  </data>
+  <data name="tLastEditorId" xml:space="preserve">
+    <value>Изменил</value>
+  </data>
+  <data name="tPrjList" xml:space="preserve">
+    <value>Список проектов группы</value>
+  </data>
+  <data name="tEditMetaFields" xml:space="preserve">
+    <value>Редактирование настраиваемых полей</value>
+  </data>
+  <data name="tPortfolio" xml:space="preserve">
+    <value>Группа проектов</value>
+  </data>
+  <data name="tAddPrj" xml:space="preserve">
+    <value>Добавить проект</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы действительно хотите исключить этот проект из группы?</value>
+  </data>
+  <data name="tCreateAnotherOne" xml:space="preserve">
+    <value>Остаться на странице "Новый проект"</value>
+  </data>
+  <data name="tPrjPhase" xml:space="preserve">
+    <value>Текущая фаза</value>
+  </data>
+  <data name="tInitialPhase" xml:space="preserve">
+    <value>Начальная фаза</value>
+  </data>
+  <data name="AssignWarning" xml:space="preserve">
+    <value>Ваш браузер заблокировал всплывающее окно, которое необходимо для корректной работы портала.&lt;br&gt;Воспользуйтесь данной ссылкой чтобы открыть это окно вручную:</value>
+  </data>
+  <data name="AssignWizard1" xml:space="preserve">
+    <value>Настройки шаблона проекта</value>
+  </data>
+  <data name="tOverallStatus" xml:space="preserve">
+    <value>Степень завершенности</value>
+  </data>
+  <data name="EndDateError" xml:space="preserve">
+    <value>Планируемая дата завершения должна быть больше даты начала</value>
+  </data>
+  <data name="FinishDateError" xml:space="preserve">
+    <value>Фактическая дата завершения должна быть больше даты начала</value>
+  </data>
+  <data name="tBaseInfo" xml:space="preserve">
+    <value>Основная информация</value>
+  </data>
+  <data name="tStatusInfo" xml:space="preserve">
+    <value>Информация состояния</value>
+  </data>
+  <data name="tCategoryInfo" xml:space="preserve">
+    <value>Категории и информация для отчетов</value>
+  </data>
+  <data name="tAdditInfo" xml:space="preserve">
+    <value>Дополнительная информация</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>Просмотреть общий отчет</value>
+  </data>
+  <data name="target_start_date" xml:space="preserve">
+    <value>Планируемая дата начала</value>
+  </data>
+  <data name="actual_finish_date" xml:space="preserve">
+    <value>Фактическая дата завершения</value>
+  </data>
+  <data name="actual_start_date" xml:space="preserve">
+    <value>Фактическая дата начала</value>
+  </data>
+  <data name="risk_level" xml:space="preserve">
+    <value>Уровень риска</value>
+  </data>
+  <data name="calculated_start_date" xml:space="preserve">
+    <value>Расчетная дата начала</value>
+  </data>
+  <data name="calculated_finish_date" xml:space="preserve">
+    <value>Расчетная дата завершения</value>
+  </data>
+  <data name="Categorization" xml:space="preserve">
+    <value>Категоризация</value>
+  </data>
+  <data name="managers" xml:space="preserve">
+    <value>Менеджеры</value>
+  </data>
+  <data name="tDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+</root>

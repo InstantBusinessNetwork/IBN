@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Workspace">
+		<value>Моя работа</value>
+	</data>
+	<data name="tbWorkspace">
+		<value>Результаты работы и информация</value>
+	</data>
+	<data name="Customize">
+		<value>Настройка</value>
+	</data>
+	<data name="Personalize">
+		<value>Мои настройки</value>
+	</data>
+	<data name="Reports">
+		<value>Мои отчеты</value>
+	</data>
+	<data name="WizardWarning">
+		<value>Ваш браузер заблокировал всплывающее окно, которое необходимо для корректной работы портала.&lt;br&gt;Воспользуйтесь данной ссылкой чтобы открыть это окно вручную:</value>
+	</data>
+	<data name="AdminWizard">
+		<value>Первый вход администратора в систему - помощник</value>
+	</data>
+	<data name="UserWizard">
+		<value>Первый вход пользователя в систему - помощник</value>
+	</data>
+	<data name="tWorkspace">
+		<value>Моя работа</value>
+	</data>
+	<data name="tCustomize">
+		<value>Вид страницы «Моя работа» </value>
+	</data>
+	<data name="tRecentUpdates">
+		<value>Последние обновления</value>
+	</data>
+	<data name="tSelectAction">
+		<value>Выберите действие</value>
+	</data>
+	<data name="NewIssueWizard">
+		<value>Сообщение о новом инциденте</value>
+	</data>
+	<data name="NewUserWizard">
+		<value>Создание нового пользователя</value>
+	</data>
+	<data name="NewToDoWizard">
+		<value>Создание нового поручения</value>
+	</data>
+	<data name="NewEventWizard">
+		<value>Создание нового мероприятия</value>
+	</data>
+	<data name="NewProjectWizard">
+		<value>Создание нового проекта</value>
+	</data>
+	<data name="IBNReport">
+		<value>Создание отчета</value>
+	</data>
+	<data name="tUsersImport">
+		<value>Импорт пользователей</value>
+	</data>
+	<data name="tOtherImport">
+		<value>Импорт инцидентов</value>
+	</data>
+	<data name="tOtherImport1">
+		<value>Импорт списков</value>
+	</data>
+	<data name="tAssistantTitle">
+		<value>Помощь и информация</value>
+	</data>
+	<data name="tViewDashboard">
+		<value>Просмотреть общий отчет</value>
+	</data>
+	<data name="tChangeProfile">
+		<value>Изменить ваши личные настройки</value>
+	</data>
+	<data name="tHelpDocs">
+		<value>Справочник по работе с порталом</value>
+	</data>
+	<data name="tPeopleOnline">
+		<value>пользователей {0} Клиент в сети.</value>
+	</data>
+	<data name="tDownloadClient">
+		<value>Загрузить</value>
+	</data>
+	<data name="tCustomReps">
+		<value>готовых шаблонов отчетов.</value>
+	</data>
+	<data name="tView">
+		<value>Просмотреть</value>
+	</data>
+	<data name="tWizards">
+		<value>Мастеры</value>
+	</data>
+	<data name="tNoAlerts">
+		<value>Важных сообщений на сегодня нет.</value>
+	</data>
+	<data name="tReports">
+		<value>Отчеты</value>
+	</data>
+	<data name="GeneralReports">
+		<value>Общие отчеты</value>
+	</data>
+	<data name="tIncidents">
+		<value>Инциденты</value>
+	</data>
+	<data name="tProjects">
+		<value>Проекты</value>
+	</data>
+	<data name="tToDo">
+		<value>Поручения</value>
+	</data>
+	<data name="tCalEntries">
+		<value>Мероприятия</value>
+	</data>
+	<data name="tDocuments">
+		<value>Документы</value>
+	</data>
+	<data name="tAssets">
+		<value>Файлы</value>
+	</data>
+	<data name="tUsers">
+		<value>Пользователи</value>
+	</data>
+	<data name="tTasks">
+		<value>Задачи</value>
+	</data>
+	<data name="tPrjGrps">
+		<value>Группы проектов</value>
+	</data>
+	<data name="tViewReport">
+		<value>Просмотреть отчет</value>
+	</data>
+	<data name="tEdit">
+		<value>Редактировать</value>
+	</data>
+	<data name="tDelete">
+		<value>Удалить</value>
+	</data>
+	<data name="tWarning1">
+		<value>Вы действительно хотите удалить этот шаблон отчета?</value>
+	</data>
+	<data name="tCreateTemplate">
+		<value>Новый отчет</value>
+	</data>
+	<data name="tSystemReports">
+		<value>Системные отчеты</value>
+	</data>
+	<data name="tCustomReports">
+		<value>Пользовательские отчеты</value>
+	</data>
+	<data name="tName">
+		<value>Название</value>
+	</data>
+	<data name="tType">
+		<value>Тип</value>
+	</data>
+	<data name="tTTReportTitleAdmin">
+		<value>Отчет по листам учета времени</value>
+	</data>
+	<data name="tTTReportTitleAdminMy">
+		<value>Отчет по моим листам учета времени</value>
+	</data>
+	<data name="tProject">
+		<value>Проект/Активность</value>
+	</data>
+	<data name="tUser">
+		<value>Пользователь</value>
+	</data>
+	<data name="tState">
+		<value>Состояние</value>
+	</data>
+	<data name="tOnlyRej">
+		<value>Только отклоненные</value>
+	</data>
+	<data name="tPrint">
+		<value>Печать</value>
+	</data>
+	<data name="tExport">
+		<value>Экспорт</value>
+	</data>
+	<data name="tPeriod">
+		<value>Период</value>
+	</data>
+</root>

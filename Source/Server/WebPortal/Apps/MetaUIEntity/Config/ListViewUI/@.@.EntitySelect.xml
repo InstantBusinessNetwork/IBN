@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<add>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<GridAction commandName="MC_MUI_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_MUI_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CheckSelected()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

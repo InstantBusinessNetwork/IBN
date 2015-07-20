@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="login">
+		<value>Логин</value>
+	</data>
+	<data name="password">
+		<value>Пароль</value>
+	</data>
+	<data name="confirm">
+		<value>Подтверждение пароля</value>
+	</data>
+	<data name="first_name">
+		<value>Имя</value>
+	</data>
+	<data name="last_name">
+		<value>Фамилия</value>
+	</data>
+	<data name="email">
+		<value>E-mail</value>
+	</data>
+	<data name="time_zone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="lang">
+		<value>Язык</value>
+	</data>
+	<data name="groups">
+		<value>Группы</value>
+	</data>
+	<data name="im_groups">
+		<value>Контактная группа:</value>
+	</data>
+	<data name="photo">
+		<value>Фото</value>
+	</data>
+	<data name="phone">
+		<value>Телефон</value>
+	</data>
+	<data name="mobile">
+		<value>Мобильный телефон</value>
+	</data>
+	<data name="fax">
+		<value>Факс</value>
+	</data>
+	<data name="job_title">
+		<value>Должность</value>
+	</data>
+	<data name="department">
+		<value>Подразделение</value>
+	</data>
+	<data name="location">
+		<value>Расположение</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Отправить</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="company">
+		<value>Компания</value>
+	</data>
+	<data name="active">
+		<value>Активный</value>
+	</data>
+	<data name="BackToTheList">
+		<value>Вернуться к списку пользователей</value>
+	</data>
+	<data name="EditPendingUser">
+		<value>Редактирование приглашенного пользователя</value>
+	</data>
+	<data name="CreatePendingUser">
+		<value>Приглашение пользователя</value>
+	</data>
+	<data name="EditExternalUser">
+		<value>Редактирование внешнего пользователя</value>
+	</data>
+	<data name="CreateExternalUser">
+		<value>Создание внешнего пользователя</value>
+	</data>
+	<data name="EditUser">
+		<value>Редактирование информации пользователя</value>
+	</data>
+	<data name="CreateUser">
+		<value>Создание пользователя</value>
+	</data>
+	<data name="Available">
+		<value>Доступны</value>
+	</data>
+	<data name="Selected">
+		<value>Выбраны</value>
+	</data>
+	<data name="PasswordRequest">
+		<value>Необходимо ввести пароль.</value>
+	</data>
+	<data name="DuplicatedLogin">
+		<value>Введенный логин уже существует.</value>
+	</data>
+	<data name="Header">
+		<value>{0} – безопасная система и доступ к ней возможен лишь с разрешения администратора. Если Вам нужна учетная запись в системе, зарегистрируйтесь, заполнив данную форму. Подтверждение регистрации будет отправлено на указанный Вами электронный адрес после проверки.</value>
+	</data>
+	<data name="AccessRequest">
+		<value>Форма запроса</value>
+	</data>
+	<data name="tTitle">
+		<value>Регистрация</value>
+	</data>
+	<data name="tWrongFormat">
+		<value>Неверный формат</value>
+	</data>
+	<data name="tPendingWasCreated">
+		<value>Запрос на предоставление учетной записи сформирован и отправлен администратору портала. Об утверждении запроса и создании учетной записи вы будете уведомлены по электронной почте.</value>
+	</data>
+	<data name="tBackToHome">
+		<value>Вернуться на домашнюю страницу</value>
+	</data>
+</root>

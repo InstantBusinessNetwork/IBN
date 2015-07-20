@@ -1,0 +1,23 @@
+﻿.selected
+{
+	color:White;
+	background-color: #0A246A;
+	cursor:default;
+	-moz-user-select:none;
+}
+.unselected
+{
+	cursor:default;
+	-moz-user-select:none;
+}
+.inactive
+{
+	color:Gray;
+}
+.container
+{
+	border: inset 2px; 
+	overflow-y:scroll;
+	cursor:default;
+	-moz-user-select:none;
+}

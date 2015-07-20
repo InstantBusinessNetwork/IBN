@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Commands>
+		<add>
+			<Command id="MC_Workspace_AddControl">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle></PopupTitle>
+				<Url>~/Apps/WidgetEngine/Pages/AddFramePopup.aspx?ColumnId=[ClientParam:ColumnId]&amp;PageUid=[ClientParam:PageUid]&amp;IsAdmin=true&amp;ClassName={QueryString:ClassName}&amp;ObjectId={QueryString:ObjectId}</Url>
+				<Width>750</Width>
+				<Height>375</Height>
+				<Left>50</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<RefreshMethod>workspaceGetRefreshLight</RefreshMethod>
+			</Command>
+			<Command id="MC_Workspace_PropertyPage">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle></PopupTitle>
+				<Url>~/Apps/WidgetEngine/Pages/PropertyPageContainer.aspx?propertyControlUid=[ClientParam:controlUid]&amp;PageUid=[ClientParam:PageUid]&amp;ProfileId=[ClientParam:ProfileId]&amp;UserId=[ClientParam:UserId]</Url>
+				<Width>750</Width>
+				<Height>350</Height>
+				<Left>50</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+				<RefreshMethod>workspaceGetRefreshLight</RefreshMethod>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

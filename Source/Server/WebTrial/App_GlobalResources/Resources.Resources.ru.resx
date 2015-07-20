@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="NoObligation1">
+		<value>Бесплатное </value>
+	</data>
+	<data name="NoObligation2">
+		<value>-дневное тестирование IBN.&lt;br&gt;IBN портал, интеграция с MS Project, MS Office.</value>
+	</data>
+	<data name="PleaseFill">
+		<value>Введите всю запрашиваемую информацию и через несколько минут вы сможете начать работать с триал версией IBN через ваш собственный IBN Портал. Вы сможете ознакомиться со всеми возможностями IBN и приобрести наш продукт по окончании работы с триал версией.</value>
+	</data>
+	<data name="Step1">
+		<value>Основная информация</value>
+	</data>
+	<data name="PleaseEnter">
+		<value>Введите информацию, необходимую для создания и работы с триал-версией вашего IBN Портала</value>
+	</data>
+	<data name="IBNPortalName">
+		<value>Компания</value>
+	</data>
+	<data name="ThisShould">
+		<value>Это должен быть короткий заголовок, который будет отображаться вверху каждой страницы IBN Портала. Например "Secure Collaboration Portal"</value>
+	</data>
+	<data name="SizeOfGroup">
+		<value>Количество пользователей</value>
+	</data>
+	<data name="SpecifyTheSize">
+		<value>Укажите количество пользователей, которые будут использовать триал версию IBN</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="EnterABrief">
+		<value>Введите информацию, которая будет отображена на странице входа в портал. Вы всегда сможете изменить ее позже. При желании оставьте поле незаполненным</value>
+	</data>
+	<data name="Domain">
+		<value>Домен</value>
+	</data>
+	<data name="EnterTheWeb">
+		<value>Укажите адрес, который вы хотели бы использовать для входа в IBN Портал. Например http://mycompany.mediachase.net</value>
+	</data>
+	<data name="Step2">
+		<value>Создание профиля администратора IBN</value>
+	</data>
+	<data name="PleaseEnter2">
+		<value>Введите вашу контактную информацию, необходимую для предоставления вам прав администратора IBN Портала</value>
+	</data>
+	<data name="Name">
+		<value>Имя, Фамилия</value>
+	</data>
+	<data name="Email">
+		<value>E-mail&amp;nbsp;:</value>
+	</data>
+	<data name="Country">
+		<value>Страна</value>
+	</data>
+	<data name="Phone">
+		<value>Телефон</value>
+	</data>
+	<data name="TimeZone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="PleaseSelectLogin">
+		<value>Выберите логин и пароль для работы с IBN</value>
+	</data>
+	<data name="LoginName">
+		<value>Логин</value>
+	</data>
+	<data name="EnterAccount">
+		<value>Введите ваш логин</value>
+	</data>
+	<data name="EnterPassword">
+		<value>Введите ваш пароль</value>
+	</data>
+	<data name="ConfirmPassword">
+		<value>Подтверждение пароля</value>
+	</data>
+	<data name="Step3">
+		<value>Название домена IBN портала</value>
+	</data>
+	<data name="ReadTerms">
+		<value>Прочтите условия использования продукта IBN и если вы принимаете их, отметьте соответствующий флажок и нажмите на кнопку "Создать"</value>
+	</data>
+	<data name="SelectOne">
+		<value>--- Выберите один из пунктов ---</value>
+	</data>
+	<data name="1to20">
+		<value>1 - 20</value>
+	</data>
+	<data name="20to50">
+		<value>20 - 50</value>
+	</data>
+	<data name="50to100">
+		<value>50 - 100</value>
+	</data>
+  <data name="Assist" xml:space="preserve">
+    <value>&lt;div align="center" class="ibn-propertysheet"&gt;&lt;br&gt;&lt;br&gt;
+		&lt;span class="ibn-sectionheader"&gt;Поддержка&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+		&lt;a href="mailto:support@mediachase.ru"&gt;support@mediachase.ru&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
+		&lt;a href="http://friends.mediachase.ru/files/default.aspx"&gt;Документация по программе IBN&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+    &lt;a href="http://www.pmbox.ru"&gt;www.pmbox.ru&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
+		Наш телефон: +7(495) 648-61-62&lt;br&gt;&lt;br&gt;
+		&lt;/div&gt;
+		</value>
+  </data>
+  <data name="TrialRejected">
+    <value>Создание триал сайта прервано</value>
+  </data>
+	<data name="TrialRejectedReasons">
+		<value>Создание триал сайта прервано по одной из следующих причин:</value>
+	</data>
+	<data name="DomainExists">
+		<value>Выбранный домен уже существует. Выберите другое доменное имя.</value>
+	</data>
+	<data name="TrialActivated">
+		<value>Триал сайт уже активирован.</value>
+	</data>
+	<data name="UnknownReason">
+		<value>Причина неизвестна.</value>
+	</data>
+	<data name="InvalidRequest">
+		<value>Ошибка запроса.</value>
+	</data>
+	<data name="RequestPending">
+		<value>Запрос отправлен</value>
+	</data>
+	<data name="OneStep">
+		<value>Последний шаг...</value>
+	</data>
+	<data name="Created">
+		<value>Ваш трил сайт успешно создан.</value>
+	</data>
+	<data name="UserRegistered">
+		<value>Пользователь с таким e-mail уже зарегестрирован. Укажите другой e-mail.</value>
+	</data>
+	<data name="Activation">
+		<value>Все готово для активации триал сайта.</value>
+	</data>
+	<data name="Security">
+		<value>Для обеспечения безопасной работы с триал версией IBN вы получите на ваш e-mail сообщение с активационной ссылкой, доступной только Вам. Для активации триал сайта следуйте указанным инструкциям.</value>
+	</data>
+	<data name="Failed">
+		<value>Не удалось создать триал сайт</value>
+	</data>
+	<data name="Congratulations">
+		<value>Триал сайт успешно активирован. Воспользуйтесь этим адресом &lt;A href='http://{0}.{1}'&gt;http://{0}.{1}&lt;/A&gt; для начала работы с IBN Порталом.</value>
+	</data>
+	<data name="Back">
+		<value>Назад</value>
+	</data>
+	<data name="NextStep">
+		<value>Дальше</value>
+	</data>
+	<data name="CreateTrial">
+		<value>Создать</value>
+	</data>
+	<data name="Repeat">
+		<value>Повтор</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="SelectLanguage">
+		<value>Выберите язык</value>
+	</data>
+	<data name="IAgree">
+		<value>Я принимаю условия</value>
+	</data>
+	<data name="IAgree2">
+		<value>лицензионного соглашения</value>
+	</data>
+	<data name="Password">
+		<value>Пароль</value>
+	</data>
+	<data name="strTitle">
+		<value>Бесплатное тестирование IBN</value>
+	</data>
+	<data name="strMetaDescr">
+		<value>Бесплатное тестирование IBN. Портал, интеграция с MS Project и MS Office</value>
+	</data>
+	<data name="strCheck">
+		<value>Проверить</value>
+	</data>
+	<data name="strDomainNotEmpty">
+		<value>Вы не ввели имя домена!</value>
+	</data>
+	<data name="strCreateMyPortal">
+		<value>Создать мой IBN портал</value>
+	</data>
+	<data name="strDomainExists">
+		<value>Доменное имя занято!</value>
+	</data>
+	<data name="strDomainNotExists">
+		<value>Доменное имя свободно!</value>
+	</data>
+  <data name="strKeyword">
+    <value>Ключевое слово</value>
+  </data>
+	<data name="strAttention">
+		<value>Обратите внимание. Если мы не сможем подтвердить правильность введенной вами контактной информации, портал будет деактивирован.</value>
+	</data>
+	<data name="strSendMe">
+		<value>Я хочу получать специальные предложения от Медиачеис</value>
+	</data>
+	<data name="strCallMe">
+		<value>Я хочу, чтобы мне перезвонили и рассказали подробнее о продукте и его возможностях</value>
+	</data>
+</root>

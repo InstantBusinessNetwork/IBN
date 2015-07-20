@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MetaDataPlusBackup version="1.0">
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Events</Name>
+		<FriendlyName>Мероприятие</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Events</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Incidents</Name>
+		<FriendlyName>Инцидент</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Incidents</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Documents</Name>
+		<FriendlyName>Документ</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Documents</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Projects</Name>
+		<FriendlyName>Проект</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Projects</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Tasks</Name>
+		<FriendlyName>Задача</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Tasks</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Todo</Name>
+		<FriendlyName>Поручение</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Todo</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Users</Name>
+		<FriendlyName>Пользователь</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>Users</TableName>
+		<Description>Системный класс IBN</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>UsersEx</Name>
+		<FriendlyName>UsersEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Users</ParentClass>
+		<TableName>UsersEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[UsersSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[UsersSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].UsersSearch
+			@SubString as nvarchar(50)
+			as
+			DECLARE @Keyword as nvarchar(50)
+			SET @Keyword = '%' + @SubString + '%'
+			DECLARE @Active tinyint
+			DECLARE @Pending tinyint
+			SET @Active = 3
+			SET @Pending = 2
+			SELECT U.PrincipalId AS UserId, U.Login, U.FirstName, U.LastName, U.Email, U.IsExternal,
+			CASE WHEN U.Activity = @Pending THEN CAST(1 as bit)  ELSE CAST(0 as bit)  END AS IsPending
+			FROM USERS U
+			LEFT JOIN UsersEx MDPO ON MDPO.ObjectId = U.PrincipalId
+			WHERE (U.Activity = @Active OR U.Activity = @Pending)
+			AND (U.Login LIKE @Keyword
+			OR U.FirstName LIKE @Keyword
+			OR U.LastName LIKE @Keyword
+			OR U.Email LIKE @Keyword
+			OR [%=SearchByKeyword=%])
+			ORDER BY U.LastName, U.FirstName
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[UsersSearchForPartnerUser]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[UsersSearchForPartnerUser]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].UsersSearchForPartnerUser
+			@UserId as int,
+			@SubString as nvarchar(50)
+			as
+			DECLARE @Keyword as nvarchar(50)
+			SET @Keyword = '%' + @SubString + '%'
+			DECLARE @PartnerId int
+			SELECT @PartnerId = ParentPrincipalId FROM CONTAINERSHIP WHERE PrincipalId  = @UserId
+			DECLARE @Active tinyint
+			SET @Active = 3
+			DECLARE @Pending tinyint
+			SET @Pending = 2
+			SELECT U.PrincipalId AS UserId, U.Login, U.FirstName, U.LastName, U.Email, U.IsExternal,
+			CASE WHEN U.Activity = @Pending THEN CAST(1 as bit)  ELSE CAST(0 as bit) END AS IsPending
+			FROM USERS U
+			LEFT JOIN UsersEx MDPO ON MDPO.ObjectId = U.PrincipalId
+			WHERE (U.Activity = @Active OR U.Activity = @Pending)
+			AND (U.Login LIKE @SubString
+			OR U.FirstName LIKE @Keyword
+			OR U.LastName LIKE @Keyword
+			OR U.Email LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword=%] )
+			-- End Auto-Generate Code
+			AND PrincipalId IN (SELECT UserId
+			FROM USER_GROUP
+			WHERE GroupId = @PartnerId
+			OR GroupId IN (SELECT GroupId FROM PARTNER_GROUP WHERE PartnerId = @PartnerId)
+			)
+			ORDER BY U.LastName, U.FirstName
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>TodoEx</Name>
+		<FriendlyName>TodoEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Todo</ParentClass>
+		<TableName>TodoEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ToDoAndTasksGetByKeyword]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ToDoAndTasksGetByKeyword]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].ToDoAndTasksGetByKeyword
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+			SET @Keyword = '%' + @Keyword + '%'
+
+			DECLARE @IsPpmExec bit
+			SET @IsPpmExec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7))	-- PPM or Exec
+			SET @IsPpmExec = 1
+
+			SELECT T.ToDoId AS ItemId, T.Title, T.[Description], T.ManagerId, T.IsCompleted, 1 AS IsToDo, T.CompletionTypeId,  T.ReasonId,
+			T.StartDate, T.FinishDate
+			FROM TODO T
+			LEFT JOIN ToDoEx MDPO ON MDPO.ObjectId = T.ToDoId
+			WHERE
+			-- Check Security
+			(
+			@IsPpmExec = 1
+			OR T.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR ToDoId IN
+			(SELECT ToDoId FROM TODO_SECURITY_ALL S
+			WHERE PrincipalId = @UserId AND (IsResource = 1 OR IsManager = 1))
+			)
+			AND (T.Title LIKE @Keyword OR T.[Description] LIKE @Keyword
+			OR CAST(T.ToDoId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword(MDPO,@Keyword,ToDoEx)=%]
+			-- End Auto-Generate Code
+			)
+			UNION ALL
+			SELECT T.TaskId  AS ItemId, T.Title, T.[Description], P.ManagerId, T.IsCompleted, 0 AS IsToDo, T.CompletionTypeId, T.ReasonId,
+			T.StartDate, T.FinishDate
+			FROM TASKS T
+			JOIN PROJECTS P ON (T.ProjectId = P.ProjectId)
+			LEFT JOIN TaskEx MDPO ON MDPO.ObjectId = T.TaskId
+			WHERE
+			-- Check Security
+			(
+			@IsPpmExec = 1
+			OR T.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR TaskId IN
+			(SELECT TaskId FROM TASK_SECURITY S
+			WHERE PrincipalId = @UserId AND (IsResource = 1 OR IsManager = 1))
+			)
+			AND (T.Title LIKE @Keyword OR T.[Description] LIKE @Keyword
+			OR CAST(T.TaskId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword(MDPO,@Keyword,TaskEx)=%]
+			-- End Auto-Generate Code
+			)
+			SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+			GO
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>TaskEx</Name>
+		<FriendlyName>TaskEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Tasks</ParentClass>
+		<TableName>TaskEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ToDoAndTasksGetByKeyword]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ToDoAndTasksGetByKeyword]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].ToDoAndTasksGetByKeyword
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+			SET @Keyword = '%' + @Keyword + '%'
+
+			DECLARE @IsPpmExec bit
+			SET @IsPpmExec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7))	-- PPM or Exec
+			SET @IsPpmExec = 1
+
+			SELECT T.ToDoId AS ItemId, T.Title, T.[Description], T.ManagerId, T.IsCompleted, 1 AS IsToDo, T.CompletionTypeId,  T.ReasonId,
+			T.StartDate, T.FinishDate
+			FROM TODO T
+			LEFT JOIN ToDoEx MDPO ON MDPO.ObjectId = T.ToDoId
+			WHERE
+			-- Check Security
+			(
+			@IsPpmExec = 1
+			OR T.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR ToDoId IN
+			(SELECT ToDoId FROM TODO_SECURITY_ALL S
+			WHERE PrincipalId = @UserId AND (IsResource = 1 OR IsManager = 1))
+			)
+			AND (T.Title LIKE @Keyword OR T.[Description] LIKE @Keyword
+			OR CAST(T.ToDoId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword(MDPO,@Keyword,ToDoEx)=%]
+			-- End Auto-Generate Code
+			)
+			UNION ALL
+			SELECT T.TaskId  AS ItemId, T.Title, T.[Description], P.ManagerId, T.IsCompleted, 0 AS IsToDo, T.CompletionTypeId, T.ReasonId,
+			T.StartDate, T.FinishDate
+			FROM TASKS T
+			JOIN PROJECTS P ON (T.ProjectId = P.ProjectId)
+			LEFT JOIN TaskEx MDPO ON MDPO.ObjectId = T.TaskId
+			WHERE
+			-- Check Security
+			(
+			@IsPpmExec = 1
+			OR T.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR TaskId IN
+			(SELECT TaskId FROM TASK_SECURITY S
+			WHERE PrincipalId = @UserId AND (IsResource = 1 OR IsManager = 1))
+			)
+			AND (T.Title LIKE @Keyword OR T.[Description] LIKE @Keyword
+			OR CAST(T.TaskId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword(MDPO,@Keyword,TaskEx)=%]
+			-- End Auto-Generate Code
+			)
+			SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+			GO
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>IncidentsEx</Name>
+		<FriendlyName>IncidentsEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Incidents</ParentClass>
+		<TableName>IncidentsEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[IncidentsGetByKeyword]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[IncidentsGetByKeyword]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].IncidentsGetByKeyword
+			@UserId as int,
+			@LanguageId as int,
+			@Keyword as nvarchar(100)
+			as
+			SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+
+			SET @Keyword = '%' + @Keyword + '%'
+
+			DECLARE @IsPPM bit
+			SET @IsPPM = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND GroupId = 4)
+			SET @IsPPM = 1
+			DECLARE @IsExec bit
+			SET @IsExec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND GroupId = 7)
+			SET @IsExec = 1
+			DECLARE @IsHDM bit
+			SET @IsHDM = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND GroupId = 5)
+			SET @IsHDM = 1
+			SELECT I.IncidentId, I.CreatorId, I.Title, I.[Description],
+			I.PriorityId, PR.PriorityName, I.StateId, S.StateName, I.CreationDate
+			FROM INCIDENTS I
+			JOIN PRIORITY_LANGUAGE PR ON (I.PriorityId = PR.PriorityId AND PR.LanguageId = @LanguageId)
+			JOIN INCIDENT_STATE_LANGUAGE S ON (I.StateId = S.StateId AND S.LanguageId = @LanguageId)
+			LEFT JOIN IncidentsEx MDPO ON MDPO.ObjectId = I.IncidentId
+			WHERE
+			(@IsPPM = 1 OR @IsExec = 1 OR @IsHDM = 1
+			OR I.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR I.IncidentId IN
+			(SELECT IncidentId FROM INCIDENT_SECURITY_ALL
+			WHERE PrincipalId = @UserId AND (IsManager = 1 OR IsCreator = 1 OR IsResource = 1 OR IsIncidentResponsible = 1 OR IsIncidentController = 1)
+			)
+			)
+			AND (I.Title LIKE @Keyword OR I.[Description] LIKE @Keyword OR I.Resolution LIKE @Keyword OR I.Workaround LIKE @Keyword
+			OR CAST(I.IncidentId AS nvarchar(10)) LIKE @Keyword
+			OR I.IncidentId IN (SELECT IssueID FROM EmailIssueExternalRecipient WHERE Email LIKE @Keyword)
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword=%]
+			-- End Auto-Generate Code
+			)
+			SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+			GO
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>DocumentsEx</Name>
+		<FriendlyName>DocumentsEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Documents</ParentClass>
+		<TableName>DocumentsEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[DocumentsGetByKeyword]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[DocumentsGetByKeyword]
+			GO
+
+			SET QUOTED_IDENTIFIER ON
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].DocumentsGetByKeyword
+			@UserId as int,
+			@LanguageId as int,
+			@Keyword as nvarchar(100)
+			as
+			SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+			SET @Keyword = '%' + @Keyword + '%'
+
+			DECLARE @IsPPM bit
+			SET @IsPPM = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND GroupId = 4)	-- PPM
+			SET @IsPPM = 1
+
+			DECLARE @IsExec bit
+			SET @IsExec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND GroupId = 7)	-- Exec
+			SET @IsExec = 1
+
+			SELECT D.DocumentId, D.CreatorId, D.ManagerId, D.Title, D.[Description],
+			D.PriorityId, PR.PriorityName, D.StatusId, S.StatusName,
+			D.CreationDate, D.IsCompleted, D.StateId
+			FROM DOCUMENTS D
+			JOIN PRIORITY_LANGUAGE PR ON (D.PriorityId = PR.PriorityId AND PR.LanguageId = @LanguageId)
+			JOIN DOCUMENT_STATUS S ON (D.StatusId = S.StatusId)
+			LEFT JOIN DocumentsEx MDPO ON MDPO.ObjectId = D.DocumentId
+			WHERE 	-- Check Security
+			(@IsPPM = 1 OR @IsExec = 1
+			OR D.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR D.DocumentId IN
+			(SELECT DocumentId FROM DOCUMENT_SECURITY_ALL
+			WHERE PrincipalId = @UserId AND (IsManager = 1 OR IsResource = 1)
+			)
+			)
+			AND (D.Title LIKE @Keyword OR D.[Description] LIKE @Keyword
+			OR CAST(D.DocumentId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword=%]
+			-- End Auto-Generate Code
+			)
+			SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+			GO
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>EventsEx</Name>
+		<FriendlyName>EventsEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Events</ParentClass>
+		<TableName>EventsEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[EventsGetByKeyword]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[EventsGetByKeyword]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].EventsGetByKeyword
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+			SET @Keyword = '%' + @Keyword + '%'
+
+			DECLARE @IsPpmExec bit
+			SET @IsPpmExec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7))	-- PPM or Exec
+			SET @IsPpmExec = 1
+
+			SELECT EventId, Title, [Description], Location, TypeId, StartDate, FinishDate, StateId
+			FROM EVENTS E
+			LEFT JOIN EventsEx MDPO ON MDPO.ObjectId = E.EventId
+			WHERE
+			-- Check Security
+			(
+			@IsPpmExec = 1
+			OR E.ProjectId IN
+			(SELECT ProjectId FROM PROJECT_SECURITY
+			WHERE PrincipalId = @UserId
+			AND (IsManager = 1 OR IsExecutiveManager = 1 OR IsTeamMember = 1 OR IsSponsor = 1 OR IsStakeHolder = 1)
+			)
+			OR EventId IN
+			(SELECT EventId FROM EVENT_SECURITY_ALL S
+			WHERE PrincipalId = @UserId AND (IsResource = 1 OR IsManager = 1))
+			)
+			AND (Title LIKE @Keyword OR [Description] LIKE @Keyword OR Location LIKE @Keyword
+			OR CAST(E.EventId AS NVARCHAR(25)) LIKE @Keyword
+			-- Auto-Generate Code
+			OR [%=SearchByKeyword=%]
+			-- End Auto-Generate Code
+			)
+			SET TRANSACTION ISOLATION LEVEL READ COMMITTED
+			GO
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.System</Namespace>
+		<Name>Portfolio</Name>
+		<FriendlyName>Группа проектов</FriendlyName>
+		<MetaClassType>System</MetaClassType>
+		<ParentClass>
+		</ParentClass>
+		<TableName>PROJECT_GROUPS</TableName>
+		<Description>
+			Системный класс IBN
+		</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>PortfolioEx</Name>
+		<FriendlyName>PortfolioEx</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Portfolio</ParentClass>
+		<TableName>PortfolioEx</TableName>
+		<Description>
+		</Description>
+		<FieldListChangedSqlScript>
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_1</Name>
+		<FriendlyName>Общий</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_1</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_2</Name>
+		<FriendlyName>Исследование</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_2</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_3</Name>
+		<FriendlyName>Творческий проект</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_3</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_4</Name>
+		<FriendlyName>Поддержка клиентов</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_4</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_5</Name>
+		<FriendlyName>Проектирование</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_5</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_6</Name>
+		<FriendlyName>Документация</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_6</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_7</Name>
+		<FriendlyName>Кадры</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_7</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_8</Name>
+		<FriendlyName>ИТ инфраструктура/Сеть</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_8</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_9</Name>
+		<FriendlyName>Маркетинговое исследование</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_9</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_10</Name>
+		<FriendlyName>Совершенствование технологии</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_10</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_11</Name>
+		<FriendlyName>Выпуск нового продукта</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_11</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_12</Name>
+		<FriendlyName>Обеспечение качества</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_12</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_13</Name>
+		<FriendlyName>Контроль качества</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_13</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_14</Name>
+		<FriendlyName>Системная интеграция</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_14</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_15</Name>
+		<FriendlyName>Программа обучения персонала</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_15</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+	<MetaClass>
+		<Namespace>Mediachase.MetaDataPlus.User</Namespace>
+		<Name>ProjectsEx_16</Name>
+		<FriendlyName>Разработка веб сайта</FriendlyName>
+		<MetaClassType>User</MetaClassType>
+		<ParentClass>Projects</ParentClass>
+		<TableName>ProjectsEx_16</TableName>
+		<Description>Проектный тип</Description>
+		<FieldListChangedSqlScript>
+			if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[ProjectsSearch]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+			drop procedure [dbo].[ProjectsSearch]
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+			CREATE PROCEDURE [dbo].[ProjectsSearch]
+			@UserId as int,
+			@Keyword as nvarchar(100)
+			as
+			DECLARE @IsPPM_Exec bit
+			SET @IsPPM_Exec = 0
+			IF EXISTS(SELECT * FROM USER_GROUP WHERE UserId = @UserId AND (GroupId = 4 OR GroupId = 7)) -- PPM or Exec
+			SET @IsPPM_Exec = 1
+			SET @Keyword = '%' + @Keyword + '%'
+			SELECT P.ProjectId, P.ManagerId, P.Title, P.[Description], P.StatusId, P.PercentCompleted,
+			P.StartDate, P.FinishDate, P.TargetStartDate, P.TargetFinishDate, P.ActualStartDate, P.ActualFinishDate, ISNULL(P.ProjectCode, '') AS ProjectCode
+			FROM PROJECTS P
+			LEFT JOIN PROJECT_SECURITY_ALL PS ON (P.ProjectId = PS.ProjectId AND PS.PrincipalId = @UserId)
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.TableName FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","  ","LEFT JOIN {1} AS MDPO{0} ON P.ProjectId = MDPO{0}.ObjectId")=%]
+			-- End Auto-Generate Code
+			WHERE (@IsPPM_Exec = 1 OR PS.IsManager = 1 OR PS.IsExecutiveManager = 1 OR PS.IsTeamMember = 1 OR PS.IsSponsor = 1 OR PS.IsStakeHolder = 1)
+			AND
+			(
+			P.Title LIKE @Keyword OR
+			P.[Description] LIKE @Keyword OR
+			P.ProjectCode LIKE @Keyword OR
+			CAST(P.ProjectId AS nvarchar(10)) LIKE @Keyword
+			OR
+			-- Auto-Generate Code
+			[%=ForEach("SELECT MC.MetaClassId, MC.Name FROM MetaClass MC JOIN MetaClass PMC ON MC.ParentClassId=PMC.MetaClassId WHERE  PMC.Name = 'Projects'","OR","[%=SearchByKeyword(MDPO{0},@Keyword,{1})=%]")=%]
+			-- End Auto-Generate Code
+			)
+			GO
+
+			SET QUOTED_IDENTIFIER OFF
+			GO
+			SET ANSI_NULLS ON
+			GO
+
+		</FieldListChangedSqlScript>
+		<Tag>
+		</Tag>
+	</MetaClass>
+</MetaDataPlusBackup>

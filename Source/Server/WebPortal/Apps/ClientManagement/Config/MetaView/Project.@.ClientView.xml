@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_CM_PM_Selected_Delete" itemSplitter="Right"></Button>
+
+			<Menu id="ActionsMenu2" text="{IbnFramework.Incident:Actions}">
+				<Button id="UpPriority" text="{IbnFramework.Project:UpPriority}" imageUrl="~/Layouts/Images/flagorange.gif" commandName="MC_CM_PM_Selected_UpPriority"></Button>
+				<Button id="DownPriority" text="{IbnFramework.Project:DownPriority}" imageUrl="~/Layouts/Images/flaggray.gif" commandName="MC_CM_PM_Selected_DownPriority"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_Columns" primaryKey="ProjectId">
+				<Column id="ECE97A8E-238D-433e-A8C0-33C233FF6062" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/icons/project_edit.gif" commandName="MC_CM_PM_EditItem" paddingRight="5" tooltip="{IbnFramework.Project:EditProject}" />
+				</Column>
+				<Column id="colId" type="default" width="40" title="#" sortExpression="ProjectId" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ProjectId.ProjectList.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Project:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="240" title="{IbnFramework.Project:PrjTitle}" sortExpression="Title" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Title.ProjectList.ascx" />
+				<Column id="colCompleted" type="default" width="90" title="{IbnFramework.Project:PrjCompleted}" sortExpression="PercentCompleted" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/OverallStatus.ProjectList.ascx" />
+				<Column id="colStart" type="default" width="80" title="{IbnFramework.Project:StartDate}" sortExpression="TargetStartDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetStartDate.ProjectList.ascx" />
+				<Column id="colEnd" type="default" width="80" title="{IbnFramework.Project:EndDate}" sortExpression="TargetFinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetFinishDate.ProjectList.ascx" />
+				<Column id="colManager" type="default" width="160" title="{IbnFramework.Project:Manager}" sortExpression="ManagerName" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Manager.ProjectList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_CM_PM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_CM_PM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_CM_PM_Selected_UpPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Project:UpPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.UpPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_CM_PM_Selected_DownPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Project:DownPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.DownPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_CM_PM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectView.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_CM_PM_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectEdit.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

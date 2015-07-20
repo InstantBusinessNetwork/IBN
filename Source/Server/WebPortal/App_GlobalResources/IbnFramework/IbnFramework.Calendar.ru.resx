@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Calendar_" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Месяц</value>
+  </data>
+  <data name="NextDay" xml:space="preserve">
+    <value>Следующий день</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>Следующий месяц</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>Следующая неделя</value>
+  </data>
+  <data name="NextYear" xml:space="preserve">
+    <value>Следующий год</value>
+  </data>
+  <data name="NoUserCalendarWithLinkGap" xml:space="preserve">
+    <value>Ваш персональный календарь не определён. &lt;a href='{0}'&gt;Создать календарь&lt;/a&gt;.</value>
+  </data>
+  <data name="PreviousDay" xml:space="preserve">
+    <value>Предыдущий день</value>
+  </data>
+  <data name="PreviousMonth" xml:space="preserve">
+    <value>Предыдущий месяц</value>
+  </data>
+  <data name="PreviousWeek" xml:space="preserve">
+    <value>Предыдущая неделя</value>
+  </data>
+  <data name="PreviousYear" xml:space="preserve">
+    <value>Предыдущий год</value>
+  </data>
+  <data name="StateActive" xml:space="preserve">
+    <value>Активно</value>
+  </data>
+  <data name="StateCompleted" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="StateOverdue" xml:space="preserve">
+    <value>Просрочено</value>
+  </data>
+  <data name="StateSuspended" xml:space="preserve">
+    <value>Приостановлено</value>
+  </data>
+  <data name="StateUpcoming" xml:space="preserve">
+    <value>Предстоит</value>
+  </data>
+  <data name="tLegend" xml:space="preserve">
+    <value>Легенда</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Сегодня</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Неделя</value>
+  </data>
+  <data name="WorkWeek" xml:space="preserve">
+    <value>Рабочая неделя</value>
+  </data>
+  <data name="Year" xml:space="preserve">
+    <value>Год</value>
+  </data>
+  <data name="AllCalendarEvents" xml:space="preserve">
+    <value>Все мероприятия</value>
+  </data>
+  <data name="CalendarEvent" xml:space="preserve">
+    <value>Мероприятие</value>
+  </data>
+  <data name="CalendarEvents" xml:space="preserve">
+    <value>Мероприятия</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="AllDayEvent" xml:space="preserve">
+    <value>Весь день</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="BusyStatus" xml:space="preserve">
+    <value>Занятость</value>
+  </data>
+  <data name="CalendarEventException" xml:space="preserve">
+    <value>Исключение</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Категории</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Длительность</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Дата завершения</value>
+  </data>
+  <data name="EndTimeZoneOffset" xml:space="preserve">
+    <value>Часовой пояс даты завершения</value>
+  </data>
+  <data name="Importance" xml:space="preserve">
+    <value>Важность</value>
+  </data>
+  <data name="IsRecurring" xml:space="preserve">
+    <value>Реккурентное</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="MeetingStatus" xml:space="preserve">
+    <value>Статус мероприятия</value>
+  </data>
+  <data name="RecurrenceState" xml:space="preserve">
+    <value>Статус повторения</value>
+  </data>
+  <data name="Sensitivity" xml:space="preserve">
+    <value>Доступность</value>
+  </data>
+  <data name="Sequence" xml:space="preserve">
+    <value>Редакций</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="StartTimeZoneOffset" xml:space="preserve">
+    <value>Часовой пояс даты начала</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="CalendarEventImportance" xml:space="preserve">
+    <value>Важность мероприятия</value>
+  </data>
+  <data name="CalendarEventMeetingStatus" xml:space="preserve">
+    <value>Статус мероприятия</value>
+  </data>
+  <data name="CalendarEventRecurrenceDayOfWeekMask" xml:space="preserve">
+    <value>Calendar Event Recurrence Day Of Week Mask</value>
+  </data>
+  <data name="CalendarEventRecurrenceState" xml:space="preserve">
+    <value>Статус повторения мероприятия</value>
+  </data>
+  <data name="CalendarEventRecurrenceType" xml:space="preserve">
+    <value>Тип повторения мероприятия</value>
+  </data>
+  <data name="CalendarEventResourceStatus" xml:space="preserve">
+    <value>Статус участника мероприятия</value>
+  </data>
+  <data name="CalendarEventResourceTrackingStatus" xml:space="preserve">
+    <value>Calendar Event Resource Tracking Status</value>
+  </data>
+  <data name="CalendarEventResourceType" xml:space="preserve">
+    <value>Тип участника мероприятия</value>
+  </data>
+  <data name="CalendarEventSensitivy" xml:space="preserve">
+    <value>Доступность мероприятия</value>
+  </data>
+  <data name="ImportanceLow" xml:space="preserve">
+    <value>Низкая</value>
+  </data>
+  <data name="ImportanceNormal" xml:space="preserve">
+    <value>Нормальная</value>
+  </data>
+  <data name="ImportanceHigh" xml:space="preserve">
+    <value>Высокая</value>
+  </data>
+  <data name="SensitivityConfidential" xml:space="preserve">
+    <value>Конфиденциальная</value>
+  </data>
+  <data name="SensitivityNormal" xml:space="preserve">
+    <value>Нормальная</value>
+  </data>
+  <data name="SensitivityPersonal" xml:space="preserve">
+    <value>Персональная</value>
+  </data>
+  <data name="SensitivityPrivate" xml:space="preserve">
+    <value>Частная</value>
+  </data>
+  <data name="MeetingStatusMeeting" xml:space="preserve">
+    <value>Запланировано</value>
+  </data>
+  <data name="MeetingStatusCancelled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="MeetingStatusReceived" xml:space="preserve">
+    <value>Принято</value>
+  </data>
+  <data name="MeetingStatusReceivedAndCancelled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="MeetingStatusNonMeeting" xml:space="preserve">
+    <value>Нет участников</value>
+  </data>
+  <data name="CalendarEventRecurrence" xml:space="preserve">
+    <value>Повторение мероприятия</value>
+  </data>
+  <data name="CalendarEventRecurrences" xml:space="preserve">
+    <value>Повторения мероприятия</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="DayOfMonth" xml:space="preserve">
+    <value>День месяца</value>
+  </data>
+  <data name="DayOfWeekMask" xml:space="preserve">
+    <value>Маска дня недели</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>Мероприятие</value>
+  </data>
+  <data name="Instance" xml:space="preserve">
+    <value>Instance</value>
+  </data>
+  <data name="Interval" xml:space="preserve">
+    <value>Интервал</value>
+  </data>
+  <data name="MonthOfYear" xml:space="preserve">
+    <value>Месяц года</value>
+  </data>
+  <data name="NoEndDate" xml:space="preserve">
+    <value>Без конца</value>
+  </data>
+  <data name="Occurrences" xml:space="preserve">
+    <value>Количество повторений</value>
+  </data>
+  <data name="PatternEndDate" xml:space="preserve">
+    <value>Дата завершения повторений</value>
+  </data>
+  <data name="RecurrenceType" xml:space="preserve">
+    <value>Тип повторения</value>
+  </data>
+  <data name="CalendarEventResource" xml:space="preserve">
+    <value>Участник мероприятия</value>
+  </data>
+  <data name="CalendarEventResources" xml:space="preserve">
+    <value>Участники мероприятия</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Электронная почта</value>
+  </data>
+  <data name="ResourceEventRole" xml:space="preserve">
+    <value>Организатор</value>
+  </data>
+  <data name="Rsvp" xml:space="preserve">
+    <value>Требуется подтверждение</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="Principal" xml:space="preserve">
+    <value>Пользователь/Группа</value>
+  </data>
+  <data name="CalendarEventInfo" xml:space="preserve">
+    <value>Информация о мероприятии</value>
+  </data>
+  <data name="EditSeries" xml:space="preserve">
+    <value>Редактировать все мероприятия серии</value>
+  </data>
+  <data name="EditResources" xml:space="preserve">
+    <value>Редактирование исполнителей</value>
+  </data>
+  <data name="ModifyResources" xml:space="preserve">
+    <value>Изменить</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Принять</value>
+  </data>
+  <data name="Tentative" xml:space="preserve">
+    <value>Под вопросом</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Отказаться</value>
+  </data>
+  <data name="UserStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="CreateEvent" xml:space="preserve">
+    <value>Новое мероприятие</value>
+  </data>
+  <data name="_mc_View" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="DeleteSeriesWarning" xml:space="preserve">
+    <value>Удалить только это мероприятие или все мероприятия в этой серии?</value>
+  </data>
+  <data name="OnlyThisInstance" xml:space="preserve">
+    <value>Только это мероприятие</value>
+  </data>
+  <data name="AllInstances" xml:space="preserve">
+    <value>Все мероприятия в этой серии</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="DeleteWarning" xml:space="preserve">
+    <value>Удалить это мероприятие?</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="EditSeriesWarning" xml:space="preserve">
+    <value>Изменить только это мероприятие или все мероприятия в этой серии?</value>
+  </data>
+  <data name="EventDeletingTitle" xml:space="preserve">
+    <value>Удаление мероприятия</value>
+  </data>
+  <data name="EventEditingTitle" xml:space="preserve">
+    <value>Редактирование мероприятия</value>
+  </data>
+  <data name="CreateReccurence" xml:space="preserve">
+    <value>Настройки повторения мероприятия</value>
+  </data>
+  <data name="EditResourcesAsSeries" xml:space="preserve">
+    <value>Редактирование ресурсов для всех мероприятий серии</value>
+  </data>
+  <data name="ModifyResourcesAsSeries" xml:space="preserve">
+    <value>Редактировать во всех мероприятиях серии</value>
+  </data>
+  <data name="DeleteSeries" xml:space="preserve">
+    <value>Удалить все мероприятия серии</value>
+  </data>
+  <data name="EditEventDetails" xml:space="preserve">
+    <value>Изменить информацию&gt;&gt;</value>
+  </data>
+  <data name="DeleteQuick" xml:space="preserve">
+    <value>[Удалить]</value>
+  </data>
+  <data name="EditOnlyThisEventInstance" xml:space="preserve">
+    <value>Изменить только это мероприятие&gt;&gt;</value>
+  </data>
+  <data name="EditAllEventInstances" xml:space="preserve">
+    <value>Изменить все мероприятия серии&gt;&gt;</value>
+  </data>
+  <data name="DeleteQuickThisInstance" xml:space="preserve">
+    <value>[Удалить только это мероприятие]</value>
+  </data>
+  <data name="DeleteQuickAllInstances" xml:space="preserve">
+    <value>[Удалить все мероприятия серии]</value>
+  </data>
+  <data name="PinnedUp" xml:space="preserve">
+    <value>Закреплено</value>
+  </data>
+  <data name="AtPositionN" xml:space="preserve">
+    <value>в позиции №</value>
+  </data>
+  <data name="Reorder" xml:space="preserve">
+    <value>Изменить порядок</value>
+  </data>
+  <data name="EditUnpin" xml:space="preserve">
+    <value>Открепить / Редактировать</value>
+  </data>
+  <data name="Pin" xml:space="preserve">
+    <value>Закрепить</value>
+  </data>
+  <data name="Unpin" xml:space="preserve">
+    <value>Открепить</value>
+  </data>
+  <data name="CreateCalendar" xml:space="preserve">
+    <value>Создать календарь</value>
+  </data>
+  <data name="NoUserCalendar" xml:space="preserve">
+    <value>Пользовательский календарь рабочего времени не определён.</value>
+  </data>
+  <data name="Reordering" xml:space="preserve">
+    <value>Изменение порядка</value>
+  </data>
+  <data name="NoUsersInGroup" xml:space="preserve">
+    <value>В этой группе нет пользователей.</value>
+  </data>
+  <data name="AfterTomorrow" xml:space="preserve">
+    <value>Послезавтра</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>Этот месяц</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>Эта неделя</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>Этот год</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Завтра</value>
+  </data>
+  <data name="ResourceStatusAccepted" xml:space="preserve">
+    <value>Принято</value>
+  </data>
+  <data name="ResourceStatusDeclined" xml:space="preserve">
+    <value>Отказано</value>
+  </data>
+  <data name="ResourceStatusNotResponded" xml:space="preserve">
+    <value>Нет ответа</value>
+  </data>
+  <data name="ResourceStatusOrganized" xml:space="preserve">
+    <value>Организатор</value>
+  </data>
+  <data name="ResourceStatusTentative" xml:space="preserve">
+    <value>Под вопросом</value>
+  </data>
+  <data name="Reassign" xml:space="preserve">
+    <value>Переназначить</value>
+  </data>
+  <data name="Reassignment" xml:space="preserve">
+    <value>Переназначение</value>
+  </data>
+</root>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_DM_DocRes">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Document:DocRes}</PopupTitle>
+				<Url>~/Documents/ResourcesEditor.aspx?DocumentId={QueryString:DocumentId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Left>100</Left>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

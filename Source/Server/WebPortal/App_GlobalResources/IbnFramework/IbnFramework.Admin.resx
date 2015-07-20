@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminMode" xml:space="preserve">
+    <value>Current mode is "Administration". You can see the advanced information.</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Audit</value>
+  </data>
+  <data name="AuditIbnClientLogin" xml:space="preserve">
+    <value>Failed {0} Client Logins</value>
+  </data>
+  <data name="AuditWebLogin" xml:space="preserve">
+    <value>Failed Portal Logins</value>
+  </data>
+  <data name="DevMode" xml:space="preserve">
+    <value>Current mode is "Development". You can see only the necessary information.</value>
+  </data>
+  <data name="OperationMode" xml:space="preserve">
+    <value>Mode of Operation</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Settings were saved successfully</value>
+  </data>
+  <data name="SwitchToAdminMode" xml:space="preserve">
+    <value>Switch to "Administration" mode.</value>
+  </data>
+  <data name="SwitchToDevMode" xml:space="preserve">
+    <value>Switch to "Development" mode.</value>
+  </data>
+  <data name="AllOutgoingMessages" xml:space="preserve">
+    <value>All Outgoing Messages</value>
+  </data>
+  <data name="DeliveredMessages" xml:space="preserve">
+    <value>Delivered Messages</value>
+  </data>
+  <data name="NotDeliveredMessages" xml:space="preserve">
+    <value>Not Delivered Messages</value>
+  </data>
+  <data name="FailedMessages" xml:space="preserve">
+    <value>Failed Messages</value>
+  </data>
+  <data name="OutgoingMessageQueue" xml:space="preserve">
+    <value>Outgoing Message Queue</value>
+  </data>
+  <data name="OutgoingMessageQueues" xml:space="preserve">
+    <value>Outgoing Message Queues</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="DeliveryAttempts" xml:space="preserve">
+    <value>Delivery Attempts</value>
+  </data>
+  <data name="IsDelivered" xml:space="preserve">
+    <value>Is Delivered</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="IbnClientMessage" xml:space="preserve">
+    <value>Ibn Client Message</value>
+  </data>
+  <data name="IbnClientMessages" xml:space="preserve">
+    <value>Ibn Client Messages</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="ClientEmailMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="GeneralFieldsVisibility" xml:space="preserve">
+    <value>General Fields Visibility Settings</value>
+  </data>
+  <data name="GeneralVisibilityWarning" xml:space="preserve">
+    <value>Here you can you check/uncheck the fields of portal objects in order to display them or not.&lt;br /&gt;
+		&lt;br /&gt;You can adjust dusplay of these fields for each of portal objects separately as well.&lt;br /&gt;
+		To do this follow the link.</value>
+  </data>
+  <data name="generalAllowPriority" xml:space="preserve">
+    <value>Show Priority field</value>
+  </data>
+  <data name="generalAllowGeneralCategories" xml:space="preserve">
+    <value>Show General Categories field</value>
+  </data>
+  <data name="generalAllowClient" xml:space="preserve">
+    <value>Show Client field</value>
+  </data>
+  <data name="generalAllowTaskTime" xml:space="preserve">
+    <value>Show Task Time field</value>
+  </data>
+  <data name="GoToObjectsSettings" xml:space="preserve">
+    <value>You can change fields visibility for each object type</value>
+  </data>
+  <data name="ObjectFieldsVisibility" xml:space="preserve">
+    <value>Object Type Fields Visibility Settings</value>
+  </data>
+  <data name="ObjectType" xml:space="preserve">
+    <value>Object Type</value>
+  </data>
+  <data name="ObjectVisibilityWarning" xml:space="preserve">
+    <value>Here you can you check/uncheck the several fields for every object type in order to display them or not.</value>
+  </data>
+  <data name="tField" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="tEdit" xml:space="preserve">
+    <value>Create/Edit</value>
+  </data>
+  <data name="tView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="tDefaultValue" xml:space="preserve">
+    <value>Default Value</value>
+  </data>
+  <data name="ObjectType_CalendarEntry" xml:space="preserve">
+    <value>Calendar Entry</value>
+  </data>
+  <data name="ObjectType_Document" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="ObjectType_Incident" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="ObjectType_Task" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="ObjectType_ToDo" xml:space="preserve">
+    <value>ToDo</value>
+  </data>
+  <data name="Field_Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Field_GenCats" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="Field_Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="Field_Attachment" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="Field_TaskTime" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="Field_IncCats" xml:space="preserve">
+    <value>Issue Categories</value>
+  </data>
+  <data name="Field_ExpAssDead" xml:space="preserve">
+    <value>Expected Assign Deadline</value>
+  </data>
+  <data name="Field_ExpRepDead" xml:space="preserve">
+    <value>Expected Reply Deadline</value>
+  </data>
+  <data name="Field_ExpResolDead" xml:space="preserve">
+    <value>Expected Resolution Deadline</value>
+  </data>
+  <data name="Field_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Field_Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="Field_ActType" xml:space="preserve">
+    <value>Activation Type</value>
+  </data>
+  <data name="Field_CompType" xml:space="preserve">
+    <value>Completion Type</value>
+  </data>
+  <data name="Field_MustBeConfirm" xml:space="preserve">
+    <value>Must be confirmed by Manager</value>
+  </data>
+  <data name="tObjectNotSet" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="TrueValue" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="FalseValue" xml:space="preserve">
+    <value>False</value>
+  </data>
+  <data name="SaveSuccessfull" xml:space="preserve">
+    <value>All the settings have been successfully saved!</value>
+  </data>
+  <data name="EditDefValue" xml:space="preserve">
+    <value>Edit default value</value>
+  </data>
+  <data name="DefaultProfile" xml:space="preserve">
+    <value>[ Default Profile ]</value>
+  </data>
+  <data name="PermittedShe" xml:space="preserve">
+    <value>Permitted</value>
+  </data>
+  <data name="UnpermittedShe" xml:space="preserve">
+    <value>Unpermitted</value>
+  </data>
+  <data name="WorkspacePersonalization" xml:space="preserve">
+    <value>Workspace Personalization</value>
+  </data>
+  <data name="RssDisableDescription" xml:space="preserve">
+    <value>Now Rss for meta objects is enabled.</value>
+  </data>
+  <data name="RssDisableText" xml:space="preserve">
+    <value>Turn off Rss for meta objects</value>
+  </data>
+  <data name="RssEnableDescription" xml:space="preserve">
+    <value>Now Rss for meta objects is disabled.</value>
+  </data>
+  <data name="RssEnableText" xml:space="preserve">
+    <value>Turn on Rss for meta objects</value>
+  </data>
+  <data name="RssHeader" xml:space="preserve">
+    <value>Rss Settings</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="Field_Deliverables" xml:space="preserve">
+    <value>Deliverables</value>
+  </data>
+  <data name="Field_Goals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="Field_PrgCats" xml:space="preserve">
+    <value>Project Categories</value>
+  </data>
+  <data name="Field_Scope" xml:space="preserve">
+    <value>Scope</value>
+  </data>
+  <data name="ObjectType_Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="ProjectView" xml:space="preserve">
+    <value>Project View</value>
+  </data>
+  <data name="ProjectWithLeftMenu" xml:space="preserve">
+    <value>Current project view mode: Left Menu.</value>
+  </data>
+  <data name="ProjectWithTabs" xml:space="preserve">
+    <value>Current project view mode: Top Tabs.</value>
+  </data>
+  <data name="SwitchToProjectWithLeftMenu" xml:space="preserve">
+    <value>Switch to "Left Menu" mode.</value>
+  </data>
+  <data name="SwitchToProjectWithTabs" xml:space="preserve">
+    <value>Switch to "Top Tabs" mode.</value>
+  </data>
+  <data name="Field_Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="webDavSessionDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="webDavSessionDuration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="webDavSessionFileName" xml:space="preserve">
+    <value>File name</value>
+  </data>
+  <data name="webDavSessionList" xml:space="preserve">
+    <value>Active edit sessions</value>
+  </data>
+  <data name="webDavSessionLockBy" xml:space="preserve">
+    <value>Locked By</value>
+  </data>
+  <data name="webDavSessionNoData" xml:space="preserve">
+    <value>No active sessions</value>
+  </data>
+  <data name="webDavSessionStartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+</root>

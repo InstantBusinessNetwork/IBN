@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedAddress" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/images/DELETE.GIF" commandName="MC_Address_DeleteSelected" ></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="CM_Adresses_Columns">
+				<Column id="AddressColumn" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/edit.gif" commandName="MC_Address_EditItem" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Address_EditItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:AddressEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;className=Address&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Address_ViewItem">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:AddressInfo}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityViewPopup.aspx?formName=[MC_GeneralViewForm]&amp;className=Address&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Address_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.DeleteSelectedAddressHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

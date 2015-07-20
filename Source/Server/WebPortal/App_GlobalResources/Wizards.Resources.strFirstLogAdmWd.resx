@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalTitle">
+		<value>First Time Administrator Login Wizard</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Alerts Setup</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>E-mail Issues Setup</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Company Info</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>You have succesfully performed the Portal Setup</value>
+	</data>
+	<data name="s1Description">
+		<value>Alerts Setup Text</value>
+	</data>
+	<data name="s1EnableAlerts">
+		<value>Enable Alerts ?</value>
+	</data>
+	<data name="s1AlertSenderFirstName">
+		<value>Alert Sender First Name</value>
+	</data>
+	<data name="s1AlertSenderLastName">
+		<value>Alert Sender Last Name</value>
+	</data>
+	<data name="s1AlertSenderEmail">
+		<value>Alert Sender e-mail</value>
+	</data>
+	<data name="tPeriod">
+		<value>Check every</value>
+	</data>
+	<data name="tServer">
+		<value>Server</value>
+	</data>
+	<data name="tPort">
+		<value>Port</value>
+	</data>
+	<data name="tUser">
+		<value>User</value>
+	</data>
+	<data name="tPassword">
+		<value>Password</value>
+	</data>
+	<data name="tAutoApprove">
+		<value>Auto Approve For Known Users</value>
+	</data>
+	<data name="tAutoDelete">
+		<value>Auto Delete For Unknown Users</value>
+	</data>
+	<data name="tUseExternal">
+		<value>Use External Users Only</value>
+	</data>
+	<data name="tSave">
+		<value>Save</value>
+	</data>
+	<data name="tCancel">
+		<value>Cancel</value>
+	</data>
+	<data name="tIncSets">
+		<value>Issues Settings</value>
+	</data>
+	<data name="tPopSets">
+		<value>POP3 Settings</value>
+	</data>
+	<data name="tbTitle">
+		<value>E-mail Issues</value>
+	</data>
+	<data name="tCheck">
+		<value>Check Settings</value>
+	</data>
+	<data name="tError">
+		<value>Settings are incorrect!</value>
+	</data>
+	<data name="tOK">
+		<value>Settings are correct!</value>
+	</data>
+	<data name="t10min">
+		<value>10 min</value>
+	</data>
+	<data name="t30min">
+		<value>30 min</value>
+	</data>
+	<data name="t60min">
+		<value>1 hour</value>
+	</data>
+	<data name="t180min">
+		<value>3 hours</value>
+	</data>
+	<data name="tUse">
+		<value>Use e-mail Issues</value>
+	</data>
+	<data name="tSystemSets">
+		<value>E-mail Issues</value>
+	</data>
+	<data name="s3Title1">
+		<value>Home Page Text Title 1 </value>
+	</data>
+	<data name="s3Text1">
+		<value>Home Page Text 1</value>
+	</data>
+	<data name="s3Title2">
+		<value>Home Page Text Title 2</value>
+	</data>
+	<data name="s3Text2">
+		<value>Home Page Text 2</value>
+	</data>
+	<data name="IdentityGraphic">
+		<value>Identity Graphic  </value>
+	</data>
+	<data name="Logo">
+		<value>Company Logo</value>
+	</data>
+	<data name="s4Success">
+		<value>Congratulations !</value>
+	</data>
+	<data name="s4SText">
+		<value>Your changes were saved! Click "Close" button for working in Portal.</value>
+	</data>
+	<data name="Finish">
+		<value>Finish</value>
+	</data>
+	<data name="ShowOnNextLogin">
+		<value>Show This Wizard on Next Administrator Login ?</value>
+	</data>
+	<data name="Close">
+		<value>Close</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Alert Service allows users to receive messages about each modification
+		 of their projects, task, issues etc.&lt;br&gt;Use these options to activate 
+		 Alert Service, set Alert Sender's first name, last name and e-mail adress.</value>
+	</data>
+	<data name="s1TopText">
+		<value>To text for the first page</value>
+	</data>
+	<data name="AlertDuplicatedEmail">
+		<value>You can not use e-mail address of registered user</value>
+	</data>
+	<data name="s1Invite">
+		<value>Invite Users To Portal!</value>
+	</data>
+	<data name="s2Invite">
+		<value>Users have been added!</value>
+	</data>
+	<data name="tClose">
+		<value>Close</value>
+	</data>
+	<data name="tFinish">
+		<value>Finish</value>
+	</data>
+	<data name="InviteGlobalTitle">
+		<value>Invite Users To Portal!</value>
+	</data>
+	<data name="s1TopDivInvite">
+		<value>You can add users into Portal right now!</value>
+	</data>
+	<data name="tFirstName">
+		<value>First Name</value>
+	</data>
+	<data name="tLastName">
+		<value>Last Name</value>
+	</data>
+	<data name="teMail">
+		<value>E-mail</value>
+	</data>
+	<data name="s2TopText">
+		<value>Users have been added and now they can work in system too.</value>
+	</data>
+	<data name="tTitle">
+		<value>Title</value>
+	</data>
+	<data name="tCompanyInfo">
+		<value>Company Info</value>
+	</data>
+	<data name="tFirstDayOfWeek">
+		<value>First Day Of Week</value>
+	</data>
+</root>

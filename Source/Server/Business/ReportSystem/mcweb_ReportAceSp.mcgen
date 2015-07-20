@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" extension="sql" template="Templates\RowSpTemplate.aspx">
+	<TableObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn46portal;User ID=dev;Password=</ConnectionString>
+		<Table>mcweb_ReportAce</Table>
+	</TableObject>
+</mcgen>

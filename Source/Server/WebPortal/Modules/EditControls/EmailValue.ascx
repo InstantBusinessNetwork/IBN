@@ -1,0 +1,4 @@
+<%@ Control Language="c#" Inherits="Mediachase.UI.Web.Modules.EditControls.EmailValue" Codebehind="EmailValue.ascx.cs" %>
+<asp:TextBox id="txtValue" CssClass="text" runat="server" Wrap="False" Width="300" MaxLength="256"></asp:TextBox>
+<asp:RequiredFieldValidator id="txtValueRFValidator" runat="server" ErrorMessage="*" ControlToValidate="txtValue"	Display="Dynamic"></asp:RequiredFieldValidator>
+<asp:regularexpressionvalidator id="txtValueREValidator" runat="server" ErrorMessage="*" ControlToValidate="txtValue" ValidationExpression="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:regularexpressionvalidator>

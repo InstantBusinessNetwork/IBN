@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tDocumentView">
+		<value>Просмотр документа</value>
+	</data>
+	<data name="tDocumentEdit">
+		<value>Редактирование документа</value>
+	</data>
+	<data name="tDocumentAdd">
+		<value>Новый документ</value>
+	</data>
+	<data name="tDocuments">
+		<value>Документы</value>
+	</data>
+	<data name="Location">
+		<value>Расположение</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="Category">
+		<value>Общие категории</value>
+	</data>
+	<data name="Load">
+		<value>Тип</value>
+	</data>
+	<data name="File">
+		<value>Файл</value>
+	</data>
+	<data name="LinkTitle">
+		<value>Название файла (*.url)</value>
+	</data>
+	<data name="Link">
+		<value>Ссылка</value>
+	</data>
+	<data name="HTMLTitle">
+		<value>HTML заголовок</value>
+	</data>
+	<data name="HTMLText">
+		<value>HTML текст</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Редактировать справочник</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>[ не выбран ]</value>
+	</data>
+	<data name="tbSaveEdit">
+		<value>Редактирование документа</value>
+	</data>
+	<data name="tbSaveCreate">
+		<value>Новый документ</value>
+	</data>
+	<data name="tbSaveGoToList">
+		<value>Вернуться к списку документов</value>
+	</data>
+	<data name="tbSaveSave">
+		<value>Сохранить</value>
+	</data>
+	<data name="tbSaveCancel">
+		<value>Отменить</value>
+	</data>
+	<data name="tOneMoreItem">
+		<value>Остаться на странице "Новый документ"</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Основная информация</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Дополнительная информация</value>
+	</data>
+	<data name="tAttachedFiles">
+		<value>Вложения</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить этот документ?</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="Keyword">
+		<value>Ключевое слово</value>
+	</data>
+	<data name="CreationDate">
+		<value>Дата создания</value>
+	</data>
+	<data name="ModifiedDate">
+		<value>Дата изменения</value>
+	</data>
+	<data name="tNoProject">
+		<value>Документы вне проектов</value>
+	</data>
+	<data name="tApply">
+		<value>Применить</value>
+	</data>
+	<data name="tReset">
+		<value>Очистить</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Снять фильтр</value>
+	</data>
+	<data name="ResetGroup">
+		<value>Снять группировку</value>
+	</data>
+	<data name="tGroupBy">
+		<value>Группировка по</value>
+	</data>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="NoneProject">
+		<value>Документы, не принадлежащие проектам</value>
+	</data>
+	<data name="Any2">
+		<value>Любые</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Только указанные</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Все, кроме указанных</value>
+	</data>
+	<data name="tMyRole">
+		<value>Моя роль</value>
+	</data>
+	<data name="tResource">
+		<value>Исполнитель</value>
+	</data>
+	<data name="tProjects">
+		<value>Проекты</value>
+	</data>
+	<data name="HideFilter">
+		<value>Скрыть панель фильтра</value>
+	</data>
+	<data name="SetGrouping">
+		<value>Установить группировку</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Показать панель фильтра</value>
+	</data>
+	<data name="tbDocumentsList">
+		<value>Документы</value>
+	</data>
+	<data name="Export">
+		<value>Экспорт в Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Экспорт в XML</value>
+	</data>
+	<data name="DocumentId">
+		<value>Код документа</value>
+	</data>
+	<data name="Created">
+		<value>Создал</value>
+	</data>
+	<data name="Updated">
+		<value>Обновил</value>
+	</data>
+	<data name="tbView">
+		<value>Информация о документе</value>
+	</data>
+	<data name="tbAdd">
+		<value>Новое поручение</value>
+	</data>
+	<data name="AddResources">
+		<value>Назначить исполнителей</value>
+	</data>
+	<data name="tbAddDoc">
+		<value>Новый файл</value>
+	</data>
+	<data name="tbAddCom">
+		<value>Новый комментарий</value>
+	</data>
+	<data name="tbViewEdit">
+		<value>Редактировать</value>
+	</data>
+	<data name="Document">
+		<value>Документ</value>
+	</data>
+	<data name="EditCategories">
+		<value>Категории</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Добавить в Избранное</value>
+	</data>
+	<data name="tbDocumentBack">
+		<value>Вернуться к списку документов</value>
+	</data>
+	<data name="tActions">
+		<value>Действия</value>
+	</data>
+	<data name="tbDocumentInfo">
+		<value>Общая информация</value>
+	</data>
+	<data name="None">
+		<value>не выбран</value>
+	</data>
+	<data name="tbDocumentRes">
+		<value>Исполнители</value>
+	</data>
+	<data name="Modify">
+		<value>Изменить</value>
+	</data>
+	<data name="UserName">
+		<value>Имя</value>
+	</data>
+	<data name="CanManage">
+		<value>Менеджер</value>
+	</data>
+	<data name="Waiting">
+		<value>Нет ответа</value>
+	</data>
+	<data name="Accepted">
+		<value>Принял</value>
+	</data>
+	<data name="Declined">
+		<value>Отклонил</value>
+	</data>
+	<data name="DeleteTxt">
+		<value>&lt;p align="left" class="text"&gt;Удаляемый документ может быть связан с листами учета времени. Вы можете удалить и их.&lt;br&gt;
+&lt;br&gt;
+- Чтобы удалить документ и связанные листы учета времени, нажмите кнопку &amp;laquo;Удалить все&amp;raquo;.&lt;br&gt;
+&lt;br&gt;
+- Чтобы удалить только документ, нажмите кнопку &amp;laquo;Удалить&amp;raquo;.&lt;br&gt;
+&lt;br&gt;
+- Чтобы отменить действие, нажмите кнопку &amp;laquo;Отменить&amp;raquo;.&lt;/p&gt;
+		</value>
+	</data>
+	<data name="DeleteAll">
+		<value>Удалить все</value>
+	</data>
+	<data name="DeleteDocument">
+		<value>Удалить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="WarningToDo">
+		<value>Вы действительно хотите удалить это поручение?</value>
+	</data>
+	<data name="tbToDo">
+		<value>Поручения</value>
+	</data>
+	<data name="Yes">
+		<value>Завершено</value>
+	</data>
+	<data name="Suspended">
+		<value>Приостановил</value>
+	</data>
+	<data name="CompletedByManager">
+		<value>Завершил</value>
+	</data>
+	<data name="CompletedByResource">
+		<value>Завершено </value>
+	</data>
+	<data name="NotCompleted">
+		<value>Не завершено</value>
+	</data>
+	<data name="Text7">
+		<value>Менеджер поручает вам работу с этим документом. Нажмите &amp;laquo;Принять&amp;raquo;, если
+		вы принимаете назначение. В противном случае нажмите &amp;laquo;Отклонить&amp;raquo;.
+	</value>
+	</data>
+	<data name="Accept">
+		<value>Принять</value>
+	</data>
+	<data name="Decline">
+		<value>Отклонить</value>
+	</data>
+	<data name="UpdateTimesheetText">
+		<value>Введите количество рабочих часов, затраченных на работу с документом.</value>
+	</data>
+	<data name="SpentHours">
+		<value>Затрачено часов</value>
+	</data>
+	<data name="Date">
+		<value>Дата</value>
+	</data>
+	<data name="Update">
+		<value>Обновить</value>
+	</data>
+	<data name="Text1">
+		<value>Вы можете выбрать новый статус документа и ввести количество часов, затраченных на работу с документом.</value>
+	</data>
+	<data name="Text2">
+		<value>Вы можете установить новый статус документа, выбрав нужное значение из выпадающего меню и нажав &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Text3">
+		<value>Как менеджер вы можете завершить работу с этим документом.</value>
+	</data>
+	<data name="Text4">
+		<value>Как менеджер вы можете приостановить работу с этим документом.</value>
+	</data>
+	<data name="Text5">
+		<value>Работа с документом завершена, но как менеджер вы можете отменить ее завершение.</value>
+	</data>
+	<data name="Text6">
+		<value>Работа с документом приостановлена, но как менеджер вы можете возобновить ее.</value>
+	</data>
+	<data name="Text8">
+		<value>Документ еще не активен, но как менеджер вы можете активировать его.</value>
+	</data>
+	<data name="Complete">
+		<value>Завершить</value>
+	</data>
+	<data name="Suspend">
+		<value>Приостановить</value>
+	</data>
+	<data name="Uncomplete">
+		<value>Отменить завершение</value>
+	</data>
+	<data name="Resume">
+		<value>Возобновить</value>
+	</data>
+	<data name="QuickTracking">
+		<value>Управление</value>
+	</data>
+	<data name="tDocumentVersionAdd">
+		<value>Новая версия документа</value>
+	</data>
+	<data name="tAddVersion">
+		<value>Новая версия</value>
+	</data>
+	<data name="tVesions">
+		<value>Версии документа</value>
+	</data>
+	<data name="tbAddTimeSheet">
+		<value>Новая строка листа учета времени</value>
+	</data>
+	<data name="SharedDoc">
+		<value>Доступ к этому документу открыт</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Фильтр не установлен</value>
+	</data>
+	<data name="Publish">
+		<value>Опубликовать</value>
+	</data>
+	<data name="PublishTo">
+		<value>Выберите папку для публикации:</value>
+	</data>
+	<data name="Publication">
+		<value>Публикация</value>
+	</data>
+	<data name="ActivateDocument">
+		<value>Активировать</value>
+	</data>
+	<data name="AddVersionText">
+		<value>Для добавления новой версии документа нажмите кнопку &amp;laquo;Добавить версию&amp;raquo; и в открывшемся окне загрузите нужный файл.</value>
+	</data>
+	<data name="AddVersion">
+		<value>Добавить версию</value>
+	</data>
+	<data name="tDuplicateName">
+		<value>* В выбранной папке файл с таким именем уже существует. Выберите другую папку.</value>
+	</data>
+	<data name="tClient">
+		<value>Клиент</value>
+	</data>
+	<data name="tNoClient">
+		<value>Документы без клиента</value>
+	</data>
+	<data name="tClients">
+		<value>Клиенты</value>
+	</data>
+  <data name="tabGeneral">
+    <value>Главное</value>
+  </data>
+  <data name="tbDetails">
+    <value>Детали</value>
+  </data>
+  <data name="tabLibrary">
+    <value>Библиотека</value>
+  </data>
+  <data name="tabFinance">
+    <value>Финансы</value>
+  </data>
+  <data name="tabDiscussions">
+    <value>Обсуждение</value>
+  </data>
+	<data name="CreatedDate" xml:space="preserve">
+    <value>Создан</value>
+  </data>
+</root>

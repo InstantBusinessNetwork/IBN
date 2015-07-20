@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MResActs" create="True">
+			<add>
+				<Link order="150" id="MResActs15" text="{IbnShell.Navigation:OutActivities}" iconUrl="" iconCss="" command="cmd_MResActs15" />
+			</add>
+			<Link id="MResActs2">
+				<add>
+					<Link order="200" id="MResActs22" text="{IbnShell.Navigation:tPrjsByPortf}" iconUrl="" iconCss="" command="cmd_MResActs22" />
+					<Link order="300" id="MResActs23" text="{IbnShell.Navigation:tPrjsByPhase}" iconUrl="" iconCss="" command="cmd_MResActs23" />
+					<Link order="400" id="MResActs24" text="{IbnShell.Navigation:tPrjsByPM}" iconUrl="" iconCss="" command="cmd_MResActs24" />
+					<Link order="500" id="MResActs25" text="{IbnShell.Navigation:tPrjsByClient}" iconUrl="" iconCss="" command="cmd_MResActs25" />
+				</add>
+			</Link>
+			<Link id="MResActs4">
+				<add>
+					<Link order="200" id="MResActs42" text="{IbnShell.Navigation:tUtilTasks}" iconUrl="" iconCss="" command="cmd_MResActs44" />
+				</add>
+			</Link>
+			<add>
+				<Link order="500" id="MResActs5" text="{IbnShell.Navigation:tPlanFactAnalysis}" iconUrl="" iconCss="" command="cmd_MResActs5">
+					<Link order="100" id="MResActs51" text="{IbnShell.Navigation:tPlanFactAnalysisFinances}" iconUrl="" iconCss="" command="cmd_MResActs51" />
+					<Link order="200" id="MResActs52" text="{IbnShell.Navigation:tPlanFactAnalysisMilestones}" iconUrl="" iconCss="" command="cmd_MResActs52" />
+				</Link>
+			</add>
+		</Tab>
+		<add>
+			<Tab order="301" id="MProjects_Add" text="{IbnShell.Navigation:tProjectsNew}" contentType="default" imageUrl="~/layouts/images/icons/project.gif" configUrl="" enableHandler="Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectNewTabEnableHandler, Mediachase.UI.Web">
+				<Link order="200" id="MProjects_21" text="{IbnShell.Navigation:tProjects}" iconUrl="~/layouts/images/icons/prjgrid.gif" iconCss="iconStdCls" command="cmd_MProjects22" />
+				<Link order="400" id="MProjects_4" text="{IbnShell.Navigation:tPortfolios}" iconUrl="~/layouts/images/icons/relprojects.gif" iconCss="iconStdCls" command="cmd_MProjects4" />
+				<Link order="600" id="MProjects_5" text="{IbnShell.Navigation:tPrjTemps}" iconUrl="~/layouts/images/icons/newtemplate.gif" iconCss="iconStdCls" command="cmd_MProjects5" />
+				<Link order="700" id="MProjectsWs" text="{IbnFramework.Project:_mc_ProjWs}" iconUrl="~/layouts/images/Chart-Pie.png" iconCss="iconStdCls" command="cmd_MProjectsWs" />
+			</Tab>
+		</add>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MResActs15">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPageView.aspx?PageUid=f909236f-7bb8-4c32-9de1-0a97e9ebcea7</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs22">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ActivitiesTracking.aspx?Tab=PrjGrp</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs23">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ActivitiesTracking.aspx?Tab=PrjPhase</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs24">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ActivitiesTracking.aspx?Tab=PrjMan</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs25">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ProjectsByClient.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ClientAllowPMAllowHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs44">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx?Objs=Task</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs5">
+				<CommandType></CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs51">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ProjectsByBusinessScores.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.PowerExecutiveHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs52">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ProjectsByMilestones.aspx</Url>
+			</Command>
+
+			<Command id="cmd_MProjects22">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/ProjectManagement/Pages/ProjectList.aspx</Url>
+			</Command>
+			<Command id="cmd_MProjects4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ProjectGroups.aspx</Url>
+			</Command>
+			<Command id="cmd_MProjects5">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ProjectTemplates.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.PowerExecutiveHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MProjectsWs">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPageView.aspx?PageUid=dc5503c5-6862-42ef-9d83-d92ba0b5048c</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

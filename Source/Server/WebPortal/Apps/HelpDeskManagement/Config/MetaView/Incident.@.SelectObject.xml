@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_SelectObject_Columns" primaryKey="IncidentId">
+				<Column id="colId" type="default" width="80" title="{IbnFramework.Incident:IssCode}" sortExpression="IncidentId" dataField="IncidentId" />
+				<Column id="colTitle" type="default" width="400" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Incident.Title.SelectObject.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_Incident_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Incident_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>CheckSelected()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

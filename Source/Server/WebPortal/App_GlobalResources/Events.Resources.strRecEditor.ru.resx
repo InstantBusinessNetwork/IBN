@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbEdit">
+		<value>Настройка периодичности мероприятия</value>
+	</data>
+	<data name="First">
+		<value>Первый</value>
+	</data>
+	<data name="Second">
+		<value>Второй</value>
+	</data>
+	<data name="Third">
+		<value>Третий</value>
+	</data>
+	<data name="Fourth">
+		<value>Четвертый</value>
+	</data>
+	<data name="Last">
+		<value>Последний</value>
+	</data>
+	<data name="Monday">
+		<value>Понедельник</value>
+	</data>
+	<data name="Tuesday">
+		<value>Вторник</value>
+	</data>
+	<data name="Wednesday">
+		<value>Среда</value>
+	</data>
+	<data name="Thursday">
+		<value>Четверг</value>
+	</data>
+	<data name="Friday">
+		<value>Пятница</value>
+	</data>
+	<data name="Saturday">
+		<value>Суббота</value>
+	</data>
+	<data name="Sunday">
+		<value>Воскресенье</value>
+	</data>
+	<data name="January">
+		<value>Январь</value>
+	</data>
+	<data name="February">
+		<value>Февраль</value>
+	</data>
+	<data name="March">
+		<value>Март</value>
+	</data>
+	<data name="April">
+		<value>Апрель</value>
+	</data>
+	<data name="May">
+		<value>Май</value>
+	</data>
+	<data name="June">
+		<value>Июнь</value>
+	</data>
+	<data name="July">
+		<value>Июль</value>
+	</data>
+	<data name="August">
+		<value>Август</value>
+	</data>
+	<data name="September">
+		<value>Сентябрь</value>
+	</data>
+	<data name="October">
+		<value>Октябрь</value>
+	</data>
+	<data name="November">
+		<value>Ноябрь</value>
+	</data>
+	<data name="December">
+		<value>Декабрь</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Сохранить</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Вернуться к календарю</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="Recurevery">
+		<value>Повторять каждую</value>
+	</data>
+	<data name="Daily">
+		<value>По дням</value>
+	</data>
+	<data name="Weekly">
+		<value>По неделям</value>
+	</data>
+	<data name="Monthly">
+		<value>По месяцам</value>
+	</data>
+	<data name="Yearly">
+		<value>По годам</value>
+	</data>
+	<data name="Every">
+		<value>Каждый</value>
+	</data>
+	<data name="Day">
+		<value>День</value>
+	</data>
+	<data name="weekday">
+		<value>рабочий день</value>
+	</data>
+	<data name="week(s)on">
+		<value>неделю в</value>
+	</data>
+	<data name="ofevery">
+		<value>каждого</value>
+	</data>
+	<data name="month(s)">
+		<value>месяца</value>
+	</data>
+	<data name="The">
+		<value></value>
+	</data>
+	<data name="of">
+		<value>каждого</value>
+	</data>
+	<data name="Start">
+		<value>Начало</value>
+	</data>
+	<data name="End">
+		<value>Завершение</value>
+	</data>
+	<data name="Endby">
+		<value>Завершить</value>
+	</data>
+	<data name="TimeSection">
+		<value>Время проведения мероприятия</value>
+	</data>
+	<data name="PatternSection">
+		<value>Периодичность</value>
+	</data>
+	<data name="RangeSection">
+		<value>Период действия</value>
+	</data>
+	<data name="StartTime">
+		<value>Начало</value>
+	</data>
+	<data name="EndTime">
+		<value>Завершение</value>
+	</data>
+	<data name="Pattern">
+		<value>Периодичность</value>
+	</data>
+	<data name="Endafter">
+		<value>Закончить после</value>
+	</data>
+	<data name="occurrences">
+		<value> повторения(ий)</value>
+	</data>
+	<data name="NotSet">
+		<value>Настройки периодичности не установлены.</value>
+	</data>
+	<data name="Recurrence">
+		<value>Периодичность</value>
+	</data>
+	<data name="Modify">
+		<value>Изменить</value>
+	</data>
+	<data name="Warning">
+		<value>Вы действительно хотите удалить эти настройки периодичности?</value>
+	</data>
+	<data name="Delete">
+		<value>Удалить</value>
+	</data>
+	<data name="TimeZone">
+		<value>Часовой пояс</value>
+	</data>
+	<data name="Add">
+		<value>Сделать периодическим</value>
+	</data>
+	<data name="tTitle">
+		<value>Настройка периодичности мероприятия</value>
+	</data>
+</root>

@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.ProjectManagement.ColumnTemplates.Manager_ProjectList" %>
+<%# (Eval("ManagerId") == DBNull.Value) ? "&nbsp;" : Mediachase.UI.Web.Util.CommonHelper.GetUserStatus((int)Eval("ManagerId"))%>

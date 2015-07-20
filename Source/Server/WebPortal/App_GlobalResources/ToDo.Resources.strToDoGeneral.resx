@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTitle">
+		<value>ToDo Information</value>
+	</data>
+	<data name="Edit">
+		<value>Edit</value>
+	</data>
+	<data name="Back">
+		<value>Back</value>
+	</data>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="BelongsToProject">
+		<value>Belongs To Project</value>
+	</data>
+	<data name="BelongsToTask">
+		<value>Belongs To Task</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="PercCompleted">
+		<value>% completed</value>
+	</data>
+	<data name="tbView">
+		<value>Task Information</value>
+	</data>
+	<data name="View">
+		<value>View</value>
+	</data>
+	<data name="Category">
+		<value>General Categories</value>
+	</data>
+	<data name="Priority">
+		<value>Priority</value>
+	</data>
+	<data name="StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="DueDate">
+		<value>Due Date</value>
+	</data>
+	<data name="OverallStatus">
+		<value>Overall Status</value>
+	</data>
+	<data name="Completed">
+		<value>Completion</value>
+	</data>
+	<data name="NotApproved">
+		<value>Not Approved</value>
+	</data>
+	<data name="SummaryTask">
+		<value>Summary Task</value>
+	</data>
+	<data name="Milestone">
+		<value>Milestone</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="Created">
+		<value>Created</value>
+	</data>
+	<data name="Updated">
+		<value>Updated</value>
+	</data>
+	<data name="CompletionType">
+		<value>Completion Type</value>
+	</data>
+	<data name="ConstaraintType">
+		<value>Constaraint Type</value>
+	</data>
+	<data name="Yes">
+		<value>Yes</value>
+	</data>
+	<data name="No">
+		<value>Not Completed</value>
+	</data>
+	<data name="NA">
+		<value>N/A</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Must be confirmed by Manager</value>
+	</data>
+	<data name="UserName">
+		<value>User Name</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="Modified">
+		<value>Modified</value>
+	</data>
+	<data name="Modify">
+		<value>Modify</value>
+	</data>
+	<data name="ToDoResources">
+		<value>ToDo Resources</value>
+	</data>
+	<data name="Waiting">
+		<value>Waiting</value>
+	</data>
+	<data name="Accepted">
+		<value>Accepted</value>
+	</data>
+	<data name="Denied">
+		<value>Denied</value>
+	</data>
+	<data name="BelongsToIncident">
+		<value>Belongs To Issue</value>
+	</data>
+	<data name="Delete">
+		<value>Delete</value>
+	</data>
+	<data name="Warning">
+		<value>Do you really want to delete this ToDo ?</value>
+	</data>
+	<data name="NotSet">
+		<value>Not Set</value>
+	</data>
+	<data name="Overdue">
+		<value>Overdue</value>
+	</data>
+	<data name="ActualFinishDate">
+		<value>Actual End Date</value>
+	</data>
+	<data name="Suspended">
+		<value>Suspended by</value>
+	</data>
+	<data name="CompletedByManager">
+		<value>Completed by</value>
+	</data>
+	<data name="CompletedByResource">
+		<value>Completed by</value>
+	</data>
+	<data name="NotCompleted">
+		<value>NotCompleted</value>
+	</data>
+	<data name="DeleteAll">
+		<value>Delete All</value>
+	</data>
+	<data name="DeleteToDo">
+		<value>Delete ToDo</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="DeleteTxt">
+		<value>
+			&lt;p align="left" class="text"&gt;The deleting ToDo can have related timesheets. You can delete such timesheets or leave them.&lt;br&gt;
+			&lt;br&gt;
+			- To delete ToDo and timesheet records linked with this ToDo click "Delete 
+			All".&lt;br&gt;
+			&lt;br&gt;
+			-To delete ToDo without deleting timesheet records click "Delete ToDo".&lt;br&gt;
+			&lt;br&gt;
+			-To cancel this action, click "Cancel".&lt;/p&gt;
+		</value>
+	</data>
+	<data name="Add">
+		<value>Add Resources</value>
+	</data>
+	<data name="AssignWizard">
+		<value>ToDo Resources</value>
+	</data>
+	<data name="AddToFavorites">
+		<value>Add To Favorites</value>
+	</data>
+	<data name="tbDocView">
+		<value>Document Information</value>
+	</data>
+	<data name="timeline">
+		<value>Timeline</value>
+	</data>
+	<data name="Location">
+		<value>Location</value>
+	</data>
+	<data name="FullCompleted">
+		<value>Completed</value>
+	</data>
+	<data name="Issue">
+		<value>Issue</value>
+	</data>
+	<data name="Task">
+		<value>Task</value>
+	</data>
+	<data name="Document">
+		<value>Document</value>
+	</data>
+	<data name="LatestVersion">
+		<value>Latest Version</value>
+	</data>
+	<data name="None">
+		<value>(None)</value>
+	</data>
+	<data name="State">
+		<value>State</value>
+	</data>
+	<data name="tClient">
+		<value>Client</value>
+	</data>
+	<data name="tClients">
+		<value>Clients</value>
+	</data>
+	<data name="tToDos">
+		<value>To-Dos</value>
+	</data>
+	<data name="Keyword">
+		<value>Keyword</value>
+	</data>
+	<data name="tApply">
+		<value>Apply</value>
+	</data>
+	<data name="tReset">
+		<value>Reset</value>
+	</data>
+	<data name="ResetFilter">
+		<value>Reset Filter</value>
+	</data>
+	<data name="ShowFilter">
+		<value>Show Filter</value>
+	</data>
+	<data name="HideFilter">
+		<value>Hide Filter</value>
+	</data>
+	<data name="FilterNotSet">
+		<value>Filter is not set</value>
+	</data>
+	<data name="All">
+		<value>All</value>
+	</data>
+	<data name="NoneProject">
+		<value>None Project ToDos</value>
+	</data>
+	<data name="Any2">
+		<value>Any</value>
+	</data>
+	<data name="SelectedOnly">
+		<value>Only following</value>
+	</data>
+	<data name="ExcludeSelected">
+		<value>Exclude following</value>
+	</data>
+	<data name="tNoClient">
+		<value>No Client</value>
+	</data>
+</root>

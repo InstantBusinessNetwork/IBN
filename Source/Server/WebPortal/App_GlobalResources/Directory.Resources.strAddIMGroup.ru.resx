@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="GroupTitle">
+		<value>Название группы</value>
+	</data>
+	<data name="Reqired">
+		<value> * необходимо ввести название группы</value>
+	</data>
+	<data name="EditGroup">
+		<value>Редактирование контактной группы</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="CreateIMGroup">
+		<value>Создание новой контактной группы</value>
+	</data>
+	<data name="GroupLogo">
+		<value>Логотип группы (227 x 36 )</value>
+	</data>
+	<data name="BackgroundColor">
+		<value>Цвет фона (Hex)</value>
+	</data>
+	<data name="IsGlobalGroup">
+		<value>Глобальная группа</value>
+	</data>
+	<data name="VisibleGroups">
+		<value>Данной группе видны следующие группы: *</value>
+	</data>
+	<data name="GroupsCU">
+		<value>Данная группа видна следующим группам: *</value>
+	</data>
+	<data name="UseCtrl">
+		<value>* Используйте клавишу Ctrl, чтобы выбрать несколько значений</value>
+	</data>
+	<data name="Cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="ImageSizeWarning">
+		<value>Размер логотипа должен быть 227x36</value>
+	</data>
+	<data name="Back">
+		<value>Вернуться к списку пользователей</value>
+	</data>
+	<data name="CloneGroup">
+		<value>Копировать	группу</value>
+	</data>
+</root>

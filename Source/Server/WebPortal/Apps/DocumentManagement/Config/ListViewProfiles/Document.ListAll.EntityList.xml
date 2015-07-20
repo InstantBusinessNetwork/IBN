@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{C92089E6-2359-40c9-A54D-F9920F6CE7BA}</Id>
+	<Name>{IbnFramework.Document:AllDocuments}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>Documents</FieldSetName>
+	<FieldSet>
+		<string>Title</string>
+		<string>DocumentTypeId</string>
+		<string>RegistrationNumber</string>
+		<string>ReceptionDate</string>
+		<string>ExpectedResolveDate</string>
+		<string>SourceDocumentId</string>
+	</FieldSet>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+	<ColumnsUI>
+		<Column field="Title" width="250" />
+		<Column field="DocumentTypeId" width="130" />
+		<Column field="RegistrationNumber" width="120" />
+		<Column field="ReceptionDate" width="130" />
+		<Column field="ExpectedResolveDate" width="190" />
+		<Column field="SourceDocumentId" width="120" />
+	</ColumnsUI>
+</ListViewProfile>

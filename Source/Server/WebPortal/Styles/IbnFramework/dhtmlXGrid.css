@@ -1,0 +1,192 @@
+.dhtmlLink_Active
+{
+	cursor: pointer;
+	background-color: #FED758;/*DF3531*/
+	color: Black;
+	padding-top: 3px;
+}
+.dhtmlLink_Passive
+{
+	cursor: pointer;
+	background-color: #E1ECFC; /**/
+	color: Black;
+	padding-top: 3px;
+}
+
+.dhtmlxGrid_bold
+{
+	font-weight: bold;
+}
+.dhtmlxGrid_italic
+{
+	font-weight: bold;
+	color: #CE3431;/*#0033FF;*/
+	/*font-weight: bold;*/
+}
+div.gridbox{
+	overflow:hidden;
+}
+div.gridbox table.hdr td {
+	font-family:verdana;
+	font-size:12px;
+	color: #003399;
+	background-Color:#E1ECFC; /*#D4D0C8;*/
+	border: 1px solid;
+	border-color : white Gray Gray white;
+	text-align: center;
+	margin:0px;
+	padding:5px 0px 5px 0px ;
+	font-weight:normal;
+    -moz-user-select:none;
+    overflow:hidden;
+	}
+div.gridbox table.hdr td div.hdrcell{
+	
+}
+div.gridbox table.obj td {
+	border: 1px solid;
+	border-color : white Gray Gray white;
+	font-family:Arial;
+	font-size:12px;
+    -moz-user-select:none;
+    overflow:hidden;
+    padding-top:0px;
+    padding-bottom:0px;
+	}
+div.gridbox table.obj th {
+	padding:0px 0px 0px 0px ;
+	margin:0px 0px 0px 0px ;
+	}
+
+div.gridbox table.row20px tr  td{
+    height:20px;
+    white-space: nowrap;
+    padding:0px;
+}
+div.gridbox .objbox {
+	background-color:white;
+
+	}
+div.gridbox table.obj td span.space, div.gridbox table.obj td img.space{
+	width:18px;
+	}
+div.gridbox table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {
+	background-color:#d8d8d8;
+	color:black;
+	}
+div.gridbox table.obj tr.rowselected td{
+	background-color:#e1e0d7;
+	color:black;
+	}
+div.gridbox table.obj td.editable{
+    -moz-user-select:text;
+    }
+
+.dragSpanDiv{ 	font-size : 12px; 	border: 1px gray solid; background-color:white; }
+.dhx_combo_select{
+    font-family:verdana;
+    font-size:12px;
+    border:1px solid;
+    border-color:black silver silver black;
+    background-color:white;
+    overflow:hidden;
+    cursor:default;
+    position:absolute;
+    height:auto;
+}
+.dhx_combo_edit{
+    width:100%;
+    border:0px;
+    padding:0px;
+    margin:0px;
+    font:12px verdana;
+    overflow:hidden;
+}
+
+.dhx_textarea{
+    border:1px solid;
+    border-color:black silver silver black;
+    position:absolute;
+	height:100px;
+}
+.gridDragLine{
+   position:absolute;
+   top:10px; left:0px;
+   width:100%;
+   height:2px;
+   background-color:black;
+   overflow:hidden;
+}
+
+/*paginal output*/
+DIV.pagingBlock{
+	font-size:12px;
+	font-family:verdana,arial;
+}
+DIV.pagingBlock .pagingCurrentPage{
+	font-weight:bold;
+	cursor:default;
+}
+DIV.pagingBlock .pagingPage{
+	cursor:pointer;
+	text-decoration:underline;
+}
+SPAN.recordsInfoBlock {
+	font-size:12px;
+	font-family:verdana,arial;
+}
+/*class for toolbar selectbox. used with pagingWT*/
+.toolbar_select{
+	font-size:10px;
+}
+
+/* xp skin ------------------------------------------------------*/
+div.gridbox_xp{
+	border:1px solid lightgrey;
+}
+div.gridbox_xp table.hdr td {
+	color:#616161;
+	background-image:url('../../Layouts/images/dhtmlGrid/imgs/header_bg.gif');
+	border:0px;
+	text-align: center;
+	margin:0px;
+	padding:5px 0px 5px 0px ;
+	font-weight:bold;
+    -moz-user-select:none;
+    overflow:hidden;
+	}
+div.gridbox_xp table.hdr td div.hdrcell{
+	border-left: 1px solid white;
+	border-right: 1px solid gray;
+	height:16px;
+	white-space : nowrap;
+	font-family:Arial;
+	font-size:12px;
+}
+div.gridbox_xp table.obj td {
+	border:0px;
+	border-bottom: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	font-family:Arial;
+	font-size:12px;
+    -moz-user-select:none;
+    overflow:hidden;
+    padding-top:0px;
+    padding-bottom:0px;
+	vertical-align:middle;
+	}
+div.gridbox table.obj tr.rowselected td{
+	background-color:whitesmoke;
+	color:black;
+	}
+div.gridbox table.obj tr.rowselected td.cellselected, div.gridbox table.obj td.cellselected {
+	background-color:whitesmoke;
+	}
+div.gridbox_xp table.row20px tr  td{
+    height:22px;
+    white-space: nowrap;
+    padding:1px;
+}
+
+
+

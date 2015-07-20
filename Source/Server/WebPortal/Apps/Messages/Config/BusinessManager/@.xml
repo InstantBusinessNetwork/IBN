@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Messages.Email" metaClass="Email" method="*" type="Mediachase.Ibn.Business.Messages.EmailRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Messages.IbnClientMessage" metaClass="IbnClientMessage" method="*" type="Mediachase.Ibn.Business.Messages.IbnClientMessageRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Messages.OutgoingMessage"  metaClass="OutgoingMessageQueue" method="*" type="Mediachase.Ibn.Business.Messages.OutgoingMessageQueueRequestHandler, Mediachase.IBN.Business"/>
+		</add>
+	</Handlers>
+	<Plugins>
+		<add>
+			<Plugin id="OutgoingMessageQueuePlugin.Email" method="Create" metaClass="Email" eventStage="PostMainOperationInsideTranasaction"  type="Mediachase.Ibn.Business.Messages.OutgoingMessageQueuePlugin, Mediachase.IBN.Business" />
+			<Plugin id="OutgoingMessageQueuePlugin.IbnClientMessage" method="Create" metaClass="IbnClientMessage" eventStage="PostMainOperationInsideTranasaction"  type="Mediachase.Ibn.Business.Messages.OutgoingMessageQueuePlugin, Mediachase.IBN.Business" />
+		</add>
+	</Plugins>
+</BusinessManager>

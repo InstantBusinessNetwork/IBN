@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tabSecGroups" xml:space="preserve">
+    <value>Группы пользователей</value>
+  </data>
+  <data name="tabIMGroups" xml:space="preserve">
+    <value>Контактные группы</value>
+  </data>
+  <data name="tabSearch" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="tabList" xml:space="preserve">
+    <value>Список</value>
+  </data>
+  <data name="tReports" xml:space="preserve">
+    <value>Отчеты по пользователям</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Используйте эти ссылки для просмотра отчетов, связанных с пользователями.</value>
+  </data>
+  <data name="UserReports" xml:space="preserve">
+    <value>Отчеты по пользователям</value>
+  </data>
+  <data name="UserStatistics" xml:space="preserve">
+    <value>Статистика по пользователям</value>
+  </data>
+  <data name="XMLReport" xml:space="preserve">
+    <value>Создать отчет</value>
+  </data>
+  <data name="NewContact" xml:space="preserve">
+    <value>Новый контакт</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="ContactWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этого контакта?</value>
+  </data>
+  <data name="VCardTelephoneType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardTelephoneType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardTelephoneType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="VCardTelephoneType_Pager" xml:space="preserve">
+    <value>Пейджер</value>
+  </data>
+  <data name="VCardTelephoneType_Msg" xml:space="preserve">
+    <value>Для сообщений</value>
+  </data>
+  <data name="VCardTelephoneType_Cell" xml:space="preserve">
+    <value>Сотовый</value>
+  </data>
+  <data name="VCardTelephoneType_Video" xml:space="preserve">
+    <value>Видео</value>
+  </data>
+  <data name="VCardTelephoneType_Bbs" xml:space="preserve">
+    <value>Bbs</value>
+  </data>
+  <data name="VCardTelephoneType_Modem" xml:space="preserve">
+    <value>Модем</value>
+  </data>
+  <data name="VCardTelephoneType_Isdn" xml:space="preserve">
+    <value>Isdn</value>
+  </data>
+  <data name="VCardTelephoneType_Pcs" xml:space="preserve">
+    <value>Pcs</value>
+  </data>
+  <data name="VCardTelephoneType_Pref" xml:space="preserve">
+    <value>Основной</value>
+  </data>
+  <data name="VCardTelephoneType_Voice" xml:space="preserve">
+    <value>Голосовая почта</value>
+  </data>
+  <data name="VCardTelephoneType_Fax" xml:space="preserve">
+    <value>Факс</value>
+  </data>
+  <data name="VCardEMailType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardEMailType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardEMailType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="VCardEMailType_Internet" xml:space="preserve">
+    <value>Интернет</value>
+  </data>
+  <data name="VCardEMailType_X400" xml:space="preserve">
+    <value>X400</value>
+  </data>
+  <data name="Emails" xml:space="preserve">
+    <value>Email-адреса</value>
+  </data>
+  <data name="Phones" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="ContactInfo" xml:space="preserve">
+    <value>Информация о контакте</value>
+  </data>
+  <data name="secBasicInfo" xml:space="preserve">
+    <value>Общая информация</value>
+  </data>
+  <data name="secNameInfo" xml:space="preserve">
+    <value>Фамилия, имя, отчество</value>
+  </data>
+  <data name="secOrganization" xml:space="preserve">
+    <value>Место работы</value>
+  </data>
+  <data name="secAddresses" xml:space="preserve">
+    <value>Адрес</value>
+  </data>
+  <data name="secEmails" xml:space="preserve">
+    <value>Email-адреса</value>
+  </data>
+  <data name="secPhones" xml:space="preserve">
+    <value>Телефоны</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Полное имя</value>
+  </data>
+  <data name="NickName" xml:space="preserve">
+    <value>Прозвище</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Род занятий</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Пол</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Дата рождения</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Сайт</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="GivenName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="OrganizationName" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="OrganizationUnit" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="AddressType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="AddressPostalCode" xml:space="preserve">
+    <value>Индекс</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="AddressRegion" xml:space="preserve">
+    <value>Область</value>
+  </data>
+  <data name="AddressLocality" xml:space="preserve">
+    <value>Насел. пункт</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Улица</value>
+  </data>
+  <data name="AddressExtra" xml:space="preserve">
+    <value>Дом, квартира</value>
+  </data>
+  <data name="AddressPreferred" xml:space="preserve">
+    <value>Основной адрес</value>
+  </data>
+  <data name="EmailType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="EmailValue" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailPreferred" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="PhoneType" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Номер</value>
+  </data>
+  <data name="VCardAddressType_None" xml:space="preserve">
+    <value>Дополнительный</value>
+  </data>
+  <data name="VCardAddressType_Home" xml:space="preserve">
+    <value>Домашний</value>
+  </data>
+  <data name="VCardAddressType_Work" xml:space="preserve">
+    <value>Рабочий</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="NoOrganization" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OrganizationInfo" xml:space="preserve">
+    <value>Информация об организации</value>
+  </data>
+  <data name="Organizations" xml:space="preserve">
+    <value>Список организаций</value>
+  </data>
+  <data name="NewOrganization" xml:space="preserve">
+    <value>Новая организация</value>
+  </data>
+  <data name="OrganizationCreated" xml:space="preserve">
+    <value>Создана</value>
+  </data>
+  <data name="OrganizationWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту организацию?</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Контакты</value>
+  </data>
+  <data name="tExport" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="tImport" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="tImportContact" xml:space="preserve">
+    <value>Импорт контакта</value>
+  </data>
+  <data name="tFile" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="OrganizationExists" xml:space="preserve">
+    <value>Организация "{0}" уже существует.</value>
+  </data>
+  <data name="VCard_ToolBarAction_ExportCSV" xml:space="preserve">
+    <value>Экспорт в CSV</value>
+  </data>
+  <data name="VCard_ToolBarAction_ExportVCF" xml:space="preserve">
+    <value>Экспорт в VCF</value>
+  </data>
+  <data name="VCard_ToolBarAction_ExportXLS" xml:space="preserve">
+    <value>Экспорт в XLS</value>
+  </data>
+</root>

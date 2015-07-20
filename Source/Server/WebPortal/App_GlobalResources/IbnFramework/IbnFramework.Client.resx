@@ -1,0 +1,511 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+	Microsoft ResX Schema 
+	
+	Version 2.0
+	
+	The primary goals of this format is to allow a simple XML format 
+	that is mostly human readable. The generation and parsing of the 
+	various data types are done through the TypeConverter classes 
+	associated with the data types.
+	
+	Example:
+	
+	... ado.net/XML headers & schema ...
+	<resheader name="resmimetype">text/microsoft-resx</resheader>
+	<resheader name="version">2.0</resheader>
+	<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+	<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+	<data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+	<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+	<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+		<value>[base64 mime encoded serialized .NET Framework object]</value>
+	</data>
+	<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+		<value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+		<comment>This is a comment</comment>
+	</data>
+				
+	There are any number of "resheader" rows that contain simple 
+	name/value pairs.
+	
+	Each data row contains a name, and value. The row also contains a 
+	type or mimetype. Type corresponds to a .NET class that support 
+	text/value conversion through the TypeConverter architecture. 
+	Classes that don't support this are serialized and stored with the 
+	mimetype set.
+	
+	The mimetype is used for serialized objects, and tells the 
+	ResXResourceReader how to depersist the object. This is currently not 
+	extensible. For a given mimetype the value must be set accordingly:
+	
+	Note - application/x-microsoft.net.object.binary.base64 is the format 
+	that the ResXResourceWriter will generate, however the reader can 
+	read any of the formats listed below.
+	
+	mimetype: application/x-microsoft.net.object.binary.base64
+	value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+	
+	mimetype: application/x-microsoft.net.object.soap.base64
+	value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+	mimetype: application/x-microsoft.net.object.bytearray.base64
+	value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Organization" xml:space="preserve">
+		<value>Organization</value>
+	 </data>
+	<data name="Organizations" xml:space="preserve">
+		<value>Organizations</value>
+	</data>
+	<data name="Name" xml:space="preserve">
+		<value>Name</value>
+	</data>
+	<data name="Address" xml:space="preserve">
+		<value>Address</value>
+	</data>
+	<data name="Addresses" xml:space="preserve">
+		<value>Addresses</value>
+	</data>
+	<data name="AddressType" xml:space="preserve">
+		<value>Address Type</value>
+	</data>
+	<data name="City" xml:space="preserve">
+		<value>City</value>
+	</data>
+	<data name="Contact" xml:space="preserve">
+		<value>Contact</value>
+	</data>
+	<data name="Contacts" xml:space="preserve">
+		<value>Contacts</value>
+	</data>
+	<data name="Country" xml:space="preserve">
+		<value>Country</value>
+	</data>
+	<data name="Fax" xml:space="preserve">
+		<value>Fax</value>
+	</data>
+	<data name="IsDefault" xml:space="preserve">
+		<value>Is Default</value>
+	</data>
+	<data name="Line1" xml:space="preserve">
+		<value>Line 1</value>
+	</data>
+	<data name="Line2" xml:space="preserve">
+		<value>Line 2</value>
+	</data>
+	<data name="Line3" xml:space="preserve">
+		<value>Line 3</value>
+	</data>
+	<data name="PostalCode" xml:space="preserve">
+		<value>Postal Code</value>
+	</data>
+	<data name="PostOfficeBox" xml:space="preserve">
+		<value>Post Office Box</value>
+	</data>
+	<data name="Telephone1" xml:space="preserve">
+		<value>Primary Telephone</value>
+	</data>
+	<data name="Telephone2" xml:space="preserve">
+		<value>Telephone 2</value>
+	</data>
+	<data name="Telephone3" xml:space="preserve">
+		<value>Telephone 3</value>
+	</data>
+	<data name="Primary" xml:space="preserve">
+		<value>Primary</value>
+	</data>
+	<data name="Billing" xml:space="preserve">
+		<value>Billing</value>
+	</data>
+	<data name="Shipping" xml:space="preserve">
+		<value>Shipping</value>
+	</data>
+	<data name="FullName" xml:space="preserve">
+		<value>Full Name</value>
+	</data>
+	<data name="MobilePhone" xml:space="preserve">
+		<value>Mobile Phone</value>
+	</data>
+	<data name="NickName" xml:space="preserve">
+		<value>Nick Name</value>
+	</data>
+	<data name="JobTitle" xml:space="preserve">
+		<value>Job Title</value>
+	</data>
+	<data name="WebSiteUrl" xml:space="preserve">
+		<value>Web Site Url</value>
+	</data>
+	<data name="Gender" xml:space="preserve">
+		<value>Gender</value>
+	</data>
+	<data name="FirstName" xml:space="preserve">
+		<value>First Name</value>
+	</data>
+	<data name="LastName" xml:space="preserve">
+		<value>Last Name</value>
+	</data>
+	<data name="MiddleName" xml:space="preserve">
+		<value>Middle Name</value>
+	</data>
+	<data name="EMailAddress1" xml:space="preserve">
+		<value>Primary E-Mail Address</value>
+	</data>
+	<data name="EMailAddress2" xml:space="preserve">
+		<value>E-Mail Address 2</value>
+	</data>
+	<data name="EMailAddress3" xml:space="preserve">
+		<value>E-Mail Address 3</value>
+	</data>
+	<data name="BirthDate" xml:space="preserve">
+		<value>Birth Date</value>
+	</data>
+	<data name="Description" xml:space="preserve">
+		<value>Description</value>
+	</data>
+	<data name="PrimaryContact" xml:space="preserve">
+		<value>Primary Contact</value>
+	</data>
+	<data name="Parent" xml:space="preserve">
+		<value>Parent</value>
+	</data>
+	<data name="Male" xml:space="preserve">
+		<value>Male</value>
+	</data>
+	<data name="Female" xml:space="preserve">
+		<value>Female</value>
+	</data>
+	<data name="OrganizationInfo" xml:space="preserve">
+		<value>Organization Info</value>
+	</data>
+	<data name="TabDetails" xml:space="preserve">
+		<value>Details</value>
+	</data>
+	<data name="TabGeneral" xml:space="preserve">
+		<value>General</value>
+	</data>
+	<data name="ContactInfo" xml:space="preserve">
+		<value>Contact Info</value>
+	</data>
+	<data name="AllContacts" xml:space="preserve">
+		<value>All contacts</value>
+	</data>
+	<data name="AllOrganizations" xml:space="preserve">
+		<value>All organizations</value>
+	</data>
+	<data name="NewContact" xml:space="preserve">
+		<value>New Contact</value>
+	</data>
+	<data name="NewOrganization" xml:space="preserve">
+		<value>New Organization</value>
+	</data>
+	<data name="ContactProfileEdit" xml:space="preserve">
+		<value>Contact Profile Editing</value>
+	</data>
+	<data name="ContactProfileNew" xml:space="preserve">
+		<value>Contact Profile Creation</value>
+	</data>
+	<data name="OrganizationProfileEdit" xml:space="preserve">
+		<value>Organization Profile Edit</value>
+	</data>
+	<data name="OrganizationProfileNew" xml:space="preserve">
+		<value>Organization Profile Creation</value>
+	</data>
+	<data name="ChildOrganizations" xml:space="preserve">
+		<value>Child Organizations</value>
+	</data>
+	<data name="TabInfo" xml:space="preserve">
+		<value>Information</value>
+	</data>
+	<data name="AddressEdit" xml:space="preserve">
+		<value>Address Editing</value>
+	</data>
+	<data name="AddressNew" xml:space="preserve">
+		<value>New Address</value>
+	</data>
+	<data name="AddressInfo" xml:space="preserve">
+		<value>Address Info</value>
+	</data>
+	<data name="SetDefaultAddress" xml:space="preserve">
+		<value>Set Default Address</value>
+	</data>
+	<data name="DeleteOrganizationsAndContacts" xml:space="preserve">
+		<value>Delete organizations and contacts.</value>
+	</data>
+	<data name="DeleteOrganizationsOnly" xml:space="preserve">
+		<value>Delete organizations only.</value>
+	</data>
+	<data name="OrganizationsDeleteType" xml:space="preserve">
+		<value>Selected organizations can have related contacts. What do you want to delete?</value>
+	</data>
+	<data name="DeleteOrganizationAndContacts" xml:space="preserve">
+		<value>Delete organization and contacts.</value>
+	</data>
+	<data name="DeleteOrganizationOnly" xml:space="preserve">
+		<value>Delete organization only.</value>
+	</data>
+	<data name="OrganizationDeleteType" xml:space="preserve">
+		<value>The organization can have related contacts. What do you want to delete?</value>
+	</data>
+	<data name="SetPrimaryContact" xml:space="preserve">
+		<value>Set Primary Contact</value>
+	</data>
+	<data name="Region" xml:space="preserve">
+		<value>Region</value>
+	</data>
+	<data name="ImportContacts" xml:space="preserve">
+		<value>Import Contacts</value>
+	</data>
+	<data name="Role" xml:space="preserve">
+		<value>Role</value>
+	</data>
+	<data name="OrganizationUnit" xml:space="preserve">
+		<value>Unit</value>
+	</data>
+	<data name="RelatedObjects" xml:space="preserve">
+		<value>Related Objects</value>
+	</data>
+	<data name="Incidents" xml:space="preserve">
+		<value>Issues</value>
+	</data>
+	<data name="Projects" xml:space="preserve">
+		<value>Projects</value>
+	</data>
+	<data name="Documents" xml:space="preserve">
+		<value>Documents</value>
+	</data>
+	<data name="ToDos" xml:space="preserve">
+		<value>ToDos</value>
+	</data>
+	<data name="ExportVCF" xml:space="preserve">
+		<value>Export to VCard</value>
+	</data>
+	<data name="ClientConfig" xml:space="preserve">
+		<value>Client Management Configuration</value>
+	</data>
+	<data name="ImportOrgs" xml:space="preserve">
+		<value>Import Organizations</value>
+	</data>
+	<data name="IndustryCode" xml:space="preserve">
+		<value>Industry Code</value>
+	</data>
+
+	<data name="VehicleRetail" xml:space="preserve">
+		<value>Vehicle Retail</value>
+	</data>
+	<data name="Design" xml:space="preserve">
+		<value>Direction and Creative Management</value>
+	</data>
+	<data name="AuditServices" xml:space="preserve">
+		<value>Audit services</value>
+	</data>
+	<data name="Outsourcing" xml:space="preserve">
+		<value>Outsourcing</value>
+	</data>
+	<data name="Banks" xml:space="preserve">
+		<value>Banks</value>
+	</data>
+	<data name="Security" xml:space="preserve">
+		<value>Security</value>
+	</data>
+	<data name="WebStudios" xml:space="preserve">
+		<value>Web-studios</value>
+	</data>
+	<data name="HiTech" xml:space="preserve">
+		<value>Hi Tech</value>
+	</data>
+	<data name="ComputerEng" xml:space="preserve">
+		<value>Computer engineering</value>
+	</data>
+	<data name="StateSector" xml:space="preserve">
+		<value>State sector</value>
+	</data>
+	<data name="Development" xml:space="preserve">
+		<value>Development and management companies</value>
+	</data>
+	<data name="Distributors" xml:space="preserve">
+		<value>Distributors, Dispatchers and Processors</value>
+	</data>
+	<data name="Publishing" xml:space="preserve">
+		<value>Publishing houses</value>
+	</data>
+	<data name="Entertainment" xml:space="preserve">
+		<value>Entertainment Retail</value>
+	</data>
+	<data name="Infrastructure" xml:space="preserve">
+		<value>Infrastructure</value>
+	</data>
+	<data name="eCommerce" xml:space="preserve">
+		<value>eCommerce</value>
+	</data>
+	<data name="IT" xml:space="preserve">
+		<value>IT</value>
+	</data>
+	<data name="Consulting" xml:space="preserve">
+		<value>Consulting</value>
+	</data>
+	<data name="LogisticsStocks" xml:space="preserve">
+		<value>Logistics/ stocks</value>
+	</data>
+	<data name="Marketing" xml:space="preserve">
+		<value>Marketing and Communication</value>
+	</data>
+	<data name="Metallurgy" xml:space="preserve">
+		<value>Metallurgy</value>
+	</data>
+	<data name="EquipmentTrade" xml:space="preserve">
+		<value>Equipment trade</value>
+	</data>
+	<data name="ResearchActivities" xml:space="preserve">
+		<value>Research activities</value>
+	</data>
+	<data name="Realty" xml:space="preserve">
+		<value>Realty</value>
+	</data>
+	<data name="NonProfitOrg" xml:space="preserve">
+		<value>Non-profit organizations</value>
+	</data>
+	<data name="Petrochemical" xml:space="preserve">
+		<value>Petrochemical Extraction and Distribution</value>
+	</data>
+	<data name="Education" xml:space="preserve">
+		<value>Education</value>
+	</data>
+	<data name="EatingPlaces" xml:space="preserve">
+		<value>Eating and Drinking Places</value>
+	</data>
+	<data name="OutboundTrade" xml:space="preserve">
+		<value>Special Outbound Trade Contractors</value>
+	</data>
+	<data name="ProcessingCompanies" xml:space="preserve">
+		<value>Processing companies</value>
+	</data>
+	<data name="FurnitureProduction" xml:space="preserve">
+		<value>Furniture production</value>
+	</data>
+	<data name="EquipmentProduction" xml:space="preserve">
+		<value>Equipment production</value>
+	</data>
+	<data name="SoftwareProduction" xml:space="preserve">
+		<value>Software production</value>
+	</data>
+	<data name="Advertising" xml:space="preserve">
+		<value>Advertising, design</value>
+	</data>
+	<data name="Retailing" xml:space="preserve">
+		<value>Retailing</value>
+	</data>
+	<data name="Network" xml:space="preserve">
+		<value>Network and telecommunications</value>
+	</data>
+	<data name="Agriculture" xml:space="preserve">
+		<value>Agriculture and Non-petrol Natural Resource Extraction</value>
+	</data>
+	<data name="Services" xml:space="preserve">
+		<value>Services</value>
+	</data>
+	<data name="MassMedia" xml:space="preserve">
+		<value>Mass Media</value>
+	</data>
+	<data name="CableTV" xml:space="preserve">
+		<value>Satellite and Cable TV</value>
+	</data>
+	<data name="Insurance" xml:space="preserve">
+		<value>Insurance</value>
+	</data>
+	<data name="Building" xml:space="preserve">
+		<value>Building Supply Retail</value>
+	</data>
+	<data name="Transportation" xml:space="preserve">
+		<value>Transportation</value>
+	</data>
+	<data name="Tourism" xml:space="preserve">
+		<value>Tourism</value>
+	</data>
+	<data name="Medicines" xml:space="preserve">
+		<value>Medicines</value>
+	</data>
+	<data name="Financial" xml:space="preserve">
+		<value>Financial</value>
+	</data>
+	<data name="StockMarket" xml:space="preserve">
+		<value>Stock market</value>
+	</data>
+	<data name="Electronics" xml:space="preserve">
+		<value>Electronics</value>
+	</data>
+	<data name="Energy" xml:space="preserve">
+		<value>Energy</value>
+	</data>
+	<data name="LegalServices" xml:space="preserve">
+		<value>Legal Services</value>
+	</data>
+	<data name="Other" xml:space="preserve">
+		<value>Other</value>
+	</data>
+</root>

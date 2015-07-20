@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="mainPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="comboBoxSqlDatabase.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxSqlDatabase.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="comboBoxSqlDatabase.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="comboBoxSqlDatabase.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlDatabase.Name" xml:space="preserve">
+    <value>comboBoxSqlDatabase</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlDatabase.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlDatabase.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlDatabase.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelSqlDatabaseName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSqlDatabaseName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlDatabaseName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlDatabaseName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 22</value>
+  </data>
+  <data name="labelSqlDatabaseName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="labelSqlDatabaseName.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="labelSqlDatabaseName.Text" xml:space="preserve">
+    <value>Database:</value>
+  </data>
+  <data name="&gt;&gt;labelSqlDatabaseName.Name" xml:space="preserve">
+    <value>labelSqlDatabaseName</value>
+  </data>
+  <data name="&gt;&gt;labelSqlDatabaseName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlDatabaseName.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;labelSqlDatabaseName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxIisPool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxIisPool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 154</value>
+  </data>
+  <data name="comboBoxIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="comboBoxIisPool.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Name" xml:space="preserve">
+    <value>comboBoxIisPool</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisPool.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelIisPool.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIisPool.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIisPool.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIisPool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 157</value>
+  </data>
+  <data name="labelIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 14</value>
+  </data>
+  <data name="labelIisPool.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelIisPool.Text" xml:space="preserve">
+    <value>IIS Application Pool:</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.Name" xml:space="preserve">
+    <value>labelIisPool</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;labelIisPool.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBoxIsActive.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBoxIsActive.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="checkBoxIsActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 52</value>
+  </data>
+  <data name="checkBoxIsActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 18</value>
+  </data>
+  <data name="checkBoxIsActive.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="checkBoxIsActive.Text" xml:space="preserve">
+    <value>Is Active</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Name" xml:space="preserve">
+    <value>checkBoxIsActive</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;checkBoxIsActive.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxIisPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIisPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 128</value>
+  </data>
+  <data name="textBoxIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="textBoxIisPort.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBoxIisPort.Text" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="textBoxIisPort.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Name" xml:space="preserve">
+    <value>textBoxIisPort</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;textBoxIisPort.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelHost.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelHost.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 79</value>
+  </data>
+  <data name="labelHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 14</value>
+  </data>
+  <data name="labelHost.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="labelHost.Text" xml:space="preserve">
+    <value>Host:</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Name" xml:space="preserve">
+    <value>labelHost</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelHost.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;labelHost.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="labelIisPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIisPort.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIisPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 131</value>
+  </data>
+  <data name="labelIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 14</value>
+  </data>
+  <data name="labelIisPort.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="labelIisPort.Text" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Name" xml:space="preserve">
+    <value>labelIisPort</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;labelIisPort.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="textBoxHost.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 76</value>
+  </data>
+  <data name="textBoxHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 20</value>
+  </data>
+  <data name="textBoxHost.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Name" xml:space="preserve">
+    <value>textBoxHost</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;textBoxHost.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 102</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>314, 22</value>
+  </data>
+  <data name="comboBoxIisIPAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Name" xml:space="preserve">
+    <value>comboBoxIisIPAddress</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;comboBoxIisIPAddress.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="labelIisIPAddress.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIisIPAddress.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIisIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 105</value>
+  </data>
+  <data name="labelIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 14</value>
+  </data>
+  <data name="labelIisIPAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="labelIisIPAddress.Text" xml:space="preserve">
+    <value>IP Address:</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Name" xml:space="preserve">
+    <value>labelIisIPAddress</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.Parent" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;labelIisIPAddress.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBoxCompany.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxCompany.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 3</value>
+  </data>
+  <data name="groupBoxCompany.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 190</value>
+  </data>
+  <data name="groupBoxCompany.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxCompany.Text" xml:space="preserve">
+    <value>Company Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Name" xml:space="preserve">
+    <value>groupBoxCompany</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxCompany.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 202</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 211</value>
+  </data>
+  <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 211</value>
+  </data>
+  <data name="buttonOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="buttonOk.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Name" xml:space="preserve">
+    <value>buttonOk</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelHSplit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelHSplit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panelHSplit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 1</value>
+  </data>
+  <data name="panelHSplit.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Name" xml:space="preserve">
+    <value>panelHSplit</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>494, 248</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADPdjMA0Xo5ANF6OgDTfj8A035AANSCRgDVg0gA1odMANeITQDYi1IA2Y1VANqQWQDakFoA25JbANyU
+        XwDclWAA3JVhAN2XYgDdmGYA3plmAN6aaADem2kA4J1tAOCebgDfnm8A4J9vAOCgcADhonMA4qN1AOGj
+        dgDipHYA46d7AOSofADjqX0A5Kl9AOatgwDlrYQA5q6EAOWvhwDjr4gA57CHAOSwiQDksYoA6LGJAOSx
+        iwDksosA57KKAOWyjADososA5bONAOWzjgDns44A5bSOAOW0jwDmtI8A5rWQAOm1jwDmtZEA5raRAOm2
+        kADmtpIA6raRAOm3kgDnt5MA57iUAOe4lQDpuJUA67qWAOe6mADoupgA6LuYAOi7mQDsu5gA67uZAOi8
+        mgDpvJoA6b2bAOm9nADrvZwA6b2dAOm+nQDpvp4A6r+eAO2/nQDpv58A6r+fAO7AngDqwKAA7cCfAOrA
+        oQDqwaEA6sGiAO3CpADvw6IA78SkAO7FpgDxyKoA78irAPHIrADwya0A882wAPHNswDyzrQA9dG3APPR
+        uQDz0roA9dbBAPbXwAD33MgA9tzJAPfdygD34M8A+ODPAPnizwD75dQA+uXVAPvm1wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbkRAPzw6NzY0MS8tKikpaEUwJSIeGhURDQoIBgQCACdFMCUiHhoVEQ0KCAYEAgAnRj11dSJ1
+        dXV1dXV1dXUBKUdIdXUjdXV1dXV1dXV1AypLVnV1K3V1HBkUEAx1dQUsTF51dTh1dSAcFxQPdXUHL01g
+        dXVDdXV1dXV1E3V1CTFQZHV1U3V1dXV1dRZ1dQsyUmd1dV11dTgodXUbdXUONVVrdXVidXVDO3V1H3V1
+        EjdXbXV1ZmNfWEk+LiR1dRg5WXF1dXV1dXV1dXV1dXUdPFpydXV1dXV1dXV1dXV1IURbdHRzb2xqaWVh
+        XE5CMyZBdEpbW1tZV1RRT0xKR0VEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Create company for existing database</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CreateCompanyForDatabaseForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

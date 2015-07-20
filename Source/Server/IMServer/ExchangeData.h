@@ -1,0 +1,28 @@
+#ifndef __EXCHANGEDATA_H_
+#define __EXCHANGEDATA_H_
+
+//Statistic Events
+#define SE_OPEN_THREAD					0x0001
+#define SE_OPEN_COMAND_THREAD			0x0002
+#define SE_OPEN_FILE_THREAD				0x0004
+#define SE_OPEN_EVENT_THREAD			0x0008	
+#define SE_USERS_ONLINE					0x0010
+#define SE_USERS_CONNECTED				0x0020
+#define SE_USERS_RECONNECTED			0x0040
+#define SE_AVERAGE_RECONNECTED_TIME		0x0060
+#define SE_AVERAGE_PROCESSING_TIME		0x0080
+//#define SE_
+//#define SE_
+//#define SE_
+//#define SE_
+
+// WARNING LEVELS
+#define WL_INFO_LEVEL1		0x0001
+#define WL_INFO_LEVEL2		0x0002
+#define WL_INFO_LEVEL3		0x0004
+#define WL_ERROR_LEVEL1		0x0008
+#define WL_ERROR_LEVEL2		0x0010
+#define WL_ERROR_LEVEL3		0x0020
+#define WL_DEBUG_INFO		0x0040
+
+#endif __EXCHANGEDATA_H_

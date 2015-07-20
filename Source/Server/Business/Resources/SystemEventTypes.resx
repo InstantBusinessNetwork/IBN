@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CalendarEntry_Created" xml:space="preserve">
+    <value>Event - Created</value>
+  </data>
+  <data name="CalendarEntry_Deleted" xml:space="preserve">
+    <value>Event - Deleted</value>
+  </data>
+  <data name="CalendarEntry_FinishDate_Arrived" xml:space="preserve">
+    <value>Event - Planned finish date has come</value>
+  </data>
+  <data name="CalendarEntry_StartDate_Arrived" xml:space="preserve">
+    <value>Event - Planned start date has come</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Event - Comment - Added</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Event - Comment - Removed</value>
+  </data>
+  <data name="CalendarEntry_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Event - Comment - Updated</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Event - File - Added</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Event - File - Removed</value>
+  </data>
+  <data name="CalendarEntry_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Event - File - Updated</value>
+  </data>
+  <data name="CalendarEntry_Updated_GeneralCategories" xml:space="preserve">
+    <value>Event - Updated - General categories</value>
+  </data>
+  <data name="CalendarEntry_Updated_GeneralInfo" xml:space="preserve">
+    <value>Event - Updated - General info</value>
+  </data>
+  <data name="CalendarEntry_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Event - Manager - Added</value>
+  </data>
+  <data name="CalendarEntry_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Event - Manager - Removed</value>
+  </data>
+  <data name="CalendarEntry_Updated_MetaFields" xml:space="preserve">
+    <value>Event - Updated - Meta data</value>
+  </data>
+  <data name="CalendarEntry_Updated_Priority" xml:space="preserve">
+    <value>Event - Updated - Priority</value>
+  </data>
+  <data name="CalendarEntry_Updated_State" xml:space="preserve">
+    <value>Event - Updated - State</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Event - Resources - New user has been added</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Event - Resources - User has been removed</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Event - Participation request - Accepted</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Event - Participation request - Added</value>
+  </data>
+  <data name="CalendarEntry_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Event - Participation request - Denied</value>
+  </data>
+  <data name="CalendarEntry_Updated_Timeline" xml:space="preserve">
+    <value>Event - Updated - Timeline</value>
+  </data>
+  <data name="Document_Created" xml:space="preserve">
+    <value>Document - Created</value>
+  </data>
+  <data name="Document_Deleted" xml:space="preserve">
+    <value>Document - Deleted</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Document - Comment - Added</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Document - Comment - Removed</value>
+  </data>
+  <data name="Document_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Document - Comment - Updated</value>
+  </data>
+  <data name="Document_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Document - File - Added</value>
+  </data>
+  <data name="Document_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Document - File - Removed</value>
+  </data>
+  <data name="Document_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Document - File - Updated</value>
+  </data>
+  <data name="Document_Updated_GeneralCategories" xml:space="preserve">
+    <value>Document - Updated - General categories</value>
+  </data>
+  <data name="Document_Updated_GeneralInfo" xml:space="preserve">
+    <value>Document - Updated - General info</value>
+  </data>
+  <data name="Document_Updated_MetaFields" xml:space="preserve">
+    <value>Document - Updated - Meta data</value>
+  </data>
+  <data name="Document_Updated_Priority" xml:space="preserve">
+    <value>Document - Updated - Priority</value>
+  </data>
+  <data name="Document_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Document - Resources - New user has been added</value>
+  </data>
+  <data name="Document_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Document - Resources - User has been removed</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Document - Participation request - Accepted</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Document - Participation request - Added</value>
+  </data>
+  <data name="Document_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Document - Participation request - Denied</value>
+  </data>
+  <data name="Document_Updated_State" xml:space="preserve">
+    <value>Document - Updated - State</value>
+  </data>
+  <data name="Document_Updated_Status" xml:space="preserve">
+    <value>Document - Updated - Status</value>
+  </data>
+  <data name="Document_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Document - ToDo - Added</value>
+  </data>
+  <data name="Document_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Document - ToDo - Removed</value>
+  </data>
+  <data name="Document_Updated_VersionList_VersionAdded" xml:space="preserve">
+    <value>Document - New version has been added</value>
+  </data>
+  <data name="Issue_Created" xml:space="preserve">
+    <value>Issue - Created</value>
+  </data>
+  <data name="Issue_Deleted" xml:space="preserve">
+    <value>Issue - Deleted</value>
+  </data>
+  <data name="Issue_Updated_Box" xml:space="preserve">
+    <value>Issue - Updated - Box</value>
+  </data>
+  <data name="Issue_Updated_Controller_Assigned" xml:space="preserve">
+    <value>Issue - Controller - Assigned</value>
+  </data>
+  <data name="Issue_Updated_Controller_Resigned" xml:space="preserve">
+    <value>Issue - Controller - Resigned</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Issue - Comment - Added</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Issue - Comment - Removed</value>
+  </data>
+  <data name="Issue_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Issue - Comment - Updated</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Issue - File - Added</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Issue - File - Removed</value>
+  </data>
+  <data name="Issue_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Issue - File - Updated</value>
+  </data>
+  <data name="Issue_Updated_Forum_MessageAdded" xml:space="preserve">
+    <value>Issue - Forum - New message has been added</value>
+  </data>
+  <data name="Issue_Updated_GeneralCategories" xml:space="preserve">
+    <value>Issue - Updated - General categories</value>
+  </data>
+  <data name="Issue_Updated_GeneralInfo" xml:space="preserve">
+    <value>Issue - Updated - General info</value>
+  </data>
+  <data name="Issue_Updated_IssueCategories" xml:space="preserve">
+    <value>Issue - Updated - Issue categories</value>
+  </data>
+  <data name="Issue_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Issue - Manager - Added</value>
+  </data>
+  <data name="Issue_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Issue - Manager - Removed</value>
+  </data>
+  <data name="Issue_Updated_MetaFields" xml:space="preserve">
+    <value>Issue - Updated - Meta data</value>
+  </data>
+  <data name="Issue_Updated_Priority" xml:space="preserve">
+    <value>Issue - Updated - Priority</value>
+  </data>
+  <data name="Issue_Updated_RelatedIssueList_RelatedIssueAdded" xml:space="preserve">
+    <value>Issue - Related issue - Added</value>
+  </data>
+  <data name="Issue_Updated_RelatedIssueList_RelatedIssueDeleted" xml:space="preserve">
+    <value>Issue - Related issue - Removed</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Issue - Resources - New user has been added</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Issue - Resources - User has been removed</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Issue - Participation request - Accepted</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Issue - Participation request - Added</value>
+  </data>
+  <data name="Issue_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Issue - Participation request - Denied</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Changed" xml:space="preserve">
+    <value>Issue - Responsible person - Changed</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Requested" xml:space="preserve">
+    <value>Issue - Responsibility request - Added</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Assigned" xml:space="preserve">
+    <value>Issue - Responsible person - Added</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Resigned" xml:space="preserve">
+    <value>Issue - Responsible person - Removed</value>
+  </data>
+  <data name="Issue_Updated_Responsible_Rejected" xml:space="preserve">
+    <value>Issue - Responsibility request - Denied</value>
+  </data>
+  <data name="Issue_Updated_Status" xml:space="preserve">
+    <value>Issue - Updated - State</value>
+  </data>
+  <data name="Issue_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Issue - ToDo - Added</value>
+  </data>
+  <data name="Issue_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Issue - ToDo - Removed</value>
+  </data>
+  <data name="IssueRequest_Approved" xml:space="preserve">
+    <value>Issue request - Approved</value>
+  </data>
+  <data name="IssueRequest_Created" xml:space="preserve">
+    <value>Issue request - Created</value>
+  </data>
+  <data name="IssueRequest_Deleted" xml:space="preserve">
+    <value>Issue request - Deleted</value>
+  </data>
+  <data name="IssueRequest_Updated" xml:space="preserve">
+    <value>Issue request - Updated</value>
+  </data>
+  <data name="List_Created" xml:space="preserve">
+    <value>List - Created</value>
+  </data>
+  <data name="List_Deleted" xml:space="preserve">
+    <value>List - Deleted</value>
+  </data>
+  <data name="List_Updated_Data" xml:space="preserve">
+    <value>List - Updated</value>
+  </data>
+  <data name="List_Updated_GeneralCategories" xml:space="preserve">
+    <value>List - Updated - General categories</value>
+  </data>
+  <data name="List_Updated_GeneralInfo" xml:space="preserve">
+    <value>List - Updated - General info</value>
+  </data>
+  <data name="List_Updated_Status" xml:space="preserve">
+    <value>List - Updated - Status</value>
+  </data>
+  <data name="List_Updated_Structure" xml:space="preserve">
+    <value>List - Updated - Structure</value>
+  </data>
+  <data name="Project_Created" xml:space="preserve">
+    <value>Project - Created</value>
+  </data>
+  <data name="Project_Deleted" xml:space="preserve">
+    <value>Project - Deleted</value>
+  </data>
+  <data name="Project_TargetFinishDate_Arrived" xml:space="preserve">
+    <value>Project - Planned finish date has come</value>
+  </data>
+  <data name="Project_TargetStartDate_Arrived" xml:space="preserve">
+    <value>Project - Planned start date has come</value>
+  </data>
+  <data name="Project_Updated_ActualFinishDate" xml:space="preserve">
+    <value>Project - Updated - Actual finish date</value>
+  </data>
+  <data name="Project_Updated_ActualStartDate" xml:space="preserve">
+    <value>Project - Updated - Actual start date</value>
+  </data>
+  <data name="Project_Updated_CalendarEntryList_CalendarEntryAdded" xml:space="preserve">
+    <value>Project - Event - Added</value>
+  </data>
+  <data name="Project_Updated_CalendarEntryList_CalendarEntryDeleted" xml:space="preserve">
+    <value>Project - Event - Removed</value>
+  </data>
+  <data name="Project_Updated_Client" xml:space="preserve">
+    <value>Project - Updated - Client</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Project - Comment - Added</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Project - Comment - Removed</value>
+  </data>
+  <data name="Project_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Project - Comment - Updated</value>
+  </data>
+  <data name="Project_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>Project - Updated - Configuration info</value>
+  </data>
+  <data name="Project_Updated_DocumentList_DocumentAdded" xml:space="preserve">
+    <value>Project - Document - Added</value>
+  </data>
+  <data name="Project_Updated_DocumentList_DocumentDeleted" xml:space="preserve">
+    <value>Project - Document - Removed</value>
+  </data>
+  <data name="Project_Updated_ExecutiveManager_ExecutiveManagerAdded" xml:space="preserve">
+    <value>Project - Executive manager - Added</value>
+  </data>
+  <data name="Project_Updated_ExecutiveManager_ExecutiveManagerDeleted" xml:space="preserve">
+    <value>Project - Executive manager - Removed</value>
+  </data>
+  <data name="Project_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Project - File - Added</value>
+  </data>
+  <data name="Project_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Project - File - Removed</value>
+  </data>
+  <data name="Project_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Project - File - Updated</value>
+  </data>
+  <data name="Project_Updated_GeneralCategories" xml:space="preserve">
+    <value>Project - Updated - General categories</value>
+  </data>
+  <data name="Project_Updated_GeneralInfo" xml:space="preserve">
+    <value>Project - Updated - General info</value>
+  </data>
+  <data name="Project_Updated_IssueList_IssueAdded" xml:space="preserve">
+    <value>Project - Issue - Added</value>
+  </data>
+  <data name="Project_Updated_IssueList_IssueDeleted" xml:space="preserve">
+    <value>Project - Issue - Removed</value>
+  </data>
+  <data name="Project_Updated_ListList_ListAdded" xml:space="preserve">
+    <value>Project - List - Added</value>
+  </data>
+  <data name="Project_Updated_ListList_ListDeleted" xml:space="preserve">
+    <value>Project - List - Removed</value>
+  </data>
+  <data name="Project_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>Project - Manager - Added</value>
+  </data>
+  <data name="Project_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>Project - Manager - Removed</value>
+  </data>
+  <data name="Project_Updated_MetaFields" xml:space="preserve">
+    <value>Project - Updated - Meta data</value>
+  </data>
+  <data name="Project_Updated_Percent" xml:space="preserve">
+    <value>Project - Updated - Percent</value>
+  </data>
+  <data name="Project_Updated_Phase" xml:space="preserve">
+    <value>Project - Updated - Phase</value>
+  </data>
+  <data name="Project_Updated_Priority" xml:space="preserve">
+    <value>Project - Updated - Priority</value>
+  </data>
+  <data name="Project_Updated_ProjectCategories" xml:space="preserve">
+    <value>Project - Updated - Project categories</value>
+  </data>
+  <data name="Project_Updated_ProjectGroups" xml:space="preserve">
+    <value>Project - Updated - Project groups</value>
+  </data>
+  <data name="Project_Updated_RelatedProjectList_RelatedProjectAdded" xml:space="preserve">
+    <value>Project - Related project - Added</value>
+  </data>
+  <data name="Project_Updated_RelatedProjectList_RelatedProjectDeleted" xml:space="preserve">
+    <value>Project - Related project - Removed</value>
+  </data>
+  <data name="Project_Updated_RiskLevel" xml:space="preserve">
+    <value>Project - Updated - Risk level</value>
+  </data>
+  <data name="Project_Updated_SponsorList_SponsorAdded" xml:space="preserve">
+    <value>Project - Sponsor - Added</value>
+  </data>
+  <data name="Project_Updated_SponsorList_SponsorDeleted" xml:space="preserve">
+    <value>Project - Sponsor - Removed</value>
+  </data>
+  <data name="Project_Updated_StakeholderList_StakeholderAdded" xml:space="preserve">
+    <value>Project - Stakeholder - Added</value>
+  </data>
+  <data name="Project_Updated_StakeholderList_StakeholderDeleted" xml:space="preserve">
+    <value>Project - Stakeholder - Removed</value>
+  </data>
+  <data name="Project_Updated_Status" xml:space="preserve">
+    <value>Project - Updated - Status</value>
+  </data>
+  <data name="Project_Updated_TargetTimeline" xml:space="preserve">
+    <value>Project - Updated - Target timeline</value>
+  </data>
+  <data name="Project_Updated_TaskList_TaskAdded" xml:space="preserve">
+    <value>Project - Task - Added</value>
+  </data>
+  <data name="Project_Updated_TaskList_TaskDeleted" xml:space="preserve">
+    <value>Project - Task - Removed</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberAdded" xml:space="preserve">
+    <value>Project - Team member - Added</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberDeleted" xml:space="preserve">
+    <value>Project - Team member - Removed</value>
+  </data>
+  <data name="Project_Updated_TeamMemberList_TeamMemberUpdated" xml:space="preserve">
+    <value>Project - Team member - Updated</value>
+  </data>
+  <data name="Project_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Project - ToDo - Added</value>
+  </data>
+  <data name="Project_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Project - ToDo - Removed</value>
+  </data>
+  <data name="Task_Created" xml:space="preserve">
+    <value>Task - Created</value>
+  </data>
+  <data name="Task_Deleted" xml:space="preserve">
+    <value>Task - Deleted</value>
+  </data>
+  <data name="Task_FinishDate_Arrived" xml:space="preserve">
+    <value>Task - Planned finish date has come</value>
+  </data>
+  <data name="Task_StartDate_Arrived" xml:space="preserve">
+    <value>Task - Planned start date has come</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>Task - Comment - Added</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>Task - Comment - Removed</value>
+  </data>
+  <data name="Task_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>Task - Comment - Updated</value>
+  </data>
+  <data name="Task_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>Task - Updated - Configuration info</value>
+  </data>
+  <data name="Task_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>Task - File - Added</value>
+  </data>
+  <data name="Task_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>Task - File - Removed</value>
+  </data>
+  <data name="Task_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>Task - File - Updated</value>
+  </data>
+  <data name="Task_Updated_GeneralCategories" xml:space="preserve">
+    <value>Task - Updated - General categories</value>
+  </data>
+  <data name="Task_Updated_GeneralInfo" xml:space="preserve">
+    <value>Task - Updated - General info</value>
+  </data>
+  <data name="Task_Updated_MetaFields" xml:space="preserve">
+    <value>Task - Updated - Meta data</value>
+  </data>
+  <data name="Task_Updated_Percent" xml:space="preserve">
+    <value>Task - Updated - Percent</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorAdded" xml:space="preserve">
+    <value>Task - Predecessor - Added</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorDeleted" xml:space="preserve">
+    <value>Task - Predecessor - Removed</value>
+  </data>
+  <data name="Task_Updated_PredecessorList_PredecessorLagUpdated" xml:space="preserve">
+    <value>Task - Predecessor - Lag has been updated</value>
+  </data>
+  <data name="Task_Updated_Priority" xml:space="preserve">
+    <value>Task - Updated - Priority</value>
+  </data>
+  <data name="Task_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>Task - Resources - New user has been added</value>
+  </data>
+  <data name="Task_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>Task - Resources - User has been removed</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>Task - Participation request - Accepted</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>Task - Participation request - Added</value>
+  </data>
+  <data name="Task_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>Task - Participation request - Denied</value>
+  </data>
+  <data name="Task_Updated_State" xml:space="preserve">
+    <value>Task - Updated - State</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorAdded" xml:space="preserve">
+    <value>Task - Successor - Added</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorDeleted" xml:space="preserve">
+    <value>Task - Successor - Removed</value>
+  </data>
+  <data name="Task_Updated_SuccessorList_SuccessorLagUpdated" xml:space="preserve">
+    <value>Task - Successor - Lag has been updated</value>
+  </data>
+  <data name="Task_Updated_Timeline" xml:space="preserve">
+    <value>Task - Updated - Timeline</value>
+  </data>
+  <data name="Task_Updated_TodoList_TodoAdded" xml:space="preserve">
+    <value>Task - ToDo - Added</value>
+  </data>
+  <data name="Task_Updated_TodoList_TodoDeleted" xml:space="preserve">
+    <value>Task - ToDo - Removed</value>
+  </data>
+  <data name="Todo_Created" xml:space="preserve">
+    <value>ToDo - Created</value>
+  </data>
+  <data name="Todo_Deleted" xml:space="preserve">
+    <value>ToDo - Deleted</value>
+  </data>
+  <data name="Todo_FinishDate_Arrived" xml:space="preserve">
+    <value>ToDo - Planned finish date has come</value>
+  </data>
+  <data name="Todo_StartDate_Arrived" xml:space="preserve">
+    <value>ToDo - Planned start date has come</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentAdded" xml:space="preserve">
+    <value>ToDo - Comment - Added</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentDeleted" xml:space="preserve">
+    <value>ToDo - Comment - Removed</value>
+  </data>
+  <data name="Todo_Updated_CommentList_CommentUpdated" xml:space="preserve">
+    <value>ToDo - Comment - Updated</value>
+  </data>
+  <data name="Todo_Updated_ConfigurationInfo" xml:space="preserve">
+    <value>ToDo - Updated - Configuration info</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileAdded" xml:space="preserve">
+    <value>ToDo - File - Added</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileDeleted" xml:space="preserve">
+    <value>ToDo - File - Removed</value>
+  </data>
+  <data name="Todo_Updated_FileList_FileUpdated" xml:space="preserve">
+    <value>ToDo - File - Updated</value>
+  </data>
+  <data name="Todo_Updated_GeneralCategories" xml:space="preserve">
+    <value>ToDo - Updated - General categories</value>
+  </data>
+  <data name="Todo_Updated_GeneralInfo" xml:space="preserve">
+    <value>ToDo - Updated - General info</value>
+  </data>
+  <data name="Todo_Updated_Manager_ManagerAdded" xml:space="preserve">
+    <value>ToDo - Manager - Added</value>
+  </data>
+  <data name="Todo_Updated_Manager_ManagerDeleted" xml:space="preserve">
+    <value>ToDo - Manager - Removed</value>
+  </data>
+  <data name="Todo_Updated_MetaFields" xml:space="preserve">
+    <value>ToDo - Updated - Meta data</value>
+  </data>
+  <data name="Todo_Updated_Percent" xml:space="preserve">
+    <value>ToDo - Updated - Percent</value>
+  </data>
+  <data name="Todo_Updated_Priority" xml:space="preserve">
+    <value>ToDo - Updated - Priority</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_AssignmentAdded" xml:space="preserve">
+    <value>ToDo - Resources - New user has been added</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_AssignmentDeleted" xml:space="preserve">
+    <value>ToDo - Resources - User has been removed</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestAccepted" xml:space="preserve">
+    <value>ToDo - Participation request - Accepted</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestAdded" xml:space="preserve">
+    <value>ToDo - Participation request - Added</value>
+  </data>
+  <data name="Todo_Updated_ResourceList_RequestDenied" xml:space="preserve">
+    <value>ToDo - Participation request - Denied</value>
+  </data>
+  <data name="Todo_Updated_State" xml:space="preserve">
+    <value>ToDo - Updated - ToDo</value>
+  </data>
+  <data name="Todo_Updated_Timeline" xml:space="preserve">
+    <value>ToDo - Updated - Timeline</value>
+  </data>
+  <data name="User_Activated" xml:space="preserve">
+    <value>User - Activated</value>
+  </data>
+  <data name="User_Created" xml:space="preserve">
+    <value>User - Created</value>
+  </data>
+  <data name="User_Created_External" xml:space="preserve">
+    <value>User - Created external user</value>
+  </data>
+  <data name="User_Created_Partner" xml:space="preserve">
+    <value>User - Created partner user</value>
+  </data>
+  <data name="User_Created_Request" xml:space="preserve">
+    <value>User Request - Created</value>
+  </data>
+  <data name="User_Deactivated" xml:space="preserve">
+    <value>User - Deactivated</value>
+  </data>
+  <data name="User_Deleted" xml:space="preserve">
+    <value>User - Deleted</value>
+  </data>
+  <data name="Issue_Closed" xml:space="preserve">
+    <value>Issue - Closed</value>
+  </data>
+  <data name="Assignment_Created" xml:space="preserve">
+    <value>Assignment - Created</value>
+  </data>
+  <data name="Assignment_Deleted" xml:space="preserve">
+    <value>Assignment - Deleted</value>
+  </data>
+  <data name="Assignment_FinishDate_Arrived" xml:space="preserve">
+    <value>Assignment - Due date has come</value>
+  </data>
+  <data name="Assignment_Updated_FinishDate" xml:space="preserve">
+    <value>Assignment - Updated - Due date</value>
+  </data>
+  <data name="Assignment_Updated_GeneralInfo" xml:space="preserve">
+    <value>Assignment - Updated - General info</value>
+  </data>
+  <data name="Assignment_Updated_Participant_Assigned" xml:space="preserve">
+    <value>Assignment - Participant - Assigned</value>
+  </data>
+  <data name="Assignment_Updated_Participant_Resigned" xml:space="preserve">
+    <value>Assignment - Participant - Removed</value>
+  </data>
+  <data name="Assignment_Updated_Priority" xml:space="preserve">
+    <value>Assignment - Updated - Priority</value>
+  </data>
+  <data name="Assignment_Updated_Status" xml:space="preserve">
+    <value>Assignment - Updated - Status</value>
+  </data>
+</root>

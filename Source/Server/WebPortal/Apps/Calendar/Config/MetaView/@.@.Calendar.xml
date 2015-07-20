@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewItem" imageUrl="~/layouts/Images/newitem.gif" text="{IbnFramework.Calendar:CreateEvent}" commandName="MC_Calendar_NewEvent" itemSplitter="Right" />
+			<Menu id="ActionsMenu" text="{IbnFramework.Calendar:_mc_View}">
+				<Button id="SelectDayButton" imageUrl="~/Images/IbnFramework/Calendar-Select-Day.gif" text="{IbnFramework.Calendar:Day}" commandName="MC_Calendar_Day" />
+				<Button id="SelectWorkWeekButton" imageUrl="~/Images/IbnFramework/Calendar-Select-WorkWeek.gif" text="{IbnFramework.Calendar:WorkWeek}" commandName="MC_Calendar_WorkWeek" />
+				<Button id="SelectWeekButton" imageUrl="~/Images/IbnFramework/Calendar-Select-Week.gif" text="{IbnFramework.Calendar:Week}" commandName="MC_Calendar_Week" />
+				<Button id="SelectMonthButton" imageUrl="~/Images/IbnFramework/Calendar-Select-Month.gif" text="{IbnFramework.Calendar:Month}" commandName="MC_Calendar_Month" />
+				<Button id="SelecYearButton" text="{IbnFramework.Calendar:Year}" commandName="MC_Calendar_Year" />
+			</Menu>
+		</add>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Calendar_NewEvent">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=CalendarEvent</Url>
+			</Command>
+			<Command id="MC_Calendar_EditEvent">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=CalendarEvent&amp;ObjectId=[ClientParam:Uid]</Url>
+			</Command>
+			<Command id="MC_Calendar_Day">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx?ViewMode=Day</Url>
+			</Command>
+			<Command id="MC_Calendar_WorkWeek">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx?ViewMode=WorkWeek</Url>
+			</Command>
+			<Command id="MC_Calendar_Week">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx?ViewMode=Week</Url>
+			</Command>
+			<Command id="MC_Calendar_Month">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx?ViewType=Month</Url>
+			</Command>
+			<Command id="MC_Calendar_Year">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx?ViewType=Year</Url>
+			</Command>
+
+			<Command id="MC_Art_NewEvent">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:NewRow}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEditPopup.aspx?formName=[MC_BaseForm]&amp;ShowViewLink=1&amp;className=CalendarEvent&amp;CommandName=MC_Art_NewEvent&amp;EventStartDate=[ClientParam:EventStartDate]&amp;EventEndDate=[ClientParam:EventEndDate]</Url>
+				<RefreshMethod>OnItemCreatedPostFactum</RefreshMethod>
+				<Width>800</Width>
+				<Height>420</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Art_UpdateEvent">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:EventEditingTitle}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/QuickView.aspx?CommandName=MC_Art_UpdateEvent&amp;ObjectId=[ClientParam:Uid]</Url>
+				<RefreshMethod>OnSummaryPostFactum</RefreshMethod>
+				<Width>320</Width>
+				<Height>180</Height>
+				<Left>160</Left>
+				<Top>120</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Art_UpdateEventConfirm">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:EventEditingTitle}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/UpdateConfirmation.aspx?CommandName=MC_Art_UpdateEventConfirm&amp;ObjectId=[ClientParam:Uid]</Url>
+				<RefreshMethod>OnItemUpdateConfirmedPostFactum</RefreshMethod>
+				<Width>500</Width>
+				<Height>120</Height>
+				<Left>100</Left>
+				<Top>100</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_Art_DeleteEvent">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:EventDeletingTitle}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/DeleteConfirmation.aspx?CommandName=MC_Art_DeleteEvent&amp;ObjectId=[ClientParam:Uid]</Url>
+				<RefreshMethod>OnItemDeletedPostFactum</RefreshMethod>
+				<Width>500</Width>
+				<Height>120</Height>
+				<Left>100</Left>
+				<Top>100</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

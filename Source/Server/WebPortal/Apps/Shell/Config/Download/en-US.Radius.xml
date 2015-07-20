@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Download>
+	<add>
+		<Category id="Mediachase" title="Radius Software">
+			<Product id="IncidentAddIn" file="IncidentAddIn.msi" build="4" date="2009-07-22" title="MagRul Issues for Outlook (beta)" description="Plug-in for Microsoft Outlook e-mail application which enables to organize simple work with users’ requests through the e-mail." />
+			<Product id="ClientTools" file="MagRul_Client_Tools_EN.msi" build="718" date="2010-08-10" title="MagRul Client Tools" description="&lt;p&gt;Additional tools for installation on user’s computer: MagRul Client, MagRul Screen Capture, MagRul Toolbox.&lt;/p&gt;&lt;p&gt;MagRul Client – instant client (resembling ICQ or MSN Messenger) provides messaging, files sending, MagRul Portal notifications receiving. Enables to improve users’ communicating in the context of working with MagRul Portal.&lt;/p&gt;&lt;p&gt;MagRul Screen Capture – tool for taking pictures or video from the screen. Enables to work effectively with interfaces and documents. Provides assignment of tasks, To-Dos and Issues, and publishing screenshots on the MagRul Server.&lt;/p&gt;&lt;p&gt;MagRul Toolbox – plug-in for Microsoft Office. Additional menu for Microsoft Office enables to publish documents in a few moments on the MagRul Server, and create task, To-Do or Issue.&lt;/p&gt;" />
+		</Category>
+		<Category id="ThirdParty" title="Third Party Software">
+			<Product id="WMEncoder" file="WMEncoder.exe" build="2980" date="2002-11-12" title="Windows Media Encoder 9 Series" description="" />
+		</Category>
+	</add>
+</Download>

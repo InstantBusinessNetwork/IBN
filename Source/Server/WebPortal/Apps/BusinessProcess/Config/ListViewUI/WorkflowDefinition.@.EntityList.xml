@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewButton" text="{IbnFramework.BusinessProcess:NewTemplate}" imageUrl="~/Images/IbnFramework/NEWITEM.GIF" commandName="WorkflowDefinition_New" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_MUI_DeleteSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="WFDefinition_Columns">
+				<Column id="07349b86-8375-4012-ba84-6644c9b1fe8e" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx" width="21px">
+					<Item imageUrl="~/Images/IbnFramework/edit.gif" commandName="WorkflowDefinition_Edit" tooltip="{IbnFramework.Common:Edit}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="WorkflowDefinition_New">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowDefinitionEdit.aspx</Url>
+			</Command>
+			<Command id="WorkflowDefinition_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/BusinessProcess/Pages/WorkflowDefinitionEdit.aspx?Id=[ClientParam:primaryKeyId]</Url>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

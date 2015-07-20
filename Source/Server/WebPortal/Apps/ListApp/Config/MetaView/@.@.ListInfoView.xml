@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Commands>
+		<add>
+			<Command id="MC_ListApp_AddHistoryFieldFrame">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.ListInfo:AddingField}</PopupTitle>
+				<Url>~/Apps/ListApp/Pages/HistoryFieldAdd.aspx?ClassName=[ClientParam:ClassName]&amp;CommandName=MC_ListApp_NeedToDataBind</Url>
+				<Width>400</Width>
+				<Height>120</Height>
+				<Left>130</Left>
+				<Top>50</Top>
+				<Drag>False</Drag>
+			</Command>
+			<Command id="MC_ListApp_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			
+			<Command id="MC_ListApp_Security">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/ListSecurity.aspx?ClassName={QueryString:class}</Url>
+				<Width>600</Width>
+				<Height>305</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+			<Command id="MC_ListApp_DeleteList">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.ListInfo:WarningL}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.DeleteListHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_ListApp_DeleteTemplateList">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.ListInfo:WarningL}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ListApp.CommandHandlers.DeleteTemplateListHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ListApp_ProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=0&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ListApp_HistoryProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=[ClientParam:ClassName]&amp;placeName=ItemHistoryList&amp;showGrouping=0&amp;showFilters=0&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_ListApp_Admin_ProfileEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ProfileEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_ListApp_Publish">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Apps/ListApp/Pages/Publish.aspx?ClassName={QueryString:class}</Url>
+				<Width>750</Width>
+				<Height>450</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

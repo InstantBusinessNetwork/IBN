@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ADText">
+		<value>Менеджер поручил вам выполнение этой задачи. &lt;br&gt;Нажмите &amp;laquo;Принять&amp;raquo;, если
+		вы принимаете назначение.&lt;br&gt;В противном случает нажмите &amp;laquo;Отклонить&amp;raquo;.</value>
+	</data>
+	<data name="Accept">
+		<value>Принять</value>
+	</data>
+	<data name="QuickTracking">
+		<value>Управление</value>
+	</data>
+	<data name="RPText">
+		<value>Менеджер поручил вам выполнение этой задачи. &lt;br&gt;Установите выполненный процент задачи, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Status">
+		<value>Выполнено</value>
+	</data>
+	<data name="Update">
+		<value>Обновить</value>
+	</data>
+	<data name="MPText">
+		<value>Эта задача завершена, но как менеджер вы можете изменить ее статус. Установите выполненный процент задачи, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="OverallStatus">
+		<value>Общий статус</value>
+	</data>
+	<data name="MPPText1">
+		<value>Как менеджер вы можете изменить статус этой задачи. Установите выполненный процент задачи, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="MPPText2">
+		<value>Также вы можете полностью завершить эту задачу. Это действие равносильно выбору значения 100% в раскрывающемся списке.</value>
+	</data>
+	<data name="CompleteTask">
+		<value>Завершить</value>
+	</data>
+	<data name="MCText">
+		<value>Как менеджер вы можете завершить эту веху.</value>
+	</data>
+	<data name="CompleteMilestone">
+		<value>Завершить веху</value>
+	</data>
+	<data name="MUText">
+		<value>Эта веха завершена. Как менеджер вы можете отменить ее завершение.</value>
+	</data>
+	<data name="UncompleteMilestone">
+		<value>Отменить завершение</value>
+	</data>
+	<data name="QuickTrackingAcceptDeny">
+		<value>Управление</value>
+	</data>
+	<data name="Decline">
+		<value>Отклонить</value>
+	</data>
+	<data name="Resolution">
+		<value>Решение</value>
+	</data>
+	<data name="Workaround">
+		<value>Другие возможные решения</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="PersonalStatus">
+		<value>Выполнено</value>
+	</data>
+	<data name="Text1">
+		<value>Менеджер поручил вам выполнение этой задачи. 
+Установите выполненный процент задачи, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Text2">
+		<value>Установите выполненный процент задачи, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Text3">
+		<value>Как менеджер вы можете полностью завершить эту задачу.</value>
+	</data>
+	<data name="Text4">
+		<value>Как менеджер вы можете приостановить выполнение задачи.</value>
+	</data>
+	<data name="Text5">
+		<value>Задача завершена, но как менеджер вы можете отменить ее завершение.</value>
+	</data>
+	<data name="Text6">
+		<value>Задача приостановлена, но как менеджер вы можете возобновить ее выполнение.</value>
+	</data>
+	<data name="Text7">
+		<value>Менеджер поручил вам выполнение этой задачи. Нажмите &amp;laquo;Принять&amp;raquo;, если
+		вы принимаете назначение. В противном случае нажмите &amp;laquo;Отклонить&amp;raquo;.</value>
+	</data>
+	<data name="Text8">
+		<value>Задача еще не активна, но как менеджер вы можете активировать ее.</value>
+	</data>
+	<data name="SuspendTask">
+		<value>Приостановить</value>
+	</data>
+	<data name="ResumeTask">
+		<value>Возобновить</value>
+	</data>
+	<data name="UncompleteTask">
+		<value>Отменить завершение</value>
+	</data>
+	<data name="IncidentTracking">
+		<value>Управление инцидентами</value>
+	</data>
+	<data name="SpentHours">
+		<value>Затрачено часов</value>
+	</data>
+	<data name="Date">
+		<value>Дата</value>
+	</data>
+	<data name="UpdateTimesheetText">
+		<value>Эта задача завершена или приостановлена, но вы можете изменить количество рабочих часов за известные дни.</value>
+	</data>
+	<data name="ActivateTask">
+		<value>Активировать</value>
+	</data>
+	<data name="ProjectPhase">
+		<value>После завершения этой вехи проект перейдет в следующую фазу:</value>
+	</data>
+	<data name="MileStone">
+		<value>Как менеджер вы можете пометить эту веху как пройденную. Для этого нажмите &amp;laquo;Завершить веху&amp;raquo;.</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Нельзя изменять отосланный на утверждение или утвержденный лист учета времени.</value>
+	</data>
+</root>

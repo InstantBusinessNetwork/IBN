@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>76E13DE4-1F5A-4DD9-8645-660BBC8B5496</Uid>
+	<Title>{IbnFramework.Report:RdlReportBlockName}</Title>
+	<Description>{IbnFramework.Report:RdlReportBlockDescription}</Description>
+	<Path>~/Apps/ReportManagement/Modules/RdlReport.ascx</Path>
+	<PropertyPagePath>~/Apps/ReportManagement/Modules/RdlReportPropertyPage.ascx</PropertyPagePath>
+	<Category>13C38F3B-D4A6-448a-95B9-DF0F8471A161</Category>
+	<IconPath>~/Images/IbnFramework/rdl.png</IconPath>
+</DynamicControlInfo>
+

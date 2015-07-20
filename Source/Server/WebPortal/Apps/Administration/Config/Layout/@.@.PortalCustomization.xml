@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="ShortInfo">
+			<Placeholder id="Placeholder_1">
+				<Control id="Toolbar" path="~/Apps/MetaUI/Toolbar/MetaToolbar.ascx">
+					<Property name="ClassName" value="Portal" />
+					<Property name="ViewName" value="PortalCustomization" />
+					<Property name="PlaceName" value="PortalCustomization" />
+					<Property name="ToolbarMode" value="MetaView" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+		<Block id="LeftMenu" name="{IbnFramework.Profile:LeftMenu}">
+			<Placeholder id="Placeholder_1">
+				<Control id="LeftMenu" path="~/Apps/Administration/Modules/LeftMenuItems.ascx/">
+					<Property name="ClassName" value="LeftMenu" />
+					<Property name="ViewName" value="ListAll" />
+					<Property name="PlaceName" value="PortalCustomization" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+
+		<Block id="PageCustomization" name="{IbnFramework.Profile:CustomPages}">
+			<Placeholder id="Placeholder_1">
+				<Control id="WsCustomize" path="~/Apps/WidgetEngine/Modules/PageList.ascx"></Control> 
+			</Placeholder>
+			<Placeholder id="Placeholder_2" />
+			<Placeholder id="Placeholder_3" />
+			<Placeholder id="Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

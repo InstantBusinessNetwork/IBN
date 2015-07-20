@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>B3075B36-BB0B-4f90-8E09-1E85855E1F2F</Uid>
+	<Title>{IbnFramework.Incident:_mc_ChartReportTitle}</Title>
+	<Description>{IbnFramework.Incident:_mc_ChartReportDescription}</Description>
+	<Path>~/Apps/HelpDeskManagement/Workspace/ChartReport.ascx</Path>
+	<PropertyPagePath>~/Apps/HelpDeskManagement/Workspace/PP_ChartReport.ascx</PropertyPagePath>
+	<Category>2A58C024-6457-4853-87DF-981B8556DA0D</Category>
+	<IconPath>~/Images/IbnFramework/diagrami.png</IconPath>
+</DynamicControlInfo>

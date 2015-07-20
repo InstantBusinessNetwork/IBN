@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_RM_Selected_Delete" itemSplitter="Right"></Button>
+			<Button id="ImportButton" text="{IbnFramework.Report:Import}" imageUrl="~/Layouts/Images/import.gif" commandName="MC_RM_Import" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="RM_Columns">
+				<Column id="6154946B-6E14-4e10-90EC-B73DEE47EEF8" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/layouts/Images/icon-search.gif" commandName="MC_RM_ViewItem" paddingRight="5" tooltip="{IbnFramework.Report:ViewReport}" />
+					<Item imageUrl="~/layouts/Images/icon-key.gif" commandName="MC_RM_Security" paddingRight="5" tooltip="{IbnFramework.Report:ReportSecurity}" />
+				</Column>
+			</CustomColumns>
+			<GridAction commandName="MC_RM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_RM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/ReportManagement/Pages/ReportView.aspx?ReportId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_RM_Import">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Report:ReportImport}</PopupTitle>
+				<Url>~/Apps/ReportManagement/Pages/ReportImport.aspx</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>50</Left>
+				<Top>15</Top>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ReportManagement.CommandHandlers.CustomSqlReportEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_RM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteSelectedEntityHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.AdministrationHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="MC_RM_Security">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Report:ReportSecurity}</PopupTitle>
+				<Url>~/Apps/ReportManagement/Pages/ReportSecurity.aspx?ReportId=[ClientParam:primaryKeyId]&amp;CommandName=MC_RM_Security</Url>
+				<Width>650</Width>
+				<Height>310</Height>
+				<Left>50</Left>
+				<Top>15</Top>
+				<Drag>True</Drag>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.AdministrationHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

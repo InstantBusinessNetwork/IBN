@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.ReportSystem" metaClass="Report" method="*" type="Mediachase.IBN.Business.ReportSystem.ReportRequestHandler, Mediachase.IBN.Business"/>
+		 </add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

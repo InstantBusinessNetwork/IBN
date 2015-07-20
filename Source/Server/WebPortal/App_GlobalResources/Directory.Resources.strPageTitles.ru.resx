@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tDirectory">
+		<value>Пользователи</value>
+	</data>
+	<data name="tUserEdit">
+		<value>Редактирование информации о пользователе</value>
+	</data>
+	<data name="tProfileEdit">
+		<value>Редактирование настроек пользователя</value>
+	</data>
+	<data name="tUserView">
+		<value>Просмотр информации о пользователе</value>
+	</data>
+	<data name="tPrefsEdit">
+		<value>Редактирование настроек пользователя</value>
+	</data>
+	<data name="tAddGroup2">
+		<value>Новая группа</value>
+	</data>
+	<data name="tUserAdd">
+		<value>Новый пользователь</value>
+	</data>
+	<data name="tAddGroup1">
+		<value>Редактирование группы</value>
+	</data>
+	<data name="tMoveGroup">
+		<value>Перемещение группы</value>
+	</data>
+	<data name="tChangeZone">
+		<value>Изменение часового пояса</value>
+	</data>
+	<data name="tPendingUserAdd">
+		<value>Приглашение пользователя</value>
+	</data>
+	<data name="tPendingUserEdit">
+		<value>Редактирование информации о приглашенном пользователе</value>
+	</data>
+	<data name="tExternalUserAdd">
+		<value>Новый внешний пользователь</value>
+	</data>
+	<data name="tExternalUserEdit">
+		<value>Редактирование информации о внешнем пользователе</value>
+	</data>
+	<data name="tAddGroup">
+		<value>Новая контактная группа</value>
+	</data>
+	<data name="tChangeRoles">
+		<value>Связанные с пользователем объекты</value>
+	</data>
+	<data name="tPartnerUserAdd">
+		<value>Новый партнер</value>
+	</data>
+	<data name="tPartnerUserEdit">
+		<value>Редактирование информации о партнере</value>
+	</data>
+	<data name="tUserWebApps">
+		<value>Мои закладки</value>
+	</data>
+	<data name="tUnsubscribe">
+		<value>Отказ от получения уведомлений</value>
+	</data>
+	<data name="IDoNotWant">
+		<value>Я не хочу получать уведомления данного типа:</value>
+	</data>
+	<data name="Unsubscribe">
+		<value>Для любых объектов</value>
+	</data>
+	<data name="UnsubscribeForObject">
+		<value>Только для вышеуказанного объекта</value>
+	</data>
+	<data name="Notification">
+		<value>Тип уведомления</value>
+	</data>
+	<data name="Submit">
+		<value>Подтвердить</value>
+	</data>
+	<data name="UnsubscribeThanks">
+		<value>&lt;i&gt;Подтверждение принято. &lt;br&gt;Вы больше не будете получать данное уведомление.&lt;/i&gt;
+		&lt;br&gt;&lt;br&gt;
+		Дополнительно, Вы можете воспользоваться следующими ссылками:
+		</value>
+	</data>
+	<data name="NotificationLink">
+		<value>Настроить всю Систему уведомления</value>
+	</data>
+	<data name="NotificationForObjectLink">
+		<value>Настроить Систему уведомления для вышеуказанного объекта</value>
+	</data>
+</root>

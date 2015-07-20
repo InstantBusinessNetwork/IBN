@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear/>
+	<add>
+		<Block id="Block_1">
+			<Placeholder id="Block_1.Placeholder_1">
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/ListApp/Modules/ListInfoControls/ListInfoShortInfo.ascx" />
+			</Placeholder>
+		</Block>
+
+		<Block id="Block_2" name="{IbnFramework.ListInfo:Fields}">
+			<Placeholder id="Block_2.Placeholder_1">
+				<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/MetaDataBase/Modules/MetaClassViewControls/MetaClassFields.ascx">
+					<Property name="EditFieldLink" value="~/Apps/ListApp/Pages/MetaFieldEdit.aspx"></Property>
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_2.Placeholder_2" />
+			<Placeholder id="Block_2.Placeholder_3" />
+			<Placeholder id="Block_2.Placeholder_4" />
+		</Block>
+
+		<Block id="Block_10" name="{IbnFramework.GlobalMetaInfo:SystemViews}">
+			<Placeholder id="Block_10.Placeholder_1">
+				<Control id="Block_10.Placeholder_1.Control_1" path="~/Apps/MetaUIEntity/Modules/ListProfiles.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_10.Placeholder_2" />
+			<Placeholder id="Block_10.Placeholder_3" />
+			<Placeholder id="Block_10.Placeholder_4" />
+		</Block>
+		<Block id="Block_9" name="{IbnFramework.Global:_mc_Forms}">
+			<Placeholder id="Block_9.Placeholder_1">
+				<Control id="Block_9.Placeholder_1.Control_1" path="~/Apps/MetaUI/Modules/MetaClassViewControls/Forms.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_9.Placeholder_2" />
+			<Placeholder id="Block_9.Placeholder_3" />
+			<Placeholder id="Block_9.Placeholder_4" />
+		</Block>
+
+		<Block id="Block_4" name="{IbnFramework.ListInfo:History}">
+			<Placeholder id="Block_4.Placeholder_1">
+				<Control id="Block_4.Placeholder_1.Control_1" path="~/Apps/ListApp/Modules/ListInfoControls/History.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_4.Placeholder_2" />
+			<Placeholder id="Block_4.Placeholder_3" />
+			<Placeholder id="Block_4.Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

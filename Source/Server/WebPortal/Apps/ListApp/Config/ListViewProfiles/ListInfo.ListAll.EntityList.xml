@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{787709E5-1383-4afb-BFBE-11094190F33D}</Id>
+	<Name>ListInfos</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>ListInfos</FieldSetName>
+	<FieldSet>
+		<string>Title</string>
+		<string>ListType</string>
+		<string>Status</string>
+		<string>CreatorId</string>
+		<string>Created</string>
+	</FieldSet>
+	<GroupByFieldName>FolderId</GroupByFieldName>
+	<Filters>
+		<FilterElement>
+			<Source>IsTemplate</Source>
+			<Type>Equal</Type>
+			<Value xsi:type="xsd:string">False</Value>
+			<ValueIsTemplate>false</ValueIsTemplate>
+		</FilterElement>
+	</Filters>
+	<ColumnsUI>
+		<Column field="Title" width="200" />
+		<Column field="ListType" width="100" />
+		<Column field="Status" width="100" />
+		<Column field="CreatorId" width="170" />
+		<Column field="Created" width="120" />
+	</ColumnsUI>
+</ListViewProfile>

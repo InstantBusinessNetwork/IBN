@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Overall Projects Statistics</value>
+	</data>
+	<data name="All">
+		<value>All</value>
+	</data>
+	<data name="IBN35">
+		<value>IBN36</value>
+	</data>
+	<data name="ProjectStatistics">
+		<value>Overall Project Statistics Report</value>
+	</data>
+	<data name="TotalProjCount">
+		<value>Total Selected Projects Count</value>
+	</data>
+	<data name="TotalCountByStatus">
+		<value>Total projects count for each project status</value>
+	</data>
+	<data name="TotalCountByType">
+		<value>Total projects count for each project type</value>
+	</data>
+	<data name="TotalCountByGeneralCategory">
+		<value>Total projects count for each general category</value>
+	</data>
+	<data name="TotalCountByProjectCategory">
+		<value>Total projects count for each project category</value>
+	</data>
+	<data name="Print">
+		<value>Print</value>
+	</data>
+	<data name="Export">
+		<value>Export</value>
+	</data>
+	<data name="New">
+		<value>New</value>
+	</data>
+	<data name="Active">
+		<value>Active</value>
+	</data>
+	<data name="Closed">
+		<value>Closed</value>
+	</data>
+	<data name="ProjDistribution">
+		<value>Projects Distributions by Status</value>
+	</data>
+	<data name="TypeName">
+		<value>Type Name</value>
+	</data>
+	<data name="Count">
+		<value>Count</value>
+	</data>
+	<data name="CategoryName">
+		<value>Category Name</value>
+	</data>
+	<data name="ProjByType">
+		<value>Projects Distributions ByType</value>
+	</data>
+	<data name="ProjByGenCat">
+		<value>Projects Distributions By General Category</value>
+	</data>
+	<data name="ProjByProjCat">
+		<value>Projects Distributions By Project Category</value>
+	</data>
+	<data name="StartedBy">
+		<value>Started By</value>
+	</data>
+	<data name="StartedAt">
+		<value>Started At</value>
+	</data>
+	<data name="FilterValues">
+		<value>Filter Values</value>
+	</data>
+	<data name="TotalCountByManager">
+		<value>Total projects count for each manager</value>
+	</data>
+	<data name="ProjByMan">
+		<value>Projects Distributions By Manager</value>
+	</data>
+	<data name="ProjectName">
+		<value>Project</value>
+	</data>
+	<data name="ProjByBudget">
+		<value>Projects Distributions By Budget</value>
+	</data>
+	<data name="TotalCountByBudget">
+		<value>Top 10 projects with total budget count</value>
+	</data>
+	<data name="ManagerName">
+		<value>Manager</value>
+	</data>
+	<data name="StatusName">
+		<value>Status</value>
+	</data>
+	<data name="Budget">
+		<value>Budget</value>
+	</data>
+	<data name="ProjectTitle">
+		<value>Project</value>
+	</data>
+	<data name="AllPrjs">
+		<value>All Projects</value>
+	</data>
+	<data name="tPrjs">
+		<value>Projects</value>
+	</data>
+	<data name="tApply">
+		<value>Apply Filter</value>
+	</data>
+</root>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.List" metaClass="ListInfo" method="*" type="Mediachase.Ibn.Lists.ListRequestHandler, Mediachase.Ibn.Lists"/>
+			<Handler id="Mediachase.ListObject" metaClass="List_*" method="*" type="Mediachase.Ibn.Lists.ListObjectRequestHandler, Mediachase.Ibn.Lists"/>
+		</add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

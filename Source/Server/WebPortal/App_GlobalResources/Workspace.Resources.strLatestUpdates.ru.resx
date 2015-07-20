@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbMyTitle">
+		<value>Мои последние обновления</value>
+	</data>
+	<data name="Projects">
+		<value>Проекты</value>
+	</data>
+	<data name="Issues">
+		<value>Инциденты</value>
+	</data>
+	<data name="Documents">
+		<value>Документы</value>
+	</data>
+	<data name="Events">
+		<value>Мероприятия</value>
+	</data>
+	<data name="Tasks">
+		<value>Задачи и поручения</value>
+	</data>
+	<data name="Modify">
+		<value>Дата изменения</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="tbTitle">
+		<value>Последние обновления</value>
+	</data>
+	<data name="UpdatedBy">
+		<value>Обновил</value>
+	</data>
+	<data name="Lists">
+		<value>Списки</value>
+	</data>
+	<data name="Task">
+		<value>Задача</value>
+	</data>
+	<data name="ToDo">
+		<value>Поручение</value>
+	</data>
+	<data name="Type">
+		<value>Тип</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="Time">
+		<value>Время</value>
+	</data>
+	<data name="Event">
+		<value>Мероприятие</value>
+	</data>
+	<data name="Incident">
+		<value>Инцидент</value>
+	</data>
+	<data name="Document">
+		<value>Файл/документ</value>
+	</data>
+	<data name="List">
+		<value>Список</value>
+	</data>
+	<data name="RecentUpdates">
+		<value>Последние обновления</value>
+	</data>
+	<data name="Description">
+		<value>Ниже представлен список последних обновлений. Используйте фильтр для просмотра изменений за сегодняшний день, за вчерашний и за последние 5 дней.</value>
+	</data>
+	<data name="FilterBy">
+		<value>Тип</value>
+	</data>
+	<data name="All">
+		<value>Любой</value>
+	</data>
+	<data name="Apply">
+		<value>Применить</value>
+	</data>
+	<data name="Today">
+		<value>Сегодняшние изменения</value>
+	</data>
+	<data name="Yesterday">
+		<value>Вчерашние изменения</value>
+	</data>
+	<data name="5Days">
+		<value>Изменения за 5 дней</value>
+	</data>
+	<data name="Action">
+		<value>Действие</value>
+	</data>
+</root>

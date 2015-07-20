@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tSearchString">
+		<value>Строка поиска</value>
+	</data>
+	<data name="tType">
+		<value>Тип</value>
+	</data>
+	<data name="tbTitle">
+		<value>Поиск файлов</value>
+	</data>
+	<data name="tFindNow">
+		<value>Найти</value>
+	</data>
+	<data name="tAll">
+		<value>любой</value>
+	</data>
+	<data name="tFiles">
+		<value>Файлы</value>
+	</data>
+	<data name="tLinks">
+		<value>Ссылки</value>
+	</data>
+	<data name="tModified">
+		<value>Измененные за</value>
+	</data>
+	<data name="tFileSize">
+		<value>Размер файла</value>
+	</data>
+	<data name="tSmall">
+		<value>Маленькие</value>
+	</data>
+	<data name="tMedium">
+		<value>Средние</value>
+	</data>
+	<data name="tLarge">
+		<value>Большие</value>
+	</data>
+	<data name="tLastDay">
+		<value>День</value>
+	</data>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="UpdBy">
+		<value>Обновил</value>
+	</data>
+	<data name="UpdDate">
+		<value>Обновлено</value>
+	</data>
+	<data name="Size">
+		<value>Размер</value>
+	</data>
+	<data name="tFrom">
+		<value>От</value>
+	</data>
+	<data name="tTo">
+		<value>До</value>
+	</data>
+	<data name="Small">
+		<value>Маленькие</value>
+	</data>
+	<data name="tInLastVer">
+		<value>Искать только в последних версиях</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Неверный интервал</value>
+	</data>
+	<data name="tAny">
+		<value>все время</value>
+	</data>
+	<data name="tToday">
+		<value>сегодня</value>
+	</data>
+	<data name="tYesterday">
+		<value>вчера</value>
+	</data>
+	<data name="tThisWeek">
+		<value>эту неделю</value>
+	</data>
+	<data name="tLastWeek">
+		<value>прошлую неделю</value>
+	</data>
+	<data name="tThisMonth">
+		<value>этот месяц</value>
+	</data>
+	<data name="tLastMonth">
+		<value>прошлый месяц</value>
+	</data>
+	<data name="tThisYear">
+		<value>этот год</value>
+	</data>
+	<data name="tLastYear">
+		<value>прошлый год</value>
+	</data>
+	<data name="tCustom">
+		<value>выбрать</value>
+	</data>
+	<data name="tToDir">
+		<value>В папку</value>
+	</data>
+	<data name="tViewDetails">
+		<value>Просмотреть детали</value>
+	</data>
+</root>

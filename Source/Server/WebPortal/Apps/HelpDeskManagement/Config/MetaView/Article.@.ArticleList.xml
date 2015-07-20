@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Incident:NewArticle}" imageUrl="~/Layouts/Images/listsnew.gif" commandName="MC_Art_NewItem" itemSplitter="Right" align="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_Art_Selected_Delete" align="Right"></Button>
+			<Button id="ShowAllArticles" text="{IbnFramework.Incident:AllArticles}" imageUrl="~/Layouts/images/kb.gif" commandName="MC_Art_ShowAll"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Article_Columns" primaryKey="ArticleId">
+				<Column id="8D581471-6838-48b8-85C6-85D63337C806" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="MC_Art_EditItem" paddingRight="5" />
+					<Item imageUrl="~/layouts/Images/delete.gif" commandName="MC_Art_DeleteItem" paddingRight="5" />
+				</Column>
+				<Column id="colId" type="default" width="30" title="{IbnFramework.Incident:tPendId}" sortExpression="ArticleId" dataField="ArticleId" />
+				<Column id="colQuestion" type="default" width="470" title="{IbnFramework.Incident:Question}" sortExpression="Question" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Article.Question.ascx" />
+				<Column id="colCreated" type="default" width="120" title="{IbnFramework.Incident:Created}" sortExpression="Created" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Text.Grid.Article.Created.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Art_NewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/ArticleEdit.aspx</Url>
+			</Command>
+			<Command id="MC_Art_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Incidents/ArticleEdit.aspx?back=list&amp;ArticleId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_Art_DeleteItem">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Incident:tDeleteArticleWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteArticleHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Art_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.DeleteSelectedArticlesHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Art_ShowAll">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.ResetArticlesHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.HelpDeskManagement.CommandHandlers.ShowAllEnableArticlesHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>upToolbarSearch,grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

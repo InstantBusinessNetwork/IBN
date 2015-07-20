@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Project:NewProject}" imageUrl="~/Layouts/Images/icons/project_create.gif" commandName="MC_PM_NewItem" itemSplitter="Right"></Button>
+
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_PM_Selected_Delete" itemSplitter="Right"></Button>
+			<Menu id="ActionsMenu2" text="{IbnFramework.Incident:Actions}">
+				<Button id="UpPriority" text="{IbnFramework.Project:UpPriority}" imageUrl="~/Layouts/Images/flagorange.gif" commandName="MC_PM_Selected_UpPriority"></Button>
+				<Button id="DownPriority" text="{IbnFramework.Project:DownPriority}" imageUrl="~/Layouts/Images/flaggray.gif" commandName="MC_PM_Selected_DownPriority"></Button>
+				<Button id="RelatePrjs" text="{IbnFramework.Project:MakeRelation}" imageUrl="~/Layouts/Images/icons/relprojects.gif" commandName="MC_PM_Selected_Relate"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter2"></Splitter>
+			<Menu id="ActionsMenu" text="{IbnFramework.Incident:ImportExport}">
+				<Button id="ExportExelButton" text="{IbnFramework.Common:ExportToExcel}" commandName="MC_PM_ExportExcel" imageUrl="~/Images/IbnFramework/xlsexport.gif"></Button>
+				<Button id="ExportXmlButton" text="{IbnFramework.Common:ExportToXML}" commandName="MC_PM_ExportXml" imageUrl="~/layouts/images/icons/xmlexport.gif"></Button>
+			</Menu>
+			<Splitter id="ActionsSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_Columns" primaryKey="ProjectId">
+				<Column id="1190EFFB-CEF0-4a60-B4FE-004C4B3AC93C" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/icons/project_edit.gif" commandName="MC_PM_EditItem" paddingRight="5" tooltip="{IbnFramework.Project:EditProject}" />
+				</Column>
+				<Column id="colId" type="default" width="70" title="#" sortExpression="ProjectId" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ProjectId.ProjectList.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Project:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.Project:PrjTitle}" sortExpression="Title" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Title.ProjectList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_PM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_NewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectEdit.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_PM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_PM_Selected_UpPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Project:UpPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.UpPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_PM_Selected_DownPriority">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Project:DownPriorityWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.DownPrioritySelectedItemsHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectManagerEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_PM_ExportExcel">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ExportProjects}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ProjectListExport.aspx?refreshCommand=MC_PM_ExportTrue&amp;Type=1</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_ExportXml">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ExportProjects}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ProjectListExport.aspx?refreshCommand=MC_PM_ExportTrue&amp;Type=2</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_ExportTrue">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ProjectListExport, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_PM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectView.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_PM_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectEdit.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+
+			<Command id="MC_PM_FiltersNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ProjectViewCreationTitle}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/Profiles.aspx?className=Project</Url>
+				<Width>660</Width>
+				<Height>400</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_FiltersEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ProjectViewCreationTitle}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/Profiles.aspx?className=Project&amp;uid=[ClientParam:uid]</Url>
+				<Width>660</Width>
+				<Height>400</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_NewViewCreated">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.NewViewCreatedHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>upFilters,grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_Client_EntityDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SelectObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=[ClientParam:Classes]&amp;refreshName=EntityDD_Refresh&amp;ReturnCommand=MC_Client_EntityDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]&amp;CanCreate=1</Url>
+				<Width>620</Width>
+				<Height>360</Height>
+				<Left>5</Left>
+				<Top>5</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_PM_Selected_Relate">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RelateSelectedProjectsHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

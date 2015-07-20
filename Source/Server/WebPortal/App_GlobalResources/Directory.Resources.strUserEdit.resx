@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="confirm" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="first_name" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="last_name" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="time_zone" xml:space="preserve">
+    <value>Default Time Zone</value>
+  </data>
+  <data name="lang" xml:space="preserve">
+    <value>Default Language</value>
+  </data>
+  <data name="groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="im_groups" xml:space="preserve">
+    <value>Contact Group:</value>
+  </data>
+  <data name="photo" xml:space="preserve">
+    <value>Photo</value>
+  </data>
+  <data name="phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="job_title" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="department" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="tbsave_save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbsave_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="BackToTheList" xml:space="preserve">
+    <value>Back to the Users List</value>
+  </data>
+  <data name="EditPendingUser" xml:space="preserve">
+    <value>Edit Pending User</value>
+  </data>
+  <data name="CreatePendingUser" xml:space="preserve">
+    <value>Create Pending User</value>
+  </data>
+  <data name="EditExternalUser" xml:space="preserve">
+    <value>Edit External User</value>
+  </data>
+  <data name="CreateExternalUser" xml:space="preserve">
+    <value>Create External User</value>
+  </data>
+  <data name="EditUser" xml:space="preserve">
+    <value>Edit User Information</value>
+  </data>
+  <data name="CreateUser" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="PasswordRequest" xml:space="preserve">
+    <value>Please, fill the Password Field.</value>
+  </data>
+  <data name="DuplicatedLogin" xml:space="preserve">
+    <value>Selecteted Login already exists. Please, try another.</value>
+  </data>
+  <data name="LoginReg" xml:space="preserve">
+    <value>Only letters, numbers and characters: '-', '_', '.'</value>
+  </data>
+  <data name="EmailDuplicate" xml:space="preserve">
+    <value>User with the mentioned e-mail already exists.</value>
+  </data>
+  <data name="EditPartnerUser" xml:space="preserve">
+    <value>Edit Partner User Information</value>
+  </data>
+  <data name="CreatePartnerUser" xml:space="preserve">
+    <value>Create Partner User</value>
+  </data>
+  <data name="RegularUser" xml:space="preserve">
+    <value>Regular</value>
+  </data>
+  <data name="PartnerUser" xml:space="preserve">
+    <value>Partner</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>External</value>
+  </data>
+  <data name="PendingUser" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="UserType" xml:space="preserve">
+    <value>User Type:</value>
+  </data>
+  <data name="SecurityRoles" xml:space="preserve">
+    <value>Security Roles</value>
+  </data>
+  <data name="GroupSelectError" xml:space="preserve">
+    <value>Select at least one group from </value>
+  </data>
+  <data name="or" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="MaxUsersCount" xml:space="preserve">
+    <value>Max users count was reached</value>
+  </data>
+  <data name="tSendProfile" xml:space="preserve">
+    <value>Send Account</value>
+  </data>
+  <data name="tSendTooltip" xml:space="preserve">
+    <value>Send Account Information</value>
+  </data>
+  <data name="btnapprove" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="tWrongFormat" xml:space="preserve">
+    <value>Wrong Format</value>
+  </data>
+  <data name="tAnotherOne" xml:space="preserve">
+    <value>Create another one</value>
+  </data>
+  <data name="tBasicInfo" xml:space="preserve">
+    <value>Basic Information</value>
+  </data>
+  <data name="tPersonalInfo" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="tPreferences" xml:space="preserve">
+    <value>Preferences and Additional Information</value>
+  </data>
+  <data name="tGroupInfo" xml:space="preserve">
+    <value>Group Information</value>
+  </data>
+  <data name="tAdditionalInfo" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="tDeletePhoto" xml:space="preserve">
+    <value>Delete picture after saving</value>
+  </data>
+  <data name="UseCtrl" xml:space="preserve">
+    <value>* Use Ctrl key to select multiple values</value>
+  </data>
+  <data name="tWindowsLogin" xml:space="preserve">
+    <value>Windows Login</value>
+  </data>
+  <data name="NoProfile" xml:space="preserve">
+    <value>[ No Profile ]</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+</root>

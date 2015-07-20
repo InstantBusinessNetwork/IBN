@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="User_AddResources_Columns" primaryKey="UserId">
+				<Column id="colTitle" type="default" width="250" title="{IbnFramework.Common:tName}" sortExpression="LastName" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/User.AddResources.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_Resource_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Resource_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>onAddSelected()</ClientScript>
+			</Command>
+			<Command id="MC_PM_AddGroup">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>onAddGroup()</ClientScript>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.AddGroupEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

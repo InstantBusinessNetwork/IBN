@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ibnContainers>
+	<container name="FileLibrary">
+		<control name="FileStorage" type="Mediachase.Ibn.ControlSystem.FileStorage, Mediachase.Ibn.ControlSystem">
+			<!--
+				<params>
+					<param name="AllowCreateFolder" value="1" />
+				</params>
+				-->
+			<acl containerKey="ProjectId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Object Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Write" allow="True" />
+				<ace role="PSponsor" action="Write" allow="True" />
+				<ace role="PStakeholder" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="IncidentId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Read" allow="True" />
+				<ace role="PSponsor" action="Read" allow="True" />
+				<ace role="PStakeholder" action="Read" allow="True" />
+				<!-- Object Role -->
+				<ace role="ICreator" action="Write" allow="True" />
+				<ace role="IManager" action="Admin" allow="True" />
+				<ace role="IResource" action="Write" allow="True" />
+				<ace role="ITodoResource" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="TaskId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Read" allow="True" />
+				<ace role="PSponsor" action="Read" allow="True" />
+				<ace role="PStakeholder" action="Read" allow="True" />
+				<!-- Object Role -->
+				<ace role="TCreator" action="Write" allow="True" />
+				<ace role="TManager" action="Admin" allow="True" />
+				<ace role="TResource" action="Write" allow="True" />
+				<ace role="TTodoResource" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="DocumentId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Read" allow="True" />
+				<ace role="PSponsor" action="Read" allow="True" />
+				<ace role="PStakeholder" action="Read" allow="True" />
+				<!-- Object Role -->
+				<ace role="DCreator" action="Write" allow="True" />
+				<ace role="DManager" action="Admin" allow="True" />
+				<ace role="DResource" action="Write" allow="True" />
+				<ace role="DTodoResource" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="DocumentVers_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True"/>
+				<ace role="PPM" action="Admin" allow="True"/>
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True"/>
+				<ace role="EM" action="Read" allow="True"/>
+				<ace role="PTeam" action="Read" allow="True"/>
+				<ace role="PSponsor" action="Read" allow="True"/>
+				<ace role="PStakeholder" action="Read" allow="True"/>
+				<!-- Object Role -->
+				<ace role="DCreator" action="Write" allow="True"/>
+				<ace role="DManager" action="Admin" allow="True"/>
+				<ace role="DResource" action="Write" allow="True"/>
+				<ace role="DTodoResource" action="Write" allow="True"/>
+			</acl>
+			<acl containerKey="EventId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Read" allow="True" />
+				<ace role="PSponsor" action="Read" allow="True" />
+				<ace role="PStakeholder" action="Read" allow="True" />
+				<!-- Object Role -->
+				<ace role="ECreator" action="Write" allow="True" />
+				<ace role="EManager" action="Admin" allow="True" />
+				<ace role="EResource" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="ToDoId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True" />
+				<ace role="EM" action="Read" allow="True" />
+				<ace role="PTeam" action="Read" allow="True" />
+				<ace role="PSponsor" action="Read" allow="True" />
+				<ace role="PStakeholder" action="Read" allow="True" />
+				<!-- Object Role -->
+				<ace role="TodoCreator" action="Write" allow="True" />
+				<ace role="TodoManager" action="Admin" allow="True" />
+				<ace role="TodoResource" action="Admin" allow="True" />
+			</acl>
+			<acl containerKey="Workspace">
+				<!-- Workspace ACL -->
+				<ace role="Admin" action="Admin" allow="True" />
+				<ace role="PPM" action="Admin" allow="True" />
+				<ace principalid="1" action="Write" allow="True" />
+			</acl>
+			<acl containerKey="ForumNodeId_*">
+				<!-- Glolbal Role -->
+				<ace role="Admin" action="Admin" allow="True"/>
+				<ace role="PPM" action="Admin" allow="True"/>
+				<!-- Project Role -->
+				<ace role="PM" action="Admin" allow="True"/>
+				<ace role="EM" action="Read" allow="True"/>
+				<ace role="PTeam" action="Read" allow="True"/>
+				<ace role="PSponsor" action="Read" allow="True"/>
+				<ace role="PStakeholder" action="Read" allow="True"/>
+				<!-- Object Role -->
+				<ace role="ICreator" action="Write" allow="True"/>
+				<ace role="IManager" action="Admin" allow="True"/>
+				<ace role="IResource" action="Write" allow="True"/>
+				<ace role="ITodoResource" action="Write" allow="True"/>
+			</acl>
+			<acl containerKey="ArticleId_*">
+				<!-- Workspace ACL -->
+				<ace principalid="1" action="Admin" allow="True"/>
+			</acl>
+			<!-- <acl containerKey="*"><ace role="" action="" allow="True" />...</acl> -->
+		</control>
+		<control name="ForumStorage" type="Mediachase.Ibn.Business.ControlSystem.ForumStorage, Mediachase.Ibn.Business"></control>
+	</container>
+	<container name="Pop3MailRequest">
+		<control name="FileStorage" type="Mediachase.Ibn.Business.ControlSystem.FileStorage, Mediachase.Ibn.Business">
+			<!--
+				<acl>
+					<ace role="PPM" action="Admin" allow="True" />
+				</acl>
+				--></control>
+	</container>
+	<container name="Reports">
+		<control name="ReportStorage" type="Mediachase.Ibn.Business.ControlSystem.ReportStorage, Mediachase.Ibn.Business">
+			<!--
+				<acl>
+					<ace role="PPM" action="Admin" allow="True" />
+				</acl>
+				--></control>
+	</container>
+</ibnContainers>

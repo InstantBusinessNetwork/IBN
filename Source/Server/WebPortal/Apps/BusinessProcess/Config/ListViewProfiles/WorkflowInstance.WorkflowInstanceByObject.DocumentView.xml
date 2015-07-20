@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>WorkflowInstancesByDocument</Id>
+	<Name>Default Profile</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<ReadOnly>false</ReadOnly>
+	<FieldSetName>WorkflowInstancesByObject_DefaultFieldSet</FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+		<string>PlanFinishDate</string>
+		<string>State</string>
+		<string>ExecutionResult</string>
+		<string>ActualStartDate</string>
+		<string>ActualFinishDate</string>
+		<string>Created</string>
+	</FieldSet>
+	<GroupByFieldName />
+	<Filters>
+		<FilterElement>
+			<Uid>61c56a5d-5543-4781-af7a-3988fa0ff7f3</Uid>
+			<Source>OwnerDocumentId</Source>
+			<Type>Equal</Type>
+			<Value xsi:type="xsd:string">{QueryString:DocumentId}</Value>
+			<ValueIsTemplate>true</ValueIsTemplate>
+		</FilterElement>
+	</Filters>
+	<Sorting>
+		<ArrayOfSortingElement />
+	</Sorting>
+	<ColumnsUI>
+		<Column field="Name" width="300px" title="{IbnFramework.BusinessProcess:Name}" />
+		<Column field="PlanFinishDate" width="120px" title="{IbnFramework.BusinessProcess:DueDate}" />
+		<Column field="State" width="200px" title="{IbnFramework.BusinessProcess:State}" />
+		<Column field="ExecutionResult" width="200px" title="{IbnFramework.BusinessProcess:Result}" />
+		<Column field="ActualStartDate" width="120px" title="{IbnFramework.BusinessProcess:StartDate}" />
+		<Column field="ActualFinishDate" width="120px" title="{IbnFramework.BusinessProcess:FinishDate}" />
+		<Column field="Created" width="120px" title="{IbnFramework.BusinessProcess:Created}" />
+	</ColumnsUI>
+</ListViewProfile>

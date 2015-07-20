@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="Block_0" name="">
+			<Placeholder id="Block_0.Placeholder_1" />
+			<Placeholder id="Block_0.Placeholder_2" />
+			<Placeholder id="Block_0.Placeholder_3" />
+			<Placeholder id="Block_0.Placeholder_4" />
+		</Block>
+		<Block id="Block_2" name="{IbnFramework.TimeTracking:_mc_Accounts}">
+			<Placeholder id="Block_2.Placeholder_1">
+				<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/TimeTracking/Modules/PublicControls/TTAccountsControl.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_2.Placeholder_2" />
+			<Placeholder id="Block_2.Placeholder_3" />
+			<Placeholder id="Block_2.Placeholder_4" />
+		</Block>
+		<Block id="Block_3" name="{IbnFramework.Global:_mc_Events}">
+			<Placeholder id="Block_3.Placeholder_1">
+				<Control id="Block_3.Placeholder_1.Control_1" path="~/Apps/EventService/Modules/HistoryControl.ascx">
+					<Property name="PageSize" value="5" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_3.Placeholder_2" />
+			<Placeholder id="Block_3.Placeholder_3" />
+			<Placeholder id="Block_3.Placeholder_4" />
+		</Block>
+		<Block id="Block_1" name="{IbnFramework.Common:Details}">
+			<Placeholder id="Block_1.Placeholder_1">
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormType" value="View" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_1.Placeholder_2" />
+			<Placeholder id="Block_1.Placeholder_3" />
+			<Placeholder id="Block_1.Placeholder_4" />
+		</Block>
+		
+	</add>
+</Layout>

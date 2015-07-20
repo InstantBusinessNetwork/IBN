@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="084f1db1169b4c308170ed9be209a2c0" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Profile:PortalProfile}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="ed1b5c928fce4b7783c47e5514bb0a3e" cellPadding="5" columns="*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="240px" uid="9afb1be07a04494e8c4a0b43e519f53e">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Name" readOnly="False" uid="552f55e89a424c0baa7326f5ce45e45c" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="240px" uid="343e07059f764f498125a74f87617fc0">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="WorkspacePersonalization" readOnly="False" uid="5b312cfdb40c452b9bb2f55cf6e89368" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

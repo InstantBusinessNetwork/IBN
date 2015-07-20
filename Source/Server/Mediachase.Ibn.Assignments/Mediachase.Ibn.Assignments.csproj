@@ -1,0 +1,213 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9510DA4-B188-436A-AB40-7783C3370834}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Mediachase.Ibn.Assignments</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.Assignments</AssemblyName>
+    <ProjectTypeGuids>{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release Radius' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.6.43.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.6.54.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="ActivityInfo.cs" />
+    <Compile Include="ActivityInfoCollection.cs" />
+    <Compile Include="ActivityType.cs" />
+    <Compile Include="AssignmentEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssignmentEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="AssignmentEntity.cs" />
+    <Compile Include="AssignmentExecutionResult.cs" />
+    <Compile Include="AssignmentFactory.cs" />
+    <Compile Include="AssignmentOverdueAction.cs" />
+    <Compile Include="AssignmentPriority.cs" />
+    <Compile Include="AssignmentRequestHandler.cs" />
+    <Compile Include="AssignmentRequestMethod.cs" />
+    <Compile Include="AssignmentState.cs" />
+    <Compile Include="AssignmentAutoCompletePlugin.cs" />
+    <Compile Include="AssignmentTimeStatus.cs" />
+    <Compile Include="BlockActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BlockActivity.Designer.cs">
+      <DependentUpon>BlockActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlockActivityType.cs" />
+    <Compile Include="BusinessProcessExecutionResult.cs" />
+    <Compile Include="BusinessProcessInfo.cs" />
+    <Compile Include="CloseAssignmentRequest.cs" />
+    <Compile Include="ActivateAssignmentRequest.cs" />
+    <Compile Include="BlockActivityInstanceFactory.cs" />
+    <Compile Include="TimeType.cs" />
+    <Compile Include="WorkflowInstanceTimeStatus.cs" />
+    <Compile Include="CustomWorkflowTerminateException.cs" />
+    <Compile Include="ReactivateAssignmentRequest.cs" />
+    <Compile Include="DynamicValue.cs" />
+    <Compile Include="PropertyValueCollection.cs" />
+    <Compile Include="PropertyValue.cs" />
+    <Compile Include="ResumeAssignmentRequest.cs" />
+    <Compile Include="Schemas\SequentialWorkflowInstanceFactory.cs" />
+    <Compile Include="SuspendAssignmentRequest.cs" />
+    <Compile Include="ResumeWorkflowInstanceRequest.cs" />
+    <Compile Include="Schemas\ActivityInstanceFactory.cs" />
+    <Compile Include="Schemas\ActivityMaster.cs" />
+    <Compile Include="Schemas\ActivityMasterCollection.cs" />
+    <Compile Include="Schemas\ActivityMasterDescription.cs" />
+    <Compile Include="Schemas\WebUIElement.cs" />
+    <Compile Include="Schemas\ActivityRestriction.cs" />
+    <Compile Include="Schemas\ActivityRestrictionCollection.cs" />
+    <Compile Include="CreateAssignmentAndWaitResultActivityInstanceFactory.cs" />
+    <Compile Include="Schemas\Master.cs" />
+    <Compile Include="Schemas\ObjectInstanceFactory.cs" />
+    <Compile Include="Schemas\SchemaManager.cs" />
+    <Compile Include="Schemas\SchemaMaster.cs" />
+    <Compile Include="Schemas\SchemaMasterCollection.cs" />
+    <Compile Include="Schemas\SchemaMasterDescription.cs" />
+    <Compile Include="StartWorkflowInstanceRequest.cs" />
+    <Compile Include="SuspendWorkflowInstanceRequest.cs" />
+    <Compile Include="TerminateWorflowInstanceRequest.cs" />
+    <Compile Include="UserGroupValueEvaluator.cs" />
+    <Compile Include="WorkflowActivityWrapper.cs" />
+    <Compile Include="WorkflowChangesScope.cs" />
+    <Compile Include="WorkflowDefinitionEntity.cs" />
+    <Compile Include="WorkflowDescription.cs" />
+    <Compile Include="WorkflowInstanceEntity.auto.cs">
+      <DependentUpon>WorkflowInstanceEntity.auto.mcgen</DependentUpon>
+      <SubType>Code</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="WorkflowInstanceEntity.cs" />
+    <Compile Include="WorkflowInstanceMethod.cs" />
+    <Compile Include="WorkflowInstanceRequestHandler.cs" />
+    <Compile Include="ValueEvaluator.cs" />
+    <Compile Include="GlobalWorkflowRuntime.cs" />
+    <Compile Include="IValueEvaluator.cs" />
+    <Compile Include="McWorkflowSerializer.cs" />
+    <None Include="AssignmentEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>AssignmentEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.cs</LastGenOutput>
+    </None>
+    <None Include="WorkflowDefinitionEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WorkflowDefinitionEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="WorkflowInstanceEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>WorkflowInstanceEntity.auto.cs</LastGenOutput>
+    </None>
+    <Compile Include="CreateAssignmentAndWaitResultActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CreateAssignmentAndWaitResultActivity.Designer.cs">
+      <DependentUpon>CreateAssignmentAndWaitResultActivity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SimpleWorkflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SimpleWorkflow.Designer.cs">
+      <DependentUpon>SimpleWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowDefinitionEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkflowDefinitionEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="WorkflowDefinitionRequestHandler.cs" />
+    <Compile Include="BusinessProcessState.cs" />
+    <Compile Include="WorkflowLoader.cs" />
+    <Compile Include="WorkflowParameters.cs" />
+    <Compile Include="Workflow\ActivityBlockCompletionType.cs" />
+    <Compile Include="Workflow\ActivityElement.cs" />
+    <Compile Include="Workflow\ActivityBlock.cs" />
+    <Compile Include="Workflow\ActivityBlockType.cs" />
+    <Compile Include="Workflow\ActivityElementCollection.cs" />
+    <Compile Include="Workflow\CreateAssignmentActivity.cs" />
+    <Compile Include="Workflow\WorkflowRuntime.cs" />
+    <Compile Include="Workflow\WorkflowSchema.cs" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SimpleWorkflow.rules">
+      <DependentUpon>SimpleWorkflow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Windows Workflow Foundation\v3.5\Workflow.Targets" />
+</Project>

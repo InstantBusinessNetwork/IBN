@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.ProjectManagement.ColumnTemplates.User_AddResources_Selected" %>
+<div style="cursor:default;"><%# (Eval("UserId") == DBNull.Value) ? "" : Mediachase.UI.Web.Util.CommonHelper.GetUserStatusPureName((int)Eval("UserId"))%></div>

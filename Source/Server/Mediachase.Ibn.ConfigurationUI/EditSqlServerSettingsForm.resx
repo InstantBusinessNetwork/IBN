@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelCheckConnection.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="linkLabelCheckConnection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="linkLabelCheckConnection.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="linkLabelCheckConnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 107</value>
+  </data>
+  <data name="linkLabelCheckConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 14</value>
+  </data>
+  <data name="linkLabelCheckConnection.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="linkLabelCheckConnection.Text" xml:space="preserve">
+    <value>Check connection</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCheckConnection.Name" xml:space="preserve">
+    <value>linkLabelCheckConnection</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCheckConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCheckConnection.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;linkLabelCheckConnection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="comboBoxAuthentication.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxAuthentication.Items" xml:space="preserve">
+    <value>Windows Authentication</value>
+  </data>
+  <data name="comboBoxAuthentication.Items1" xml:space="preserve">
+    <value>SQL Server Authentication</value>
+  </data>
+  <data name="comboBoxAuthentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 47</value>
+  </data>
+  <data name="comboBoxAuthentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="comboBoxAuthentication.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAuthentication.Name" xml:space="preserve">
+    <value>comboBoxAuthentication</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAuthentication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAuthentication.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;comboBoxAuthentication.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="labelAuthentication.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelAuthentication.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelAuthentication.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelAuthentication.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 50</value>
+  </data>
+  <data name="labelAuthentication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 14</value>
+  </data>
+  <data name="labelAuthentication.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="labelAuthentication.Text" xml:space="preserve">
+    <value>Authentication:</value>
+  </data>
+  <data name="&gt;&gt;labelAuthentication.Name" xml:space="preserve">
+    <value>labelAuthentication</value>
+  </data>
+  <data name="&gt;&gt;labelAuthentication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelAuthentication.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;labelAuthentication.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBoxPassword.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 101</value>
+  </data>
+  <data name="textBoxPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
+  </data>
+  <data name="textBoxPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxPassword.Name" xml:space="preserve">
+    <value>textBoxPassword</value>
+  </data>
+  <data name="&gt;&gt;textBoxPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxPassword.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;textBoxPassword.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="labelPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 104</value>
+  </data>
+  <data name="labelPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 14</value>
+  </data>
+  <data name="labelPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="labelPassword.Text" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="&gt;&gt;labelPassword.Name" xml:space="preserve">
+    <value>labelPassword</value>
+  </data>
+  <data name="&gt;&gt;labelPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelPassword.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;labelPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBoxUser.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBoxUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 75</value>
+  </data>
+  <data name="textBoxUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
+  </data>
+  <data name="textBoxUser.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBoxUser.Name" xml:space="preserve">
+    <value>textBoxUser</value>
+  </data>
+  <data name="&gt;&gt;textBoxUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxUser.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;textBoxUser.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="labelUser.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 78</value>
+  </data>
+  <data name="labelUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 14</value>
+  </data>
+  <data name="labelUser.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="labelUser.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="&gt;&gt;labelUser.Name" xml:space="preserve">
+    <value>labelUser</value>
+  </data>
+  <data name="&gt;&gt;labelUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelUser.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;labelUser.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBoxSqlServer.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="comboBoxSqlServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="comboBoxSqlServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="comboBoxSqlServer.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlServer.Name" xml:space="preserve">
+    <value>comboBoxSqlServer</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlServer.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSqlServer.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="labelSqlServerName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelSqlServerName.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelSqlServerName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelSqlServerName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 22</value>
+  </data>
+  <data name="labelSqlServerName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 14</value>
+  </data>
+  <data name="labelSqlServerName.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="labelSqlServerName.Text" xml:space="preserve">
+    <value>SQL Server:</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServerName.Name" xml:space="preserve">
+    <value>labelSqlServerName</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServerName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServerName.Parent" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;labelSqlServerName.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBoxConnection.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxConnection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 3</value>
+  </data>
+  <data name="groupBoxConnection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 135</value>
+  </data>
+  <data name="groupBoxConnection.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBoxConnection.Text" xml:space="preserve">
+    <value>Administrator Settings</value>
+  </data>
+  <data name="&gt;&gt;groupBoxConnection.Name" xml:space="preserve">
+    <value>groupBoxConnection</value>
+  </data>
+  <data name="&gt;&gt;groupBoxConnection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxConnection.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxConnection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBoxIbnUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIbnUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="textBoxIbnUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 20</value>
+  </data>
+  <data name="textBoxIbnUser.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUser.Name" xml:space="preserve">
+    <value>textBoxIbnUser</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUser.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUser.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="labelIbnUser.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIbnUser.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIbnUser.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIbnUser.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 22</value>
+  </data>
+  <data name="labelIbnUser.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 14</value>
+  </data>
+  <data name="labelIbnUser.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="labelIbnUser.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUser.Name" xml:space="preserve">
+    <value>labelIbnUser</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUser.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUser.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUser.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="textBoxAutoPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxAutoPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 149</value>
+  </data>
+  <data name="textBoxAutoPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>288, 20</value>
+  </data>
+  <data name="textBoxAutoPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBoxAutoPassword.Name" xml:space="preserve">
+    <value>textBoxAutoPassword</value>
+  </data>
+  <data name="&gt;&gt;textBoxAutoPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxAutoPassword.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxAutoPassword.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 102</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 14</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="labelIbnUserPasswordRe.Text" xml:space="preserve">
+    <value>Re-enter password:</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPasswordRe.Name" xml:space="preserve">
+    <value>labelIbnUserPasswordRe</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPasswordRe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPasswordRe.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPasswordRe.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxIbnUserPasswordRe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIbnUserPasswordRe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 99</value>
+  </data>
+  <data name="textBoxIbnUserPasswordRe.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="textBoxIbnUserPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 20</value>
+  </data>
+  <data name="textBoxIbnUserPasswordRe.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPasswordRe.Name" xml:space="preserve">
+    <value>textBoxIbnUserPasswordRe</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPasswordRe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPasswordRe.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPasswordRe.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="labelIbnUserPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="labelIbnUserPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="labelIbnUserPassword.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="labelIbnUserPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 74</value>
+  </data>
+  <data name="labelIbnUserPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 14</value>
+  </data>
+  <data name="labelIbnUserPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="labelIbnUserPassword.Text" xml:space="preserve">
+    <value>Choose a password:</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPassword.Name" xml:space="preserve">
+    <value>labelIbnUserPassword</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPassword.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;labelIbnUserPassword.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="textBoxIbnUserPassword.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="textBoxIbnUserPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 71</value>
+  </data>
+  <data name="textBoxIbnUserPassword.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="textBoxIbnUserPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 20</value>
+  </data>
+  <data name="textBoxIbnUserPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPassword.Name" xml:space="preserve">
+    <value>textBoxIbnUserPassword</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPassword.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;textBoxIbnUserPassword.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="radioButtonEnterPassManually.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonEnterPassManually.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="radioButtonEnterPassManually.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radioButtonEnterPassManually.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 46</value>
+  </data>
+  <data name="radioButtonEnterPassManually.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 18</value>
+  </data>
+  <data name="radioButtonEnterPassManually.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="radioButtonEnterPassManually.Text" xml:space="preserve">
+    <value>Enter password manually</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnterPassManually.Name" xml:space="preserve">
+    <value>radioButtonEnterPassManually</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnterPassManually.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnterPassManually.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;radioButtonEnterPassManually.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 125</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>197, 18</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="radioButtonGenerateRandomPass.Text" xml:space="preserve">
+    <value>Generate random password (GUID)</value>
+  </data>
+  <data name="&gt;&gt;radioButtonGenerateRandomPass.Name" xml:space="preserve">
+    <value>radioButtonGenerateRandomPass</value>
+  </data>
+  <data name="&gt;&gt;radioButtonGenerateRandomPass.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radioButtonGenerateRandomPass.Parent" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;radioButtonGenerateRandomPass.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="groupBoxIbnLogin.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBoxIbnLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 144</value>
+  </data>
+  <data name="groupBoxIbnLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>470, 184</value>
+  </data>
+  <data name="groupBoxIbnLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBoxIbnLogin.Text" xml:space="preserve">
+    <value>SQL Account For Portal</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIbnLogin.Name" xml:space="preserve">
+    <value>groupBoxIbnLogin</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIbnLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIbnLogin.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;groupBoxIbnLogin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 341</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="buttonCancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 354</value>
+  </data>
+  <data name="buttonCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="buttonCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Name" xml:space="preserve">
+    <value>buttonCancel</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonCancel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="buttonOk.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="buttonOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>326, 354</value>
+  </data>
+  <data name="buttonOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
+  </data>
+  <data name="buttonOk.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Name" xml:space="preserve">
+    <value>buttonOk</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelHSplit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panelHSplit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 341</value>
+  </data>
+  <data name="panelHSplit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>494, 1</value>
+  </data>
+  <data name="panelHSplit.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Name" xml:space="preserve">
+    <value>panelHSplit</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelHSplit.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>494, 391</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Arial, 8.25pt</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADPdjMA0Xo5ANF6OgDTfj8A035AANSCRgDVg0gA1odMANeITQDYi1IA2Y1VANqQWQDakFoA25JbANyU
+        XwDclWAA3JVhAN2XYgDdmGYA3plmAN6aaADem2kA4J1tAOCebgDfnm8A4J9vAOCgcADhonMA4qN1AOGj
+        dgDipHYA46d7AOSofADjqX0A5Kl9AOatgwDlrYQA5q6EAOWvhwDjr4gA57CHAOSwiQDksYoA6LGJAOSx
+        iwDksosA57KKAOWyjADososA5bONAOWzjgDns44A5bSOAOW0jwDmtI8A5rWQAOm1jwDmtZEA5raRAOm2
+        kADmtpIA6raRAOm3kgDnt5MA57iUAOe4lQDpuJUA67qWAOe6mADoupgA6LuYAOi7mQDsu5gA67uZAOi8
+        mgDpvJoA6b2bAOm9nADrvZwA6b2dAOm+nQDpvp4A6r+eAO2/nQDpv58A6r+fAO7AngDqwKAA7cCfAOrA
+        oQDqwaEA6sGiAO3CpADvw6IA78SkAO7FpgDxyKoA78irAPHIrADwya0A882wAPHNswDyzrQA9dG3APPR
+        uQDz0roA9dbBAPbXwAD33MgA9tzJAPfdygD34M8A+ODPAPnizwD75dQA+uXVAPvm1wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbkRAPzw6NzY0MS8tKikpaEUwJSIeGhURDQoIBgQCACdFMCUiHhoVEQ0KCAYEAgAnRj11dSJ1
+        dXV1dXV1dXUBKUdIdXUjdXV1dXV1dXV1AypLVnV1K3V1HBkUEAx1dQUsTF51dTh1dSAcFxQPdXUHL01g
+        dXVDdXV1dXV1E3V1CTFQZHV1U3V1dXV1dRZ1dQsyUmd1dV11dTgodXUbdXUONVVrdXVidXVDO3V1H3V1
+        EjdXbXV1ZmNfWEk+LiR1dRg5WXF1dXV1dXV1dXV1dXUdPFpydXV1dXV1dXV1dXV1IURbdHRzb2xqaWVh
+        XE5CMyZBdEpbW1tZV1RRT0xKR0VEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit SQL Server Settings</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EditSqlServerSettingsForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

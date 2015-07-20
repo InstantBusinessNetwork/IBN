@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Workspace">
+		<value>Workspace</value>
+	</data>
+	<data name="tbWorkspace">
+		<value>Productivity and Awareness Center</value>
+	</data>
+	<data name="Customize">
+		<value>Customize</value>
+	</data>
+	<data name="Personalize">
+		<value>Personalize</value>
+	</data>
+	<data name="Reports">
+		<value>Personal Reports</value>
+	</data>
+	<data name="WizardWarning">
+		<value>Your browser blocks the pop-up windows which are required for the proper portal functionality.&lt;br&gt;Use the following link to open blocked window manually:</value>
+	</data>
+	<data name="AdminWizard">
+		<value>First Time Admin Login Wizard</value>
+	</data>
+	<data name="UserWizard">
+		<value>First Time User Login Wizard</value>
+	</data>
+	<data name="tWorkspace">
+		<value>Workspace</value>
+	</data>
+	<data name="tCustomize">
+		<value>Workspace Customization</value>
+	</data>
+	<data name="tRecentUpdates">
+		<value>Recent Updates</value>
+	</data>
+	<data name="tSelectAction">
+		<value>Select Action</value>
+	</data>
+	<data name="NewIssueWizard">
+		<value>Create a New Issue/Incident</value>
+	</data>
+	<data name="NewUserWizard">
+		<value>Add a New User to the portal</value>
+	</data>
+	<data name="NewToDoWizard">
+		<value>Create a New To-Do</value>
+	</data>
+	<data name="NewEventWizard">
+		<value>Create a New Calendar Entry</value>
+	</data>
+	<data name="NewProjectWizard">
+		<value>Create a New Project to Manage</value>
+	</data>
+	<data name="IBNReport">
+		<value>Reporting Wizard</value>
+	</data>
+	<data name="tUsersImport">
+		<value>Users Import</value>
+	</data>
+	<data name="tOtherImport">
+		<value>Issues Import</value>
+	</data>
+	<data name="tOtherImport1">
+		<value>Lists Import</value>
+	</data>
+	<data name="tAssistantTitle">
+		<value>Assistants/Awareness Tools</value>
+	</data>
+	<data name="tViewDashboard">
+		<value>View Executive Dashboard</value>
+	</data>
+	<data name="tChangeProfile">
+		<value>Change Your Personal Profile</value>
+	</data>
+	<data name="tHelpDocs">
+		<value>Help/Documentation</value>
+	</data>
+	<data name="tPeopleOnline">
+		<value>People Online in {0} Client now.</value>
+	</data>
+	<data name="tDownloadClient">
+		<value>Get Software Tools</value>
+	</data>
+	<data name="tCustomReps">
+		<value>Custom Reports Ready to Run.</value>
+	</data>
+	<data name="tView">
+		<value>View</value>
+	</data>
+	<data name="tWizards">
+		<value>Wizards</value>
+	</data>
+	<data name="tNoAlerts">
+		<value>There are no broadcast alerts as of now.</value>
+	</data>
+	<data name="tReports">
+		<value>Reports</value>
+	</data>
+	<data name="GeneralReports">
+		<value>General Reports</value>
+	</data>
+	<data name="tIncidents">
+		<value>Issues</value>
+	</data>
+	<data name="tProjects">
+		<value>Projects</value>
+	</data>
+	<data name="tToDo">
+		<value>ToDo`s</value>
+	</data>
+	<data name="tCalEntries">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="tDocuments">
+		<value>Documents</value>
+	</data>
+	<data name="tAssets">
+		<value>Assets</value>
+	</data>
+	<data name="tUsers">
+		<value>Users</value>
+	</data>
+	<data name="tTasks">
+		<value>Tasks</value>
+	</data>
+	<data name="tPrjGrps">
+		<value>Portfolios</value>
+	</data>
+	<data name="tViewReport">
+		<value>View Report</value>
+	</data>
+	<data name="tEdit">
+		<value>Edit</value>
+	</data>
+	<data name="tDelete">
+		<value>Delete</value>
+	</data>
+	<data name="tWarning1">
+		<value>Do you really want to delete this report template?</value>
+	</data>
+	<data name="tCreateTemplate">
+		<value>New Report</value>
+	</data>
+	<data name="tSystemReports">
+		<value>System Reports</value>
+	</data>
+	<data name="tCustomReports">
+		<value>Custom Reports</value>
+	</data>
+	<data name="tName">
+		<value>Name</value>
+	</data>
+	<data name="tType">
+		<value>Type</value>
+	</data>
+	<data name="tTTReportTitleAdmin">
+		<value>TimeTracking Report</value>
+	</data>
+	<data name="tTTReportTitleAdminMy">
+		<value>My TimeTracking Report</value>
+	</data>
+	<data name="tProject">
+		<value>Project/Activity</value>
+	</data>
+	<data name="tUser">
+		<value>User</value>
+	</data>
+	<data name="tState">
+		<value>State</value>
+	</data>
+	<data name="tOnlyRej">
+		<value>Only Rejected</value>
+	</data>
+	<data name="tPrint">
+		<value>Print</value>
+	</data>
+	<data name="tExport">
+		<value>Export</value>
+	</data>
+	<data name="tPeriod">
+		<value>Period</value>
+	</data>
+</root>

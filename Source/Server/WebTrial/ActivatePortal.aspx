@@ -1,0 +1,1 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ActivatePortal.aspx.cs" Inherits="Mediachase.Ibn.WebTrial.ActivatePortal" %>

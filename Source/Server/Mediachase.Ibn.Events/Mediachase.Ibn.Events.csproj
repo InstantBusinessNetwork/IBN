@@ -1,0 +1,164 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C8B00A9-4CF8-4FE8-A777-02B9D01A991A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.Events</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.Events</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Calendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Mediachase.Ibn.Core, Version=1.6.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.6.44.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.5.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="CalendarEventEntity.cs" />
+    <Compile Include="CalendarEventResourceEntity.cs" />
+    <Compile Include="CustomMethods\EntityComparer.cs" />
+    <Compile Include="CustomMethods\EntityHierarchyComparer.cs" />
+    <Compile Include="CustomMethods\List\AndBlockFilterElementPredicate.cs" />
+    <Compile Include="CustomMethods\List\FilterElementPredicate.cs" />
+    <Compile Include="CustomMethods\List\FilterElementPredicateFactory.cs" />
+    <Compile Include="CustomMethods\List\OrBlockFilterElementPredicate.cs" />
+    <Compile Include="CustomMethods\UpdateResources\CalendarResourcesUpdateMethod.cs" />
+    <Compile Include="McCalendar\DataTypes\McRecurrencePattern.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\EntityPropConverter.cs" />
+    <Compile Include="Plugins\SecurityPlugin.cs" />
+    <Compile Include="Request\CalendarEventUpdateResourcesRequest.cs" />
+    <Compile Include="VirtualEventId.cs" />
+    <Compile Include="McCalendar\Serialization\Algoritm\EntityPropertyEnumerator.cs" />
+    <Compile Include="McCalendar\Serialization\Algoritm\EntityPropertyIterator.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\DataTypes\McEventSerializer.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\DataTypes\McResourceSerializer.cs" />
+    <Compile Include="Request\CalendarDeleteRequest.cs" />
+    <Compile Include="CalendarEventEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEventEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEventRecurrenceEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEventRecurrenceEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\CalendarEventRecurrenceRequestHandler.cs" />
+    <Compile Include="Request\CalendarRequest.cs" />
+    <Compile Include="Request\CalendarUpdateRequest.cs" />
+    <Compile Include="CustomMethods\ChangeTracking\ChangeTrackingMethod.cs" />
+    <Compile Include="Request\ChangeTrackingRequest.cs" />
+    <Compile Include="Response\ChangeTrackingResponse.cs" />
+    <Compile Include="CustomMethods\List\CalendarEventListMethod.cs" />
+    <Compile Include="Request\CalendarEventListRequest.cs" />
+    <Compile Include="Handlers\CalendarEventRequestHandler.cs" />
+    <Compile Include="CalendarEventResourceEntity.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEventResourceEntity.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\CalendarEventResourceRequestHandler.cs" />
+    <Compile Include="CustomMethods\EventHelper.cs" />
+    <Compile Include="Response\CalendarEventListResponse.cs" />
+    <Compile Include="EntityObjectHierarchy.cs" />
+    <Compile Include="Common\AbstractFactory.cs" />
+    <Compile Include="McCalendar\Components\McComponentBase.cs" />
+    <Compile Include="McCalendar\Components\McEvent.cs" />
+    <Compile Include="McCalendar\DataTypes\McCalAddress.cs" />
+    <Compile Include="McCalendar\McCalendar.cs" />
+    <Compile Include="McCalendarDefinition.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\DataTypes\McRecurrencePatternSerializer.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\iCal2EntityMapping.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\IEntitySerializable.cs" />
+    <Compile Include="McCalendar\Serialization\Entity\McSerializerFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CalendarEventEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEventEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarEventRecurrenceEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEventRecurrenceEntity.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarEventResourceEntity.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEventResourceEntity.auto.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="antlr.runtime.dll" />
+    <Content Include="Mediachase.Calendar.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.IbnNext.TimeTracking\Mediachase.IbnNext.TimeTracking.csproj">
+      <Project>{E6A9ABFA-4DDE-4925-922C-FD8414FA8CB1}</Project>
+      <Name>Mediachase.IbnNext.TimeTracking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomMethods\InviteAttendee\" />
+    <Folder Include="CustomMethods\ResolveAttendee\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

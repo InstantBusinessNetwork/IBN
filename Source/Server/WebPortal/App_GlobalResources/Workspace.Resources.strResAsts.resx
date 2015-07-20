@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbTitle">
+		<value>Activities Needing a Response or Approval</value>
+	</data>
+	<data name="NI">
+		<value>Issues I Need to Assign</value>
+	</data>
+	<data name="TS">
+		<value>Time Sheets that need to be Approved</value>
+	</data>
+	<data name="US">
+		<value>New/Pending Users To Be Approved</value>
+	</data>
+	<data name="AssignInc">
+		<value>Assign Issues/Incidents</value>
+	</data>
+	<data name="ApproveTS">
+		<value>Approve Time Sheets</value>
+	</data>
+	<data name="ApproveUS">
+		<value>Approve New Users</value>
+	</data>
+	<data name="AC">
+		<value>Completed Tasks/To-Dos I Need to Approve</value>
+	</data>
+	<data name="PA">
+		<value>Tasks/To-Dos Assignments Awaiting My Acceptance</value>
+	</data>
+	<data name="NA">
+		<value>Tasks/To-Dos That I Need to Assign to Resources</value>
+	</data>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="FinishDate">
+		<value>Due Date</value>
+	</data>
+	<data name="Priority">
+		<value>Priority:</value>
+	</data>
+	<data name="MI">
+		<value>External e-mail Issues I Need to Approve</value>
+	</data>
+	<data name="Sender">
+		<value>Sender</value>
+	</data>
+	<data name="PendingAssignments">
+		<value>Tasks/To-Dos Assignments Awaiting My Acceptance</value>
+	</data>
+	<data name="Location">
+		<value>Location</value>
+	</data>
+	<data name="StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="UserName">
+		<value>User Name</value>
+	</data>
+	<data name="Email">
+		<value>E-mail</value>
+	</data>
+	<data name="Created">
+		<value>Created</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="Organizer">
+		<value>Organizer</value>
+	</data>
+	<data name="From">
+		<value>From</value>
+	</data>
+	<data name="To">
+		<value>Till</value>
+	</data>
+	<data name="CreatedBy">
+		<value>Created By</value>
+	</data>
+	<data name="CA">
+		<value>Calendar Entries Assignments Awaiting My Acceptance</value>
+	</data>
+	<data name="IA">
+		<value>Issues Assignments Awaiting My Participation Confirming</value>
+	</data>
+	<data name="Activation">
+		<value>Activation Date</value>
+	</data>
+	<data name="tPendTimesheets">
+		<value>Pending Timesheets</value>
+	</data>
+	<data name="tWeek">
+		<value>Week</value>
+	</data>
+	<data name="tPendTSS">
+		<value>pending timesheet(s)</value>
+	</data>
+	<data name="tActionCenter">
+		<value>Personal Information/Action Center</value>
+	</data>
+	<data name="AP">
+		<value>Active Projects</value>
+	</data>
+	<data name="PercentCompleted">
+		<value>Overall Status</value>
+	</data>
+	<data name="tHelpMenuText">
+		<value>Use the follow links to view and manage objects associated with you.</value>
+	</data>
+	<data name="tNoItems">
+		<value>There are no items now.</value>
+	</data>
+	<data name="Role">
+		<value>Your Role</value>
+	</data>
+	<data name="tTeamMember">
+		<value>Team Member</value>
+	</data>
+	<data name="tSponsor">
+		<value>Sponsor</value>
+	</data>
+	<data name="tStakeholder">
+		<value>Stakeholder</value>
+	</data>
+	<data name="tManager">
+		<value>Manager</value>
+	</data>
+	<data name="tExeManager">
+		<value>Executive Manager</value>
+	</data>
+	<data name="TargetDate">
+		<value>Target Date</value>
+	</data>
+	<data name="View">
+		<value>View User Profile</value>
+	</data>
+	<data name="Edit">
+		<value>Approve</value>
+	</data>
+	<data name="ND">
+		<value>Documents I Need to Assign</value>
+	</data>
+	<data name="DA">
+		<value>Documents Assignments Awaiting My Acceptance</value>
+	</data>
+	<data name="AI">
+		<value>Active Issues</value>
+	</data>
+	<data name="AD">
+		<value>Active Documents</value>
+	</data>
+	<data name="DR">
+		<value>Declined Requests</value>
+	</data>
+	<data name="tNoDocs">
+		<value>You have none available at this time.</value>
+	</data>
+	<data name="tNoIssues">
+		<value>You have none available at this time.</value>
+	</data>
+	<data name="tNoPrjs">
+		<value>You have none available at this time.</value>
+	</data>
+</root>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="NoObligation1">
+		<value>No Obligation - </value>
+	</data>
+	<data name="NoObligation2">
+		<value> Day Trial Sign Up</value>
+	</data>
+	<data name="PleaseFill">
+		<value>Please fill out the information in the steps below and within a few minutes you will have a private and dedicated full trial of the IBN up and running within our hosting center. You can use this private trial to evaluate the IBN in any way you see fit and are under no obligation to purchase at the end of your trial.</value>
+	</data>
+	<data name="Step1">
+		<value>Setup Basic Trial 
+Information</value>
+	</data>
+	<data name="PleaseEnter">
+		<value>Please enter information so we can start setting up your private IBN trial</value>
+	</data>
+	<data name="IBNPortalName">
+		<value>Company</value>
+	</data>
+	<data name="ThisShould">
+		<value>This should be a short 
+										description that will appear at the top of your IBN Web Portal. i.e. "Secure 
+										Collaboration Portal".</value>
+	</data>
+	<data name="SizeOfGroup">
+		<value>Size of Group</value>
+	</data>
+	<data name="SpecifyTheSize">
+		<value>Specify the size of the 
+										group that will be using the IBN for the Trial.</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="EnterABrief">
+		<value>Enter a brief description of your IBN, to appear on the login page. You can always change this later or leave blank if you wish.</value>
+	</data>
+	<data name="Domain">
+		<value>Domain</value>
+	</data>
+	<data name="EnterTheWeb">
+		<value>Enter the web address that 
+										you would like to use to access your trial IBN. For example 
+										http://mycompany.mediachase.net</value>
+	</data>
+	<data name="Step2">
+		<value>Create Your IBN Administration Profile</value>
+	</data>
+	<data name="PleaseEnter2">
+		<value>Please enter your contact information so that you can be granted authority to administer your IBN trial portal.</value>
+	</data>
+	<data name="Name">
+		<value>Name (First, Last)</value>
+	</data>
+	<data name="Email">
+		<value>E-mail&amp;nbsp;Address:</value>
+	</data>
+	<data name="Country">
+		<value>Country</value>
+	</data>
+	<data name="Phone">
+		<value>Phone</value>
+	</data>
+	<data name="TimeZone">
+		<value>Time Zone</value>
+	</data>
+	<data name="PleaseSelectLogin">
+		<value>Please select a login name and password that will be 
+										used by you.</value>
+	</data>
+	<data name="LoginName">
+		<value>Login Name</value>
+	</data>
+	<data name="EnterAccount">
+		<value>Enter your account login.</value>
+	</data>
+	<data name="EnterPassword">
+		<value>Enter your account password.</value>
+	</data>
+	<data name="ConfirmPassword">
+		<value>Confirm Password</value>
+	</data>
+	<data name="Step3">
+		<value>Specify Your Workgroup Address</value>
+	</data>
+	<data name="ReadTerms">
+		<value>Please read the terms of service and if you agree, check the box and click "Create Trial Site" Button below</value>
+	</data>
+	<data name="SelectOne">
+		<value>--- Please Select One ---</value>
+	</data>
+	<data name="1to20">
+		<value>1 To 20</value>
+	</data>
+	<data name="20to50">
+		<value>20 To 50</value>
+	</data>
+	<data name="50to100">
+		<value>50 To 100</value>
+	</data>
+	<data name="Assist">
+		<value>&lt;div class="ibn-propertysheet">&lt;br>&lt;br>
+		&lt;b>Trial Assistance and Support&lt;/b>&lt;br>&lt;br>
+		&lt;span class="ibn-GRFontSize">E-Mail Support:&lt;/span> If you have any questions or issues during your trial, you can e-mail us at &lt;a href="mailto:trial@mediachase.com">trial@mediachase.com&lt;/a>.&lt;br>&lt;br>
+		&lt;span class="ibn-GRFontSize">Online IM Support:&lt;/span>  If you are evaluating the secure communication/IM aspects of the IBN, you can get answers from our&lt;br>global support team instantly.&lt;br>&lt;br>
+		&lt;span class="ibn-GRFontSize">Support Forums:&lt;/span> Please visit &lt;a http://www.mediachase.com/community">http://www.mediachase.com/community&lt;/a>&lt;br>&lt;br>
+		&lt;span class="ibn-GRFontSize">Telephone:&lt;/span> You can also contact us at U.S. +1 -323-988-1071.&lt;br>&lt;br>
+		&lt;span class="ibn-GRFontSize">Additional Information:&lt;/span>  Please visit &lt;a href="http://www.mediachase.com">http://www.mediachase.com&lt;/a> for more information.&lt;br>
+		&lt;/div>
+		</value>
+	</data>
+	<data name="TrialRejected">
+		<value>Trial Site Creation Rejected</value>
+	</data>
+	<data name="TrialRejectedReasons">
+		<value>Trial site creation rejected due following reasons:</value>
+	</data>
+	<data name="DomainExists">
+		<value>Domain already exists. Please select other domain name.</value>
+	</data>
+	<data name="TrialActivated">
+		<value>Trial Site already activated.</value>
+	</data>
+	<data name="UnknownReason">
+		<value>Failed due to unknown reason.</value>
+	</data>
+	<data name="InvalidRequest">
+		<value>Failed due to invalid request.</value>
+	</data>
+	<data name="RequestPending">
+		<value>Request Pending</value>
+	</data>
+	<data name="OneStep">
+		<value>Only One More Step to Go...</value>
+	</data>
+	<data name="Created">
+		<value>You are Trial Site is Successfully Created</value>
+	</data>
+	<data name="UserRegistered">
+		<value>User with this E-mail address already registered. Please select other E-mail address.</value>
+	</data>
+	<data name="Activation">
+		<value>You are Ready for Activation</value>
+	</data>
+	<data name="Security">
+		<value>To ensure the security and privacy of your IBN trial, you will shortly receive 
+									an e-mail with a special activation link that only you can see. When you 
+									receive this e-mail, simply follow the quick instructions to activate and begin 
+									your trial.</value>
+	</data>
+	<data name="Failed">
+		<value>Trial Site Creation Failed</value>
+	</data>
+	<data name="Congratulations">
+		<value>Congratulations. Now you can go to &lt;A href='http://{0}.{1}'&gt;http://{0}.{1}&lt;/A&gt; and start using you trial site.</value>
+	</data>
+	<data name="Back">
+		<value>Back</value>
+	</data>
+	<data name="NextStep">
+		<value>Next Step</value>
+	</data>
+	<data name="CreateTrial">
+		<value>Create Trial</value>
+	</data>
+	<data name="Repeat">
+		<value>Repeat</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="SelectLanguage">
+		<value>Select Language</value>
+	</data>
+	<data name="IAgree">
+		<value>I agree to the</value>
+	</data>
+	<data name="IAgree2">
+		<value>Terms of Service</value>
+	</data>
+	<data name="Password">
+		<value>Password</value>
+	</data>
+	<data name="strTitle">
+		<value>IBN Trial Sign Up</value>
+	</data>
+	<data name="strMetaDescr">
+		<value>IBN Trial Sign Up. No Obligation.</value>
+	</data>
+	<data name="strCheck">
+		<value>Check</value>
+	</data>
+	<data name="strDomainNotEmpty">
+		<value>Domain cannot be empty!</value>
+	</data>
+	<data name="strCreateMyPortal">
+		<value>Enter Your IBN Portal</value>
+	</data>
+	<data name="strDomainExists">
+		<value>Domain name already exists!</value>
+	</data>
+	<data name="strDomainNotExists">
+		<value>This domain name is free!</value>
+	</data>
+  <data name="strKeyword">
+    <value>Keyword</value>
+  </data>
+	<data name="strAttention">
+		<value>Pay attention: if  we cannot verify the contact information you entered, the portal will be deactivated.</value>
+	</data>
+	<data name="strSendMe">
+		<value>I want to receive Mediachase special proposals</value>
+	</data>
+	<data name="strCallMe">
+		<value>Call me back and give more detailed information regarding the product and its features</value>
+	</data>
+</root>

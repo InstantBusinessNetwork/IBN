@@ -1,0 +1,53 @@
+/*
+ * FCKeditor - The text editor for internet
+ * Copyright (C) 2003 Frederico Caldeira Knabben
+ *
+ * Licensed under the terms of the GNU Lesser General Public License
+ * (http://www.opensource.org/licenses/lgpl-license.php)
+ *
+ * For further information go to http://www.fredck.com/FCKeditor/ 
+ * or contact fckeditor@fredck.com.
+ *
+ * fck_editorarea.css: Styles used in the editor area. The final user
+ *   should customize it for his web site needs.
+ *
+ * Authors:
+ *   Frederico Caldeira Knabben (fckeditor@fredck.com)
+ */
+
+P { MARGIN: 0px }
+BODY { margin-left:1;
+		margin-top:1; 
+		margin-right:1; 
+		margin-bottom:1; 
+		FONT-SIZE: 70%; 
+		FONT-FAMILY: 
+		Verdana, Arial, Helvetica 
+	 }
+
+
+/* To avoid automatic paragraphs spaces: */
+/*
+P, UL, OL { margin-top: 0px; margin-bottom: 0px; }
+*/
+
+.MainHeader
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #990066;
+}
+
+.BlueTitle
+{
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #0099cc;
+}
+
+.CenteredTitle
+{
+	font-weight: bold;
+	color: #ff0033;
+	text-align: center;
+}

@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Client:NewContact}" imageUrl="~/Layouts/Images/contact.gif" commandName="MC_Cont_NewItem" itemSplitter="Right" ></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_Cont_DeleteSelected" itemSplitter="Right"></Button>
+			<Menu id="ActionsMenu2" text="{IbnFramework.Incident:Actions}">
+				<Button id="ImportButton" text="{IbnFramework.Client:ImportContacts}" imageUrl="~/layouts/Images/import.gif" commandName="MC_Cont_Import"></Button>
+				<Button id="ExportVCardButton" text="{IbnFramework.Client:ExportVCF}" imageUrl="~/layouts/Images/contact.gif" commandName="MC_Cont_ExportVCF"></Button>
+				<Button id="ExportExelButton" text="{IbnFramework.Common:ExportToExcel}" commandName="MC_CM_MUI_ExportExcel" imageUrl="~/Images/IbnFramework/xlsexport.gif"></Button>
+				<Button id="ExportXmlButton" text="{IbnFramework.Common:ExportToXML}" commandName="MC_CM_MUI_ExportXml" imageUrl="~/layouts/images/icons/xmlexport.gif"></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_Contact_Columns">
+				<Column id="8D581471-6838-48b8-85C6-85D63337C806" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/edit.gif" commandName="MC_Cont_EditItem" paddingRight="5" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_Cont_NewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=Contact</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.CheckOrgForPartnerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_Cont_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=Contact&amp;ObjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_Cont_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.DeleteSelectedContactHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="MC_Cont_Import">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:ImportContacts}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityImport.aspx?className=Contact&amp;CommandName=MC_Cont_Import</Url>
+				<Width>580</Width>
+				<Height>500</Height>
+				<Top>15</Top>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ClientManagement.CommandHandlers.CheckOrgForPartnerEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:ContactProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Contact&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:ContactProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Contact&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ProfileEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEditAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Contact&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNewAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Contact&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_CM_MUI_ExportExcel">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:ExportToExcel}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityExportSettings.aspx?GridId=[ClientParam:GridId]&amp;ClassName=Contact&amp;refreshCommand=MC_MUI_ExportTrue&amp;Type=Excel</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_CM_MUI_ExportXml">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:ExportToXML}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityExportSettings.aspx?GridId=[ClientParam:GridId]&amp;ClassName=Contact&amp;refreshCommand=MC_MUI_ExportTrue&amp;Type=Xml</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_Cont_ExportVCF">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Client:ExportVCF}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityExportSettings.aspx?GridId=[ClientParam:GridId]&amp;ClassName=Contact&amp;refreshCommand=MC_MUI_ExportTrue&amp;Type=Vcf</Url>
+				<Width>400</Width>
+				<Height>250</Height>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			
+			<Command id="MC_MUI_ExportTrue">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.EntityListExport, Mediachase.UI.Web</Handler>
+			</Command>
+			
+		</add>
+	</Commands>
+</ListViewUI>

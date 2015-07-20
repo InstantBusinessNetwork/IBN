@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="NewFileButton" text="{IbnFramework.FileLibrary:NewFile}" imageUrl="~/Layouts/Images/icons/newfile.gif" commandName="FL_NewFileItem" itemSplitter="Right" align="Right"></Button>
+			<Button id="NewFolderButton" text="{IbnFramework.FileLibrary:NewFolder}" imageUrl="~/Layouts/Images/nfolder.gif" commandName="FL_NewFolderItem" itemSplitter="Right" align="Right"></Button>
+			<Menu id="ViewMenu" text="{IbnFramework.FileLibrary:View}" align="Right" itemSplitter="Right">
+				<Button id="ListView" text="{IbnFramework.FileLibrary:ListView}" commandName="" imageUrl="~/Layouts/Images/accept.gif"></Button>
+				<Button id="DetailsView" text="{IbnFramework.FileLibrary:DetailsView}" commandName="FL_DetailsView"></Button>
+			</Menu>
+			<Menu id="ActionsMenu" text="{IbnFramework.FileLibrary:Actions}" align="Right">
+				<Button id="NewFileButton2" text="{IbnFramework.FileLibrary:NewFile}" commandName="FL_NewFileItem" imageUrl="~/Layouts/Images/icons/newfile.gif"></Button>
+				<Button id="NewLinkButton" text="{IbnFramework.FileLibrary:NewLink}" commandName="FL_NewLinkItem" imageUrl="~/Layouts/Images/FileTypes/link.gif"></Button>
+				<Button id="NewFolderButton2" text="{IbnFramework.FileLibrary:NewFolder}" commandName="FL_NewFolderItem" imageUrl="~/Layouts/Images/nfolder.gif"></Button>
+				<Button id="MoveButton" text="{IbnFramework.FileLibrary:MoveChecked}" commandName="FL_Selected_Move" imageUrl="~/Layouts/Images/moveto.gif"></Button>
+				<Button id="DeleteButton" text="{IbnFramework.FileLibrary:DeleteChecked}" commandName="FL_Selected_Delete" imageUrl="~/Layouts/Images/delete.gif"></Button>
+				<Button id="SendButton" text="{IbnFramework.FileLibrary:SendChecked}" commandName="FL_Selected_Send" imageUrl="~/Layouts/Images/mail.gif"></Button>
+				<Button id="CopyButton" text="{IbnFramework.FileLibrary:CopyChecked}" commandName="FL_Selected_Copy" imageUrl="~/Layouts/Images/xp-copy.gif"></Button>
+				<Button id="PasteButton" text="{IbnFramework.FileLibrary:PasteFromClipboard}" commandName="FL_Clipboard_Paste" imageUrl="~/Layouts/Images/xp-paste.gif"></Button>
+				<Button id="SecureButton" text="{IbnFramework.FileLibrary:FolderSecurity}" commandName="FL_Security" imageUrl="~/Layouts/Images/icon-key.gif"></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="FL_Storage_Columns" primaryKey="PrimaryKeyId">
+				<Column width="65" id="flActions" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/delete.gif" commandName="FL_Storage_DeleteItem" paddingRight="5" tooltip="{IbnFramework.FileLibrary:Delete}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="FL_Storage_EditFolderItem" paddingRight="5" tooltip="{IbnFramework.FileLibrary:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/list_edit.gif" commandName="FL_Storage_EditFileItem" paddingRight="5" tooltip="{IbnFramework.FileLibrary:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/list_view.gif" commandName="FL_Storage_ViewItem" paddingRight="5" tooltip="{IbnFramework.FileLibrary:ViewDetails}" />
+					<Item imageUrl="~/layouts/images/icon-key.gif" commandName="FL_Storage_SecureItem" paddingRight="5" tooltip="{IbnFramework.FileLibrary:FolderSecurity}" />
+				</Column>
+				<Column id="colIcon" type="default" width="20" title="" dataField="Icon" />
+				<Column id="colTitle" type="default" width="300" title="{IbnFramework.FileLibrary:Name}" sortExpression="sortName" dataField="Name" />
+				<Column id="colUpdBy" type="default" width="200" title="{IbnFramework.FileLibrary:UpdatedBy}" sortExpression="sortModifier" dataField="Modifier" />
+				<Column id="colUpd" type="default" width="90" title="{IbnFramework.FileLibrary:Updated}" sortExpression="sortModified" dataField="ModifiedDate" />
+				<Column id="colSize" type="default" width="70" title="{IbnFramework.FileLibrary:Size}" sortExpression="sortSize" dataField="Size" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="FL_Storage_ViewItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/FileInfoView.aspx?PrimaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>650</Width>
+				<Height>310</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.ViewFileHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="FL_Storage_SecureItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/Security.aspx?PrimaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>650</Width>
+				<Height>310</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.SecureFolderHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_Storage_EditFolderItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/DirectoryEdit.aspx?PrimaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>480</Width>
+				<Height>130</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.EditFolderHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>IssListLeftPanel,grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_Storage_EditFileItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/FileEdit.aspx?PrimaryKeyId=[ClientParam:primaryKeyId]</Url>
+				<Width>470</Width>
+				<Height>200</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.EditFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_Storage_DeleteItem">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.FileLibrary:DeleteItemWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.DeleteItemHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.DeleteItemEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>IssListLeftPanel,grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_NewFileItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/FileUpload.aspx?ParentFolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<Width>470</Width>
+				<Height>270</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_NewFolderItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/DirectoryEdit.aspx?New=1&amp;ParentFolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<Width>480</Width>
+				<Height>130</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>IssListLeftPanel,grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_NewLinkItem">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/FileEdit.aspx?New=1&amp;LinkId=0&amp;ParentFolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<Width>470</Width>
+				<Height>230</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_Selected_Move">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.FileLibrary:MoveObject}</PopupTitle>
+				<Url>~/Apps/FileLibrary/Pages/MoveObject.aspx?GridId=[ClientParam:GridId]&amp;ParentFolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<BeforeClientScript>FileStorage_ExistSelectedItems</BeforeClientScript>
+				<Width>430</Width>
+				<Height>380</Height>
+				<Top>40</Top>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="FL_Selected_MoveToFolder">
+				<CommandType>ServerAction</CommandType>
+				<BeforeClientScript>FileStorage_ExistSelectedItems</BeforeClientScript>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.MoveToFolderHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<BeforeClientScript>FileStorage_ExistSelectedItems</BeforeClientScript>
+				<ConfirmationText>Do you really want to delete selected items?</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.DeleteSelectedHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>IssListLeftPanel,grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_Selected_Send">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/Incidents/AddEMailMessage.aspx?FileIds=[ClientFunction:File_Storage_GetSelectedItems]&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<BeforeClientScript>FileStorage_ExistSelectedFiles</BeforeClientScript>
+				<Width>800</Width>
+				<Height>600</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+			</Command>
+
+			<Command id="FL_Selected_Copy">
+				<CommandType>ServerAction</CommandType>
+				<BeforeClientScript>FileStorage_ExistSelectedFiles</BeforeClientScript>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.CopySelectedHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_Clipboard_Paste">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/PasteHandler.aspx?New=1&amp;FolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<Width>200</Width>
+				<Height>200</Height>
+				<Resize>True</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.NewFileHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_Security">
+				<CommandType>OpenWindow</CommandType>
+				<Url>~/FileStorage/Security.aspx?New=1&amp;FolderId={HttpContext:FileStorage_FolderId}&amp;ContainerKey={HttpContext:FileStorage_ContainerKey}&amp;ContainerName={HttpContext:FileStorage_ContainerName}</Url>
+				<Width>650</Width>
+				<Height>310</Height>
+				<Resize>False</Resize>
+				<Scroll>False</Scroll>
+				<EnableHandler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.RightAdminHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>upToolbarSearch, grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="FL_DetailsView">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.DetailsViewHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="FL_ChangeFolder">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.ChangeFolderHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>IssListLeftPanel,upToolbarSearch,grdMainPanel</UpdatePanelIds>
+			</Command>
+			<Command id="FL_ChangeFolderTree">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.ChangeFolderHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>upToolbarSearch,grdMainPanel</UpdatePanelIds>
+			</Command>
+			
+		</add>
+	</Commands>
+</MetaView>

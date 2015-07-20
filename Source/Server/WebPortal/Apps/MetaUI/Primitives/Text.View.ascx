@@ -1,0 +1,2 @@
+<%@ Control Language="C#" Inherits="Mediachase.Ibn.Web.UI.Controls.Util.BaseType" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.MetaUI.Primitives.Text_View" %>
+<%# (DataItem == null || DataItem.Properties[FieldName].Value == null) ? "" : DataItem.Properties[FieldName].Value.ToString()%>

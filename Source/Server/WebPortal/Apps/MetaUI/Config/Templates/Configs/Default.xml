@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkspaceTemplateInfo>
+	<Uid>1FDECA13-4F00-4282-8688-745A2AFBF6F6</Uid>
+	<Title>{IbnFramework.Global:_mc_1_1Column_Name}</Title>
+	<Description>{IbnFramework.Global:_mc_1_1Column_Description}</Description>
+	<ColumnInfo><![CDATA[[{id: 'Column1', width: 50}, {id: 'Column2', width: 50}]]]></ColumnInfo>
+	<ImageUrl>/Images/IbnFramework/LayoutTypes/1_1.JPG</ImageUrl>
+</WorkspaceTemplateInfo>

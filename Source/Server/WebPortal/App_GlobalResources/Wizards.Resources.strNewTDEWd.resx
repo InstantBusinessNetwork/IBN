@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="GlobalTitle">
+		<value>You are creating a new </value>
+	</data>
+	<data name="Entry">
+		<value>Entry</value>
+	</data>
+	<data name="ToDo">
+		<value>ToDo</value>
+	</data>
+	<data name="EntryQuest">
+		<value>Calendar Entry ?</value>
+	</data>
+	<data name="ToDoQuest">
+		<value>ToDo ?</value>
+	</data>
+	<data name="s1TopTextEntry">
+		<value>Calendar is a flexible team calendaring system that allows you to manage your personal calendar, but also share, schedule, track and coordinate team based calendar efforts.  This wizard will help you setup a calendar entry.</value>
+	</data>
+	<data name="s1ToDoEntryTitle">
+		<value>What is the Title of your</value>
+	</data>
+	<data name="s1Priority">
+		<value>Set a Priority for your</value>
+	</data>
+	<data name="s1Description">
+		<value>What is the Description of your</value>
+	</data>
+	<data name="s1EntryType">
+		<value>What is the Type of your</value>
+	</data>
+	<data name="s1Location">
+		<value>What is the Location of your</value>
+	</data>
+	<data name="s1ToDoCompletionType">
+		<value>Select a Type of Completion for your</value>
+	</data>
+	<data name="s1ToDoMustBeConfirmed">
+		<value>Completion of your ToDo must be confirmed by Manager</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Some comments</value>
+	</data>
+	<data name="s2Project">
+		<value>Select a Project for your</value>
+	</data>
+	<data name="s2Manager">
+		<value>Manager</value>
+	</data>
+	<data name="s2QuickTipToDo">
+		<value>The selection of a project is not necessary.  If you do select a project, the project manager will be automatically assigned based on the project.  You will however, still own the ToDo since you created it.</value>
+	</data>
+	<data name="s2QuickTipEntry">
+		<value>The selection of a project is not necessary.  If you do select a project, the project manager will be automatically assigned based on the project.  You will however, still own the calendar entry since you created it.</value>
+	</data>	
+	<data name="s3StartDate">
+		<value>What is the Start Date?</value>
+	</data>
+	<data name="s3EndDate">
+		<value>What is the End Date?</value>
+	</data>
+	<data name="s3QuickTip">
+		<value>If you have chosen a project, the start date must be within the dates of that project.</value>
+	</data>
+	<data name="s4TopText1Entry">
+		<value>If this calendar entry is for you only, simply click Next. If not, select the ‘Assign participants’ option and then you will be able to select specific resources that will be connected to your calendar entry</value>
+	</data>
+	<data name="s4TopText1ToDo">
+		<value>If this todo is for you only, simply click Next. If not, select the ‘Assign participants’ option and then you will be able to select specific resources that will be connected to your todo</value>
+	</data>
+	<data name="s4OnlyForMe">
+		<value>Only for me</value>
+	</data>
+	<data name="s4Selected">
+		<value>Selected</value>
+	</data>
+	<data name="s4Available">
+		<value>Available</value>
+	</data>
+	<data name="s4Group">
+		<value>Group</value>
+	</data>
+	<data name="s4Search">
+		<value>Search</value>
+	</data>
+	<data name="s5Type">
+		<value>Type</value>
+	</data>
+	<data name="s5Location">
+		<value>Location</value>
+	</data>
+	<data name="s5Description">
+		<value>Description</value>
+	</data>
+	<data name="s4User">
+		<value>User</value>
+	</data>
+	<data name="s5TopText">
+		<value>The following information is what you have established, if you are satisfied, simply click the ‘Create’ button below.  If you want to make changes, use the ‘Back’ button to make changes in the previous screens.</value>
+	</data>
+	<data name="s5ToDoEntryTitle">
+		<value>Title</value>
+	</data>
+	<data name="s5ToDoEntryPriority">
+		<value>Priority</value>
+	</data>
+	<data name="s5ProjectTitle">
+		<value>Project</value>
+	</data>
+	<data name="s5Manager">
+		<value>Manager</value>
+	</data>
+	<data name="s5CompletionType">
+		<value>Type of Completion</value>
+	</data>
+	<data name="s5MustBeConfirmed">
+		<value>Completion must be confirmed by Manager</value>
+	</data>
+	<data name="s5StartDate">
+		<value>Start date</value>
+	</data>
+	<data name="s5EndDate">
+		<value>End date</value>
+	</data>
+	<data name="s5OnlyForMe">
+		<value>Only for me</value>
+	</data>
+	<data name="s5TeamEntry">
+		<value>Participants</value>
+	</data>
+	<data name="s5TeamToDo">
+		<value>Resources</value>
+	</data>
+	<data name="s6TopText">
+		<value>Top Text</value>
+	</data>
+	<data name="s6TextHeader">
+		<value>Header Text</value>
+	</data>
+	<data name="s6Text">
+		<value>Text</value>
+	</data>
+	<data name="s4AssignParticipants">
+		<value>Assign Participants</value>
+	</data>
+	<data name="s4AssignResources">
+		<value>Assign Resources</value>
+	</data>
+	<data name="s4NotSet">
+		<value>None</value>
+	</data>
+	<data name="s6Notify">
+		<value>Automatically Notify Everyone?</value>
+	</data>
+	<data name="s4FindNow">
+		<value>Find Now</value>
+	</data>
+	<data name="s4Add">
+		<value>Add</value>
+	</data>
+	<data name="s4Name">
+		<value>Name</value>
+	</data>
+	<data name="s4Delete">
+		<value>Delete</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Defining your</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Associating a Project with Your</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Selecting the Start and End Date for Your</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Assigning to Yourself or Other Team Members</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Review and Validate Your</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>title 6</value>
+	</data>
+	<data name="s4MustBeConfirmed">
+		<value>Must be confirmed</value>
+	</data>
+	<data name="s4AddGroup">
+		<value>Add Group</value>
+	</data>
+	<data name="StartDateError">
+		<value>Start Date must be greater than Project's Start Date</value>
+	</data>
+	<data name="EndDateError">
+		<value>End Date must be greater then Start Date</value>
+	</data>
+	<data name="s1TopTextToDo">
+		<value>ToDo’s allow you to create personal or a managed activity between you and other people who you work with. This wizard will help you to create ToDo.</value>
+	</data>
+	<data name="EntryPP">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="ToDoPP">
+		<value>ToDo</value>
+	</data>
+	<data name="EntryTP">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="ToDoTP">
+		<value>ToDo</value>
+	</data>
+	<data name="EntryIP">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="ToDoIP">
+		<value>ToDo</value>
+	</data>
+</root>

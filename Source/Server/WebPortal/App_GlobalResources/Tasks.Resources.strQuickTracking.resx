@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ADText">
+		<value>Manager has assigned this task to you. &lt;br&gt;Press the "Accept" button if 
+you accept the appointment.&lt;br&gt;Press the "Decline" button if you decline the 
+appointment.
+		</value>
+	</data>
+	<data name="Accept">
+		<value>Accept</value>
+	</data>
+	<data name="QuickTracking">
+		<value>Quick Tracking</value>
+	</data>
+	<data name="RPText">
+		<value>Manager has assigned this task to you. &lt;br&gt;Select the new percent from the 
+drop-down list below and press the "Update" button.</value>
+	</data>
+	<data name="Status">
+		<value>Status</value>
+	</data>
+	<data name="Update">
+		<value>Update</value>
+	</data>
+	<data name="MPText">
+		<value>This task is completed, but as a Manager you can change the overall status for this task. Select the new percent from the drop-down list below and press the "Update" button. 
+</value>
+	</data>
+	<data name="OverallStatus">
+		<value>Overall Status</value>
+	</data>
+	<data name="MPPText1">
+		<value>As a Manager you can change the overall status for this task. Select the new percent from the drop-down list below and press the "Update" button. 
+</value>
+	</data>
+	<data name="MPPText2">
+		<value>Also you can complete this task entirely. This action is the same as selecting the 100% in the drop-down list above. To complete the task press the "Complete Task" button below. 
+</value>
+	</data>
+	<data name="CompleteTask">
+		<value>Complete Task</value>
+	</data>
+	<data name="MCText">
+		<value>As a Manager you can complete this milestone. 
+To do that press the "Complete Task" button below.</value>
+	</data>
+	<data name="CompleteMilestone">
+		<value>Complete Milestone</value>
+	</data>
+	<data name="MUText">
+		<value>This milestone is completed. But as a Manager you can uncomplete it. To do that press the "Uncomplete Milestone" button below. 
+</value>
+	</data>
+	<data name="UncompleteMilestone">
+		<value>Uncomplete Milestone</value>
+	</data>
+	<data name="QuickTrackingAcceptDeny">
+		<value>Quick Tracking</value>
+	</data>
+	<data name="Decline">
+		<value>Decline</value>
+	</data>
+	<data name="Resolution">
+		<value>Resolution</value>
+	</data>
+	<data name="Workaround">
+		<value>Workaround</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="PersonalStatus">
+		<value>Personal Status</value>
+	</data>
+	<data name="Text1">
+		<value>Manager has assigned this Task to you. 
+Select the new percent from the drop-down list below and press the "Update" button.</value>
+	</data>
+	<data name="Text2">
+		<value>Select the new percent from the drop-down list below and press the "Update" button.</value>
+	</data>
+	<data name="Text3">
+		<value>As a Manager you can complete this Task entirely. To complete the Task press the "Complete Task" button below.</value>
+	</data>
+	<data name="Text4">
+		<value>As a Manager you can suspend the execution of the Task. To suspend Task press the "Suspend Task" button below</value>
+	</data>
+	<data name="Text5">
+		<value>This Task is completed, but as a Manager you can uncomplete it. To uncomplete the Task press the "Uncomplete Task" button below. </value>
+	</data>
+	<data name="Text6">
+		<value>This Task is suspend, but as a Manager you can resume it. To resume the Task press the "Resume Task" button below.</value>
+	</data>
+	<data name="Text7">
+		<value>Manager has assigned this Task to you. Press the "Accept" button if 
+you accept the appointment. Press the "Decline" button if you decline the appointment.</value>
+	</data>
+	<data name="Text8">
+		<value>This Task is not active yet, but as a Manager you can activate it. To activate the Task press the "Activate Task" button below.</value>
+	</data>
+	<data name="SuspendTask">
+		<value>Suspend Task</value>
+	</data>
+	<data name="ResumeTask">
+		<value>Resume Task</value>
+	</data>
+	<data name="UncompleteTask">
+		<value>Uncomplete Task</value>
+	</data>
+	<data name="IncidentTracking">
+		<value>Issue Tracking</value>
+	</data>
+		<data name="SpentHours">
+		<value>Spent Hours</value>
+	</data>
+	<data name="Date">
+		<value>Date</value>
+	</data>
+	<data name="UpdateTimesheetText">
+		<value>This Task is completed or suspended, but you can fill in your working hours for the certain date</value>
+	</data>
+	<data name="ActivateTask">
+		<value>Activate Task</value>
+	</data>
+	<data name="ProjectPhase">
+		<value>After completion this Milestone the Project will get the following phase:</value>
+	</data>
+	<data name="MileStone">
+		<value>As a Manager you can mark this Milestone as completed. To do that press the "Complete Milestone" button below.</value>
+	</data>
+	<data name="tWrongDate">
+		<value>You can't change the pending or approved timesheet.</value>
+	</data>
+</root>

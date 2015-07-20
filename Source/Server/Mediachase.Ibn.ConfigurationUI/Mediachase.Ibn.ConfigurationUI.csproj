@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08116FA8-8878-40F0-9FE8-A84136E347B8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.ConfigurationUI</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.ConfigurationUI</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\_distr\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>..\_distr\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.SQLDMO, Version=8.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Interop.SQLDMO.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="microsoft.managementconsole, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>c:\Program Files\Reference Assemblies\Microsoft\mmc\v3.0\microsoft.managementconsole.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="CompanyUpdateLogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CompanyUpdateLogControl.Designer.cs">
+      <DependentUpon>CompanyUpdateLogControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCompanyForDatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCompanyForDatabaseForm.Designer.cs">
+      <DependentUpon>CreateCompanyForDatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCommonComponentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCommonComponentsForm.Designer.cs">
+      <DependentUpon>UpdateCommonComponentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateServerForm.Designer.cs">
+      <DependentUpon>UpdateServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCompanyListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCompanyListForm.Designer.cs">
+      <DependentUpon>UpdateCompanyListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCompanyForm.Designer.cs">
+      <DependentUpon>UpdateCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAspSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAspSettingsForm.Designer.cs">
+      <DependentUpon>EditAspSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDefaultAddressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDefaultAddressForm.Designer.cs">
+      <DependentUpon>EditDefaultAddressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompaniesScopeNode.cs" />
+    <Compile Include="CompanyListView.cs" />
+    <Compile Include="CompanyScopeNode.cs" />
+    <Compile Include="ConfigurationScopeNode.cs" />
+    <Compile Include="EditPortalPoolForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPortalPoolForm.Designer.cs">
+      <DependentUpon>EditPortalPoolForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAspForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAspForm.Designer.cs">
+      <DependentUpon>CreateAspForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteAspForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteAspForm.Designer.cs">
+      <DependentUpon>DeleteAspForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerPropertiesListView.cs" />
+    <Compile Include="ServerPropertiesScopeNode.cs" />
+    <Compile Include="SnapInResources.ru.Designer.cs">
+      <DependentUpon>SnapInResources.ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="EditSqlServerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSqlServerSettingsForm.Designer.cs">
+      <DependentUpon>EditSqlServerSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCompanyForm.Designer.cs">
+      <DependentUpon>DeleteCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCompanyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateCompanyForm.Designer.cs">
+      <DependentUpon>CreateCompanyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IbnConfigurationMangerSnapIn.cs" />
+    <Compile Include="InstallUtilSupport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LicenseListView.cs" />
+    <Compile Include="LicenseScopeNode.cs" />
+    <Compile Include="LogoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogoControl.Designer.cs">
+      <DependentUpon>LogoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RootScopeNode.cs" />
+    <Compile Include="DataElement.cs" />
+    <Compile Include="DataElementType.cs" />
+    <Compile Include="ServerFeaturesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ServerFeaturesControl.Designer.cs">
+      <DependentUpon>ServerFeaturesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServerFormView.cs" />
+    <Compile Include="ServerListView.cs" />
+    <Compile Include="ServerScopeNode.cs" />
+    <Compile Include="CompanySettingsListView.cs" />
+    <Compile Include="SnapInResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SnapInResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateFormView.cs" />
+    <Compile Include="UpdateInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateInfoControl.Designer.cs">
+      <DependentUpon>UpdateInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\DownloadProgressEventArgs.cs" />
+    <Compile Include="Updates\HttpStreamDownloaderState.cs" />
+    <Compile Include="Updates\HttpStreamDownloader.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Updates\HttpStreamDownloader.Designer.cs">
+      <DependentUpon>HttpStreamDownloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Updates\UpdateCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Updates\UpdateCheckForm.Designer.cs">
+      <DependentUpon>UpdateCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeScopeNode.cs" />
+    <Compile Include="UpgradesScopeNode.cs" />
+    <Compile Include="Wizard\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\HeaderDesigner.cs" />
+    <Compile Include="Wizard\InfoContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoContainerDesigner.cs" />
+    <Compile Include="Wizard\InfoPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\InfoPageDesigner.cs" />
+    <Compile Include="Wizard\PageCollection.cs" />
+    <Compile Include="Wizard\PageEventHandler.cs" />
+    <Compile Include="Wizard\Wizard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardDesigner.cs" />
+    <Compile Include="Wizard\WizardPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Wizard\WizardPageDesigner.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.Ibn.Configuration\Mediachase.Ibn.Configuration.csproj">
+      <Project>{564109C3-021D-46B3-AE56-14AEFCC4A822}</Project>
+      <Name>Mediachase.Ibn.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CompanyUpdateLogControl.resx">
+      <DependentUpon>CompanyUpdateLogControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCompanyForDatabaseForm.resx">
+      <DependentUpon>CreateCompanyForDatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCompanyForDatabaseForm.ru.resx">
+      <DependentUpon>CreateCompanyForDatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCommonComponentsForm.resx">
+      <DependentUpon>UpdateCommonComponentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCommonComponentsForm.ru.resx">
+      <DependentUpon>UpdateCommonComponentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateServerForm.resx">
+      <DependentUpon>UpdateServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDefaultAddressForm.ru.resx">
+      <DependentUpon>EditDefaultAddressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCompanyListForm.resx">
+      <DependentUpon>UpdateCompanyListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCompanyListForm.ru.resx">
+      <DependentUpon>UpdateCompanyListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCompanyForm.resx">
+      <DependentUpon>UpdateCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAspSettingsForm.resx">
+      <DependentUpon>EditAspSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAspSettingsForm.ru.resx">
+      <DependentUpon>EditAspSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDefaultAddressForm.resx">
+      <DependentUpon>EditDefaultAddressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPortalPoolForm.resx">
+      <DependentUpon>EditPortalPoolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAspForm.resx">
+      <DependentUpon>CreateAspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAspForm.ru.resx">
+      <DependentUpon>CreateAspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAspForm.resx">
+      <DependentUpon>DeleteAspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCompanyForm.ru.resx">
+      <DependentUpon>CreateCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteAspForm.ru.resx">
+      <DependentUpon>DeleteAspForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCompanyForm.ru.resx">
+      <DependentUpon>DeleteCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPortalPoolForm.ru.resx">
+      <DependentUpon>EditPortalPoolForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSqlServerSettingsForm.ru.resx">
+      <DependentUpon>EditSqlServerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerFeaturesControl.ru.resx">
+      <DependentUpon>ServerFeaturesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapInResources.ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SnapInResources.ru.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSqlServerSettingsForm.resx">
+      <DependentUpon>EditSqlServerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCompanyForm.resx">
+      <DependentUpon>DeleteCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCompanyForm.resx">
+      <DependentUpon>CreateCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogoControl.resx">
+      <DependentUpon>LogoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServerFeaturesControl.resx">
+      <DependentUpon>ServerFeaturesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SnapInResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SnapInResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCompanyForm.ru.resx">
+      <DependentUpon>UpdateCompanyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInfoControl.resx">
+      <DependentUpon>UpdateInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateInfoControl.ru.resx">
+      <DependentUpon>UpdateInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateServerForm.ru.resx">
+      <DependentUpon>UpdateServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\UpdateCheckForm.resx">
+      <DependentUpon>UpdateCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Updates\UpdateCheckForm.ru.resx">
+      <DependentUpon>UpdateCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoContainer.resx">
+      <DependentUpon>InfoContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\InfoPage.resx">
+      <DependentUpon>InfoPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\Wizard.resx">
+      <DependentUpon>Wizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wizard\WizardPage.resx">
+      <DependentUpon>WizardPage.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ScopeNodeImage_Root.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ibn.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="IbnConsole.msc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\ScopeNodeImage_Empty.png" />
+    <None Include="Images\ScopeNodeImage_RootRS.png" />
+    <None Include="Images\ServerFormViewImage_LogoRS.png" />
+    <None Include="Images\ScopeNodeImage_UpgradesDisable.png" />
+    <None Include="Images\ScopeNodeImage_NewCompanyForDatabase.png" />
+    <Content Include="portal.ico" />
+    <None Include="Images\Asp.png" />
+    <Content Include="Images\CompanyUpdate_Result_Success.png" />
+    <Content Include="Images\CompanyUpdate_Result_Warning.png" />
+    <Content Include="Images\Messagebox_Warning.png" />
+    <Content Include="Images\ScopeNodeImage_Asp.png" />
+    <Content Include="Images\ScopeNodeImage_AspCreate.png" />
+    <Content Include="Images\ScopeNodeImage_AspDelete.png" />
+    <Content Include="Images\ScopeNodeImage_Browse.png" />
+    <Content Include="Images\ScopeNodeImage_Companies.png" />
+    <Content Include="Images\ScopeNodeImage_Company.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyChangeDomain.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyDelete.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyInactive.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyInactiveWarning.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyInfoSetting.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyInfoSetting2.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyPoolEdit.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyStart.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyStartDisable.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyStop.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyStopDisable.png" />
+    <Content Include="Images\ScopeNodeImage_CompanyWarning.png" />
+    <Content Include="Images\ScopeNodeImage_CopyToClipboard.png" />
+    <Content Include="Images\ScopeNodeImage_DomainAliases.png" />
+    <None Include="Images\ScopeNodeImage_NewCompany.png" />
+    <Content Include="Images\ScopeNodeImage_License.png" />
+    <Content Include="Images\ScopeNodeImage_SchedulerStart.png" />
+    <Content Include="Images\ScopeNodeImage_SchedulerStop.png" />
+    <Content Include="Images\ScopeNodeImage_Server.png" />
+    <Content Include="Images\ScopeNodeImage_ServerProperties.png" />
+    <Content Include="Images\ScopeNodeImage_Upgrade.png" />
+    <Content Include="Images\ScopeNodeImage_Upgrades.png" />
+    <Content Include="Images\ServerFormViewImage_Logo.png" />
+    <Content Include="Images\UpdateCheckForm_Error.png" />
+    <Content Include="Images\UpdateCheckForm_Progress.gif" />
+    <Content Include="portal_RS.ico" />
+    <Content Include="Wizard\Wizard.bmp" />
+    <Content Include="Wizard\wizBigOnlineFolder.gif" />
+    <None Include="Images\ServerFormViewImage_LogoFon.png" />
+    <None Include="RegisterServerManager.cmd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="IbnConsole_RS.msc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,89 @@
+/*.x-grid-col
+{
+	border-color: #D4E2F7;
+}*/
+
+.x-grid-row, .x-grid-row-alt
+{
+	background-color: White;
+}
+
+.TimeSheetSelectedRow
+/*.TimeSheetSelectedRow div.x-grid-cell-inner div.x-grid-cell-text*/
+{
+	/*background-color: #D4E2F7;*/
+	background-color: #F3F3F3;	/* #E6E6E6 #EEF5FD; */
+}
+
+.TimeSheetSelectedRow td div
+{
+	color: #333333;
+	font-weight:bold;
+}
+
+.TimeSheetSelectedSecondaryRow
+/*.TimeSheetSelectedSecondaryRow div.x-grid-cell-inner div.x-grid-cell-text*/
+{
+	/*background-color: #F0ECDB;*/
+	background-color: #F3F3F3;	/*#FDF7EE; */
+}
+
+.TimeSheetSelectedSecondaryRow td div
+{
+	color: #333333;
+	font-weight:bold;
+}
+
+.TimeSheetSelectedTotalRow
+{
+	/*background-color: #FCEA96;*/
+	background-color: #E6E6E6;	/*#FDF3C3; */
+}
+
+.TimeSheetSelectedTotalRow td
+{
+	font-weight:bold;
+}
+
+div.TimeSheetRejectedRow div.x-grid3-cell-inner,
+div.TimeSheetRejectedRow div.x-grid3-cell-inner span,
+div.TimeSheetRejectedRow div.x-grid3-cell-inner span a
+{
+	/*background-color: #FFCCCC;*/
+	color: Red ! important;
+}
+
+div.TimeSheetReadOnlyRow div.x-grid3-cell-inner, 
+div.TimeSheetReadOnlyRow div.x-grid3-cell-inner span,
+div.TimeSheetReadOnlyRow div.x-grid3-cell-inner span a
+{
+	color: #808080 ! important;
+/*	font-style: italic; */
+}
+
+.x-grid3-dirty-cell
+{
+	background-color: #EEF09D;
+}
+/*D4D0C8 F0F8FF*/
+/* tooltip technology */
+a.ibn-tooltip span{
+   display:none;
+}
+a.ibn-tooltip:hover{
+   position:relative;/*—тавим точку отсчета дл€ тултипа внутрь данной ссылки*/
+   z-index:23000;/*это нужно что бы тултип показывалс€ поверх этой и других ссылок*/
+}
+a.ibn-tooltip:hover span{
+  display:block;/*показываем тултип при наведении*/
+  position:absolute;
+  top:-10px;
+  left:40px;/*три строки дл€ позиции тултипа относительно левого верхнего угла ссылки*/
+  z-index:22000;/*мне 22 + см. выше*/
+  background:#fafafa;/*фон, что бы было видно тултип*/
+  }
+  
+div.x-grid3-header
+{
+	background: #F3F7F3 url(../../images/IbnFramework/ext/default/grid/grid3-hrow.gif) repeat-x 0 bottom;
+}

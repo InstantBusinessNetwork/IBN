@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{9AD6F076-65F3-4a0b-AD51-EA14CA95C5A2}</Id>
+	<Name>{IbnFramework.Client:AllOrganizations}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>Organizations</FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+		<string>Telephone1</string>
+		<string>EMailAddress1</string>
+		<string>Address.City</string>
+		<string>Address.Line1</string>
+	</FieldSet>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+	<ColumnsUI>
+		<Column field="Name" width="250" />
+		<Column field="Telephone1" width="120" />
+		<Column field="EMailAddress1" width="150" />
+		<Column field="Address.City" width="100" />
+		<Column field="Address.Line1" width="250" />
+	</ColumnsUI>
+</ListViewProfile>

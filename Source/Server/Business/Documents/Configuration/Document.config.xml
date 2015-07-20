@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<documentEntity>
+	<templateProcessors>
+		<add extension=".txt" type="Mediachase.IBN.Business.Documents.DefaultDocumentTemplateProcessor, Mediachase.IBN.Business" />
+		<add extension=".html" type="Mediachase.IBN.Business.Documents.DefaultDocumentTemplateProcessor, Mediachase.IBN.Business" />
+		<add extension=".docx" type="Mediachase.Ibn.Documents.Office2007.DocxTemplateDocumentProcessor, Mediachase.Ibn.Documents.Office2007" />
+	</templateProcessors>
+	
+</documentEntity>

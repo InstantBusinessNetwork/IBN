@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_Columns" primaryKey="ProjectId">
+				<!--<Column id="1190EFFB-CEF0-4a60-B4FE-004C4B3AC93C" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/icons/project_edit.gif" commandName="MC_PM_EditItem" paddingRight="5" tooltip="{IbnFramework.Project:EditProject}" />
+				</Column>-->
+				<Column id="colPriority" type="default" width="20px" title="{IbnFramework.Project:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="100%" title="{IbnFramework.Project:PrjTitle}" sortExpression="Title" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Title.ProjectList.ascx" />				
+				<Column id="colCompleted" type="default" width="100px" title="{IbnFramework.Project:PrjCompleted}" sortExpression="PercentCompleted" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/OverallStatus.ProjectList.ascx" />
+				<Column id="colEnd" type="default" width="80px" title="{IbnFramework.Project:EndDate}" sortExpression="TargetFinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetFinishDate.ProjectList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_PM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectView.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_PM_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Projects/ProjectEdit.aspx?ProjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>				  
+		</add>
+	</Commands>
+</MetaView>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>WorkflowDefinitionListAll</Id>
+	<Name>{IbnFramework.BusinessProcess:AllTemplates}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<ReadOnly>false</ReadOnly>
+	<FieldSetName>WorkflowDefinitionListAll_DefaultFieldSet</FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+		<string>Description</string>
+		<string>TemplateGroup</string>
+	</FieldSet>
+	<GroupByFieldName />
+	<Filters />
+	<Sorting>
+		<ArrayOfSortingElement>
+			<SortingElement>
+				<Source>Name</Source>
+				<Type>Asc</Type>
+			</SortingElement>
+		</ArrayOfSortingElement>
+	</Sorting>
+	<ColumnsUI>
+		<Column field="Name" width="250px" title="{IbnFramework.BusinessProcess:Name}" />
+		<Column field="Description" width="300px" title="{IbnFramework.BusinessProcess:Description}" />
+		<Column field="TemplateGroup" width="200px" title="{IbnFramework.BusinessProcess:TemplateGroup}" />
+	</ColumnsUI>
+</ListViewProfile>

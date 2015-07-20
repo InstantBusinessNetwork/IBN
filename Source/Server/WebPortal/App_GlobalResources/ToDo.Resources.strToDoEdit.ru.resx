@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Название</value>
+	</data>
+	<data name="StartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="EndDate">
+		<value>Дата завершения</value>
+	</data>
+	<data name="Category">
+		<value>Общие категории</value>
+	</data>
+	<data name="Project">
+		<value>Проект</value>
+	</data>
+	<data name="Manager">
+		<value>Менеджер</value>
+	</data>
+	<data name="Priority">
+		<value>Приоритет</value>
+	</data>
+	<data name="Completion">
+		<value>Тип завершения</value>
+	</data>
+	<data name="Description">
+		<value>Описание</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Сохранить</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Отменить</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>не установлен</value>
+	</data>
+	<data name="tbsave_edit">
+		<value>Редактирование поручения</value>
+	</data>
+	<data name="tbsave_add">
+		<value>Новое поручение</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Должно быть подтверждено менеджером</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Вернуться к списку поручений</value>
+	</data>
+	<data name="Incident">
+		<value>Инцидент</value>
+	</data>
+	<data name="Task">
+		<value>Задача</value>
+	</data>
+	<data name="CompleteAferToDo">
+		<value>Завершить инцидент после завершения поручения</value>
+	</data>
+	<data name="CompleteTaskAferToDo">
+		<value>Завершить задачу после завершения поручения</value>
+	</data>
+	<data name="NotChange">
+		<value>Не меняется</value>
+	</data>
+	<data name="CompletedAutomatically">
+		<value>Завершено без подтверждения менеджера</value>
+	</data>
+	<data name="FileLoad">
+		<value>Загрузить файл</value>
+	</data>
+	<data name="StartDateError">
+		<value>Поручение должно начинаться позже даты начала проекта</value>
+	</data>
+	<data name="Document">
+		<value>Документ</value>
+	</data>
+	<data name="SaveAssign">
+		<value>Сохранить и назначить</value>
+	</data>
+	<data name="HtmlAttach">
+		<value>Присоединить HTML-файл</value>
+	</data>
+	<data name="FileName">
+		<value>Название файла</value>
+	</data>
+	<data name="FileBody">
+		<value>Содержимое файла</value>
+	</data>
+	<data name="Load">
+		<value>Тип</value>
+	</data>
+	<data name="File">
+		<value>Файл</value>
+	</data>
+	<data name="HTMLText">
+		<value>HTML текст</value>
+	</data>
+	<data name="HTMLTitle">
+		<value>HTML заголовок</value>
+	</data>
+	<data name="Link">
+		<value>Ссылка</value>
+	</data>
+	<data name="LinkTitle">
+		<value>Название файла (*.url)</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Редактировать справочник</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Неправильная дата</value>
+	</data>
+	<data name="tOneMoreItem">
+		<value>Остаться на странице "Новое поручение"</value>
+	</data>
+	<data name="AssignWarning">
+		<value>Ваш браузер заблокировал всплывающее окно, которое необходимо для корректной работы портала.&lt;br&gt;Воспользуйтесь данной ссылкой чтобы открыть это окно вручную:</value>
+	</data>
+	<data name="AssignWizard1">
+		<value>Исполнители</value>
+	</data>
+	<data name="EndDateError">
+		<value>Дата завершения должна быть позже даты начала</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Основная информация</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Состояние и категории</value>
+	</data>
+	<data name="tAttachedFiles">
+		<value>Вложения</value>
+	</data>
+	<data name="CompleteDocumentAferToDo">
+		<value>Завершить документ после завершения поручения</value>
+	</data>
+	<data name="activation">
+		<value>Тип активации</value>
+	</data>
+</root>

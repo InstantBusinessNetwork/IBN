@@ -1,0 +1,138 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{118D93A5-E6E0-4528-9B48-46E3DA70F860}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.Calendar</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.Calendar</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calendar.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Calendar.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar.cs" />
+    <Compile Include="CalendarEvent.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEvent.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEvent.cs" />
+    <Compile Include="CalendarEventArgs.cs" />
+    <Compile Include="CalendarEventInfo.cs" />
+    <Compile Include="CalendarEventLink.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEventLink.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEventRecurrence.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarEventRecurrence.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarEventRecurrence.cs" />
+    <Compile Include="CalendarEventType.cs" />
+    <Compile Include="CalendarFolder.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarFolder.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarFolder.cs" />
+    <Compile Include="CalendarFolderLink.auto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendarFolderLink.auto.mcgen</DependentUpon>
+    </Compile>
+    <Compile Include="CalendarFolderLink.cs" />
+    <Compile Include="CalendarFolderManager.cs" />
+    <Compile Include="CalendarInfo.cs" />
+    <Compile Include="EventInfoCollections.cs" />
+    <Compile Include="EventProviderHelper.cs" />
+    <Compile Include="EventProviderMediator.cs" />
+    <Compile Include="EventProviderLink.cs" />
+    <Compile Include="EventProviderPrimary.cs" />
+    <Compile Include="EventProviderReccurence.cs" />
+    <Compile Include="CalendarEventHandler.cs" />
+    <Compile Include="IEventProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecurrenceEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Calendar.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>Calendar.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarEvent.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEvent.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarEventLink.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEventLink.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarEventRecurrence.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarEventRecurrence.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarFolder.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarFolder.auto.cs</LastGenOutput>
+    </None>
+    <None Include="CalendarFolderLink.auto.mcgen">
+      <Generator>McCodeGenerator</Generator>
+      <LastGenOutput>CalendarFolderLink.auto.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

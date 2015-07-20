@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" language="C#" template="Templates\ibn50mcp.aspx">
+  <BusinessObject>
+    <ConnectionString>Data source=S3;Initial catalog=TaskPrototype;User ID=dev;Password=</ConnectionString>
+    <MetaClass>Principal</MetaClass>
+    <Params>
+      <add key="Namespace" value="Mediachase.IbnNext"/>
+    </Params>
+  </BusinessObject>
+</mcgen>

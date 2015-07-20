@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Document:NewDocument}" imageUrl="~/Layouts/Images/newitem.gif" commandName="MC_Doc_NewItem" itemSplitter="Right"></Button>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_Doc_DeleteSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<clear/>
+		<add>
+			<CustomColumns id="CM_Doc_Columns">
+				<Column id="FF48140A-F139-42d1-9CAA-01E7D1A2B423" type="ColumnsActions" templateUrl="~/Apps/MetaUIEntity/Primitives/ColumnsActions.GridEntity.ascx">
+					<Item imageUrl="~/Layouts/Images/edit.gif" commandName="MC_Doc_EditItem" paddingRight="5" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_Doc_NewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/DocumentManagement/Pages/DocumentEdit.aspx</Url>
+			</Command>
+			<Command id="MC_Doc_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/DocumentManagement/Pages/DocumentEdit.aspx?ObjectId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			
+			<Command id="MC_Doc_DeleteSelected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Document:DocumentsDeleteWarning}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteSelectedEntityHandler, Mediachase.UI.Web</Handler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Document:DocumentProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Document&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNew">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Document:DocumentProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Document&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEdited">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.ProfileEditedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MUI_ProfileEditAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileEdit}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Document&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;uid=[ClientParam:uid]&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_MUI_ProfileNewAdmin">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:EntityProfileNew}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/ProfileEdit.aspx?className=Document&amp;placeName=EntityList&amp;showGrouping=0&amp;showFilters=1&amp;commandName=MC_MUI_NeedToDataBind&amp;isSystem=1</Url>
+				<Width>590</Width>
+				<Height>390</Height>
+				<Top>15</Top>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MUI_NeedToDataBind">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

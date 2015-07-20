@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="Block_1">
+			<Placeholder id="Block_1.Placeholder_1">
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormName" value="[MC_ShortViewForm]" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_1.Placeholder_2" />
+			<Placeholder id="Block_1.Placeholder_3" />
+			<Placeholder id="Block_1.Placeholder_4" />
+		</Block>
+		<Block id="Block_2" name="{IbnFramework.Global:_mc_Details}">
+			<Placeholder id="Block_2.Placeholder_1">
+				<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormName" value="[MC_GeneralViewForm]" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_2.Placeholder_2" />
+			<Placeholder id="Block_2.Placeholder_3" />
+			<Placeholder id="Block_2.Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

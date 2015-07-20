@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Text text="{IbnFramework.Directory:OrganizationalUnitInfo}"	cssClass="ibn-WPTitle"></Text>
+			<Menu id="ActionsMenu" text="{IbnFramework.Global:_mc_Actions}" align="Right">
+				<Button id="EditButton" text="{IbnFramework.Common:Edit}"  imageUrl="~/Images/IbnFramework/edit.gif" tooltip="{IbnFramework.Common:Edit}" align="Right" commandName="DOrgUnit_Edit" ></Button>
+				<Button id="DeleteButton" text="{IbnFramework.Common:Delete}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="DOrgUnit_Delete"></Button>
+				<Button id="ListButton" text="{IbnFramework.Directory:OrganizationalUnits}"  imageUrl="~/Images/IbnFramework/cancel.gif" tooltip="{IbnFramework.Client:Contacts}" align="Right" commandName="DOrgUnit_List" ></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="DOrgUnit_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=DirectoryOrganizationalUnit&amp;ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+			</Command>
+			<Command id="DOrgUnit_List">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=DirectoryOrganizationalUnit</Url>
+			</Command>
+			<Command id="DOrgUnit_Delete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteEntityHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

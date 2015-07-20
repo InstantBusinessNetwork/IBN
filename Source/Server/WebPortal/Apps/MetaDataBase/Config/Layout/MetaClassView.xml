@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<Block id="Block_1">
+		<Placeholder id="Block_1.Placeholder_1">
+			<add>
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassInfo.ascx" />
+			</add>
+		</Placeholder>
+	</Block>
+	<add>
+		<Block id="Block_2" name="{IbnFramework.TimeTracking:_mc_Tab_Fields}">
+			<Placeholder id="Block_2.Placeholder_1">
+				<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassFields.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_2.Placeholder_2" />
+			<Placeholder id="Block_2.Placeholder_3" />
+			<Placeholder id="Block_2.Placeholder_4" />
+		</Block>
+		<Block id="Rel1N" name="{IbnFramework.GlobalMetaInfo:Relations1N}">
+			<Placeholder id="Rel1N_1">
+				<Control id="MetaClassRelations1N" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassRelations1N.ascx" />
+			</Placeholder>
+			<Placeholder id="Rel1N_2" />
+			<Placeholder id="Rel1N_3" />
+			<Placeholder id="Rel1N_4" />
+		</Block>
+		<Block id="RelN1" name="{IbnFramework.GlobalMetaInfo:RelationsN1}">
+			<Placeholder id="RelN1_1">
+				<Control id="MetaClassRelationsN1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassRelationsN1.ascx" />
+			</Placeholder>
+			<Placeholder id="RelN1_2" />
+			<Placeholder id="RelN1_3" />
+			<Placeholder id="RelN1_4" />
+		</Block>
+		<Block id="RelNN" name="{IbnFramework.GlobalMetaInfo:RelationsNN}">
+			<Placeholder id="RelNN_1">
+				<Control id="MetaClassRelationsNN" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/MetaClassRelationsNN.ascx" />
+			</Placeholder>
+			<Placeholder id="RelNN_2" />
+			<Placeholder id="RelNN_3" />
+			<Placeholder id="RelNN_4" />
+		</Block>
+		<Block id="Block_3" name="{IbnFramework.TimeTracking:_mc_Tab_States}">
+			<Placeholder id="Block_3.Placeholder_1">
+				<Control id="Block_3.Placeholder_1.Control_1" path="~/Apps/StateMachine/Modules/MetaClassViewControls/States.ascx" />
+				<Control id="Block_3.Placeholder_1.Control_2" path="~/Apps/StateMachine/Modules/MetaClassViewControls/StateMachines.ascx" />
+				<Control id="Block_3.Placeholder_1.Control_3" path="~/Apps/StateMachine/Modules/MetaClassViewControls/Transitions.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_3.Placeholder_2" />
+			<Placeholder id="Block_3.Placeholder_3" />
+			<Placeholder id="Block_3.Placeholder_4" />
+		</Block>
+
+		<Block id="Block_7" name="{IbnFramework.TimeTracking:_mc_Tab_Rights}">
+			<Placeholder id="Block_7.Placeholder_1">
+				<Control id="Block_7.Placeholder_1.Control_1" path="~/Apps/Security/Modules/MetaClassViewControls/Rights.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_7.Placeholder_2" />
+			<Placeholder id="Block_7.Placeholder_3" />
+			<Placeholder id="Block_7.Placeholder_4" />
+		</Block>
+		<Block id="Block_4" name="{IbnFramework.TimeTracking:_mc_Tab_GlobalSec}">
+			<Placeholder id="Block_4.Placeholder_1">
+				<Control id="Block_4.Placeholder_1.Control_0" path="~/Apps/Security/Modules/MetaClassViewControls/GlobalRolesACL.ascx" />
+				<Control id="Block_4.Placeholder_1.Control_1" path="~/Apps/Security/Modules/MetaClassViewControls/GlobalRolesACL_State.ascx" />
+				<Control id="Block_4.Placeholder_1.Control_2" path="~/Apps/Security/Modules/MetaClassViewControls/GlobalRolesACL_StateTransitions.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_4.Placeholder_2" />
+			<Placeholder id="Block_4.Placeholder_3" />
+			<Placeholder id="Block_4.Placeholder_4" />
+		</Block>
+		<Block id="Block_5" name="{IbnFramework.TimeTracking:_mc_Tab_ObjRoles}">
+			<Placeholder id="Block_5.Placeholder_1">
+				<Control id="Block_5.Placeholder_1.Control_0" path="~/Apps/Security/Modules/MetaClassViewControls/ObjectRoles.ascx" />
+				<Control id="Block_5.Placeholder_1.Control_1" path="~/Apps/Security/Modules/MetaClassViewControls/ObjectRoles_State.ascx" />
+				<Control id="Block_5.Placeholder_1.Control_2" path="~/Apps/Security/Modules/MetaClassViewControls/ObjectRoles_StateTransitions.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_5.Placeholder_2" />
+			<Placeholder id="Block_5.Placeholder_3" />
+			<Placeholder id="Block_5.Placeholder_4" />
+		</Block>
+
+		<Block id="Block_10" name="{IbnFramework.GlobalMetaInfo:SystemViews}">
+			<Placeholder id="Block_10.Placeholder_1">
+				<Control id="Block_10.Placeholder_1.Control_1" path="~/Apps/MetaUIEntity/Modules/ListProfiles.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_10.Placeholder_2" />
+			<Placeholder id="Block_10.Placeholder_3" />
+			<Placeholder id="Block_10.Placeholder_4" />
+		</Block>
+		<Block id="Block_9" name="{IbnFramework.Global:_mc_Forms}">
+			<Placeholder id="Block_9.Placeholder_1">
+				<Control id="Block_9.Placeholder_1.Control_1" path="~/Apps/MetaUI/Modules/MetaClassViewControls/Forms.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_9.Placeholder_2" />
+			<Placeholder id="Block_9.Placeholder_3" />
+			<Placeholder id="Block_9.Placeholder_4" />
+		</Block>
+		
+		<!--<Block id="triggers" name="Triggers">
+			<Placeholder id="triggers.Placeholder_1">
+				<Control id="triggers.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/Triggers.ascx" />
+			</Placeholder>
+			<Placeholder id="triggers.Placeholder_2" />
+			<Placeholder id="triggers.Placeholder_3" />
+			<Placeholder id="triggers.Placeholder_4" />
+		</Block>-->
+		<Block id="Block_6" name="{IbnFramework.TimeTracking:_mc_Tab_Services}">
+			<Placeholder id="Block_6.Placeholder_1">
+				<Control id="Block_6.Placeholder_1.Control_1" path="~/Apps/MetadataBase/Modules/MetaClassViewControls/Services.ascx" />
+			</Placeholder>
+			<Placeholder id="Block_6.Placeholder_2" />
+			<Placeholder id="Block_6.Placeholder_3" />
+			<Placeholder id="Block_6.Placeholder_4" />
+		</Block>
+	</add>
+</Layout>

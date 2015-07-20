@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Mediachase_CommentAdded.ascx.cs" Inherits="Mediachase.Ibn.Web.UI.Config.EventControls.Mediachase_CommentAdded" %>
+<asp:Label ID="lblCommentValue" runat="server"></asp:Label>

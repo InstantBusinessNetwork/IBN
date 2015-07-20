@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="s1TopText">
+		<value>		Projects enable you to coordinate tasks, issues, files and notes with 
+		multiple people anywhere around the world. This wizard will help you quickly 
+		set up a project and automatically send invitations to other people who will be 
+		on your project team.</value>
+	</data>
+	<data name="s1ProjectTitle">
+		<value>What do you want to Call Your Project ?</value>
+	</data>
+	<data name="s1ProjectType">
+		<value>What type of Project is this?</value>
+	</data>
+	<data name="s1Client">
+		<value>Who is Your Customer or Client?</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Quick Tip: If you are a Microsoft Project user, you can use our project import and export tools to rapidly synchronize project plans with the portal. 
+
+Check out the User Guides for more information on this advanced feature. </value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Naming and Typing Your Project</value>
+	</data>
+	<data name="s2StartDate">
+		<value>What is the Start Date?</value>
+	</data>
+	<data name="s2EndDate">
+		<value>What is the Target End Date?</value>
+	</data>
+	<data name="s2Executive">
+		<value>Do you have an Executive Manager?</value>
+	</data>
+	<data name="s2ExecutiveComment">
+		<value>If you do not have one, you can choose ‘none’.</value>
+	</data>
+	<data name="s2Budget">
+		<value>Do You have a Known Budget?</value>
+	</data>
+	<data name="s2QuickTip">
+		<value>It is important to enter a start date and targeted end date for your project. Once your project is created portal will use these dates to help you when you are managing tasks and other date sensitive information. Remember, you can always change these later on.</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Establishing Dates and Basic Budget</value>
+	</data>
+	<data name="s3Category">
+		<value>Which Category(s) Match this Project?</value>
+	</data>
+	<data name="s3QuickTip">
+		<value>For reporting and filtering
+purposes you can choose
+from the categories you can
+select from the categories
+listed to the left. You project
+can be connected to multiple
+categories if you wish.
+Remember this can be
+changed later on.</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Categorize Your Project for Reporting and Filtering</value>
+	</data>
+	<data name="s4TopText">
+		<value>You can now select from the available users in the portal to add people to your
+project team. If you need to add a person who is not in the portal directory you can do
+that once the project has been created.</value>
+	</data>
+	<data name="s4Directory">
+		<value>Groups of Portal Users</value>
+	</data>
+	<data name="s4AvailableTeam">
+		<value>Available Team Members</value>
+	</data>
+	<data name="s4SelectedTeam">
+		<value>Selected Team Members</value>
+	</data>
+	<data name="s4QuickTip">
+		<value>You can use the group and search functions to
+the left to show available resources that you can
+then add to the project team.</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Establishing Your Initial Project Team</value>
+	</data>
+	<data name="s4SelectGroup">
+		<value>Select Group</value>
+	</data>
+	<data name="s4EnterName">
+		<value>Enter Name to Search...</value>
+	</data>
+	<data name="s4Selected">
+		<value>Selected</value>
+	</data>
+	<data name="s4Available">
+		<value>Available</value>
+	</data>
+	<data name="s4Name">
+		<value>Name</value>
+	</data>
+	<data name="s4Code">
+		<value>Code</value>
+	</data>
+	<data name="s4Rate">
+		<value>Rate</value>
+	</data>
+	<data name="s4FindNow">
+		<value>Find Now</value>
+	</data>
+	<data name="s4Delete">
+		<value>Delete</value>
+	</data>
+	<data name="s4Search">
+		<value>Search</value>
+	</data>
+	<data name="s4Group">
+		<value>Group</value>
+	</data>
+	<data name="s4User">
+		<value>User</value>
+	</data>
+	<data name="s4Add">
+		<value>Add</value>
+	</data>
+	<data name="s6TopText">
+		<value>Review the information below and click create and your project will be created for you
+and your project team.</value>
+	</data>
+	<data name="s6Project">
+		<value>Project</value>
+	</data>
+	<data name="s6StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="s6EndDate">
+		<value>End Date</value>
+	</data>
+	<data name="s6ProjectType">
+		<value>Project Type</value>
+	</data>
+	<data name="s6Customer">
+		<value>Customer</value>
+	</data>
+	<data name="s6Executive">
+		<value>Executive</value>
+	</data>
+	<data name="s6Budget">
+		<value>Budget</value>
+	</data>
+	<data name="s6Team">
+		<value>Team</value>
+	</data>
+	<data name="s6Notify">
+		<value>Automatically Notify Everyone?</value>
+	</data>
+	<data name="s6SubTitle">
+		<value>Finalizing Your Project and Sending Notifications</value>
+	</data>
+	<data name="s4NotSet">
+		<value>None</value>
+	</data>
+	<data name="s7SubTitle">
+		<value>Your Project Has Been Created!</value>
+	</data>
+	<data name="s7TopText">
+		<value>You will now be placed into the main project management screen to perform a number
+of additional functions with your project.</value>
+	</data>
+	<data name="s7TextHeader">
+		<value>What Else Can You Do with Your Project?</value>
+	</data>
+	<data name="s7Text">
+		<value>&lt;li&gt;Use the Issues Tracking to record issues related to your project;&lt;br&gt;
+&lt;li&gt;Add Files/Documents to your project you wish to share with the team;&lt;br&gt;
+&lt;li&gt;Create targeted tasks for specific resources to track individual efforts;&lt;br&gt;
+&lt;li&gt;Schedule events and meetings for different aspects of your project;&lt;br&gt;
+&lt;li&gt;Add financial items to further refine your budget and to stay on track;&lt;br&gt;
+&lt;li&gt;Import and Export Microsoft Project Plans;&lt;br&gt;
+&lt;li&gt;Run reports to assess your projects status.</value>
+	</data>
+	<data name="GlobalTitle">
+		<value>You Are Creating a New Project To Manage and Track</value>
+	</data>
+	<data name="s5Description">
+		<value>What is the Description of Your Project?</value>
+	</data>
+	<data name="s5Scope">
+		<value>What is the Scope of Your Project?</value>
+	</data>
+	<data name="s5Goals">
+		<value>What are the Goals  of Your Project?</value>
+	</data>
+	<data name="s5Deliverables">
+		<value>What are the Deliverables of Your Project?</value>
+	</data>
+	<data name="s5SubTitle">
+		<value>Describe Your Project</value>
+	</data>
+	<data name="s6Description">
+		<value>Description</value>
+	</data>
+	<data name="s6Scope">
+		<value>Scope</value>
+	</data>
+	<data name="s6Goals">
+		<value>Goals</value>
+	</data>
+	<data name="s6Deliverables">
+		<value>Deliverables</value>
+	</data>
+	<data name="ProjectCurrency">
+		<value>Project Currency</value>
+	</data>
+	<data name="s1Priority">
+		<value>What priority of Project is this?</value>
+	</data>
+	<data name="s1Phase">
+		<value>What phase of Project is this?</value>
+	</data>
+	<data name="s3Portfolio">
+		<value>Which Portfolio(s) Match this Project?</value>
+	</data>
+</root>

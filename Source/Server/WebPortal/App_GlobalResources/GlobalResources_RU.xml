@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GlobalResources>
+	<String name="Edition">RU</String>
+	<String name="DocumentationLink">http://friends.pmbox.ru/files/folders/ibn/tags/IBN+4.7+_14043E043A0443043C0435043D0442043004460438044F04_/default.aspx</String>
+	<Boolean name="ShowQuickHelpLink">True</Boolean>
+	<Boolean name="ShowDocumentationLink">True</Boolean>
+	<Boolean name="ShowForumLink">True</Boolean>
+	<Boolean name="ShowSupportLink">True</Boolean>
+	<String name="QuickHelpLink">http://help.pmbox.ru/</String>
+	<String name="QuickHelpTextKey">{IbnFramework.Global:QuickHelpText}</String>
+	<Boolean name="ShowTutorialLink">True</Boolean>
+	<String name="TutorialLink">http://learning.pmbox.ru/</String>
+	<String name="ForumsLink">http://friends.pmbox.ru/forums/default.aspx</String>
+
+	<Boolean name="LoggedInCopyrightVisible">True</Boolean>
+	<String name="CompanyWebUrl">http://www.pmbox.ru</String>
+	<String name="CopyrightText">© 2006&amp;mdash;2011 ООО «Медиачеис».</String>
+	<Boolean name="PrivacyLinkVisible">False</Boolean>
+	<String name="PrivacyLink"></String>
+	<String name="PrivacyStatementTextKey"></String>
+	<Boolean name="TermsOfUseVisible">True</Boolean>
+	<String name="TermsOfUseLink">~/Public/TermsOfUseRUS.aspx</String>
+	<String name="TermsOfUseTextKey">{IbnFramework.Global:TermsOfUse}</String>
+	<String name="VersionPostfix"> RU</String>
+
+	<String name="SupportEmail">support@mediachase.ru</String>
+	<String name="SalesEmail">sales@mediachase.ru</String>
+
+	<String name="LicenseExpiredText">Срок действия вашей лицензии закончен!</String>
+	<String name="SendToMCPurchase">Пожалуйста, обратитесь к поставщику решения компании «Медиачеис» для покупки коммерческой версии продукта.</String>
+	<String name="BuyProductText">По вопросам покупки Instant Business Network – &lt;a href=&quot;mailto:sales@mediachase.ru&quot;&gt;sales@mediachase.ru&lt;/a&gt;</String>
+	<String name="TechText">По вопросам технической поддержки Instant Business Network - &lt;a href=&quot;http://friends.pmbox.ru/forums/default.aspx&quot; target="_blank"&gt;http://friends.pmbox.ru/forums/default.aspx&lt;/a&gt;</String>
+	<String name="PhonesText">Наши телефоны: +7 (495) 648 61 62 или +7 (4012) 36 85 98</String>
+
+	<String name="IMGroupLogoUrl">~/layouts/images/default_group_image.jpg</String>
+	<String name="BottomsTextResourceKey">{IbnFramework.Global:bottomtextsingle}</String>
+	<String name="AttachFromProductUrl">../layouts/images/attachfromibn.gif</String>
+	<Boolean name="TableContactUsVisible">True</Boolean>
+	<Boolean name="TableFeedbackVisible">True</Boolean>
+	<String name="SingleCompanyContactUsResourceKey">Single</String>
+
+	<String name="HelpBottomTextKey">{IbnFramework.Global:HelpTextBottom}</String>
+	<String name="HelpBottomPhoneTextKey">{IbnFramework.Global:HelpTextBottomPhone}</String>
+	<String name="SupportPhone">+7 (495) 648 61 62</String>
+
+	<Boolean name="BuyLinkVisible">True</Boolean>
+	<String name="BuyNowLink">http://www.pmbox.ru/prices/main.aspx</String>
+</GlobalResources>

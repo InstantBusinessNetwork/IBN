@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Text text="{IbnFramework.Calendar:CalendarEventInfo}" cssClass="ibn-WPTitle"></Text>
+			<Menu id="ActionsMenu" text="{IbnFramework.Global:_mc_Actions}" align="Right">
+				<Button id="EditButton" text="{IbnFramework.Common:Edit}"  imageUrl="~/Images/IbnFramework/edit.gif" align="Right" commandName="CEvent_Edit" ></Button>
+				<Button id="EditButton2" text="{IbnFramework.Calendar:EditSeries}"  imageUrl="~/Images/IbnFramework/edit.gif" align="Right" commandName="CEvent_EditSeries" ></Button>
+				<Button id="DeleteButton" text="{IbnFramework.Common:Delete}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="CEvent_Delete"></Button>
+				<Button id="DeleteButton2" text="{IbnFramework.Calendar:DeleteSeries}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="CEvent_DeleteSeries"></Button>
+				<Button id="FavoritesButton" text="{IbnFramework.Common:AddToFavorites}" imageUrl="~/layouts/images/Favorites.gif" commandName="CEvent_AddToFavorites"></Button>
+				<Button id="ListButton" text="{IbnFramework.Calendar:CalendarEvents}"  imageUrl="~/Images/IbnFramework/cancel.gif" tooltip="{IbnFramework.Client:Contacts}" align="Right" commandName="CEvent_List" ></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="CEvent_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=CalendarEvent&amp;ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+			</Command>
+			<Command id="CEvent_EditSeries">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/EventEdit.aspx?ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Calendar.CommandHandlers.SeriesEditEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="CEvent_List">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/Calendar/Pages/Calendar.aspx</Url>
+			</Command>
+			<Command id="CEvent_Delete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteEntityHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			</Command>
+			<Command id="CEvent_DeleteSeries">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Calendar.CommandHandlers.DeleteEventSeries, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Calendar.CommandHandlers.SeriesEditEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="CEvent_NewReccurence">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:CreateReccurence}</PopupTitle>
+				<Url>~/Apps/Calendar/Pages/ReccurenceEdit.aspx?EventId={QueryString:ObjectId}</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>50</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+				<DependCommand>CEvent_ReccurenceAdded</DependCommand>
+			</Command>
+			<Command id="CEvent_ReccurenceAdded">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToDataBindHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="CEvent_AddToFavorites">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.AddToFavoritesEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.AddToFavoritesHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

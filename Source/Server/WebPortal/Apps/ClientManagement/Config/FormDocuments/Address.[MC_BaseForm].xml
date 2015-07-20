@@ -1,0 +1,99 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="23436b939b624c0c98be6f59ca616b52" borderType="0" showLabel="false" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Client:Address}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="64a8a594b42141c4889000c6e8d3bc7f" cellPadding="5" columns="50%;*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="8f9657d4d39a4ad8b9d1fb08a13f8a72">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="AddressType" readOnly="False" uid="b4133d72e59c4d0ca9d403db61bc9a3a" />
+					</Item>
+					<Item rowIndex="1" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="2970d80795484c22a2c79663aa4211cc">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="PostalCode" readOnly="False" uid="f5390e57e6bb409fa0cf4fbf5f2f26ec" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="0a8b3bd3530144b59cf72c1e0c04b449">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Country" readOnly="False" uid="f28e0df1c66746d5b1cfc6a2107f33d8" />
+					</Item>
+					<Item rowIndex="2" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="2597f8ec3aa944d88d4663fcb0af402d">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="PostOfficeBox" readOnly="False" uid="fcdda9a2593d45e5b76026d7fd5227a8" />
+					</Item>
+					<Item rowIndex="3" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="d885137c59bc4ba48b6c97fa9d87e96d">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Region" readOnly="False" uid="1450fc83526b48c5ba9ed681030446a0" />
+					</Item>
+					<Item rowIndex="3" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="8f25d9b33d5e46cfacc2e06db79a57fe">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Telephone1" readOnly="False" uid="064c92b3ec454123b123cbcf99e89ca8" />
+					</Item>
+					<Item rowIndex="4" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="440a97404091457dbcabd016e3b6ae7f">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="City" readOnly="False" uid="fae8c782c11e46bea1aff30be552efb2" />
+					</Item>
+					<Item rowIndex="4" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="76a2ae7678d149d78ff4a5135851e8aa">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Telephone2" readOnly="False" uid="0dffe9eb03894060824dfe6f5f92c0e9" />
+					</Item>
+					<Item rowIndex="5" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="31f85eeb1e234011ac3ddf93e310b731">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Line1" readOnly="False" uid="e862fe3ed17e43e786b7569e592c8dff" />
+					</Item>
+					<Item rowIndex="5" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="259421b7e79e4f72baf54f3d35b7421a">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Telephone3" readOnly="False" uid="7487d4f41a114a6b9d24d73b234bc3f6" />
+					</Item>
+					<Item rowIndex="6" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="80af6a089aef44f992591afaf3401826">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Line2" readOnly="False" uid="97f34d4bb051414b939053aa54ea4436" />
+					</Item>
+					<Item rowIndex="6" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="90eebf9e626d4901a0aa12601c3c1ecc">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Fax" readOnly="False" uid="909bf293199e446ebd575e9264d49e78" />
+					</Item>
+					<Item rowIndex="7" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="af45c3bc925541379074c225e3effd44">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Line3" readOnly="False" uid="d27c8be32ee64ca084cee49b4d70c1b1" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

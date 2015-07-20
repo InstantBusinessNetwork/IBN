@@ -1,0 +1,84 @@
+.text
+{
+	font-size:8pt;
+	font-family: Verdana, Arial, Helvetica;
+	color:#505050;
+}
+
+table
+{
+	font-size:8pt;
+	font-family: Verdana, Arial, Helvetica;
+}
+
+select, textarea
+{
+	font-size:9pt;
+	font-family: Verdana, Arial, Helvetica;
+}
+.topHeader
+{
+	font-size: 11pt;
+	font-weight:bold;
+	font-family : Verdana, Arial, Helvetica;
+	color: #686868;
+}
+.topSubHeader
+{
+	font-size: 10pt;
+	font-weight:bold;
+	font-family : Verdana, Arial, Helvetica;
+	color : #FF9A00;
+}
+.step
+{
+	font-size: 10pt;
+	font-weight:bold;
+	font-family : Verdana, Arial, Helvetica;
+	color : #808080;
+}
+.subHeader
+{
+	font-size: 8pt;
+	font-weight:normal;
+	font-family : Verdana, Arial, Helvetica;
+	color : #000000;
+}
+
+.borderBottom
+{
+	border-bottom: #aca199 2px solid;
+}
+.headerPadding
+{
+	padding: 10px 20px;
+}
+.subHeaderPadding
+{
+	padding: 0px 10px 7px 20px;
+}
+.wizardStep
+{
+	padding: 7px;
+	border-top: #ffffff 1px solid;
+	border-bottom: #aca199 2px solid;
+	background-color: #ece9d8;
+}
+.wizardCompleteStepFooter
+{
+	padding: 5px 17px 5px 10px;
+	border-top: #ffffff 1px solid;
+	background-color: #ece9d8;
+}
+.wizardFooter
+{
+	padding-right: 7px; 
+	border-top: #ffffff 1px solid;
+	background-color: #ece9d8;
+}
+.stepFinish
+{
+	font-size: 10pt;
+	font-family : Verdana, Arial, Helvetica;
+	color : #505050;
+}

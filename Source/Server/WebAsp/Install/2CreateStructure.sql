@@ -1,0 +1,1 @@
+-- Will be generated automatically from database s2.ibn48asp

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<SpreadSheet>
+	<Template>
+		<Name>Отчет о прибылях и убытках</Name>
+		<Description>Две группы в наличии: доходы (чистые продажи, доходы от сдачи в аренду, проценты к получению) и расходы (себестоимость реализованной продукции,  реализационные расходы, административные расходы, проценты к уплате). Чистый доход формируется из доходов за вычетом расходов.</Description>
+		<Rows>
+			<Block Id="NetSales" Name="Чистые продажи" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Block Id="RentRevenue" Name="Доходы от сдачи в аренду" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Block Id="InterestRevenue" Name="Проценты к получению" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Row Id="TotalRevenue" Name="Общая выручка" ReadOnly="True" Expression="[NetSales]+[RentRevenue]+[InterestRevenue]"/>
+			
+			<Row Id="Space1" Name="" ReadOnly="True" />
+			
+			<Block Id="CostOfGoodsSold" Name="Себестоимость реализованной продукции" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Block Id="SellingExpenses" Name="Расходы на продажу" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Block Id="AdministrativeExpenses" Name="Административные расходы" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Block Id="InterestExpense" Name="Проценты к уплате" CanAddRow="True" NewRowDefaultName="New item" ReadOnly="True">
+			</Block>
+			<Row Id="TotalExpense" Name="Общие расходы" ReadOnly="True" Expression="[CostOfGoodsSold]+[SellingExpenses]+[AdministrativeExpenses]+[InterestExpense]"/>
+			
+			<Row Id="Space2" Name="" ReadOnly="True" />
+
+			<Row Id="IncomeBeforeTaxes" Name="Прибыль до налогообложения" ReadOnly="True" Expression="[TotalRevenue]-[TotalExpense]"/>
+			<Row Id="IncomeTaxes" Name="Налог к уплате" ReadOnly="False"/>
+			
+			<Row Id="Space3" Name="" ReadOnly="True" />
+			
+			<Row Id="NetIncome" Name="Чистый доход" ReadOnly="True" Expression="[IncomeBeforeTaxes]-[IncomeTaxes]"/>
+			
+		</Rows>
+	</Template>
+</SpreadSheet>

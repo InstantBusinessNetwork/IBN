@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<add>
+			<Tab order="600" id="MLibrary" text="{IbnShell.Navigation:tLibrary}" contentType="default" imageUrl="~/layouts/images/folder.gif" configUrl="">
+				<Link order="100" id="MLibrary1" text="{IbnShell.Navigation:tGlobal}" iconUrl="" iconCss="" command="cmd_MLibrary1" />
+				<Link order="200" id="MLibrary2" text="{IbnShell.Navigation:tAllFiles}" iconUrl="" iconCss="" command="cmd_MLibrary2">
+					<Link order="100" id="MLibrary21" text="{IbnShell.Navigation:tProjects}" iconUrl="" iconCss="" command="cmd_MLibrary21" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.LibraryProjectHandler, Mediachase.UI.Web" />
+					<Link order="200" id="MLibrary22" text="{IbnShell.Navigation:tTabDocuments}" iconUrl="" iconCss="" command="cmd_MLibrary22" />
+					<Link order="300" id="MLibrary23" text="{IbnShell.Navigation:tSimpleEvents}" iconUrl="" iconCss="" command="cmd_MLibrary23" />
+					<Link order="400" id="MLibrary24" text="{IbnShell.Navigation:tSimpleToDos}" iconUrl="" iconCss="" command="cmd_MLibrary24" />
+				</Link>
+				<!--<Link id="MLibrary3" text="New Global" iconUrl="" iconCss="" command="cmd_MLibrary3" />-->
+			</Tab>
+		</add>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MLibrary3">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/FileLibrary/Pages/FileStorage.aspx</Url>
+			</Command>
+
+			<Command id="cmd_MLibrary1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx</Url>
+			</Command>
+			<Command id="cmd_MLibrary2">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx?TypeId=0</Url>
+			</Command>
+			<Command id="cmd_MLibrary21">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx?TypeId=3</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MLibrary22">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx?TypeId=16</Url>
+			</Command>
+			<Command id="cmd_MLibrary23">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx?TypeId=4</Url>
+			</Command>
+			<Command id="cmd_MLibrary24">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/FileStorage/default.aspx?TypeId=6</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

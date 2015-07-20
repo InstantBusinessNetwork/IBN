@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<EntityObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Properties>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Created</Name>
+			<Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-06-19T10:34:21.76+03:00</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">CreatorId</Name>
+			<Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">CustomPageId</Name>
+			<Value xmlns:q1="http://microsoft.com/wsdl/types/" xsi:type="q1:guid" xmlns="http://mediachase.net/">7ac87d10-a69c-4246-bb8b-91a5cfb36853</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Description</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Icon</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">JsonData</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">[{"Id":"Column1","Items":[{"Id":"AA6F05A5-8F2F-4227-AAAF-75A74F4A3432","Collapsed":"false","InstanseUid":"1c1d8abe6dbd4625bea95694cbda8714"}]}]</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Modified</Name>
+			<Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-06-19T10:34:21.76+03:00</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">ModifierId</Name>
+			<Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Profile</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">ProfileId</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">TemplateId</Name>
+			<Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid" xmlns="http://mediachase.net/">c07dde46-e216-4a4e-a06e-04eb28f8041f</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Title</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">{IbnShell.Navigation:OutActivities}</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">Uid</Name>
+			<Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid" xmlns="http://mediachase.net/">f909236f-7bb8-4c32-9de1-0a97e9ebcea7</Value>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">User</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">UserId</Name>
+		</EntityObjectProperty>
+		<EntityObjectProperty>
+			<Name xmlns="http://mediachase.net/">PropertyJsonData</Name>
+			<Value xsi:type="xsd:string" xmlns="http://mediachase.net/">
+				&lt;ControlProperties&gt;
+				&lt;wrapControlAA6F05A58F2F4227AAAF75A74F4A3432_1c1d8abe6dbd4625bea95694cbda8714&gt;
+				&lt;showActive&gt;
+				&amp;lt;?xml version="1.0"?&amp;gt;
+				&amp;lt;XmlSerializedItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+				&amp;lt;Type&amp;gt;System.Boolean, mscorlib&amp;lt;/Type&amp;gt;
+				&amp;lt;Data&amp;gt;&amp;amp;lt;?xml version="1.0"?&amp;amp;gt;
+				&amp;amp;lt;boolean&amp;amp;gt;true&amp;amp;lt;/boolean&amp;amp;gt;&amp;lt;/Data&amp;gt;
+				&amp;lt;/XmlSerializedItem&amp;gt;
+				&lt;/showActive&gt;
+				&lt;type&gt;
+				&amp;lt;?xml version="1.0"?&amp;gt;
+				&amp;lt;XmlSerializedItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&amp;gt;
+				&amp;lt;Type&amp;gt;System.String, mscorlib&amp;lt;/Type&amp;gt;
+				&amp;lt;Data&amp;gt;&amp;amp;lt;?xml version="1.0"?&amp;amp;gt;
+				&amp;amp;lt;string&amp;amp;gt;365&amp;amp;lt;/string&amp;amp;gt;&amp;lt;/Data&amp;gt;
+				&amp;lt;/XmlSerializedItem&amp;gt;
+				&lt;/type&gt;
+				&lt;/wrapControlAA6F05A58F2F4227AAAF75A74F4A3432_1c1d8abe6dbd4625bea95694cbda8714&gt;
+				&lt;/ControlProperties&gt;
+			</Value>
+		</EntityObjectProperty>
+	</Properties>
+</EntityObject>

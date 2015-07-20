@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivityType" xml:space="preserve">
+    <value>Тип действия</value>
+  </data>
+  <data name="ApprovalBlock" xml:space="preserve">
+    <value>Блок согласования</value>
+  </data>
+  <data name="ApprovalElement" xml:space="preserve">
+    <value>Элемент согласования</value>
+  </data>
+  <data name="Approve" xml:space="preserve">
+    <value>Согласовать</value>
+  </data>
+  <data name="AssignmentResultAccepted" xml:space="preserve">
+    <value>Принято</value>
+  </data>
+  <data name="AssignmentResultCancelled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="AssignmentResultDeclined" xml:space="preserve">
+    <value>Отклонено</value>
+  </data>
+  <data name="AssignmentStateActive" xml:space="preserve">
+    <value>Активно</value>
+  </data>
+  <data name="AssignmentStateCompleted" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="AssignmentStatePending" xml:space="preserve">
+    <value>Предстоит</value>
+  </data>
+  <data name="AssignmentStateSuspended" xml:space="preserve">
+    <value>Приостановлено</value>
+  </data>
+  <data name="BusinessProcessEditing" xml:space="preserve">
+    <value>Редактирование бизнес-процесса</value>
+  </data>
+  <data name="Deny" xml:space="preserve">
+    <value>Отказать</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Design" xml:space="preserve">
+    <value>Изменить схему</value>
+  </data>
+  <data name="DueDate" xml:space="preserve">
+    <value>Срок</value>
+  </data>
+  <data name="MyAssignments" xml:space="preserve">
+    <value>Мои назначения</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Новый бизнес-процесс</value>
+  </data>
+  <data name="NoAssignments" xml:space="preserve">
+    <value>В данном бизнес-процессе нет назначений.</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>Результат</value>
+  </data>
+  <data name="SchemaMaster" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="WFResultAccepted" xml:space="preserve">
+    <value>Принято</value>
+  </data>
+  <data name="WFResultDeclined" xml:space="preserve">
+    <value>Отклонено</value>
+  </data>
+  <data name="WFResume" xml:space="preserve">
+    <value>Возобновить</value>
+  </data>
+  <data name="WFStart" xml:space="preserve">
+    <value>Стартовать</value>
+  </data>
+  <data name="WFStateActive" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="WFStateCompleted" xml:space="preserve">
+    <value>Завершён</value>
+  </data>
+  <data name="WFStatePending" xml:space="preserve">
+    <value>Предстоит</value>
+  </data>
+  <data name="WFStateSuspended" xml:space="preserve">
+    <value>Приостановлен</value>
+  </data>
+  <data name="WFSuspend" xml:space="preserve">
+    <value>Приостановить</value>
+  </data>
+  <data name="WFTerminate" xml:space="preserve">
+    <value>Завершить</value>
+  </data>
+  <data name="Workflow" xml:space="preserve">
+    <value>Бизнес-процесс</value>
+  </data>
+  <data name="WorkflowInfo" xml:space="preserve">
+    <value>Информация о бизнес-процессе</value>
+  </data>
+  <data name="Workflows" xml:space="preserve">
+    <value>Бизнес-процессы</value>
+  </data>
+  <data name="WFResultCanceled" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="WFStateClosed" xml:space="preserve">
+    <value>Закрыт</value>
+  </data>
+  <data name="AssignmentStateClosed" xml:space="preserve">
+    <value>Закрыто</value>
+  </data>
+  <data name="BlockActivityType" xml:space="preserve">
+    <value>Способ завершения</value>
+  </data>
+  <data name="BlockActivityTypeAll" xml:space="preserve">
+    <value>Все действия должны быть завершены</value>
+  </data>
+  <data name="BlockActivityTypeAny" xml:space="preserve">
+    <value>Хотя бы одно действие должно быть завершено</value>
+  </data>
+  <data name="NoSubject" xml:space="preserve">
+    <value>[ без темы ]</value>
+  </data>
+  <data name="EditActivity" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="NewActivity" xml:space="preserve">
+    <value>Новое действие</value>
+  </data>
+  <data name="DeleteActivity" xml:space="preserve">
+    <value>Удалить это действие?</value>
+  </data>
+  <data name="WorkflowSchema" xml:space="preserve">
+    <value>Схема бизнес-процесса</value>
+  </data>
+  <data name="MoveTo" xml:space="preserve">
+    <value>Переместить...</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="InsertAfter" xml:space="preserve">
+    <value>Вставить после текущего</value>
+  </data>
+  <data name="InsertBefore" xml:space="preserve">
+    <value>Вставить до текущего</value>
+  </data>
+  <data name="InsertChild" xml:space="preserve">
+    <value>Добавить дочерний элемент</value>
+  </data>
+  <data name="SimpleApproval" xml:space="preserve">
+    <value>Простое согласование</value>
+  </data>
+  <data name="Participants" xml:space="preserve">
+    <value>Участники</value>
+  </data>
+  <data name="ActivityStatusCanceling" xml:space="preserve">
+    <value>Отменено</value>
+  </data>
+  <data name="ActivityStatusClosed" xml:space="preserve">
+    <value>Закрыто</value>
+  </data>
+  <data name="ActivityStatusCompensating" xml:space="preserve">
+    <value>Compensating</value>
+  </data>
+  <data name="ActivityStatusExecuting" xml:space="preserve">
+    <value>Активно</value>
+  </data>
+  <data name="ActivityStatusFaulting" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="ActivityStatusInitialized" xml:space="preserve">
+    <value>Предстоит</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Вниз</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Вверх</value>
+  </data>
+  <data name="TemplateList" xml:space="preserve">
+    <value>Список шаблонов</value>
+  </data>
+  <data name="NewTemplate" xml:space="preserve">
+    <value>Новый шаблон</value>
+  </data>
+  <data name="AllTemplates" xml:space="preserve">
+    <value>Все шаблоны</value>
+  </data>
+  <data name="WorkflowTemplate" xml:space="preserve">
+    <value>Шаблон бизнес-процесса</value>
+  </data>
+  <data name="WorkflowTemplates" xml:space="preserve">
+    <value>Шаблоны бизнес-процессов</value>
+  </data>
+  <data name="TemplateEditing" xml:space="preserve">
+    <value>Редактирование шаблона</value>
+  </data>
+  <data name="ObjectTypes" xml:space="preserve">
+    <value>Типы объектов</value>
+  </data>
+  <data name="CreateByTemplate" xml:space="preserve">
+    <value>Создать по шаблону</value>
+  </data>
+  <data name="SelectTemplate" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="CommentRequired" xml:space="preserve">
+    <value>Введите причину отказа</value>
+  </data>
+  <data name="Duplicate" xml:space="preserve">
+    <value>Дублировать</value>
+  </data>
+  <data name="BusinessProcessDuplication" xml:space="preserve">
+    <value>Дублирование бизнес-процесса</value>
+  </data>
+  <data name="SaveAsTemplate" xml:space="preserve">
+    <value>Сохранить как шаблон</value>
+  </data>
+  <data name="Participant" xml:space="preserve">
+    <value>Участник</value>
+  </data>
+  <data name="ActiveAssignments" xml:space="preserve">
+    <value>Активные назначения</value>
+  </data>
+  <data name="Reassign" xml:space="preserve">
+    <value>Переназначить</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Время на исполнение</value>
+  </data>
+  <data name="DurationDays" xml:space="preserve">
+    <value>дней</value>
+  </data>
+  <data name="DurationHours" xml:space="preserve">
+    <value>часов</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>Дата завершения</value>
+  </data>
+  <data name="RestrictionByDate" xml:space="preserve">
+    <value>По дате завершения</value>
+  </data>
+  <data name="RestrictionByDuration" xml:space="preserve">
+    <value>По длительности</value>
+  </data>
+  <data name="RestrictionType" xml:space="preserve">
+    <value>Ограничения</value>
+  </data>
+  <data name="ApprovalWithParallelBlocks" xml:space="preserve">
+    <value>Согласование с параллельными блоками</value>
+  </data>
+  <data name="AddBlock" xml:space="preserve">
+    <value>Добавить блок</value>
+  </data>
+  <data name="ParallelBlock" xml:space="preserve">
+    <value>[ Блок согласования ]</value>
+  </data>
+  <data name="SelectNewParticipant" xml:space="preserve">
+    <value>Выберите нового участника</value>
+  </data>
+  <data name="AssignmentEditing" xml:space="preserve">
+    <value>Редактирование назначения</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>Только чтение</value>
+  </data>
+  <data name="CurrentDate" xml:space="preserve">
+    <value>Текущая дата</value>
+  </data>
+  <data name="Files" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Создан</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Дата начала</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Завершил</value>
+  </data>
+  <data name="LockLibrary" xml:space="preserve">
+    <value>Блокировать файлы библиотеки после завершения</value>
+  </data>
+  <data name="TemplateGroup" xml:space="preserve">
+    <value>Группа шаблонов</value>
+  </data>
+  <data name="TemplateGroups" xml:space="preserve">
+    <value>Группы шаблонов</value>
+  </data>
+  <data name="TemplatesByGroups" xml:space="preserve">
+    <value>Шаблоны по группам</value>
+  </data>
+  <data name="NoTemplates" xml:space="preserve">
+    <value>Для этой группы нет шаблонов.</value>
+  </data>
+  <data name="AssignmentOverdueAutoCompleteWithAccept" xml:space="preserve">
+    <value>Автоматически завершать</value>
+  </data>
+  <data name="AssignmentOverdueAutoCompleteWithDecline" xml:space="preserve">
+    <value>Автоматически отклонять</value>
+  </data>
+  <data name="AssignmentOverdueNoAction" xml:space="preserve">
+    <value>Выставлять статус "Просрочено"</value>
+  </data>
+  <data name="OverdueAssignments" xml:space="preserve">
+    <value>Просроченные назначения</value>
+  </data>
+  <data name="StartInstanceWarning" xml:space="preserve">
+    <value>Запланированная дата окончания была просрочена, измените параметры бизнес-процесса и попробуйте запустить процесс снова.</value>
+  </data>
+</root>

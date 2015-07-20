@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{44BE5CE1-8C71-4542-9738-1F62B92A0E4E}</Id>
+	<Name>{IbnFramework.Incident:CreatorSet}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>IncidentsDefault</FieldSetName>
+	<GroupByFieldName>IssueBox</GroupByFieldName>
+	<Filters>
+		<FilterElement>
+			<Source>IncidentCreatorId</Source>
+			<ValueIsTemplate>true</ValueIsTemplate>
+			<Value xsi:type="xsd:string">{Security:CurrentUserId}</Value>
+		</FilterElement>
+		<FilterElement>
+			<Source>IncidentStatusId</Source>
+			<Value xsi:type="xsd:string">-1</Value>
+		</FilterElement>
+	</Filters>
+</ListViewProfile>

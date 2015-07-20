@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="ProjectReports">
+		<value>Отчеты по проекту</value>
+	</data>
+	<data name="Help">
+		<value>Используйте эти ссылки для просмотра отчетов, связанных с проектом.</value>
+	</data>
+	<data name="IncidentStatistics">
+		<value>Общая статистика инцидентов</value>
+	</data>
+	<data name="IssuesGraph">
+		<value>Диаграмма инцидентов</value>
+	</data>
+	<data name="TasksToDosGraph">
+		<value>Диаграмма задач/поручений</value>
+	</data>
+	<data name="ResourceTasksGraph">
+		<value>Диаграмма задач/исполнителей</value>
+	</data>
+	<data name="oIssuesGraphTitle">
+		<value>Распределение инцидентов по статусу</value>
+	</data>
+	<data name="oNew">
+		<value>Новые</value>
+	</data>
+	<data name="oOpen">
+		<value>Открытые</value>
+	</data>
+	<data name="oSuspended">
+		<value>Приостановленные</value>
+	</data>
+	<data name="oOnCheck">
+		<value>На контроле</value>
+	</data>
+	<data name="oActive">
+		<value>Активные</value>
+	</data>
+	<data name="oEtc">
+		<value>пр.</value>
+	</data>
+	<data name="oClosed">
+		<value>Закрытые</value>
+	</data>
+	<data name="oTaksToDosGraphTitle">
+		<value>Распределение задач/поручений по статусу</value>
+	</data>
+	<data name="oUpcoming">
+		<value>Предстоящие</value>
+	</data>
+	<data name="oCompleted">
+		<value>Завершенные</value>
+	</data>
+	<data name="oPastDue">
+		<value>Просроченные</value>
+	</data>
+	<data name="oActiveTasks">
+		<value>Активные (без просроченных)</value>
+	</data>
+	<data name="ToDoTasksAssigned">
+		<value>Назначенных задач/поручений</value>
+	</data>
+	<data name="ProjectSnapshot">
+		<value>Общий отчет по проекту</value>
+	</data>
+	<data name="ActivitiesByType">
+		<value>Статистика проектных работ</value>
+	</data>
+	<data name="ResourcesTracking">
+		<value>Статистика работы исполнителей</value>
+	</data>
+	<data name="XMLProjectIssues">
+		<value>Создать отчет по инцидентам</value>
+	</data>
+	<data name="XMLProjectActivities">
+		<value>Создать отчет по работам</value>
+	</data>
+	<data name="IssuesAnalysis">
+		<value>Статистика по инцидентам</value>
+	</data>
+	<data name="FullActivities">
+		<value>Статистика по работам</value>
+	</data>
+	<data name="TimesheetTracking">
+		<value>Статистика по листам учета времени</value>
+	</data>
+	<data name="tProjectSnapshots">
+		<value>Сохраненные состояния проекта</value>
+	</data>
+	<data name="tCreated">
+		<value>Создано</value>
+	</data>
+	<data name="tCreatedBy">
+		<value>Создал</value>
+	</data>
+	<data name="tStatus">
+		<value>Статус</value>
+	</data>
+	<data name="tTargetBudget">
+		<value>Бюджет</value>
+	</data>
+	<data name="tEstimatedBudget">
+		<value>Оценка</value>
+	</data>
+	<data name="tActualBudget">
+		<value>Факт</value>
+	</data>
+	<data name="tStartDate">
+		<value>Дата начала</value>
+	</data>
+	<data name="tFinishDate">
+		<value>Предполагаемая дата завершения</value>
+	</data>
+	<data name="tTargetFinishDate">
+		<value>Планируемая дата завершения</value>
+	</data>
+	<data name="tPrjPhase">
+		<value>Фаза</value>
+	</data>
+	<data name="tOther">
+		<value>Прочее</value>
+	</data>
+	<data name="tFinanceGraph">
+		<value>Диаграмма финансов</value>
+	</data>
+</root>

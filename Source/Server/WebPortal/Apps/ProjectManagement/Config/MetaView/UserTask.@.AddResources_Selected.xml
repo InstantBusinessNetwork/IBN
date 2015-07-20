@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="User_AddResources_Selected_Columns">
+			<add afterId="colTitle">
+				<Column id="colManager" type="default" width="60" title="{IbnFramework.Common:CanManage}" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/CanManage.AddResources_Selected.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DeleteWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот инцидент?</value>
+  </data>
+  <data name="ImportExport" xml:space="preserve">
+    <value>Импорт/экспорт</value>
+  </data>
+  <data name="ImportIssues" xml:space="preserve">
+    <value>Импорт инцидентов</value>
+  </data>
+  <data name="IncidentList" xml:space="preserve">
+    <value>Список инцидентов</value>
+  </data>
+  <data name="IssClient" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="IssCode" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="IssIssBox" xml:space="preserve">
+    <value>Папка инцидентов</value>
+  </data>
+  <data name="IssResponsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="IssStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="IssTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="IssUpdated" xml:space="preserve">
+    <value>Изменен</value>
+  </data>
+  <data name="NewIssue" xml:space="preserve">
+    <value>Новый инцидент</value>
+  </data>
+  <data name="ViewFieldSet" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="StandardFieldSet" xml:space="preserve">
+    <value>Базовый</value>
+  </data>
+  <data name="TimelineFieldSet" xml:space="preserve">
+    <value>Временные рамки</value>
+  </data>
+  <data name="ActualOpenDate" xml:space="preserve">
+    <value>Дата открытия</value>
+  </data>
+  <data name="ActualFinishDate" xml:space="preserve">
+    <value>Дата закрытия</value>
+  </data>
+  <data name="ExpectedResponseDate" xml:space="preserve">
+    <value>Ответить не позднее</value>
+  </data>
+  <data name="ExpectedResolveDate" xml:space="preserve">
+    <value>Решить не позднее</value>
+  </data>
+  <data name="PendingMessages" xml:space="preserve">
+    <value>Непроверенные сообщения</value>
+  </data>
+  <data name="tNosubject" xml:space="preserve">
+    <value>[без заголовка]</value>
+  </data>
+  <data name="tPendId" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="tPendSubj" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="tPendFrom" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="tPendTo" xml:space="preserve">
+    <value>Кому</value>
+  </data>
+  <data name="tPendCreated" xml:space="preserve">
+    <value>Получено</value>
+  </data>
+  <data name="tApproveChecked" xml:space="preserve">
+    <value>Утвердить отмеченные</value>
+  </data>
+  <data name="tApproveCheckedWarning" xml:space="preserve">
+    <value>Вы действительно хотите утвердить все отмеченные сообщения?</value>
+  </data>
+  <data name="tApproveWarning" xml:space="preserve">
+    <value>Вы действительно хотите утвердить это сообщение?</value>
+  </data>
+  <data name="tDeleteWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить это сообщение?</value>
+  </data>
+  <data name="tAddToExist" xml:space="preserve">
+    <value>Добавить к инциденту</value>
+  </data>
+  <data name="tDeleteChecked" xml:space="preserve">
+    <value>Удалить отмеченные</value>
+  </data>
+  <data name="tDeleteCheckedWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить все отмеченные сообщения?</value>
+  </data>
+  <data name="tSelectIncident" xml:space="preserve">
+    <value>Выберите инцидент</value>
+  </data>
+  <data name="ArticlesList" xml:space="preserve">
+    <value>База знаний</value>
+  </data>
+  <data name="AllArticles" xml:space="preserve">
+    <value>Все статьи</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="TagCloud" xml:space="preserve">
+    <value>Облако тегов</value>
+  </data>
+  <data name="NewArticle" xml:space="preserve">
+    <value>Новая статья</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Создан</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Вопрос</value>
+  </data>
+  <data name="tDeleteArticleWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить эту статью?</value>
+  </data>
+  <data name="ResponsibleSet" xml:space="preserve">
+    <value>Инциденты, в которых я ответственный</value>
+  </data>
+  <data name="CreatorSet" xml:space="preserve">
+    <value>Инциденты, которые я создал</value>
+  </data>
+  <data name="ManagerSet" xml:space="preserve">
+    <value>Инциденты, в которых я менеджер</value>
+  </data>
+  <data name="AllSet" xml:space="preserve">
+    <value>Любая</value>
+  </data>
+  <data name="GroupPrj" xml:space="preserve">
+    <value>Проекты</value>
+  </data>
+  <data name="GroupContacts" xml:space="preserve">
+    <value>Клиенты</value>
+  </data>
+  <data name="GroupIssBox" xml:space="preserve">
+    <value>Папки инцидентов</value>
+  </data>
+  <data name="GroupNoPrj" xml:space="preserve">
+    <value>[Вне проектов]</value>
+  </data>
+  <data name="GroupBy" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="GroupByPrj" xml:space="preserve">
+    <value>по проектам</value>
+  </data>
+  <data name="GroupByContacts" xml:space="preserve">
+    <value>по клиентам</value>
+  </data>
+  <data name="GroupByIssBoxes" xml:space="preserve">
+    <value>по папкам инцидентов</value>
+  </data>
+  <data name="GroupByResp" xml:space="preserve">
+    <value>по ответственным</value>
+  </data>
+  <data name="tExternalRecipients" xml:space="preserve">
+    <value>Внешние получатели</value>
+  </data>
+  <data name="IssueRes" xml:space="preserve">
+    <value>Исполнители инцидента</value>
+  </data>
+  <data name="GenCat" xml:space="preserve">
+    <value>Общая категория</value>
+  </data>
+  <data name="IssCat" xml:space="preserve">
+    <value>Категория инцидентов</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Проявление</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="tIncBox" xml:space="preserve">
+    <value>Папка инцидентов</value>
+  </data>
+  <data name="tSelectDiagram" xml:space="preserve">
+    <value>Выберите вид диаграммы</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="_mc_ChartReportDescription" xml:space="preserve">
+    <value>Распределение инцидентов по различным характеристикам.</value>
+  </data>
+  <data name="_mc_ChartReportTitle" xml:space="preserve">
+    <value>Диаграмма&amp;nbsp;распределения&amp;nbsp;инцидентов</value>
+  </data>
+  <data name="_mc_ChartReportPP" xml:space="preserve">
+    <value>Выберите поле для группировки</value>
+  </data>
+  <data name="_mc_HdmWs" xml:space="preserve">
+    <value>Обзор инцидентов</value>
+  </data>
+  <data name="_mc_MyRole" xml:space="preserve">
+    <value>Моя роль</value>
+  </data>
+  <data name="_mc_EditFilter" xml:space="preserve">
+    <value>Редактировать фильтр</value>
+  </data>
+  <data name="_mc_ResetFilter" xml:space="preserve">
+    <value>Снять фильтр</value>
+  </data>
+  <data name="_mc_SetName" xml:space="preserve">
+    <value>Имя набора фильтров</value>
+  </data>
+  <data name="_mc_FilterSetName" xml:space="preserve">
+    <value>Введите имя</value>
+  </data>
+  <data name="_mc_FilterSet" xml:space="preserve">
+    <value>Набор фильтров</value>
+  </data>
+  <data name="_mc_CustomFilterSet" xml:space="preserve">
+    <value>[Настроить]</value>
+  </data>
+  <data name="_mc_DeleteFilterSet" xml:space="preserve">
+    <value>Удалить набор фильтров</value>
+  </data>
+  <data name="_mc_DeleteFilterSetWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот набор фильтров?</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="ResponsibleNotAssigned" xml:space="preserve">
+    <value>не назначен</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Создал</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Неактивные</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Скрыть неактивные</value>
+  </data>
+  <data name="OnlyUnanswered" xml:space="preserve">
+    <value>Неотвеченные</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>да</value>
+  </data>
+  <data name="_mc_GroupType" xml:space="preserve">
+    <value>Группировка по</value>
+  </data>
+  <data name="tRespGroup" xml:space="preserve">
+    <value>Группа ответственных</value>
+  </data>
+  <data name="tRespNotSet" xml:space="preserve">
+    <value>не назначен</value>
+  </data>
+  <data name="QuickTracking" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="GeneralInfo" xml:space="preserve">
+    <value>Общая информация</value>
+  </data>
+  <data name="NewMessage" xml:space="preserve">
+    <value>Новое сообщение</value>
+  </data>
+  <data name="NewIssueView" xml:space="preserve">
+    <value>Новый вид</value>
+  </data>
+  <data name="IssueViewCreation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IssueViewCreationTitle" xml:space="preserve">
+    <value>Управление видом</value>
+  </data>
+  <data name="IssueViewCreationSubHeader" xml:space="preserve">
+    <value>Вы можете создать новый вид списка инцидентов</value>
+  </data>
+  <data name="SelectFieldSet" xml:space="preserve">
+    <value>Выберите набор полей</value>
+  </data>
+  <data name="NewViewStep1Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка инцидентов, выберите один из предложенных наборов полей и перейдите к следующему шагу мастера.</value>
+  </data>
+  <data name="NewViewStep2Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка инцидентов, выберите один из предложенных вариантов группировки и перейдите к следующему шагу мастера.</value>
+  </data>
+  <data name="SelectGroupingField" xml:space="preserve">
+    <value>Задайте группировку для списка</value>
+  </data>
+  <data name="NoGroupBy" xml:space="preserve">
+    <value>без группировки</value>
+  </data>
+  <data name="NewViewStep4Comment" xml:space="preserve">
+    <value>Для создания нового вида списка инцидентов необходимо ввести название.</value>
+  </data>
+  <data name="SelectTitle" xml:space="preserve">
+    <value>Введите название вида</value>
+  </data>
+  <data name="IsPublicView" xml:space="preserve">
+    <value>Показывать этот вид всем пользователям</value>
+  </data>
+  <data name="_mc_DeleteView" xml:space="preserve">
+    <value>Удалить вид</value>
+  </data>
+  <data name="_mc_DeleteViewWarning" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот вид?</value>
+  </data>
+  <data name="CurrentUser" xml:space="preserve">
+    <value>[текущий пользователь]</value>
+  </data>
+  <data name="AllIssues" xml:space="preserve">
+    <value>Все инциденты</value>
+  </data>
+  <data name="GroupByPrjSet" xml:space="preserve">
+    <value>Группировка по проектам</value>
+  </data>
+  <data name="GroupByContactSet" xml:space="preserve">
+    <value>Группировка по клиентам</value>
+  </data>
+  <data name="GroupByIssBoxSet" xml:space="preserve">
+    <value>Группировка по папкам инцидентов</value>
+  </data>
+  <data name="GroupByRespSet" xml:space="preserve">
+    <value>Группировка по ответственным</value>
+  </data>
+  <data name="DeleteIssue" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="ViewIssue" xml:space="preserve">
+    <value>Просмотреть</value>
+  </data>
+  <data name="EditIssue" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="QTrackIssue" xml:space="preserve">
+    <value>Управление</value>
+  </data>
+  <data name="AllDenied" xml:space="preserve">
+    <value>все отказались</value>
+  </data>
+  <data name="GroupResp" xml:space="preserve">
+    <value>группа ответственных</value>
+  </data>
+  <data name="OutOfPersonalResponsibility" xml:space="preserve">
+    <value>Нераспределенные</value>
+  </data>
+  <data name="OutOfPersonalResponsibilityFilter" xml:space="preserve">
+    <value>нераспределенные</value>
+  </data>
+  <data name="NewViewTab1Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка инцидентов, необходимо выбрать один из предложенных наборов полей.</value>
+  </data>
+  <data name="NewViewTab2Comment" xml:space="preserve">
+    <value>Чтобы создать новый вид списка инцидентов, необходимо выбрать один из предложенных вариантов группировки.</value>
+  </data>
+  <data name="NewViewTab4Comment" xml:space="preserve">
+    <value>Все готово для создания нового вида списка инцидентов. Необходимо ввести название.</value>
+  </data>
+  <data name="FieldsTab" xml:space="preserve">
+    <value>Поля</value>
+  </data>
+  <data name="GroupsTab" xml:space="preserve">
+    <value>Группировка</value>
+  </data>
+  <data name="FiltersTab" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="GeneralTab" xml:space="preserve">
+    <value>Общее</value>
+  </data>
+  <data name="TitleIsRequired" xml:space="preserve">
+    <value>Необходимо ввести название!</value>
+  </data>
+  <data name="SystemViews" xml:space="preserve">
+    <value>Системные виды</value>
+  </data>
+  <data name="UserViews" xml:space="preserve">
+    <value>Пользовательские виды</value>
+  </data>
+  <data name="ClosedIssues" xml:space="preserve">
+    <value>Закрытые инциденты</value>
+  </data>
+  <data name="ActiveIssues" xml:space="preserve">
+    <value>Открытые инциденты</value>
+  </data>
+  <data name="UnassignedIssues" xml:space="preserve">
+    <value>Нераспределенные инциденты</value>
+  </data>
+  <data name="QLastForumPost" xml:space="preserve">
+    <value>Просмотреть последнее сообщение форума</value>
+  </data>
+  <data name="IssForumPost" xml:space="preserve">
+    <value>Сообщения форума инцидента</value>
+  </data>
+  <data name="PrevPost" xml:space="preserve">
+    <value>Предыдущее</value>
+  </data>
+  <data name="NextPost" xml:space="preserve">
+    <value>Следующее</value>
+  </data>
+  <data name="ExportIssues" xml:space="preserve">
+    <value>Экспорт инцидентов</value>
+  </data>
+  <data name="AllIssuesExport" xml:space="preserve">
+    <value>Все инциденты</value>
+  </data>
+  <data name="ViewIssuesExport" xml:space="preserve">
+    <value>Инциденты выбранного вида</value>
+  </data>
+  <data name="VisibleIssuesExport" xml:space="preserve">
+    <value>Инциденты текущей страницы</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспортировать</value>
+  </data>
+  <data name="AddRelFromClip" xml:space="preserve">
+    <value>Инциденты в буфере обмена</value>
+  </data>
+  <data name="DownPriority" xml:space="preserve">
+    <value>Понизить приоритет</value>
+  </data>
+  <data name="UpPriority" xml:space="preserve">
+    <value>Повысить приоритет</value>
+  </data>
+  <data name="DownPriorityWarning" xml:space="preserve">
+    <value>Вы действительно хотите понизить приоритет всех выделенных инцидентов?</value>
+  </data>
+  <data name="UpPriorityWarning" xml:space="preserve">
+    <value>Вы действительно хотите повысить приоритет всех выделенных инцидентов?</value>
+  </data>
+  <data name="SelectRes" xml:space="preserve">
+    <value>Выбор ответственного</value>
+  </data>
+  <data name="TrackingFieldSet" xml:space="preserve">
+    <value>Состояния</value>
+  </data>
+  <data name="AllSetMale" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Комментарий</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="ChangeStatus" xml:space="preserve">
+    <value>Изменить статус</value>
+  </data>
+  <data name="ChangeResponsible" xml:space="preserve">
+    <value>Назначить ответственного</value>
+  </data>
+  <data name="WereErrors" xml:space="preserve">
+    <value>Некоторые инциденты не были изменены, так как у вас недостаточно прав!</value>
+  </data>
+  <data name="GroupRespTitle" xml:space="preserve">
+    <value>Ответственные</value>
+  </data>
+  <data name="NoItemsSelected" xml:space="preserve">
+    <value>Не выделено ни одного инцидента!</value>
+  </data>
+  <data name="StatusNotChanged" xml:space="preserve">
+    <value>Невозможно изменить статус на &lt;b&gt;{0}&lt;/b&gt; для следующих инцидентов:&lt;br /&gt;{1}</value>
+  </data>
+  <data name="NoItemsSelectedForResponsible" xml:space="preserve">
+    <value>Не выделено ни одного инцидента!</value>
+  </data>
+  <data name="ResponsibleNotChanged" xml:space="preserve">
+    <value>Невозможно изменить ответственного для следующих инцидентов:&lt;br /&gt;{0}</value>
+  </data>
+  <data name="showClient" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="showCode" xml:space="preserve">
+    <value>Код инцидента</value>
+  </data>
+  <data name="showCreationInfo" xml:space="preserve">
+    <value>Информация о создании</value>
+  </data>
+  <data name="showDescription" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="showExpectedDate" xml:space="preserve">
+    <value>Ответить не позднее</value>
+  </data>
+  <data name="showGenCats" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="showIssBox" xml:space="preserve">
+    <value>Папка инцидентов</value>
+  </data>
+  <data name="showIssCats" xml:space="preserve">
+    <value>Категории инцидентов</value>
+  </data>
+  <data name="showLastModifiedInfo" xml:space="preserve">
+    <value>Последнее изменение</value>
+  </data>
+  <data name="showManager" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="showOpenDate" xml:space="preserve">
+    <value>Дата открытия</value>
+  </data>
+  <data name="showPriority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="showResolveDate" xml:space="preserve">
+    <value>Решить не позднее</value>
+  </data>
+  <data name="showResponsible" xml:space="preserve">
+    <value>Ответственный</value>
+  </data>
+  <data name="showStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="showTitle" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="NotPrintForum" xml:space="preserve">
+    <value>не печатать</value>
+  </data>
+  <data name="LastPostPrintForum" xml:space="preserve">
+    <value>последнее сообщение</value>
+  </data>
+  <data name="Last3PostsPrintForum" xml:space="preserve">
+    <value>3 последних сообщения</value>
+  </data>
+  <data name="AllPostsPrintForum" xml:space="preserve">
+    <value>все сообщения</value>
+  </data>
+  <data name="IssueGenInfoPrinting" xml:space="preserve">
+    <value>Выберите поля для печати информации об инциденте</value>
+  </data>
+  <data name="ForumInfoPrinting" xml:space="preserve">
+    <value>Печать сообщений форума инцидента</value>
+  </data>
+  <data name="PrintPreviewSettings" xml:space="preserve">
+    <value>Настройки печати</value>
+  </data>
+  <data name="IssueViewReport" xml:space="preserve">
+    <value>Отчет по инциденту</value>
+  </data>
+  <data name="Overdue" xml:space="preserve">
+    <value>Просрочен</value>
+  </data>
+  <data name="SwithToOldView" xml:space="preserve">
+    <value>Показать старый вид</value>
+  </data>
+  <data name="SwitchTitle" xml:space="preserve">
+    <value>Включение старого вида</value>
+  </data>
+  <data name="TurnOn" xml:space="preserve">
+    <value>Включить</value>
+  </data>
+  <data name="OnlyOverdue" xml:space="preserve">
+    <value>Просроченные</value>
+  </data>
+  <data name="HideOldView" xml:space="preserve">
+    <value>Скрыть старый вид</value>
+  </data>
+  <data name="HideOldViewWarning" xml:space="preserve">
+    <value>Вы хотите скрыть вкладку со старым видом инцидентов?</value>
+  </data>
+  <data name="MakeRelation" xml:space="preserve">
+    <value>Связать инциденты</value>
+  </data>
+  <data name="MarkAsSpam" xml:space="preserve">
+    <value>Пометить как спам</value>
+  </data>
+  <data name="MarkAsSpamText" xml:space="preserve">
+    <value>Вы собираетесь пометить инцидент(ы) как спам.&lt;br/&gt;
+	Выберите действие, которое будет при этом применено к инциденту(ам):
+	</value>
+  </data>
+  <data name="DeleteIssue2" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="CloseIssue" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="OnCheck" xml:space="preserve">
+    <value>На контроле</value>
+  </data>
+  <data name="IssId" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="RespAllDenied" xml:space="preserve">
+    <value>[ Все отказались ]</value>
+  </data>
+  <data name="RespGroup" xml:space="preserve">
+    <value>[ Группа ответственных ]</value>
+  </data>
+  <data name="RespNotSet" xml:space="preserve">
+    <value>[ Не назначен ]</value>
+  </data>
+</root>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>CalendarEventResourceList</Id>
+	<Name>CalendarEventResourceList</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName></FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+	</FieldSet>
+	<GroupByFieldName />
+	<ColumnsUI>
+		<Column field="Name" width="200" />
+	</ColumnsUI>
+	<Sorting>
+		<ArrayOfSortingElement>
+			<SortingElement>
+				<Source>Name</Source>
+				<Type>Asc</Type>
+			</SortingElement>
+		</ArrayOfSortingElement>
+	</Sorting>
+</ListViewProfile>

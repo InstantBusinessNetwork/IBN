@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="buttonOk.Text" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="buttonCancel.Text" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADPdjMA0Xo5ANF6OgDTfj8A035AANSCRgDVg0gA1odMANeITQDYi1IA2Y1VANqQWQDakFoA25JbANyU
+        XwDclWAA3JVhAN2XYgDdmGYA3plmAN6aaADem2kA4J1tAOCebgDfnm8A4J9vAOCgcADhonMA4qN1AOGj
+        dgDipHYA46d7AOSofADjqX0A5Kl9AOatgwDlrYQA5q6EAOWvhwDjr4gA57CHAOSwiQDksYoA6LGJAOSx
+        iwDksosA57KKAOWyjADososA5bONAOWzjgDns44A5bSOAOW0jwDmtI8A5rWQAOm1jwDmtZEA5raRAOm2
+        kADmtpIA6raRAOm3kgDnt5MA57iUAOe4lQDpuJUA67qWAOe6mADoupgA6LuYAOi7mQDsu5gA67uZAOi8
+        mgDpvJoA6b2bAOm9nADrvZwA6b2dAOm+nQDpvp4A6r+eAO2/nQDpv58A6r+fAO7AngDqwKAA7cCfAOrA
+        oQDqwaEA6sGiAO3CpADvw6IA78SkAO7FpgDxyKoA78irAPHIrADwya0A882wAPHNswDyzrQA9dG3APPR
+        uQDz0roA9dbBAPbXwAD33MgA9tzJAPfdygD34M8A+ODPAPnizwD75dQA+uXVAPvm1wD///8AAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAbkRAPzw6NzY0MS8tKikpaEUwJSIeGhURDQoIBgQCACdFMCUiHhoVEQ0KCAYEAgAnRj11dSJ1
+        dXV1dXV1dXUBKUdIdXUjdXV1dXV1dXV1AypLVnV1K3V1HBkUEAx1dQUsTF51dTh1dSAcFxQPdXUHL01g
+        dXVDdXV1dXV1E3V1CTFQZHV1U3V1dXV1dRZ1dQsyUmd1dV11dTgodXUbdXUONVVrdXVidXVDO3V1H3V1
+        EjdXbXV1ZmNfWEk+LiR1dRg5WXF1dXV1dXV1dXV1dXUdPFpydXV1dXV1dXV1dXV1IURbdHRzb2xqaWVh
+        XE5CMyZBdEpbW1tZV1RRT0xKR0VEcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Создайте новую компанию</value>
+  </data>
+  <data name="comboBoxIisPool.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 176</value>
+  </data>
+  <data name="comboBoxIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 22</value>
+  </data>
+  <data name="labelIisPool.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 14</value>
+  </data>
+  <data name="labelIisPool.Text" xml:space="preserve">
+    <value>Пул приложений IIS:</value>
+  </data>
+  <data name="checkBoxIsActive.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 74</value>
+  </data>
+  <data name="checkBoxIsActive.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 18</value>
+  </data>
+  <data name="checkBoxIsActive.Text" xml:space="preserve">
+    <value>Активная</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 46</value>
+  </data>
+  <data name="comboBoxDefaultLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 22</value>
+  </data>
+  <data name="labelDefaultLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 14</value>
+  </data>
+  <data name="labelDefaultLanguage.Text" xml:space="preserve">
+    <value>Язык по умолчанию:</value>
+  </data>
+  <data name="labelCompanyName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 14</value>
+  </data>
+  <data name="labelCompanyName.Text" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="textBoxCompanyName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="textBoxCompanyName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="textBoxIisPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 150</value>
+  </data>
+  <data name="textBoxIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="labelHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 14</value>
+  </data>
+  <data name="labelHost.Text" xml:space="preserve">
+    <value>Хост:</value>
+  </data>
+  <data name="labelIisPort.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 14</value>
+  </data>
+  <data name="labelIisPort.Text" xml:space="preserve">
+    <value>Порт:</value>
+  </data>
+  <data name="textBoxHost.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 98</value>
+  </data>
+  <data name="textBoxHost.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 124</value>
+  </data>
+  <data name="comboBoxIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 22</value>
+  </data>
+  <data name="labelIisIPAddress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 14</value>
+  </data>
+  <data name="labelIisIPAddress.Text" xml:space="preserve">
+    <value>IP адрес:</value>
+  </data>
+  <data name="groupBoxCompany.Text" xml:space="preserve">
+    <value>Параметры компании</value>
+  </data>
+  <data name="textBoxAdminEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 104</value>
+  </data>
+  <data name="textBoxAdminEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="labelAdminPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 14</value>
+  </data>
+  <data name="labelAdminPasswordRe.Text" xml:space="preserve">
+    <value>Введите пароль еще раз:</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 160</value>
+  </data>
+  <data name="textBoxAdminPasswordRe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 20</value>
+  </data>
+  <data name="labelAdminPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 14</value>
+  </data>
+  <data name="labelAdminPassword.Text" xml:space="preserve">
+    <value>Укажите пароль:</value>
+  </data>
+  <data name="textBoxAdminPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 132</value>
+  </data>
+  <data name="textBoxAdminPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 20</value>
+  </data>
+  <data name="labelAdminLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="labelAdminLastName.Text" xml:space="preserve">
+    <value>Фамилия:</value>
+  </data>
+  <data name="textBoxAdminLastName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 76</value>
+  </data>
+  <data name="textBoxAdminLastName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="labelAdminFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 14</value>
+  </data>
+  <data name="labelAdminFirstName.Text" xml:space="preserve">
+    <value>Имя:</value>
+  </data>
+  <data name="textBoxAdminFirstName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 48</value>
+  </data>
+  <data name="textBoxAdminFirstName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="textBoxAdminFirstName.Text" xml:space="preserve">
+    <value>Администратор</value>
+  </data>
+  <data name="labelAdminAccountName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 14</value>
+  </data>
+  <data name="labelAdminAccountName.Text" xml:space="preserve">
+    <value>Имя для входа (логин):</value>
+  </data>
+  <data name="textBoxAdminAccountName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>151, 20</value>
+  </data>
+  <data name="textBoxAdminAccountName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 20</value>
+  </data>
+  <data name="groupBoxAdministrator.Text" xml:space="preserve">
+    <value>Параметры администратора</value>
+  </data>
+</root>

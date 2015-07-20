@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Search">
+		<value>Search</value>
+	</data>
+	<data name="EditProfile">
+		<value>Edit Profile</value>
+	</data>
+	<data name="Preferences">
+		<value>Preferences</value>
+	</data>
+	<data name="Directory">
+		<value>Groups &amp; Users</value>
+	</data>
+	<data name="QuickLinks">
+		<value>Quick Links</value>
+	</data>
+	<data name="Actions">
+		<value>Actions</value>
+	</data>
+	<data name="AddIncident">
+		<value>Add Issue</value>
+	</data>
+	<data name="AddProject">
+		<value>Add Project</value>
+	</data>
+	<data name="AddToDo">
+		<value>Add ToDo</value>
+	</data>
+	<data name="AddEvent">
+		<value>Add Calendar Entry</value>
+	</data>
+	<data name="Incidents">
+		<value>Self-created issues</value>
+	</data>
+	<data name="ToDoList">
+		<value>My ToDo List</value>
+	</data>
+	<data name="MyCalendar">
+		<value>My Work</value>
+	</data>
+	<data name="ViewProfile">
+		<value>My Profile</value>
+	</data>
+	<data name="AddUser">
+		<value>Add User</value>
+	</data>
+	<data name="AddExternalUser">
+		<value>External User</value>
+	</data>
+	<data name="AddTimesheet">
+		<value>Add Timesheet</value>
+	</data>
+	<data name="InviteUser">
+		<value>Invite User</value>
+	</data>
+	<data name="SignUp">
+		<value>Sign Up</value>
+	</data>
+	<data name="Home">
+		<value>Home</value>
+	</data>
+	<data name="ExternalUser">
+		<value>External User</value>
+	</data>
+	<data name="PendingUser">
+		<value>Pending User</value>
+	</data>
+	<data name="SendIBNMessage">
+		<value>Send Message</value>
+	</data>
+	<data name="SendEmail">
+		<value>Send e-mail</value>
+	</data>
+	<data name="ViewUserProfile">
+		<value>View User Profile</value>
+	</data>
+	<data name="CreateNew">
+		<value>Create New</value>
+	</data>
+	<data name="TimeTracking">
+		<value>Time Tracking</value>
+	</data>
+	<data name="ViewProfile">
+		<value>View Profile</value>
+	</data>
+	<data name="Print">
+		<value>Print Current Page</value>
+	</data>
+	<data name="Help">
+		<value>Help and Support Center</value>
+	</data>
+	<data name="NewIssueWizard">
+		<value>Create a New Issue/Incident</value>
+	</data>
+	<data name="NewToDoWizard">
+		<value>Create a New To-Do</value>
+	</data>
+	<data name="NewEventWizard">
+		<value>Create a New Calendar Entry</value>
+	</data>
+	<data name="NewFileWizard">
+		<value>Upload a New File</value>
+	</data>
+	<data name="NewProjectWizard">
+		<value>Create a New Project to Manage</value>
+	</data>
+	<data name="Hours">
+		<value>hr</value>
+	</data>
+	<data name="Minutes">
+		<value>min.</value>
+	</data>
+	<data name="Days">
+		<value>d.</value>
+	</data>
+	<data name="tFilterparameters">
+		<value>Filter parameters</value>
+	</data>
+	<data name="tDateRun">
+		<value>Date Run</value>
+	</data>
+	<data name="tProducedby">
+		<value>Produced by</value>
+	</data>
+	<data name="tPrint">
+		<value>Print</value>
+	</data>
+	<data name="Projects" mimetype="">
+		<value>My Projects</value>
+	</data>
+	<data name="tChooseDate">
+		<value>Choose a Date</value>
+	</data>
+	<data name="FirstLoginWizard">
+		<value>First Time Login Wizard</value>
+	</data>
+	<data name="FirstAdminLoginWizard">
+		<value>First Time Login Admin Wizard</value>
+	</data>
+	<data name="tbytes">
+		<value>bytes</value>
+	</data>
+	<data name="tKBytes">
+		<value>KB</value>
+	</data>
+	<data name="tMBytes">
+		<value>MB</value>
+	</data>
+	<data name="Feedback">
+		<value>Help/Feedback</value>
+	</data>
+	<data name="FeedbackTip">
+		<value>Let us know how we can improve our products.</value>
+	</data>
+	<data name="ADConvertWizard">
+		<value>Get Users From Active Directory</value>
+	</data>
+	<data name="tabMetaData">
+		<value>Custom Tracking Fields</value>
+	</data>
+	<data name="Edit">
+		<value>Edit</value>
+	</data>
+	<data name="WrongValue">
+		<value>Wrong Range</value>
+	</data>
+	<data name="Save">
+		<value>Save</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="BooleanYes">
+		<value>Yes</value>
+	</data>
+	<data name="BooleanNo">
+		<value>No</value>
+	</data>
+	<data name="WrongURL">
+		<value>Wrong URL</value>
+	</data>
+	<data name="EmptyValue">
+		<value>[ Empty Value ]</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Edit Dictionary</value>
+	</data>
+	<data name="tWarning">
+		<value>Do you really want to delete this file?</value>
+	</data>
+	<data name="Show">
+		<value>Show Menu</value>
+	</data>
+	<data name="Hide">
+		<value>Hide Menu</value>
+	</data>
+	<data name="tReload">
+		<value>Reload</value>
+	</data>
+	<data name="tNewPrj">
+		<value>New Project</value>
+	</data>
+	<data name="tManDic">
+		<value>Manage Dictionary</value>
+	</data>
+	<data name="tNewPrtfl">
+		<value>New Portfolio</value>
+	</data>
+	<data name="tDelete">
+		<value>Delete</value>
+	</data>
+	<data name="tCustomize">
+		<value>Customize</value>
+	</data>
+	<data name="tNewTemplt">
+		<value>New Template</value>
+	</data>
+	<data name="tMain">
+		<value>Main</value>
+	</data>
+	<data name="tLists">
+		<value>Lists &amp; Records</value>
+	</data>
+	<data name="tProjects">
+		<value>Projects</value>
+	</data>
+	<data name="tCalendar">
+		<value>Calendar</value>
+	</data>
+	<data name="tIssues">
+		<value>Issues/Help Desk</value>
+	</data>
+	<data name="tTasksToDos">
+		<value>My Activities</value>
+	</data>
+	<data name="tLibrary">
+		<value>File Library</value>
+	</data>
+	<data name="tReports">
+		<value>Reports</value>
+	</data>
+	<data name="tGrpsUsrs">
+		<value>Groups &amp; Users</value>
+	</data>
+	<data name="tAdmin">
+		<value>Administration</value>
+	</data>
+	<data name="tWorkspace">
+		<value>Workspace</value>
+	</data>
+	<data name="tPersonalize">
+		<value>Personalize</value>
+	</data>
+	<data name="tPersReports">
+		<value>Personal Reports</value>
+	</data>
+	<data name="tSharedCals">
+		<value>Shared Work</value>
+	</data>
+	<data name="tSchedule">
+		<value>Scheduling</value>
+	</data>
+	<data name="tPrivLists">
+		<value>Private Lists</value>
+	</data>
+	<data name="tPubLists">
+		<value>Public Lists</value>
+	</data>
+	<data name="tPrjLists">
+		<value>Projects Lists</value>
+	</data>
+	<data name="tAllLists">
+		<value>All Lists</value>
+	</data>
+	<data name="tOverallPrjRep">
+		<value>Overall Snapshot</value>
+	</data>
+	<data name="tViewBy">
+		<value>View By</value>
+	</data>
+	<data name="tAllPrj">
+		<value>All Projects</value>
+	</data>
+	<data name="tPortfolios">
+		<value>Portfolios</value>
+	</data>
+	<data name="tPrjTemps">
+		<value>Project Templates</value>
+	</data>
+	<data name="tPrjReports">
+		<value>Project Reports</value>
+	</data>
+	<data name="tStatus">
+		<value>Status</value>
+	</data>
+	<data name="tPortfolio">
+		<value>Portfolio</value>
+	</data>
+	<data name="tGenCat">
+		<value>General Category</value>
+	</data>
+	<data name="tPrjCat">
+		<value>Project Category</value>
+	</data>
+	<data name="tPriority">
+		<value>Priority</value>
+	</data>
+	<data name="tType">
+		<value>Type</value>
+	</data>
+	<data name="tCustomer">
+		<value>Customer/Client</value>
+	</data>
+	<data name="tSimpleReps">
+		<value>One Click Reports</value>
+	</data>
+	<data name="tOverPrjStat">
+		<value>Overall Project Statistics</value>
+	</data>
+	<data name="tOverCostTrack">
+		<value>Overall Cost Tracking</value>
+	</data>
+	<data name="tActivPrjs">
+		<value>Active Projects Review</value>
+	</data>
+	<data name="tFilterPrjReps">
+		<value>Filterable Reports</value>
+	</data>
+	<data name="tStatusPrjRep">
+		<value>Status Report By Project</value>
+	</data>
+	<data name="tOverPrjSnap">
+		<value>Overall Project Snapshot</value>
+	</data>
+	<data name="tActivsAnalysTyp">
+		<value>Activities Analysis By Type</value>
+	</data>
+	<data name="tResTrackAnalys">
+		<value>Resources Tracking Analysis</value>
+	</data>
+	<data name="tPrjIssAnalys">
+		<value>Issues Analysis</value>
+	</data>
+	<data name="tPrjIssStat">
+		<value>Issues Statistics</value>
+	</data>
+	<data name="tFullActivAnalys">
+		<value>Full Activities Analysis</value>
+	</data>
+	<data name="tPrjTrack">
+		<value>Project Timesheet Tracking</value>
+	</data>
+	<data name="tRepWizd">
+		<value>Custom Report Wizard</value>
+	</data>
+	<data name="tOverIssSnap">
+		<value>Overall Snapshot</value>
+	</data>
+	<data name="tAssgnIss">
+		<value>Assigned Issues</value>
+	</data>
+	<data name="tNenotAssgnIss">
+		<value>New/Not Assigned</value>
+	</data>
+	<data name="tManIss">
+		<value>Managed Issues</value>
+	</data>
+	<data name="tAllIss">
+		<value>All Issues</value>
+	</data>
+	<data name="tIssReports">
+		<value>Issues Reports</value>
+	</data>
+	<data name="tIssCat">
+		<value>Issue Category</value>
+	</data>
+	<data name="tSeverity">
+		<value>Severity</value>
+	</data>
+	<data name="tGroupProjects">
+		<value>Grouped by Projects</value>
+	</data>
+	<data name="tHDReps">
+		<value>Help Desk Reports</value>
+	</data>
+	<data name="tHDOverSnap">
+		<value>Help Desk/Overall Snapshot Report</value>
+	</data>
+	<data name="tIssActivAnalys">
+		<value>Issues Analysis (Active)</value>
+	</data>
+	<data name="tIssViewByMan">
+		<value>View By Manager</value>
+	</data>
+	<data name="tIssViewByStatus">
+		<value>View By Status</value>
+	</data>
+	<data name="tIssViewByCat">
+		<value>View By Category</value>
+	</data>
+	<data name="tIssViewByType">
+		<value>View By Type</value>
+	</data>
+	<data name="tClosedIss">
+		<value>Closed Issues</value>
+	</data>
+	<data name="tIntIss">
+		<value>Internal Issues</value>
+	</data>
+	<data name="tResActs">
+		<value>Management Center</value>
+	</data>
+	<data name="tStatRepByUs">
+		<value>Status Report By User</value>
+	</data>
+	<data name="tMesHist">
+		<value>Message History</value>
+	</data>
+	<data name="tConfHist">
+		<value>Conference History</value>
+	</data>
+	<data name="tAlertHist">
+		<value>Alert/Notification History</value>
+	</data>
+	<data name="tTaskMonitor">
+		<value>Task Monitor</value>
+	</data>
+	<data name="tMyTasks">
+		<value>My Tasks</value>
+	</data>
+	<data name="tActToDoList">
+		<value>Active ToDo List</value>
+	</data>
+	<data name="tOverToDoList">
+		<value>Overdue Tasks</value>
+	</data>
+	<data name="tComplToDoList">
+		<value>Completed Tasks</value>
+	</data>
+	<data name="tUpcomToDoList">
+		<value>Upcoming Tasks</value>
+	</data>
+	<data name="tListView">
+		<value>List View</value>
+	</data>
+	<data name="tMyTimesh">
+		<value>My Timesheets</value>
+	</data>
+	<data name="tActTrack">
+		<value>Activities Tracking</value>
+	</data>
+	<data name="tResTracking">
+		<value>Resources Tracking</value>
+	</data>
+	<data name="tTimeManagement">
+		<value>Time Management</value>
+	</data>
+	<data name="tPendTimeSh">
+		<value>Pending Timesheets</value>
+	</data>
+	<data name="tApprTimeSh">
+		<value>Approved Timesheets</value>
+	</data>
+	<data name="tDashboard">
+		<value>Dashboard</value>
+	</data>
+	<data name="tAdminReps">
+		<value>Administrative Report</value>
+	</data>
+	<data name="tMostActGrUs">
+		<value>Most Active Groups and Users</value>
+	</data>
+	<data name="tGrUsStat">
+		<value>Group and User Statistics</value>
+	</data>
+	<data name="tCustReps">
+		<value>Custom Reports</value>
+	</data>
+	<data name="tPrivTemps">
+		<value>Private templates</value>
+	</data>
+	<data name="tAllTemps">
+		<value>All templates</value>
+	</data>
+	<data name="tPortalSetup">
+		<value>Portal Configuration</value>
+	</data>
+	<data name="tModCompInfo">
+		<value>Company Information</value>
+	</data>
+	<data name="tSiteTheme">
+		<value>Theme and Graphics</value>
+	</data>
+	<data name="tMetaClassCustomization">
+		<value>Data Dictionary Manager</value>
+	</data>
+	<data name="tDics">
+		<value>Standard Data Dictionares</value>
+	</data>
+	<data name="tCalSetup">
+		<value>Project Calendar</value>
+	</data>
+	<data name="tManDics">
+		<value>Default Lookup Tables</value>
+	</data>
+	<data name="tWebStubs">
+		<value>Web Applications</value>
+	</data>
+	<data name="tDocTypes">
+		<value>Document Types</value>
+	</data>
+	<data name="tRoutWrkfl">
+		<value>Routing/Workflow</value>
+	</data>
+	<data name="tMessTempl">
+		<value>Message Templates</value>
+	</data>
+	<data name="tRemTempl">
+		<value>Reminder Templates</value>
+	</data>
+	<data name="tModifAlertNotif">
+		<value>Alert Notification Parameters</value>
+	</data>
+	<data name="teMailBoxes">
+		<value>Inbound e-mail Routing</value>
+	</data>
+	<data name="tSecGroups">
+		<value>Secure Groups</value>
+	</data>
+	<data name="tAllUsers">
+		<value>All Users</value>
+	</data>
+	<data name="tContGroups">
+		<value>Contact Groups</value>
+	</data>
+	<data name="tUsersStats">
+		<value>Users Statistics</value>
+	</data>
+	<data name="tAstsAndFldrs">
+		<value>Files and Folders</value>
+	</data>
+	<data name="tFileWatcher">
+		<value>File Watcher</value>
+	</data>
+	<data name="tNewTimeSheet">
+		<value>Create New TimeSheet</value>
+	</data>
+	<data name="tLogOut">
+		<value>Log out</value>
+	</data>
+	<data name="tSelectAction">
+		<value>Select Action</value>
+	</data>
+	<data name="tNewList">
+		<value>Create New List</value>
+	</data>
+	<data name="tPrjPhases">
+		<value>Project Phases</value>
+	</data>
+	<data name="tModifyProfile">
+		<value>Modify My Profile</value>
+	</data>
+	<data name="tCustomizeWorkspace">
+		<value>Customize Your Workspace</value>
+	</data>
+	<data name="tNewDocument">
+		<value>Create a New Document</value>
+	</data>
+	<data name="tNewReport">
+		<value>Create a New Custom Report</value>
+	</data>
+	<data name="tDataEntry">
+		<value>Data Entry</value>
+	</data>
+	<data name="AddDocument">
+		<value>Add Document</value>
+	</data>
+	<data name="AddList">
+		<value>Add List</value>
+	</data>
+	<data name="AddReport">
+		<value>Add Custom Report</value>
+	</data>
+	<data name="tDay">
+		<value>Day</value>
+	</data>
+	<data name="tWorkWeek">
+		<value>Work Week</value>
+	</data>
+	<data name="tWeek">
+		<value>Week</value>
+	</data>
+	<data name="tMonth">
+		<value>Month</value>
+	</data>
+	<data name="tYear">
+		<value>Year</value>
+	</data>
+	<data name="tQuickAdd">
+		<value>Quick Add</value>
+	</data>
+	<data name="tCustomizeHomePage">
+		<value>Customize Home Page</value>
+	</data>
+	<data name="tCustomFields">
+		<value>Custom Fields and Objects</value>
+	</data>
+	<data name="tObjectCustomEditor">
+		<value>Objects/Custom Field Editor</value>
+	</data>
+	<data name="tListTemplates">
+		<value>List Template Manager</value>
+	</data>
+	<data name="tUtilities">
+		<value>Utilities</value>
+	</data>
+	<data name="tBackup">
+		<value>Backup</value>
+	</data>
+	<data name="tSystemBroadcast">
+		<value>System Broadcast Alerts</value>
+	</data>
+	<data name="tEventNotification">
+		<value>System Notifications</value>
+	</data>
+	<data name="tReminderNotifications">
+		<value>System Reminders</value>
+	</data>
+	<data name="tYouCanAddValuesForCustomFields">
+		<value>There are no data values entered for the following fields</value>
+	</data>
+	<data name="tAllActivities">
+		<value>All Activities</value>
+	</data>
+	<data name="tAll">
+		<value>All</value>
+	</data>
+	<data name="tOnlyAssigned">
+		<value>Only Assigned</value>
+	</data>
+	<data name="tOnlyManaged">
+		<value>Only Managed</value>
+	</data>
+	<data name="tListFolders">
+		<value>List Folders</value>
+	</data>
+	<data name="tGroupedBy">
+		<value>Grouped By</value>
+	</data>
+	<data name="tPrjsByPortf">
+		<value>Projects by Portfolio</value>
+	</data>
+	<data name="tPrjsByPhase">
+		<value>Projects by Project Phase</value>
+	</data>
+	<data name="tPrjsByPM">
+		<value>Projects by Project Manager</value>
+	</data>
+	<data name="tUsrsByRole">
+		<value>Users by Role</value>
+	</data>
+	<data name="tResUtil">
+		<value>Resource Utilization</value>
+	</data>
+	<data name="tUtilIssues">
+		<value>Issues</value>
+	</data>
+	<data name="tUtilTasks">
+		<value>Tasks</value>
+	</data>
+	<data name="tUtilPrjs">
+		<value>Projects</value>
+	</data>
+	<data name="tUtilCE">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="tUtilDoc">
+		<value>Documents</value>
+	</data>
+	<data name="tUtilToDo">
+		<value>ToDos</value>
+	</data>
+	<data name="tUtilAll">
+		<value>Advanced View</value>
+	</data>
+	<data name="tRepProjects">
+		<value>Projects</value>
+	</data>
+	<data name="tRepProjGroups">
+		<value>Portfolios</value>
+	</data>
+	<data name="tRepIssues">
+		<value>Issues</value>
+	</data>
+	<data name="tRepTodos">
+		<value>Todos</value>
+	</data>
+	<data name="tRepTasks">
+		<value>Tasks</value>
+	</data>
+	<data name="tRepEvents">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="tRepDocuments">
+		<value>Documents</value>
+	</data>
+	<data name="tRepUsers">
+		<value>Users</value>
+	</data>
+	<data name="tRecentUpdates">
+		<value>Recent Updates</value>
+	</data>
+	<data name="tRepsByType">
+		<value>Reports By Type</value>
+	</data>
+	<data name="tAstMng">
+		<value>Asset Management</value>
+	</data>
+	<data name="tGEOMonitor">
+		<value>GEO Monitor</value>
+	</data>
+	<data name="tAlertsEvents">
+		<value>Alerts/Events</value>
+	</data>
+	<data name="tSiteFacMng">
+		<value>Site/Facility Management</value>
+	</data>
+	<data name="tSiteFacDash">
+		<value>Site/Facility Dashboard</value>
+	</data>
+	<data name="tAllSitesFacs">
+		<value>All Sites/Facilities</value>
+	</data>
+	<data name="tGroupByRegion">
+		<value>Grouped By Region</value>
+	</data>
+	<data name="tGroupByState">
+		<value>Grouped By State</value>
+	</data>
+	<data name="tGroupByType">
+		<value>Grouped By Type</value>
+	</data>
+	<data name="tInventoryMng">
+		<value>Inventory Management</value>
+	</data>
+	<data name="tInventoryDashboard">
+		<value>Inventory Dashboard</value>
+	</data>
+	<data name="tSiteAllocation">
+		<value>Site Allocation</value>
+	</data>
+	<data name="tManageMachines">
+		<value>Manage Machines</value>
+	</data>
+	<data name="tManagePrinters">
+		<value>Manage Printers</value>
+	</data>
+	<data name="tAtlasReporting">
+		<value>Reporting</value>
+	</data>
+	<data name="tSurfaceVis">
+		<value>Surface Visibility</value>
+	</data>
+	<data name="tAtlasUtil">
+		<value>ATLAS Utilization</value>
+	</data>
+	<data name="tActivations">
+		<value>Activations</value>
+	</data>
+	<data name="tRolloutTimeLine">
+		<value>Rollout Timeline</value>
+	</data>
+	<data name="tLabelProduct">
+		<value>Label Production</value>
+	</data>
+	<data name="tRollupByArea">
+		<value>Rollup By Area</value>
+	</data>
+	<data name="tRollupByState">
+		<value>Rollup By State</value>
+	</data>
+	<data name="tRollupBySite">
+		<value>Rollup By Site</value>
+	</data>
+	<data name="tAtlasAdmin">
+		<value>Administration</value>
+	</data>
+	<data name="tMachTables">
+		<value>Machine Tables</value>
+	</data>
+	<data name="tPrntTables">
+		<value>Printer Tables</value>
+	</data>
+	<data name="tOperTables">
+		<value>Operational Tables</value>
+	</data>
+	<data name="tGeoTables">
+		<value>Geographic Tables</value>
+	</data>
+	<data name="tAstTables">
+		<value>Asset Tables</value>
+	</data>
+	<data name="tHideLeftMenu">
+		<value>Hide Left Menu</value>
+	</data>
+	<data name="tShowLeftMenu">
+		<value>Show Left Menu</value>
+	</data>
+	<data name="Requests">
+		<value>Requests</value>
+	</data>
+	<data name="Lock">
+		<value>Lock</value>
+	</data>
+	<data name="UnLock">
+		<value>Unlock</value>
+	</data>
+	<data name="Reminder">
+		<value>Reminder</value>
+	</data>
+	<data name="Active">
+		<value>Active</value>
+	</data>
+	<data name="Updates">
+		<value>Updates</value>
+	</data>
+	<data name="Favorites">
+		<value>Favorites</value>
+	</data>
+	<data name="History">
+		<value>History</value>
+	</data>
+	<data name="Search">
+		<value>Search</value>
+	</data>
+	<data name="tProjectWasAdded">
+		<value>Project #{0} Was Added To Clipboard!</value>
+	</data>
+	<data name="tProjectWasNotAdded">
+		<value>Project Was Not Added To Clipboard!</value>
+	</data>
+	<data name="tCBWasCleared">
+		<value>Clipboard Was Cleared!</value>
+	</data>
+	<data name="tCBWasNotCleared">
+		<value>Clipboard Was Not Cleared!</value>
+	</data>
+	<data name="tFilesAdded">
+		<value>{0} File(s) was(were) added to clipboard!</value>
+	</data>
+	<data name="tFilesNotAdded">
+		<value>File(s) was(were) not added to Clipboard!</value>
+	</data>
+	<data name="tTabDocuments">
+		<value>Documents</value>
+	</data>
+	<data name="tRAllDocuments">
+		<value>All Documents</value>
+	</data>
+	<data name="tMyDocuments">
+		<value>My Documents</value>
+	</data>
+	<data name="tRAssDocuments">
+		<value>Assigned Documents</value>
+	</data>
+	<data name="tRManDocuments">
+		<value>Managed Documents</value>
+	</data>
+	<data name="tMdpCustomization">
+		<value>Standard Objects/Custom Block Editor</value>
+	</data>
+	<data name="tIssueWasAdded">
+		<value>Issue #{0} Was Added To Clipboard!</value>
+	</data>
+	<data name="tIssueWasNotAdded">
+		<value>Issue Was Not Added To Clipboard!</value>
+	</data>
+	<data name="tReportConfig">
+		<value>Reports Security</value>
+	</data>
+	<data name="tSQLReport">
+		<value>Custom SQL Report</value>
+	</data>
+	<data name="tPersonalSpace">
+		<value>Personal Space</value>
+	</data>
+	<data name="tMyWorks">
+		<value>My Work</value>
+	</data>
+	<data name="HideShow">
+		<value>Hide / Show</value>
+	</data>
+	<data name="tActByCat">
+		<value>Activities By Category</value>
+	</data>
+	<data name="tGlobal">
+		<value>Global</value>
+	</data>
+	<data name="tAllFiles">
+		<value>All Files</value>
+	</data>
+	<data name="tSimpleIssues">
+		<value>Issues</value>
+	</data>
+	<data name="tSimpleEvents">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="tSimpleToDos">
+		<value>ToDos</value>
+	</data>
+	<data name="tSimpleTasks">
+		<value>Tasks</value>
+	</data>
+	<data name="tMyWebStubs">
+		<value>My Web Apps</value>
+	</data>
+	<data name="tModifyNotif">
+		<value>My Notification Settings</value>
+	</data>
+	<data name="tMDEPage">
+		<value>Custom Tracking Fields</value>
+	</data>
+	<data name="tMDEBlock">
+		<value>Block</value>
+	</data>
+	<data name="tMDEBlockName">
+		<value>Block Name</value>
+	</data>
+	<data name="tSpecialTempl">
+		<value>Special Templates</value>
+	</data>
+	<data name="tVersion">
+		<value>Version</value>
+	</data>
+	<data name="teMailPop3Boxes">
+		<value>E-mail Pop3 Boxes</value>
+	</data>
+	<data name="tBlackList">
+		<value>E-mail Black List</value>
+	</data>
+	<data name="tWhiteList">
+		<value>E-mail White List</value>
+	</data>
+	<data name="tAntiSpamList">
+		<value>Anti-Spam Rules</value>
+	</data>
+	<data name="tSecurity">
+		<value>Security</value>
+	</data>
+	<data name="tDefIncSettings">
+		<value>Default Incident Settings</value>
+	</data>
+	<data name="tIssBoxes">
+		<value>Issue Boxes</value>
+	</data>
+	<data name="tPendingMess">
+		<value>Pending Messages</value>
+	</data>
+	<data name="tLDAPSettings">
+		<value>LDAP Settings</value>
+	</data>
+	<data name="Clients">
+		<value>Clients</value>
+	</data>
+	<data name="tLDAPLogs">
+		<value>Synchronization Logs</value>
+	</data>
+	<data name="Contacts">
+		<value>Contacts</value>
+	</data>
+	<data name="Organizations">
+		<value>Organizations</value>
+	</data>
+	<data name="Clear">
+		<value>Clear</value>
+	</data>
+	<data name="Select">
+		<value>Select</value>
+	</data>
+	<data name="tHDM">
+		<value>Help Desk Management</value>
+	</data>
+	<data name="tSMTPSettings">
+		<value>SMTP Settings</value>
+	</data>
+	<data name="tResponsibledIssues">
+		<value>Responsibled Issues</value>
+	</data>
+	<data name="tGroupClients">
+		<value>Grouped by Clients</value>
+	</data>
+	<data name="tPrjsByClient">
+		<value>Projects by Client</value>
+	</data>
+	<data name="tClientsContacts">
+		<value>Clients/Contacts</value>
+	</data>
+	<data name="tIncsByClient">
+		<value>Issues by Client</value>
+	</data>
+</root>

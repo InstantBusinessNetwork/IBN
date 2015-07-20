@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="User_AddResources_Selected_Columns" primaryKey="UserId">
+				<Column id="colTitle" type="default" width="130" title="{IbnFramework.Common:tName}" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/User.AddResources_Selected.ascx" />
+				<Column id="colStatus" type="default" width="70" title="{IbnFramework.Common:tStatus}" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Status.AddResources_Selected.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_Resource_Selected_SelectDoubleClickHandler" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_Resource_Selected_SelectDoubleClickHandler">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>onDelete()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

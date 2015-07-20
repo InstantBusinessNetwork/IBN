@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tAllProjects" xml:space="preserve">
+    <value>All Projects</value>
+  </data>
+  <data name="tMyProjects" xml:space="preserve">
+    <value>My Projects</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="FinishDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="TargetStartDate" xml:space="preserve">
+    <value>Target Start Date</value>
+  </data>
+  <data name="TargetFinishDate" xml:space="preserve">
+    <value>Target End Date</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="AddProject" xml:space="preserve">
+    <value>New Project</value>
+  </data>
+  <data name="Projects" xml:space="preserve">
+    <value>Project Tracking Center</value>
+  </data>
+  <data name="ProjectTitle" xml:space="preserve">
+    <value>Project Title</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="AllFem" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning! By deleting this project you will be permanently deleting all related tasks, issues, and project files managed under this project.  Are you sure?</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GE" xml:space="preserve">
+    <value>Greater or Equal</value>
+  </data>
+  <data name="LE" xml:space="preserve">
+    <value>Lower or Equal</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>Equal</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Both</value>
+  </data>
+  <data name="Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="tActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="XMLExport" xml:space="preserve">
+    <value>Export to XML</value>
+  </data>
+  <data name="tReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="GeneralCats" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="ProjectCats" xml:space="preserve">
+    <value>Project Categories</value>
+  </data>
+  <data name="ShowFilter" xml:space="preserve">
+    <value>Modify filter</value>
+  </data>
+  <data name="HideFilter" xml:space="preserve">
+    <value>Back to Projects</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="tAddRelProject" xml:space="preserve">
+    <value>Add Related Project To </value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Add This Project</value>
+  </data>
+  <data name="PercentCompleted" xml:space="preserve">
+    <value>Overall Status</value>
+  </data>
+  <data name="tProjectExplorer" xml:space="preserve">
+    <value>Project Explorer</value>
+  </data>
+  <data name="tPortfolios" xml:space="preserve">
+    <value>Portfolios</value>
+  </data>
+  <data name="tCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="tCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="tLastSavedDate" xml:space="preserve">
+    <value>Last Saved Date</value>
+  </data>
+  <data name="tLastEditor" xml:space="preserve">
+    <value>Last Editor</value>
+  </data>
+  <data name="tNewPortfolio" xml:space="preserve">
+    <value>New Portfolio</value>
+  </data>
+  <data name="Any2" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="SelectedOnly" xml:space="preserve">
+    <value>Only following</value>
+  </data>
+  <data name="ExcludeSelected" xml:space="preserve">
+    <value>Exclude following</value>
+  </data>
+  <data name="Portfolios" xml:space="preserve">
+    <value>Portfolios</value>
+  </data>
+  <data name="FilterSet" xml:space="preserve">
+    <value>Filter is set.</value>
+  </data>
+  <data name="FilterNotSet" xml:space="preserve">
+    <value>Filter is not set.</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Customer/Client</value>
+  </data>
+  <data name="ResetFilter" xml:space="preserve">
+    <value>Reset Filter</value>
+  </data>
+  <data name="ResetGroup" xml:space="preserve">
+    <value>Reset Grouping</value>
+  </data>
+  <data name="tAddToPortfolio" xml:space="preserve">
+    <value>Add To Portfolio</value>
+  </data>
+  <data name="tProjectReports" xml:space="preserve">
+    <value>Project Reports</value>
+  </data>
+  <data name="tPrjPhase" xml:space="preserve">
+    <value>Project Phase</value>
+  </data>
+  <data name="tPrjGroup" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="tActTrackPrjByPrjGrp" xml:space="preserve">
+    <value>Activities Tracking - Current Activity Breakdown of Projects By Portfolio</value>
+  </data>
+  <data name="tResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="tTasksToDos" xml:space="preserve">
+    <value>Tasks/ToDos</value>
+  </data>
+  <data name="tActiveProjects" xml:space="preserve">
+    <value>Active Project(s)</value>
+  </data>
+  <data name="tTotalProjects" xml:space="preserve">
+    <value>Total Project(s)</value>
+  </data>
+  <data name="tTheAreNoItems" xml:space="preserve">
+    <value>There are no items</value>
+  </data>
+  <data name="tActTrackPrjByPrjPhase" xml:space="preserve">
+    <value>Activities Tracking - Current Activity Breakdown of Projects By Project Phase</value>
+  </data>
+  <data name="tActTrackPrjByPrjMan" xml:space="preserve">
+    <value>Activities Tracking - Current Activity Breakdown of Projects By Project Manager</value>
+  </data>
+  <data name="tOpenTasks" xml:space="preserve">
+    <value>Open Tasks</value>
+  </data>
+  <data name="tCompletedTasks" xml:space="preserve">
+    <value>Completed Tasks</value>
+  </data>
+  <data name="tResTrackUsrByRole" xml:space="preserve">
+    <value>Resources Tracking - Current Resource Breakdown of Users By Roles</value>
+  </data>
+  <data name="tTHView" xml:space="preserve">
+    <value>Time/Hours View</value>
+  </data>
+  <data name="tResource" xml:space="preserve">
+    <value>Resource</value>
+  </data>
+  <data name="tTaskHours" xml:space="preserve">
+    <value>Task Hours</value>
+  </data>
+  <data name="tToDoHours" xml:space="preserve">
+    <value>ToDo Hours</value>
+  </data>
+  <data name="tIssuesHours" xml:space="preserve">
+    <value>Issues Hours</value>
+  </data>
+  <data name="tOtherHours" xml:space="preserve">
+    <value>Other Hours</value>
+  </data>
+  <data name="tTotalHours" xml:space="preserve">
+    <value>Total Hours</value>
+  </data>
+  <data name="tTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="tKeyword" xml:space="preserve">
+    <value>Keyword</value>
+  </data>
+  <data name="tGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="tResUtilIssues" xml:space="preserve">
+    <value>Resource Utilization - Issues</value>
+  </data>
+  <data name="tResUtilTasks" xml:space="preserve">
+    <value>Resource Utilization - Tasks/ToDos</value>
+  </data>
+  <data name="tResUtilProjects" xml:space="preserve">
+    <value>Resource Utilization - Projects</value>
+  </data>
+  <data name="tResUtilAll" xml:space="preserve">
+    <value>Resource Utilization - by User</value>
+  </data>
+  <data name="ActivationDate" xml:space="preserve">
+    <value>Activation Date</value>
+  </data>
+  <data name="tProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tRole" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="tTeamMember" xml:space="preserve">
+    <value>Team Member</value>
+  </data>
+  <data name="tSponsor" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="tStakeholder" xml:space="preserve">
+    <value>Stakeholder</value>
+  </data>
+  <data name="tManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="tExeManager" xml:space="preserve">
+    <value>Executive Manager</value>
+  </data>
+  <data name="Snapshot" xml:space="preserve">
+    <value>View Snapshot</value>
+  </data>
+  <data name="TemplateWarning" xml:space="preserve">
+    <value>Do you want to delete this template?</value>
+  </data>
+  <data name="PortfolioWarning" xml:space="preserve">
+    <value>Do you want to delete this portfolio?</value>
+  </data>
+  <data name="PrjTemps" xml:space="preserve">
+    <value>Project Templates</value>
+  </data>
+  <data name="tDocumentHours" xml:space="preserve">
+    <value>Document Hours</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tObjects" xml:space="preserve">
+    <value>Object Types</value>
+  </data>
+  <data name="tProjects" xml:space="preserve">
+    <value>Projects</value>
+  </data>
+  <data name="tEvents" xml:space="preserve">
+    <value>Calendar Entries</value>
+  </data>
+  <data name="tIssues" xml:space="preserve">
+    <value>Issues</value>
+  </data>
+  <data name="tDocuments" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="tTasks" xml:space="preserve">
+    <value>Tasks</value>
+  </data>
+  <data name="tToDos" xml:space="preserve">
+    <value>ToDos</value>
+  </data>
+  <data name="tPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="tNoItems" xml:space="preserve">
+    <value>There are no items</value>
+  </data>
+  <data name="tShowCompleted" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="tShowUpcoming" xml:space="preserve">
+    <value>Upcoming</value>
+  </data>
+  <data name="tResUtiliz" xml:space="preserve">
+    <value>Resource Utilization</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="tGroupBy" xml:space="preserve">
+    <value>Group By</value>
+  </data>
+  <data name="tNoGrouping" xml:space="preserve">
+    <value>No Grouping</value>
+  </data>
+  <data name="tByUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tByManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="tByProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tShow" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="tShowGroup" xml:space="preserve">
+    <value>Show Grouping</value>
+  </data>
+  <data name="tHideGroup" xml:space="preserve">
+    <value>Hide Grouping</value>
+  </data>
+  <data name="tShowFilter" xml:space="preserve">
+    <value>Show Filter</value>
+  </data>
+  <data name="tHideFilter" xml:space="preserve">
+    <value>Hide Filter</value>
+  </data>
+  <data name="FinishDate2" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="tMyActivities" xml:space="preserve">
+    <value>My Work - List View</value>
+  </data>
+  <data name="tDontShow" xml:space="preserve">
+    <value>Dont show</value>
+  </data>
+  <data name="tForDay" xml:space="preserve">
+    <value>For day</value>
+  </data>
+  <data name="tForWeek" xml:space="preserve">
+    <value>For week</value>
+  </data>
+  <data name="tLastWeek" xml:space="preserve">
+    <value>Last week</value>
+  </data>
+  <data name="tForMonth" xml:space="preserve">
+    <value>For month</value>
+  </data>
+  <data name="tLastMonth" xml:space="preserve">
+    <value>Last month</value>
+  </data>
+  <data name="tForAnyPeriod" xml:space="preserve">
+    <value>For any period</value>
+  </data>
+  <data name="tInDay" xml:space="preserve">
+    <value>In day</value>
+  </data>
+  <data name="tInWeek" xml:space="preserve">
+    <value>In week</value>
+  </data>
+  <data name="tNextWeek" xml:space="preserve">
+    <value>Next week</value>
+  </data>
+  <data name="tInMonth" xml:space="preserve">
+    <value>In month</value>
+  </data>
+  <data name="tNextMonth" xml:space="preserve">
+    <value>Next month</value>
+  </data>
+  <data name="tInAnyPeriod" xml:space="preserve">
+    <value>In any period</value>
+  </data>
+  <data name="tShowActive" xml:space="preserve">
+    <value>Show Active</value>
+  </data>
+  <data name="tDontShowActive" xml:space="preserve">
+    <value>Dont Show Active</value>
+  </data>
+  <data name="tTask" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="tTodo" xml:space="preserve">
+    <value>ToDo</value>
+  </data>
+  <data name="tDoc" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="tIssue" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="tCalEntry" xml:space="preserve">
+    <value>Calendar Entry</value>
+  </data>
+  <data name="tPerson" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="tSharedActivities" xml:space="preserve">
+    <value>Shared Work - List View</value>
+  </data>
+  <data name="tUserName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ExcelExport" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="tPriority" xml:space="preserve">
+    <value>priority</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Warning! By deleting this object you will be permanently deleting all related objects. Are you sure?</value>
+  </data>
+  <data name="tProjectNum" xml:space="preserve">
+    <value>Project #</value>
+  </data>
+  <data name="OnlyForUser" xml:space="preserve">
+    <value>Show Projects with my participation only</value>
+  </data>
+  <data name="tActTrackPrjByPrjClient" xml:space="preserve">
+    <value>Projects - Grouped by Client</value>
+  </data>
+  <data name="tNoClient" xml:space="preserve">
+    <value>No Client</value>
+  </data>
+  <data name="tCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="tPrjsByBusScores" xml:space="preserve">
+    <value>Projects - Finances</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="tFact" xml:space="preserve">
+    <value>Fact</value>
+  </data>
+  <data name="tCurrent" xml:space="preserve">
+    <value>Current</value>
+  </data>
+  <data name="tNotSelected" xml:space="preserve">
+    <value>Not Selected</value>
+  </data>
+  <data name="tWeekYear" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="tMonthQuarterYear" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="tQuarterYear" xml:space="preserve">
+    <value>Quarter</value>
+  </data>
+  <data name="tYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="tTotalSum" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="tCompare" xml:space="preserve">
+    <value>Compare</value>
+  </data>
+  <data name="tPrjsByMilestones" xml:space="preserve">
+    <value>Projects - Milestones</value>
+  </data>
+  <data name="tSelectProjectsToShow" xml:space="preserve">
+    <value>Select Projects To Show</value>
+  </data>
+  <data name="tProjectMilestone" xml:space="preserve">
+    <value>Project\Milestones</value>
+  </data>
+  <data name="tScale" xml:space="preserve">
+    <value>Scale</value>
+  </data>
+  <data name="tSelectAll" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="tSelectProjects" xml:space="preserve">
+    <value>Select Projects</value>
+  </data>
+  <data name="tByBusinessScore" xml:space="preserve">
+    <value>Business Score</value>
+  </data>
+  <data name="tQuarterTotal" xml:space="preserve">
+    <value>Quarter Total</value>
+  </data>
+  <data name="tToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="tProjectStartDate" xml:space="preserve">
+    <value>Project Start Date</value>
+  </data>
+  <data name="tProjectEndDate" xml:space="preserve">
+    <value>Project End Date</value>
+  </data>
+  <data name="tFieldSet" xml:space="preserve">
+    <value>Field Set</value>
+  </data>
+  <data name="tProjectsDefault" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="tProjectsLight" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="tWorkResourcesDefault" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="tWorkResourcesDates" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="tWorkResourcesWorkTime" xml:space="preserve">
+    <value>Labor</value>
+  </data>
+  <data name="tActualStartDate" xml:space="preserve">
+    <value>Actual Start Date</value>
+  </data>
+  <data name="tActualFinishDate" xml:space="preserve">
+    <value>Actual End Date</value>
+  </data>
+  <data name="tTaskTime" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="tTotalMinutes" xml:space="preserve">
+    <value>Total Minutes</value>
+  </data>
+  <data name="tTotalApproved" xml:space="preserve">
+    <value>Total Approved</value>
+  </data>
+  <data name="tWorkManagersDefault" xml:space="preserve">
+    <value>Standard</value>
+  </data>
+  <data name="tWorkManagersDates" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="tWorkManagersWorkTime" xml:space="preserve">
+    <value>Labor</value>
+  </data>
+  <data name="tView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ShowChildTodo" xml:space="preserve">
+    <value>Show Child ToDos</value>
+  </data>
+  <data name="Week1" xml:space="preserve">
+    <value>One Week</value>
+  </data>
+  <data name="Week3" xml:space="preserve">
+    <value>Three Weeks</value>
+  </data>
+  <data name="PeriodNext" xml:space="preserve">
+    <value>Next Period</value>
+  </data>
+  <data name="PeriodPrev" xml:space="preserve">
+    <value>Previous Period</value>
+  </data>
+  <data name="NoCalendar" xml:space="preserve">
+    <value>(no calendar)</value>
+  </data>
+  <data name="TimeTypeCalendarEntry" xml:space="preserve">
+    <value>Calendar Entry</value>
+  </data>
+  <data name="TimeTypeFree" xml:space="preserve">
+    <value>Working Time</value>
+  </data>
+  <data name="TimeTypeOff" xml:space="preserve">
+    <value>Time Off</value>
+  </data>
+  <data name="TimeTypePast" xml:space="preserve">
+    <value>Past Time</value>
+  </data>
+  <data name="TimeTypeWorkHigh" xml:space="preserve">
+    <value>Work: High Priority</value>
+  </data>
+  <data name="TimeTypeWorkLow" xml:space="preserve">
+    <value>Work: Low Priority</value>
+  </data>
+  <data name="TimeTypeWorkNormal" xml:space="preserve">
+    <value>Work: Normal Priority</value>
+  </data>
+  <data name="TimeTypeWorkUrgent" xml:space="preserve">
+    <value>Work: Urgent Priority</value>
+  </data>
+  <data name="TimeTypeWorkVeryHigh" xml:space="preserve">
+    <value>Work: Very High Priority</value>
+  </data>
+  <data name="TimeTypeHighlight" xml:space="preserve">
+    <value>Current Work</value>
+  </data>
+  <data name="tOnlyActive" xml:space="preserve">
+    <value>Hide inactive</value>
+  </data>
+  <data name="tOnlyInactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="Utilization" xml:space="preserve">
+    <value>Utilization</value>
+  </data>
+  <data name="TimeTypeWorkPinnedUp" xml:space="preserve">
+    <value>Work: Pinned Up</value>
+  </data>
+  <data name="CreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="CreatedPeriod" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="tByCategory" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="tByClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CompleteWarning" xml:space="preserve">
+    <value>Complete?</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Complete</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+</root>

@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<StateMachines>
+<!--
+ADMIN
+PM
+PPM
+HDM
+EXEC
+Controler
+Creator
+Manager
+wResource
+Resource
+wResponsible
+Responsible
+p_TeamMemeber
+p_Sponsor
+p_StakeHolder
+p_Manager
+-->
+<StateMachine name="with_check">
+	<States>
+		<State name="new">
+			<Action name="ChangeState">
+				<Transition to="open">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="oncheck">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="Creator"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="open">
+			<Action name="ChangeState">
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="oncheck">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="reopen">
+			<Action name="ChangeState">
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="oncheck">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Manager"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>	
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>	
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="suspended">
+			<Action name="ChangeState">
+				<Transition to="reopen">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="oncheck">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>	
+				<Role name="p_Manager"/>
+			</Action>
+		</State>	
+		<State name="oncheck">
+			<Action name="ChangeState">
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Controller"/>
+				</Transition>
+				<Transition to="reopen">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Controller"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Controller"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+				<Role name="Controller"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="Controller"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Controller"/>
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="closed">
+			<Action name="ChangeState">
+				<Transition to="reopen">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="oncheck">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Controller"/>
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+	</States>
+</StateMachine>
+
+<StateMachine name="without_check">
+	<States>
+		<State name="new">
+			<Action name="ChangeState">
+				<Transition to="open">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="Creator"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="open">
+			<Action name="ChangeState">
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="reopen">
+			<Action name="ChangeState">
+				<Transition to="suspended">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>	
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AddToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="DeleteToDo">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+		<State name="suspended">
+			<Action name="ChangeState">
+				<Transition to="reopen">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+					<Role name="p_Manager"/>
+				</Transition>
+				<Transition to="closed">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+					<Role name="Responsible"/>
+					<Role name="wResponsible"/>
+					<Role name="Creator"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+					<Role name="ADMIN"/>
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="EXEC"/>
+					
+					<Role name="Creator"/>
+					<Role name="Manager"/>
+					<Role name="wResource"/>
+					<Role name="wResponsible"/>
+					<Role name="Resource"/>
+					<Role name="Responsible"/>
+					
+					<Role name="p_TeamMemeber"/>
+					<Role name="p_Sponsor"/>
+					<Role name="p_StakeHolder"/>
+					<Role name="p_Manager"/>
+				</Action>
+				<Action name="ViewToDoList">
+					<Role name="ADMIN"/>
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="EXEC"/>
+					
+					<Role name="Creator"/>
+					<Role name="Manager"/>
+					<Role name="wResource"/>
+					<Role name="wResponsible"/>
+					<Role name="Resource"/>
+					<Role name="Responsible"/>
+					
+					<Role name="p_TeamMemeber"/>
+					<Role name="p_Sponsor"/>
+					<Role name="p_StakeHolder"/>
+					<Role name="p_Manager"/>
+				</Action>
+				<Action name="AssignResponsible">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Action>
+				<Action name="Delete">
+					<Role name="PPM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Action>
+				<Action name="ChangeProject">
+					<Role name="PPM"/>
+					<Role name="HDM"/>				
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Action>
+		</State>	
+		<State name="closed">
+			<Action name="ChangeState">
+				<Transition to="reopen">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+				</Transition>
+			</Action>
+			<Action name="Update">
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Read">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="AssignResponsible">
+					<Role name="PPM"/>
+					<Role name="HDM"/>
+					<Role name="Manager"/>
+					<Role name="p_Manager"/>
+			</Action>
+			<Action name="ViewToDoList">
+				<Role name="ADMIN"/>
+				<Role name="PPM"/>
+				<Role name="HDM"/>
+				<Role name="EXEC"/>
+				
+				<Role name="Creator"/>
+				<Role name="Manager"/>
+				<Role name="wResource"/>
+				<Role name="wResponsible"/>
+				<Role name="Resource"/>
+				<Role name="Responsible"/>
+				
+				<Role name="p_TeamMemeber"/>
+				<Role name="p_Sponsor"/>
+				<Role name="p_StakeHolder"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="Delete">
+				<Role name="PPM"/>
+				<Role name="Manager"/>
+				<Role name="p_Manager"/>
+			</Action>
+			<Action name="ChangeProject">
+				<Role name="PPM"/>
+				<Role name="HDM"/>				
+				<Role name="Manager"/>
+				
+				<Role name="p_Manager"/>
+			</Action>
+		</State>
+	</States>
+</StateMachine>
+</StateMachines>

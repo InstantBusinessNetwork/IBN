@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BusinessManager>
+	<Handlers>
+	</Handlers>
+	<Plugins>
+		<add>
+			<Plugin id="CleanupContactBridge" metaClass="Contact" method="Delete" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.CleanupBridgeElementPlugin, Mediachase.IBN.Business" />
+			<Plugin id="CleanupOrganizationBridge" metaClass="Organization" method="Delete" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.CleanupBridgeElementPlugin, Mediachase.IBN.Business" />
+			<Plugin id="CleanupListBridge" metaClass="List_*" method="Delete" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.IBN.Business.CleanupBridgeElementPlugin, Mediachase.IBN.Business" />
+		</add>
+	</Plugins>
+</BusinessManager>

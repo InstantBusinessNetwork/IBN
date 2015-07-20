@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IncidentId" xml:space="preserve">
+    <value>Issue ID</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Updated</value>
+  </data>
+  <data name="Severity" xml:space="preserve">
+    <value>Severity</value>
+  </data>
+  <data name="Activated" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="tbView" xml:space="preserve">
+    <value>Issue Information</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="ActivatedNone" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="tbViewEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="tbIncident" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="tbAdd" xml:space="preserve">
+    <value>Add ToDo</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Do you really want to delete this issue ?</value>
+  </data>
+  <data name="Resolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="Workaround" xml:space="preserve">
+    <value>Workaround</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tbQuickTracking" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Suspended" xml:space="preserve">
+    <value>Suspended by</value>
+  </data>
+  <data name="CompletedByManager" xml:space="preserve">
+    <value>Completed by</value>
+  </data>
+  <data name="CompletedByResource" xml:space="preserve">
+    <value>Completed by</value>
+  </data>
+  <data name="NotCompleted" xml:space="preserve">
+    <value>Not Completed</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Closed by</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="DeleteAll" xml:space="preserve">
+    <value>Delete All</value>
+  </data>
+  <data name="DeleteIncident" xml:space="preserve">
+    <value>Delete Issue</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="DeleteTxt" xml:space="preserve">
+    <value>&lt;p align="left" class="text"&gt;The deleting Issue can have related timesheets. You can delete such timesheets or leave them.&lt;br&gt;
+&lt;br&gt;
+- To delete Issue and timesheet records linked with this Issue click "Delete All".&lt;br&gt;
+&lt;br&gt;
+-To delete Issue without deleting timesheet records click "Delete Issue".&lt;br&gt;
+&lt;br&gt;
+-To cancel this action, click "Cancel".&lt;/p&gt;</value>
+  </data>
+  <data name="IncidentCategory" xml:space="preserve">
+    <value>Issue Categories</value>
+  </data>
+  <data name="tbToDo" xml:space="preserve">
+    <value>To-Dos</value>
+  </data>
+  <data name="tbIncidentBack" xml:space="preserve">
+    <value>Back to the Issues List</value>
+  </data>
+  <data name="tbIncidentRes" xml:space="preserve">
+    <value>Issue Resources</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="Waiting" xml:space="preserve">
+    <value>Waiting</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="Declined" xml:space="preserve">
+    <value>Declined</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Accept" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Decline" xml:space="preserve">
+    <value>Decline</value>
+  </data>
+  <data name="ADText" xml:space="preserve">
+    <value>Issue Manager has assigned this Issue to you. 
+		&lt;br&gt;
+		Press the "Accept" button if you accept the appointment.
+		&lt;br&gt;
+		Press the "Decline" button if you decline the appointment.</value>
+  </data>
+  <data name="CanManage" xml:space="preserve">
+    <value>Manage</value>
+  </data>
+  <data name="AddResources" xml:space="preserve">
+    <value>Add Resources</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Do you really want to delete issue from this list ?</value>
+  </data>
+  <data name="tRelIss" xml:space="preserve">
+    <value>Related Issues</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Add Related Issue</value>
+  </data>
+  <data name="tbIncidentInfo" xml:space="preserve">
+    <value>Issue Information</value>
+  </data>
+  <data name="tbIncidentInfoEdit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="tbIncidentInfoBack" xml:space="preserve">
+    <value>Back to the Issues List</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>none</value>
+  </data>
+  <data name="WarningToDo" xml:space="preserve">
+    <value>Do you really want to delete this todo ?</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Add To Favorites</value>
+  </data>
+  <data name="tbAddDoc" xml:space="preserve">
+    <value>Add File</value>
+  </data>
+  <data name="tbAddCom" xml:space="preserve">
+    <value>Add Comment</value>
+  </data>
+  <data name="tActions" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="tbAddTimeSheet" xml:space="preserve">
+    <value>Add Timesheet Item</value>
+  </data>
+  <data name="tLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="tCopyToClipboard" xml:space="preserve">
+    <value>Copy Issue To Clipboard</value>
+  </data>
+  <data name="tPasteFromClipboard" xml:space="preserve">
+    <value>Add Related Issue From Clipboard</value>
+  </data>
+  <data name="EditIssue" xml:space="preserve">
+    <value>Issue</value>
+  </data>
+  <data name="AdditionalInfo" xml:space="preserve">
+    <value>Additional Info</value>
+  </data>
+  <data name="ForumMessages" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="tbAddMess" xml:space="preserve">
+    <value>Add Message</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Sender" xml:space="preserve">
+    <value>Sender</value>
+  </data>
+  <data name="Attachments" xml:space="preserve">
+    <value>Attachments</value>
+  </data>
+  <data name="WarningForumNode" xml:space="preserve">
+    <value>Do you really want to delete this message ?</value>
+  </data>
+  <data name="SharedIssue" xml:space="preserve">
+    <value>This Issue is shared by</value>
+  </data>
+  <data name="MessageType" xml:space="preserve">
+    <value>Message Type</value>
+  </data>
+  <data name="NodeType_ExternalQuestion" xml:space="preserve">
+    <value>External Question</value>
+  </data>
+  <data name="NodeType_ExternalMessage" xml:space="preserve">
+    <value>External Message</value>
+  </data>
+  <data name="NodeType_PrivateMessage" xml:space="preserve">
+    <value>Private Message</value>
+  </data>
+  <data name="NodeType_PublicMessage" xml:space="preserve">
+    <value>Public Message</value>
+  </data>
+  <data name="NodeType_PublicResolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="NodeType_PublicWorkaround" xml:space="preserve">
+    <value>Workaround</value>
+  </data>
+  <data name="NodeType_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="IssueStatus" xml:space="preserve">
+    <value>Issue Status</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>[ Full Message ]</value>
+  </data>
+  <data name="MessageView" xml:space="preserve">
+    <value>Message View</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="Client" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="ClientNotSet" xml:space="preserve">
+    <value>[ not set ]</value>
+  </data>
+  <data name="WorkHours" xml:space="preserve">
+    <value>hour (s)</value>
+  </data>
+  <data name="NoMessages" xml:space="preserve">
+    <value>No Messages</value>
+  </data>
+  <data name="tResponsibility" xml:space="preserve">
+    <value>Quick Tracking</value>
+  </data>
+  <data name="tResponsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="tPoolTitle" xml:space="preserve">
+    <value>Responsible Pool</value>
+  </data>
+  <data name="Available" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Selected</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tAdd2" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="tFindNow" xml:space="preserve">
+    <value>Find Now</value>
+  </data>
+  <data name="tEmptySearch" xml:space="preserve">
+    <value>Empty Search</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tWarningPool" xml:space="preserve">
+    <value>Do you really want do delete this user from list?</value>
+  </data>
+  <data name="tAccept" xml:space="preserve">
+    <value>Accept participation in issue closing</value>
+  </data>
+  <data name="tAcceptText" xml:space="preserve">
+    <value>You have accepted the participation in issue closing</value>
+  </data>
+  <data name="tDecline" xml:space="preserve">
+    <value>Decline participation in issue closing</value>
+  </data>
+  <data name="tDeclineText" xml:space="preserve">
+    <value>You have declined the participation in issue closing</value>
+  </data>
+  <data name="tAcceptYourself" xml:space="preserve">
+    <value>Assign yourself as responsible</value>
+  </data>
+  <data name="tAcceptYourselfText" xml:space="preserve">
+    <value>You are responsible for  issue closing</value>
+  </data>
+  <data name="tDeclineYourself" xml:space="preserve">
+    <value>Decline being responsible</value>
+  </data>
+  <data name="tDeclineYourselfText" xml:space="preserve">
+    <value>You have declined being responsible for issue closing</value>
+  </data>
+  <data name="tSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="tRespNotSet" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="tRespGroup" xml:space="preserve">
+    <value>Group Responsibility</value>
+  </data>
+  <data name="tRespMore" xml:space="preserve">
+    <value>More...</value>
+  </data>
+  <data name="tbQuickTracking2" xml:space="preserve">
+    <value>Resource Assigning</value>
+  </data>
+  <data name="tSort" xml:space="preserve">
+    <value>Sort By Creation Date</value>
+  </data>
+  <data name="tQuests" xml:space="preserve">
+    <value>Questions on Top</value>
+  </data>
+  <data name="tResolutions" xml:space="preserve">
+    <value>Resolutions on Top</value>
+  </data>
+  <data name="tWorkarounds" xml:space="preserve">
+    <value>Workarounds on Top</value>
+  </data>
+  <data name="tUserDeclined" xml:space="preserve">
+    <value>User declined responsibility</value>
+  </data>
+  <data name="tController" xml:space="preserve">
+    <value>Controller</value>
+  </data>
+  <data name="tExpectedResponseDate" xml:space="preserve">
+    <value>Response not later</value>
+  </data>
+  <data name="tExpectedResolveDate" xml:space="preserve">
+    <value>Resolve not later</value>
+  </data>
+  <data name="tIncMetrics" xml:space="preserve">
+    <value>Issue Dates</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="NodeType_internal" xml:space="preserve">
+    <value>Internal Message</value>
+  </data>
+  <data name="NodeType_internal_quest" xml:space="preserve">
+    <value>Internal Question</value>
+  </data>
+  <data name="NodeType_Mail_incoming_quest" xml:space="preserve">
+    <value>Incoming Question</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_quest" xml:space="preserve">
+    <value>Outgoing Question</value>
+  </data>
+  <data name="NodeType_internal_resol" xml:space="preserve">
+    <value>Internal Resolution</value>
+  </data>
+  <data name="NodeType_Mail_incoming_resol" xml:space="preserve">
+    <value>Incoming Resolution</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_resol" xml:space="preserve">
+    <value>Outgoing Resolution</value>
+  </data>
+  <data name="NodeType_internal_wa" xml:space="preserve">
+    <value>Internal Workaround</value>
+  </data>
+  <data name="NodeType_Mail_incoming_wa" xml:space="preserve">
+    <value>Incoming Workaround</value>
+  </data>
+  <data name="NodeType_Mail_outgoing_wa" xml:space="preserve">
+    <value>Outgoing Workaround</value>
+  </data>
+  <data name="NodeType_Mail_incoming" xml:space="preserve">
+    <value>Incoming Message</value>
+  </data>
+  <data name="NodeType_Mail_outgoing" xml:space="preserve">
+    <value>Outgoing Message</value>
+  </data>
+  <data name="NodeType_InfoMessage" xml:space="preserve">
+    <value>Info Message</value>
+  </data>
+  <data name="tActualFinish" xml:space="preserve">
+    <value>Actual Finish Date</value>
+  </data>
+  <data name="tMarkAsResolution" xml:space="preserve">
+    <value>Mark As Resolution</value>
+  </data>
+  <data name="tMarkAsWA" xml:space="preserve">
+    <value>Mark As Workaround</value>
+  </data>
+  <data name="tMarkAsResolutionWarning" xml:space="preserve">
+    <value>Do you want to mark this node as Resolution?</value>
+  </data>
+  <data name="tMarkAsWAWarning" xml:space="preserve">
+    <value>Do you want to mark this node as Workaround</value>
+  </data>
+  <data name="tSendToExternal" xml:space="preserve">
+    <value>Send to external users</value>
+  </data>
+  <data name="tUnMarkAsResolution" xml:space="preserve">
+    <value>Unmark As Resolution</value>
+  </data>
+  <data name="tUnMarkAsWA" xml:space="preserve">
+    <value>Unmark As Workaround</value>
+  </data>
+  <data name="tUnMarkAsResolutionWarning" xml:space="preserve">
+    <value>Do you want to unmark this node as Resolution?</value>
+  </data>
+  <data name="tUnMarkAsWAWarning" xml:space="preserve">
+    <value>Do you want to unmark this node as Workaround</value>
+  </data>
+  <data name="tSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="tExternalRecipients" xml:space="preserve">
+    <value>External Recipients</value>
+  </data>
+  <data name="AddRecipients" xml:space="preserve">
+    <value>Add External Recipients</value>
+  </data>
+  <data name="tEMail" xml:space="preserve">
+    <value>E-mail address</value>
+  </data>
+  <data name="tTicket" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="tReSend" xml:space="preserve">
+    <value>Resend</value>
+  </data>
+  <data name="tReSendWarning" xml:space="preserve">
+    <value>Do you want to resend this e-mail to issue manager, responsibles and information recipients?</value>
+  </data>
+  <data name="tWasResended" xml:space="preserve">
+    <value>E-mail was re-sent!</value>
+  </data>
+  <data name="tWasNotResended" xml:space="preserve">
+    <value>Sorry, but e-mail was not re-sent! Try again or contact your system administrator!</value>
+  </data>
+  <data name="tReSendOutWarning" xml:space="preserve">
+    <value>Do you want to resend this e-mail to external recipients?</value>
+  </data>
+  <data name="tShowInfo" xml:space="preserve">
+    <value>Show info messages</value>
+  </data>
+  <data name="tReply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="tOutlookReply" xml:space="preserve">
+    <value>.msg (MS Outlook)</value>
+  </data>
+  <data name="tEMLReply" xml:space="preserve">
+    <value>.eml (Outlook Express, Thunderbird etc.)</value>
+  </data>
+  <data name="tShowNums" xml:space="preserve">
+    <value>Show Messages Order</value>
+  </data>
+  <data name="tMenuReply" xml:space="preserve">
+    <value>Reply</value>
+  </data>
+  <data name="tWebReply" xml:space="preserve">
+    <value>Web Interface</value>
+  </data>
+  <data name="tbAddEMail" xml:space="preserve">
+    <value>Add E-mail</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="tAddEMails" xml:space="preserve">
+    <value>Add e-mails</value>
+  </data>
+  <data name="tUploadFiles" xml:space="preserve">
+    <value>Upload Files</value>
+  </data>
+  <data name="tAddIBNfiles" xml:space="preserve">
+    <value>Add Portal files</value>
+  </data>
+  <data name="tAddIBNArticle" xml:space="preserve">
+    <value>Add Portal Article</value>
+  </data>
+  <data name="tUpload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="tAddIBNPortalfiles" xml:space="preserve">
+    <value>Add Portal files</value>
+  </data>
+  <data name="tAddAttachments" xml:space="preserve">
+    <value>Add Attachments</value>
+  </data>
+  <data name="tHelpUpload" xml:space="preserve">
+    <value>
+      Click &lt;b&gt;Browse&lt;/b&gt; to select a file, or type the path in the box below:
+    </value>
+  </data>
+  <data name="tNotFound" xml:space="preserve">
+    <value>E-mail message was not found!</value>
+  </data>
+  <data name="tCc" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="tObjectNotSet" xml:space="preserve">
+    <value>Not Set</value>
+  </data>
+  <data name="tOnTop" xml:space="preserve">
+    <value>Pin</value>
+  </data>
+  <data name="tUnOnTop" xml:space="preserve">
+    <value>Unpin</value>
+  </data>
+  <data name="NodeType_OnTop" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="ActualOpenDate" xml:space="preserve">
+    <value>Open date</value>
+  </data>
+  <data name="ModifiedDate" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="NoRecipients" xml:space="preserve">
+    <value>Recipients are not specified.</value>
+  </data>
+  <data name="ShowFullMessage" xml:space="preserve">
+    <value>Show Full Message Text</value>
+  </data>
+  <data name="ContactSelect" xml:space="preserve">
+    <value>Contacts Select</value>
+  </data>
+  <data name="PrintIssue" xml:space="preserve">
+    <value>Print Issue</value>
+  </data>
+  <data name="PrintSettings" xml:space="preserve">
+    <value>Print Settings</value>
+  </data>
+  <data name="tExpectedAssignDate" xml:space="preserve">
+    <value>Assign not later</value>
+  </data>
+  <data name="IssueBox" xml:space="preserve">
+    <value>Issue Box</value>
+  </data>
+  <data name="UseNewResponsible" xml:space="preserve">
+    <value>Take responsible from Issue Box</value>
+  </data>
+</root>

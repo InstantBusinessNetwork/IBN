@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.HelpDeskManagement.ColumnTemplates.ActualOpenDate_IncidentList" %>
+<%# (Eval("ActualOpenDate") == DBNull.Value)? "" : ((DateTime)Eval("ActualOpenDate")).ToString("d")%>

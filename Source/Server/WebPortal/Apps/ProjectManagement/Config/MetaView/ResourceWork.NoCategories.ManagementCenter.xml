@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_Columns" primaryKey="ObjectId">
+				<Column id="MyWorkActions" type="ColumnsActions" width="24px" templateUrl="~/Apps/Shell/Primitives/ColumnsActions.Grid.MyWork.@.Workspace.ascx">
+					<Item imageUrl="~/Images/IbnFramework/Reorder.gif" commandName="MC_MyWork_Edit" paddingRight="5" tooltip="{IbnFramework.Calendar:Reorder}" />
+				</Column>
+				<Column id="colPriority" type="default" width="28px" title="!!!" dataField="PriorityId" templateUrl="~/Apps/Shell/ColumnTemplates/MyWork.Priority.ascx" />
+				<Column id="colTitle" type="default" width="100%" title="{IbnFramework.Project:PrjTitle}" templateUrl="~/Apps/Shell/ColumnTemplates/MyWork.Title.ascx" />
+				<Column id="colPeriod" type="default" width="150px" title="{IbnFramework.Project:Period}" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ResourceWork.Period.ascx" />
+				<Column id="colPriority" type="default" width="85px" title="{IbnFramework.Project:Labor}" dataField="duration" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ResourceWork.Duration.ascx" />
+				<Column id="colPercent" type="default" width="30px" title="%" dataField="PercentCompleted" templateUrl="~/Apps/Shell/ColumnTemplates/MyWork.PercentCompleted.ascx" />
+				<Column id="colFinishDate" type="default" width="80px" title="{IbnFramework.Task:DueDate}" dataField="FinishDate" templateUrl="~/Apps/Shell/ColumnTemplates/MyWork.FinishDate.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_MyWork_Edit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Calendar:Reordering}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/StickObject.aspx?objectId=[ClientParam:objectId]&amp;objectTypeId=[ClientParam:objectTypeId]&amp;userId=[ClientParam:userId]&amp;assignmentId=[ClientParam:assignmentId]&amp;CommandName=MC_MyWork_Edit</Url>
+				<Width>400</Width>
+				<Height>300</Height>
+				<Top>55</Top>
+				<Drag>True</Drag>
+				<RefreshMethod>MyWorkRefresh</RefreshMethod>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

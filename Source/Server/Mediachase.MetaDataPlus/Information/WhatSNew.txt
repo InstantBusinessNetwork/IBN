@@ -1,0 +1,182 @@
+Problems:
+-------------------------------------------
+	- Image, Ntext, Binary with History
+	- Meta Field's properties: AllowNulls, SaveHistory, AllowSearch set to MetaClass - MetaField relation
+	- Add MDP Settings, like Start Catalog Mode and so on.
+	- All string in to NVARCHAR and N''
+	- All EXECUTE line into sp_executesql ???
+	- History Triggers Problem
+	- AllowSearch with FullTextSearch + Transaction ???
+	- File Storage Convertor (Console App + MDP Interface + Async) 
+	- HI!!!: Modify Meta Dictionary Item Id + Working with Dictionary in the Multiobject 
+	
+-------------------------------------------	
+2006/05/29
+	- fixed problem with MetaDictionary.Delete(MetaDictionaryItem	item) method.
+	
+-------------------------------------------	
+2005/08/15
+	- Fixed some import problems from CSV files.
+	- Added method bool MetaDictionary.Contains(string Value)
+	- Updated MetaInstaller.Restore method, added data update from  XML.
+-------------------------------------------
+Version 1.6
+-------------------------------------------
+Version 1.5
+-------------------------------------------
+2005/06/10
+	- Fix Problem: DbNull.Value in a money column
+-------------------------------------------
+2005/06/07
+	- Added MetaObject.GetValues method
+	- Added MetaObject.GetComplexFieldValues method
+	- Added MetaObject.GetElementaryFieldValues method
+
+-------------------------------------------
+2005/05/12
+	- Added MetaType.GetSqlMetaTypes
+	- Added MetaType.GetMetaDataMetaTypes	
+	- Removed  MetaType.GetCommonMetaTypes
+	- Added mdpsp_sys_CheckReplaceUser
+	- Added mdpsp_sys_ReplaceUser
+	- Added MetaDataContext.ReplaceUser method
+
+-------------------------------------------
+2005/04/21
+	- Import classes
+	- Added MetaInstaller.CleanupLocalDiskStorage() method	
+	- Added MetaInstaller.MetaFileCopyToDataBase() method		
+	- Added MetaInstaller.MetaFileCopyToLocalDisk() method			
+-------------------------------------------
+Version 1.4
+-------------------------------------------
+2005/04/21
+	- Changed mdpsp_sys_CreateMetaClassProcedure (DELETE FROM MetaKey)
+	- Added mdpsp_sys_LoadMetaFileList
+	- Added mdpsp_sys_GetMetaKeyInfo
+	- Added mdpsp_sys_DeleteMetaKeyObjects
+	- Changed mdpsp_sys_DeleteMetaClass
+	- Changed mdpsp_sys_DeleteMetaField	
+	- Changed mdpsp_sys_DeleteMetaFieldFromMetaClass	
+-------------------------------------------		
+2005/04/19
+	- Fixed a bug "The SqlCommand is currently busy Open, Fetching." when created MetaAttributeCollection with Transaction.
+-------------------------------------------		
+2005/04/12
+    - Fixed Wrong Namespace value update.
+	- Changed mdpsp_sys_FullTextQueriesAddAllFields
+	- Changed mdpsp_sys_DeleteMetaClassProcedure
+-------------------------------------------		
+2005/04/11
+	- Changed mdpsp_sys_CreateMetaClassHistoryTrigger
+-------------------------------------------	
+2005/04/08
+	- Added MetaInstaller class
+	- Changed mdpsp_sys_CreateMetaClassProcedure
+	- Changed mdpsp_sys_CreateMetaClassProcedureAll
+-------------------------------------------	
+2005/04/06
+	- Added abstract metaclass (MetaClass.Create, MetaClass.IsAbstract).
+	- Changed MetaClass table (added a new column IsAbstract:bit)
+	- Added public MetaField.GetList(params string[] NamespaceItems) method
+	- Added mdpsp_sys_GetUniqueFieldName
+	- Added public MetaField.GetUniqueName methods
+	- Changed mdpsp_sys_CreateMetaClass
+	- Changed mdpsp_sys_DeleteMetaClass
+	- Changed mdpsp_sys_LoadMetaClassById
+	- Changed mdpsp_sys_LoadMetaClassByName 
+	- Changed mdpsp_sys_LoadMetaClassByNamespace
+	- Changed mdpsp_sys_LoadMetaClassList
+	- Changed mdpsp_sys_LoadMetaClassListByMetaField
+	- Changed mdpsp_sys_AddMetaFieldToMetaClass
+	- Changed mdpsp_sys_DeleteMetaFieldFromMetaClass
+-------------------------------------------
+Version 1.3
+-------------------------------------------
+2005/02/24
+	- After MetaDataContext.FullTextQueriesEnable has set true, execute AddAllFields automaticaly.
+	- Added Field name has Rules for Regular Identifiers syntax (ms-help://MS.MSDNQTR.2004JAN.1033/acdata/ac_8_con_03_6e9e.htm)
+-------------------------------------------	
+2005/02/22
+	- Changed mdpsp_sys_FullTextQueriesFieldUpdate
+	- Changed mdpsp_sys_MetaFieldAllowSearch
+	- Changed mdpsp_sys_MetaFieldSaveHistory
+-------------------------------------------
+2005/02/18
+	- Added Column 'Namespace' into MetaField Table
+	- Added Default SystemMetaClass Namespace 'Mediachase.MetaDataPlus.System'		
+	- Added Default UserMetaClass Namespace 'Mediachase.MetaDataPlus.User'		
+	- Added Default SystemMetaField Namespace 'Mediachase.MetaDataPlus.System.<%=MetaClassName%>'		
+	- Added Default UserMetaField Namespace 'Mediachase.MetaDataPlus.User'		
+	- Changed mdpsp_sys_AddMetaField
+	- Changed mdpsp_sys_CreateMetaClass
+	- Added mdpsp_sys_LoadMetaFieldByNamespace
+	- Added property 'Namespace' into MetaField class
+	- Changed mdpsp_sys_LoadMetaClassByNamespace
+	- Changed mdpsp_sys_CreateMetaClassProcedure
+	- Added MetaObject.GetHistoryDataReader methods
+	- Changed mdpsp_sys_CreateMetaClass
+	- Change mdpsp_sys_LoadMetaFieldListByMetaClassId
+-------------------------------------------
+Version 1.2
+-------------------------------------------
+2005/02/10
+	- Added One Thread - One SqlTransaction 
+	- Added File Data Storage Type
+-------------------------------------------
+2005/02/02
+	- Added a new Active Tag: CurrentMetaClassId
+	- Added a new Active Tag: Foreach
+-------------------------------------------
+2005/01/31
+	- Added method Mediachase.MetaDataPlus.MetaObject.GetDefaultValue
+	- Fixed if create a new object Default value won't set.
+-------------------------------------------
+2005/01/14
+	- Changed MetaStringDictionaryValue table [Value] field : nvarchar -> ntext
+	- Changed	mdpsp_sys_AddMetaStringDictionary
+	- Added		 mdpsp_sys_LoadMetaAttributes
+	- Added		mdpsp_sys_AddMetaAttribute
+	- Added		mdpsp_sys_DeleteMetaAttribute
+	- Added		mdpsp_sys_ClearMetaAttribute	
+	- Added MetaField.Attributes property
+	- Added	MetaClass.Attributes property	
+	- Added MetaField.Load(string Name) method
+	- Added		mdpsp_sys_LoadMetaFieldByName 
+	- Changed	mdpsp_sys_DeleteMetaField, had added exec mdpsp_sys_ClearMetaAttribute line
+	- Changed	mdpsp_sys_DeleteMetaClass, had added exec mdpsp_sys_ClearMetaAttribute line	
+-------------------------------------------
+2005/01/13
+	- Fix Meta Class's Description fields doesn't support Null value.
+-------------------------------------------
+2005/01/12
+	- Added List auto SP
+	- Added Full Text Query support
+	- Added method Create meta class by parent metaclassid.
+-------------------------------------------
+2004/12/29
+	- Added Save History if all meta fields have not set History Attr.
+	- Added MetaObject.Created field
+	- Added MetaObject.CreatorId field
+2004/12/28
+	- Added Mediachase.MetaDataPlus.Configurator.MetaFieldCollection.IndexOf method
+	- Added Mediachase.MetaDataPlus.Configurator.MetaFieldCollection.Contains method
+	- Added Mediachase.MetaDataPlus.Configurator.MetaClass.GetMetaClassReader methods
+	- Added Mediachase.MetaDataPlus.Configurator.MetaField.GetMetaFieldReader methods
+	- Added mdpsp_sys_CreateMetaClassProcedureAll SP - rebuild all meta data's AutoSP.
+2004/12/28
+	- Added if created MetaObject with ObjectId = -1, MDP will assign an unique value.
+	- Fixed: MetaClass.FriendlyName field did not work.
+	- Added meta type : MetaObject
+	- Added MetaObject's methods:
+		GetDictionaryItem
+		GetDictionaryItems
+		GetFile
+		GetStringDictionary
+		GetMetaObject
+		GetString
+		GetInt32
+		GetDateTime
+	- Added MetaField's properties:
+		AllowSearch	Set
+		SaveHistory Set

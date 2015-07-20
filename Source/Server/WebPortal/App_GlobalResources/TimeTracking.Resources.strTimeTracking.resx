@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Year" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Do you really want to delete this row ?</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add Entry</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete Item</value>
+  </data>
+  <data name="Timesheets" xml:space="preserve">
+    <value>My Timesheets</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save Item</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel Edit Item</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit Item</value>
+  </data>
+  <data name="Daily" xml:space="preserve">
+    <value>Daily</value>
+  </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="tNoProject" xml:space="preserve">
+    <value>No Project</value>
+  </data>
+  <data name="tNotSent" xml:space="preserve">
+    <value>Not Sent</value>
+  </data>
+  <data name="tPending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="tDenied" xml:space="preserve">
+    <value>Denied</value>
+  </data>
+  <data name="tApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="tSend" xml:space="preserve">
+    <value>Send To Approve</value>
+  </data>
+  <data name="PendingTS" xml:space="preserve">
+    <value>Pending Timesheets</value>
+  </data>
+  <data name="tAny" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="tPendTSS" xml:space="preserve">
+    <value>pending timesheet(s)</value>
+  </data>
+  <data name="PendApprTS" xml:space="preserve">
+    <value>Pending Timesheets For Approve</value>
+  </data>
+  <data name="tRate" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="tCost" xml:space="preserve">
+    <value>Cost</value>
+  </data>
+  <data name="tTotalAppr" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="tApprove" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="tDeny" xml:space="preserve">
+    <value>Deny</value>
+  </data>
+  <data name="tDenyTS" xml:space="preserve">
+    <value>Denying TimeSheet</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tApprTS" xml:space="preserve">
+    <value>Approved Timesheets</value>
+  </data>
+  <data name="tUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="tTotalHours" xml:space="preserve">
+    <value>Total Hours</value>
+  </data>
+  <data name="tView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="tFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="tTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="tToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="tYesterday" xml:space="preserve">
+    <value>Yesterday</value>
+  </data>
+  <data name="tThisWeek" xml:space="preserve">
+    <value>This Week</value>
+  </data>
+  <data name="tLastWeek" xml:space="preserve">
+    <value>Last Week</value>
+  </data>
+  <data name="tThisMonth" xml:space="preserve">
+    <value>This Month</value>
+  </data>
+  <data name="tLastMonth" xml:space="preserve">
+    <value>Last Month</value>
+  </data>
+  <data name="tThisYear" xml:space="preserve">
+    <value>This Year</value>
+  </data>
+  <data name="tLastYear" xml:space="preserve">
+    <value>Last Year</value>
+  </data>
+  <data name="tCustom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="tForWeeks" xml:space="preserve">
+    <value>For Weeks</value>
+  </data>
+  <data name="tApprTSV" xml:space="preserve">
+    <value>Approved Timesheet View</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="tThereareNoPT" xml:space="preserve">
+    <value>There are no pending timesheets</value>
+  </data>
+  <data name="tApproveTS" xml:space="preserve">
+    <value>Approving TimeSheet</value>
+  </data>
+  <data name="tSelAccount" xml:space="preserve">
+    <value>Select Account</value>
+  </data>
+  <data name="tRoot" xml:space="preserve">
+    <value>Base Account</value>
+  </data>
+  <data name="AllRows" xml:space="preserve">
+    <value>All Activities</value>
+  </data>
+  <data name="tbsave_save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="tbsave_cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="tWrongDate" xml:space="preserve">
+    <value>Wrong Interval</value>
+  </data>
+  <data name="MaxHoursError" xml:space="preserve">
+    <value>Amount of hours must be not greater than 24:00</value>
+  </data>
+  <data name="NoGridData" xml:space="preserve">
+    <value>No time tracking entry's available</value>
+  </data>
+  <data name="RegisteringFinances" xml:space="preserve">
+    <value>Finances Registering</value>
+  </data>
+</root>

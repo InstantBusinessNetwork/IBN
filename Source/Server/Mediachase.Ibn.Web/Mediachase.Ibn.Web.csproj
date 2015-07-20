@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08E59CC5-A093-4AE2-B416-5759D6D1A594}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.Web</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\AssemblyInfo2.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="Calendar\BaseChildNode.cs" />
+    <Compile Include="Calendar\BaseChildNodeCollection.cs" />
+    <Compile Include="Calendar\BasePostBackControl.cs" />
+    <Compile Include="Calendar\BaseRichControl.cs" />
+    <Compile Include="Calendar\Calendar.cs" />
+    <Compile Include="Calendar\CalendarColorPalette.cs" />
+    <Compile Include="Calendar\CalendarDay.cs" />
+    <Compile Include="Calendar\CalendarDayOfWeek.cs" />
+    <Compile Include="Calendar\CalendarItem.cs" />
+    <Compile Include="Calendar\CalendarItemCollection.cs" />
+    <Compile Include="Calendar\CalendarItemCollection2.cs" />
+    <Compile Include="Calendar\CalendarViewType.cs" />
+    <Compile Include="Calendar\CssTableItemStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendar\DateCollection.cs" />
+    <Compile Include="Calendar\Design\CalendarColorsEditor.cs" />
+    <Compile Include="Calendar\Design\CalendarDesigner.cs" />
+    <Compile Include="Calendar\Design\CalendarItemCollectionEditor.cs" />
+    <Compile Include="Calendar\Design\CalendarRecurrenceEditor.cs" />
+    <Compile Include="Calendar\Design\CheckBoxEditor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendar\Design\DesignUtil.cs" />
+    <Compile Include="Calendar\Design\ItemCollectionEditor.cs" />
+    <Compile Include="Calendar\Design\ObjectImageUrlEditor.cs" />
+    <Compile Include="Calendar\Design\ObjectUrlEditor.cs" />
+    <Compile Include="Calendar\Design\RecurrenceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar\FilterControlBuilder.cs" />
+    <Compile Include="Calendar\Helper.cs" />
+    <Compile Include="Calendar\Holiday.cs" />
+    <Compile Include="Calendar\HolidayCollection.cs" />
+    <Compile Include="Calendar\HtmlInlineWriter.cs" />
+    <Compile Include="Calendar\LevelCheck.cs" />
+    <Compile Include="Calendar\Owner.cs" />
+    <Compile Include="Calendar\OwnerCollection.cs" />
+    <Compile Include="Calendar\RecurrencePattern.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Calendar\ResDescriptionAttribute.cs" />
+    <Compile Include="Calendar\Resources\Design.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Design.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Calendar\TimescaleTopSpan.cs" />
+    <Compile Include="Calendar\Util\CalendarColorConstants.cs" />
+    <Compile Include="Calendar\Util\CalendarColors.cs" />
+    <Compile Include="Calendar\Util\DataSourceHelper.cs" />
+    <Compile Include="Calendar\Util\ItemLinkedList.cs" />
+    <Compile Include="Calendar\Util\Math.cs" />
+    <Compile Include="Drawing\Charting\BarChart.cs" />
+    <Compile Include="Drawing\Charting\Chart.cs" />
+    <Compile Include="Drawing\Charting\ChartItem.cs" />
+    <Compile Include="Drawing\Charting\ChartItemsCollection.cs" />
+    <Compile Include="Drawing\Charting\ChartItemsComparer.cs" />
+    <Compile Include="Drawing\Charting\GraphicImage.cs" />
+    <Compile Include="Drawing\Charting\PieChart.cs" />
+    <Compile Include="Drawing\Gantt\AttributeInfo.cs" />
+    <Compile Include="Drawing\Gantt\AttributeSelector.cs" />
+    <Compile Include="Drawing\Gantt\AxisElement.cs" />
+    <Compile Include="Drawing\Gantt\BodyElement.cs" />
+    <Compile Include="Drawing\Gantt\CalendarElement.cs" />
+    <Compile Include="Drawing\Gantt\DataElement.cs" />
+    <Compile Include="Drawing\Gantt\DayElement.cs" />
+    <Compile Include="Drawing\Gantt\DrawingContext.cs" />
+    <Compile Include="Drawing\Gantt\Element.cs" />
+    <Compile Include="Drawing\Gantt\Enums.cs" />
+    <Compile Include="Drawing\Gantt\GanttControlException.cs" />
+    <Compile Include="Drawing\Gantt\GanttElement.cs" />
+    <Compile Include="Drawing\Gantt\GanttStyle.cs" />
+    <Compile Include="Drawing\Gantt\GanttView.cs" />
+    <Compile Include="Drawing\Gantt\HeadElement.cs" />
+    <Compile Include="Drawing\Gantt\IntervalElement.cs" />
+    <Compile Include="Drawing\Gantt\Iso8601WeekNumber.cs" />
+    <Compile Include="Drawing\Gantt\PointElement.cs" />
+    <Compile Include="Drawing\Gantt\RelationElement.cs" />
+    <Compile Include="Drawing\Gantt\SimpleSelector.cs" />
+    <Compile Include="Drawing\Gantt\SpanElement.cs" />
+    <Compile Include="Drawing\Gantt\Style.cs" />
+    <Compile Include="Drawing\Gantt\StyleSelector.cs" />
+    <Compile Include="Drawing\Gantt\TimeCell.cs" />
+    <Compile Include="Interfaces\ICustomField.cs" />
+    <Compile Include="Interfaces\IFilterControl.cs" />
+    <Compile Include="Interfaces\IPageTemplateTitle.cs" />
+    <Compile Include="Interfaces\IWizardControl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Calendar\Resources\Design.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Design.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="CustomDictionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

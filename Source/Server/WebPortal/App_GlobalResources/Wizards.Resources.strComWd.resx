@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="QuickTipBasic1">
+		<value>are unlike normal </value>
+	</data>
+	<data name="QuickTipBasic2">
+		<value> tracking systems in that they can support file attachments, comments, and other special features like the ones to the left.  Use any of the choices to the left now, or wait till later to do them.</value>
+	</data>
+	<data name="UploadFileFor_issue">
+		<value>Select File to be Attached to this Issue</value>
+	</data>
+	<data name="UploadFileFor_todo">
+		<value>Select File to be Attached to this ToDo</value>
+	</data>	
+	<data name="UploadFileFor_calendarentry">
+		<value>Select File to be Attached to this Entry</value>
+	</data>	
+	<data name="QuickTipUpload">
+		<value>Some comment for uploading process.</value>
+	</data>
+	<data name="SelectCategories">
+		<value>Select General Categories for best reporting and filtering</value>
+	</data>
+	<data name="QuickTipCategories">
+		<value>Some comments for selecting categories.</value>
+	</data>
+	<data name="AddComments">
+		<value>Add your text comments</value>
+	</data>
+	<data name="QuickTipComments">
+		<value>Some comments for "Comments Adding" Process</value>
+	</data>
+	<data name="tUpload">
+		<value>Add File Attachment to Your</value>
+	</data>
+	<data name="tCategories">
+		<value>You can assign General Categories.</value>
+	</data>
+	<data name="tComments">
+		<value>You can add some comments.</value>
+	</data>
+	<data name="tTopTitle">
+		<value>Additional Actions you Can Take.</value>
+	</data>
+	<data name="s1SubTitleInc">
+		<value>Congratulations! Your Issue was created!</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Add File Attachment to Your </value>
+	</data>
+	<data name="s3SubTitle1">
+		<value>Categorizing Your </value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Adding Comments/Notes to Your </value>
+	</data>
+	<data name="tSave">
+		<value>Save</value>
+	</data>
+	<data name="tClose">
+		<value>Close</value>
+	</data>
+	<data name="DivBasicInc">
+		<value>Some comments for issue basic page</value>
+	</data>
+	<data name="DivUpload">
+		<value>Some comments for upload page</value>
+	</data>
+	<data name="DivCategories">
+		<value>Some comments for categories page</value>
+	</data>
+	<data name="DivComments">
+		<value>Some comment for comments page</value>
+	</data>
+	<data name="tUploadBtn">
+		<value>Upload</value>
+	</data>
+	<data name="TextHeaderInc">
+		<value>What Else Can You Do with Your Issue?</value>
+	</data>
+	<data name="DivBasicToDo">
+		<value>Some comments for todo basic page</value>
+	</data>
+	<data name="DivBasicCalEntry">
+		<value>Some comments for calendar entry basic page</value>
+	</data>
+	<data name="TextHeaderToDo">
+		<value>What Else Can You Do with Your ToDo?</value>
+	</data>
+	<data name="TextHeaderCalEntry">
+		<value>What Else Can You Do with Your Calendar Entry?</value>
+	</data>
+	<data name="s1SubTitleToDo">
+		<value>Congratulations! Your ToDo was created!</value>
+	</data>
+	<data name="s1SubTitleCalEntry">
+		<value>Congratulations! Your Calendar Entry was created!</value>
+	</data>
+	<data name="incident_for">
+		<value>Issues</value>
+	</data>
+	<data name="calendarentry_for">
+		<value>Calendar Entries</value>
+	</data>
+	<data name="todo_for">
+		<value>ToDo's</value>
+	</data>
+	<data name="incident">
+		<value>Issue</value>
+	</data>
+	<data name="calendarentry">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="todo">
+		<value>ToDo</value>
+	</data>
+	<data name="incidentRP">
+		<value>Issue</value>
+	</data>
+	<data name="calendarentryRP">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="todoRP">
+		<value>ToDo</value>
+	</data>
+	<data name="incidentDP">
+		<value>Issue</value>
+	</data>
+	<data name="calendarentryDP">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="todoDP">
+		<value>ToDo</value>
+	</data>
+	<data name="s3SubTitle2">
+		<value> for Reporting</value>
+	</data>
+	<data name="blank_for">
+		<value></value>
+	</data>
+	<data name="blankRP">
+		<value></value>
+	</data>
+	<data name="twCreationDate">
+		<value>Creation Date</value>
+	</data>
+	<data name="twDescription">
+		<value>Description</value>
+	</data>
+	<data name="twResolution">
+		<value>Resolution</value>
+	</data>
+	<data name="twWorkaround">
+		<value>Workaround</value>
+	</data>
+	<data name="twTitle">
+		<value>Title</value>
+	</data>
+	<data name="twPriority">
+		<value>Priority</value>
+	</data>
+	<data name="twType">
+		<value>Type</value>
+	</data>
+	<data name="twSeverity">
+		<value>Severity</value>
+	</data>
+	<data name="tChange">
+		<value>Change</value>
+	</data>
+	<data name="tSave1">
+		<value>Save</value>
+	</data>
+	<data name="tCancel">
+		<value>Cancel</value>
+	</data>
+	<data name="imSelectObject">
+		<value>Select object</value>
+	</data>
+	<data name="imSelectSourceType">
+		<value>Select source type</value>
+	</data>
+	<data name="imSelectSourceFile">
+		<value>Select source file</value>
+	</data>
+	<data name="imFieldsMatching">
+		<value>Fields matching</value>
+	</data>
+	<data name="imWantToCreate">
+		<value>Do you want to create a new list?</value>
+	</data>
+	<data name="imNewListCreation">
+		<value>New List creation</value>
+	</data>
+	<data name="imSelectExistingList">
+		<value>Select existing list for appending new information</value>
+	</data>
+	<data name="imIssues">
+		<value>Issues</value>
+	</data>
+	<data name="imLists">
+		<value>Lists</value>
+	</data>
+	<data name="imExcel">
+		<value>Excel</value>
+	</data>
+	<data name="imXML">
+		<value>XML</value>
+	</data>
+	<data name="imNotSet">
+		<value>Not Set</value>
+	</data>
+	<data name="imErrorListText">
+		<value>The spreadhseet you are trying to import cannot be accepted by the portal.  
+		This may be becase:&lt;br&gt;&lt;br&gt;&lt;li&gt;You are using a formatted spreadsheet&lt;br&gt;&lt;li&gt;
+		The fields in your spreadsheet do not match the data types supported by the portal&lt;br&gt;&lt;li&gt;
+		The spreadsheet is not a basic column and row format&lt;br&gt;&lt;li&gt;
+		Some other aspect such as calculation cells&lt;br&gt;&lt;br&gt;
+		You can try to clean up the spreadsheet and try again or e-mail the spreadsheet to {0} so that we can assist you.</value>
+	</data>
+	<data name="imSomeErrors">
+		<value>Some rows are incorrect!&lt;br&gt;Correct rows count: {0}&lt;br&gt;Error rows count: {1}
+		&lt;br&gt;You can add only correct rows. Click \"Create\" for it.&lt;br&gt;Click \"Cancel\" to cancel this action.</value>
+	</data>
+	<data name="imWasDone">
+		<value>Import was done!&lt;br&gt;Was Added: {0} rows.</value>
+	</data>
+	<data name="imSimpleError">
+		<value>Error!!!</value>
+	</data>
+	<data name="imTopTitle">
+		<value>Issues Import Wizard</value>
+	</data>
+	<data name="imStep1Comments">
+		<value>This wizard will assist you with importing data from Excel or XML into the portal</value>
+	</data>
+	<data name="imStep2Comments">
+		<value>This wizard will assist you with importing data from Excel or XML into the portal</value>
+	</data>
+	<data name="imStep3Comments">
+		<value>You can create new list or use existing.</value>
+	</data>
+	<data name="imStep3NewList">
+		<value>New List</value>
+	</data>
+	<data name="imStep3UpdateExList">
+		<value>Update for existing list</value>
+	</data>
+	<data name="imStep3ListTitle">
+		<value>List Title</value>
+	</data>
+	<data name="imStep3GenCats">
+		<value>General Categories</value>
+	</data>
+	<data name="imStep3Description">
+		<value>Description</value>
+	</data>
+	<data name="imStep3Type">
+		<value>Type</value>
+	</data>
+	<data name="imStep3Status">
+		<value>Status</value>
+	</data>
+	<data name="imStep3SelectList">
+		<value>Select list</value>
+	</data>
+	<data name="imStep4SourceField">
+		<value>Source Field</value>
+	</data>
+	<data name="imStep4IBNField">
+		<value>Portal Field</value>
+	</data>
+	<data name="imSubSelectObject">
+		<value>Select Object</value>
+	</data>
+	<data name="imSubSourceType">
+		<value>Select Source Type</value>
+	</data>
+	<data name="imSubObject">
+		<value>sub</value>
+	</data>
+	<data name="imSubResult">
+		<value>Results</value>
+	</data>
+	<data name="imSub6">
+		<value>sub6</value>
+	</data>
+</root>

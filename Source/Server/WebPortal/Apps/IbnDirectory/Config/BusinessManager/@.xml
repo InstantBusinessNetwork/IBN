@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Directory.Principal" metaClass="DirectoryPrincipal" method="*" type="Mediachase.Ibn.Business.Directory.DirectoryPrincipalRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Directory.OrganizationalUnit" metaClass="DirectoryOrganizationalUnit" method="*" type="Mediachase.Ibn.Business.Directory.DirectoryOrganizationalUnitRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Directory.SecureRole" metaClass="DirectorySecureRole" method="*" type="Mediachase.Ibn.Business.Directory.DirectorySecureRoleRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Directory.WorkGroup" metaClass="DirectoryWorkGroup" method="*" type="Mediachase.Ibn.Business.Directory.DirectoryWorkGroupRequestHandler, Mediachase.IBN.Business"/>
+			<Handler id="Mediachase.Directory.User" metaClass="DirectoryUser" method="*" type="Mediachase.Ibn.Business.Directory.DirectoryUserRequestHandler, Mediachase.IBN.Business"/>
+		</add>
+	</Handlers>
+	<Plugins>
+	</Plugins>
+</BusinessManager>

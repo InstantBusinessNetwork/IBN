@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="All">
+		<value>All</value>
+	</data>
+	<data name="Task">
+		<value>Project Tasks</value>
+	</data>
+	<data name="ToDo">
+		<value>ToDo's</value>
+	</data>
+	<data name="CalendarEntry">
+		<value>Calendar Entry</value>
+	</data>
+	<data name="Event">
+		<value>Events</value>
+	</data>
+	<data name="Meeting">
+		<value>Meetings</value>
+	</data>
+	<data name="Appointment">
+		<value>Appointments</value>
+	</data>
+	<data name="tTask">
+		<value>Project Task</value>
+	</data>
+	<data name="tToDo">
+		<value>ToDo</value>
+	</data>
+	<data name="tEvent">
+		<value>Event</value>
+	</data>
+	<data name="tMeeting">
+		<value>Meeting</value>
+	</data>
+	<data name="tAppointment">
+		<value>Appointment</value>
+	</data>
+	<data name="People">
+		<value>People</value>
+	</data>
+	<data name="Projects">
+		<value>Projects</value>
+	</data>
+	<data name="Type">
+		<value>Type</value>
+	</data>
+	<data name="MyCalendar">
+		<value>My Work</value>
+	</data>
+	<data name="Apply">
+		<value>Apply</value>
+	</data>
+	<data name="Reset">
+		<value>Reset</value>
+	</data>
+	<data name="PD">
+		<value>Previous Day</value>
+	</data>
+	<data name="ND">
+		<value>Next Day</value>
+	</data>
+	<data name="PW">
+		<value>Previous Week</value>
+	</data>
+	<data name="NW">
+		<value>Next Week</value>
+	</data>
+	<data name="PM">
+		<value>Previous Month</value>
+	</data>
+	<data name="NM">
+		<value>Next Month</value>
+	</data>
+	<data name="PY">
+		<value>Previous Year</value>
+	</data>
+	<data name="NY">
+		<value>Next Year</value>
+	</data>
+	<data name="NotSet">
+		<value>Not Set</value>
+	</data>
+	<data name="From">
+		<value>From</value>
+	</data>
+	<data name="To">
+		<value>To</value>
+	</data>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="FinishDate">
+		<value>Finish Date</value>
+	</data>
+	<data name="AddEvent">
+		<value>Add Calendar Entry</value>
+	</data>
+	<data name="AddToDo">
+		<value>Add ToDo</value>
+	</data>
+	<data name="View">
+		<value>View</value>
+	</data>
+	<data name="AllTeamMembers">
+		<value>All Team Members</value>
+	</data>
+	<data name="AssignedManaged">
+		<value>Managed and Assigned</value>
+	</data>
+	<data name="Assigned">
+		<value>Only Assigned</value>
+	</data>
+	<data name="Managed">
+		<value>Only Managed</value>
+	</data>
+	<data name="AddTask">
+		<value>Add Task</value>
+	</data>
+	<data name="tAllday">
+		<value>All day:</value>
+	</data>
+	<data name="Export">
+		<value>Export to Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Export to XML</value>
+	</data>
+	<data name="CompletionPercent">
+		<value>Completion Percent</value>
+	</data>
+	<data name="Resource">
+		<value>Resource</value>
+	</data>
+	<data name="CollapseAll">
+		<value>Collapse All Resources</value>
+	</data>
+	<data name="ExpandAll">
+		<value>Expand All Resources</value>
+	</data>
+	<data name="tMileStone">
+		<value>MileStone</value>
+	</data>
+	<data name="tPrjListView">
+		<value>Projects List View</value>
+	</data>
+	<data name="tResourceView">
+		<value>Resource View</value>
+	</data>
+	<data name="DeleteTxtEvent">
+		<value>
+			&lt;p align="left" class="text"&gt;The deleting Calendar Entry can have related timesheets. You can delete such timesheets or leave them.&lt;br&gt;
+			&lt;br&gt;
+			- To delete Calendar Entry and timesheet records linked with this Calendar Entry click "Delete 
+			All".&lt;br&gt;
+			&lt;br&gt;
+			-To delete Calendar Entry without deleting timesheet records click "Delete".&lt;br&gt;
+			&lt;br&gt;
+			-To cancel this action, click "Cancel".&lt;/p&gt;
+		</value>
+	</data>
+	<data name="tCancel">
+		<value>Cancel</value>
+	</data>
+	<data name="tDelete">
+		<value>Delete</value>
+	</data>
+	<data name="tDeleteAll">
+		<value>Delete All</value>
+	</data>
+	<data name="tDeleteEvent">
+		<value>Delete Event</value>
+	</data>
+	<data name="tWarningTodo">
+		<value>Do you really want to delete this todo?</value>
+	</data>
+	<data name="tWarningTask">
+		<value>Do you really want to delete this task?</value>
+	</data>
+	<data name="tWarningEvent">
+		<value>Do you really want to delete this calendar entry?</value>
+	</data>
+</root>

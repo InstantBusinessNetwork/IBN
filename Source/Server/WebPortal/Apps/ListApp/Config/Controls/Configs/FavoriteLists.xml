@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>34D7E2D1-1C25-49a0-9C55-24CB159BEB3B</Uid>
+	<Title>{IbnFramework.Global:_mc_FavoriteLists}</Title>
+	<Description>{IbnFramework.Global:_mc_FavoriteListsDescription}</Description>
+	<Path>~/Apps/ListApp/Modules/Workspace/FavoriteLists.ascx</Path>	
+	<Category>Mediachase</Category>
+	<IconPath>~/Images/IbnFramework/favoriteLists.gif</IconPath>
+</DynamicControlInfo>

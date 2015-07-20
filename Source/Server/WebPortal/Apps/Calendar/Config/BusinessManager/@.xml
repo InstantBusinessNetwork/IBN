@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid XML Studio 1.0.8.0 (http://www.liquid-technologies.com) -->
+<BusinessManager>
+	<Handlers>
+		<add>
+			<Handler id="Mediachase.Events.CalendarEvent" metaClass="CalendarEvent" method="*" type="Mediachase.Ibn.Events.Handlers.CalendarEventRequestHandler, Mediachase.Ibn.Events" />
+			<Handler id="Mediachase.Events.CalendarEventRecurrence" metaClass="CalendarEventRecurrence" method="*" type="Mediachase.Ibn.Events.Handlers.CalendarEventRecurrenceRequestHandler, Mediachase.Ibn.Events" />
+			<Handler id="Mediachase.Events.CalendarEventResource" metaClass="CalendarEventResource" method="*" type="Mediachase.Ibn.Events.Handlers.CalendarEventResourceRequestHandler, Mediachase.Ibn.Events" />
+		</add>
+	</Handlers>
+	<Plugins>
+		<add>
+			<!--<Plugin id="ChangeTracker_Event_Create" method="*" metaClass="CalendarEvent" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.Sync.EntityObjectProvider.CalendarEventChangeTracker, Mediachase.Sync.EntityObjectProvider" />
+			<Plugin id="ChangeTracker_Recurrence" method="*" metaClass="CalendarEventRecurrence" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.Sync.EntityObjectProvider.CalendarEventChangeTracker, Mediachase.Sync.EntityObjectProvider" />
+			<Plugin id="ChangeTracker_Resource" method="*" metaClass="CalendarEventResource" eventStage="PostMainOperationInsideTranasaction" type="Mediachase.Sync.EntityObjectProvider.CalendarEventChangeTracker, Mediachase.Sync.EntityObjectProvider" />-->
+			
+			<Plugin id="SecurityRead" method="*" metaClass="CalendarEvent" eventStage="PreMainOperationInsideTranasaction" type="Mediachase.Ibn.Events.Plugins.SecurityPlugin, Mediachase.Ibn.Events"/>
+		</add>
+	</Plugins>
+</BusinessManager>

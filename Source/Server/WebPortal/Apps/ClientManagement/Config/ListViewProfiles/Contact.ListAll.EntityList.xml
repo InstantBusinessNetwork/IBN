@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{9AD6F076-65F3-4a0b-AD51-EA14CA95C5A2}</Id>
+	<Name>{IbnFramework.Client:AllContacts}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>Contacts</FieldSetName>
+	<FieldSet>
+		<string>FullName</string>
+		<string>FirstName</string>
+		<string>LastName</string>
+		<string>MobilePhone</string>
+		<string>OrganizationId</string>
+		<string>EMailAddress1</string>
+		<string>Address.City</string>
+		<string>Address.Line1</string>
+	</FieldSet>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+	<ColumnsUI>
+		<Column field="FullName" width="150" />
+		<Column field="FirstName" width="90" />
+		<Column field="LastName" width="80" />
+		<Column field="MobilePhone" width="130" />
+		<Column field="OrganizationId" width="100" />
+		<Column field="EMailAddress1" width="100" />
+		<Column field="Address.City" width="90" />
+		<Column field="Address.Line1" width="110" />	
+	</ColumnsUI>
+</ListViewProfile>

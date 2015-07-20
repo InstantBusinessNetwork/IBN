@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mcgen xmlns="mediachase.codegen.config" language="C#" template="Templates\RowObjectTemplate3.aspx">
+	<TableObject>
+		<ConnectionString>Data source=S2;Initial catalog=ibn46portal;User ID=dev;Password=</ConnectionString>
+		<Table>mcweb_ReportAce</Table>
+		<Params>
+			<add key="Namespace" value="Mediachase.IBN.Business.ReportSystem"/>
+			<add key="ClassName" value="mcweb_ReportAceRow"/>
+			<add key="AccessLevel" value="internal"/>
+		</Params>
+	</TableObject>
+</mcgen>

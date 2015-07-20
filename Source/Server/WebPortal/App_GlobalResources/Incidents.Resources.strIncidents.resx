@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tbIncidentsList">
+		<value>Issues/Incidents Tracking Center</value>
+	</data>
+	<data name="tAllIncidents">
+		<value>All Issues</value>
+	</data>
+	<data name="tMyIncidents">
+		<value>My Issues</value>
+	</data>
+	<data name="tManagedIncidents">
+		<value>Managed Issues</value>
+	</data>
+	<data name="tbIncidentAdd">
+		<value>New Issue</value>
+	</data>
+	<data name="tMailIncidents">
+		<value>E-mail Issues</value>
+	</data>
+	<data name="Export">
+		<value>Export to Excel</value>
+	</data>
+	<data name="XMLExport">
+		<value>Export to XML</value>
+	</data>
+	<data name="tReports">
+		<value>Reports</value>
+	</data>
+	<data name="Help">
+		<value>Use the links in this section to view issues related reports</value>
+	</data>
+	<data name="IncidentReports">
+		<value>Issues Reports</value>
+	</data>
+	<data name="IncidentStatistics">
+		<value>Issues Statistics</value>
+	</data>
+	<data name="XMLReport">
+		<value>Custom Report Wizard</value>
+	</data>
+	<data name="QuickInfo">
+		<value>Quick information</value>
+	</data>
+	<data name="TotalIssuesCount">
+		<value>Total Issues Count</value>
+	</data>
+	<data name="NewIssuesCount">
+		<value>New Issues Count</value>
+	</data>
+	<data name="ActiveIssuesCount">
+		<value>Active Issues Count</value>
+	</data>
+	<data name="ClosedIssuesCount">
+		<value>Closed Issues Count</value>
+	</data>
+	<data name="AvgNewStateTime">
+		<value>Avg. Time in New State</value>
+	</data>
+	<data name="AvgActiveStateTime">
+		<value>Avg. Time in Active State</value>
+	</data>
+	<data name="AvgResolveTime">
+		<value>Avg. Time to Resolve</value>
+	</data>
+	<data name="IssuesByStatus">
+		<value>Issues Distribution by Status</value>
+	</data>
+	<data name="IssuesByType">
+		<value>Issues Distribution by Type</value>
+	</data>
+	<data name="oClosed">
+		<value>Closed</value>
+	</data>
+	<data name="oActive">
+		<value>Active</value>
+	</data>
+	<data name="oNew">
+		<value>New</value>
+	</data>
+	<data name="HelpDeskReports">
+		<value>Help Desk Reports</value>
+	</data>
+	<data name="OverallSnapshotReport">
+		<value>Help Desk/Overall Snapshot Report</value>
+	</data>
+	<data name="IssuesAnalysis">
+		<value>Issues Analysis (Active)</value>
+	</data>
+	<data name="OverallIssuesAnalysis">
+		<value>View by Status</value>
+	</data>
+	<data name="IssuesAnalysisByType">
+		<value>View by Type</value>
+	</data>
+	<data name="IssuesAnalysisByManager">
+		<value>View by Manager</value>
+	</data>
+	<data name="IssuesAnalysisByCategory">
+		<value>View by Category</value>
+	</data>
+	<data name="IssuesAnalysisClosed">
+		<value>Closed Issues</value>
+	</data>
+	<data name="Note">
+		<value>You must enter data into the portal in order for reporting to become available
+</value>
+	</data>
+	<data name="IncidentsNotAssigned">
+		<value>New/Not Assigned Internal Issues</value>
+	</data>
+	<data name="tNoProject">
+		<value>No Project</value>
+	</data>
+	<data name="tImport">
+		<value>Import Issues</value>
+	</data>
+	<data name="ImportExport">
+		<value>Import/Export</value>
+	</data>
+</root>

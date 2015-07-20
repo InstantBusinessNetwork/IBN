@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{7C879A8E-B745-440f-97D6-006E7999728D}</Id>
+	<Name>{IbnFramework.Project:ManagerSet}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>ProjectsDefault</FieldSetName>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters>
+		<FilterElement>
+			<Source>ProjectManagerId</Source>
+			<ValueIsTemplate>true</ValueIsTemplate>
+			<Value xsi:type="xsd:string">{Security:CurrentUserId}</Value>
+		</FilterElement>
+	</Filters>
+</ListViewProfile>

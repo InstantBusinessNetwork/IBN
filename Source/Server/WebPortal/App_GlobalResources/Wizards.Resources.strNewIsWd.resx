@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tTopTitle">
+		<value>You are Assigning a New Issue/Incident to Be Tracked and Resolved</value>
+	</data>
+	<data name="s1SubTitle">
+		<value>Defining Your Issue/Incident</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Categorize Your Issue for Reporting and Filtering</value>
+	</data>
+	<data name="s3SubTitle">
+		<value>Review  Your Issue/Incident</value>
+	</data>
+	<data name="s1TopDiv">
+		<value>Issues/Incidents can be used for tracking, coordinating, and managing related collections of data related to problems or feedback.</value>
+	</data>
+	<data name="s2TopDiv">
+		<value>Some comments</value>
+	</data>
+	<data name="s3TopDiv">
+		<value>This is what you have entered.  Please check for accuracy and click create to save or use the back button to go back and make changes.</value>
+	</data>
+	<data name="s1IssueTitle">
+		<value>Issue Title</value>
+	</data>
+	<data name="s1Priority">
+		<value>Select priority for your issue:</value>
+	</data>
+	<data name="s1Severity">
+		<value>Select your issue severity:</value>
+	</data>
+	<data name="s1IssueType">
+		<value>Select type of your issue:</value>
+	</data>
+	<data name="s1QuickTip">
+		<value>Type your personal comments for this issue!</value>
+	</data>
+	<data name="s2IssueCategory">
+		<value>Select issue categories:</value>
+	</data>
+	<data name="s2QuickTip">
+		<value>For reporting and filtering
+purposes you can choose
+from the categories you can
+select from the categories
+listed to the left. Your issue
+can be connected to multiple
+categories if you wish.
+Remember this can be
+changed later on.</value>
+	</data>
+	<data name="s2Project">
+		<value>Is this Related to a Project?</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>Project not set</value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Your Issue/Incident Has been created!</value>
+	</data>
+	<data name="s3Title">
+		<value>Issue Title</value>
+	</data>
+	<data name="s3Type">
+		<value>Issue Type</value>
+	</data>
+	<data name="s3Priority">
+		<value>Issue Priority</value>
+	</data>
+	<data name="s3Severity">
+		<value>Issue Severity</value>
+	</data>
+	<data name="s3ProjectTitle">
+		<value>Project Title</value>
+	</data>
+	<data name="s3QuickTip">
+		<value>Your typed information!</value>
+	</data>
+	<data name="s4TopDiv">
+		<value>You will now be placed into the main issue/incident management screen to perform a number
+of additional functions with your issue.</value>
+	</data>
+	<data name="s4TextHeader">
+		<value>What Else Can You Do with Your Issue?</value>
+	</data>
+	<data name="s4Text">
+		<value>Some Text</value>
+	</data>
+</root>

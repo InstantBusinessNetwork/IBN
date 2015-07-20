@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EventId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="EventTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="EventParticipants" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="EventOrganizer" xml:space="preserve">
+    <value>Organizer</value>
+  </data>
+  <data name="EventOrganizerId" xml:space="preserve">
+    <value>Organizer Id</value>
+  </data>
+  <data name="EventCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="EventCreatorId" xml:space="preserve">
+    <value>Creator Id</value>
+  </data>
+  <data name="EventType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="EventProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="EventProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="EventStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="EventFinishDate" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="EventGeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="UserFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="UserLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="UserEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UserPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="UserFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="UserMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="UserJobTitle" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="UserDepartment" xml:space="preserve">
+    <value>Department</value>
+  </data>
+  <data name="UserLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="UserActivity" xml:space="preserve">
+    <value>Activity</value>
+  </data>
+  <data name="UserSecureGroups" xml:space="preserve">
+    <value>All Groups</value>
+  </data>
+  <data name="UserCustomGroups" xml:space="preserve">
+    <value>Custom Groups</value>
+  </data>
+  <data name="UserRoles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="IncId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="IncTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="IncType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="IncStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="IncProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="IncProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="IncPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="IncCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="IncCreatorId" xml:space="preserve">
+    <value>Creator Id</value>
+  </data>
+  <data name="IncManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="IncManagerId" xml:space="preserve">
+    <value>Manager Id</value>
+  </data>
+  <data name="IncCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="IncActivationDate" xml:space="preserve">
+    <value>Activation Date</value>
+  </data>
+  <data name="IncCloseDate" xml:space="preserve">
+    <value>Close Date</value>
+  </data>
+  <data name="IncGeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="IncIncidentCategories" xml:space="preserve">
+    <value>Issue Categories</value>
+  </data>
+  <data name="IncDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="IncResolution" xml:space="preserve">
+    <value>Resolution</value>
+  </data>
+  <data name="IncWorkaround" xml:space="preserve">
+    <value>Workaround</value>
+  </data>
+  <data name="IncTaskTime" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="AssetId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="AssetVersionId" xml:space="preserve">
+    <value>Version Id</value>
+  </data>
+  <data name="AssetCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="AssetModifiedDate" xml:space="preserve">
+    <value>Modified Date</value>
+  </data>
+  <data name="AssetCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="AssetTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="AssetType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AssetFileName" xml:space="preserve">
+    <value>File Name</value>
+  </data>
+  <data name="AssetSize" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="AssetURL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="AssetParentFolder" xml:space="preserve">
+    <value>Parent Folder</value>
+  </data>
+  <data name="AssetParentFolderId" xml:space="preserve">
+    <value>Parent Folder Id</value>
+  </data>
+  <data name="AssetContentType" xml:space="preserve">
+    <value>Content Type</value>
+  </data>
+  <data name="PrjId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="PrjTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="PrjCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="PrjManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="PrjManagerId" xml:space="preserve">
+    <value>Manager Id</value>
+  </data>
+  <data name="PrjExecutiveManager" xml:space="preserve">
+    <value>Executive Manager</value>
+  </data>
+  <data name="PrjCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="PrjStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="PrjFinishDate" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="PrjTargetFinishDate" xml:space="preserve">
+    <value>Target End Date</value>
+  </data>
+  <data name="PrjActualFinishDate" xml:space="preserve">
+    <value>Actual End Date</value>
+  </data>
+  <data name="PrjStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="PrjClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="PrjGeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="PrjProjectCategories" xml:space="preserve">
+    <value>Project Categories</value>
+  </data>
+  <data name="PrjResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="ProjectActivitesId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ProjectActivitesTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ProjectActivitesProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="ProjectActivitesParticipants" xml:space="preserve">
+    <value>Participants</value>
+  </data>
+  <data name="ProjectActivitesCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="ProjectActivitesCreatorId" xml:space="preserve">
+    <value>Creator Id</value>
+  </data>
+  <data name="ProjectActivitesManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="ProjectActivitesManagerId" xml:space="preserve">
+    <value>Manager Id</value>
+  </data>
+  <data name="ProjectActivitesCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="ProjectActivitesStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="ProjectActivitesFinishDate" xml:space="preserve">
+    <value>Finish Date</value>
+  </data>
+  <data name="ProjectActivitesStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ProjectActivitesType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ProjectActivitesGeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="ProjectActivitesPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ToDoId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="ToDoTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="ToDoResources" xml:space="preserve">
+    <value>Resources</value>
+  </data>
+  <data name="ToDoCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="ToDoCreatorId" xml:space="preserve">
+    <value>Creator Id</value>
+  </data>
+  <data name="ToDoManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="ToDoManagerId" xml:space="preserve">
+    <value>Manager Id</value>
+  </data>
+  <data name="ToDoProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="ToDoProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="ToDoCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="ToDoStartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="ToDoDueDate" xml:space="preserve">
+    <value>Due Date</value>
+  </data>
+  <data name="ToDoOverallStatus" xml:space="preserve">
+    <value>Overall status (%)</value>
+  </data>
+  <data name="ToDoStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ToDoType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ToDoGeneralCategories" xml:space="preserve">
+    <value>General Categorie</value>
+  </data>
+  <data name="PrjExecutiveManagerId" xml:space="preserve">
+    <value>Executive Manager Id</value>
+  </data>
+  <data name="PrjType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ToDoStatus_Overdue" xml:space="preserve">
+    <value>Overdue</value>
+  </data>
+  <data name="ToDoStatus_Upcoming" xml:space="preserve">
+    <value>Upcoming</value>
+  </data>
+  <data name="ToDoStatus_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="ToDoTaskTime" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="ToDoDuration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="AssetType_Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="AssetType_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="UserActivityInactive" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="UserActivityPending" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="UserActivityActive" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="PrjPercentCompleted" xml:space="preserve">
+    <value>Percent Completed</value>
+  </data>
+  <data name="PrjPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="PrjPhase" xml:space="preserve">
+    <value>Phase</value>
+  </data>
+  <data name="PrjPortfolio" xml:space="preserve">
+    <value>Portfolio</value>
+  </data>
+  <data name="PrjFinanceTarget" xml:space="preserve">
+    <value>Target Budget</value>
+  </data>
+  <data name="PrjFinanceEstimate" xml:space="preserve">
+    <value>Estimate Budget</value>
+  </data>
+  <data name="PrjFinanceActual" xml:space="preserve">
+    <value>Actual Budget</value>
+  </data>
+  <data name="PortfolioId" xml:space="preserve">
+    <value>Portfolio Id</value>
+  </data>
+  <data name="PortfolioTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="PortfolioCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="PortfolioLastEditor" xml:space="preserve">
+    <value>Last Editor</value>
+  </data>
+  <data name="PortfolioCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="PortfolioLastSavedDate" xml:space="preserve">
+    <value>Last Saved Date</value>
+  </data>
+  <data name="PortfolioProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="PortfolioProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="PortfolioTotalProjectCount" xml:space="preserve">
+    <value>Total Project Count</value>
+  </data>
+  <data name="PortfolioProjectStatus" xml:space="preserve">
+    <value>Project Status</value>
+  </data>
+  <data name="PortfolioActiveProjectCount" xml:space="preserve">
+    <value>Active Project Count</value>
+  </data>
+  <data name="PortfolioFinanceTarget" xml:space="preserve">
+    <value>Summary Target Budget</value>
+  </data>
+  <data name="PortfolioFinanceEstimate" xml:space="preserve">
+    <value>Summary Estimate Budget</value>
+  </data>
+  <data name="PortfolioFinanceActual" xml:space="preserve">
+    <value>Summary Actual Budget</value>
+  </data>
+  <data name="tNoProject" xml:space="preserve">
+    <value>No Project</value>
+  </data>
+  <data name="ToDoActualDueDate" xml:space="preserve">
+    <value>Actual Due Date</value>
+  </data>
+  <data name="IncBox" xml:space="preserve">
+    <value>Issue box</value>
+  </data>
+  <data name="PrjCurrentPlan" xml:space="preserve">
+    <value>Current Plan</value>
+  </data>
+  <data name="PrjFact" xml:space="preserve">
+    <value>Fact</value>
+  </data>
+  <data name="IncResponsible" xml:space="preserve">
+    <value>Responsible</value>
+  </data>
+  <data name="IncResponsibleId" xml:space="preserve">
+    <value>Responsible Id</value>
+  </data>
+  <data name="IncActualOpenDate" xml:space="preserve">
+    <value>Open date</value>
+  </data>
+  <data name="IncExpectedResolveDate" xml:space="preserve">
+    <value>Resolve not later</value>
+  </data>
+  <data name="IncExpectedResponseDate" xml:space="preserve">
+    <value>Response not later</value>
+  </data>
+  <data name="IncModifiedDate" xml:space="preserve">
+    <value>Last Update</value>
+  </data>
+  <data name="ToDoActualStartDate" xml:space="preserve">
+    <value>Actual Start Date</value>
+  </data>
+  <data name="IncState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="TaskTime" xml:space="preserve">
+    <value>Task Time</value>
+  </data>
+  <data name="TotalApproved" xml:space="preserve">
+    <value>Total Approved</value>
+  </data>
+  <data name="TotalMinutes" xml:space="preserve">
+    <value>Total Minutes</value>
+  </data>
+  <data name="DocClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="DocCreationDate" xml:space="preserve">
+    <value>Creation Date</value>
+  </data>
+  <data name="DocCreator" xml:space="preserve">
+    <value>Creator</value>
+  </data>
+  <data name="DocGeneralCategories" xml:space="preserve">
+    <value>General Categories</value>
+  </data>
+  <data name="DocId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="DocManager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="DocPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="DocProject" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="DocProjectId" xml:space="preserve">
+    <value>Project Id</value>
+  </data>
+  <data name="DocStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="DocStatusId" xml:space="preserve">
+    <value>Status Id</value>
+  </data>
+  <data name="DocTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="TaskOutlineLevel" xml:space="preserve">
+    <value>Outline Level</value>
+  </data>
+  <data name="TaskOutlineNumber" xml:space="preserve">
+    <value>Outline Number</value>
+  </data>
+  <data name="ToDoPriority" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="ToDoResourcesWithPercent" xml:space="preserve">
+    <value>Resources + %</value>
+  </data>
+  <data name="IncActualFinishDate" xml:space="preserve">
+    <value>Finish date</value>
+  </data>
+  <data name="TaskNum" xml:space="preserve">
+    <value>Task Number</value>
+  </data>
+  <data name="PrjContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PrjOrganization" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="PrjDeliverables" xml:space="preserve">
+    <value>Deliverables</value>
+  </data>
+  <data name="PrjDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="PrjGoals" xml:space="preserve">
+    <value>Goals</value>
+  </data>
+  <data name="PrjScope" xml:space="preserve">
+    <value>Scope</value>
+  </data>
+  <data name="TaskType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="TaskTypeCommon" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="TaskTypeMilestone" xml:space="preserve">
+    <value>Milestone</value>
+  </data>
+  <data name="TaskTypeSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="EventDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EventLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="PrjCode" xml:space="preserve">
+    <value>Project No.</value>
+  </data>
+  <data name="IncCurrentResponsible" xml:space="preserve">
+    <value>Current Responsible</value>
+  </data>
+  <data name="IncCurrentResponsibleId" xml:space="preserve">
+    <value>Current Responsible Id</value>
+  </data>
+  <data name="ToDoDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+</root>

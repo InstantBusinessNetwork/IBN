@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dictionaries>
+	<dictionary name="BasePlanSlot" lang="single">
+		<item BasePlanSlotId="0" Name="Current" IsDefault="0" />
+		<item BasePlanSlotId="1" Name="Base Plan " IsDefault="1" />
+		<item BasePlanSlotId="2" Name="Base Plan 2" IsDefault="0" />
+		<item BasePlanSlotId="3" Name="Base Plan 3" IsDefault="0" />
+		<item BasePlanSlotId="4" Name="Base Plan 4" IsDefault="0" />
+		<item BasePlanSlotId="5" Name="Base Plan 5" IsDefault="0" />
+		<item BasePlanSlotId="6" Name="Base Plan 6" IsDefault="0" />
+		<item BasePlanSlotId="7" Name="Base Plan 7" IsDefault="0" />
+		<item BasePlanSlotId="8" Name="Base Plan 8" IsDefault="0" />
+		<item BasePlanSlotId="9" Name="Base Plan 9" IsDefault="0" />
+		<item BasePlanSlotId="10" Name="Base Plan 10" IsDefault="0" />
+	</dictionary>
+	<dictionary name="BusinessScore" lang="single">
+		<item BusinessScoreId="1" Key="NetIncome" Name="Net income" />
+	</dictionary>
+	<dictionary name="CATEGORIES" lang="single">
+		<item CategoryId="1" CategoryName="Category 1" />
+		<item CategoryId="2" CategoryName="Category 2" />
+	</dictionary>
+	<dictionary name="CONTENT_TYPES" lang="single">
+		<item ContentTypeId="1" Extension="" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Binary File" />
+		<item ContentTypeId="2" Extension="txt" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/plain" FriendlyName="Text Document" />
+		<item ContentTypeId="3" Extension="xml" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/xml" FriendlyName="XML Document" />
+		<item ContentTypeId="4" Extension="htm" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/html" FriendlyName="HTML Document" />
+		<item ContentTypeId="5" Extension="html" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/html" FriendlyName="HTML Document" />
+		<item ContentTypeId="6" Extension="url" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="text/url" FriendlyName="Internet Location" />
+		<item ContentTypeId="7" Extension="mht" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="message/rfc822" FriendlyName="MHT Document" />
+		<item ContentTypeId="8" Extension="eml" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="message/rfc822" FriendlyName="E-Mail Message" />
+		<item ContentTypeId="9" Extension="msg" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/msoutlook" FriendlyName="MS Outlook Message" />
+		<item ContentTypeId="10" Extension="avi" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/avi" FriendlyName="AVI Video" />
+		<item ContentTypeId="11" Extension="mpg" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/mpeg" FriendlyName="MPEG Video" />
+		<item ContentTypeId="12" Extension="wmv" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="video/x-ms-wmv" FriendlyName="WMV Video" />
+		<item ContentTypeId="13" Extension="bmp" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/bmp" FriendlyName="BMP Image" />
+		<item ContentTypeId="14" Extension="gif" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/gif" FriendlyName="GIF Image" />
+		<item ContentTypeId="15" Extension="jpg" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/jpeg" FriendlyName="JPG Image" />
+		<item ContentTypeId="16" Extension="png" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/png" FriendlyName="PNG Image" />
+		<item ContentTypeId="17" Extension="psd" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/x-photoshop" FriendlyName="PSD Image" />
+		<item ContentTypeId="18" Extension="tif" AllowWebDav="0" AllowNewWindow="1" ContentTypeString="image/tif" FriendlyName="TIF Image" />
+		<item ContentTypeId="19" Extension="doc" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-word" FriendlyName="MS Word Document" />
+		<item ContentTypeId="20" Extension="docx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.wordprocessingml.document" FriendlyName="MS Word 2007 Document" />
+		<item ContentTypeId="21" Extension="mdb" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/vnd.ms-access" FriendlyName="MS Access Database" />
+		<item ContentTypeId="22" Extension="mpp" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-project" FriendlyName="MS Project File" />
+		<item ContentTypeId="23" Extension="ppt" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-powerpoint" FriendlyName="MS Power Point Presentation" />
+		<item ContentTypeId="24" Extension="pptx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.presentationml.presentation" FriendlyName="MS Power Point 2007 Presentation" />
+		<item ContentTypeId="25" Extension="pub" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/x-mspublisher" FriendlyName="MS Publisher File" />
+		<item ContentTypeId="26" Extension="vsd" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.visio" FriendlyName="MS Visio Document" />
+		<item ContentTypeId="27" Extension="xls" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.ms-excel" FriendlyName="MS Excel Document" />
+		<item ContentTypeId="28" Extension="xlsx" AllowWebDav="1" AllowNewWindow="0" ContentTypeString="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" FriendlyName="MS Excel 2007 Document" />
+		<item ContentTypeId="29" Extension="pdf" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/pdf" FriendlyName="Adobe's Portable Document" />
+		<item ContentTypeId="30" Extension="zip" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/zip" FriendlyName="WinZIP Archive" />
+		<item ContentTypeId="31" Extension="rar" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/rar" FriendlyName="WinRAR Archive" />
+		<item ContentTypeId="32" Extension="dll" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Dinamic-Link Library" />
+		<item ContentTypeId="33" Extension="exe" AllowWebDav="0" AllowNewWindow="0" ContentTypeString="application/octet-stream" FriendlyName="Executable File" />
+	</dictionary>
+	<dictionary name="EMailIncidentMapping" lang="single">
+		<item EMailIncidentMappingId="1" Name="Default" Type="Mediachase.IBN.Business.EMail.DefaultEMailIncidentMapping, Mediachase.IBN.Business" UserControl="EMailMCDefaultMapping.ascx" />
+	</dictionary>
+	<dictionary name="INCIDENT_SEVERITY" lang="single">
+		<item SeverityId="1" SeverityName="Nothing" />
+		<item SeverityId="2" SeverityName="Crashes Computer" />
+		<item SeverityId="3" SeverityName="Crashes OS" />
+		<item SeverityId="4" SeverityName="Crashes Application" />
+		<item SeverityId="5" SeverityName="Freezes Application" />
+		<item SeverityId="6" SeverityName="Application Error" />
+		<item SeverityId="7" SeverityName="Gives Bad Message" />
+		<item SeverityId="8" SeverityName="Slows Down System" />
+		<item SeverityId="9" SeverityName="Other" />
+	</dictionary>
+	<dictionary name="INCIDENT_STATE_LANGUAGE" lang="multi">
+		<item StateId="1" StateName="New" />
+		<item StateId="2" StateName="Open" />
+		<item StateId="3" StateName="Overdue" />
+		<item StateId="4" StateName="Suspended" />
+		<item StateId="5" StateName="Closed" />
+		<item StateId="6" StateName="ReOpen" />
+		<item StateId="7" StateName="OnCheck" />
+	</dictionary>
+	<dictionary name="INCIDENT_TYPES" lang="single">
+		<item TypeId="1" TypeName="Not Set" />
+		<item TypeId="2" TypeName="Bug Found" />
+		<item TypeId="3" TypeName="Easter Egg Found" />
+		<item TypeId="4" TypeName="Feature Request" />
+		<item TypeId="5" TypeName="UI Proposal" />
+	</dictionary>
+	<dictionary name="IncidentBox" lang="single" order="2">
+		<item IncidentBoxId="1" Name="Issue Box 1" IdentifierMask="BOX1" IsDefault="1" ManagerId="{ManagerId}" ControllerId="[=NULL=]" Document="&lt;IncidentBoxDocument&gt;&lt;Block Type=&quot;Mediachase.IBN.Business.EMail.GeneralIncidentBoxBlock, Mediachase.IBN.Business&quot;&gt;&lt;Param Name=&quot;Manager&quot; Type=&quot;System.Int32, mscorlib&quot; Value=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;int&amp;gt;{ManagerId}&amp;lt;/int&amp;gt;&quot; /&gt;&lt;Param Name=&quot;CalendarId&quot; Type=&quot;System.Int32, mscorlib&quot; Value=&quot;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;#xD;&amp;#xA;&amp;lt;int&amp;gt;1&amp;lt;/int&amp;gt;&quot; /&gt;&lt;/Block&gt;&lt;/IncidentBoxDocument&gt;" CalendarId="1" ExpectedDuration="10080" ExpectedResponseTime="1440" Index="0" />
+	</dictionary>
+	<dictionary name="PROJECT_PHASES" lang="single">
+		<item PhaseId="5" PhaseName="Research" Weight="100" />
+		<item PhaseId="1" PhaseName="Design" Weight="200" />
+		<item PhaseId="2" PhaseName="Development" Weight="300" />
+		<item PhaseId="3" PhaseName="Publishing" Weight="400" />
+		<item PhaseId="4" PhaseName="Revision" Weight="500" />
+	</dictionary>
+	<dictionary name="RISK_LEVELS" lang="single">
+		<item RiskLevelId="1" RiskLevelName="Undefined" Weight="0" />
+	</dictionary>
+	<dictionary name="CALENDARS" lang="single">
+		<item CalendarId="1" CalendarName="24/7" ProjectId="[=NULL=]" TimeZoneId="0" />
+	</dictionary>
+	<dictionary name="DOCUMENT_STATUS" lang="single">
+		<item StatusId="1" StatusName="[ Not Set ]" IsInternal="1" StateId="[=NULL=]" />
+		<item StatusId="2" StatusName="Pending" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="3" StatusName="Approved" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="4" StatusName="Edit" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="5" StatusName="Edit Approved" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="6" StatusName="LineEdit" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="7" StatusName="LineEdit Approved" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="8" StatusName="CopyEdit" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="9" StatusName="CopyEdit Approved" IsInternal="0" StateId="[=NULL=]" />
+		<item StatusId="10" StatusName="PDF version" IsInternal="0" StateId="[=NULL=]" />
+	</dictionary>
+	<dictionary name="OBJECT_FORMS" lang="single">
+		<item FormId="1" ObjectTypeId="3" FormName="General" />
+		<item FormId="2" ObjectTypeId="3" FormName="Analysis" />
+		<item FormId="3" ObjectTypeId="3" FormName="Creative Design" />
+		<item FormId="4" ObjectTypeId="3" FormName="Customer Support" />
+		<item FormId="5" ObjectTypeId="3" FormName="Engineering" />
+		<item FormId="6" ObjectTypeId="3" FormName="Documentation" />
+		<item FormId="7" ObjectTypeId="3" FormName="Human Resources" />
+		<item FormId="8" ObjectTypeId="3" FormName="IT Infrastructure/Network" />
+		<item FormId="9" ObjectTypeId="3" FormName="Marketing Campaign" />
+		<item FormId="10" ObjectTypeId="3" FormName="Process Improvement" />
+		<item FormId="11" ObjectTypeId="3" FormName="Product Launch" />
+		<item FormId="12" ObjectTypeId="3" FormName="Quality Assurance" />
+		<item FormId="13" ObjectTypeId="3" FormName="Six Sigma/Quality Control" />
+		<item FormId="14" ObjectTypeId="3" FormName="System Integration" />
+		<item FormId="15" ObjectTypeId="3" FormName="Training Development" />
+		<item FormId="16" ObjectTypeId="3" FormName="Web Site Development" />
+	</dictionary>
+	<dictionary name="OBJECT_ROLES" lang="single">
+		<item ObjectRoleId="0" ObjectRoleName="Global" ObjectTypeId="[=NULL=]" />
+		<item ObjectRoleId="1" ObjectRoleName="Project - Manager" ObjectTypeId="3" />
+		<item ObjectRoleId="2" ObjectRoleName="Project - Executive Manager" ObjectTypeId="3" />
+		<item ObjectRoleId="3" ObjectRoleName="Project - Team Member" ObjectTypeId="3" />
+		<item ObjectRoleId="4" ObjectRoleName="Project - Sponsor" ObjectTypeId="3" />
+		<item ObjectRoleId="5" ObjectRoleName="Project - Stakeholder" ObjectTypeId="3" />
+		<item ObjectRoleId="6" ObjectRoleName="Calendar Entry - Organizer" ObjectTypeId="4" />
+		<item ObjectRoleId="7" ObjectRoleName="Calendar Entry - Participant" ObjectTypeId="4" />
+		<item ObjectRoleId="8" ObjectRoleName="Task - Manager" ObjectTypeId="5" />
+		<item ObjectRoleId="9" ObjectRoleName="Task - Resource" ObjectTypeId="5" />
+		<item ObjectRoleId="10" ObjectRoleName="ToDo - Manager" ObjectTypeId="6" />
+		<item ObjectRoleId="11" ObjectRoleName="ToDo - Resource" ObjectTypeId="6" />
+		<item ObjectRoleId="12" ObjectRoleName="Issue - Creator" ObjectTypeId="7" />
+		<item ObjectRoleId="13" ObjectRoleName="Issue - Manager" ObjectTypeId="7" />
+		<item ObjectRoleId="14" ObjectRoleName="Issue - Resource" ObjectTypeId="7" />
+		<item ObjectRoleId="15" ObjectRoleName="Document - Manager" ObjectTypeId="16" />
+		<item ObjectRoleId="16" ObjectRoleName="Document - Resource" ObjectTypeId="16" />
+		<item ObjectRoleId="17" ObjectRoleName="Issue - Responsible" ObjectTypeId="7" />
+		<item ObjectRoleId="18" ObjectRoleName="Issue - Controller" ObjectTypeId="7" />
+		<item ObjectRoleId="19" ObjectRoleName="Assignment - Participant" ObjectTypeId="30" />
+		<item ObjectRoleId="20" ObjectRoleName="Assignment - Manager" ObjectTypeId="30" />
+	</dictionary>
+	<dictionary name="ACTIVATION_TYPE_LANGUAGE" lang="multi">
+		<item ActivationTypeId="1" ActivationTypeName="Check for dependencies" />
+		<item ActivationTypeId="2" ActivationTypeName="Automatically without any checks" />
+		<item ActivationTypeId="3" ActivationTypeName="Manually" />
+	</dictionary>
+	<dictionary name="COMPLETION_REASON_LANGUAGE" lang="multi">
+		<item ReasonId="-1" ReasonName="Not Completed" />
+		<item ReasonId="1" ReasonName="Completed" />
+		<item ReasonId="2" ReasonName="Completed Automatically" />
+		<item ReasonId="3" ReasonName="Suspended" />
+		<item ReasonId="4" ReasonName="Suspended Automatically" />
+	</dictionary>
+	<dictionary name="COMPLETION_TYPE_LANGUAGE" lang="multi">
+		<item CompletionTypeId="1" CompletionTypeName="Everybody must complete" />
+		<item CompletionTypeId="2" CompletionTypeName="Anyone can complete" />
+	</dictionary>
+	<dictionary name="CONSTRAINT_TYPE_LANGUAGE" lang="multi">
+		<item ConstraintTypeId="0" ConstraintTypeName="As soon as possible" />
+		<item ConstraintTypeId="4" ConstraintTypeName="Start not earlier than" />
+		<item ConstraintTypeId="5" ConstraintTypeName="Start not later than" />
+	</dictionary>
+	<dictionary name="EVENT_TYPE_LANGUAGE" lang="multi">
+		<item TypeId="1" TypeName="Event" />
+		<item TypeId="2" TypeName="Meeting" />
+		<item TypeId="3" TypeName="Appointment" />
+	</dictionary>
+	<dictionary name="OBJECT_MENUS_LANGUAGE" lang="multi">
+		<item MenuId="1" MenuXML="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;Menus&gt;&lt;Menu Name=&quot;Actions&quot; PictureUrl=&quot;~/Layouts/Images/downbtn.gif&quot; Pos=&quot;1&quot;&gt;&lt;Item Name=&quot;Edit Issue&quot; PictureUrl=&quot;~/Layouts/Images/edit.gif&quot; Pos=&quot;1&quot; NavigateUrl=&quot;~/Incidents/IncidentEdit.aspx?IncidentId=&quot; /&gt;&lt;Item Name=&quot;Back To The Issues&quot; PictureUrl=&quot;~/Layouts/Images/cancel.gif&quot; Pos=&quot;2&quot; NavigateUrl=&quot;~/Incidents/default.aspx&quot;/&gt;&lt;/Menu&gt;&lt;/Menus&gt;" />
+	</dictionary>
+	<dictionary name="OBJECT_STATE_LANGUAGE" lang="multi">
+		<item StateId="1" StateName="Upcoming" />
+		<item StateId="2" StateName="Active" />
+		<item StateId="3" StateName="Overdue" />
+		<item StateId="4" StateName="Suspended" />
+		<item StateId="5" StateName="Completed" />
+		<item StateId="6" StateName="ReOpen" />
+		<item StateId="7" StateName="OnCheck" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_PAGES_LANGUAGE" lang="multi">
+		<item ViewPageLanguageId="1" ViewPageId="2" Title="Issue View" />
+	</dictionary>
+	<dictionary name="OBJECT_VIEW_TABS_LANGUAGE" lang="multi">
+		<item TabId="1" Title="General" />
+		<item TabId="2" Title="Info" />
+		<item TabId="3" Title="File Library" />
+		<item TabId="4" Title="Finances" />
+		<item TabId="5" Title="Discussions" />
+	</dictionary>
+	<dictionary name="PRIORITY_LANGUAGE" lang="multi">
+		<item PriorityId="0" PriorityName="Low" />
+		<item PriorityId="500" PriorityName="Normal" />
+		<item PriorityId="750" PriorityName="High" />
+		<item PriorityId="900" PriorityName="Very High" />
+		<item PriorityId="1000" PriorityName="Urgent" />
+	</dictionary>
+	<dictionary name="PROJECT_STATUS_LANGUAGE" lang="multi">
+		<item StatusId="1" StatusName="Active" />
+		<item StatusId="2" StatusName="On Hold" />
+		<item StatusId="3" StatusName="Completed" />
+		<item StatusId="4" StatusName="Pending" />
+		<item StatusId="5" StatusName="At Risk" />
+		<item StatusId="6" StatusName="Cancelled" />
+	</dictionary>
+	<dictionary name="TIMEZONES_LANGUAGE" lang="multi">
+		<item TimeZoneId="0" DisplayName="(GMT)" />
+		<item TimeZoneId="1" DisplayName="(GMT+04:30) Kabul" />
+		<item TimeZoneId="2" DisplayName="(GMT-09:00) Alaska" />
+		<item TimeZoneId="3" DisplayName="(GMT+03:00) Kuwait, Riyadh" />
+		<item TimeZoneId="4" DisplayName="(GMT+04:00) Abu Dhabi, Muscat" />
+		<item TimeZoneId="5" DisplayName="(GMT+03:00) Baghdad" />
+		<item TimeZoneId="6" DisplayName="(GMT-04:00) Atlantic Time (Canada)" />
+		<item TimeZoneId="7" DisplayName="(GMT+09:30) Darwin" />
+		<item TimeZoneId="8" DisplayName="(GMT+10:00) Canberra, Melbourne, Sydney" />
+		<item TimeZoneId="9" DisplayName="(GMT-01:00) Azores" />
+		<item TimeZoneId="10" DisplayName="(GMT-06:00) Saskatchewan" />
+		<item TimeZoneId="11" DisplayName="(GMT-01:00) Cape Verde Is." />
+		<item TimeZoneId="12" DisplayName="(GMT+04:00) Baku, Tbilisi, Yerevan" />
+		<item TimeZoneId="13" DisplayName="(GMT+09:30) Adelaide" />
+		<item TimeZoneId="14" DisplayName="(GMT-06:00) Central America" />
+		<item TimeZoneId="15" DisplayName="(GMT+06:00) Astana, Dhaka" />
+		<item TimeZoneId="16" DisplayName="(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague" />
+		<item TimeZoneId="17" DisplayName="(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb" />
+		<item TimeZoneId="18" DisplayName="(GMT+11:00) Magadan, Solomon Is., New Caledonia" />
+		<item TimeZoneId="19" DisplayName="(GMT-06:00) Central Time (US &amp; Canada)" />
+		<item TimeZoneId="20" DisplayName="(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi" />
+		<item TimeZoneId="21" DisplayName="(GMT-12:00) International Date Line West" />
+		<item TimeZoneId="22" DisplayName="(GMT+03:00) Nairobi" />
+		<item TimeZoneId="23" DisplayName="(GMT+10:00) Brisbane" />
+		<item TimeZoneId="24" DisplayName="(GMT+02:00) Bucharest" />
+		<item TimeZoneId="25" DisplayName="(GMT-03:00) Brasilia" />
+		<item TimeZoneId="26" DisplayName="(GMT-05:00) Eastern Time (US &amp; Canada)" />
+		<item TimeZoneId="27" DisplayName="(GMT+02:00) Cairo" />
+		<item TimeZoneId="28" DisplayName="(GMT+05:00) Ekaterinburg" />
+		<item TimeZoneId="29" DisplayName="(GMT+12:00) Fiji, Kamchatka, Marshall Is." />
+		<item TimeZoneId="30" DisplayName="(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius" />
+		<item TimeZoneId="31" DisplayName="(GMT) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London" />
+		<item TimeZoneId="32" DisplayName="(GMT-03:00) Greenland" />
+		<item TimeZoneId="33" DisplayName="(GMT) Casablanca, Monrovia" />
+		<item TimeZoneId="34" DisplayName="(GMT+02:00) Athens, Istanbul, Minsk" />
+		<item TimeZoneId="35" DisplayName="(GMT-10:00) Hawaii" />
+		<item TimeZoneId="36" DisplayName="(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi" />
+		<item TimeZoneId="37" DisplayName="(GMT+03:30) Tehran" />
+		<item TimeZoneId="38" DisplayName="(GMT+02:00) Jerusalem" />
+		<item TimeZoneId="39" DisplayName="(GMT+09:00) Seoul" />
+		<item TimeZoneId="40" DisplayName="(GMT-06:00) Guadalajara, Mexico City, Monterrey" />
+		<item TimeZoneId="41" DisplayName="(GMT-07:00) Chihuahua, La Paz, Mazatlan" />
+		<item TimeZoneId="42" DisplayName="(GMT-02:00) Mid-Atlantic" />
+		<item TimeZoneId="43" DisplayName="(GMT-07:00) Mountain Time (US &amp; Canada)" />
+		<item TimeZoneId="44" DisplayName="(GMT+06:30) Rangoon" />
+		<item TimeZoneId="45" DisplayName="(GMT+06:00) Almaty, Novosibirsk" />
+		<item TimeZoneId="46" DisplayName="(GMT+05:45) Kathmandu" />
+		<item TimeZoneId="47" DisplayName="(GMT+12:00) Auckland, Wellington" />
+		<item TimeZoneId="48" DisplayName="(GMT-03:30) Newfoundland" />
+		<item TimeZoneId="49" DisplayName="(GMT+08:00) Irkutsk, Ulaan Bataar" />
+		<item TimeZoneId="50" DisplayName="(GMT+07:00) Krasnoyarsk" />
+		<item TimeZoneId="51" DisplayName="(GMT-04:00) Santiago" />
+		<item TimeZoneId="52" DisplayName="(GMT-08:00) Pacific Time (US &amp; Canada); Tijuana" />
+		<item TimeZoneId="53" DisplayName="(GMT+01:00) Brussels, Copenhagen, Madrid, Paris" />
+		<item TimeZoneId="54" DisplayName="(GMT+03:00) Moscow, St. Petersburg, Volgograd" />
+		<item TimeZoneId="55" DisplayName="(GMT-03:00) Buenos Aires, Georgetown" />
+		<item TimeZoneId="56" DisplayName="(GMT-05:00) Bogota, Lima, Quito" />
+		<item TimeZoneId="57" DisplayName="(GMT-04:00) Caracas, La Paz" />
+		<item TimeZoneId="58" DisplayName="(GMT-11:00) Midway Island, Samoa" />
+		<item TimeZoneId="59" DisplayName="(GMT+07:00) Bangkok, Hanoi, Jakarta" />
+		<item TimeZoneId="60" DisplayName="(GMT+08:00) Kuala Lumpur, Singapore" />
+		<item TimeZoneId="61" DisplayName="(GMT+02:00) Harare, Pretoria" />
+		<item TimeZoneId="62" DisplayName="(GMT+06:00) Sri Jayawardenepura" />
+		<item TimeZoneId="63" DisplayName="(GMT+08:00) Taipei" />
+		<item TimeZoneId="64" DisplayName="(GMT+10:00) Hobart" />
+		<item TimeZoneId="65" DisplayName="(GMT+09:00) Osaka, Sapporo, Tokyo" />
+		<item TimeZoneId="66" DisplayName="(GMT+13:00) Nuku'alofa" />
+		<item TimeZoneId="67" DisplayName="(GMT-05:00) Indiana (East)" />
+		<item TimeZoneId="68" DisplayName="(GMT-07:00) Arizona" />
+		<item TimeZoneId="69" DisplayName="(GMT+10:00) Vladivostok" />
+		<item TimeZoneId="70" DisplayName="(GMT+08:00) Perth" />
+		<item TimeZoneId="71" DisplayName="(GMT+01:00) West Central Africa" />
+		<item TimeZoneId="72" DisplayName="(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna" />
+		<item TimeZoneId="73" DisplayName="(GMT+05:00) Islamabad, Karachi, Tashkent" />
+		<item TimeZoneId="74" DisplayName="(GMT+10:00) Guam, Port Moresby" />
+		<item TimeZoneId="75" DisplayName="(GMT+09:00) Yakutsk" />
+	</dictionary>
+</dictionaries>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{11279D5F-91C8-45fd-AB51-1E12BF75043A}</Id>
+	<Name>{IbnFramework.Incident:AllIssues}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>IncidentsDefault</FieldSetName>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+</ListViewProfile>

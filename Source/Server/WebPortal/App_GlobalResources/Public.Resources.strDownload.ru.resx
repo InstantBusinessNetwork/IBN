@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tProduct" xml:space="preserve">
+    <value>Продукт</value>
+  </data>
+  <data name="tLanguage" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="tOS" xml:space="preserve">
+    <value>ОС</value>
+  </data>
+  <data name="tAllm" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="tWindows" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="tUnix" xml:space="preserve">
+    <value>Unix</value>
+  </data>
+  <data name="tClient" xml:space="preserve">
+    <value>IBN Клиент</value>
+  </data>
+  <data name="tApply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="tMSOffice" xml:space="preserve">
+    <value>MS Office Plug-Ins</value>
+  </data>
+  <data name="tDescr" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="tAllf" xml:space="preserve">
+    <value>Любая</value>
+  </data>
+  <data name="tMobile" xml:space="preserve">
+    <value>Mobile/PDA Clients</value>
+  </data>
+  <data name="PortalLogin" xml:space="preserve">
+    <value>Вход в портал</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Логин:</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Пароль:</value>
+  </data>
+  <data name="RealTimeServices" xml:space="preserve">
+    <value>Установите приложения для эффективной работы</value>
+  </data>
+  <data name="DownloadText" xml:space="preserve">
+    <value>обмен сообщениями, файлами, получение уведомлений</value>
+  </data>
+  <data name="tForgotPassword" xml:space="preserve">
+    <value>Забыли пароль?</value>
+  </data>
+  <data name="tDownloadIBNClient" xml:space="preserve">
+    <value>{0} Клиент</value>
+  </data>
+  <data name="tDownloadNow" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="tRemember" xml:space="preserve">
+    <value>Запомнить</value>
+  </data>
+  <data name="tLogin" xml:space="preserve">
+    <value>Вход</value>
+  </data>
+  <data name="tAutoInstall" xml:space="preserve">
+    <value>Установить</value>
+  </data>
+  <data name="tVersNum" xml:space="preserve">
+    <value>Сборка</value>
+  </data>
+  <data name="tFileName" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="tSecPortAcc" xml:space="preserve">
+    <value>Вход в портал</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Загрузка дополнительных приложений</value>
+  </data>
+  <data name="tDate" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="InvalidLogin" xml:space="preserve">
+    <value>Неверный логин</value>
+  </data>
+  <data name="InvlaidPassword" xml:space="preserve">
+    <value>Неверный пароль</value>
+  </data>
+  <data name="AccountNotActive" xml:space="preserve">
+    <value>Учетная запись деактивирована</value>
+  </data>
+  <data name="tSize" xml:space="preserve">
+    <value>Размер</value>
+  </data>
+  <data name="tMB" xml:space="preserve">
+    <value>Мб</value>
+  </data>
+  <data name="tLicExpired" xml:space="preserve">
+    <value>Срок лицензии истек</value>
+  </data>
+  <data name="tDownloadScreenCapture" xml:space="preserve">
+    <value>Система Screen Capture</value>
+  </data>
+  <data name="DownloadTextSC" xml:space="preserve">
+    <value>простая работа со снимками экрана; возможность передачи их по {0} Клиент, публикации в портале, создания инцидентов и поручений</value>
+  </data>
+  <data name="tDownloadPlugIE" xml:space="preserve">
+    <value>Plug In для обозревателя Internet Explorer</value>
+  </data>
+  <data name="DownloadTextPlugIE" xml:space="preserve">
+    <value>прямая работа на сервере портала с файлами MS Office без загрузки на локальный компьютер</value>
+  </data>
+  <data name="tDownloadPlugFF" xml:space="preserve">
+    <value>Plug In для обозревателя Mozilla Firefox</value>
+  </data>
+  <data name="DownloadTextPlugFF" xml:space="preserve">
+    <value>
+      прямая работа на сервере портала с файлами MS Office без загрузки на локальный компьютер
+    </value>
+  </data>
+  <data name="tDownloadPlugOut" xml:space="preserve">
+    <value>Plug In для MS Outlook</value>
+  </data>
+  <data name="DownloadTextPlugOut" xml:space="preserve">
+    <value>удобная отправка сообщений в рамках работы над инцидентами (Beta)</value>
+  </data>
+  <data name="tDownloadToolBox" xml:space="preserve">
+    <value>Мастер инструментов {0}</value>
+  </data>
+  <data name="DownloadTextToolBox" xml:space="preserve">
+    <value>публикация файлов, создание связанных с файлами задач и документов непосредственно из приложений MS Office</value>
+  </data>
+  <data name="InvalidLoginPassword" xml:space="preserve">
+    <value>Неверный логин/пароль или учётная запись неактивна.</value>
+  </data>
+</root>

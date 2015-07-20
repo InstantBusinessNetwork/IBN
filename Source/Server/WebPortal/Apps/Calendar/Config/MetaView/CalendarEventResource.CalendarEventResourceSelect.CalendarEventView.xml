@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<clear />
+		<add>
+			<CustomColumns id="MC_EventsRes_Selected" primaryKey="Id">
+				<Column id="colTitle" type="default" width="250" title="{IbnFramework.Common:tName}" templateUrl="~/Apps/Calendar/ColumnTemplates/Name.ModifyResources.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_EventsRes_Selected_SelectDbClick" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_EventsRes_Selected_SelectDbClick">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>onDelete()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

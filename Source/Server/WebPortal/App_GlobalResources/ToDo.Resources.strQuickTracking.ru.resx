@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="QuickTrackingAcceptDeny">
+		<value>Управление</value>
+	</data>
+	<data name="ADText">
+		<value>Это поручение дано вам менеджером. &lt;br&gt;Нажмите &amp;laquo;Принять&amp;raquo;, если
+		вы беретесь за это поручение.&lt;br&gt;В противном случае нажмите &amp;laquo;Отклонить&amp;raquo;.
+	</value>
+	</data>
+	<data name="Accept">
+		<value>Принять</value>
+	</data>
+	<data name="Decline">
+		<value>Отклонить</value>
+	</data>
+	<data name="QuickTracking">
+		<value>Управление</value>
+	</data>
+	<data name="RPText">
+		<value>Это поручение дано вам менеджером. &lt;br&gt;Установите выполненный процент поручения, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Status">
+		<value>Статус</value>
+	</data>
+	<data name="Update">
+		<value>Обновить</value>
+	</data>
+	<data name="MPText">
+		<value>Это поручение выполнено, но как менеджер вы можете изменить его статус. Установите выполненный процент поручения, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="OverallStatus">
+		<value>Общий статус</value>
+	</data>
+	<data name="MPPText1">
+		<value>Как менеджер вы можете изменить статус этого поручения. Установите выполненный процент поручения, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="MPPText2">
+		<value>Также вы можете полностью завершить это поручение. Это равносильно выбору значения 100% в раскрывающемся списке.</value>
+	</data>
+	<data name="CompleteToDo">
+		<value>Завершить</value>
+	</data>
+	<data name="MCText">
+		<value>Как менеджер вы можете завершить эту веху.</value>
+	</data>
+	<data name="CompleteMilestone">
+		<value>Завершить</value>
+	</data>
+	<data name="MUText">
+		<value>Эта веха завершена. Но как менеджер вы можете отменить ее завершение.</value>
+	</data>
+	<data name="UncompleteMilestone">
+		<value>Отменить завершение</value>
+	</data>
+	<data name="Resolution">
+		<value>Решение</value>
+	</data>
+	<data name="Workaround">
+		<value>Другие возможные решения</value>
+	</data>
+	<data name="Save">
+		<value>Сохранить</value>
+	</data>
+	<data name="PersonalStatus">
+		<value>Выполнено</value>
+	</data>
+	<data name="Text1">
+		<value>Это поручение дано вам менеджером. Установите выполненный процент поручения, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Text2">
+		<value>Установите выполненный процент поручения, выбрав нужное значение из выпадающего меню, и нажмите &amp;laquo;Обновить&amp;raquo;.</value>
+	</data>
+	<data name="Text3">
+		<value>Как менеджер вы можете полностью завершить это поручение.</value>
+	</data>
+	<data name="Text4">
+		<value>Как менеджер вы можете приостановить выполнение поручения.</value>
+	</data>
+	<data name="Text5">
+		<value>Это поручение завершено, но как менеджер вы можете отменить его завершение.</value>
+	</data>
+	<data name="Text6">
+		<value>Работа над поручением приостановлена, но как менеджер вы можете возобновить ее выполнение.</value>
+	</data>
+	<data name="Text7">
+		<value>Это поручение дано вам менеджером. Нажмите &amp;laquo;Принять&amp;raquo;, если
+		вы беретесь за это поручение.&lt;br&gt;В противном случае нажмите &amp;laquo;Отклонить&amp;raquo;.</value>
+	</data>
+	<data name="Text8">
+		<value>Поручение неактивно, но как менеджер вы можете активировать его.</value>
+	</data>
+	<data name="CompleteToDo">
+		<value>Завершить</value>
+	</data>
+	<data name="SuspendToDo">
+		<value>Приостановить</value>
+	</data>
+	<data name="ResumeToDo">
+		<value>Возобновить</value>
+	</data>
+	<data name="UncompleteToDo">
+		<value>Отменить завершение</value>
+	</data>
+	<data name="IncidentTracking">
+		<value>Решение инцидента</value>
+	</data>
+	<data name="SpentHours">
+		<value>Затрачено часов</value>
+	</data>
+	<data name="Date">
+		<value>Дата</value>
+	</data>
+	<data name="UpdateTimesheetText">
+		<value>Это поручение выполнено, но вы можете изменить количество рабочих часов за известные дни.</value>
+	</data>
+	<data name="ActivateTodo">
+		<value>Активировать</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Нельзя изменять отосланный на утверждение или утвержденный лист учета времени.</value>
+	</data>
+</root>

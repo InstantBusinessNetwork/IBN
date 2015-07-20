@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_ToDoResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ToDoRes}</PopupTitle>
+				<Url>~/ToDo/AddResources.aspx?ToDoId={QueryString:ToDoId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			
+			<!--<Command id="MC_PM_ToDoResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ToDoRes}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ModifyResources.aspx?ObjectId={QueryString:ToDoId}&amp;ObjectTypeId=6&amp;ClassName=User&amp;ReturnCommand=MC_PM_ToDoResEdit</Url>
+				<Width>700</Width>
+				<Height>440</Height>
+				<Left>30</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>-->
+			
+			<Command id="MC_PM_OldToDoResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:ToDoRes}</PopupTitle>
+				<Url>~/ToDo/AddResources.aspx?FromCreate=1&amp;ToDoId={QueryString:OldToDoId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Top>50</Top>
+				<Left>100</Left>
+				<Drag>True</Drag>
+			</Command>
+			<!--
+			<Command id="MC_PM_AddPredTodo">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Task:AddPredecessor}</PopupTitle>
+				<Url>~/ToDo/AddPredecessor.aspx?BaseToDoID={QueryString:ToDoId}</Url>
+				<Width>500</Width>
+				<Height>200</Height>
+				<Top>50</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_AddSuccTodo">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Task:AddSuccessor}</PopupTitle>
+				<Url>~/ToDo/AddSuccessor.aspx?BaseToDoID={QueryString:ToDoId}</Url>
+				<Width>500</Width>
+				<Height>200</Height>
+				<Top>50</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			-->
+
+			<Command id="MC_PM_ToDoRedirect">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RedirectHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ToDo_AddSucc">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:SelectSuccessors}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=ToDo&amp;ObjectId={QueryString:TodoId}&amp;exclude={QueryString:TodoId}&amp;ReturnCommand=MC_ToDo_AddSuccHandler&amp;MultipleSelect=1</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ToDo_AddSuccHandler">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ToDoAddSuccHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ToDo_AddPred">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:SelectPredecessors}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=ToDo&amp;ObjectId={QueryString:TodoId}&amp;exclude={QueryString:TodoId}&amp;ReturnCommand=MC_ToDo_AddPredHandler&amp;MultipleSelect=1</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_ToDo_AddPredHandler">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.ToDoAddPredHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

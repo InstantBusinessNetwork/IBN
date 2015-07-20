@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_EventParticipants">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:CEntryParticip}</PopupTitle>
+				<Url>~/Events/ParticipantsEditor.aspx?EventId={QueryString:EventId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_EventOldParticipants">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:CEntryParticip}</PopupTitle>
+				<Url>~/Events/ParticipantsEditor.aspx?FromCreate=1&amp;EventId={QueryString:OldEventID}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

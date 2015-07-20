@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MResActs" create="True">
+			<Link id="MResActs4">
+				<add>
+					<Link order="400" id="MResActs44" text="{IbnShell.Navigation:tUtilIssues}" iconUrl="" iconCss="" command="cmd_MResActs42" />
+				</add>
+			</Link>
+		</Tab>
+		<add>
+			<Tab order="510" id="MIssues_Add" text="{IbnShell.Navigation:tIssuesNew}" contentType="default" imageUrl="~/layouts/images/icons/incident.gif" configUrl="" enableHandler="Mediachase.Ibn.Web.UI.Shell.CommandHandlers.IssueNewTabEnableHandler, Mediachase.UI.Web">
+				<Link order="100" id="MIssues_AddC1" text="{IbnShell.Navigation:tIssues}" iconUrl="~/layouts/images/icons/issuegrid.gif" iconCss="iconStdCls" command="cmd_MIssuesB1" />
+				<Link order="200" id="MIssues_AddB" text="{IbnShell.Navigation:tPendingMess}" iconUrl="~/layouts/images/mail.gif" iconCss="iconStdCls" command="cmd_MIssuesC" />
+				<Link order="300" id="MIssueWS" text="{IbnFramework.Incident:_mc_HdmWs}" command="cmd_MIssueWS" iconCss="iconStdCls" iconUrl="~/layouts/images/Chart-Pie.png" />
+				<Link order="400" id="MIssues_AddD" text="{IbnShell.Navigation:tArticleList}" iconUrl="~/layouts/images/kb.gif" iconCss="iconStdCls" command="cmd_MIssuesD" />
+			</Tab>
+		</add>
+		<Tab id="MAdmin" create="True">
+			<add>
+				<Link order="500" id="MAdmin5" text="{IbnShell.Navigation:tHDM}" iconUrl="" iconCss="" command="cmd_MAdmin5">
+					<Link order="100" id="MAdmin51" text="{IbnShell.Navigation:tHDMSettings}" iconUrl="" iconCss="" command="cmd_MAdmin51" />
+					<Link order="200" id="MAdmin52" text="{IbnShell.Navigation:tIssRules}" iconUrl="" iconCss="" command="cmd_MAdmin52" />
+					<Link order="300" id="MAdmin53" text="{IbnShell.Navigation:tBlackList}" iconUrl="" iconCss="" command="cmd_MAdmin53" />
+					<Link order="400" id="MAdmin54" text="{IbnShell.Navigation:tWhiteList}" iconUrl="" iconCss="" command="cmd_MAdmin54" />
+					<Link order="500" id="MAdmin55" text="{IbnShell.Navigation:tEMailLog}" iconUrl="" iconCss="" command="cmd_MAdmin55" />
+				</Link>
+			</add>
+		</Tab>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MResActs42">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx?Objs=Issue</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.IssueEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="cmd_MIssuesA">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Incidents/ArticleListMain.aspx</Url>
+			</Command>
+
+			<Command id="cmd_MIssuesB1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/HelpDeskManagement/Pages/IncidentListNew.aspx</Url>
+			</Command>
+			<Command id="cmd_MIssuesC">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/HelpDeskManagement/Pages/PendingMessages.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.PendingMessageHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MIssuesD">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/HelpDeskManagement/Pages/ArticleListMain.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin5">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin5</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.IssueEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin51">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/HDMSettings.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin52">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/EMailRules.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin53">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/EMailBlackList.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin54">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/EMailWhiteList.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin55">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Incidents/EmailLog.aspx</Url>
+			</Command>
+			<Command id="cmd_MIssueWS">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPageView.aspx?PageUid=6617334f-b42c-405c-9e43-ad2d8d231b67</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

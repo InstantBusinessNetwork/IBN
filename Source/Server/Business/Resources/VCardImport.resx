@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="VCardTelephoneType_None" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="VCardTelephoneType_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="VCardTelephoneType_Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="VCardTelephoneType_Pager" xml:space="preserve">
+    <value>Pager</value>
+  </data>
+  <data name="VCardTelephoneType_Msg" xml:space="preserve">
+    <value>Msg</value>
+  </data>
+  <data name="VCardTelephoneType_Cell" xml:space="preserve">
+    <value>Cell</value>
+  </data>
+  <data name="VCardTelephoneType_Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="VCardTelephoneType_Bbs" xml:space="preserve">
+    <value>Bbs</value>
+  </data>
+  <data name="VCardTelephoneType_Modem" xml:space="preserve">
+    <value>Modem</value>
+  </data>
+  <data name="VCardTelephoneType_Isdn" xml:space="preserve">
+    <value>Isdn</value>
+  </data>
+  <data name="VCardTelephoneType_Pcs" xml:space="preserve">
+    <value>Pcs</value>
+  </data>
+  <data name="VCardTelephoneType_Pref" xml:space="preserve">
+    <value>Pref</value>
+  </data>
+  <data name="VCardTelephoneType_Voice" xml:space="preserve">
+    <value>Voice</value>
+  </data>
+  <data name="VCardTelephoneType_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="VCardEMailType_None" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="VCardEMailType_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="VCardEMailType_Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="VCardEMailType_Internet" xml:space="preserve">
+    <value>Internet</value>
+  </data>
+  <data name="VCardEMailType_X400" xml:space="preserve">
+    <value>X400</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="NickName" xml:space="preserve">
+    <value>Nick Name</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="FamilyName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="GivenName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="MiddleName" xml:space="preserve">
+    <value>Middle Name</value>
+  </data>
+  <data name="OrganizationUnit" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+  <data name="AddressType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="AddressPostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="AddressRegion" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="AddressLocality" xml:space="preserve">
+    <value>Locality</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="AddressExtraAddress" xml:space="preserve">
+    <value>Extra</value>
+  </data>
+  <data name="AddressPreferred" xml:space="preserve">
+    <value>Preferred</value>
+  </data>
+  <data name="EmailType" xml:space="preserve">
+    <value>Email type</value>
+  </data>
+  <data name="EmailValue" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="VCardAddressType_None" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="VCardAddressType_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="VCardAddressType_Work" xml:space="preserve">
+    <value>Work</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="DefaultMapping" xml:space="preserve">
+    <value>&lt;?xml version="1.0"?&gt;
+&lt;mappingDocument&gt;
+  &lt;mapping class="" table=""&gt;
+    &lt;map  field="First Name" column="&amp;quot;First Name&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Middle Name" column="&amp;quot;Middle Name&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Last Name" column="&amp;quot;Last Name&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Birthday" column="&amp;quot;Birthday&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Gender" column="&amp;quot;Gender&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Organization" column="&amp;quot;Company&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="" column="&amp;quot;Web Page&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Nick Name" column="&amp;quot;Title&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Title" column="&amp;quot;Title&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Phone Pref" column="&amp;quot;Company Main Phone&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Phone Home" column="&amp;quot;Home Phone&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Phone Work" column="&amp;quot;Business Phone&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Full Name" column="&amp;quot;Initials&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Phone Cell" column="&amp;quot;Mobile Phone&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Phone Fax" column="&amp;quot;Business Fax&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Street (Home)" column="&amp;quot;Home Street&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Locality (Home)" column="&amp;quot;Home City&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Region (Home)" column="&amp;quot;Home State&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Postal Code (Home)" column="&amp;quot;Home Postal Code&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Country (Home)" column="&amp;quot;Home Country/Region&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Street (Work)" column="&amp;quot;Business Street&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Locality (Work)" column="&amp;quot;Business City&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Region (Work)" column="&amp;quot;Business State&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Postal Code (Work)" column="&amp;quot;Business Postal Code&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Country (Work)" column="&amp;quot;Business Country/Region&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Street (Other)" column="&amp;quot;Other Street&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Locality (Other)" column="&amp;quot;Other City&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Region (Other)" column="&amp;quot;Other State&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Postal Code (Other)" column="&amp;quot;Other Postal Code&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Country (Other)" column="&amp;quot;Other Country/Region&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Email " column="&amp;quot;E-mail Address&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Email  (1)" column="&amp;quot;E-mail 2 Address&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Email  (2)" column="&amp;quot;E-mail 3 Address&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Role" column="&amp;quot;Profession&amp;quot;" type="CopyValue" /&gt;
+    &lt;map  field="Url" column="&amp;quot;Web Page&amp;quot;" type="CopyValue" /&gt;
+  &lt;/mapping&gt;
+&lt;/mappingDocument&gt;</value>
+  </data>
+</root>

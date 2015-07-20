@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_DM_HDM_Selected_Delete" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Columns" primaryKey="DocumentId">
+				<Column id="98E4689F-9A6C-4aed-9B80-4FFEABFDC5F6" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/edit.gif" commandName="MC_DM_PM_EditItem" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+				</Column>
+				<Column id="colId" type="default" width="40" title="#" sortExpression="DocumentId" templateUrl="~/Apps/DocumentManagement/ColumnTemplates/Document.DocumentId.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Incident:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="250" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/DocumentManagement/ColumnTemplates/Document.TitleLink.ascx" />
+				<Column id="colStatus" type="default" width="100" title="{IbnFramework.Project:Status}" dataField="StatusName" sortExpression="StatusName"  />
+				<Column id="colCreated" type="default" width="100" title="{IbnFramework.Incident:Created}" sortExpression="CreationDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Created.IncidentList.ascx" />
+				<Column id="colManager" type="default" width="180" title="{IbnFramework.Project:Manager}" sortExpression="ManagerName" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Manager.ProjectList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_DM_HDM_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_DM_HDM_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Documents/DocumentView.aspx?DocumentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_DM_PM_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Documents/DocumentEdit.aspx?DocumentId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_DM_HDM_Selected_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.DocumentManagement.CommandHandlers.DeleteSelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<EntityObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Properties>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Created</Name>
+      <Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-05-28T10:34:21.76+03:00</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">CreatorId</Name>
+      <Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">CustomPageId</Name>
+      <Value xmlns:q1="http://microsoft.com/wsdl/types/" xsi:type="q1:guid" xmlns="http://mediachase.net/">8d9f84ac-69c6-47ed-b5c0-a78b408b8cf9</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Description</Name>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Icon</Name>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">JsonData</Name>
+      <Value xsi:type="xsd:string" xmlns="http://mediachase.net/">[{"items":[{"id":"5A5D9A4D-CC58-4774-A9D8-385BCF72F61C","collapsed":false,"instanseUid":"5b1e53a7043f4a7c9a65eb1e0e849475"},{"id":"D1D46A87-7478-4068-A467-758BE89A9535","collapsed":false,"instanseUid":"602b26ec5aa541758bf46a72f23d45b3"},{"id":"DD7E8264-EEF6-44f9-B789-36D242872448","collapsed":false,"instanseUid":"71c4ebcd6b5f4a6f9cd48bc86b7e997c"}],"id":"Column2"},{"items":[{"id":"3E88A70A-250D-4D16-97F0-D8055438E6EB","collapsed":false,"instanseUid":"0c949e3b6b434415b8d84c803fd5ba91"},{"id":"D4F40160-8DE4-4959-B50C-186B6041E14F","collapsed":false,"instanseUid":"a687da6334704659b15b756ad90f35a2"},{"id":"1EBE358B-663D-42e8-B8EA-5959C6BDC911","collapsed":false,"instanseUid":"595b811a01ad490a9d7a9262dff4e076"},{"id":"E2882759-50B4-4106-9B72-B057C33255FE","collapsed":false,"instanseUid":"f1dedea2b4b94c80bdd0f406aa39db45"},{"id":"42C18D68-CCC9-460b-B9DA-692A6129BFE4","collapsed":false,"instanseUid":"f2bf935314b441fb9e57ed1acd1aa0be"}],"id":"Column1"}]</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Modified</Name>
+      <Value xsi:type="xsd:dateTime" xmlns="http://mediachase.net/">2009-05-28T10:34:21.76+03:00</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">ModifierId</Name>
+      <Value xsi:type="xsd:int" xmlns="http://mediachase.net/">-1</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Profile</Name>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">ProfileId</Name>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">TemplateId</Name>
+      <Value xmlns:q2="http://microsoft.com/wsdl/types/" xsi:type="q2:guid" xmlns="http://mediachase.net/">0E79EACE-C89A-45D5-BE33-236B6C319F9D</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Title</Name>
+      <Value xsi:type="xsd:string" xmlns="http://mediachase.net/">{IbnShell.Navigation:tMyWorks}</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">Uid</Name>
+      <Value xmlns:q3="http://microsoft.com/wsdl/types/" xsi:type="q3:guid" xmlns="http://mediachase.net/">57399bd7-2588-4626-a85b-81ba58205246</Value>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">User</Name>
+    </EntityObjectProperty>
+    <EntityObjectProperty>
+      <Name xmlns="http://mediachase.net/">UserId</Name>
+    </EntityObjectProperty>
+  </Properties>
+</EntityObject>

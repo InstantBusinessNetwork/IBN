@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="QuickTipBasic1">
+		<value></value>
+	</data>
+	<data name="QuickTipBasic2">
+		<value> предоставляется несколько дополнительных возможностей.&lt;br&gt;Вы можете прикреплять файлы, выбирать общие категории и добавлять комментарии.&lt;br&gt;Выберите соответствующий пункт в левой части окна или нажмите кнопку 'Закрыть', чтобы перейти к окну просмотра созданного объекта.&lt;br&gt;Этими возможностями вы сможете воспользоваться позже.</value>
+	</data>
+	<data name="UploadFile">
+		<value>Выберите интересующий вас документ, воспользовавшись кнопкой 'Обзор'</value>
+	</data>
+	<data name="UploadFileFor_issue">
+		<value>Выберите интересующий вас документ, воспользовавшись кнопкой 'Обзор'</value>
+	</data>
+	<data name="UploadFileFor_todo">
+		<value>Выберите интересующий вас документ, воспользовавшись кнопкой 'Обзор'</value>
+	</data>
+	<data name="UploadFileFor_calendarentry">
+		<value>Выберите интересующий вас документ, воспользовавшись кнопкой 'Обзор'</value>
+	</data>
+	<data name="QuickTipUpload">
+		<value>Some comment for uploading process.</value>
+	</data>
+	<data name="SelectCategories">
+		<value>Выберите общие категории для работы с отчетами и фильтрами</value>
+	</data>
+	<data name="QuickTipCategories">
+		<value>Some comments for selecting categories.</value>
+	</data>
+	<data name="AddComments">
+		<value>Введите текст комментария</value>
+	</data>
+	<data name="QuickTipComments">
+		<value>Some comments for "Comments Adding" Process</value>
+	</data>
+	<data name="tUpload">
+		<value>Прикрепить документ к</value>
+	</data>
+	<data name="tCategories">
+		<value>Выбрать общие категории.</value>
+	</data>
+	<data name="tComments">
+		<value>Добавить комментарий.</value>
+	</data>
+	<data name="tTopTitle">
+		<value>Дополнительные возможности.</value>
+	</data>
+	<data name="s1SubTitleInc">
+		<value>Об инциденте сообщено.</value>
+	</data>
+	<data name="s2SubTitle">
+		<value>Присоединение файла к </value>
+	</data>
+	<data name="s3SubTitle1">
+		<value>Выбор общих категорий </value>
+	</data>
+	<data name="s4SubTitle">
+		<value>Присоединение комментариев к </value>
+	</data>
+	<data name="tSave">
+		<value>Сохранить</value>
+	</data>
+	<data name="tClose">
+		<value>Закрыть</value>
+	</data>
+	<data name="DivBasicInc">
+		<value>Some comments for incident basic page</value>
+	</data>
+	<data name="DivUpload">
+		<value>Some comments for upload page</value>
+	</data>
+	<data name="DivCategories">
+		<value>Some comments for categories page</value>
+	</data>
+	<data name="DivComments">
+		<value>Some comment for comments page</value>
+	</data>
+	<data name="tUploadBtn">
+		<value>Прикрепить</value>
+	</data>
+	<data name="TextHeaderInc">
+		<value>Вы можете воспользоваться одной из следующих дополнительных возможностей</value>
+	</data>
+	<data name="DivBasicToDo">
+		<value>Some comments for todo basic page</value>
+	</data>
+	<data name="DivBasicCalEntry">
+		<value>Some comments for calendar entry basic page</value>
+	</data>
+	<data name="TextHeaderToDo">
+		<value>Вы можете воспользоваться одной из следующих дополнительных возможностей</value>
+	</data>
+	<data name="TextHeaderCalEntry">
+		<value>Вы можете воспользоваться одной из следующих дополнительных возможностей</value>
+	</data>
+	<data name="s1SubTitleToDo">
+		<value>Поручение создано.</value>
+	</data>
+	<data name="s1SubTitleCalEntry">
+		<value>Мероприятие создано.</value>
+	</data>
+	<data name="incident_for">
+		<value>Для созданной</value>
+	</data>
+	<data name="calendarentry_for">
+		<value>Для созданного</value>
+	</data>
+	<data name="todo_for">
+		<value>Для созданного</value>
+	</data>
+	<data name="incident">
+		<value>инцидент</value>
+	</data>
+	<data name="calendarentry">
+		<value>мероприятие</value>
+	</data>
+	<data name="todo">
+		<value>поручение</value>
+	</data>
+	<data name="incidentRP">
+		<value>инциденты</value>
+	</data>
+	<data name="calendarentryRP">
+		<value>мероприятия</value>
+	</data>
+	<data name="todoRP">
+		<value>поручения</value>
+	</data>
+	<data name="incidentDP">
+		<value>инциденте</value>
+	</data>
+	<data name="calendarentryDP">
+		<value>мероприятию</value>
+	</data>
+	<data name="todoDP">
+		<value>поручению</value>
+	</data>
+	<data name="s3SubTitle2">
+		<value> для работы с отчетами</value>
+	</data>
+	<data name="blank_for">
+		<value></value>
+	</data>
+	<data name="blankRP">
+		<value></value>
+	</data>
+	<data name="twCreationDate">
+		<value>Дата создания</value>
+	</data>
+	<data name="twDescription">
+		<value>Описание</value>
+	</data>
+	<data name="twResolution">
+		<value>Решение</value>
+	</data>
+	<data name="twWorkaround">
+		<value>Другие возможные решения</value>
+	</data>
+	<data name="twTitle">
+		<value>Название</value>
+	</data>
+	<data name="twPriority">
+		<value>Приоритет</value>
+	</data>
+	<data name="twType">
+		<value>Тип</value>
+	</data>
+	<data name="twSeverity">
+		<value>Серьезность</value>
+	</data>
+	<data name="tChange">
+		<value>Изменить</value>
+	</data>
+	<data name="tSave1">
+		<value>Сохранить</value>
+	</data>
+	<data name="tCancel">
+		<value>Отменить</value>
+	</data>
+	<data name="imSelectObject">
+		<value>Выберите тип</value>
+	</data>
+	<data name="imSelectSourceType">
+		<value>Выберите тип файла</value>
+	</data>
+	<data name="imSelectSourceFile">
+		<value>Выберите файл</value>
+	</data>
+	<data name="imFieldsMatching">
+		<value>Связь полей источника данных с полями портала</value>
+	</data>
+	<data name="imWantToCreate">
+		<value>Вы хотите создать новый список?</value>
+	</data>
+	<data name="imNewListCreation">
+		<value>Создание нового списка</value>
+	</data>
+	<data name="imSelectExistingList">
+		<value>Добавление данных в существующий список</value>
+	</data>
+	<data name="imIssues">
+		<value>Инциденты</value>
+	</data>
+	<data name="imLists">
+		<value>Список</value>
+	</data>
+	<data name="imExcel">
+		<value>Excel</value>
+	</data>
+	<data name="imXML">
+		<value>XML</value>
+	</data>
+	<data name="imNotSet">
+		<value>Не выбран</value>
+	</data>
+	<data name="imErrorListText">
+		<value>Система не может корректно обработать выбранный файл.  
+		Это могло произойти по одной из следующих причин:&lt;br&gt;&lt;br&gt;&lt;li&gt;Выбранный файл был сохранен некорректно&lt;br&gt;&lt;li&gt;
+		Типы данных полей вашего файла не соответствуют типам, поддерживаемым системой.&lt;br&gt;&lt;li&gt;
+		Лист не содержит необходимых столбцов или строк&lt;br&gt;&lt;li&gt;
+		Иные инциденты, связанные, например, с вычислением значений ячеек.&lt;br&gt;&lt;br&gt;
+		Вы можете попытаться очистить лист и внести данные заново или прислать нам файл на адрес {0}. Мы сделаем все возможное, чтобы помочь вам.</value>
+	</data>
+	<data name="imSomeErrors">
+		<value>Некоторые записи неверны.&lt;br&gt;Правильных записей: {0}&lt;br&gt;Неправильных записей: {1}
+		&lt;br&gt;Вы сможете добавить только верные записи. Нажмите \"Создать\" для импорта корректных записей.&lt;br&gt;Нажмите \"Отменить\" для отмены действия.</value>
+	</data>
+	<data name="imWasDone">
+		<value>Процесс импортирования успешно завершен.&lt;br&gt;Было импортировано: {0} записей.</value>
+	</data>
+	<data name="imSimpleError">
+		<value>Ошибка!</value>
+	</data>
+	<data name="imTopTitle">
+		<value>Импорт инцидентов</value>
+	</data>
+	<data name="imStep1Comments">
+		<value>Вы можете импортировать в портал списки и инциденты. Выберите нужный тип импортируемых данных</value>
+	</data>
+	<data name="imStep2Comments">
+		<value>Вы можете импортировать данные из XML файла или из таблицы Excel. Укажите нужный тип файла и выберите файл, содержащий импортируемые данные.</value>
+	</data>
+	<data name="imStep3Comments">
+		<value>Вы можете импортировать данные в новый список или добавить их в уже существующий список.</value>
+	</data>
+	<data name="imStep3NewList">
+		<value>Новый список</value>
+	</data>
+	<data name="imStep3UpdateExList">
+		<value>Расширение существующего списка</value>
+	</data>
+	<data name="imStep3ListTitle">
+		<value>Название списка</value>
+	</data>
+	<data name="imStep3GenCats">
+		<value>Общие категории</value>
+	</data>
+	<data name="imStep3Description">
+		<value>Описание</value>
+	</data>
+	<data name="imStep3Type">
+		<value>Тип</value>
+	</data>
+	<data name="imStep3Status">
+		<value>Статус</value>
+	</data>
+	<data name="imStep3SelectList">
+		<value>Выберите список</value>
+	</data>
+	<data name="imStep4SourceField">
+		<value>Поле источника данных</value>
+	</data>
+	<data name="imStep4IBNField">
+		<value>Поле портала</value>
+	</data>
+	<data name="imSubSelectObject">
+		<value></value>
+	</data>
+	<data name="imSubSourceType">
+		<value></value>
+	</data>
+	<data name="imSubObject">
+		<value></value>
+	</data>
+	<data name="imSubResult">
+		<value></value>
+	</data>
+	<data name="imSub6">
+		<value></value>
+	</data>
+</root>

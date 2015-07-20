@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="ToDo_Columns" primaryKey="ItemId">
+				<Column id="colPriority" type="default" width="20px" title="!!!" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/Shell/ColumnTemplates/PriorityIcon.ascx" />
+				<Column id="colTitle" type="default" width="100%" title="{IbnFramework.Project:PrjTitle}" sortExpression="ItemId" templateUrl="~/Apps/Shell/ColumnTemplates/ToDo.Title.ascx" />
+				<Column id="colPercent" type="default" width="38px" title="%" sortExpression="PercentCompleted" templateUrl="~/Apps/Shell/ColumnTemplates/ToDo.PercentCompleted.ascx" />
+				<Column id="colFinishDate" type="default" width="80px" title="{IbnFramework.Task:DueDate}" sortExpression="FinishDate" templateUrl="~/Apps/Shell/ColumnTemplates/ToDo.FinishDate.ascx" />
+				<Column id="colCreated" type="default" width="80px" title="{IbnFramework.Task:Created}" sortExpression="CreationDate" templateUrl="~/Apps/Shell/ColumnTemplates/ToDo.CreationDate.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

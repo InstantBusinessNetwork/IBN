@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>{53A79835-AF8D-4faa-9788-CE7020235697}</Id>
+	<Name>{IbnFramework.Report:AllRdlReports}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>Reports</FieldSetName>
+	<FieldSet>
+		<string>Title</string>
+		<string>Description</string>
+		<string>FilterControl</string>
+	</FieldSet>
+	<GroupByFieldName></GroupByFieldName>
+	<Filters />
+	<ColumnsUI>
+		<Column field="Title" width="200" />
+		<Column field="Description" width="250" />
+		<Column field="FilterControl" width="150" />
+	</ColumnsUI>
+</ListViewProfile>

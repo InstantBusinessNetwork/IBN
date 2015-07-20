@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DefaultFilter.ascx.cs" Inherits="Mediachase.Ibn.Web.UI.ReportManagement.FilterControls.DefaultFilter" %>
+<asp:Button ID="btnApply" runat="server" Width="90px" OnClick="btnApply_Click" />

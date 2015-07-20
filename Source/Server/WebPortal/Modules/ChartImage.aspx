@@ -1,0 +1,1 @@
+<%@ Page language="c#" Inherits="Mediachase.UI.Web.Modules.ChartImage" Codebehind="ChartImage.aspx.cs" %>

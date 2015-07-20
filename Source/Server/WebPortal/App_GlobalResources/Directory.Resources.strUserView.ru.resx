@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LoginTitle" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="FirstNameTitle" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="LastNameTitle" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="EmailTitle" xml:space="preserve">
+    <value>Основной e-mail</value>
+  </data>
+  <data name="Emails" xml:space="preserve">
+    <value>Дополнительные e-mail адреса</value>
+  </data>
+  <data name="tAdd" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="tWarning" xml:space="preserve">
+    <value>Вы хотите удалить этот e-mail?</value>
+  </data>
+  <data name="WrongEmail" xml:space="preserve">
+    <value>Неверный e-mail</value>
+  </data>
+  <data name="PhoneTitle" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="FaxTitle" xml:space="preserve">
+    <value>Факс</value>
+  </data>
+  <data name="MobileTitle" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="JobTitleTitle" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="DepartmentTitle" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="LocationTitle" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="TimeZoneTitle" xml:space="preserve">
+    <value>Часовой пояс</value>
+  </data>
+  <data name="LangTitle" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="IMGroupTitle" xml:space="preserve">
+    <value>Контактная группа:</value>
+  </data>
+  <data name="tbEditTitle" xml:space="preserve">
+    <value>Информация о пользователе</value>
+  </data>
+  <data name="tbEditEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="GroupsTitle" xml:space="preserve">
+    <value>Группы</value>
+  </data>
+  <data name="tbPrefsTitle" xml:space="preserve">
+    <value>Настройки пользователя</value>
+  </data>
+  <data name="tbPrefsEdit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="Notify" xml:space="preserve">
+    <value>Информировать о системных событиях</value>
+  </data>
+  <data name="NotifyBy" xml:space="preserve">
+    <value>Уведомлять при помощи</value>
+  </data>
+  <data name="NotifyType" xml:space="preserve">
+    <value>Режим уведомлений</value>
+  </data>
+  <data name="NotifyEnabled" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="NotifyDisabled" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="NotifyByEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="NotifyByIBN" xml:space="preserve">
+    <value>IBN</value>
+  </data>
+  <data name="NotifyTypeInst" xml:space="preserve">
+    <value>Немедленно</value>
+  </data>
+  <data name="30m" xml:space="preserve">
+    <value>30 минут</value>
+  </data>
+  <data name="60m" xml:space="preserve">
+    <value>1 час</value>
+  </data>
+  <data name="240m" xml:space="preserve">
+    <value>4 часа</value>
+  </data>
+  <data name="NotifyFrom" xml:space="preserve">
+    <value>С</value>
+  </data>
+  <data name="NotifyTo" xml:space="preserve">
+    <value>По</value>
+  </data>
+  <data name="tbBack" xml:space="preserve">
+    <value>Перейти к списку пользователей</value>
+  </data>
+  <data name="tbConvert" xml:space="preserve">
+    <value>Преобразовать в обычного пользователя</value>
+  </data>
+  <data name="NotActiveUser" xml:space="preserve">
+    <value>Этот пользователь неактивен</value>
+  </data>
+  <data name="tabGeneral" xml:space="preserve">
+    <value>Главное</value>
+  </data>
+  <data name="tabReports" xml:space="preserve">
+    <value>Личные отчеты</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Используйте эти ссылки для просмотра следующих отчетов</value>
+  </data>
+  <data name="PersonalUserReports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="Conference" xml:space="preserve">
+    <value>История конференций</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>История сообщений</value>
+  </data>
+  <data name="Alert" xml:space="preserve">
+    <value>История уведомлений</value>
+  </data>
+  <data name="StatusReport" xml:space="preserve">
+    <value>Отчет о Вашей работе</value>
+  </data>
+  <data name="QuickUsageStats" xml:space="preserve">
+    <value>Ваша общая статистика</value>
+  </data>
+  <data name="ActiveProjects" xml:space="preserve">
+    <value>Активных проектов</value>
+  </data>
+  <data name="CalendarEntries" xml:space="preserve">
+    <value>Мероприятий запланировано</value>
+  </data>
+  <data name="FilesPublished" xml:space="preserve">
+    <value>Документов опубликовано</value>
+  </data>
+  <data name="TasksCompleted" xml:space="preserve">
+    <value>Задач завершено</value>
+  </data>
+  <data name="IssuesResolved" xml:space="preserve">
+    <value>Инцидентов решено</value>
+  </data>
+  <data name="MessagesSent" xml:space="preserve">
+    <value>Сообщений отправлено</value>
+  </data>
+  <data name="MessagesReceived" xml:space="preserve">
+    <value>Сообщений получено</value>
+  </data>
+  <data name="MostRecentSystemAlerts" xml:space="preserve">
+    <value>Последние системные уведомления</value>
+  </data>
+  <data name="StatusReportByUser" xml:space="preserve">
+    <value>Отчет о Вашей работе</value>
+  </data>
+  <data name="PendingUser" xml:space="preserve">
+    <value>Этот пользователь ожидает предоставления учетной записи</value>
+  </data>
+  <data name="ExternalUser" xml:space="preserve">
+    <value>Этот пользователь внешний</value>
+  </data>
+  <data name="tabMetaData" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="BooleanYes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="BooleanNo" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="EmailDuplication" xml:space="preserve">
+    <value>Указанный e-mail уже используется в системе.</value>
+  </data>
+  <data name="NotifyTypeBatch" xml:space="preserve">
+    <value>Периодически</value>
+  </data>
+  <data name="tAddEMail" xml:space="preserve">
+    <value>Новый адрес</value>
+  </data>
+  <data name="tMenuInAlerts" xml:space="preserve">
+    <value>Показывать левое меню при переходах по ссылкам системы уведомлений</value>
+  </data>
+  <data name="tabWSCustomize" xml:space="preserve">
+    <value>Вид страницы «Моя работа» </value>
+  </data>
+  <data name="tabSystemNotifications" xml:space="preserve">
+    <value>Система уведомления</value>
+  </data>
+  <data name="tabSystemReminders" xml:space="preserve">
+    <value>Система напоминания</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="tSetPrimary" xml:space="preserve">
+    <value>Сделать основным</value>
+  </data>
+  <data name="tDelete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tCancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="tLastBatch" xml:space="preserve">
+    <value>Последнее уведомление</value>
+  </data>
+  <data name="tNextBatch" xml:space="preserve">
+    <value>Следующее уведомление</value>
+  </data>
+  <data name="tWindowsLogin" xml:space="preserve">
+    <value>Логин для Windows</value>
+  </data>
+  <data name="tPassword" xml:space="preserve">
+    <value>Пароль</value>
+  </data>
+  <data name="tYourClientLogin" xml:space="preserve">
+    <value>Ваш логин в IBN Клиент</value>
+  </data>
+  <data name="tDownloadIBNClient" xml:space="preserve">
+    <value>Загрузить IBN Клиент</value>
+  </data>
+  <data name="tabUserCalendar" xml:space="preserve">
+    <value>Календарь</value>
+  </data>
+  <data name="IbnClientLogin" xml:space="preserve">
+    <value>Логин для {0} Клиент</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+</root>

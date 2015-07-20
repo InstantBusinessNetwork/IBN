@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="AddLeftMenuItemButton" text="{IbnFramework.Global:_mc_Add}" imageUrl="~/Images/IbnFramework/newitem.gif" commandName="MC_LeftMenu_ItemAdd" itemSplitter="Right"></Button>
+			<Button id="ShowSelectedButton" text="{IbnFramework.Profile:Show}" imageUrl="~/Images/IbnFramework/show.gif" commandName="MC_LeftMenu_ShowSelected"></Button>
+			<Button id="HideSelectedButton" text="{IbnFramework.Profile:Hide}" imageUrl="~/Images/IbnFramework/hide.gif" commandName="MC_LeftMenu_HideSelected" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="LeftMenu_Columns" primaryKey="FullId" cssTemplateUrl="~/Apps/Administration/ColumnTemplates/RowCssClass.Grid.LeftMenu.ascx">
+				<Column id="7D515735-2DEA-43D8-A5F7-B753C0964483" type="ColumnsActions" templateUrl="~/Apps/Administration/ColumnTemplates/ColumnsActions.Grid.LeftMenuProfile.ascx">
+					<Item imageUrl="~/Images/IbnFramework/edit.gif" commandName="MC_LeftMenu_ItemEdit" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/edit.gif" commandName="MC_LeftMenu_ItemUpdate" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_LeftMenu_ItemDelete" paddingRight="5" tooltip="{IbnFramework.Common:Delete}" />
+					<Item imageUrl="~/Images/IbnFramework/undo.png" commandName="MC_LeftMenu_ItemUndo" paddingRight="5" tooltip="{IbnFramework.Profile:Undo}" />
+				</Column>
+				<Column id="colTitle" type="default" width="500" title="{IbnFramework.Profile:Title}" templateUrl="~/Apps/Administration/ColumnTemplates/Text.Grid.LeftMenu.Title.ascx" />
+				<Column id="colOrder" type="default" width="100" title="{IbnFramework.Profile:Order}" dataField="Order" align="Right"/>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_LeftMenu_ItemAdd">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:Adding}</PopupTitle>
+				<Url>~/Apps/Administration/Pages/LeftMenuItemAdd.aspx</Url>
+				<Width>750</Width>
+				<Height>485</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_LeftMenu_ItemEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:Editing}</PopupTitle>
+				<Url>~/Apps/Administration/Pages/LeftMenuItemEdit.aspx?FullId=[ClientParam:primaryKeyId]</Url>
+				<Width>450</Width>
+				<Height>230</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.DeleteLeftMenuItemEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_LeftMenu_ItemUpdate">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:Editing}</PopupTitle>
+				<Url>~/Apps/Administration/Pages/LeftMenuItemUpdate.aspx?FullId=[ClientParam:primaryKeyId]</Url>
+				<Width>450</Width>
+				<Height>200</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.UpdateLeftMenuItemEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_LeftMenu_ItemDelete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.DeleteLeftMenuItemHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.DeleteLeftMenuItemEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			 </Command>
+			<Command id="MC_LeftMenu_ItemUndo">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.UndoLeftMenuItemHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.UndoLeftMenuItemEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<ConfirmationText>{IbnFramework.Profile:UndoChanges}</ConfirmationText>
+			</Command>
+			<Command id="MC_LeftMenu_HideSelected">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.HideSelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_LeftMenu_ShowSelected">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.Administration.CommandHandlers.ShowSelectedItemsHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

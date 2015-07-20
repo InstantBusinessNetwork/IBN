@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<Menu id="ViewMenu">
+			<clear />
+			<add>
+				<Button id="ListView" text="{IbnFramework.FileLibrary:ListView}" commandName="FL_ListView"></Button>
+				<Button id="DetailsView" text="{IbnFramework.FileLibrary:DetailsView}" commandName="" imageUrl="~/Layouts/Images/accept.gif"></Button>
+			</add>
+		</Menu>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="FL_Storage_Columns">
+				<add afterId="colTitle">
+					<Column id="colTitle" type="default" width="300" title="{IbnFramework.FileLibrary:Description}" dataField="Description" />
+				</add>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="FL_ListView">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.FileLibrary.CommandHandlers.ListViewHandler, Mediachase.UI.Web</Handler>
+			</Command>  
+		</add>
+	</Commands>
+</MetaView>

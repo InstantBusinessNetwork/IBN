@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="ApproveSelectedButton" text="{IbnFramework.TimeTracking:_mc_OnApproving}" imageUrl="~/Images/TimeTracking/send3.gif" commandName="MC_TT_SentWeekToApprove_Selected"></Button>
+			<Splitter id="DeleteSelectedSplitter"></Splitter>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="TT_Week_ColId" primaryKey="uid">
+				<Column id="BDE10597-2FBB-4338-AB8D-A12262590373" width="30" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/Layouts/Images/edit.gif" commandName="MC_TT_Week_GoTo" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+					<Item imageUrl="~/Images/TimeTracking/clone2.gif" commandName="MC_TT_CloneWeek" paddingRight="5" tooltip="{IbnFramework.TimeTracking:_mc_Clone}" />
+					<Item imageUrl="~/Images/TimeTracking/send3.gif" commandName="MC_TT_SentWeekToApprove" paddingRight="5" tooltip="{IbnFramework.TimeTracking:_mc_OnApproving}" />
+				</Column>
+				<Column id="colWeekPeriod" type="default" width="200" title="{IbnFramework.TimeTracking:WeekPeriod}" templateUrl="~/Apps/TimeTracking/ColumnTemplates/Text.Grid.WeekPeriod.ascx" />
+				<Column id="colDay1" type="default" width="50" title="Day1" dataField="Day1" />
+				<Column id="colDay2" type="default" width="50" title="Day2" dataField="Day2" />
+				<Column id="colDay3" type="default" width="50" title="Day3" dataField="Day3" />
+				<Column id="colDay4" type="default" width="50" title="Day4" dataField="Day4" />
+				<Column id="colDay5" type="default" width="50" title="Day5" dataField="Day5" />
+				<Column id="colDay6" type="default" width="50" title="Day6" dataField="Day6" />
+				<Column id="colDay7" type="default" width="50" title="Day7" dataField="Day7" />
+				<Column id="colDayT" type="default" width="50" title="{IbnFramework.TimeTracking:DayT}" dataField="DayT" />
+				<Column id="colState" type="default" width="250" title="{IbnFramework.TimeTracking:WeekStatus}" templateUrl="~/Apps/TimeTracking/ColumnTemplates/Status.Grid.WeekPeriod.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_TT_Week_GoTo">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.MyTTWeekGoToHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_TT_SentWeekToApprove">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.TimeTracking:AllToApprove}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.MyTTWeekApproveHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.MyTTWeekApproveEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="MC_TT_SentWeekToApprove_Selected">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.TimeTracking:AllSelectedToApprove}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.MyTTWeekApproveSelectedHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_TT_CloneWeek">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.TimeTracking:CloneTitle}</PopupTitle>
+				<Url>~/Apps/TimeTracking/Pages/Public/SelectWeekForClone.aspx?uid=[ClientParam:primaryKeyId]</Url>
+				<Width>500</Width>
+				<Height>300</Height>
+				<Top>55</Top>
+				<Left>55</Left>
+				<Drag>True</Drag>
+				<EnableHandler>Mediachase.Ibn.Web.UI.TimeTracking.CommandHandlers.MyTTWeekCloneEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<UpdatePanelIds>grdMainPanel</UpdatePanelIds>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

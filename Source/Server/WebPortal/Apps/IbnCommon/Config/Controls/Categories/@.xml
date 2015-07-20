@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicCategoryInfos>
+	<DynamicCategoryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<Uid>00000000-0000-0000-0000-000000000000</Uid>
+		<FriendlyName>{IbnFramework.WidgetEngine:_mc_All}</FriendlyName>
+		<Weight>0</Weight>
+	</DynamicCategoryInfo>
+	<DynamicCategoryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<Uid>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Uid>
+		<FriendlyName>{IbnFramework.WidgetEngine:_mc_GeneralCategory}</FriendlyName>
+		<Weight>10</Weight>
+	</DynamicCategoryInfo>
+	<DynamicCategoryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<Uid>EE997188-4576-4ffe-8192-5EAE6C534C71</Uid>
+		<FriendlyName>{IbnFramework.WidgetEngine:_mc_ProjectManagment}</FriendlyName>
+		<Weight>20</Weight>
+	</DynamicCategoryInfo>
+	<DynamicCategoryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<Uid>2A58C024-6457-4853-87DF-981B8556DA0D</Uid>
+		<FriendlyName>{IbnFramework.WidgetEngine:_mc_HelpdeskManagment}</FriendlyName>
+		<Weight>30</Weight>
+	</DynamicCategoryInfo>
+	<DynamicCategoryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+		<Uid>13C38F3B-D4A6-448a-95B9-DF0F8471A161</Uid>
+		<FriendlyName>{IbnFramework.WidgetEngine:_mc_ReportManagment}</FriendlyName>
+		<Weight>40</Weight>
+	</DynamicCategoryInfo>
+</DynamicCategoryInfos>

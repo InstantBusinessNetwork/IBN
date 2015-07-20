@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="UpdatedBy">
+		<value>Updated By</value>
+	</data>
+	<data name="UpdatedDate">
+		<value>Updated</value>
+	</data>
+	<data name="Size">
+		<value>Size</value>
+	</data>
+	<data name="Path">
+		<value>Path</value>
+	</data>
+	<data name="QuickAdd">
+		<value>Quick Add</value>
+	</data>
+	<data name="tAdd">
+		<value>Add Folder</value>
+	</data>
+	<data name="tAddD">
+		<value>Add File</value>
+	</data>
+	<data name="tAddL">
+		<value>Add Link</value>
+	</data>
+	<data name="tFolderSec">
+		<value>Folder Security</value>
+	</data>
+	<data name="tDeleteF">
+		<value>Delete Folder</value>
+	</data>
+	<data name="tEditF">
+		<value>Edit Folder</value>
+	</data>
+	<data name="tViewDetails">
+		<value>View Details</value>
+	</data>
+	<data name="tEditDoc">
+		<value>Edit File</value>
+	</data>
+	<data name="tDelDoc">
+		<value>Delete File</value>
+	</data>
+	<data name="FileLibrary">
+		<value>Files and Assets</value>
+	</data>
+	<data name="DelCheck">
+		<value>Delete checked</value>
+	</data>
+	<data name="tMoveto">
+		<value>Move to ...</value>
+	</data>
+	<data name="tMoveAlert">
+		<value>Can't move to selected folder. Please select different directory.</value>
+	</data>
+	<data name="DeleteText">
+		<value>If selected items contain any documents, they will be deleted with related timesheets!</value>
+	</data>
+	<data name="MoveCheck">
+		<value>Move Checked</value>
+	</data>
+	<data name="tbTitle">
+		<value>Move Library Objects</value>
+	</data>
+	<data name="Save">
+		<value>Move</value>
+	</data>
+	<data name="Cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="MoveTo">
+		<value>Move To Folder</value>
+	</data>
+	<data name="MesDeleteF">
+		<value>Do you really want to delete this folder with all its files and subfolders?</value>
+	</data>
+	<data name="MesDeletePop3F">
+		<value>This folder is used as an e-mail container. Do you really want to delete it with all its files and subfolders?</value>
+	</data>
+	<data name="Warning">
+		<value>Do you really want to delete this file?</value>
+	</data>
+	<data name="tStatus">
+		<value>Status</value>
+	</data>
+	<data name="tPasteFromClip">
+		<value>Paste From Clipboard</value>
+	</data>
+	<data name="tName">
+		<value>Name</value>
+	</data>
+	<data name="tFileStorage">
+		<value>File Storage</value>
+	</data>
+	<data name="tActions">
+		<value>Actions</value>
+	</data>
+	<data name="tRoot">
+		<value>Root</value>
+	</data>
+	<data name="tWarningAll">
+		<value>Do you really want to delete checked files and folders with all its files and subfolders?</value>
+	</data>
+	<data name="tSendFiles">
+		<value>Send Checked Files</value>
+	</data>
+	<data name="CopyToClipboard">
+		<value>Copy Checked To Clipboard</value>
+	</data>
+	<data name="tWereAdded">
+		<value>{0} File(s) was(were) added to clipboard!</value>
+	</data>
+	<data name="tClose">
+		<value>Close</value>
+	</data>
+	<data name="tThumbnails">
+		<value>Thumbnails</value>
+	</data>
+	<data name="tListView">
+		<value>List View</value>
+	</data>
+	<data name="tDetailsView">
+		<value>Details View</value>
+	</data>
+	<data name="tGlobal">
+		<value>Global Files and Folders</value>
+	</data>
+	<data name="tDescription">
+		<value>Description</value>
+	</data>
+	<data name="tView">
+		<value>View</value>
+	</data>
+	<data name="tCopyLink">
+		<value>Copy Link</value>
+	</data>
+	<data name="tEditedBy">
+		<value>Edited By</value>
+	</data>
+</root>

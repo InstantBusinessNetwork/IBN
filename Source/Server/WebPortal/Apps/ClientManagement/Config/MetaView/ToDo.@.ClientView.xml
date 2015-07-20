@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+		<add>
+			<Button id="DeleteSelectedButton" text="{IbnFramework.Common:DeleteSelected}" imageUrl="~/Layouts/Images/delete.gif" commandName="MC_CM_Todo_SelectedToDo_Delete" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="HDM_Columns" primaryKey="ToDoId">
+				<Column id="5D8F2E32-2696-4137-80BE-925FEA7AD656" type="ColumnsActions" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ColumnsActions.Grid.ascx">
+					<Item imageUrl="~/layouts/Images/edit.gif" commandName="MC_CM_Todo_EditItem" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+				</Column>
+				<Column id="colId" type="default" width="40" title="#" sortExpression="ToDoId" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ToDo.ToDoId.ascx" />
+				<Column id="colPriority" type="default" width="20" title="{IbnFramework.Incident:Priority}" sortExpression="PriorityId" dataField="PriorityId" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/Priority.Grid.IncidentList.ascx" />
+				<Column id="colTitle" type="default" width="250" title="{IbnFramework.Incident:IssTitle}" sortExpression="Title" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ToDo.TitleLink.ascx" />
+				<Column id="colPercent" type="default" width="50" title="%" sortExpression="PercentCompleted" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ToDo.PercentCompleted.ascx" />
+				<Column id="colEnd" type="default" width="80" title="{IbnFramework.Task:DueDate}" sortExpression="FinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/FinishDate.ProjectList.ascx" />
+			</CustomColumns>
+			<GridAction commandName="MC_CM_Todo_ViewItem" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_CM_Todo_ViewItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/ToDo/ToDoView.aspx?ToDoId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_CM_Todo_EditItem">
+				<CommandType>Navigate</CommandType>
+				<Url>~/ToDo/ToDoEdit.aspx?ToDoId=[ClientParam:primaryKeyId]</Url>
+			</Command>
+			<Command id="MC_CM_Todo_SelectedToDo_Delete">
+				<CommandType>ServerAction</CommandType>
+				<ConfirmationText>{IbnFramework.Common:DeleteSelectedItemsConfirmation}</ConfirmationText>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.DeleteSelectedTodosHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

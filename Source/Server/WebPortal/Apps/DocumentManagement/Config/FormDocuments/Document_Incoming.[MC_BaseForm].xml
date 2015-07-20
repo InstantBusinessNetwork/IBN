@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+<Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" width="100%" columns="50%;*" cellPadding="5" xmlns="TableLayout">
+	<Row>
+		<Cell colSpan="2" name="cell_11">
+			<Section uid="dba8056bb19e41d9a145cd6a0cf710cb" borderType="1" showLabel="true" itemIndex="1">
+				<Labels>
+					<Label title="{IbnFramework.Document:IncDocument}" code="ru-RU" />
+				</Labels>
+				<Control controlType="SmartTableLayout" width="100%" uid="81b30c6d05d3430695f8984e58df967d" cellPadding="5" columns="50%;*">
+					<Item rowIndex="1" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="0d5932fa3ecb482ca011c965418dc1e1">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Title" readOnly="False" uid="d12efa8678c94a76b771b83eeb15a491" />
+					</Item>
+					<Item rowIndex="1" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="5bb90bed3ee7412ba8d1099408c9f8a3">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="RegistrationNumber" readOnly="False" uid="34241f6d0b454a23a3e98e005626e9e6" />
+					</Item>
+					<Item rowIndex="5" cellIndex="1" rowSpan="2" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="ea579a4f67fd4f0991c8902f4b773ba5">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Description" readOnly="False" uid="a94bf0ded19347df9f5392e8930242da" />
+					</Item>
+					<Item rowIndex="2" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="c9f18eac4c2843aa9f2c7dcf57b0a32c">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="ReceptionDate" readOnly="False" uid="7a6a47b4935d42f1860a8ec2ad0ac47f" />
+					</Item>
+					<Item rowIndex="4" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="fb0c1254e4504cd3badb06b8c2b549a1">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="ExpectedResolveDate" readOnly="False" uid="cd29ad7866f847ef90005bd67dc9d3d7" />
+					</Item>
+					<Item rowIndex="3" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="56fe1b5b07aa4ee4b4dcfef6f01711b5">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="OutgoingSourceDocumentId" readOnly="False" uid="0671c58e75fe4ad992b6232e1fd75cae" />
+					</Item>
+					<Item rowIndex="2" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="9cfca4ba09d54a28aab2b44567a9edac">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="ReceivedBy" readOnly="False" uid="3b181562adb343819ea6b70085a4bec9" />
+					</Item>
+					<Item rowIndex="4" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="2362689c184d4b87b7daf42acf36f138">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="Initiator" readOnly="False" uid="ddffd929b8b747938a8ddb717c038908" />
+					</Item>
+					<Item rowIndex="3" cellIndex="1" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="120px" uid="10450a3a0c2a49679d28293a3b758955">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="MasterDocumentId" readOnly="False" uid="c07c2139712b483b9b6b064bf83011d2" />
+					</Item>
+					<Item rowIndex="5" cellIndex="2" rowSpan="1" colSpan="1" borderType="0" showLabel="true" labelWidth="150px" uid="2f497b2899614cb6903f5afbe5da014a">
+						<Labels>
+							<Label title="[MC_DefaultLabel]" code="ru-RU" />
+						</Labels>
+						<Control controlType="MetaPrimitive" source="TotalPageCount" readOnly="False" uid="265265e92b7547c892803c1b50ac77ef" />
+					</Item>
+				</Control>
+			</Section>
+		</Cell>
+	</Row>
+	<Row>
+		<Cell colSpan="1" name="cell_21" />
+		<Cell colSpan="1" name="cell_22" />
+	</Row>
+	<Row>
+		<Cell colSpan="2" name="cell_31" />
+	</Row>
+</Table>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<style>
+	<!--
+	Predefined enums:
+
+	color: Transparent, White, Black, Blue, Gray, Green, Red...
+	shape: None, Rectangle, Ellipse, Circle, Rhombus, RightTriangle, LeftTriangle, Height100Percent, Height50PercentUp...
+	border-style: None, Solid.
+	fill-style: None, Solid, Hatch.
+
+	Default style:
+
+	<rule selector="element[attributeName=attributeValue]">
+		<backgroud-color>Transparent</backgroud-color>
+		<shape>Rectangle</shape>
+		<color>Black</color>
+		<border-style>Solid</border-style>
+		<border-width>1</border-width>
+		<border-color>Black</border-color>
+		<fill-style>None</fill-style>
+		<hatch-style>ForwardDiagonal</hatch-style>
+		<width>15</width>
+		<height>15</height>
+		<alpha>255</alpha>
+	</rule>
+	-->
+
+	<rule selector="*">
+		<alpha>255</alpha>
+		<background-color>White</background-color>
+		<color>Black</color>
+		<border-color>Black</border-color>
+		<border-style>Solid</border-style>
+		<border-width>1</border-width>
+		<fill-style>Solid</fill-style>
+		<width>13</width>
+		<height>13</height>
+	</rule>
+
+
+	<rule selector="data">
+		<shape>None</shape>
+	</rule>
+
+	<rule selector="head">
+		<background-color>LightGray</background-color>
+		<border-color>Gray</border-color>
+	</rule>
+
+	<rule selector="axis">
+		<background-color>Transparent</background-color>
+		<border-style>inherit</border-style>
+		<border-color>inherit</border-color>
+	</rule>
+
+	<rule selector="body">
+		<border-style>None</border-style>
+	</rule>
+
+	<rule selector="calendar">
+		<shape>None</shape>
+	</rule>
+
+	<rule selector="day">
+		<border-style>None</border-style>
+	</rule>
+
+	<rule selector="day[holiday=True]">
+		<fill-style>Hatch</fill-style>
+		<hatch-style>Percent25</hatch-style>
+		<color>LightGray</color>
+	</rule>
+
+	<rule selector="span">
+		<shape>None</shape>
+	</rule>
+
+	<rule selector="interval">
+		<shape>Height100Percent</shape>
+		<fill-style>Hatch</fill-style>
+		<hatch-style>Percent50</hatch-style>
+		<color>White</color>
+		<background-color>Blue</background-color>
+		<border-color>Blue</border-color>
+	</rule>
+
+	<rule selector="interval[type=Summary]">
+		<shape>Height50PercentUp</shape>
+		<fill-style>Solid</fill-style>
+		<background-color>Black</background-color>
+		<border-color>Black</border-color>
+	</rule>
+
+	<rule selector="interval[type=Actual]">
+		<hatch-style>Percent75</hatch-style>
+		<background-color>Red</background-color>
+		<border-color>Red</border-color>
+		<height>9</height>
+	</rule>
+
+	<rule selector="interval[type=Progress]">
+		<fill-style>Solid</fill-style>
+		<background-color>Black</background-color>
+		<border-color>Black</border-color>
+		<height>5</height>
+	</rule>
+
+	<rule selector="interval[tag=Completed]">
+		<background-color>Gray</background-color>
+		<border-color>Gray</border-color>
+	</rule>
+
+	<rule selector="interval[type=Progress][tag=Completed]">
+		<border-color>Black</border-color>
+	</rule>
+
+
+	<rule selector="point[type=Start]">
+		<shape>RightTriangle</shape>
+		<background-color>Green</background-color>
+	</rule>
+
+	<rule selector="point[type=Finish]">
+		<shape>LeftTriangle</shape>
+		<background-color>Red</background-color>
+	</rule>
+
+	<rule selector="point[type=ActualStart]">
+		<shape>RightTriangle</shape>
+		<background-color>Green</background-color>
+	</rule>
+
+	<rule selector="point[type=ActualFinish]">
+		<shape>LeftTriangle</shape>
+		<background-color>Red</background-color>
+	</rule>
+
+	<rule selector="point[type=SummaryStart]">
+		<shape>RightTriangle</shape>
+		<background-color>inherit</background-color>
+		<border-color>inherit</border-color>
+		<width>inherit</width>
+		<height>inherit</height>
+	</rule>
+
+	<rule selector="point[type=SummaryFinish]">
+		<shape>LeftTriangle</shape>
+		<background-color>inherit</background-color>
+		<border-color>inherit</border-color>
+		<width>inherit</width>
+		<height>inherit</height>
+	</rule>
+
+	<rule selector="point[type=Milestone]">
+		<shape>Rhombus</shape>
+		<background-color>Black</background-color>
+		<border-color>Black</border-color>
+	</rule>
+
+	<rule selector="point[type=Milestone][tag=BasePlanSmall]">
+		<width>3</width>
+		<height>3</height>
+	</rule>
+
+	<rule selector="point[type=Milestone][tag=BasePlanSmall][direction=Right]">
+		<shape>PentagonRight</shape>
+		<background-color>Green</background-color>
+		<border-color>Green</border-color>
+	</rule>
+
+	<rule selector="point[type=Milestone][tag=BasePlanSmall][direction=Left]">
+		<shape>PentagonLeft</shape>
+		<background-color>Red</background-color>
+		<border-color>Red</border-color>
+	</rule>
+
+	<rule selector="point[type=Milestone][tag=BasePlanLarge][direction=Right]">
+		<background-color>Green</background-color>
+	</rule>
+
+	<rule selector="point[type=Milestone][tag=BasePlanLarge][direction=Left]">
+		<background-color>Red</background-color>
+	</rule>
+
+
+	<rule selector="point[tag=Completed]">
+		<background-color>Gray</background-color>
+		<border-color>Gray</border-color>
+	</rule>
+
+
+	<rule selector="relation">
+		<background-color>Blue</background-color>
+		<border-color>Blue</border-color>
+		<width>4</width>
+		<height>4</height>
+	</rule>
+</style>

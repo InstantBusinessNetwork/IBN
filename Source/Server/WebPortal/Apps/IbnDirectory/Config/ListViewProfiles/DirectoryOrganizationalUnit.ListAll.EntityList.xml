@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Id>AllOrganizationalUnits</Id>
+	<Name>{IbnFramework.Directory:AllOrganizationalUnits}</Name>
+	<IsSystem>true</IsSystem>
+	<IsPublic>true</IsPublic>
+	<FieldSetName>AllOrganizationalUnits</FieldSetName>
+	<FieldSet>
+		<string>Name</string>
+	</FieldSet>
+	<Sorting>
+		<ArrayOfSortingElement>
+			<SortingElement>
+				<Source>OutlineNumber</Source>
+				<Type>Asc</Type>
+			</SortingElement>
+		</ArrayOfSortingElement>
+	</Sorting>
+	<ColumnsUI>
+		<Column field="Name" width="500" />
+	</ColumnsUI>
+</ListViewProfile>

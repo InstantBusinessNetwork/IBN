@@ -1,0 +1,105 @@
+﻿html, body
+{
+	margin: 0;
+	height: 100%;
+}
+
+.mainLayout
+{
+	width: 100%;
+	height: 100%;
+	vertical-align: top;
+	border: none 0;
+	border-spacing: 0;
+}
+
+.mainHeader, .mainHeader a
+{
+	width: 100%;
+	vertical-align: top;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.mainHeader > td
+{
+	padding: 0;
+}
+
+.mainTitle
+{
+	font-size: large;
+}
+
+.mainToolbar
+{
+	width: 100%;
+	text-align: right;
+}
+
+.mainMenu
+{
+	white-space: nowrap;
+	padding: 0;
+	background-color: #E1ECFC;
+}
+
+.mainMenu td
+{
+	padding: 2px;
+}
+
+.mainContent
+{
+	width: 100%;
+	vertical-align: top;
+	padding: 5px;
+}
+
+.mainFooter
+{
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.topBannerText
+{
+	padding: 3px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.pageHeader
+{
+	padding: 4px;
+	vertical-align: middle;
+}
+
+.companyLogo
+{
+	vertical-align: middle;
+}
+
+
+.ibn-bannerframe
+{
+	height: 19px;
+	vertical-align: middle;
+}
+
+.ibn-pagetitle
+{
+	padding-left: 15px;
+	vertical-align: middle;
+}
+
+.ibn-titlearealine
+{
+	height: 1px;
+}
+
+.ibn-navline
+{
+	margin: 8px;
+	padding: 4px;
+}

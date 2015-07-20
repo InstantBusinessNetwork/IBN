@@ -1,0 +1,202 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D1230E1-BBB8-465B-B94A-3C9C14125D58}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.AssignmentsUI</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.AssignmentsUI</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Common, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Framework\WebControls\bin\Debug\Mediachase.Ibn.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.6.43.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.6.54.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data.Services, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Web.UI.WebControls, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Framework\WebControls\bin\Debug\Mediachase.Ibn.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.XmlTools, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Framework\WebControls\bin\Debug\Mediachase.Ibn.XmlTools.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35">
+	<SpecificVersion>False</SpecificVersion>
+      	<HintPath>..\..\..\Framework\WebControls\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Workflow.Activities">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Arrow_Down_Green.png" />
+    <Content Include="Images\Arrow_Up_Green.png" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\deny.gif" />
+    <Content Include="Images\edit.gif" />
+    <Content Include="Modules\Pages\PrototypeEdit.aspx" />
+    <Content Include="Modules\Pages\WorkflowCreate.aspx" />
+    <Content Include="Modules\Pages\WorkflowList.aspx" />
+    <Content Include="Modules\Primitives\CompositeActivity.ascx" />
+    <Content Include="Modules\Primitives\SimpleActivity.ascx" />
+    <Content Include="Scripts\Hider.js" />
+    <Content Include="Styles\assigment.css" />
+    <Content Include="TestWF.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\ActivityFactory.cs" />
+    <Compile Include="Code\ActivityUtil.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Hider\HiderExtender.cs" />
+    <Compile Include="Modules\Pages\PrototypeEdit.aspx.cs">
+      <DependentUpon>PrototypeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pages\PrototypeEdit.aspx.designer.cs">
+      <DependentUpon>PrototypeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Pages\WorkflowCreate.aspx.cs">
+      <DependentUpon>WorkflowCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pages\WorkflowCreate.aspx.designer.cs">
+      <DependentUpon>WorkflowCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Pages\WorkflowList.aspx.cs">
+      <DependentUpon>WorkflowList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Pages\WorkflowList.aspx.designer.cs">
+      <DependentUpon>WorkflowList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Primitives\CompositeActivity.ascx.cs">
+      <DependentUpon>CompositeActivity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Primitives\CompositeActivity.ascx.designer.cs">
+      <DependentUpon>CompositeActivity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Primitives\IWorkflowPrimitive.cs" />
+    <Compile Include="Modules\Primitives\SimpleActivity.ascx.cs">
+      <DependentUpon>SimpleActivity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Primitives\SimpleActivity.ascx.designer.cs">
+      <DependentUpon>SimpleActivity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\WorkflowBuilder.cs" />
+    <Compile Include="Modules\WorkflowItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestWF.aspx.cs">
+      <DependentUpon>TestWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestWF.aspx.designer.cs">
+      <DependentUpon>TestWF.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.Ibn.Assignments\Mediachase.Ibn.Assignments.csproj">
+      <Project>{F9510DA4-B188-436A-AB40-7783C3370834}</Project>
+      <Name>Mediachase.Ibn.Assignments</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Code\App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3278</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

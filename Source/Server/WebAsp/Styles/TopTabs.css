@@ -1,0 +1,33 @@
+﻿.tab
+{
+	width: 120px;
+	padding: 2px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: verdana;
+	text-align: center;
+	white-space: nowrap;
+}
+.tabSelected
+{
+	border-bottom: none;
+	padding-bottom: 3px;
+	color: #CE3431;
+	background-color: White;
+}
+.tabGap
+{
+	border-left: none;
+	border-top: none;
+	border-right: none;
+}
+.tab a
+{
+	color: #808080;
+	text-decoration: none;
+}
+.tab a:hover
+{
+	color: #CE3431;
+	text-decoration: none;
+}

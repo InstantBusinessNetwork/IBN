@@ -1,0 +1,585 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>Активные элементы</value>
+  </data>
+  <data name="AddSelectedElement" xml:space="preserve">
+    <value>Добавить выбранный элемент</value>
+  </data>
+  <data name="AddSelectedElements" xml:space="preserve">
+    <value>Добавить выбранные элементы</value>
+  </data>
+  <data name="AllSelectedItemsWereProcessed" xml:space="preserve">
+    <value>Все выбранные элементы были успешно обработаны.</value>
+  </data>
+  <data name="Any" xml:space="preserve">
+    <value>Любой</value>
+  </data>
+  <data name="Bytes" xml:space="preserve">
+    <value>байт(а)</value>
+  </data>
+  <data name="DeleteSelected" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteSelectedItemsConfirmation" xml:space="preserve">
+    <value>Вы действительно хотите удалить выделенные элементы?</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="ExportToExcel" xml:space="preserve">
+    <value>Экспорт в Excel</value>
+  </data>
+  <data name="ExportToXML" xml:space="preserve">
+    <value>Экспорт в XML</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Избранное</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Центр помощи и технической поддержки</value>
+  </data>
+  <data name="HideShow" xml:space="preserve">
+    <value>Спрятать / показать</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Журнал посещений</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="KBytes" xml:space="preserve">
+    <value>Кб</value>
+  </data>
+  <data name="MBytes" xml:space="preserve">
+    <value>Мб</value>
+  </data>
+  <data name="NewDocument" xml:space="preserve">
+    <value>Новый документ</value>
+  </data>
+  <data name="NewEntry" xml:space="preserve">
+    <value>Новое мероприятие</value>
+  </data>
+  <data name="NewFile" xml:space="preserve">
+    <value>Новый файл</value>
+  </data>
+  <data name="NewIssue" xml:space="preserve">
+    <value>Новый инцидент</value>
+  </data>
+  <data name="NewList" xml:space="preserve">
+    <value>Новый список</value>
+  </data>
+  <data name="NewProject" xml:space="preserve">
+    <value>Новый проект</value>
+  </data>
+  <data name="NewReport" xml:space="preserve">
+    <value>Новый отчёт</value>
+  </data>
+  <data name="NewToDo" xml:space="preserve">
+    <value>Новое поручение</value>
+  </data>
+  <data name="NewUser" xml:space="preserve">
+    <value>Новый пользователь</value>
+  </data>
+  <data name="NotAllSelectedItemsWereProcessed" xml:space="preserve">
+    <value>Не все выбранные элементы были обработаны. Это может быть связано с ограничениями системы или с настройками безопасности.</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Распечатать текущую страницу</value>
+  </data>
+  <data name="QuickAccess" xml:space="preserve">
+    <value>Быстрый доступ</value>
+  </data>
+  <data name="ReferencesExists" xml:space="preserve">
+    <value>На данный элемент имеются ссылки. Удаление отменяется.</value>
+  </data>
+  <data name="Requests" xml:space="preserve">
+    <value>Запросы</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>Обязательное поле</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="SelectedItems" xml:space="preserve">
+    <value>Выбранные элементы</value>
+  </data>
+  <data name="SelectElement" xml:space="preserve">
+    <value>Выберите элемент</value>
+  </data>
+  <data name="SelectElements" xml:space="preserve">
+    <value>Выберите элементы</value>
+  </data>
+  <data name="SelectUnselectAll" xml:space="preserve">
+    <value>Выделить все</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Подтвердить</value>
+  </data>
+  <data name="tLogOut" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="tMyWorks" xml:space="preserve">
+    <value>Моя работа</value>
+  </data>
+  <data name="tQuickAdd" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Updates" xml:space="preserve">
+    <value>Обновления</value>
+  </data>
+  <data name="SearchObjects" xml:space="preserve">
+    <value>Поиск объектов</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="OnlyActiveObjects" xml:space="preserve">
+    <value>Показывать только активные элементы</value>
+  </data>
+  <data name="Organization" xml:space="preserve">
+    <value>Организация</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="ControlSet" xml:space="preserve">
+    <value>Блоки</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="PageTemplate" xml:space="preserve">
+    <value>Вид страницы</value>
+  </data>
+  <data name="Default" xml:space="preserve">
+    <value>По умолчанию</value>
+  </data>
+  <data name="ChoosePageSetting" xml:space="preserve">
+    <value>Выберите страницу для настройки</value>
+  </data>
+  <data name="ClearUserSettings" xml:space="preserve">
+    <value>Удалить пользовательские настройки данной страницы для всех пользователей.</value>
+  </data>
+  <data name="PageSetting" xml:space="preserve">
+    <value>Настройки страницы</value>
+  </data>
+  <data name="PriorityHigh" xml:space="preserve">
+    <value>Высокий приоритет</value>
+  </data>
+  <data name="PriorityHighName" xml:space="preserve">
+    <value>Высокий</value>
+  </data>
+  <data name="PriorityLow" xml:space="preserve">
+    <value>Низкий приоритет</value>
+  </data>
+  <data name="PriorityLowName" xml:space="preserve">
+    <value>Низкий</value>
+  </data>
+  <data name="PriorityNormal" xml:space="preserve">
+    <value>Нормальный приоритет</value>
+  </data>
+  <data name="PriorityNormalName" xml:space="preserve">
+    <value>Нормальный</value>
+  </data>
+  <data name="PriorityUrgent" xml:space="preserve">
+    <value>Экстренный приоритет</value>
+  </data>
+  <data name="PriorityUrgentName" xml:space="preserve">
+    <value>Экстренный</value>
+  </data>
+  <data name="PriorityVeryHigh" xml:space="preserve">
+    <value>Очень высокий приоритет</value>
+  </data>
+  <data name="PriorityVeryHighName" xml:space="preserve">
+    <value>Очень высокий</value>
+  </data>
+  <data name="tName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="tDepartment" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="tStatus" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="CanManage" xml:space="preserve">
+    <value>Менеджер</value>
+  </data>
+  <data name="CopyLink" xml:space="preserve">
+    <value>Копировать ссылку</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Логин</value>
+  </data>
+  <data name="IsActive" xml:space="preserve">
+    <value>Активен</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="WindowsLogin" xml:space="preserve">
+    <value>Логин для Windows</value>
+  </data>
+  <data name="LdapUid" xml:space="preserve">
+    <value>Ldap Uid</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Мобильный телефон</value>
+  </data>
+  <data name="Fax" xml:space="preserve">
+    <value>Факс</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Расположение</value>
+  </data>
+  <data name="Company" xml:space="preserve">
+    <value>Компания</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Подразделение</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Должность</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="DeleteItemConfirmation" xml:space="preserve">
+    <value>Вы действительно хотите удалить этот элемент?</value>
+  </data>
+  <data name="ActionWasNotProcessed" xml:space="preserve">
+    <value>Действие не было обработано. Это может быть связано с ограничениями системы или с настройками безопасности.</value>
+  </data>
+  <data name="Deleting" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="NewEntity" xml:space="preserve">
+    <value>Новый элемент</value>
+  </data>
+  <data name="EntityProfileEdit" xml:space="preserve">
+    <value>Редактирование вида</value>
+  </data>
+  <data name="EntityProfileNew" xml:space="preserve">
+    <value>Новый вид</value>
+  </data>
+  <data name="Editing" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="Creating" xml:space="preserve">
+    <value>Новый элемент</value>
+  </data>
+  <data name="SelectObjects" xml:space="preserve">
+    <value>Выбор объектов</value>
+  </data>
+  <data name="tDelimeter" xml:space="preserve">
+    <value>Разделитель</value>
+  </data>
+  <data name="tTextQualifier" xml:space="preserve">
+    <value>Ограничитель строк</value>
+  </data>
+  <data name="tEncoding" xml:space="preserve">
+    <value>Кодировка</value>
+  </data>
+  <data name="tMetaField" xml:space="preserve">
+    <value>Поле списка</value>
+  </data>
+  <data name="tAvailable" xml:space="preserve">
+    <value>Поля источника данных</value>
+  </data>
+  <data name="tSelectSource" xml:space="preserve">
+    <value>Укажите нужный тип и выберите файл, содержащий импортируемые данные.</value>
+  </data>
+  <data name="tClose" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
+  <data name="tSave" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="tNext" xml:space="preserve">
+    <value>Вперед</value>
+  </data>
+  <data name="tPrev" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="tWizardImportHeader" xml:space="preserve">
+    <value>Импорт списка</value>
+  </data>
+  <data name="tWizardImportSubHeader" xml:space="preserve">
+    <value>Вы можете импортировать данные в портал</value>
+  </data>
+  <data name="tStepByStep" xml:space="preserve">
+    <value>Шаг {0} из {1}</value>
+  </data>
+  <data name="imSelectSourceType" xml:space="preserve">
+    <value>Выберите тип файла</value>
+  </data>
+  <data name="imSelectSourceFile" xml:space="preserve">
+    <value>Выберите файл</value>
+  </data>
+  <data name="tImportInformation" xml:space="preserve">
+    <value>Импорт элементов</value>
+  </data>
+  <data name="tMapping" xml:space="preserve">
+    <value>Соответствие полей</value>
+  </data>
+  <data name="imExcel" xml:space="preserve">
+    <value>Excel</value>
+  </data>
+  <data name="imXML" xml:space="preserve">
+    <value>XML</value>
+  </data>
+  <data name="imCSV" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="imVCF" xml:space="preserve">
+    <value>VCF</value>
+  </data>
+  <data name="tSpaceValue" xml:space="preserve">
+    <value>[пробел]</value>
+  </data>
+  <data name="tTabValue" xml:space="preserve">
+    <value>[таб]</value>
+  </data>
+  <data name="tDefault" xml:space="preserve">
+    <value>[по умолчанию]</value>
+  </data>
+  <data name="tNotSetValue" xml:space="preserve">
+    <value>[не определено]</value>
+  </data>
+  <data name="tDefaultValue" xml:space="preserve">
+    <value>[значение по умолчанию]</value>
+  </data>
+  <data name="McOleDbServiceWarningXlsx" xml:space="preserve">
+    <value>На сервере не установлен необходимый компонент «&lt;a target="_blank" href="http://www.microsoft.com/downloads/details.aspx?FamilyID=7554F536-8C28-4598-9B72-EF94E038C891"&gt;Microsoft Office Access database engine 2007&lt;/a&gt;».&lt;br&gt;Сообщите об этой проблеме вашему системному администратору.</value>
+  </data>
+  <data name="McOleDbServiceWarning" xml:space="preserve">
+    <value>Возникла проблема с сервисом разбора данных.&lt;br /&gt;Сервис либо не запущен, либо вы неверно указали формат импортируемого файла!</value>
+  </data>
+  <data name="tImportWasSuccessfull" xml:space="preserve">
+    <value>Процесс импорта успешно завершен!</value>
+  </data>
+  <data name="tImportWithErrors" xml:space="preserve">
+    <value>Процесс импорта завершен!&lt;br	/&gt;При импорте данных возникло несколько ошибок!&lt;br	/&gt;Вы можете скачать {0}.</value>
+  </data>
+  <data name="tErrorList" xml:space="preserve">
+    <value>список ошибок</value>
+  </data>
+  <data name="AllEntitiesExport" xml:space="preserve">
+    <value>Все элементы</value>
+  </data>
+  <data name="ViewEntitiesExport" xml:space="preserve">
+    <value>Элементы выбранного вида</value>
+  </data>
+  <data name="VisibleEntitiesExport" xml:space="preserve">
+    <value>Элементы текущей страницы</value>
+  </data>
+  <data name="SelectedEntitiesExport" xml:space="preserve">
+    <value>Выбранные элементы</value>
+  </data>
+  <data name="tOf" xml:space="preserve">
+    <value>из</value>
+  </data>
+  <data name="tAddEntity" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="tFilterMore" xml:space="preserve">
+    <value>еще {0}...</value>
+  </data>
+  <data name="tFilterAnd" xml:space="preserve">
+    <value>И</value>
+  </data>
+  <data name="tFilterFrom" xml:space="preserve">
+    <value>с</value>
+  </data>
+  <data name="tFilterTo" xml:space="preserve">
+    <value>по</value>
+  </data>
+  <data name="tAddEntities" xml:space="preserve">
+    <value>Добавить записи</value>
+  </data>
+  <data name="tFilterSelectObject" xml:space="preserve">
+    <value>Выберите обьект</value>
+  </data>
+  <data name="Adding" xml:space="preserve">
+    <value>Добавление</value>
+  </data>
+  <data name="Administration" xml:space="preserve">
+    <value>Администрирование</value>
+  </data>
+  <data name="tTotalRecords" xml:space="preserve">
+    <value>Всего записей: {0}.</value>
+  </data>
+  <data name="ExcludeSelected" xml:space="preserve">
+    <value>Исключить</value>
+  </data>
+  <data name="ExcludeSelectedItemsConfirmation" xml:space="preserve">
+    <value>Вы действительно хотите исключить выделенные элементы?</value>
+  </data>
+  <data name="tResetCounter" xml:space="preserve">
+    <value>Сбросить счетчик</value>
+  </data>
+  <data name="tSettings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="tDeliveryTimeout" xml:space="preserve">
+    <value>Срок доставки сообщения</value>
+  </data>
+  <data name="tDeliveryAttempts" xml:space="preserve">
+    <value>Максимальное количество попыток</value>
+  </data>
+  <data name="tLogLifeTime" xml:space="preserve">
+    <value>Удалить сообщения, старше чем</value>
+  </data>
+  <data name="tDays" xml:space="preserve">
+    <value>дней</value>
+  </data>
+  <data name="FavoritesGroup" xml:space="preserve">
+    <value>[ Избранное ]</value>
+  </data>
+  <data name="AddToFavorites" xml:space="preserve">
+    <value>Добавить в Избранное</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Вернуться</value>
+  </data>
+  <data name="PrinterVersion" xml:space="preserve">
+    <value>Версия для печати</value>
+  </data>
+</root>

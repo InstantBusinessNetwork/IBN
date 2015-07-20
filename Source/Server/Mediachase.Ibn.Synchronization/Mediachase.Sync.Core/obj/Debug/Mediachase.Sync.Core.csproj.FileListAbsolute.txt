@@ -1,0 +1,5 @@
+C:\Projects\IbnNextTfs\4.8\Server\Mediachase.Ibn.Synchronization\Mediachase.Sync.Core\bin\Debug\Mediachase.Sync.Core.dll
+C:\Projects\IbnNextTfs\4.8\Server\Mediachase.Ibn.Synchronization\Mediachase.Sync.Core\bin\Debug\Mediachase.Sync.Core.pdb
+C:\Projects\IbnNextTfs\4.8\Server\Mediachase.Ibn.Synchronization\Mediachase.Sync.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Projects\IbnNextTfs\4.8\Server\Mediachase.Ibn.Synchronization\Mediachase.Sync.Core\obj\Debug\Mediachase.Sync.Core.dll
+C:\Projects\IbnNextTfs\4.8\Server\Mediachase.Ibn.Synchronization\Mediachase.Sync.Core\obj\Debug\Mediachase.Sync.Core.pdb

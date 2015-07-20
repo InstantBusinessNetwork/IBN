@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="PM_Columns">
+			<add>
+				<Column id="colStart" type="default" width="100" title="{IbnFramework.Project:StartDate}" sortExpression="StartDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/StartDate.ProjectList.ascx" />
+				<Column id="colEnd" type="default" width="100" title="{IbnFramework.Project:EndDate}" sortExpression="FinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/FinishDate.ProjectList.ascx" />
+				<Column id="colPlanStart" type="default" width="100" title="{IbnFramework.Project:TargetStartDate}" sortExpression="TargetStartDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetStartDate.ProjectList.ascx" />
+				<Column id="colPlanEnd" type="default" width="100" title="{IbnFramework.Project:TargetEndDate}" sortExpression="TargetFinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetFinishDate.ProjectList.ascx" />
+				<Column id="colFactStart" type="default" width="100" title="{IbnFramework.Project:ActualStartDate}" sortExpression="ActualStartDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ActualStartDate.ProjectList.ascx" />
+				<Column id="colFactEnd" type="default" width="100" title="{IbnFramework.Project:ActualEndDate}" sortExpression="ActualFinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/ActualFinishDate.ProjectList.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

@@ -1,0 +1,536 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C04D1E2-C534-46EC-A779-B55EEE7D5783}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.UI.Web</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.DefaultUserReports</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Rus|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;RUSSIANEDITION</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2006.1.1231.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Web.UI.WebControls, Version=1.0.3040.31421, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Web.UI.WebControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\System.Web.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\System.Web.Extensions.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="App_Code_Old\DBUserReport.cs" />
+    <Compile Include="App_Code_Old\InstallerClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\AlertsHistory_ascx_cs_AlertsHistoryAdminInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\AlertsHistory_ascx_cs_AlertsHistoryInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\ChatHistory_ascx_cs_ChatHistoryAdminInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\ChatHistory_ascx_cs_ChatHistoryInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\GroupAndUserImStat_ascx_cs_GroupAndUserImStatInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\GroupAndUserStat_ascx_cs_GroupAndUserStatInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\MessageHistory_ascx_cs_MessageHistoryAdminInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\MessageHistory_ascx_cs_MessageHistoryInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\MostActiveReport_ascx_cs_MostActiveReportInfo.cs" />
+    <Compile Include="App_Code_Old\Migrated\UserReports\Modules\PortalQuickSnapshot_ascx_cs_PortalQuickSnapshotInfo.cs" />
+    <Compile Include="App_Code_Old\UserReport.cs" />
+    <Compile Include="App_Code_Old\UserReports\GlobalModules\IndentedDropDownList.cs" />
+    <Compile Include="App_Code_Old\UserReports\GlobalModules\PageTemplateExtension\Interface.cs" />
+    <Compile Include="App_Code_Old\UserReports\Util\CommonHelper.cs" />
+    <Compile Include="App_GlobalResources\UserReports.GlobalModules.Resources.strDateTimeControl.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.GlobalModules.Resources.strDateTimeControl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.GlobalModules.Resources.strDateTimeControl.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.GlobalModules.Resources.strDateTimeControl.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.GlobalModules.Resources.strTemplate.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.GlobalModules.Resources.strTemplate.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.GlobalModules.Resources.strTemplate.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.GlobalModules.Resources.strTemplate.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strAlertsHistory.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strAlertsHistory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strAlertsHistory.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strAlertsHistory.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strChatHistory.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strChatHistory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strChatHistory.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strChatHistory.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strGroupAndUserStat.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strGroupAndUserStat.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strGroupAndUserStat.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strGroupAndUserStat.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strMessageHistory.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strMessageHistory.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strMessageHistory.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strMessageHistory.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strMostActiveReport.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strMostActiveReport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strMostActiveReport.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strMostActiveReport.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strPageTitles.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strPageTitles.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strPageTitles.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strPageTitles.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strPortalQuickSnapshot.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strPortalQuickSnapshot.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strPortalQuickSnapshot.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strPortalQuickSnapshot.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strTaskDates.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strTaskDates.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\UserReports.Resources.strTaskDates.ru.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserReports.Resources.strTaskDates.ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\AlertsHistory.aspx.cs">
+      <DependentUpon>AlertsHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\AlertsHistory.aspx.designer.cs">
+      <DependentUpon>AlertsHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\chat_history.aspx.cs">
+      <DependentUpon>chat_history.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\chat_history.aspx.designer.cs">
+      <DependentUpon>chat_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\PageTemplateNew.ascx.cs">
+      <DependentUpon>PageTemplateNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\PageTemplateNew.ascx.designer.cs">
+      <DependentUpon>PageTemplateNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\PickerControl.ascx.cs">
+      <DependentUpon>PickerControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\PickerControl.ascx.designer.cs">
+      <DependentUpon>PickerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\ReportHeader.ascx.cs">
+      <DependentUpon>ReportHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\GlobalModules\ReportHeader.ascx.designer.cs">
+      <DependentUpon>ReportHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\GroupAndUserImStat.aspx.cs">
+      <DependentUpon>GroupAndUserImStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\GroupAndUserImStat.aspx.designer.cs">
+      <DependentUpon>GroupAndUserImStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\GroupAndUserStat.aspx.cs">
+      <DependentUpon>GroupAndUserStat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\GroupAndUserStat.aspx.designer.cs">
+      <DependentUpon>GroupAndUserStat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\AlertsHistory.ascx.cs">
+      <DependentUpon>AlertsHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\AlertsHistory.ascx.designer.cs">
+      <DependentUpon>AlertsHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\ChatHistory.ascx.cs">
+      <DependentUpon>ChatHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\ChatHistory.ascx.designer.cs">
+      <DependentUpon>ChatHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\GroupAndUserImStat.ascx.cs">
+      <DependentUpon>GroupAndUserImStat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\GroupAndUserImStat.ascx.designer.cs">
+      <DependentUpon>GroupAndUserImStat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\GroupAndUserStat.ascx.cs">
+      <DependentUpon>GroupAndUserStat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\GroupAndUserStat.ascx.designer.cs">
+      <DependentUpon>GroupAndUserStat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\MessageHistory.ascx.cs">
+      <DependentUpon>MessageHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\MessageHistory.ascx.designer.cs">
+      <DependentUpon>MessageHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\MostActiveReport.ascx.cs">
+      <DependentUpon>MostActiveReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\MostActiveReport.ascx.designer.cs">
+      <DependentUpon>MostActiveReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\PortalQuickSnapshot.ascx.cs">
+      <DependentUpon>PortalQuickSnapshot.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\PortalQuickSnapshot.ascx.designer.cs">
+      <DependentUpon>PortalQuickSnapshot.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\Modules\TaskDates.ascx.cs">
+      <DependentUpon>TaskDates.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\Modules\TaskDates.ascx.designer.cs">
+      <DependentUpon>TaskDates.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\MostActiveReport.aspx.cs">
+      <DependentUpon>MostActiveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\MostActiveReport.aspx.designer.cs">
+      <DependentUpon>MostActiveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\PortalQuickSnapshot.aspx.cs">
+      <DependentUpon>PortalQuickSnapshot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\PortalQuickSnapshot.aspx.designer.cs">
+      <DependentUpon>PortalQuickSnapshot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\TaskDates.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TaskDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\TaskDates.aspx.designer.cs">
+      <DependentUpon>TaskDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReports\User_History.aspx.cs">
+      <DependentUpon>User_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReports\User_History.aspx.designer.cs">
+      <DependentUpon>User_History.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.GlobalModules.Resources.strDateTimeControl.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.GlobalModules.Resources.strDateTimeControl.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.GlobalModules.Resources.strDateTimeControl.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.GlobalModules.Resources.strDateTimeControl.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.GlobalModules.Resources.strTemplate.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.GlobalModules.Resources.strTemplate.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.GlobalModules.Resources.strTemplate.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.GlobalModules.Resources.strTemplate.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strAlertsHistory.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strAlertsHistory.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strAlertsHistory.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strAlertsHistory.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strChatHistory.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strChatHistory.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strChatHistory.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strChatHistory.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strGroupAndUserStat.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strGroupAndUserStat.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strGroupAndUserStat.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strGroupAndUserStat.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strMessageHistory.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strMessageHistory.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strMessageHistory.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strMessageHistory.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strMostActiveReport.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strMostActiveReport.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strMostActiveReport.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strMostActiveReport.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strPageTitles.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strPageTitles.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strPageTitles.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strPageTitles.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strPortalQuickSnapshot.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strPortalQuickSnapshot.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strPortalQuickSnapshot.ru.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strPortalQuickSnapshot.ru.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strTaskDates.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strTaskDates.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_GlobalResources\UserReports.Resources.strTaskDates.ru.resx">
+      <SubType>Designer</SubType>
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>UserReports.Resources.strTaskDates.ru.designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReports\GlobalModules\PageTemplateNew.ascx.resx">
+      <DependentUpon>PageTemplateNew.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReports\GlobalModules\ReportHeader.ascx.resx">
+      <DependentUpon>ReportHeader.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReports\Modules\AlertsHistory.ascx.resx">
+      <DependentUpon>AlertsHistory.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReports\Modules\ChatHistory.ascx.resx">
+      <DependentUpon>ChatHistory.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserReports\AlertsHistory.aspx" />
+    <Content Include="UserReports\chat_history.aspx" />
+    <Content Include="UserReports\GlobalModules\PageTemplateNew.ascx" />
+    <Content Include="UserReports\GlobalModules\ReportHeader.ascx" />
+    <Content Include="UserReports\GroupAndUserImStat.aspx" />
+    <Content Include="UserReports\GroupAndUserStat.aspx" />
+    <Content Include="UserReports\Modules\AlertsHistory.ascx" />
+    <Content Include="UserReports\Modules\ChatHistory.ascx" />
+    <Content Include="UserReports\Modules\GroupAndUserImStat.ascx" />
+    <Content Include="UserReports\Modules\GroupAndUserStat.ascx" />
+    <Content Include="UserReports\Modules\MessageHistory.ascx" />
+    <Content Include="UserReports\Modules\MostActiveReport.ascx" />
+    <Content Include="UserReports\Modules\PortalQuickSnapshot.ascx" />
+    <Content Include="UserReports\MostActiveReport.aspx" />
+    <Content Include="UserReports\PortalQuickSnapshot.aspx" />
+    <Content Include="UserReports\User_History.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UserReports\GlobalModules\PickerControl.ascx" />
+    <Content Include="UserReports\Modules\TaskDates.ascx" />
+    <Content Include="UserReports\TaskDates.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{F76612EC-646A-435D-A649-9C5B66A07906}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Database\Database.csproj">
+      <Project>{C51F27A4-7178-4DB0-BF62-12EE4F41011D}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.MetaDataPlus\Mediachase.MetaDataPlus.csproj">
+      <Project>{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}</Project>
+      <Name>Mediachase.MetaDataPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11507</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost/ibn48reports/</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

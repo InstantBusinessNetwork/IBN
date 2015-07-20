@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" ClassName="Mediachase.Ibn.Web.UI.MetaUI.Primitives.Currency" Inherits="Mediachase.Ibn.Web.UI.Controls.Util.BaseType" %>
+<%# (DataItem == null || DataItem.Properties[FieldName].Value == null) ? "" : Convert.ToDouble(DataItem.Properties[FieldName].Value).ToString("#.##")%>

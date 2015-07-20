@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<clear />
+		<add>
+			<GridAction commandName="MC_EventsRes_SelectDblClick" eventName="OnDblClick"></GridAction>
+		</add>
+	</Grid>
+	<Commands>
+		<clear />
+		<add>
+			<Command id="MC_EventsRes_SelectDblClick">
+				<CommandType>ClientAction</CommandType>
+				<ClientScript>onAddSelected()</ClientScript>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

@@ -1,0 +1,1 @@
+"D:\Program Files\Microsoft Visual Studio 8\Common7\Tools\Bin\MC.Exe" -U "E:\Projects\tfs.mediachase.ru\Instant Business Network\4.8\Server\IMServer\EventLogMessages.mc"

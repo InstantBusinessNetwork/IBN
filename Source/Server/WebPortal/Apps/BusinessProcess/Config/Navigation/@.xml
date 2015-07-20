@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MAdmin" create="True">
+			<Link id="MAdmin8">
+				<add>
+					<Link order="700" id="MAdmin8_WFTemplates" text="{IbnFramework.BusinessProcess:WorkflowTemplates}" iconUrl="" iconCss="" command="cmd_WFTemplates" />
+				</add>
+			</Link>
+		</Tab>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_WFTemplates">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=WorkflowDefinition</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.BusinessProcess.CommandHandlers.WFTemplatesEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

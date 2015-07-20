@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tables>
+	<table name="COMPANIES" />
+	<table name="IMGROUPS" />
+	<table name="DEPENDENCES" />
+	<table name="USER" />
+	<table name="BINARY_DATA" />
+	<table name="AUTH_LIST" />
+	<table name="CHATS" />
+	<table name="CONTACT_LIST" />
+	<table name="FILE" />
+	<table name="PORTAL_SESSIONS" />
+	<table name="SESSIONS" />
+	<table name="STATUS_LOG" />
+	<table name="USER_MESS" />
+	<table name="CHAT_MESS" />
+	<table name="CHAT_USERS" />
+</tables>

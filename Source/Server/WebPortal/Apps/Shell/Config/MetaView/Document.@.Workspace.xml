@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="PM_Columns" primaryKey="DocumentId">
+				<Column id="colTitle" type="default" width="60%" title="{IbnFramework.Project:PrjTitle}" sortExpression="Title" templateUrl="~/Apps/Shell/ColumnTemplates/Document.Title.ascx" />
+				<Column id="colUserStatus" type="default" width="40%" title="{IbnFramework.Incident:Creator}" templateUrl="~/Apps/Shell/ColumnTemplates/Document.UserStatus.ascx" />
+				<Column id="colCreationDate" type="default" width="80px" title="{IbnFramework.Incident:Created}" sortExpression="CreationDate" templateUrl="~/Apps/Shell/ColumnTemplates/Document.CreationDate.ascx" />
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

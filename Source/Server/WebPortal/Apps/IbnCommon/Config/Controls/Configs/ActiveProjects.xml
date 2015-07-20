@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DynamicControlInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Uid>D4F40160-8DE4-4959-B50C-186B6041E14F</Uid>
+	<Title>{IbnFramework.Global:_mc_ActiveProjects}</Title>
+	<Description>{IbnFramework.Global:_mc_ActiveProjectsDescription}</Description>
+	<Path>~/Apps/IbnCommon/WidgetControls/ActiveProjects.ascx</Path>
+	<Category>5886F150-8CFD-4808-9560-5BD3F7EBEB1D</Category>
+	<IconPath>~/Images/IbnFramework/projects.png</IconPath>
+</DynamicControlInfo>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Toolbar for ContactView page -->
+<ListViewUI>
+	<Toolbar>
+		<clear />
+		<add>
+			<Text text="{IbnFramework.Client:ContactInfo}"	cssClass="ibn-WPTitle"></Text>
+			<Menu id="ActionsMenu" text="{IbnFramework.Global:_mc_Actions}" align="Right">
+				<Button id="EditButton" text="{IbnFramework.Common:Edit}"  imageUrl="~/Images/IbnFramework/edit.gif" tooltip="{IbnFramework.Common:Edit}" align="Right" commandName="Contact_Edit" ></Button>
+				<Button id="DeleteButton" text="{IbnFramework.Common:Delete}" imageUrl="~/Images/IbnFramework/delete.gif" commandName="Contact_Delete"></Button>
+				<Button id="FavoritesButton" text="{IbnFramework.Common:AddToFavorites}" imageUrl="~/layouts/images/Favorites.gif" commandName="Contact_AddToFavorites"></Button>
+				<Button id="ListButton" text="{IbnFramework.Client:Contacts}"  imageUrl="~/Images/IbnFramework/cancel.gif" tooltip="{IbnFramework.Client:Contacts}" align="Right" commandName="Contact_List" ></Button>
+			</Menu>
+		</add>
+	</Toolbar>
+	<Commands>
+		<add>
+			<Command id="Contact_Edit">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityEdit.aspx?ClassName=Contact&amp;ObjectId={QueryString:ObjectId}&amp;back=view</Url>
+			</Command>
+			<Command id="Contact_List">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=Contact</Url>
+			</Command>
+			<Command id="Contact_Delete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.DeleteEntityHandler, Mediachase.UI.Web</Handler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			</Command>
+			<Command id="Contact_AddToFavorites">
+				<CommandType>ServerAction</CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.AddToFavoritesEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.AddToFavoritesHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

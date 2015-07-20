@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="Title">
+		<value>Title</value>
+	</data>
+	<data name="StartDate">
+		<value>Start Date</value>
+	</data>
+	<data name="EndDate">
+		<value>Due Date</value>
+	</data>
+	<data name="Category">
+		<value>General Categories</value>
+	</data>
+	<data name="Project">
+		<value>Project</value>
+	</data>
+	<data name="Manager">
+		<value>Manager</value>
+	</data>
+	<data name="Priority">
+		<value>Priority</value>
+	</data>
+	<data name="Completion">
+		<value>Completion Type</value>
+	</data>
+	<data name="Description">
+		<value>Description</value>
+	</data>
+	<data name="tbsave_save">
+		<value>Save</value>
+	</data>
+	<data name="tbsave_cancel">
+		<value>Cancel</value>
+	</data>
+	<data name="ProjectNotSet">
+		<value>not set</value>
+	</data>
+	<data name="tbsave_edit">
+		<value>Edit ToDo</value>
+	</data>
+	<data name="tbsave_add">
+		<value>Create ToDo</value>
+	</data>
+	<data name="MustConfirm">
+		<value>Must be confirmed by Manager</value>
+	</data>
+	<data name="tbsave_gotolist">
+		<value>Back to the ToDo List</value>
+	</data>
+	<data name="Incident">
+		<value>Issue</value>
+	</data>
+	<data name="Task">
+		<value>Task</value>
+	</data>
+	<data name="CompleteAferToDo">
+		<value>Complete Issue after ToDo Completion</value>
+	</data>
+	<data name="CompleteTaskAferToDo">
+		<value>Complete Task after ToDo Completion</value>
+	</data>
+	<data name="NotChange">
+		<value>Don't change</value>
+	</data>
+	<data name="CompletedAutomatically">
+		<value>Completed without manager confirmation</value>
+	</data>
+	<data name="FileLoad">
+		<value>Load File</value>
+	</data>
+	<data name="StartDateError">
+		<value>Start Date must be greater than Project's Start Date</value>
+	</data>
+	<data name="Document">
+		<value>Document</value>
+	</data>
+	<data name="SaveAssign">
+		<value>Save &amp; Assign</value>
+	</data>
+	<data name="HtmlAttach">
+		<value>Attach html file</value>
+	</data>
+	<data name="FileName">
+		<value>File title</value>
+	</data>
+	<data name="FileBody">
+		<value>File body</value>
+	</data>
+	<data name="Load">
+		<value>Attach</value>
+	</data>
+	<data name="File">
+		<value>File</value>
+	</data>
+	<data name="HTMLText">
+		<value>HTML Text</value>
+	</data>
+	<data name="HTMLTitle">
+		<value>HTML Title</value>
+	</data>
+	<data name="Link">
+		<value>Link</value>
+	</data>
+	<data name="LinkTitle">
+		<value>File Name (*.url)</value>
+	</data>
+	<data name="EditDictionary">
+		<value>Edit dictionary</value>
+	</data>
+	<data name="tWrongDate">
+		<value>Wrong Date</value>
+	</data>
+	<data name="tOneMoreItem">
+		<value>Create another one</value>
+	</data>
+	<data name="AssignWarning">
+		<value>Your browser blocks the pop-up windows which are required for the proper portal functionality.&lt;br&gt;Use the following link to open blocked window manually:</value>
+	</data>
+	<data name="AssignWizard1">
+		<value>Resources</value>
+	</data>
+	<data name="EndDateError">
+		<value>Due Date must be greater than Start Date</value>
+	</data>
+	<data name="tBasicInfo">
+		<value>Basic Information</value>
+	</data>
+	<data name="tCategoryInfo">
+		<value>Status and Categorization Information</value>
+	</data>
+	<data name="tAttachedFiles">
+		<value>File Attaching</value>
+	</data>
+	<data name="CompleteDocumentAferToDo">
+		<value>Complete Document after ToDo Completion</value>
+	</data>
+	<data name="activation">
+		<value>Activation Type</value>
+	</data>
+</root>

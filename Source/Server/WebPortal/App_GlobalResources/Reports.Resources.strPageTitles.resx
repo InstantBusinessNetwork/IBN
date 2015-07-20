@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="ResMimeType">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="Version">
+		<value>1.0.0.0</value>
+	</resheader>
+	<resheader name="Reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="Writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.3102.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="tReports">
+		<value>Reporting &amp; Measurement</value>
+	</data>
+	<data name="tMesHis">
+		<value>Message History</value>
+	</data>
+	<data name="tChatHis">
+		<value>Chat History</value>
+	</data>
+	<data name="tPrjSnap">
+		<value>Project Snapshot</value>
+	</data>
+	<data name="tActPrjs">
+		<value>Active Projects</value>
+	</data>
+	<data name="tStatRep">
+		<value>Status Report</value>
+	</data>
+	<data name="tPrjStatRep">
+		<value>Project Status Report</value>
+	</data>
+	<data name="tUpTk">
+		<value>Upcoming Tasks Report</value>
+	</data>
+	<data name="tTimeSheet">
+		<value>Timesheet Report</value>
+	</data>
+	<data name="tPrjTimeSheet">
+		<value>Project Time/Cost Report</value>
+	</data>
+	<data name="tResUtil">
+		<value>Resources Utilization Report</value>
+	</data>
+	<data name="tMoctAct">
+		<value>Most Active Groups And Users</value>
+	</data>
+	<data name="tUserLogDistr">
+		<value>Trending/Historical User Authentication Patterns</value>
+	</data>
+	<data name="tGroupAndUserStat">
+		<value>Group and User Statistics</value>
+	</data>
+	<data name="tStatRepByUser">
+		<value>Status Report by User</value>
+	</data>
+	<data name="tStatRepByUserProject">
+		<value>Status Report by Project</value>
+	</data>
+	<data name="tAlertHis">
+		<value>Alert History</value>
+	</data>
+	<data name="tActAnalisys">
+		<value>Activities Analysis by Type</value>
+	</data>
+	<data name="tResTracking">
+		<value>Resource Tracking Analysis</value>
+	</data>
+</root>

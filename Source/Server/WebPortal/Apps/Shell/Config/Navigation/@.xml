@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs id="Tabs" sort="order" sortDataType="number" sortSubNodes="true">
+		<add>
+			<Tab order="100" id="MMain" text="{IbnShell.Navigation:tPersonalSpace}" contentType="default" imageUrl="~/images/IbnFramework/Briefcase.png" configUrl="">
+				<Link order="100" id="MMain01" text="{IbnShell.Navigation:tMyWorks}" iconUrl="" iconCss="" command="cmd_MMain1">
+					<Link order="50" id="MyCurrentWork" text="{IbnShell.Navigation:MyCurrentWork}" iconUrl="" iconCss="" command="cmd_MMain10" />
+					<Link order="100" id="MMain11" text="{IbnShell.Navigation:tListView}" iconUrl="" iconCss="" command="cmd_MMain11" />
+					<Link order="200" id="MMain12" text="{IbnShell.Navigation:tDay}" iconUrl="" iconCss="" command="cmd_MMain12" />
+					<Link order="300" id="MMain13" text="{IbnShell.Navigation:tWorkWeek}" iconUrl="" iconCss="" command="cmd_MMain13" />
+					<Link order="400" id="MMain14" text="{IbnShell.Navigation:tWeek}" iconUrl="" iconCss="" command="cmd_MMain14" />
+					<Link order="500" id="MMain15" text="{IbnShell.Navigation:tMonth}" iconUrl="" iconCss="" command="cmd_MMain15" />
+					<Link order="600" id="MMain16" text="{IbnShell.Navigation:tYear}" iconUrl="" iconCss="" command="cmd_MMain16" />
+				</Link>
+				<Link order="200" id="MMain02" text="{IbnShell.Navigation:tSharedCals}" iconUrl="" iconCss="" command="cmd_MMain21">
+					<Link order="100" id="MMain21" text="{IbnShell.Navigation:tListView}" iconUrl="" iconCss="" command="cmd_MMain21" />
+					<Link order="200" id="MMain22" text="{IbnShell.Navigation:tDay}" iconUrl="" iconCss="" command="cmd_MMain22" />
+					<Link order="300" id="MMain23" text="{IbnShell.Navigation:tWorkWeek}" iconUrl="" iconCss="" command="cmd_MMain23" />
+					<Link order="400" id="MMain24" text="{IbnShell.Navigation:tWeek}" iconUrl="" iconCss="" command="cmd_MMain24" />
+					<Link order="500" id="MMain25" text="{IbnShell.Navigation:tMonth}" iconUrl="" iconCss="" command="cmd_MMain25" />
+					<Link order="600" id="MMain26" text="{IbnShell.Navigation:tYear}" iconUrl="" iconCss="" command="cmd_MMain26" />
+				</Link>
+				<Link order="500" id="MMain05" text="{IbnShell.Navigation:tMyWebStubs}" iconUrl="" iconCss="" command="cmd_MMain3" />
+				<Link order="600" id="MMain06" text="{IbnShell.Navigation:tReports}" iconUrl="" iconCss="" command="cmd_MMain4" />
+				<Link order="700" id="MMain07" text="{IbnShell.Navigation:tModifyNotif}" iconUrl="" iconCss="" command="cmd_MMain6" />
+
+				<Link order="900" id="MMain09" text="{IbnShell.Navigation:Download}" iconUrl="" iconCss="" command="cmd_MMain7" />
+				<Link order="1000" id="MMain10" text="{IbnShell.Navigation:Feedback}" iconUrl="" iconCss="" command="cmd_MMain8" />
+			</Tab>
+			<Tab order="200" id="MResActs" text="{IbnShell.Navigation:tResActs}" contentType="default" imageUrl="~/layouts/images/icons/task.gif" configUrl="" enableHandler="Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ManagementCenterHandler, Mediachase.UI.Web">
+				<Link order="100" id="MResActs1" text="{IbnShell.Navigation:tDashboard}" iconUrl="" iconCss="" command="cmd_MResActs1" />
+				<Link order="200" id="MResActs2" text="{IbnShell.Navigation:tActTrack}" iconUrl="" iconCss="" command="cmd_MResActs2">
+					<Link order="100" id="MResActs21" text="{IbnShell.Navigation:tActByCat}" iconUrl="" iconCss="" command="cmd_MResActs21" />
+				</Link>
+				<Link order="300" id="MResActs3" text="{IbnShell.Navigation:tResTracking}" iconUrl="" iconCss="" command="cmd_MResActs2">
+					<Link order="100" id="MResActs31" text="{IbnShell.Navigation:tUsrsByRole}" iconUrl="" iconCss="" command="cmd_MResActs31" />
+				</Link>
+				<Link order="400" id="MResActs4" text="{IbnShell.Navigation:tResUtil}" iconUrl="" iconCss="" command="cmd_MResActs4">
+					<Link order="50" id="MResActs40" text="{IbnShell.Navigation:CurrentWork}" iconUrl="" iconCss="" command="cmd_MResActs4" />
+					<Link order="100" id="MResActs41" text="{IbnShell.Navigation:tUtilCE}" iconUrl="" iconCss="" command="cmd_MResActs41" />
+					<Link order="500" id="MResActs45" text="{IbnShell.Navigation:tUtilToDo}" iconUrl="" iconCss="" command="cmd_MResActs45" />
+					<Link order="600" id="MResActs46" text="{IbnShell.Navigation:tUtilAll}" iconUrl="" iconCss="" command="cmd_MResActs46" />
+					<Link order="700" id="MResActs47" text="{IbnShell.Navigation:tUtilGraph}" iconUrl="" iconCss="" command="cmd_MResActs47" />
+				</Link>
+			</Tab>
+			<Tab order="900" id="MGroups" text="{IbnShell.Navigation:tGrpsUsrs}" contentType="default" imageUrl="~/layouts/images/icons/regular.gif" configUrl="">
+				<Link order="100" id="MGroups1" text="{IbnShell.Navigation:Search}" iconUrl="" iconCss="" command="cmd_MGroups1" />
+				<Link order="200" id="MGroups2" text="{IbnShell.Navigation:tSecGroups}" iconUrl="" iconCss="">
+					<Link order="100" id="MGroups21" text="{IbnShell.Navigation:tEveryone}" iconUrl="~/Layouts/Images/icons/Admins.gif" iconCss="iconStdCls" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.SecureGroupsHandler, Mediachase.UI.Web" command="cmd_MGroups21" />
+				</Link>
+				<Link order="300" id="MGroups3" text="{IbnShell.Navigation:tAllUsers}" iconUrl="" iconCss="" command="cmd_MGroups3" />
+				<Link order="400" id="MGroups4" text="{IbnShell.Navigation:tContGroups}" iconUrl="" iconCss="" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.ContactGroupsHandler, Mediachase.UI.Web" command="cmd_MGroups4" />
+			</Tab>
+			<Tab id="MAdmin" order="1000" text="{IbnShell.Navigation:tAdmin}" contentType="default" imageUrl="~/layouts/images/customize.gif" configUrl="" enableHandler="Mediachase.Ibn.Web.UI.Shell.CommandHandlers.AdministrationHandler, Mediachase.UI.Web">
+				<Link order="100" id="MAdmin1" text="{IbnShell.Navigation:tInfoAppearance}" iconUrl="" iconCss="" command="cmd_MAdmin1">
+					<Link order="100" id="MAdmin11" text="{IbnShell.Navigation:tCompanyProfile}" iconUrl="" iconCss="" command="cmd_MAdmin11" />
+					<Link order="200" id="MAdmin1LeftMenu" text="{IbnFramework.Profile:PortalCustomization}" iconUrl="" iconCss="" command="cmd_MAdmin1LeftMenu" />
+					<Link order="300" id="MAdmin1Profiles" text="{IbnShell.Navigation:Profiles}" iconUrl="" iconCss="" command="cmd_MAdmin1Profiles" />
+					<Link order="400" id="MAdmin12" text="{IbnShell.Navigation:tSPAppearance}" iconUrl="" iconCss="" command="cmd_MAdmin12" />
+					<Link order="600" id="MAdmin14" text="{IbnFramework.Admin:GeneralFieldsVisibility}" iconUrl="" iconCss="" command="cmd_MAdmin14" />
+					<Link order="700" id="MAdmin15" text="{IbnFramework.Admin:ObjectFieldsVisibility}" iconUrl="" iconCss="" command="cmd_MAdmin15" />
+				</Link>
+				<Link order="200" id="MAdmin2" text="{IbnShell.Navigation:tBusData}" iconUrl="" iconCss="" command="cmd_MAdmin2">
+					<Link order="100" id="MAdmin21" text="{IbnShell.Navigation:tWTCalendars}" iconUrl="" iconCss="" command="cmd_MAdmin21" />
+					<Link order="200" id="MAdmin22" text="{IbnShell.Navigation:WorkTimeSetup}" iconUrl="" iconCss="" command="cmd_MAdmin22" />
+					<Link order="300" id="MAdmin23" text="{IbnShell.Navigation:tManDics}" iconUrl="" iconCss="" command="cmd_MAdmin23" />
+					<Link order="400" id="MAdmin24" text="{IbnShell.Navigation:tMetaClassCustomization}" iconUrl="" iconCss="" command="cmd_MAdmin24" />
+					<Link order="500" id="MAdmin25" text="{IbnShell.Navigation:tObjectCustomEditor}" iconUrl="" iconCss="" command="cmd_MAdmin25" />
+					<Link order="600" id="MAdmin26" text="{IbnShell.Navigation:tMdpCustomization}" iconUrl="" iconCss="" command="cmd_MAdmin26" />
+				</Link>
+				<Link order="300" id="MAdmin3" text="{IbnShell.Navigation:tCommonSettings}" iconUrl="" iconCss="" command="cmd_MAdmin3">
+					<Link order="100" id="MAdmin31" text="{IbnShell.Navigation:tSecurity}" iconUrl="" iconCss="" command="cmd_MAdmin31" />
+					<Link order="200" id="MAdmin32" text="{IbnShell.Navigation:tLDAPSettings}" iconUrl="" iconCss="" command="cmd_MAdmin32" />
+					<Link order="300" id="MAdmin33" text="{IbnShell.Navigation:tSMTPList}" iconUrl="" iconCss="" command="cmd_MAdmin33" />
+					<Link order="400" id="MAdmin34" text="{IbnShell.Navigation:teMailBoxes}" iconUrl="" iconCss="" command="cmd_MAdmin34" />
+					<Link order="500" id="MAdmin35" text="{IbnShell.Navigation:tReportConfig}" iconUrl="" iconCss="" command="cmd_MAdmin35" />
+					<Link order="600" id="MAdmin36" text="{IbnShell.Navigation:Miscellaneous}" iconUrl="" iconCss="" command="cmd_MAdmin36" />
+				</Link>
+				<Link order="400" id="MAdmin4" text="{IbnShell.Navigation:tRoutWrkfl}" iconUrl="" iconCss="" command="cmd_MAdmin4">
+					<Link order="100" id="MAdmin41" text="{IbnShell.Navigation:tModifAlertNotif}" iconUrl="" iconCss="" command="cmd_MAdmin41" />
+					<Link order="200" id="MAdmin42" text="{IbnShell.Navigation:tEventNotification}" iconUrl="" iconCss="" command="cmd_MAdmin42" />
+					<Link order="300" id="MAdmin43" text="{IbnShell.Navigation:tReminderNotifications}" iconUrl="" iconCss="" command="cmd_MAdmin43" />
+					<Link order="400" id="MAdmin44" text="{IbnShell.Navigation:tMessTempl}" iconUrl="" iconCss="" command="cmd_MAdmin44" />
+					<Link order="500" id="MAdmin45" text="{IbnShell.Navigation:tRemTempl}" iconUrl="" iconCss="" command="cmd_MAdmin45" />
+					<Link order="600" id="MAdmin46" text="{IbnShell.Navigation:tSpecialTempl}" iconUrl="" iconCss="" command="cmd_MAdmin46" />
+				</Link>
+				<Link order="500" id="MAdmin6" text="{IbnShell.Navigation:tFilesForms}" iconUrl="" iconCss="" command="cmd_MAdmin6">
+					<Link order="100" id="MAdmin61" text="{IbnShell.Navigation:tWebDAV}" iconUrl="" iconCss="" command="cmd_MAdmin61" />
+					<Link order="200" id="MAdmin62" text="{IbnShell.Navigation:tDocTypes}" iconUrl="" iconCss="" command="cmd_MAdmin62" />
+					<Link order="300" id="MAdmin63" text="{IbnShell.Navigation:tWebDavSessions}" iconUrl="" iconCss="" command="cmd_MAdmin63" />
+				</Link>
+				<Link order="1000" id="MAdmin8" text="{IbnShell.Navigation:tToolsApps}" iconUrl="" iconCss="" command="cmd_MAdmin8">
+					<Link order="100" id="MAdmin81" text="{IbnShell.Navigation:tSQLReport}" iconUrl="" iconCss="" command="cmd_MAdmin81" />
+					<Link order="200" id="MAdmin82" text="{IbnShell.Navigation:tErrList}" iconUrl="" iconCss="" command="cmd_MAdmin82" />
+					<Link order="300" id="MAdmin83" text="{IbnShell.Navigation:tPortalStatistics}" iconUrl="" iconCss="" command="cmd_MAdmin83" />
+					<Link order="400" id="MAdmin84" text="{IbnShell.Navigation:tSystemBroadcast}" iconUrl="" iconCss="" command="cmd_MAdmin84" />
+					<Link order="500" id="MAdmin85" text="{IbnShell.Navigation:tWebStubs}" iconUrl="" iconCss="" command="cmd_MAdmin85" />
+					<Link order="600" id="MAdmin86" text="{IbnShell.Navigation:tEmailOutgoing}" iconUrl="" iconCss="" command="cmd_MAdmin86" />
+				</Link>
+			</Tab>
+		</add>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MMain1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Workspace/default.aspx?BTab=Workspace</Url>
+			</Command>
+			<Command id="cmd_MMain10">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/ProjectManagement/Pages/MyCurrentWork.aspx</Url>
+			</Command>
+			<Command id="cmd_MMain11">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/WorksForResource.aspx</Url>
+			</Command>
+			<Command id="cmd_MMain12">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=MyCalendar&amp;MyTab=DailyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain13">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=MyCalendar&amp;MyTab=WorkWeeklyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain14">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=MyCalendar&amp;MyTab=WeeklyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain15">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=MyCalendar&amp;MyTab=MonthlyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain16">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=MyCalendar&amp;MyTab=YearlyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain21">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/WorksForResource.aspx?Shared=1</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.SharedCalendarLinkHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MMain22">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=SharedCalendars&amp;BTab=DailyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain23">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=SharedCalendars&amp;BTab=WorkWeeklyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain24">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=SharedCalendars&amp;BTab=WeeklyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain25">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=SharedCalendars&amp;BTab=MonthlyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain26">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Calendar/default.aspx?Tab=SharedCalendars&amp;BTab=YearlyCalendar</Url>
+			</Command>
+			<Command id="cmd_MMain3">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/UserWebApps.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.UseIMHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MMain4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/ReportManagement/Pages/UserReport.aspx</Url>
+			</Command>
+			<Command id="cmd_MMain6">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/UserView.aspx?UserID={Security:CurrentUserId}&amp;Tab=1</Url>
+			</Command>
+			<Command id="cmd_MMain7">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Home/Download.aspx</Url>
+			</Command>
+			<Command id="cmd_MMain8">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Home/Help.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.HelpPageVisibleHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="cmd_MResActs1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Reports/default.aspx?Tab=Dashboard</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.DashboardEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs2">
+				<CommandType></CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.PowerExecutiveHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs21">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/WorksByCategory.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.GeneralCategoriesAllowHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs31">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourcesTracking.aspx?Tab=ResRole</Url>
+			</Command>
+			<Command id="cmd_MResActs4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/ProjectManagement/Pages/ResourceWork.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectExecutiveHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MResActs41">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx?Objs=CalEntry</Url>
+			</Command>
+			<Command id="cmd_MResActs45">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx?Objs=Todo</Url>
+			</Command>
+			<Command id="cmd_MResActs46">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx</Url>
+			</Command>
+			<Command id="cmd_MResActs47">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtilGraph.aspx</Url>
+			</Command>
+
+			<Command id="cmd_MGroups1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/Directory.aspx?Tab=2</Url>
+			</Command>
+			<Command id="cmd_MGroups21">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/directory.aspx?Tab=0&amp;SGroupID=1</Url>
+			</Command>
+			<Command id="cmd_MGroups3">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/Directory.aspx?Tab=3</Url>
+			</Command>
+			<Command id="cmd_MGroups4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Directory/directory.aspx?Tab=1&amp;IMGroupID=0</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.UseIMHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+
+			<Command id="cmd_MAdmin1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin1</Url>
+			</Command>
+			<Command id="cmd_MAdmin11">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/CompanyInfo.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin1LeftMenu">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/PortalCustomization.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin1Profiles">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=CustomizationProfile</Url>
+			</Command>
+			<Command id="cmd_MAdmin12">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/CustomizeHomePage.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin2">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin2</Url>
+			</Command>
+			<Command id="cmd_MAdmin21">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/CalendarList.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin22">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/WorkTimeSetup.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin23">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/ManageDictionaries.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin24">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/MasterDataManager.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin25">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/Customization.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin26">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/MdpCustomization.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin3">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin3</Url>
+			</Command>
+			<Command id="cmd_MAdmin31">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/ActiveDirectory.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin32">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/LdapSettings.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin33">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/SMTPList.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin34">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/EmailBoxes.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.MailIssuesEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin35">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/ReportConfig.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin36">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/Miscellaneous.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin4">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin4</Url>
+			</Command>
+			<Command id="cmd_MAdmin41">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/AlertUser.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin42">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/GlobalSubscription.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin43">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/GlobalReminders.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin44">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/MessageTemplates.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin45">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/ReminderTemplates.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin46">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/SpecialTemplates.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin6">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin6</Url>
+			</Command>
+			<Command id="cmd_MAdmin61">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/SearchSettings.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin62">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/DocumentTypes.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin63">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/WebDavSessionsOverview.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin8">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/default.aspx?NodeId=MAdmin8</Url>
+			</Command>
+			<Command id="cmd_MAdmin81">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/CustomSQLReport.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.ReportManagement.CommandHandlers.CustomSqlReportEnableHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin82">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/ErrorLog.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin83">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Reports/default.aspx?Tab=Administrative</Url>
+			</Command>
+			<Command id="cmd_MAdmin84">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/BroadcastAlerts.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin85">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Admin/webstubs.aspx</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.UseIMHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MAdmin86">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/MetaUIEntity/Pages/EntityList.aspx?ClassName=OutgoingMessageQueue</Url>
+			</Command>
+
+			<Command id="cmd_MAdmin14">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/FieldsVisibility.aspx</Url>
+			</Command>
+			<Command id="cmd_MAdmin15">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/Administration/Pages/ObjectFieldsVisibility.aspx</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

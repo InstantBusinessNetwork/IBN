@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AdminMode" xml:space="preserve">
+    <value>В настоящее время используется режим работы "Администрирование", при котором отображается только необходимая для работы информация.</value>
+  </data>
+  <data name="Audit" xml:space="preserve">
+    <value>Аудит</value>
+  </data>
+  <data name="AuditIbnClientLogin" xml:space="preserve">
+    <value>Неудачные попытки подключения {0} клиента</value>
+  </data>
+  <data name="AuditWebLogin" xml:space="preserve">
+    <value>Неудачные попытки входа в портал</value>
+  </data>
+  <data name="DevMode" xml:space="preserve">
+    <value>В настоящее время используется режим работы "Разработка", при котором отображается дополнительная информация, полезная для разработчиков.</value>
+  </data>
+  <data name="OperationMode" xml:space="preserve">
+    <value>Режим работы</value>
+  </data>
+  <data name="SettingsSaved" xml:space="preserve">
+    <value>Настройки успешно сохранены</value>
+  </data>
+  <data name="SwitchToAdminMode" xml:space="preserve">
+    <value>Переключиться в режим "Администрирование"</value>
+  </data>
+  <data name="SwitchToDevMode" xml:space="preserve">
+    <value>Переключиться в режим "Разработка"</value>
+  </data>
+  <data name="AllOutgoingMessages" xml:space="preserve">
+    <value>Все исходящие сообщения</value>
+  </data>
+  <data name="DeliveredMessages" xml:space="preserve">
+    <value>Доставленные сообщения</value>
+  </data>
+  <data name="NotDeliveredMessages" xml:space="preserve">
+    <value>Недоставленные сообщения</value>
+  </data>
+  <data name="FailedMessages" xml:space="preserve">
+    <value>Неудавшиеся отправить</value>
+  </data>
+  <data name="OutgoingMessageQueue" xml:space="preserve">
+    <value>Исходящее сообщение</value>
+  </data>
+  <data name="OutgoingMessageQueues" xml:space="preserve">
+    <value>Очередь исходящих сообщений</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Источник</value>
+  </data>
+  <data name="DeliveryAttempts" xml:space="preserve">
+    <value>Попыток отправить</value>
+  </data>
+  <data name="IsDelivered" xml:space="preserve">
+    <value>Доставлено</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="IbnClientMessage" xml:space="preserve">
+    <value>Сообщение IBN Клиента</value>
+  </data>
+  <data name="IbnClientMessages" xml:space="preserve">
+    <value>Сообщения IBN Клиента</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="ClientEmailMessage" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="GeneralFieldsVisibility" xml:space="preserve">
+    <value>Глобальная настройка отображения полей</value>
+  </data>
+  <data name="GeneralVisibilityWarning" xml:space="preserve">
+    <value>На этой странице вы можете включить/отключить ввод и отображение некоторых полей для всех объектов портала.&lt;br/&gt;
+		&lt;br/&gt;Также вы можете настроить отображение этих и других полей непосредственно для каждого из типов объектов портала.&lt;br/&gt;
+		Для этого перейдите по следующей ссылке.</value>
+  </data>
+  <data name="generalAllowPriority" xml:space="preserve">
+    <value>Отображать поле &amp;laquo;Приоритет&amp;raquo;</value>
+  </data>
+  <data name="generalAllowGeneralCategories" xml:space="preserve">
+    <value>Отображать поле &amp;laquo;Общие категории&amp;raquo;</value>
+  </data>
+  <data name="generalAllowClient" xml:space="preserve">
+    <value>Отображать поле &amp;laquo;Клиент&amp;raquo;</value>
+  </data>
+  <data name="generalAllowTaskTime" xml:space="preserve">
+    <value>Отображать поле &amp;laquo;Планируемые трудозатраты&amp;raquo;</value>
+  </data>
+  <data name="GoToObjectsSettings" xml:space="preserve">
+    <value>Изменить настройки отображения полей для каждого из типов объектов</value>
+  </data>
+  <data name="ObjectFieldsVisibility" xml:space="preserve">
+    <value>Настройка отображения полей</value>
+  </data>
+  <data name="ObjectType" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="ObjectVisibilityWarning" xml:space="preserve">
+    <value>На этой странице вы можете включить/отключить ввод и отображение некоторых полей для конкретного типа объектов портала. Кроме того, вы можете задать значения по умолчанию для этих полей.</value>
+  </data>
+  <data name="tField" xml:space="preserve">
+    <value>Название поля</value>
+  </data>
+  <data name="tEdit" xml:space="preserve">
+    <value>Страница редактирования</value>
+  </data>
+  <data name="tView" xml:space="preserve">
+    <value>Страница просмотра</value>
+  </data>
+  <data name="tDefaultValue" xml:space="preserve">
+    <value>Значение по умолчанию</value>
+  </data>
+  <data name="ObjectType_CalendarEntry" xml:space="preserve">
+    <value>Мероприятие</value>
+  </data>
+  <data name="ObjectType_Document" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="ObjectType_Incident" xml:space="preserve">
+    <value>Инцидент</value>
+  </data>
+  <data name="ObjectType_Task" xml:space="preserve">
+    <value>Задача</value>
+  </data>
+  <data name="ObjectType_ToDo" xml:space="preserve">
+    <value>Поручение</value>
+  </data>
+  <data name="Field_Client" xml:space="preserve">
+    <value>Клиент</value>
+  </data>
+  <data name="Field_GenCats" xml:space="preserve">
+    <value>Общие категории</value>
+  </data>
+  <data name="Field_Priority" xml:space="preserve">
+    <value>Приоритет</value>
+  </data>
+  <data name="Field_Attachment" xml:space="preserve">
+    <value>Вложения</value>
+  </data>
+  <data name="Field_TaskTime" xml:space="preserve">
+    <value>Планируемые трудозатраты</value>
+  </data>
+  <data name="Field_IncCats" xml:space="preserve">
+    <value>Категории инцидента</value>
+  </data>
+  <data name="Field_ExpAssDead" xml:space="preserve">
+    <value>Ожидаемое время назначения</value>
+  </data>
+  <data name="Field_ExpRepDead" xml:space="preserve">
+    <value>Ожидаемое время ответа</value>
+  </data>
+  <data name="Field_ExpResolDead" xml:space="preserve">
+    <value>Ожидаемое время разрешения</value>
+  </data>
+  <data name="Field_Type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="Field_Severity" xml:space="preserve">
+    <value>Проявление</value>
+  </data>
+  <data name="Field_ActType" xml:space="preserve">
+    <value>Тип активации</value>
+  </data>
+  <data name="Field_CompType" xml:space="preserve">
+    <value>Тип завершения</value>
+  </data>
+  <data name="Field_MustBeConfirm" xml:space="preserve">
+    <value>Должно быть подтверждено менеджером</value>
+  </data>
+  <data name="tObjectNotSet" xml:space="preserve">
+    <value>не выбран</value>
+  </data>
+  <data name="TrueValue" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="FalseValue" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="SaveSuccessfull" xml:space="preserve">
+    <value>Все изменения были успешно сохранены!</value>
+  </data>
+  <data name="EditDefValue" xml:space="preserve">
+    <value>Редактировать значение по умолчанию</value>
+  </data>
+  <data name="DefaultProfile" xml:space="preserve">
+    <value>[ Профиль по умолчанию ]</value>
+  </data>
+  <data name="PermittedShe" xml:space="preserve">
+    <value>Разрешена</value>
+  </data>
+  <data name="UnpermittedShe" xml:space="preserve">
+    <value>Запрещена</value>
+  </data>
+  <data name="WorkspacePersonalization" xml:space="preserve">
+    <value>Персонализация рабочей области</value>
+  </data>
+  <data name="RssDisableDescription" xml:space="preserve">
+    <value>В данный момент Rss отображение для обьектов включено.</value>
+  </data>
+  <data name="RssDisableText" xml:space="preserve">
+    <value>Выключить Rss отображение для обьектов</value>
+  </data>
+  <data name="RssEnableDescription" xml:space="preserve">
+    <value>В данный момент Rss отображение для обьектов отключено.</value>
+  </data>
+  <data name="RssEnableText" xml:space="preserve">
+    <value>Включить Rss отображение для обьектов</value>
+  </data>
+  <data name="RssHeader" xml:space="preserve">
+    <value>Rss Настройки</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Страница</value>
+  </data>
+  <data name="Field_Deliverables" xml:space="preserve">
+    <value>Результаты</value>
+  </data>
+  <data name="Field_Goals" xml:space="preserve">
+    <value>Цели</value>
+  </data>
+  <data name="Field_PrgCats" xml:space="preserve">
+    <value>Категории проекта</value>
+  </data>
+  <data name="Field_Scope" xml:space="preserve">
+    <value>Масштаб</value>
+  </data>
+  <data name="ObjectType_Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="ProjectView" xml:space="preserve">
+    <value>Просмотр проекта</value>
+  </data>
+  <data name="ProjectWithLeftMenu" xml:space="preserve">
+    <value>Текущий режим отображения проекта: "Левое меню".</value>
+  </data>
+  <data name="ProjectWithTabs" xml:space="preserve">
+    <value>Текущий режим отображения проекта: "Верхние вкладки".</value>
+  </data>
+  <data name="SwitchToProjectWithLeftMenu" xml:space="preserve">
+    <value>Переключиться в режим "Левое меню"</value>
+  </data>
+  <data name="SwitchToProjectWithTabs" xml:space="preserve">
+    <value>Переключиться в режим "Верхние вкладки"</value>
+  </data>
+  <data name="Field_Currency" xml:space="preserve">
+    <value>Валюта</value>
+  </data>
+  <data name="webDavSessionDelete" xml:space="preserve">
+    <value>Сброс</value>
+  </data>
+  <data name="webDavSessionDuration" xml:space="preserve">
+    <value>Длительность</value>
+  </data>
+  <data name="webDavSessionFileName" xml:space="preserve">
+    <value>Имя файла</value>
+  </data>
+  <data name="webDavSessionList" xml:space="preserve">
+    <value>Редактируемые файлы</value>
+  </data>
+  <data name="webDavSessionLockBy" xml:space="preserve">
+    <value>Редактирует</value>
+  </data>
+  <data name="webDavSessionStartTime" xml:space="preserve">
+    <value>Время начала</value>
+  </data>
+  <data name="webDavSessionNoData" xml:space="preserve">
+    <value>На данный момент, нет редактируемых файлов.</value>
+  </data>
+</root>

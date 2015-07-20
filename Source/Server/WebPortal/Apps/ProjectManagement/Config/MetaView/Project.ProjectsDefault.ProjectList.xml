@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="PM_Columns">
+			<add>
+				<Column id="colState" type="default" width="100" title="{IbnFramework.Project:Status}" dataField="StatusName" sortExpression="StatusName" />
+				<Column id="colCompleted" type="default" width="90" title="{IbnFramework.Project:PrjCompleted}" sortExpression="PercentCompleted" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/OverallStatus.ProjectList.ascx" />
+				<Column id="colStart" type="default" width="100" title="{IbnFramework.Project:TargetStartDate}" sortExpression="TargetStartDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetStartDate.ProjectList.ascx" />
+				<Column id="colEnd" type="default" width="100" title="{IbnFramework.Project:TargetEndDate}" sortExpression="TargetFinishDate" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/TargetFinishDate.ProjectList.ascx" />
+				<Column id="colManager" type="default" width="180" title="{IbnFramework.Project:Manager}" sortExpression="ManagerName" templateUrl="~/Apps/ProjectManagement/ColumnTemplates/Manager.ProjectList.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

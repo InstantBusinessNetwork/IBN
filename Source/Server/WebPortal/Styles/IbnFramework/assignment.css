@@ -1,0 +1,138 @@
+﻿.compositeBlock
+{
+	/*background-color: #eee;*/
+	background-color: #EFF3FF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*padding: 5px;*/
+	/*border: dashed 2px Red;*/
+	border: solid 1px #ADC7F7;
+}
+
+/*.innerCompositeBlock, .innerSimpleBlock
+{
+	border: dashed 1px #ccc;
+	margin: 3px;
+}*/
+.innerContainerBlock
+{
+	padding: 5px;
+}
+
+.simpleBlock
+{
+	/*background-color: #aaa;*/
+	background-color: #CEDFFF;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #ADC7F7;
+	/*padding: 5px;*/
+	
+}
+
+/*.simpleBlock, .compositeBlock
+{
+	-moz-opacity: 0.2;
+}
+div.simpleBlock:hover, div.compositeBlock:hover
+{
+	-moz-opacity: 1;
+}*/
+
+.createAssignmentLink
+{
+	position: absolute;
+	top: 5px;
+	cursor: pointer;
+	color: Blue;
+	margin-left: 10px;
+}
+
+.createAssignmentLink:hover
+{
+	text-decoration: underline;
+}
+
+div.compositeBlock span div div.iconBlock
+{
+	background-image: url('../../images/IbnFramework/ext/default/toolbar/bg.gif');
+}
+
+div.simpleBlock span div div.iconBlock
+{
+	background-color: #CEDFFF;
+	border-bottom: solid 1px #ADC7F7;
+	background-image: url('../../images/IbnFramework/ext/default/toolbar/bg.gif');
+	/*background-image: none;*/
+}
+
+
+.iconBlock
+{
+	border-bottom:solid 1px #CEDFFF;
+	padding: 2px;
+	height: 22px;
+	position: relative;
+}
+
+.iconBlock input
+{
+	-moz-opacity: 0.15;
+	opacity: 0.15;
+	filter: alpha(opacity = 15);
+	margin-top: 3px;
+}
+
+.iconBlock:hover input
+{
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+
+.iconBlock input:hover
+{
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: alpha(opacity = 100);
+}
+
+.iconBlock select
+{
+	border: 0px;
+	position: absolute;
+	top: 5px;
+}
+
+.subiconBlock
+{
+	display: none;
+}
+
+.itemcontainerBlock
+{
+}
+
+.padding5
+{
+	padding: 5px;
+}
+
+.wfMainContainer
+{
+}
+.editPrototypeLabel
+{
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	cursor: pointer;
+}
+div.editPrototypeLabel span
+{
+	color: Blue;
+}
+div.editPrototypeLabel:hover span
+{
+	text-decoration: underline;
+}

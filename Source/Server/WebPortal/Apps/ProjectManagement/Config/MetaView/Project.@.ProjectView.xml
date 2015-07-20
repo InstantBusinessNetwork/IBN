@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_TeamEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:PrjTeam}</PopupTitle>
+				<Url>~/Projects/TeamEditor.aspx?ProjectId={QueryString:ProjectId}</Url>
+				<Width>670</Width>
+				<Height>380</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_SponsorsEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:PrjSponsors}</PopupTitle>
+				<Url>~/Projects/SponsorsEditor.aspx?ProjectId={QueryString:ProjectId}</Url>
+				<Width>670</Width>
+				<Height>380</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_StakesEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:PrjStake}</PopupTitle>
+				<Url>~/Projects/StakeholdersEditor.aspx?ProjectId={QueryString:ProjectId}</Url>
+				<Width>670</Width>
+				<Height>380</Height>
+				<Left>100</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_Managers">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:PrjMans}</PopupTitle>
+				<Url>~/Projects/EditManagers.aspx?ProjectId={QueryString:ProjectId}</Url>
+				<Width>380</Width>
+				<Height>190</Height>
+				<Left>200</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_RelatedPrj">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Project&amp;ObjectId={QueryString:ProjectId}&amp;exclude={QueryString:ProjectId}&amp;ReturnCommand=MC_PM_RelatedPrjAdd&amp;MultipleSelect=1</Url>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_RelatedPrjAdd">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RelatedProjectAddHandler, Mediachase.UI.Web</Handler>
+			</Command>
+			<Command id="MC_PM_ObjectDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SearchObjects}</PopupTitle>
+				<Url>~/Apps/IbnCommon/Pages/SelectObject.aspx?ClassName=Project&amp;refreshName=ObjectDD_Refresh&amp;ReturnCommand=MC_PM_ObjectDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]</Url>
+				<Width>640</Width>
+				<Height>440</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_RelatedPrjClipboard">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:AddRelFromClip}</PopupTitle>
+				<Url>~/Projects/AddRelFromClip.aspx?ProjectId={QueryString:ProjectId}</Url>
+				<Width>500</Width>
+				<Height>300</Height>
+				<Left>150</Left>
+				<Top>50</Top>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_Redirect">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RedirectHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_MetaUI_CreateTodoQuick">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Global:QuickAddToDo}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ToDoQuickAdd.aspx?ProjectId={QueryString:ProjectId}&amp;CommandName=MC_PM_BindGrid</Url>
+				<DependCommand>MC_PM_BindGrid</DependCommand>
+				<Width>640</Width>
+				<Height>480</Height>
+				<Top>100</Top>
+				<Left>200</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_MetaUI_CreateTaskTodoGrid">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:CreateTaskTodoGridTitle}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/CreateTaskTodoGrid.aspx?ProjectId={QueryString:ProjectId}&amp;CommandName=MC_PM_BindGrid</Url>
+				<DependCommand>MC_PM_BindGrid</DependCommand>
+				<Width>800</Width>
+				<Height>400</Height>
+				<Top>50</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_PM_BindGrid">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.MetaUIEntity.CommandHandlers.NeedToBindGridHandler, Mediachase.UI.Web</Handler>
+			</Command>
+
+			<Command id="MC_ResUtil_FilterEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Global:ChangeFilter}</PopupTitle>
+				<Url>~/Projects/ResourceUtilFilter.aspx?ProjectId=[ClientParam:ProjectId]&amp;Objs=[ClientParam:Objs]</Url>
+				<Width>700</Width>
+				<Height>450</Height>
+				<Top>15</Top>
+				<Left>15</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_ResUtil_EntityDD">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Common:SelectObjects}</PopupTitle>
+				<Url>~/Apps/MetaUIEntity/Pages/EntitySelect.aspx?Classes=[ClientParam:Classes]&amp;refreshName=EntityDD_Refresh&amp;ReturnCommand=MC_ResUtil_EntityDD&amp;SelectCtrlId=[ClientParam:SelectCtrlId]&amp;CanCreate=1&amp;FilterName=[ClientParam:FilterName]&amp;FilterValue=[ClientParam:FilterValue]</Url>
+				<Width>550</Width>
+				<Height>260</Height>
+				<Left>15</Left>
+				<Top>5</Top>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

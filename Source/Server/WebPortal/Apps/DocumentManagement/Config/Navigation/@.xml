@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<Tab id="MResActs" create="True">
+			<Link id="MResActs4">
+				<add>
+					<Link order="400" id="MResActs43" text="{IbnShell.Navigation:tUtilDoc}" iconUrl="" iconCss="" command="cmd_MResActs43" />
+				</add>
+			</Link>
+		</Tab>
+		<add>
+			<Tab order="400" id="MDocuments" text="{IbnShell.Navigation:tTabDocuments}" contentType="default" imageUrl="~/layouts/images/icons/document.gif" configUrl="">
+				<Link order="100" id="MDocuments1" text="{IbnShell.Navigation:tMyDocuments}" iconUrl="" iconCss="" command="cmd_MDocuments1" />
+				<Link order="200" id="MDocuments2" text="{IbnShell.Navigation:tRAssDocuments}" iconUrl="" iconCss="" command="cmd_MDocuments2" />
+				<Link order="300" id="MDocuments3" text="{IbnShell.Navigation:tRAllDocuments}" iconUrl="" iconCss="" command="cmd_MDocuments3" />
+				<Link order="400" id="MDocuments4" text="{IbnShell.Navigation:tViewBy}" iconUrl="" iconCss="">
+					<Link order="100" id="MDocuments41" text="{IbnShell.Navigation:tStatus}" iconUrl="" iconCss="" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.DocumentStatusHandler, Mediachase.UI.Web" />
+					<Link order="200" id="MDocuments42" text="{IbnShell.Navigation:tPriority}" iconUrl="" iconCss="" command="cmd_MDocuments42" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.DocumentPriorityHandler, Mediachase.UI.Web" />
+					<Link order="300" id="MDocuments43" text="{IbnShell.Navigation:tGenCat}" iconUrl="" iconCss="" command="cmd_MDocuments43" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.DocumentGenCatHandler, Mediachase.UI.Web" />
+				</Link>
+				<Link order="500" id="MDocuments5" text="{IbnShell.Navigation:tGroupedBy}" iconUrl="" iconCss="">
+					<Link order="100" id="MDocuments51" text="{IbnShell.Navigation:tGroupProjects}" iconUrl="" iconCss="" command="cmd_MDocuments51" />
+					<Link order="200" id="MDocuments52" text="{IbnShell.Navigation:tGroupClients}" iconUrl="" iconCss="" command="cmd_MDocuments52" />
+				</Link>
+			</Tab>
+		</add>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MResActs43">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Projects/ResourceUtil2.aspx?Objs=Doc</Url>
+			</Command>
+			<Command id="cmd_MDocuments1">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Documents/default.aspx?ManDoc=1</Url>
+			</Command>
+			<Command id="cmd_MDocuments2">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Documents/default.aspx?AssDoc=1</Url>
+			</Command>
+			<Command id="cmd_MDocuments3">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Documents/default.aspx</Url>
+			</Command>
+			<Command id="cmd_MDocuments42">
+				<CommandType></CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.PriorityAllowHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MDocuments43">
+				<CommandType></CommandType>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.GeneralCategoriesAllowHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MDocuments51">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Documents/default.aspx?DocGroup=Prj</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ProjectManagementEnabled, Mediachase.UI.Web</EnableHandler>
+			</Command>
+			<Command id="cmd_MDocuments52">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Documents/default.aspx?DocGroup=Client</Url>
+				<EnableHandler>Mediachase.Ibn.Web.UI.Shell.CommandHandlers.ClientAllowHandler, Mediachase.UI.Web</EnableHandler>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

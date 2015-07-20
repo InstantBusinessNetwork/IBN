@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+		<CustomColumns id="HDM_Columns">
+			<add>
+				<Column id="colOpenDate" type="default" width="100" title="{IbnFramework.Incident:ActualOpenDate}" sortExpression="ActualOpenDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ActualOpenDate.IncidentList.ascx" />
+				<Column id="colFinishDate" type="default" width="100" title="{IbnFramework.Incident:ActualFinishDate}" sortExpression="ActualFinishDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ActualFinishDate.IncidentList.ascx" />
+				<Column id="colExpectedDate" type="default" width="150" title="{IbnFramework.Incident:ExpectedResponseDate}" sortExpression="ExpectedResponseDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ExpectedResponseDate.IncidentList.ascx" />
+				<Column id="colResolveDate" type="default" width="150" title="{IbnFramework.Incident:ExpectedResolveDate}" sortExpression="ExpectedResolveDate" templateUrl="~/Apps/HelpDeskManagement/ColumnTemplates/ExpectedResolveDate.IncidentList.ascx" />
+			</add>
+		</CustomColumns>
+	</Grid>
+	<Commands>
+	</Commands>
+</MetaView>

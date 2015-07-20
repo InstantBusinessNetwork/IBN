@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Navigation>
+	<Tabs>
+		<add>
+			<Tab order="700" id="MLists" text="{IbnShell.Navigation:tLists}" contentType="default" imageUrl="~/layouts/images/lists.gif" configUrl="">
+				<Link order="100" id="MLists1_0" text="{IbnShell.Navigation:tListFolders}" iconUrl="" iconCss="" treeLoader="Mediachase.Ibn.Web.UI.Shell.TreeHandlers.ListFoldersHandler, Mediachase.UI.Web" />
+				<Link order="200" id="MLists2" text="{IbnFramework.ListInfo:tListTemplates}" iconUrl="" iconCss="" command="cmd_MLists2"/>
+			</Tab>
+		</add>
+	</Tabs>
+	<Commands>
+		<add>
+			<Command id="cmd_MLists2">
+				<CommandType>Navigate</CommandType>
+				<Target>right</Target>
+				<Url>~/Apps/ListApp/Pages/ListTemplates.aspx</Url>
+			</Command>
+		</add>
+	</Commands>
+</Navigation>

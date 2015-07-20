@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MetaView>
+	<Toolbar>
+	</Toolbar>
+	<Grid>
+	</Grid>
+	<Commands>
+		<add>
+			<Command id="MC_PM_TaskResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:TaskRes}</PopupTitle>
+				<Url>~/Tasks/AddResources.aspx?TaskId={QueryString:TaskId}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Top>50</Top>
+				<Left>100</Left>
+				<Drag>True</Drag>
+			</Command>
+			
+			<!--<Command id="MC_PM_TaskResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:TaskRes}</PopupTitle>
+				<Url>~/Apps/ProjectManagement/Pages/ModifyResources.aspx?ObjectId={QueryString:TaskId}&amp;ObjectTypeId=5&amp;ClassName=UserTask&amp;ReturnCommand=MC_PM_TaskResEdit</Url>
+				<Width>700</Width>
+				<Height>440</Height>
+				<Left>30</Left>
+				<Top>20</Top>
+				<Drag>True</Drag>
+			</Command>-->
+			<Command id="MC_PM_OldTaskResEdit">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Project:TaskRes}</PopupTitle>
+				<Url>~/Tasks/AddResources.aspx?FromCreate=1&amp;TaskId={QueryString:OldTaskID}</Url>
+				<Width>670</Width>
+				<Height>382</Height>
+				<Top>50</Top>
+				<Left>100</Left>
+				<Drag>True</Drag>
+			</Command>
+
+			<Command id="MC_PM_AddPredTask">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Task:AddPredecessor}</PopupTitle>
+				<Url>~/Tasks/AddPredecessor.aspx?BaseTaskID={QueryString:TaskId}</Url>
+				<Width>500</Width>
+				<Height>200</Height>
+				<Top>50</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_AddSuccTask">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnFramework.Task:AddSuccessor}</PopupTitle>
+				<Url>~/Tasks/AddSuccessor.aspx?BaseTaskID={QueryString:TaskId}</Url>
+				<Width>500</Width>
+				<Height>200</Height>
+				<Top>50</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+			<Command id="MC_PM_TaskRedirect">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.ProjectManagement.CommandHandlers.RedirectHandler, Mediachase.UI.Web</Handler>
+			</Command>
+		</add>
+	</Commands>
+</MetaView>

@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C53C3FE-C907-4E3B-8A21-D8205655DF97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediachase.Ibn.Converter</RootNamespace>
+    <AssemblyName>Mediachase.Ibn.ClientsConverter</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release Radius|AnyCPU' ">
+    <OutputPath>bin\Release Radius\</OutputPath>
+    <DefineConstants>TRACE;RADIUS</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mediachase.Ibn.Core, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mediachase.Ibn.Data, Version=1.5.21.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CommonFiles\Mediachase.Ibn.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonFiles\AssemblyInfo.cs" />
+    <Compile Include="..\CommonFiles\IbnConstants.cs" />
+    <Compile Include="AssemblyInfo2.cs" />
+    <Compile Include="ClientsConverter.cs" />
+    <Compile Include="ClientsConverterEventArgs.cs" />
+    <Compile Include="ClientsConverterException.cs" />
+    <Compile Include="MetadataConverterException.cs" />
+    <Compile Include="MetadataPlusToMetadataConverter.cs" />
+    <Compile Include="Old\DBCommon.cs" />
+    <Compile Include="Old\VCard.cs" />
+    <Compile Include="Old\VCardAddress.cs" />
+    <Compile Include="Old\VCardAddressRow.cs" />
+    <Compile Include="Old\VCardEmail.cs" />
+    <Compile Include="Old\VCardEmailRow.cs" />
+    <Compile Include="Old\VCardName.cs" />
+    <Compile Include="Old\VCardNameRow.cs" />
+    <Compile Include="Old\VCardOrganization.cs" />
+    <Compile Include="Old\VCardOrganizationRow.cs" />
+    <Compile Include="Old\VCardRow.cs" />
+    <Compile Include="Old\VCardRowException.cs" />
+    <Compile Include="Old\VCardTelephone.cs" />
+    <Compile Include="Old\VCardTelephoneRow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mediachase.Database\Mediachase.Database.csproj">
+      <Project>{ED474037-35B8-4160-9917-40D2BD5DCDB6}</Project>
+      <Name>Mediachase.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.Ibn.Clients\Mediachase.Ibn.Clients.csproj">
+      <Project>{02A02DF3-E8BD-4393-8374-F543D95FAAD6}</Project>
+      <Name>Mediachase.Ibn.Clients</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mediachase.MetaDataPlus\Mediachase.MetaDataPlus.csproj">
+      <Project>{DFCB99D9-31B5-40ED-9D9C-151452F6A8D5}</Project>
+      <Name>Mediachase.MetaDataPlus</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

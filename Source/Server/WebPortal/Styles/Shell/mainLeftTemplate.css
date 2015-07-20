@@ -1,0 +1,141 @@
+#menu_panel .x-panel-header {
+    /*background:#eee url(../../images/Shell/navbar/cmp-bg.gif) repeat-x;*/
+    background-color:#FFE69E;
+    background-image: url(../../images/Shell/navbar/item_expanded_bg.gif);
+    border-top:1px solid #7C7C94;
+    border-bottom:1px solid #7C7C94;
+    border-left:1px solid #7C7C94;
+    border-right:1px solid #7C7C94;
+    color: Black;
+    padding:0px 5px 2px 5px;
+	line-height:21px;
+    /*font-size: 12px;*/
+}
+
+#menu_panel .x-panel-body {
+    /*background-color: #D9E8FB;*/
+    background-color: #E1ECFC;
+    border-top:2px solid #E1ECFC;
+}
+
+.NavigationNavBarItemSmall
+{
+  color: black;
+  background-image:url(../../images/Shell/navbar/item_bg2.gif);
+  background-color:#C0DBFF;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  cursor: pointer;  
+  padding: 2px 4px 2px 4px;  
+  float: left;
+  width: 25px;
+}
+
+.NavigationNavBarItemSmallHover
+{
+  color: black;
+  background-image:url(../../images/Shell/navbar/selected-bg1.gif);
+  background-color:#FFE69E;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  cursor: pointer;  
+  padding: 2px 4px 2px 4px;  
+  float: left;
+  width: 25px;
+}
+
+.NavigationNavBarItemSmallActive
+{
+  color: black;
+  background-image:url(../../images/Shell/navbar/selected-bg-active.gif);
+  background-color:#FFE69E;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  cursor: pointer;  
+  padding: 2px 4px 2px 4px;  
+  float: left;
+  width: 25px;
+}
+
+.NavigationNavBarItem
+{
+  color: #070707;
+  background-image:url(../../images/Shell/navbar/item_bg2.gif);
+  background-color:#C0DBFF;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  font-weight: bold;
+  border-top: 1px solid #7C7C94;
+  border-left: 1px solid #7C7C94;
+  border-right: 1px solid #7C7C94;
+  cursor: pointer;  
+}
+.NavigationNavBarItem table
+{
+	font-family: tahoma, verdana; 
+}
+
+.NavigationNavBarItemHover
+{
+  color: black;
+  background-image: url(../../images/Shell/navbar/selected-bg1.gif);
+  background-color:#FFE69E;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  font-weight: bold;
+  border-top: 1px solid #7C7C94;
+  border-left: 1px solid #7C7C94;
+  border-right: 1px solid #7C7C94;
+  cursor: pointer;  
+}
+.NavigationNavBarItemHover table
+{
+	font-family: tahoma, verdana; 
+}
+
+.NavigationNavBarItemActive
+{
+  color:black;
+  /*background-image:url(../../images/Shell/navbar/item_bg_selected.gif);
+  background-color:#FEE17A;*/
+  background-image:url(../../images/Shell/navbar/selected-bg-active.gif);
+  background-color: #94C1FF;
+  font-family: tahoma, verdana; 
+  font-size: 11px;/*12px; */
+  font-weight: bold;
+  border-top: 1px solid #7C7C94;
+  border-left: 1px solid #7C7C94;
+  border-right: 1px solid #7C7C94;
+  cursor: pointer;  
+} 
+.NavigationNavBarItemActive table
+{
+	font-family: tahoma, verdana; 
+}
+
+.iconNodeCls
+{
+	background-image: url(../../images/Shell/rect.gif) !important;
+	width: 6px !important;
+	height: 7px !important;
+	vertical-align: middle !important;
+	padding: 3px !important;
+}
+
+.iconStdCls
+{
+	width: 16px !important;
+	height: 16px !important;
+	vertical-align: middle !important;
+	padding: 0px 3px !important;
+}
+
+.nodeCls a span {
+  font-family: tahoma;
+  color: #003399;
+  font-size: 11px; 
+}
+
+.nodeClsSelected{
+  background-color:#D9E8FB;
+}

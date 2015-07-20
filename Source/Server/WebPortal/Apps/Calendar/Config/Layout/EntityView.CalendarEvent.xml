@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Layout>
+	<clear />
+	<add>
+		<Block id="Block_1">
+			<Placeholder id="Block_1.Placeholder_1">
+				<Control id="Toolbar" path="~/Apps/MetaUI/Toolbar/MetaToolbar.ascx">
+					<Property name="ClassName" value="CalendarEvent" />
+					<Property name="ViewName" value="CalendarEvent" />
+					<Property name="PlaceName" value="CalendarEventView" />
+					<Property name="ToolbarMode" value="ListViewUI" />
+				</Control>
+				<Control id="Block_1.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+					<Property name="FormName" value="[MC_ShortViewForm]" />
+				</Control>
+			</Placeholder>
+			<Placeholder id="Block_1.Placeholder_2" />
+			<Placeholder id="Block_1.Placeholder_3" />
+			<Placeholder id="Block_1.Placeholder_4" />
+		</Block>
+		<Block id="InfoBlock" name="{IbnFramework.Common:Info}">
+			<Block id="Block_2" name="{IbnFramework.Common:Info}">
+				<Placeholder id="Block_2.Placeholder_1">
+					<Control id="Block_2.Placeholder_1.Control_1" path="~/Apps/MetaUI/MetaForm/FormDocumentView.ascx">
+						<Property name="FormName" value="[MC_GeneralViewForm]" />
+					</Control>
+				</Placeholder>
+				<Placeholder id="Block_2.Placeholder_2">
+					<Control id="Block_2.Placeholder_1.Control_2" path="~/Apps/Calendar/Modules/ReccurenceView.ascx">
+					</Control>
+				</Placeholder>
+				<Placeholder id="Block_2.Placeholder_3">
+					<Control id="Block_2.Placeholder_1.Control_3" path="~/Apps/Calendar/Modules/ResourceStatusEdit.ascx">
+					</Control>
+				</Placeholder>
+				<Placeholder id="Block_2.Placeholder_4" />
+			</Block>
+			<Block id="Resources" name="{IbnFramework.Calendar:CalendarEventResources}">
+				<Placeholder id="Placeholder_1">
+					<Control id="CalendarEventResources" path="~/Apps/MetaUIEntity/Modules/EntityListLight.ascx">
+						<Property name="ClassName" value="CalendarEventResource" />
+						<Property name="ViewName" value="CalendarEventResources" />
+						<Property name="PlaceName" value="CalendarEventView" />
+						<Property name="ProfileName" value="CalendarEventResourcesAll" />
+						<Property name="ShowCheckBoxes" value="false" />
+					</Control>
+				</Placeholder>
+				<Placeholder id="Placeholder_2" />
+				<Placeholder id="Placeholder_3" />
+				<Placeholder id="Placeholder_4" />
+			</Block>
+		</Block>
+	</add>
+</Layout>

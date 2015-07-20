@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ListViewUI>
+	<Toolbar>
+		<clear/>
+		<add>
+			<Button id="NewItemButton" text="{IbnFramework.Profile:NewPage}" imageUrl="~/Layouts/Images/newitem.gif" commandName="MC_WE_NewPage" itemSplitter="Right"></Button>
+		</add>
+	</Toolbar>
+	<Grid>
+		<add>
+			<CustomColumns id="CustomPages_Columns">
+				<Column id="460743ED-0CB4-41C5-8BA1-5C479D694F2C" type="ColumnsActions" templateUrl="~/Apps/WidgetEngine/ColumnTemplates/ColumnsActions.GridEntity.CustomPage.ascx">
+					<Item imageUrl="~/Images/IbnFramework/PublishList.png" commandName="MC_WE_PublishPage" paddingRight="5" tooltip="{IbnFramework.Profile:Publish}" />
+					<Item imageUrl="~/Images/IbnFramework/edit.gif" commandName="MC_WE_EditPage" paddingRight="5" tooltip="{IbnFramework.Common:Edit}" />
+					<Item imageUrl="~/Images/IbnFramework/undo.png" commandName="MC_WE_PageUndo" paddingRight="5" tooltip="{IbnFramework.Profile:Undo}" />
+					<Item imageUrl="~/Images/IbnFramework/delete.gif" commandName="MC_WE_PageDelete" paddingRight="5" tooltip="{IbnFramework.Common:Delete}" />
+				</Column>
+			</CustomColumns>
+		</add>
+	</Grid>
+	<Commands>
+		<clear/>
+		<add>
+			<Command id="MC_WE_NewPage">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPageEdit.aspx?ClassName={QueryString:ClassName}&amp;ObjectId={QueryString:ObjectId}</Url>
+			</Command>
+			<Command id="MC_WE_EditPage">
+				<CommandType>Navigate</CommandType>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPageEdit.aspx?Id=[ClientParam:primaryKeyId]&amp;ClassName={QueryString:ClassName}&amp;ObjectId={QueryString:ObjectId}</Url>
+			</Command>
+			<Command id="MC_WE_PageUndo">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.WidgetEngine.CommandHandlers.UndoPageHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.WidgetEngine.CommandHandlers.UndoPageEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<ConfirmationText>{IbnFramework.Profile:UndoChanges}</ConfirmationText>
+			</Command>
+			<Command id="MC_WE_PageDelete">
+				<CommandType>ServerAction</CommandType>
+				<Handler>Mediachase.Ibn.Web.UI.WidgetEngine.CommandHandlers.DeletePageHandler, Mediachase.UI.Web</Handler>
+				<EnableHandler>Mediachase.Ibn.Web.UI.WidgetEngine.CommandHandlers.DeletePageEnableHandler, Mediachase.UI.Web</EnableHandler>
+				<ConfirmationText>{IbnFramework.Common:DeleteItemConfirmation}</ConfirmationText>
+			</Command>
+			<Command id="MC_WE_PublishPage">
+				<CommandType>OpenFrameModalPopup</CommandType>
+				<PopupTitle>{IbnShell.Navigation:Publication}</PopupTitle>
+				<Url>~/Apps/WidgetEngine/Pages/CustomPagePublish.aspx?Uid=[ClientParam:Uid]&amp;ClassName={QueryString:ClassName}&amp;ObjectId={QueryString:ObjectId}</Url>
+				<Width>750</Width>
+				<Height>485</Height>
+				<Top>55</Top>
+				<Left>150</Left>
+				<Drag>True</Drag>
+			</Command>
+		</add>
+	</Commands>
+</ListViewUI>

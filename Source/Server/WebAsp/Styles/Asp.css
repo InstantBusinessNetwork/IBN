@@ -1,0 +1,63 @@
+﻿body
+{
+	font-family: Verdana, Serif;
+	font-size: 8pt;
+}
+
+.header1
+{
+	width: 100%;
+	background-image: url("../Themes/Xp/topgrad.gif");
+	background-color: #002d96;
+	background-repeat: repeat-x;
+	color: #ffffff;
+	white-space: nowrap;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.header2
+{
+	width: 100%;
+	border-top: solid 2px #FFD275;
+	border-bottom: solid 1px #FFD275;
+}
+
+.mainLayout
+{
+	width: 100%;
+	vertical-align: top;
+	border: none 0;
+	border-spacing: 0;
+}
+
+.mainMenu
+{
+	white-space: nowrap;
+	padding: 0;
+	background-color: #E1ECFC;
+	vertical-align: top;
+}
+
+.mainMenu-Item
+{
+	padding: 2px;
+}
+
+.mainMenu-Separator
+{
+	height: 10px;
+}
+
+.mainContent
+{
+	width: 100%;
+	vertical-align: top;
+	padding: 5px;
+}
+
+a img, span img
+{
+	border: 0;
+	vertical-align: middle;
+}
