@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SetCredentials">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="credentials" type="tns:NetworkCredential" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="NetworkCredential">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Domain" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetCredentialsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetProviderTypeForSyncSession">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="providerType" type="tns:eSyncProviderType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="eSyncProviderType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Mail" />
+          <s:enumeration value="Appointment" />
+          <s:enumeration value="Contact" />
+          <s:enumeration value="Task" />
+          <s:enumeration value="Journal" />
+          <s:enumeration value="Note" />
+          <s:enumeration value="Post" />
+          <s:enumeration value="Distribution" />
+          <s:enumeration value="Undef" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SetProviderTypeForSyncSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetIdFormats">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetIdFormatsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIdFormatsResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BeginSession">
+        <s:complexType />
+      </s:element>
+      <s:element name="BeginSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EndSession">
+        <s:complexType />
+      </s:element>
+      <s:element name="EndSessionResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetChangeBatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="batchSize" type="s:unsignedInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="rawDestinationKnowledge" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChangeBatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetChangeBatchResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="changeDataRetriever" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullEnumerationChangeBatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="batchSize" type="s:unsignedInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="lowerEnumerationBoundRaw" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="rawKnowledgeForDataRetrieval" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFullEnumerationChangeBatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFullEnumerationChangeBatchResult" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="changeDataRetriever" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSyncBatchParameters">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSyncBatchParametersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="batchSize" type="s:unsignedInt" />
+            <s:element minOccurs="0" maxOccurs="1" name="rawKnowledge" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessChangeBatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="resolutionPolicy" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceChanges" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="rawChangeDataRetriever" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="changeApplierInfo" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessChangeBatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessChangeBatchResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessFullEnumerationChangeBatch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="resolutionPolicy" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="sourceChanges" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="rawChangeDataRetriever" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="changeApplierInfo" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessFullEnumerationChangeBatchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessFullEnumerationChangeBatchResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CleanupTombstones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="timespan" type="tns:TimeSpan" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TimeSpan" />
+      <s:element name="CleanupTombstonesResponse">
+        <s:complexType />
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SetCredentialsSoapIn">
+    <wsdl:part name="parameters" element="tns:SetCredentials" />
+  </wsdl:message>
+  <wsdl:message name="SetCredentialsSoapOut">
+    <wsdl:part name="parameters" element="tns:SetCredentialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetProviderTypeForSyncSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:SetProviderTypeForSyncSession" />
+  </wsdl:message>
+  <wsdl:message name="SetProviderTypeForSyncSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:SetProviderTypeForSyncSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIdFormatsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIdFormats" />
+  </wsdl:message>
+  <wsdl:message name="GetIdFormatsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIdFormatsResponse" />
+  </wsdl:message>
+  <wsdl:message name="BeginSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:BeginSession" />
+  </wsdl:message>
+  <wsdl:message name="BeginSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:BeginSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="EndSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:EndSession" />
+  </wsdl:message>
+  <wsdl:message name="EndSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:EndSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeBatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChangeBatch" />
+  </wsdl:message>
+  <wsdl:message name="GetChangeBatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChangeBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFullEnumerationChangeBatchSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFullEnumerationChangeBatch" />
+  </wsdl:message>
+  <wsdl:message name="GetFullEnumerationChangeBatchSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFullEnumerationChangeBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSyncBatchParametersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSyncBatchParameters" />
+  </wsdl:message>
+  <wsdl:message name="GetSyncBatchParametersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSyncBatchParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessChangeBatchSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessChangeBatch" />
+  </wsdl:message>
+  <wsdl:message name="ProcessChangeBatchSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessChangeBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessFullEnumerationChangeBatchSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessFullEnumerationChangeBatch" />
+  </wsdl:message>
+  <wsdl:message name="ProcessFullEnumerationChangeBatchSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessFullEnumerationChangeBatchResponse" />
+  </wsdl:message>
+  <wsdl:message name="CleanupTombstonesSoapIn">
+    <wsdl:part name="parameters" element="tns:CleanupTombstones" />
+  </wsdl:message>
+  <wsdl:message name="CleanupTombstonesSoapOut">
+    <wsdl:part name="parameters" element="tns:CleanupTombstonesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SynchronizationServiceSoap">
+    <wsdl:operation name="SetCredentials">
+      <wsdl:input message="tns:SetCredentialsSoapIn" />
+      <wsdl:output message="tns:SetCredentialsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetProviderTypeForSyncSession">
+      <wsdl:input message="tns:SetProviderTypeForSyncSessionSoapIn" />
+      <wsdl:output message="tns:SetProviderTypeForSyncSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIdFormats">
+      <wsdl:input message="tns:GetIdFormatsSoapIn" />
+      <wsdl:output message="tns:GetIdFormatsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BeginSession">
+      <wsdl:input message="tns:BeginSessionSoapIn" />
+      <wsdl:output message="tns:BeginSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <wsdl:input message="tns:EndSessionSoapIn" />
+      <wsdl:output message="tns:EndSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeBatch">
+      <wsdl:input message="tns:GetChangeBatchSoapIn" />
+      <wsdl:output message="tns:GetChangeBatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFullEnumerationChangeBatch">
+      <wsdl:input message="tns:GetFullEnumerationChangeBatchSoapIn" />
+      <wsdl:output message="tns:GetFullEnumerationChangeBatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncBatchParameters">
+      <wsdl:input message="tns:GetSyncBatchParametersSoapIn" />
+      <wsdl:output message="tns:GetSyncBatchParametersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessChangeBatch">
+      <wsdl:input message="tns:ProcessChangeBatchSoapIn" />
+      <wsdl:output message="tns:ProcessChangeBatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFullEnumerationChangeBatch">
+      <wsdl:input message="tns:ProcessFullEnumerationChangeBatchSoapIn" />
+      <wsdl:output message="tns:ProcessFullEnumerationChangeBatchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CleanupTombstones">
+      <wsdl:input message="tns:CleanupTombstonesSoapIn" />
+      <wsdl:output message="tns:CleanupTombstonesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SynchronizationServiceSoap" type="tns:SynchronizationServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetCredentials">
+      <soap:operation soapAction="http://tempuri.org/SetCredentials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProviderTypeForSyncSession">
+      <soap:operation soapAction="http://tempuri.org/SetProviderTypeForSyncSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdFormats">
+      <soap:operation soapAction="http://tempuri.org/GetIdFormats" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeginSession">
+      <soap:operation soapAction="http://tempuri.org/BeginSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <soap:operation soapAction="http://tempuri.org/EndSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeBatch">
+      <soap:operation soapAction="http://tempuri.org/GetChangeBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullEnumerationChangeBatch">
+      <soap:operation soapAction="http://tempuri.org/GetFullEnumerationChangeBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncBatchParameters">
+      <soap:operation soapAction="http://tempuri.org/GetSyncBatchParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessChangeBatch">
+      <soap:operation soapAction="http://tempuri.org/ProcessChangeBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFullEnumerationChangeBatch">
+      <soap:operation soapAction="http://tempuri.org/ProcessFullEnumerationChangeBatch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanupTombstones">
+      <soap:operation soapAction="http://tempuri.org/CleanupTombstones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SynchronizationServiceSoap12" type="tns:SynchronizationServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SetCredentials">
+      <soap12:operation soapAction="http://tempuri.org/SetCredentials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetProviderTypeForSyncSession">
+      <soap12:operation soapAction="http://tempuri.org/SetProviderTypeForSyncSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIdFormats">
+      <soap12:operation soapAction="http://tempuri.org/GetIdFormats" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BeginSession">
+      <soap12:operation soapAction="http://tempuri.org/BeginSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EndSession">
+      <soap12:operation soapAction="http://tempuri.org/EndSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChangeBatch">
+      <soap12:operation soapAction="http://tempuri.org/GetChangeBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFullEnumerationChangeBatch">
+      <soap12:operation soapAction="http://tempuri.org/GetFullEnumerationChangeBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSyncBatchParameters">
+      <soap12:operation soapAction="http://tempuri.org/GetSyncBatchParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessChangeBatch">
+      <soap12:operation soapAction="http://tempuri.org/ProcessChangeBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessFullEnumerationChangeBatch">
+      <soap12:operation soapAction="http://tempuri.org/ProcessFullEnumerationChangeBatch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CleanupTombstones">
+      <soap12:operation soapAction="http://tempuri.org/CleanupTombstones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SynchronizationService">
+    <wsdl:port name="SynchronizationServiceSoap" binding="tns:SynchronizationServiceSoap">
+      <soap:address location="http://localhost/syncService/SynchronizationService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SynchronizationServiceSoap12" binding="tns:SynchronizationServiceSoap12">
+      <soap12:address location="http://localhost/syncService/SynchronizationService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

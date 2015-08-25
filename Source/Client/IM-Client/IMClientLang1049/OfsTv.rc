@@ -1,0 +1,3185 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OfsTv.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INVITE_CHAT_DIALOG DIALOGEX 0, 0, 270, 79
+STYLE WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Отклонить",IDC_MCDENY,207,63,47,14
+    PUSHBUTTON      "Принять",IDC_MCACCEPT,159,63,47,14
+    PUSHBUTTON      "О пользователе",IDC_MCUSERDETAILS,2,63,71,14
+    LTEXT           "Static",IDC_NICK_EDIT,2,2,227,8,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,2,12,266,49
+    PUSHBUTTON      "О конференции",IDC_MCCHATDETAILS,74,63,82,14
+END
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 110, 103
+STYLE WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_CCOOTREECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,31,
+                    22,24,21
+    CONTROL         "",IDC_BUTTON_ALERTS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,12,
+                    75,15,8
+    CONTROL         "",IDC_BUTTON_APPS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,32,
+                    75,15,8
+    CONTROL         "",IDC_BUTTON_FILES,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,51,
+                    75,15,8
+    CONTROL         "",IDC_BUTTON_DIRECTORY,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,73,
+                    75,15,8
+    CONTROL         "",IDC_APP_BAR,"Static",SS_BLACKFRAME | SS_NOTIFY,2,14,
+                    20,25
+    CONTROL         "",IDC_LOGO,"Static",SS_BLACKFRAME | SS_NOTIFY,25,0,36,
+                    20
+    CONTROL         "",IDC_BUTTON_MENU,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,0,0,
+                    15,13
+    CONTROL         "",IDC_BUTTON_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,69,0,15,13
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,95,0,15,13
+    LTEXT           "Status",IDC_STATUS_STATIC,0,95,34,8,SS_CENTERIMAGE
+    LTEXT           "User Show Name ",IDC_USER_STATIC,39,94,63,8,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_CCOCONFERENCECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,35,
+                    49,32,14
+    CONTROL         "",IDC_BUTTON_SHOWOFFLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,71,
+                    15,15,13
+END
+
+IDD_DOWNLOAD_DIALOG DIALOGEX 0, 0, 268, 62
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Download",IDC_DOWNLOAD_BUTTON,174,23,50,12,BS_FLAT | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Cancel",IDC_CANCEL_BUTTON,62,20,50,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "OffLine",IDC_OFFLINE_BUTTON,5,18,50,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_DELETE_BUTTON,121,39,50,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Remind Later",IDC_REMEMBERLATER_BUTTON,117,22,50,12,
+                    BS_FLAT | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "List1",IDC_FILE_DOWNLOAD_LIST,"SysListView32",
+                    LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | 
+                    WS_TABSTOP,0,0,268,62,WS_EX_STATICEDGE
+    CONTROL         "Show Offline Files",IDC_SHOWOFFLINEFILES_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_TABSTOP,0,1,134,10
+END
+
+IDD_DIALOG_FILE_UPLOAD DIALOGEX 0, 0, 270, 72
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDC_CANCEL_BUTTON,220,60,50,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "UpLoad",IDC_UPLOAD_BUTTON,175,60,50,12,BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED
+    PUSHBUTTON      "Delete",IDC_DELETEFILE_BUTTON,124,60,50,12,BS_FLAT | 
+                    NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "List1",IDC_FILE_UPLOAD_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_TABSTOP,0,0,
+                    270,72,WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_LOGIN DIALOG DISCARDABLE  0, 0, 137, 97
+STYLE DS_CENTER | WS_POPUP | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGIN,7,15,63,12,ES_AUTOHSCROLL | ES_WANTRETURN | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_PASSWORD,7,32,63,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | NOT WS_BORDER
+    CONTROL         "",IDC_BUTTON_REMEMBER,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,6,49,
+                    73,9
+    CONTROL         "",IDC_BUTTON_NETOPTIONS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,0,69,
+                    18,11
+    CONTROL         "",IDC_BUTTON_SSL,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,86,40,51,14
+    CONTROL         "",IDC_BUTTON_LOGIN,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,30,
+                    67,51,14
+    CONTROL         "",IDC_BUTTON_CANCEL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,86,
+                    67,51,14
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,119,2,18,11
+    LTEXT           "Title",IDC_TITLE,0,0,14,8
+END
+
+IDD_ADDUSER_DIALOG DIALOG DISCARDABLE  0, 0, 264, 95
+STYLE WS_MINIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "OK",ID_AUTHORIZATION,3,80,72,12,BS_FLAT | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,38,80,72,12,BS_FLAT | NOT WS_VISIBLE
+    CONTROL         "",IDC_BOLD_CHECK,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    BS_PUSHLIKE | WS_TABSTOP,20,17,15,12
+    CONTROL         "",IDC_ITALIC_CHECK,"Button",BS_AUTOCHECKBOX | BS_ICON | 
+                    BS_PUSHLIKE | WS_TABSTOP,37,17,15,12
+    CONTROL         "",IDC_UNDERLINE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_ICON | BS_PUSHLIKE | WS_TABSTOP,54,17,15,12
+    PUSHBUTTON      "",IDC_COLOR_BUTTON,3,17,15,12,BS_ICON
+    PUSHBUTTON      "",IDC_INSERTSMILE_CHECK,71,17,15,12,BS_ICON
+    LTEXT           "",IDC_NICK_EDIT,3,3,258,8
+    PUSHBUTTON      "Отмена",IDC_MCCANCEL,211,78,50,14
+    PUSHBUTTON      "ОК",IDC_MCOK,158,78,50,14
+    CONTROL         "",IDC_FRAME_EDIT,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,3,32,258,42
+    COMBOBOX        IDC_SIZE_COMBO,92,17,36,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FONT_COMBO,131,17,130,75,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MESSAGE_DIALOG DIALOG DISCARDABLE  0, 0, 207, 69
+STYLE DS_MODALFRAME | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN Сообщение"
+#else
+CAPTION "MagRul Сообщение"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "(%d секунд)",IDC_TIME_STATIC,135,41,68,10,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "OK",IDB21,101,52,50,14
+    PUSHBUTTON      "Отмена",IDB22,152,52,50,14
+    PUSHBUTTON      "OK",IDB1,138,52,50,14
+    CONTROL         "Больше не показывать",IDB_DONTSHOWAGAIN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,54,92,10
+    LTEXT           "Static",IDC_MESSAGE,3,3,199,40
+END
+
+IDD_DIALOG_HISORY DIALOGEX 0, 0, 303, 117
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,120,104,68,12,BS_FLAT | NOT WS_VISIBLE
+    CONTROL         "Incoming",IDC_INCOMING,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE,73,90,47,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "Outgoing",IDC_OUTGOING,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE,125,90,47,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "Dialog",IDC_DIALOG,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | NOT WS_VISIBLE,175,90,48,12,
+                    WS_EX_STATICEDGE
+    CONTROL         "DIsplay Last Event First",IDC_LASTFIRST,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,121,104,89,
+                    12
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,286,0,18,10
+    CONTROL         "",IDC_MCMENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,5,2,31,10
+    CONTROL         "",IDC_MCMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,250,0,18,10
+    CONTROL         "",IDC_MCINCOMING,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,73,7,60,18
+    CONTROL         "",IDC_MCOUTGOING,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,137,7,60,18
+    CONTROL         "",IDC_MCDIALOG,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,199,7,60,18
+    LTEXT           "",IDC_USER_STATIC,4,32,129,8,SS_CENTERIMAGE
+    CONTROL         "",IDC_CCOOTREECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,15,
+                    29,50,74
+    CONTROL         "",IDC_MCPROGRESSCTRL,
+                    "{28088786-FE77-4514-8AD2-9C23B95AC6D6}",WS_TABSTOP,193,
+                    65,106,14
+    CONTROL         "",IDC_MCMAXI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,268,0,18,10
+    CONTROL         "",IDC_MCMAXIMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,268,11,18,10
+    CONTROL         "",ID_DHTML_CTRL,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,93,46,44,23
+    CONTROL         "",IDC_MCFIND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,259,31,40,9
+    COMBOBOX        IDC_TIMEFILTERMODE_COMBO,75,31,75,85,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DateTimePicker1",IDC_FROMTIME_DATETIMEPICKER,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,159,30,
+                    68,12
+    CONTROL         "DateTimePicker1",IDC_TOTIME_DATETIMEPICKER,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,167,45,
+                    68,12
+END
+
+IDD_PAGE_MES_SYNCHRONIZE DIALOG DISCARDABLE  0, 0, 259, 168
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    GROUPBOX        "Синхронизировать архив за",IDC_STATIC,0,0,259,65
+    CONTROL         "Последний день",IDC_DAY_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,10,11,71,10
+    CONTROL         "Последнюю неделю",IDC_WEEK_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,10,24,80,10
+    CONTROL         "Последний месяц",IDC_MONTH_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,10,37,81,10
+    CONTROL         "Последний год",IDC_YEAR_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,10,50,79,10
+    CONTROL         "Произвольный период",IDC_CUSTOM_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,93,11,93,10
+    CONTROL         "DateTimePicker1",IDC_FROM_DATETIMEPICKER,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,127,23,
+                    58,15
+    CONTROL         "DateTimePicker2",IDC_TO_DATETIMEPICKER,
+                    "SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,127,41,
+                    58,15
+    LTEXT           "с:",IDC_STATIC,104,26,20,10
+    LTEXT           "по:",IDC_STATIC,104,44,11,8
+END
+
+IDD_PAGE_MPA_BANDWIDTH DIALOG DISCARDABLE  0, 0, 259, 102
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Network Bandwidth"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "&Low - 28.8 - 56K Modem Users (37 kbps max)",
+                    IDC_LOW_RADIO,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | 
+                    BS_FLAT,11,12,237,15
+    CONTROL         "&Medium - ISDN and DSL Users (100 kbps max)",
+                    IDC_MEDIUM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,11,33,237,15
+    CONTROL         "&Broadband - For Broadband T1 and T3 Users (300 kbps max)",
+                    IDC_BROADBAND_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,11,54,237,15
+END
+
+IDD_PAGE_STATUS_MODE DIALOGEX 0, 0, 259, 170
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Устанавливать состояние ""Скоро буду"" после",
+                    IDC_SETAWAY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | BS_FLAT | WS_TABSTOP,10,10,111,16
+    EDITTEXT        IDC_SETAWAYMINUTES_EDIT,128,11,22,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SETAWAY_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,151,10,11,14
+    CONTROL         "Устанавливать состояние ""Нет на месте"" после",
+                    IDC_SETNA_CHECK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    BS_FLAT | WS_TABSTOP,10,28,111,17
+    EDITTEXT        IDC_SETNAMINUTES_EDIT,128,30,22,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_SETNA_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS | UDS_HOTTRACK,151,30,11,
+                    14
+    GROUPBOX        "Автоматическая настройка состояния",IDC_STATIC,0,0,259,
+                    50
+    LTEXT           "минут отсутствия за компьютером.",IDC_SETAWAY_STATIC,
+                    169,11,71,18
+    LTEXT           "минут состояния ""Cкоро буду"".",IDC_SETNA_STATIC,169,
+                    28,61,18
+END
+
+IDD_PAGE_CONECTIONS DIALOGEX 0, 0, 259, 169
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Загрузка",IDC_STATIC,0,0,259,25
+    CONTROL         "Авто запуск. ",IDC_LAUNCHONSTART_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,11,84,10
+    CONTROL         "Автоматическое подключение.",IDC_AUTOCONNECT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,129,11,
+                    118,10
+    CONTROL         "По умолчанию (взять настройки прокси из браузера)",
+                    IDC_DEFAULT_RADIO,"Button",BS_AUTORADIOBUTTON | BS_FLAT,
+                    10,36,234,11
+    CONTROL         "Напрямую",IDC_DIRECT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,10,50,190,11
+    CONTROL         "Прокси",IDC_PROXY_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_FLAT,10,64,51,11
+    EDITTEXT        IDC_SERVERNAME,39,127,98,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_SERVERPORT,177,127,76,13,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    GROUPBOX        "Тип Соединения",IDC_STATIC,0,26,259,54
+    GROUPBOX        "HTTP Прокси",IDC_STATIC,0,115,259,31
+    LTEXT           "Имя Сервера",IDC_STATIC,9,124,25,17
+    LTEXT           "Порт Сервера",IDC_STATIC,147,124,22,17
+    CONTROL         "Bypass Proxy Server for the local addresses.",
+                    IDC_BYPASSCHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,79,65,165,11
+    CONTROL         "Использовать аутентификацию",IDC_USEFIREWALL_CHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,82,
+                    123,10,WS_EX_TRANSPARENT
+    GROUPBOX        "                                                                     ",
+                    IDC_STATIC,0,82,259,31
+    EDITTEXT        IDC_FIREWALLUSER,39,93,98,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_FIREWALLPASS,177,93,76,13,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "Имя",IDC_STATIC,9,92,25,17
+    LTEXT           "Пароль",IDC_STATIC,141,95,35,13
+    CONTROL         "Использовать безопасное соединение (SSL). ",
+                    IDC_USESSL_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,10,152,240,10
+END
+
+IDD_DIALOG_MESSAGE_SPLIT3 DIALOGEX 0, 0, 201, 94
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,183,3,18,10
+    CONTROL         "",IDC_MCSEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,152,79,6,6
+    LTEXT           "Empty",IDC_USERINFO,13,27,72,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_MCOPTIONS,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,45,9,31,10
+    LTEXT           "Empty",IDC_SENDERUSERINFO,106,27,72,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_MCMENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,13,9,31,10
+    CONTROL         "",IDC_MCMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,159,4,18,10
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,110,43,65,30
+    CONTROL         "",IDC_BTN_COLOR,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,8,53,13,10
+    CONTROL         "",IDC_BTN_BOLD,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,26,53,13,10
+    CONTROL         "",IDC_BTN_ITALIC,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,44,53,13,10
+    CONTROL         "",IDC_BTN_UNDERLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,62,
+                    53,13,10
+    CONTROL         "",IDC_BTN_SMILES,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,80,53,13,10
+END
+
+IDD_DELUSER_DIALOG DIALOG DISCARDABLE  0, 0, 225, 44
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN - Удаление Контакта"
+#else
+CAPTION "MagRul - Удаление Контакта"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Static",IDC_DESCRIPTION_STATIC,3,3,219,17
+    PUSHBUTTON      "Да",IDC_BTN_YES,117,27,50,14
+    DEFPUSHBUTTON   "Нет",IDC_BTN_NO,172,27,50,14
+END
+
+IDD_ADDUSERREQUEST_DIALOG DIALOGEX 0, 0, 230, 79
+STYLE WS_MINIMIZEBOX | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN - Запрос на Добавление контакта"
+#else
+CAPTION "MagRul - Запрос на Добавление контакта"
+#endif
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_NICK_EDIT,2,2,227,8,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "Отказать",IDC_MCDENY,167,63,50,14
+    PUSHBUTTON      "Разрешить",IDC_MCACCEPT,116,63,50,14
+    PUSHBUTTON      "Добавить Контакт",IDC_MCADDTOCONTACT,71,63,67,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Профиль контакта",IDC_MCUSERDETAILS,2,63,69,14
+    CONTROL         "",IDC_EDIT_EXPLORER,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,2,12,
+                    226,48
+END
+
+IDD_PAGE_CONTACTLIST DIALOG DISCARDABLE  0, 0, 259, 169
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Mode 1",IDC_CLMODE1_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT | WS_GROUP,9,12,63,13
+    CONTROL         "Mode 2",IDC_CLMODE2_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,9,31,63,13
+    GROUPBOX        "Choose dialog mode",IDC_STATIC,0,0,259,54
+    LTEXT           "Group user by Role.",IDC_STATIC,79,33,177,15
+    LTEXT           "Default.",IDC_STATIC,79,14,177,15
+    CONTROL         "Show Offline Friends",IDC_SHOWOFFLINECHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,11,60,83,10
+END
+
+IDD_FILEDESCRIPTION_DIALOG DIALOGEX 0, 0, 197, 83
+STYLE WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Описание к файлу"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_FILEDESCRIPTION_EDIT,3,13,191,50,ES_MULTILINE | 
+                    ES_WANTRETURN | NOT WS_BORDER | WS_VSCROLL,
+                    WS_EX_STATICEDGE
+    LTEXT           "...........................................................................................................",
+                    IDC_FILENAME_STATIC,3,3,191,8
+    PUSHBUTTON      "Отправить",IDOK,132,66,50,14
+END
+
+IDD_NETOPTIONS_2 DIALOG DISCARDABLE  0, 0, 181, 234
+STYLE WS_POPUP
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_BUTTON_OK,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,35,210,60,17
+    CONTROL         "",IDC_BUTTON_CANCEL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,114,
+                    210,60,17
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,159,7,15,13
+    CONTROL         "",IDC_RADIO_1,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,18,15,138,12
+    CONTROL         "",IDC_RADIO_2,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,18,34,138,12
+    CONTROL         "",IDC_RADIO_3,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,18,54,138,12
+    CONTROL         "",IDC_USESSLCHECKBOX,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,20,
+                    75,138,12
+    EDITTEXT        IDC_EDIT_USER,32,129,40,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_PASS,88,129,40,12,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_SERV,32,162,40,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    EDITTEXT        IDC_EDIT_PORT,88,162,40,12,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    CONTROL         "",IDC_CHECKBOX,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,27,103,138,12
+END
+
+IDD_WEB_WINDOW DIALOG DISCARDABLE  0, 0, 116, 33
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_BUTTON_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,54,3,13,11
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,99,3,13,11
+    CONTROL         "",IDC_BUTTON_BACK,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,3,19,
+                    13,11
+    CONTROL         "",IDC_BUTTON_FORWARD,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,19,
+                    19,13,11
+    CONTROL         "",IDC_BUTTON_STOP,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,36,
+                    19,13,11
+    CONTROL         "",IDC_BUTTON_REFRESH,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,53,
+                    19,13,11
+    CONTROL         "",IDC_BUTTON_MAX,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,69,3,13,11
+    CONTROL         "",IDC_BUTTON_RESTORE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,84,3,
+                    13,11
+    CONTROL         "",ID_DHTML_CTRL,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,72,16,19,14
+    LTEXT           "Title",IDC_TITLE,3,3,45,8,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE
+END
+
+IDD_FILEMANAGER_DIALOG DIALOG DISCARDABLE  0, 0, 197, 50
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN Менеджер Файлов"
+#else
+CAPTION "MagRul Менеджер Файлов"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,178,0,18,10
+    CONTROL         "",IDC_MCMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,136,0,18,10
+    CONTROL         "",IDC_MCMENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,5,8,31,10
+    CONTROL         "",IDC_DOWN_SHOWOFFLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,91,
+                    40,18,10
+    CONTROL         "",IDC_MCMAXI2,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,157,0,18,10
+    CONTROL         "",IDC_MCMAXIMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,157,11,18,10
+    CONTROL         "",IDC_BTN_LIBRARY,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,11,
+                    40,18,10
+    CONTROL         "",IDC_BTN_RECEIVED,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,33,
+                    40,18,10
+    CONTROL         "",IDC_BTN_SENT,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,55,40,18,10
+END
+
+IDD_PAGE_EDIT DIALOGEX 0, 0, 259, 169
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Отправить",IDC_ENTER_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,67,11,52,10
+    CONTROL         "Новая Строка",IDC_ENTER_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,123,11,63,10
+    CONTROL         "Отправить",IDC_CTRLENTER_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,67,24,52,10
+    CONTROL         "Новая Строка",IDC_CTRLENTER_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,123,24,63,10
+    CONTROL         "Отправить",IDC_SHIFTENTER_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,67,36,52,10
+    CONTROL         "Новая Строка",IDC_SHIFTENTER_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,123,36,63,10
+    CONTROL         "Отправить",IDC_ALTS_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT | WS_GROUP,67,49,52,10
+    CONTROL         "Новая Строка",IDC_ALTS_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_FLAT,123,49,63,10
+    CONTROL         "Send",IDC_ALTENTER_SEND_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED | 
+                    WS_GROUP,67,159,33,10
+    CONTROL         "New line",IDC_ALTENTER_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,123,
+                    159,43,10
+    CONTROL         "Send",IDC_CTRLS_SEND_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_GROUP,64,159,33,10
+    CONTROL         "New line",IDC_CTRLS_NEWLINE_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_DISABLED,120,
+                    159,43,10
+    GROUPBOX        "Отправка мгновенных сообщений",IDC_STATIC,0,0,259,64
+    LTEXT           "Enter",IDC_STATIC,23,11,18,8
+    LTEXT           "Ctrl-Enter",IDC_STATIC,10,24,30,8
+    LTEXT           "Alt-Enter",IDC_STATIC,10,161,28,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    LTEXT           "Shift-Enter",IDC_STATIC,7,36,34,8
+    LTEXT           "Alt-S",IDC_STATIC,25,49,16,8
+    LTEXT           "Ctrl-S",IDC_STATIC,20,161,18,8,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Очищать чат-архив при закрытии диалога.",
+                    IDC_CLEAR_CHATWINDOW_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,75,196,10
+    CONTROL         "Сообщать об изменении состояния собеседника в чат-архиве.",
+                    IDC_SHOWFRIENDSTATUS_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,88,237,10
+    GROUPBOX        "Настройки чат-архива сообщений",IDC_STATIC,0,64,259,40
+    GROUPBOX        "Полученные файлы помещать в папку",IDC_STATIC,0,105,259,
+                    28
+    EDITTEXT        IDC_RECEIVEDFILESPATH_EDIT,6,115,216,12,ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Обзор",IDC_SELECT_BUTTON,226,114,28,14,BS_FLAT
+END
+
+IDD_PREFERENCES DIALOG DISCARDABLE  0, 0, 157, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_BUTTON_OK,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,3,73,12,10
+    CONTROL         "",IDC_BUTTON_CANCEL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,17,
+                    73,12,10
+    CONTROL         "",IDC_BUTTON_APPLY,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,31,
+                    73,12,10
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,142,3,12,10
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    WS_BORDER | WS_TABSTOP,3,3,42,21
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME,47,3,20,20
+    PUSHBUTTON      "OK",IDOK,3,34,50,14
+    PUSHBUTTON      "OK",IDCANCEL,54,34,50,14
+    PUSHBUTTON      "OK",IDC_BTN_APPLY,104,34,50,14
+END
+
+IDD_GROUP_MESSAGE_SEND_DIALOG DIALOG DISCARDABLE  0, 0, 194, 135
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Отправить мгновенное сообщение в Группу"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Empty",IDC_USERINFO,3,17,188,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_CCOOTREECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,3,30,
+                    143,41
+    CONTROL         "",IDC_BTN_SELECT_ALL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    33,38,12
+    CONTROL         "",IDC_BTN_SELECT_NONE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    49,38,12
+    CONTROL         "",IDC_BTN_COLOR,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,3,75,13,10
+    CONTROL         "",IDC_BTN_BOLD,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,21,75,13,10
+    CONTROL         "",IDC_BTN_ITALIC,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,39,75,13,10
+    CONTROL         "",IDC_BTN_UNDERLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,57,
+                    75,13,10
+    CONTROL         "",IDC_BTN_SMILES,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,75,75,13,10
+    COMBOBOX        IDC_SIZE_COMBO,101,75,34,118,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FONT_COMBO,138,75,53,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_FRAME_EDIT,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,3,91,143,42
+    CONTROL         "",IDC_BTN_SEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,153,91,38,12
+    CONTROL         "",IDC_BTN_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,150,3,13,10
+    CONTROL         "",IDC_BTN_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,133,3,13,10
+    CONTROL         "",IDC_BTN_OPTIONS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,115,
+                    3,13,10
+    CONTROL         "",IDC_BTN_MENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,98,3,13,10
+END
+
+IDD_GROUP_FILE_SEND_DIALOG DIALOG DISCARDABLE  0, 0, 194, 135
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Отправить Файл в Группу"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Empty",IDC_USERINFO,3,17,188,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_CCOOTREECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,3,30,
+                    143,41
+    CONTROL         "",IDC_BTN_SELECT_ALL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    33,38,12
+    CONTROL         "",IDC_BTN_SELECT_NONE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    49,38,12
+    CONTROL         "",IDC_BTN_COLOR,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,3,75,13,10
+    CONTROL         "",IDC_BTN_ITALIC,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,39,75,13,10
+    CONTROL         "",IDC_BTN_UNDERLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,57,
+                    75,13,10
+    CONTROL         "",IDC_BTN_SMILES,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,75,75,13,10
+    COMBOBOX        IDC_SIZE_COMBO,101,75,34,118,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FONT_COMBO,138,75,53,118,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_FRAME_EDIT,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,3,91,143,42
+    CONTROL         "",IDC_BTN_SEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,153,91,38,12
+    CONTROL         "",IDC_BTN_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,150,3,13,10
+    CONTROL         "",IDC_BTN_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,133,3,13,10
+    CONTROL         "",IDC_BTN_OPTIONS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,115,
+                    3,13,10
+    CONTROL         "",IDC_BTN_MENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,98,3,13,10
+    CONTROL         "",IDC_BTN_BOLD,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,20,74,13,10
+END
+
+IDD_TV DIALOG DISCARDABLE  0, 0, 186, 94
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "TV"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,166,7,13,11
+    CONTROL         "",IDC_BUTTON_RESTORE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,149,
+                    7,13,11
+    CONTROL         "",IDC_BUTTON_MAX,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,131,7,13,11
+    CONTROL         "",IDC_BUTTON_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,113,7,13,11
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,20,20
+    CONTROL         "",IDC_MEDIAPLAYER1,
+                    "{22D6F312-B0F6-11D0-94AB-0080C74C7E95}",WS_TABSTOP,7,49,
+                    60,38
+    CONTROL         "",IDC_SHOCKWAVEFLASH1,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,132,
+                    48,47,39
+END
+
+IDD_PAGE_MES_SOUND DIALOGEX 0, 0, 259, 170
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_SOUNDPATH_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,0,0,259,
+                    152,WS_EX_STATICEDGE
+    PUSHBUTTON      "Обзор",IDC_SELECT_BUTTON,200,155,50,14,BS_FLAT
+    PUSHBUTTON      "Очистить",IDC_CLEAR_BUTTON,147,155,50,14,BS_FLAT
+    PUSHBUTTON      "Тест",IDC_TEST_BUTTON,10,155,50,14,BS_FLAT
+END
+
+IDD_PAGE_MES_ALERT DIALOGEX 0, 0, 259, 170
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_ALERT_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | 
+                    WS_TABSTOP,0,0,259,169,WS_EX_STATICEDGE
+END
+
+IDD_PAGE_STUBS DIALOGEX 0, 0, 259, 170
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_APP_LIST,0,8,259,161,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Установите приоритет приложения",IDC_STATIC,12,0,121,8
+END
+
+IDD_FILES_EXPLORER DIALOGEX 0, 0, 268, 86
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_DIRECTORY_TREE,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_EDITLABELS | TVS_SHOWSELALWAYS | WS_TABSTOP,0,0,89,
+                    86
+    CONTROL         "List1",IDC_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_SHAREIMAGELISTS | LVS_EDITLABELS | 
+                    WS_TABSTOP,93,0,175,86
+    CONTROL         "",IDC_VSPLITTER,"Static",SS_BLACKFRAME,90,0,3,86,
+                    WS_EX_TRANSPARENT
+END
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 355, 195
+STYLE DS_MODALFRAME | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN Настройка"
+#else
+CAPTION "MagRul Настройка"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,3,3,91,170
+    CONTROL         "",IDC_PLACEHOLDER,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,96,3,256,170
+    PUSHBUTTON      "&OK",IDOK,197,178,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,249,178,50,14
+    PUSHBUTTON      "&Применить",IDC_BUTTON_APPLY,302,178,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,3,175,349,1
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 200, 127
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "О программе Instant Business Network"
+#else
+CAPTION "О программе MagRul"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "",IDC_VERSION_STATIC,0,57,199,8
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,52,
+                    15,64,29
+    CONTROL         "",IDC_BTN_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,182,0,18,15
+    CTEXT           "",IDC_SERVER_VERSION_STATIC,0,70,199,8
+END
+
+IDD_PAGE_MES_GENERAL DIALOG DISCARDABLE  0, 0, 259, 168
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "Автоматически показывать входящие сообщения.",
+                    IDC_SHOWNEWMESSAGE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,4,228,11
+    CONTROL         "Использовать анимацию при закрытии окон.",
+                    IDC_ANIMATION_CHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,10,27,232,11
+    CONTROL         "Удалять с панели задач при минимизации.",
+                    IDC_HIDEMPAINTRAY_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,50,202,11
+    CONTROL         "Поверх остальных окон.",IDC_KEEPTOP_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,61,202,11
+    CONTROL         "Показывать неактивные контакты.",IDC_SHOWOFFLINECHECK,
+                    "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,84,
+                    196,10
+    CONTROL         "Удалять с панели задач.",
+                    IDC_REMOVE_IBN_FROM_TASK_BAR_CHECK,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,39,218,10
+    CONTROL         "Добавить ярлык в меню ""Отправить"".",
+                    IDC_CHECK_SHOWSENDTO,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,10,96,160,10
+    LTEXT           "Вид при запуске",IDC_STATIC,10,150,206,8,NOT WS_VISIBLE
+    CONTROL         "Действия",IDC_RADIO_IBN_ACTIONS,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,24,140,61,
+                    10
+    CONTROL         "Контакт лист",IDC_RADIO_CONTACT_LIST,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,105,140,104,10
+    LTEXT           "Браузер по умолчанию для Действий",IDC_STATIC,18,
+                    150,207,8,NOT WS_VISIBLE
+    CONTROL         "Обозреватель",IDC_RADIO_IBN_MICRO_BROWSER,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE | WS_GROUP,24,141,79,
+                    10
+    CONTROL         "Стандартный браузер",IDC_RADIO_STANDART_BROWSER,"Button",
+                    BS_AUTORADIOBUTTON | NOT WS_VISIBLE,105,141,90,10
+    CONTROL         "Открывать в развернутом состояние",
+                    IDC_CHECK_MICRO_HAS_MAXIMIZE,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,35,153,183,10
+    CONTROL         "Создавать папку для неактивных контактов",
+                    IDC_CREATEOFFLINEFOLDER,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,73,217,10
+    CONTROL         "Прятать при нажатии на кнопку закрыть.",
+                    IDC_MINIMIZE_ONCLOSE_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,16,238,10
+    CONTROL         "Брать веб-браузер по умолчанию из реестра.",
+                    IDC_GET_DEFAULT_BROWSER_FROM_REGISTRY,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,10,107,170,10
+    CONTROL         "Сортировать список контактов по Имени.",
+                    IDC_CONTACTLIST_SORTBYFIRSTNAME,"Button",BS_AUTOCHECKBOX | 
+                    BS_FLAT | WS_TABSTOP,10,119,159,10
+    CONTROL         "Автоматически проверять наличие обновлений",
+                    IDC_UPDATE_AUTOCHECK,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,10,131,238,10
+END
+
+IDD_PAGE_DIALOGMODE DIALOG DISCARDABLE  0, 0, 259, 169
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "McMessenger",IDC_MCMESSENGER_SUNDANCEEDITION_RADIO,
+                    "Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT | 
+                    WS_GROUP,10,12,63,13
+    CONTROL         "McMessenger",IDC_MCMESSENGER_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | BS_PUSHLIKE | BS_FLAT,10,31,63,13
+    CONTROL         "Yahoo",IDC_YAHOO_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,10,49,63,13
+    CONTROL         "ICQ",IDC_ICQ_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | BS_FLAT,10,68,63,13
+    GROUPBOX        "Choose dialog mode",IDC_STATIC,0,0,259,91
+    LTEXT           "Dislpay window like Yahoo Messenger.",IDC_STATIC,80,50,
+                    177,12
+    LTEXT           "Old-style.",IDC_STATIC,79,33,177,15
+    LTEXT           "Dislpay window like ICQ Messenger.",IDC_STATIC,80,71,
+                    177,12
+    LTEXT           "Default.",IDC_STATIC,79,14,177,15
+END
+
+IDD_FLOAT_MESSAGE DIALOG DISCARDABLE  0, 0, 133, 80
+STYLE WS_POPUP | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CTEXT           "Static",IDC_STATIC,44,26,51,28
+END
+
+IDD_POPUP_MESSAGE DIALOG DISCARDABLE  0, 0, 37, 29
+STYLE WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_IN_EXPLORER,
+                    "{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,6,4,
+                    18,14
+END
+
+IDD_WEB_WINDOW_CHILD DIALOGEX 0, 0, 116, 34
+STYLE DS_MODALFRAME | DS_CONTROL | WS_CHILD | WS_CLIPCHILDREN | WS_CAPTION
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BUTTON_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,54,3,13,11
+    CONTROL         "",IDC_BUTTON_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,99,3,13,11
+    CONTROL         "",IDC_BUTTON_BACK,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,3,20,
+                    13,11
+    CONTROL         "",IDC_BUTTON_FORWARD,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,19,
+                    20,13,11
+    CONTROL         "",IDC_BUTTON_STOP,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,36,
+                    20,13,11
+    CONTROL         "",IDC_BUTTON_REFRESH,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,53,
+                    20,13,11
+    CONTROL         "",IDC_BUTTON_MAX,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,69,3,13,11
+    CONTROL         "",IDC_BUTTON_RESTORE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,84,3,
+                    13,11
+    CONTROL         "",ID_DHTML_CTRL,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,72,17,19,14
+    LTEXT           "Title",IDC_TITLE,3,3,45,8,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE
+END
+
+IDD_MCUPDATE_DIALOG DIALOG DISCARDABLE  0, 0, 230, 71
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg"
+BEGIN
+    PUSHBUTTON      "Отмена",IDCANCEL,173,50,50,14
+    PUSHBUTTON      "Пуск",IDC_START_BUTTON,120,50,50,14,WS_DISABLED
+    CONTROL         "Animate1",IDC_ANIMATE,"SysAnimate32",ACS_TRANSPARENT | 
+                    WS_TABSTOP,7,13,76,22
+    ICON            IDI_CHECK_ICON,IDC_DOWNLOAD_STATIC,77,13,20,20
+    ICON            IDI_CHECK_ICON,IDC_START_STATIC,77,28,20,20
+    LTEXT           "Скачивается новый компонент",IDC_STATIC,100,12,123,8
+    LTEXT           "Запуск процесса обновления",IDC_STATIC,100,27,123,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,44,216,1
+END
+
+IDD_SELECT_SERVER_DIALOG DIALOGEX 0, 0, 151, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "Выберите IBN Сервер"
+#else
+CAPTION "Выберите MagRul Сервер"
+#endif
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LISTBOX         IDC_SERVER_LIST,0,0,151,54,LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "Подключение",IDOK,91,56,60,13
+END
+
+IDD_CHAT_DIALOG DIALOG DISCARDABLE  0, 0, 213, 90
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,179,3,18,10
+    CONTROL         "",IDC_MCSEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,152,79,6,6
+    LTEXT           "Empty",IDC_USERINFO,16,31,72,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_MCOPTIONS,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,95,5,31,10
+    LTEXT           "Empty",IDC_SENDERUSERINFO,106,31,72,9,SS_CENTERIMAGE
+    CONTROL         "",IDC_MCMENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,63,5,31,10
+    CONTROL         "",IDC_MCMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,159,4,18,10
+    CONTROL         "",IDC_EXPLORER,"{8856F961-340A-11D0-A96B-00C04FD705A2}",
+                    WS_TABSTOP,110,43,65,30
+    CONTROL         "",IDC_BTN_COLOR,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,8,53,13,10
+    CONTROL         "",IDC_BTN_BOLD,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,26,53,13,10
+    CONTROL         "",IDC_BTN_ITALIC,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,44,53,13,10
+    CONTROL         "",IDC_BTN_UNDERLINE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,62,
+                    53,13,10
+    CONTROL         "",IDC_BTN_SMILES,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,80,53,13,10
+    CONTROL         "",IDC_USER_LIST,"{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",
+                    WS_TABSTOP,3,5,58,23
+    CONTROL         "",IDC_BTN_USERS,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,190,21,6,6
+    CONTROL         "",IDC_BTN_FILES,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,199,21,6,6
+END
+
+IDD_CHAT_CREATE DIALOG DISCARDABLE  0, 0, 156, 107
+STYLE WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,31,7,40,14,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_EDIT_DESCR,31,24,40,14,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | NOT WS_BORDER
+    CONTROL         "",IDC_USER_LIST,"{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",
+                    WS_TABSTOP,17,45,67,31
+    EDITTEXT        IDC_EDIT_INVITATION,28,86,40,14,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER
+    CONTROL         "",IDC_BTN_INVITE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,113,94,7,6
+    CONTROL         "",IDC_BTN_UPDATE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,125,94,7,6
+    CONTROL         "",IDC_BTN_CREATE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,142,94,7,6
+    CONTROL         "",IDC_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,142,7,7,6
+END
+
+IDD_DELCHAT_DIALOG DIALOG DISCARDABLE  0, 0, 225, 44
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "IBN – Завершение Конференции"
+#else
+CAPTION "MagRul – Завершение Конференции"
+#endif
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Static",IDC_DESCRIPTION_STATIC,3,3,219,17
+    PUSHBUTTON      "Да",IDC_BTN_YES,117,27,50,14
+    DEFPUSHBUTTON   "Нет",IDC_BTN_NO,172,27,50,14
+END
+
+IDD_PAGE_CHAT DIALOGEX 0, 0, 259, 168
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Сообщения",IDC_STATIC,0,0,259,28
+    EDITTEXT        IDC_LOAD_LASTMES_EDIT,56,10,22,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "Spin1",IDC_LOAD_LASTMES_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ARROWKEYS | UDS_NOTHOUSANDS | 
+                    UDS_HOTTRACK,78,9,11,14
+    LTEXT           "последних сообщений при входе",IDC_STATIC,93,13,161,8
+    LTEXT           "Отображать",IDC_STATIC,10,12,42,8
+    LISTBOX         IDC_USER_COLOR_LIST,0,40,128,128,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Цвет участника конференции",IDC_STATIC,19,30,109,8
+    LISTBOX         IDC_INFO_COLOR_LIST,131,40,128,128,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_USETABSTOPS | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
+                    WS_TABSTOP,WS_EX_STATICEDGE
+    LTEXT           "Цвет информации",IDC_STATIC,171,30,62,8
+END
+
+IDD_MONITOR_DIALOG DIALOGEX 0, 0, 384, 229
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+#ifndef MAGRUL_RELEASE
+CAPTION "Instant Business Network - Usage Monitor"
+#else
+CAPTION "MagRul - Usage Monitor"
+#endif
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BTN_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,363,2,18,15
+    COMBOBOX        IDC_COUNTTYPE_COMBO,24,63,106,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_COST_EDIT,25,97,70,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_BTN_UPDATE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,33,126,92,15
+    CONTROL         "",IDC_BTN_MINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,339,2,18,15
+    CONTROL         "",IDC_BTN_MENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,291,6,47,15
+    LTEXT           "Static",IDC_NETGRAPH_STATIC,180,64,137,115,SS_NOTIFY
+    LTEXT           "Отправлено сообщений:",IDC_MESSAGE_SENT_STATIC,9,21,86,
+                    12,0,WS_EX_TRANSPARENT
+    LTEXT           "Принято сообщений:",IDC_MESSAGE_RECEIVED_STATIC,87,24,
+                    72,17,0,WS_EX_TRANSPARENT
+    LTEXT           "Отправлено файлов:",IDC_FILE_SENT_STATIC,161,24,75,11,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "Принято файлов:",IDC_FILE_RECEIVED_STATIC,247,26,62,15,
+                    0,WS_EX_TRANSPARENT
+    LTEXT           "Всего отправлено байт:",IDC_TOTAL_SENT_STATIC,17,41,84,
+                    11,0,WS_EX_TRANSPARENT
+    LTEXT           "Всего получено байт:",IDC_TOTAL_RECEIVED_STATIC,120,42,
+                    73,11,0,WS_EX_TRANSPARENT
+    LTEXT           "Стоимость:",IDC_TOTAL_COST_STATIC,283,38,65,9,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_BTN_LINE_RECEIVED,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,25,
+                    189,92,15
+    CONTROL         "",IDC_BTN_LINE_SENT,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,25,
+                    172,92,15
+    CONTROL         "",IDC_BTN_LINE_TOTAL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,26,
+                    155,92,15
+END
+
+IDD_GROUP_ASSIGN_TODO DIALOG DISCARDABLE  0, 0, 194, 95
+STYLE WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Назначить Поручение"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Empty",IDC_USERINFO,3,15,188,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_CCOOTREECTRL,
+                    "{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",WS_TABSTOP,3,30,
+                    143,44
+    CONTROL         "",IDC_BTN_SELECT_ALL,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    33,38,13
+    CONTROL         "",IDC_BTN_SELECT_NONE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,153,
+                    50,38,13
+    CONTROL         "",IDC_BTN_SEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,154,79,38,13
+    CONTROL         "",IDC_BTN_X,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,150,0,13,11
+    CONTROL         "",IDC_BTN_MIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,133,0,13,11
+    CONTROL         "",IDC_BTN_OPTIONS,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,115,
+                    0,13,11
+    CONTROL         "",IDC_BTN_MENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,98,0,13,11
+END
+
+IDD_SCREENSHOT_DIALOG DIALOG DISCARDABLE  0, 0, 306, 164
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CLIPCHILDREN | 
+    WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Screen Capture"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_MCSAVE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,3,3,13,11
+    CONTROL         "",IDC_MCUNDO,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,19,3,13,11
+    CONTROL         "",IDC_MCREDO,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,35,4,13,11
+    CONTROL         "",IDC_MCCROP,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,74,4,13,11
+    CONTROL         "",IDC_MCZOOMOUT,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,91,4,13,11
+    CONTROL         "",IDC_MCZOOMIN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,108,3,13,11
+    CONTROL         "",IDC_MCSEND,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,231,140,59,11
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,276,8,18,11
+    CONTROL         "",IDC_MCMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,234,8,18,11
+    CONTROL         "",IDC_MCMAXI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,255,8,18,11
+    CONTROL         "",IDC_MCMAXIMINI,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,255,20,18,11
+    CONTROL         "",IDC_USER_LIST,"{E0102310-FFE9-4B8E-B95B-9EDF1D7F81E5}",
+                    WS_TABSTOP,224,88,79,48
+    CONTROL         "",IDC_MCSCROLL,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,51,4,13,11
+    CONTROL         "",IDC_MCTEXT,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,125,4,13,11
+    CONTROL         "",IDC_MCPEN,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,143,3,13,11
+    CONTROL         "",IDC_MCMENU,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,195,9,31,11
+    CONTROL         "Static",IDC_IMAGE_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | NOT WS_VISIBLE | WS_GROUP,7,24,205,130
+    CONTROL         "",IDC_MCPENCOLOR,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,162,2,13,11
+    CONTROL         "",IDC_MCCHECKSEND,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,225,
+                    36,72,11
+    CONTROL         "",IDC_MCCHECKISSUE,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,225,
+                    49,72,11
+    CONTROL         "",IDC_MCCHECKTODO,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,225,
+                    60,72,11
+    CONTROL         "",IDC_MCCHECKPUBLISH,
+                    "{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",WS_TABSTOP,227,
+                    71,72,11
+END
+
+IDD_PAGE_MES_TEMPLATE DIALOGEX 0, 0, 259, 168
+STYLE WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_MESTEMPLATE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,0,0,197,155,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Добавить",IDC_BUTTON_ADD,200,0,58,14
+    PUSHBUTTON      "Удалить",IDC_BUTTON_DEL,200,34,58,14,WS_DISABLED
+    PUSHBUTTON      "Редактировать",IDC_BUTTON_EDIT,200,17,58,14,WS_DISABLED
+    CONTROL         "Нажимать кнопку ""Отправить"" автоматически.",
+                    IDC_SEND_AUTOMATICALLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,157,203,10
+END
+
+IDD_EDIT_MES_TEMPLATE_DIALOG DIALOG DISCARDABLE  0, 0, 205, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Message Template"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_NAME_EDIT,3,12,199,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXT_EDIT,3,36,199,46,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "OK",IDOK,97,85,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,152,85,50,15
+    LTEXT           "Name:",IDC_NAME_STATIC,3,3,105,8
+    LTEXT           "Template Text:",IDC_NAME_STATIC2,3,27,103,8
+END
+
+IDD_DIALOG_COMMENTSETTINGS DIALOG DISCARDABLE  0, 0, 249, 173
+STYLE DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Text settings"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    EDITTEXT        IDC_EDIT1,3,3,243,143,ES_MULTILINE | ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,140,152,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,196,152,50,14
+    PUSHBUTTON      "Шрифт...",IDC_BTNFONT,3,151,57,14
+END
+
+IDD_SELECTSMILE_DIALOG DIALOG DISCARDABLE  0, 0, 135, 81
+STYLE WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Select smile :)"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",IDC_MCCLOSE,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,113,0,18,11
+    CONTROL         "List1",IDC_SMILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | WS_TABSTOP,11,13,107,54
+    LTEXT           "",IDC_SMILEPREVIEW,5,1,18,8
+    CONTROL         "",IDC_MCOK,"{5B81ADD0-CC90-4EEA-BD1F-AED51069AD16}",
+                    WS_TABSTOP,117,70,18,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INVITE_CHAT_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x293d, 0x0000, 0x08e3, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_MAIN DLGINIT
+BEGIN
+    IDC_CCOOTREECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x03b9, 0x0000, 0x03d3, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BUTTON_ALERTS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0172, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_APPS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0172, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_FILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0172, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_DIRECTORY, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0172, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0261, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0261, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0261, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_CCOCONFERENCECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04f6, 0x0000, 0x0295, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BUTTON_SHOWOFFLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x0261, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_DIALOG_LOGIN DLGINIT
+BEGIN
+    IDC_BUTTON_REMEMBER, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0b5e, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_NETOPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01f7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_SSL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x07f5, 0x0000, 0x0295, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_LOGIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x07f5, 0x0000, 0x0295, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_CANCEL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x07f5, 0x0000, 0x0295, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01f7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_DIALOG_MESSAGE_SPLIT3 DLGINIT
+BEGIN
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCSEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x00ee, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCOPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x0a21, 0x0000, 0x057a, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    IDC_BTN_COLOR, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_BOLD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_ITALIC, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_UNDERLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SMILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_NETOPTIONS_2 DLGINIT
+BEGIN
+    IDC_BUTTON_OK, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x02e5, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_CANCEL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x02e5, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0261, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_RADIO_1, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1565, 0x0000, 0x0211, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_RADIO_2, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1565, 0x0000, 0x0211, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_RADIO_3, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1565, 0x0000, 0x0211, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_USESSLCHECKBOX, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1565, 0x0000, 0x0211, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_CHECKBOX, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1565, 0x0000, 0x0211, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_WEB_WINDOW DLGINIT
+BEGIN
+    IDC_BUTTON_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_BACK, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_FORWARD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_STOP, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_REFRESH, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MAX, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_RESTORE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    ID_DHTML_CTRL, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x02ff, 0x0000, 0x0261, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_FILEMANAGER_DIALOG DLGINIT
+BEGIN
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_DOWN_SHOWOFFLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMAXI2, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMAXIMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_LIBRARY, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_RECEIVED, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SENT, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_DIALOG_HISORY DLGINIT
+BEGIN
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCINCOMING, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x034f, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCOUTGOING, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x034f, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCDIALOG, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x094d, 0x0000, 0x034f, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_CCOOTREECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x07c0, 0x0000, 0x0d70, 0x0000, 0x0000, 
+0x0000, 
+    IDC_MCPROGRESSCTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x106f, 0x0000, 0x0295, 0x0000, 0x0000, 
+0x0000, 
+    IDC_MCMAXI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMAXIMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    ID_DHTML_CTRL, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x06d2, 0x0000, 0x0422, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    IDC_MCFIND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0634, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_PREFERENCES DLGINIT
+BEGIN
+    IDC_BUTTON_OK, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_CANCEL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_APPLY, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x01dc, 0x0000, 0x01a7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_GROUP_MESSAGE_SEND_DIALOG DLGINIT
+BEGIN
+    IDC_CCOOTREECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1639, 0x0000, 0x0771, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BTN_SELECT_ALL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SELECT_NONE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_COLOR, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_BOLD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_ITALIC, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_UNDERLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SMILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_OPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_GROUP_FILE_SEND_DIALOG DLGINIT
+BEGIN
+    IDC_CCOOTREECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1639, 0x0000, 0x0771, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BTN_SELECT_ALL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SELECT_NONE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_COLOR, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_ITALIC, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_UNDERLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SMILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_OPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_BOLD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_TV DLGINIT
+BEGIN
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_RESTORE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MAX, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MEDIAPLAYER1, 0x376, 340, 0
+0x0000, 0x0000, 0x0001, 0x0000, 0x094d, 0x0000, 0x0668, 0x0000, 0x0003, 
+0xffff, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x0000, 0x0002, 0x0000, 0x0000, 0x000b, 0x0000, 
+0x0003, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0x4014, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 
+0x0003, 0x0000, 0x0000, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x0003, 
+0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0013, 0x0000, 0x0000, 
+0x0013, 0xffff, 0x00ff, 0x0003, 0x0000, 0x0000, 0x0003, 0x0004, 0x0000, 
+0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 
+0xffff, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 0x0003, 0xffff, 
+0xffff, 0x000b, 0x0000, 0x0003, 0x0001, 0x0000, 0x000b, 0x0000, 0x0005, 
+0x0000, 0x0000, 0x0000, 0x3ff0, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0005, 0x0000, 
+0x0000, 0x0000, 0xbff0, 0x0005, 0x0000, 0x0000, 0x0000, 0xbff0, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 
+0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 
+0xffff, 0x000b, 0x0000, 0x000b, 0x0000, 0x000b, 0xffff, 0x000b, 0x0000, 
+0x000b, 0xffff, 0x000b, 0x0000, 0x0003, 0x0000, 0x0000, 0x0013, 0x0000, 
+0x0000, 0x000b, 0x0000, 0x0003, 0xfda8, 0xffff, 0x000b, 0x0000, 
+    IDC_SHOCKWAVEFLASH1, 0x376, 178, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0300, 0x0000, 0x0757, 0x0000, 0x0683, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 
+0x0069, 0x006e, 0x0064, 0x006f, 0x0077, 0x0000, 0x0008, 0x000e, 0x0000, 
+0x0057, 0x0069, 0x006e, 0x0064, 0x006f, 0x0077, 0x0000, 0x0008, 0x000e, 
+0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 0x006f, 0x0077, 0x0000, 0x000b, 
+0xffff, 0x000b, 0xffff, 0x0008, 0x000a, 0x0000, 0x0048, 0x0069, 0x0067, 
+0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x000b, 0xffff, 0x0008, 
+0x0002, 0x0000, 0x0000, 0x0008, 0x0010, 0x0000, 0x0053, 0x0068, 0x006f, 
+0x0077, 0x0041, 0x006c, 0x006c, 0x0000, 0x000b, 0x0000, 0x000b, 0x0000, 
+0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+    0
+END
+
+IDD_ABOUTBOX DLGINIT
+BEGIN
+    IDC_BTN_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x027b, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_WEB_WINDOW_CHILD DLGINIT
+BEGIN
+    IDC_BUTTON_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_BACK, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_FORWARD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_STOP, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_REFRESH, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_MAX, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BUTTON_RESTORE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    ID_DHTML_CTRL, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x02ff, 0x0000, 0x0261, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_POPUP_MESSAGE DLGINIT
+BEGIN
+    IDC_IN_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x02ca, 0x0000, 0x0295, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_ADDUSERREQUEST_DIALOG DLGINIT
+BEGIN
+    IDC_EDIT_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2309, 0x0000, 0x08af, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+IDD_CHAT_DIALOG DLGINIT
+BEGIN
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCSEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x00ee, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCOPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_EXPLORER, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x0a21, 0x0000, 0x057a, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    IDC_BTN_COLOR, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_BOLD, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_ITALIC, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_UNDERLINE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SMILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_USER_LIST, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x08fe, 0x0000, 0x0422, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BTN_USERS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x00ee, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_FILES, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x00ee, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_CHAT_CREATE DLGINIT
+BEGIN
+    IDC_USER_LIST, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0a70, 0x0000, 0x0595, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BTN_INVITE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0123, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_UPDATE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0123, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_CREATE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0123, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0123, 0x0000, 0x0123, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_MONITOR_DIALOG DLGINIT
+BEGIN
+    IDC_BTN_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_COUNTTYPE_COMBO, 0x403, 12, 0
+0xe0c7, 0xcc20, 0xe3e5, 0xe1e0, 0xe9e0, 0x00f2, 
+    IDC_COUNTTYPE_COMBO, 0x403, 11, 0
+0xe0c7, 0xcc20, 0xe3e5, 0xe1e0, 0xf2e8, "\000" 
+    IDC_COUNTTYPE_COMBO, 0x403, 12, 0
+0xe0c7, 0xca20, 0xebe8, 0xe1ee, 0xe9e0, 0x00f2, 
+    IDC_COUNTTYPE_COMBO, 0x403, 11, 0
+0xe0c7, 0xca20, 0xebe8, 0xe1ee, 0xf2e8, "\000" 
+    IDC_BTN_UPDATE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0e43, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0757, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_LINE_RECEIVED, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0e43, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_LINE_SENT, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0e43, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_LINE_TOTAL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0e43, 0x0000, 0x02b0, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_GROUP_ASSIGN_TODO DLGINIT
+BEGIN
+    IDC_CCOOTREECTRL, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x1639, 0x0000, 0x0771, 0x0000, 0x0000, 
+0x0000, 
+    IDC_BTN_SELECT_ALL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SELECT_NONE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_SEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x05e4, 0x0000, 0x022c, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_X, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_OPTIONS, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_BTN_MENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_SCREENSHOT_DIALOG DLGINIT
+BEGIN
+    IDC_MCSAVE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCUNDO, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCREDO, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCROP, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCZOOMOUT, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCZOOMIN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCSEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0933, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMAXI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMAXIMINI, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_USER_LIST, 0x376, 20, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0c4d, 0x0000, 0x0810, 0x0000, 0x0000, 
+0x0000, 
+    IDC_MCSCROLL, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCTEXT, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCPEN, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCMENU, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x04dc, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCPENCOLOR, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0211, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCHECKSEND, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0b2a, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCHECKISSUE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0b2a, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCHECKTODO, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0b2a, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCCHECKPUBLISH, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x0b2a, 0x0000, 0x01dc, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+IDD_SELECTSMILE_DIALOG DLGINIT
+BEGIN
+    IDC_MCCLOSE, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01f7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    IDC_MCOK, 0x376, 21, 0
+0x0000, 0x0000, 0x0000, 0x0001, 0x02ca, 0x0000, 0x01f7, 0x0000, 0x0040, 
+0x0000, "\001" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_INVITE_CHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 268
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 109
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_DOWNLOAD_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 62
+    END
+
+    IDD_ADDUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 261
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 92
+    END
+
+    IDD_MESSAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 203
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 66
+        HORZGUIDE, 40
+    END
+
+    IDD_DIALOG_HISORY, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_PAGE_MES_SYNCHRONIZE, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_PAGE_MPA_BANDWIDTH, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_PAGE_STATUS_MODE, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_PAGE_CONECTIONS, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+    END
+
+    IDD_DELUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 222
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_ADDUSERREQUEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 229
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_PAGE_CONTACTLIST, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 101
+    END
+
+    IDD_FILEDESCRIPTION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 194
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_NETOPTIONS_2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_WEB_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 113
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 30
+    END
+
+    IDD_PAGE_EDIT, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+    END
+
+    IDD_PREFERENCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 154
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_GROUP_MESSAGE_SEND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 191
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_GROUP_FILE_SEND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        TOPMARGIN, 3
+    END
+
+    IDD_TV, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PAGE_MES_SOUND, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 168
+        HORZGUIDE, 155
+    END
+
+    IDD_PAGE_MES_ALERT, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_PAGE_STUBS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 352
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_PAGE_MES_GENERAL, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_PAGE_DIALOGMODE, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_WEB_WINDOW_CHILD, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 113
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 31
+    END
+
+    IDD_MCUPDATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        VERTGUIDE, 83
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_CHAT_CREATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_DELCHAT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 222
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 41
+    END
+
+    IDD_PAGE_CHAT, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        VERTGUIDE, 128
+        VERTGUIDE, 131
+        HORZGUIDE, 30
+        HORZGUIDE, 40
+    END
+
+    IDD_GROUP_ASSIGN_TODO, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 192
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_PAGE_MES_TEMPLATE, DIALOG
+    BEGIN
+        VERTGUIDE, 10
+        VERTGUIDE, 249
+    END
+
+    IDD_EDIT_MES_TEMPLATE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 202
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 100
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+#ifndef MAGRUL_RELEASE
+IDR_MAINFRAME           ICON    DISCARDABLE     "res_IBN\\OfsTv.ico"
+#else
+IDR_MAINFRAME           ICON    DISCARDABLE     "res_MagRul\\OfsTv.ico"
+#endif
+IDI_CHECK_ICON          ICON    DISCARDABLE     "res\\check_icon.ico"
+IDI_NEWMESSAGE          ICON    DISCARDABLE     "res\\newmessa.ico"
+IDI_EMPTY               ICON    DISCARDABLE     "res\\empty.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_OFS_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        POPUP "Мой статус"
+        BEGIN
+            MENUITEM "В сети",                      ID_STATUS_ONLINE
+            MENUITEM "Скоро вернусь",               ID_STATUS_AWAY
+            MENUITEM "Нет на месте",                ID_STATUS_NA
+            MENUITEM "Не беспокоить",               ID_STATUS_DND
+            MENUITEM "Невидим",                     ID_STATUS_INVISIBLE
+            MENUITEM SEPARATOR
+            MENUITEM "Отключен",                    ID_STATUS_OFFLINE
+        END
+        MENUITEM "Показать новое сообщение",    ID_TRAY_SHOWNEWMESSAGE
+        MENUITEM "Настройка",                   ID_TRAY_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "О программе",                 ID_APP_ABOUT
+        MENUITEM SEPARATOR
+        MENUITEM "Сообщить об ошибке ...",      ID_TRAY_REPORTABUG
+        MENUITEM SEPARATOR
+        MENUITEM "Закрыть",                     ID_TRAY_EXIT
+    END
+    POPUP "Status"
+    BEGIN
+        MENUITEM "В сети",                      ID_STATUS_ONLINE
+        MENUITEM "Скоро вернусь",               ID_STATUS_AWAY
+        MENUITEM "Нет на месте",                ID_STATUS_NA
+        MENUITEM "Не беспокоить",               ID_STATUS_DND
+        MENUITEM "Невидим",                     ID_STATUS_INVISIBLE
+        MENUITEM SEPARATOR
+        MENUITEM "Отключен",                    ID_STATUS_OFFLINE
+    END
+END
+
+IDR_MESSENGER_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "TreeMenu"
+    BEGIN
+        MENUITEM "Отправить сообщение",         ID_TREEMENU_SENDMESSAGE
+        , GRAYED
+        MENUITEM "Отправить файл",              ID_TREEMENU_SENDFILE, GRAYED
+        MENUITEM "Отправить почту",             ID_TREEMENU_SENDEMAIL
+        , GRAYED
+        POPUP "Скриншот"
+        BEGIN
+            MENUITEM "Отправить",                   ID_TREEMENU_SENDSCREENSHOT
+            , GRAYED
+            MENUITEM "Назначить поручение",         ID_TREEMENU_SCREENCAPTURE_ASSINGTODO
+            , GRAYED
+        END
+        POPUP "Шаблон сообщения"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Назначить поручение",         ID_TREEMENU_ASSIGNTODO
+        , GRAYED
+        MENUITEM "Создать Мероприятие",         ID_TREEMENU_CREATEEVENT
+        , GRAYED
+        MENUITEM SEPARATOR
+        POPUP "Конференция"
+        BEGIN
+            MENUITEM "Создать новую",               ID_TREEMENU_CONFERENCE_CREATENEW
+            , GRAYED
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Удалить контакт",             ID_TREEMENU_DELETEUSER
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Архив Сообщений",             ID_TREEMENU_MESSAGESHISTORY
+        , GRAYED
+        MENUITEM "Профиль",                     ID_TREEMENU_USERDETAILS
+        , GRAYED
+        MENUITEM """Поплавок"" Вкл",            ID_TREEMENU_FLOATINGON
+        , GRAYED
+    END
+    POPUP "EditMenu"
+    BEGIN
+        MENUITEM "&Вырезать",                   ID_EDITMENU_CUT
+        MENUITEM "&Копировать",                 ID_EDITMENU_COPY
+        MENUITEM "Вст&авить",                   ID_EDITMENU_PAST
+        MENUITEM "&Удалить",                    ID_EDITMENU_DELETE
+    END
+    POPUP "Options"
+    BEGIN
+        MENUITEM "Добавить Контакт",            ID_OPTIONS_ADDINIVITE_FINDUSERADDTOFRIENDS
+
+        MENUITEM "Менеджер Файлов",             ID_OPTIONS_FILEMANAGER_DOWNLOAD
+
+        MENUITEM "Архив Сообщений",             ID_OPTIONS_SYNCHRONIZEHISTORY
+
+        MENUITEM "Сетевой Монитор",             ID_OPTIONS_NETWORKMONITOR
+        MENUITEM SEPARATOR
+        POPUP "Конференция"
+        BEGIN
+            MENUITEM "Создать новую",               ID_OPTIONS_CONFERENCE_CREATENEW
+
+            MENUITEM SEPARATOR
+            MENUITEM "Отправить сообщение",         ID_CHATTREEMENU_SENDMESSAGE
+
+            MENUITEM "Прицепить файл(ы)",           ID_CHATTREEMENU_ATTACH
+            MENUITEM SEPARATOR
+            MENUITEM "Войти",                       ID_CHATTREEMENU_STATUS_ACTIVE
+
+            MENUITEM "Выйти",                       ID_CHATTREEMENU_STATUS_INACTIVE
+
+            MENUITEM SEPARATOR
+            MENUITEM "Пригласить",                  ID_CHATTREEMENU_ADDAFRIEND
+
+            MENUITEM "Редактировать Профиль",       ID_CHATTREEMENU_EDITDETAILS
+
+            MENUITEM SEPARATOR
+            MENUITEM "Покинуть",                    ID_CHATTREEMENU_STATUS_LEAVE
+
+            MENUITEM SEPARATOR
+            MENUITEM "Архив сообщений",             ID_CHATTREEMENU_HISTORY
+            MENUITEM "Профиль",                     ID_CHATTREEMENU_VIEWDETAILS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Просмотреть мой профиль",     ID_OPTIONS_VIEWMYDETAILS
+        MENUITEM "Настройка",                   ID_OPTIONS_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "Выход",                       ID_OPTIONS_LOGOFF
+        MENUITEM SEPARATOR
+        MENUITEM "О программе",                 ID_APP_ABOUT
+    END
+    POPUP "History"
+    BEGIN
+        MENUITEM "Синхронизировать Архив",      ID_HISTORY_SYNHRONIZEHISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "Поиск",                       ID_HISTORY_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "Настройка",                   ID_HISTORY_PREFERENCES
+        MENUITEM SEPARATOR
+        MENUITEM "О программе",                 ID_APP_ABOUT
+    END
+    POPUP "TreeGroup"
+    BEGIN
+        MENUITEM "Отправить сообщение",         ID_TREEGROUP_SENDMESSAGE
+        MENUITEM "Отправить файл",              ID_TREEGROUP_SENDFILE
+        MENUITEM "Отправить почту",             ID_TREEGROUP_SENDEMAIL
+        POPUP "Скриншот"
+        BEGIN
+            MENUITEM "Отправить",                   ID_TREEGROUP_SCREENCAPTURE_SEND
+
+            MENUITEM "Назначить поручение",         ID_TREEGROUP_SCREENCAPTURE_ASSIGNTODO
+
+        END
+        POPUP "Шаблон сообщения"
+        BEGIN
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Назначить поручение",         ID_TREEGROUP_ASSIGNTODO
+        MENUITEM "Создать Мероприятие",         ID_TREEGROUP_CREATEEVENT
+        MENUITEM SEPARATOR
+        POPUP "Конференция"
+        BEGIN
+            MENUITEM "Создать новую",               ID_TREEGROUP_CONFERENCE_CREATENEW
+
+            MENUITEM SEPARATOR
+        END
+    END
+    POPUP "Files Upload"
+    BEGIN
+        MENUITEM "Отправить",                   ID_FILESUPLOAD_UPLOAD
+        MENUITEM "Отменить",                    ID_FILESUPLOAD_CANCELTRANSFER
+
+        MENUITEM SEPARATOR
+        MENUITEM "Удалить",                     ID_FILESUPLOAD_CLEARRECORD
+        MENUITEM SEPARATOR
+        MENUITEM "Описание",                    ID_FILESUPLOAD_INFORMATION
+    END
+    POPUP "File Download"
+    BEGIN
+        MENUITEM "Открыть",                     ID_FILEDOWNLOAD_OPEN
+        MENUITEM "Перейти к Папке …",           ID_FILEDOWNLOAD_GOTODIR
+        MENUITEM SEPARATOR
+        MENUITEM "Принять",                     ID_FILEDOWNLOAD_DOWNLOAD
+        MENUITEM "Отложить",                    ID_FILEDOWNLOAD_MOVETOOFFLINE
+
+        MENUITEM "Отменить",                    ID_FILEDOWNLOAD_CANCELTRANSFORM
+
+        MENUITEM SEPARATOR
+        MENUITEM "Удалить",                     ID_FILEDOWNLOAD_CLEARRECORD
+        MENUITEM SEPARATOR
+        MENUITEM "Описание",                    ID_FILEDOWNLOAD_INFORMATION
+    END
+    POPUP "ChatTreeMenu"
+    BEGIN
+        MENUITEM "Отправить сообщение",         ID_CHATTREEMENU_SENDMESSAGE
+        MENUITEM "Прицепить файл(ы)",           ID_CHATTREEMENU_ATTACH
+        MENUITEM SEPARATOR
+        MENUITEM "Войти",                       ID_CHATTREEMENU_STATUS_ACTIVE
+
+        MENUITEM "Выйти",                       ID_CHATTREEMENU_STATUS_INACTIVE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Пригласить",                  ID_CHATTREEMENU_ADDAFRIEND
+        MENUITEM "Редактировать Профиль",       ID_CHATTREEMENU_EDITDETAILS
+        MENUITEM SEPARATOR
+        MENUITEM "Покинуть",                    ID_CHATTREEMENU_STATUS_LEAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Архив сообщений",             ID_CHATTREEMENU_HISTORY
+        MENUITEM "Профиль",                     ID_CHATTREEMENU_VIEWDETAILS
+    END
+    POPUP "SysChatTreeMenu"
+    BEGIN
+        MENUITEM "Архив сообщений",             ID_TREEMENU_MESSAGESHISTORY
+        , GRAYED
+        MENUITEM """Поплавок"" Вкл",            ID_TREEMENU_FLOATINGON
+        , GRAYED
+    END
+    POPUP "RightButtonDD"
+    BEGIN
+        MENUITEM "Отправить файл",              ID_RIGHTBUTTONDD_SENDFILE
+        MENUITEM "Назначить поручение",         ID_RIGHTBUTTONDD_ASSIGNTODO
+        MENUITEM "Создать инцидент",            ID_RIGHTBUTTONDD_CREATEISSUE
+        MENUITEM "Опубликовать файл",           ID_RIGHTBUTTONDD_UPLOADFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Отменить",                    ID_RIGHTBUTTONDD_CANCEL
+    END
+    POPUP "ToolsMenu"
+    BEGIN
+        MENUITEM "Скриншот",                    ID_TOOLSMENU_SCREENCAPTURE_SEND
+
+        MENUITEM "Архив Сообщений",             ID_TOOLSMENU_MESSAGEHISTORY
+        MENUITEM "Менеджер Файлов",             ID_TOOLSMENU_FILEMANAGE
+        MENUITEM "Мастер инструментов",         ID_TOOLSMENU_IBNTOOLBOX
+        MENUITEM "Сетевой Монитор",             ID_TOOLSMENU_NETWORKMONITOR
+        MENUITEM SEPARATOR
+        MENUITEM "Сообщить об ошибке ...",      ID_TRAY_REPORTABUG
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_UNDERLINE           BITMAP  DISCARDABLE     "res\\underlin.bmp"
+IDB_COLOR               BITMAP  DISCARDABLE     "res\\color.bmp"
+IDB_ITALIC              BITMAP  DISCARDABLE     "res\\italic.bmp"
+IDB_BOLD                BITMAP  DISCARDABLE     "res\\bold.bmp"
+IDB_SMILES              BITMAP  DISCARDABLE     "res\\Smiles.bmp"
+#ifndef MAGRUL_RELEASE
+IDB_TRAYSTATUS_BITMAP   BITMAP  DISCARDABLE     "res_IBN\\traystat.bmp"
+#else
+IDB_TRAYSTATUS_BITMAP   BITMAP  DISCARDABLE     "res_MagRul\\traystat.bmp"
+#endif
+IDB_TREECHECK           BITMAP  DISCARDABLE     "res\\treecheck.bmp"
+IDB_SMILE               BITMAP  DISCARDABLE     "res\\smile.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SELECTCURSOR        CURSOR  DISCARDABLE     "res\\select.cur"
+IDC_SPLITV              CURSOR  DISCARDABLE     "res\\splitv.cur"
+IDC_HANDCURSOR          CURSOR  DISCARDABLE     "res\\hand.cur"
+IDC_SPLITH              CURSOR  DISCARDABLE     "res\\slith.cur"
+IDC_HANDCATCHCURSOR1    CURSOR  DISCARDABLE     "res\\handcatch1.cur"
+IDC_HANDCATCHCURSOR2    CURSOR  DISCARDABLE     "res\\handcatch2.cur"
+IDC_PENCURSOR           CURSOR  DISCARDABLE     "res\\pencursor.cur"
+IDC_TEXTCURSOR          CURSOR  DISCARDABLE     "res\\textcursor.cur"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,7,718,0
+ PRODUCTVERSION 4,7,718,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileVersion", "4.7.718\0"
+            VALUE "ProductVersion", "4.7.718\0"
+            VALUE "InternalName", "IMClientLang1049.dll\0"
+            VALUE "OriginalFilename", "IMClientLang1049.dll\0"
+            VALUE "Comments", "\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "SpecialBuild", "\0"
+#ifndef RADIUS
+            VALUE "ProductName", "IBN Client\0"
+            VALUE "FileDescription", "IBN Client russian resources\0"
+            VALUE "CompanyName", "Mediachase\0"
+            VALUE "LegalCopyright", "Copyright 2002-2010 Mediachase\0"
+#else
+            VALUE "ProductName", "MagRul Client\0"
+            VALUE "FileDescription", "MagRul Client russian resources\0"
+            VALUE "CompanyName", "Radius-Soft\0"
+            VALUE "LegalCopyright", "Copyright 2009-2010 Radius-Soft\0"
+#endif
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+//IDR_MANIFEST            24      DISCARDABLE     "res\\test2.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_SEND_DATA_AVI       AVI     DISCARDABLE     "res\\send.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+#ifndef MAGRUL_RELEASE
+	IDR_MAINFRAME           "Instant Business Network"
+#else
+	IDR_MAINFRAME           "MagRul"
+#endif
+    IDS_NETOPTIONS          "NetOptions"
+    IDS_ACCESSTYPE          "AccessType"
+    IDS_PROXYNAME           "ProxyName"
+    IDS_PROXYPORT           "ProxyPort"
+    IDS_LOGIN               "Login"
+    IDS_NICKNAME            "NickName"
+    IDS_PASSWORD            "Password"
+    IDS_REMEMBER            "Remember"
+    IDS_BYPASSENABLE        "BypassEnable"
+    IDS_OFSMESSENGER        "Common"
+    IDS_FLOATCX             "FloatCx"
+    IDS_FLOATCY             "FloatCy"
+    IDS_BOLD                "Bold"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+#ifndef MAGRUL_RELEASE
+    AFX_IDS_APP_TITLE       "Instant Business Network"
+    IDS_REGISTRY_KEY        "Mediachase"
+#else
+    AFX_IDS_APP_TITLE       "MagRul"
+    IDS_REGISTRY_KEY        "Radius-Soft"
+#endif
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+#ifndef MAGRUL_RELEASE
+	IDS_OFSMESSENGER_MAIN   "Instant Business Network"
+#else
+	IDS_OFSMESSENGER_MAIN   "MagRul"
+#endif
+    IDS_YOUOFFLINE          "Вы не подключены к Интернет.\r\nПроверьте интернет соединение и повторите попытку снова."
+    IDS_INVALID_LOGIN_OR_PASSWORD "Неправильное Имя или Пароль."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OFFLINE             "Отключен"
+    IDS_CONNECTING          "Подключение"
+    IDS_ONLINE              "В сети"
+    IDS_INVISIBLE           "Невидим"
+    IDS_DND                 "Не беспокоить"
+    IDS_AWAY                "Скоро вернусь"
+    IDS_NA                  "Нет на месте"
+    IDS_OCCUPIED            "Занят"
+    IDS_AWAITING            "Ожидающий"
+    IDS_UNKNOWN             "Неизвестный"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ITALIC              "Italic"
+    IDS_UNDERLINE           "Underline"
+    IDS_SIZE                "FontSize"
+    IDS_FONT                "FontName"
+    IDS_COLUMN_WIDTH        "ColumnWidth"
+    IDS_MESSAGES            "Messages"
+    IDS_MAIN                "Общие"
+    IDS_SPLITRECT           "SplitDlgRect"
+    IDS_SENDRECT            "SendDlgRect"
+    IDS_COMERECT            "ComeDlgRect"
+    IDS_HISTORY             "History"
+    IDS_HISTORY_FOLDER      "History Folder"
+    IDS_MODE                "Mode"
+    IDS_SORT                "Sort"
+    IDS_SYNCHRONIZE         "Синхронизация выполнена."
+    IDS_MESSSAGEMODE        "MessageMode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FROMTIME            "FromTime"
+    IDS_TOTIME              "ToTime"
+    IDS_SYNCMODE            "SyncMode"
+    IDS_BANDWIDTH           "BandWidth"
+    IDS_SHOWNEW             "ShowNew"
+    IDS_USERDELETE          "UserDelete"
+    IDS_ADDTOIGNORY         "Add to Ignory"
+    IDS_FLOATING            "Floating"
+    IDS_ANIMATION           "Animation"
+    IDS_HIDEINTRAY          "HideInTray"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MESYAHOOSPLITDLG    " -- Instant Message"
+    IDS_DIALOGMODE          "Message Dialog Mode"
+    IDS_SOUNDOFF            "SoundOff"
+    IDS_ICQSPLITTER_POS     "Splitter Pos"
+    IDS_SETAWAY_ENABLE      "SetAwayEnable"
+    IDS_SETNA_ENABLE        "SetNAEnable"
+    IDS_SETAWAY             "SetAway"
+    IDS_SETNA               "SetNA"
+    IDS_MCSPLITTER_POS      "McSplitter Pos"
+    IDS_AUTOLOGON           "AutoLogon"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USEFIREWALL         "UseFireWall"
+    IDS_FIREWALLUSER        "FireWallUser"
+    IDS_FIREWALLPASS        "FireWallPass"
+    IDS_CANTADDUSER         "CantAddUser"
+    IDS_CLMODE              "CLMode"
+    IDS_SHOWOFFLINEFILES    "ShowOffline"
+    IDS_INFO                "Info"
+    IDS_LOGOVERSION         "LogoVersion"
+    IDS_FILEMANAGER         "FileM"
+    IDS_FILE_DESCRIPTION    "FileD"
+    IDS_ADD_FRIEND          "AddFriend"
+    IDS_ADD_FRIENDR         "AddFriendR"
+    IDS_FINDUSER            "FindUser"
+    IDS_EXWINDOW            "ExWindow"
+    IDS_USERDETAILS         "UserDetails"
+    IDS_ENTER               "Enter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CTRLENTER           "CtrlEnter"
+    IDS_ALTENTER            "AltEnter"
+    IDS_SHIFTENTER          "ShiftEnter"
+    IDS_ALTS                "AltS"
+    IDS_CTRLS               "CtrlS"
+    IDS_GROUPSENDMESSAGE    "GroupSendMessage"
+    IDS_GROUPSENDFILE       "GroupSendFile"
+    IDS_KEEPTOP             "KeepTop"
+    IDS_SOUND               "Sounds"
+    IDS_INCOMING_MESSAGE    "Новое сообщение"
+    IDS_INCOMING_FILE       "Новый файл"
+    IDS_ONLINE_ALERT        "Пользователь в сети"
+    IDS_STARTUP             "Старт программы"
+    IDS_USER_OFFLINE        "Отключен"
+    IDS_AUTHORIZATION_REQUEST "Запрос на добавление контакта"
+    IDS_COMMON              "Common"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STUBS               "Stubs"
+    IDS_RECEIVED_FILES      "Received Files"
+    IDS_CLEARCHATWINDOW     "Clear Chat Window"
+    IDS_SHOWFRIENDSSTATUS   "Show Friends Status"
+    IDS_MYDOCUMENTS         "Мои полученные файлы"
+    IDS_OUTGOING_FILE       "Outgoing File"
+    IDS_NEW_ALERT_COME      "Новое информационное сообщение"
+    IDS_BAD_FILE            "Плохой файл"
+    IDS_SERVICENOTAVAILABLE "Cервис не доступен. Повторите попытку позже."
+#ifndef MAGRUL_RELEASE
+    IDS_LICENSE_LIMIT       "Вы превысили количество одновременных подключений, установленных вашим лицензионным соглашением. Пожалуйста свяжитесь с вашим администратором, или обратитесь в Mediachase за дополнительной информацией."
+#else
+    IDS_LICENSE_LIMIT       "Вы превысили количество одновременных подключений, установленных вашим лицензионным соглашением. Пожалуйста свяжитесь с вашим администратором, или обратитесь в Radius-Soft за дополнительной информацией."
+#endif
+    IDS_LOCDATABASE_ADDMESSAGE_ERROR 
+                            "Сбой в Архиве Сообщений. Нельзя добавить новое сообщение.\r\nПожалуйста обратитесь в Medichase за поддержкой."
+    IDS_LOCDB_REINDEX_ERROR "Cбой в Архиве Сообщений. Невозможно переиндексировать Базу Данных.\r\nПожалуйста перезапустите приложение, в случае повторения ошибки обратитетесь в обратитесь к разработчикам за поддержкой."
+    IDS_REINDEX             "ReIndex"
+    IDS_LOCDB_GLOABL_ERROR  "Сбой в Архиве Сообщений.\r\nПожалуйста обратитесь к разработчикам за поддержкой."
+    IDS_LOCDB_FIXED_PROBLEM "Сбой в Архиве Сообщений. Проблема была исправлена.\r\nИнформация из Архива Сообщений была потеряна. Вы можете восстановить Архив Сообщений использовав Синхронизацию."
+    IDS_FILES_SEND_LIMIT    "Вы не можите отправить более чем 30 файлов, за одну операцию."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ADD_FRIEND_TITLE    "Добавить контакт - %s"
+    IDS_AUTH_CANCEL_FORMAT  "Отменить запрос к %s на создание контакта?"
+    IDS_CONTACTLIST_DEL_FORMAT "Удалить контакт с %s?"
+    IDS_IGNORYLIST_DEL_FORMAT "Удалить контакт с %s?"
+    IDS_VERSION_FORMAT      "Версия Клиента %d.%d.%d"
+    IDS_SERVER_VERSION      "Версия Сервера 3.5.131"
+    IDS_CLOSE_BTN_NAME      "Закрыть"
+    IDS_ALL_FILES_FORMAT    "Все файлы (*.*)|*.*|"
+    IDS_SELECT_FOLDER_NAME  "Выбери Директорию"
+    IDS_FILENAME_NAME       "Имя файла"
+    IDS_SENDER_NAME         "Отправитель"
+    IDS_STATUS_NAME         "Состояние"
+    IDS_PROGRESS_NAME       "Процесс"
+    IDS_DATE_NAME           "Дата"
+    IDS_FILESIZE_NAME       "Размер"
+    IDS_DESCRIPTION_NAME    "Описание"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+#ifndef MAGRUL_RELEASE
+	IDS_IBN_FILE_MANAGER_NAME "IBN Менеджер файлов"
+	IDS_IBN_RECEIVED_FILE_NAME "IBN Полученные файлы"
+#else
+	IDS_IBN_FILE_MANAGER_NAME "MagRul Менеджер файлов"
+	IDS_IBN_RECEIVED_FILE_NAME "MagRul Полученные файлы"
+#endif
+    IDS_CANT_LOAD_OFFLINE_FILES "Не могу загрузить список Отложенных файлов."
+    IDS_OPEN_FILE_ERROR_NAME "Ошибка при открытии"
+    IDS_FILETYPE_NAME       "Тип"
+    IDS_FILEMODIFIED_NAME   "Изменен"
+    IDS_RECIPIENT_NAME      "Получатель"
+    IDS_APPDATA_NAME        "Данные Приложения"
+    IDS_APP_NAME            "Приложение"
+    IDS_CANT_UPLOAD_FILE_ERROR_FORMAT 
+                            "Менеджер Файлов не может получить файл %s. Вы действительно хотите продолжить? Ошибка: %s"
+    IDS_DATA_BYTE_FORMAT    "%d байт"
+    IDS_DATA_KBYTE_FORMAT   "%.1f КБ"
+    IDS_DATA_MBYTE_FORMAT   "%.1f MБ"
+    
+    IDS_COLLAPSE_NAME       "Свернуть"
+    IDS_EXPAND_NAME         "Развернуть"
+    IDS_NEW_CHILD_FOLDER_NAME "Создать новую папку"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FRIENDS_NAME        "Контакты"
+    IDS_HISTORY_SYNC_NAME   "Синхронизация Архива"
+    IDS_IBN_UPDATE_TITLE    "Обновление: Скачивается новый компонент"
+    IDS_IBN_UPDATE_ERROR_TITLE "Обновление: Ошибка"
+    IDS_IBN_UPDATE_ERROR2_TITLE "Обновление: Не могу запустить обновление"
+#ifndef MAGRUL_RELEASE
+    IDS_IBN_LOGIN_TITLE     "Instant Business Network Вход"
+    IDS_TRAY_TOOLTIP_FORMAT "IBN - %s"
+    IDS_IBN_ADD_FRIEND_TITLE "IBN Добавить контакт"
+    IDS_MAIN_TITLE_FORMAT   "%s - Instant Business Network"
+    IDS_ERROR_TITLE         "Instant Business Network Ошибка"
+#else
+    IDS_IBN_LOGIN_TITLE     "MagRul Вход"
+    IDS_TRAY_TOOLTIP_FORMAT "MagRul - %s"
+    IDS_IBN_ADD_FRIEND_TITLE "MagRul Добавить контакт"
+    IDS_MAIN_TITLE_FORMAT   "%s - MagRul"
+    IDS_ERROR_TITLE         "MagRul Ошибка"
+#endif
+    IDS_INSTANT_DIRECTORY_NAME "Добавление контакта"
+    IDS_DEFAULT_NAME        "Умолчательный"
+    IDS_REQUEST_DENIED_FORMAT 
+                            "Пользователь ""%s"" отказал на запрос о создании контакта с ним."
+    IDS_REQUEST_ACCEPT_FORMAT 
+                            "Пользователь ""%s"" разрешил создание контакта с ним."
+    IDS_GENERAL_NAME        "Общие"
+    IDS_STATUS_MODE_NAME    "Состояние"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONNECTION_NAME     "Подключение"
+    IDS_ALERTS_NAME         "Оповещение"
+    IDS_SOUNDS_NAME         "Звуки"
+    IDS_APPLICATION_NAME    "Приложения"
+    IDS_EDIT_NAME           "Редактор"
+    IDS_SHOW_CONTACTLIST_NAME "Показать Контакты"
+    IDS_IBN_UPDATE_LIST_NAME "Список обновлений"
+    IDS_CANT_SAVE_SETTINGS_NAME "Не могу сохранить настройки"
+    IDS_USER_IS_FORMAT      "Контакт имеет состояние ""%s"".\r\nВы действительно хотите отправить мгновенное сообщение?"
+    IDS_FROM_FORMAT         "От: %s"
+    IDS_INSTANT_CHAT_TITLE_FORMAT "%s - сообщения"
+    IDS_APP_NAME_INFO_NAME  "Имя:\r\nИнфо:"
+    IDS_APP_VER_NAME        "\r\nВерсия:"
+    IDS_SOUND_FORMAT        "Звук (*.wav)|*.wav|"
+    IDS_SOUND_EVENT         "Событие"
+    IDS_SOUND_FILE_NAME     "Звуковой файл"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIP_CLOSE           "Закрыть"
+    IDS_TIP_MAXIMIZE        "Развернуть"
+    IDS_TIP_RESTORY         "Востановить"
+    IDS_TIP_MINIMIZE        "Minimize"
+    IDS_TIP_BACK            "Назад"
+    IDS_TIP_FORWARD         "Вперед"
+    IDS_TIP_STOP            "Стоп"
+    IDS_TIP_REFRESH         "Обновить"
+#ifndef MAGRUL_RELEASE
+	IDS_WEBBROWSER_TITLE_FORMAT "%s - IBN Обозреватель"
+#else
+	IDS_WEBBROWSER_TITLE_FORMAT "%s - MagRul Обозреватель"
+#endif
+    IDS_LOADING_NAME        "Загрузка ..."
+    IDS_SHOWNAME_FORMAT     "%s %s"
+    IDS_ADD_USER_ERROR      "Сбой при создании контакта. Повторите попытку позже."
+    IDS_DEL_USER_ERROR      "Сбой при удалении контакта. Повторите попытку позже."
+    IDS_NEWFOLDER_FORMAT    "%s\\Новая Папка"
+    IDS_NEWFOLDERN_FORMAT   "%s\\Новая Папка (%d)"
+    IDS_HOSTORY_TITLE_FORMAT "Архив сообщений с %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SYNC_HISTORY_ERROR_NAME 
+                            "Сбой при синхронизации Архива Сообщений. Повторите попытку позже."
+    IDS_SYNC_HISTORY_COMPLETED_NAME 
+                            "Синхронизация Архива Сообщений выполнена."
+    IDS_AUTOUPDATE_CLOSE_NAME 
+                            "Процесс Автоматического обновления нуждается в закрытии приложения.\r\nВы хотите выйти сейчас?"
+    IDS_DO_CLOSE_NAME       "Вы действительно хотите выйти сейчас?"
+    IDS_OPEN_FILE_NAME      "Все файлы (*.*)|*.*|Текстовые файлы (*.txt)|*.txt|Word файлы (*.doc;*.rtf)|*.doc;*.rtf|Rar файлы (*.rar)|*.rar|Zip файлы (*.zip)|*.zip|"
+    IDS_USER_ALLREADY_IN_CONTACTLIST_NAME 
+                            "Сбой при создании контакта. Контакт уже существует."
+    IDS_FLOATING_OFF_NAME   """Поплавок"" Выкл"
+    IDS_FLOATING_ON_NAME    """Поплавок"" Вкл"
+    IDS_DETAILS_FOR_FORMAT  "Просмотр профиля: %s"
+    IDS_USER_DETAILS_TITLE  "Просмотр профиля"
+    IDS_SHOW_ALERT_MESAGE_FORMAT "Показывать сообщение ""%s"""
+    IDS_FILE_INCOMPLETE_NAME "В ожидании"
+    IDS_FILE_COMPLETE_NAME  "Получен"
+    IDS_FILE_EMPTY          " "
+    IDS_FILE_WAIT_NAME      "Ожидание"
+    IDS_FILE_START_NAME     "0%"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILE_CANCEL_NAME    "Отменен"
+    IDS_FILE_ERROR_NAME     "Error"
+    IDS_FILE_NEW_NAME       "Новый"
+    IDS_FILE_OFFLINE_NAME   "Отложенный"
+    IDS_FILE_DOWNLOADED_NAME "Получен"
+    IDS_TIME_SEC_FORMAT     "(%d секунд)"
+    IDS_FILEL               "FileList"
+    IDS_REMOVE_FROM_TASK_BAR "RemoveFromTaskBar"
+    IDS_FILE_PUBLISHED_NAME "Опубликован"
+    IDS_CANT_UPLOAD_FILE_ERROR_2_FORMAT 
+                            "Файл ""%s"" открыт в данный момент. Пожалуйста, закройте файл и повторите отправку еще раз."
+    IDS_SHOW_CHAT_CONTACTLIST_NAME "Показать список конференций"
+    IDS_INACTIVE_CHAT       "Неактивные"
+    IDS_ACTIVE_CHAT         "Активные"
+    IDS_CHAT_SHOW_NAME      "%s"
+    IDS_CREATE_NEW_CONFERENCE "Создать новую конференцию"
+    IDS_CHAT_DEL_FORMAT     "Вы действительно хотите покинуть конференцию ""%s"" ?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHATLOADMESS        "ChatLoadMess"
+    IDS_CONFERENCE_NAME     "Конференция"
+    IDS_INVITE_CHAT         "InviteChat"
+    IDS_INVITED_MESSAGE     "Новое приглашение"
+    IDS_LEAVED_MESSAGE      "Выход из конференции"
+    IDS_UPDATE_CONFERENCE   "%s - редактирование конференции"
+    IDS_INVITE_CONFERENCE   "%s конференция - Приглашение новых людей"
+    IDS_CONFERENCE_CAPTION_TEXT "%s - Конференция"
+    IDS_ACCEPT_MESSAGE      "Принял приглашение на конференцию."
+    IDS_DENY_MESSAGE        "Отказался от участия в конференции."
+    IDS_SELECT_COLOR        "SelectColor"
+    IDS_DOCS_NAME           "Библиотека Документов"
+    IDS_LINKS_NAME          "Центр ссылок"
+    IDS_NEWS_NAME           "Новостной центр"
+    IDS_CHANGE_COLOR        "Изменить цвет"
+    IDD_INVITE_CHAT_DIALOG_TEXT "%s - Приглашение"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DETAILS_CONFERENCE  "%s - Профиль конференции"
+    IDS_INVALID_CONFERENCE_NAME "Имя конференции пусто."
+    IDS_CHAT                "Conference"
+    IDS_CHATSPLITRECT       "ConferenceDlgRect"
+    IDS_CONFERENCE_MENU     "Конференция ""%s"""
+    IDS_INVALID_INVITE_NAME "Текст приглашения пуст."
+    IDS_FEW_USER_STRING     "Как минимум 2 пользователя должны быть приглашены в конференцию."
+    IDS_WEB_FOLDER_VEW      "FWView"
+    IDS_WEB_FOLDERS_NAME    "Web Folders"
+    IDS_INVITE_CHAT_NICK_NAME "%s пригласил Вас на конференцию"
+    IDS_TIP_CREATE_FOLDER   "Создать новую папку"
+    IDS_TIP_DELETE          "Удалить"
+    IDS_TIP_VIEWS           "Вид"
+    IDS_TIP_UP              "Вверх"
+    IDS_TIP_MENU            "Меню"
+    IDS_TIP_OPTIONS         "Опции"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIP_FONT_COLOR      "Цвет шрифта"
+    IDS_TIP_BOLD            "Полужирный"
+    IDS_TIP_ITALIC          "Курсив"
+    IDS_TIP_UNDERLINE       "Подчеркнутый"
+    IDS_TIP_SMILES          "Вставить смайлик"
+    IDS_TIP_FONT            "Шрифт"
+    IDS_TIP_FONT_SIZE       "Размер"
+    IDS_INVITE_TO_MENU_ITEM "Пригласить в"
+    IDS_GROUPS_STATE        "GroupState"
+    IDS_WEB_OPTIONS         "%s/options.aspx?sid=%s&s_version=%ld&l_version=%ld&build=%ld&productguid=%s"
+    IDS_WEB_MYDETAILS       "%s/details.aspx?sid=%s&id=%ld"
+    IDS_WEB_USERDETAILS     "%s/details.aspx?sid=%s&id=%ld"
+    IDS_WEB_ALERTLIST       "%s/Alerts.aspx?sid=%s"
+    IDS_WEB_IBNTODAY        "%s/default.aspx?sid=%s&redirect=Modules/default.aspx"
+    IDS_WEB_CHATDETAILS     "%s/chat_details.aspx?sid=%s&id=%s"
+    IDS_WEB_CHATHISTORY     "%s/default.aspx?sid=%s&redirect=Reports/chat_history.aspx"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_USESSL              "UseSSL"
+    IDS_INVITECHAT_ERROR    "Ошибка команды - приглашение в чат."
+    IDS_MESSAGES_SENT       "Отправлено сообщений: %d"
+    IDS_MESSAGES_RECEIVED   "Получено сообщений: %d"
+    IDS_FILE_SENT           "Отправлено файлов: %d"
+    IDS_FILE_RECEIVED       "Получено файлов: %d"
+    IDS_KILOBYTES           "килобайт"
+    IDS_SECONDS             "секунд"
+    IDS_TOTAL_SENT          "Всего байт отправлено: %d"
+    IDS_TOTAL_RECEIVED      "Всего байт получено: %d"
+    IDS_TOTAL_COST          "Стоимость: %0.2f"
+    IDS_COST                "Стоимость"
+    IDS_COSTTYPE            "CostType"
+    IDS_SHOW_LINE_TOTAL     "Показывать суммарные"
+    IDS_SHOW_LINE_SENT      "Показывать отправленные"
+    IDS_SHOW_LINE_RECEIVED  "Показывать полученные"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIEWMODE            "ViewMode"
+#ifndef MAGRUL_RELEASE
+	IDS_SHOW_IBN_ACTIONS_NAME "Показать страницу IBN Действия"
+#else
+	IDS_SHOW_IBN_ACTIONS_NAME "Показать страницу MagRul Действия"
+#endif
+    IDS_IBNACTIONBROWSER    "IBNActionBrowserMode"
+    IDS_OPENINMAXIMAZE      "OpenInMaximaze"
+    IDS_GROUPASSIGNTODO     "GroupAssignToDo"
+    IDS_WEB_ASSIGN_TODO     "%s/default.aspx?sid=%s&redirect=ToDo/ClientToDoCreate.aspx%%3Fusers=%s"
+    IDS_ASSIGN_TODO         "Назначить поручение"
+    IDS_SYSTEM_SERVICES_GROUP_NAME "Веб Приложения"
+    IDS_SCREEN_CAPTURE      "ScreenCapture"
+    IDS_SCREEN_CAPTURE_NAME "Скриншот"
+    IDS_TIP_UNDO            "Отменить"
+    IDS_TIP_SAVE            "Сохранить"
+    IDS_TIP_REDO            "Вернуть"
+    IDS_TIP_MOVE            "Переместить"
+    IDS_TIP_CROP            "Вырезать"
+    IDS_TIP_ZOOMOUT         "Уменьшить Масштаб"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_TIP_ZOOMIN          "Увеличить Масштаб"
+    IDS_TIP_TEXT            "Текст"
+    IDS_TIP_PEN             "Карандаш"
+    IDS_TIP_PENCOLOR        "Цвет карандаша"
+    IDS_PENCOLOR            "PenColor"
+    IDS_TIMEFILTER_ALL      "Все"
+    IDS_TIMEFILTER_TODAY    "Сегодня"
+    IDS_TIMEFILTER_YESTERDAY "Вчера"
+    IDS_TIMEFILTER_THISWEEK "За последние 7 дней"
+    IDS_TIMEFILTER_LASTWEEK "На прошлой неделе"
+    IDS_TIMEFILTER_THISMONTH "За последний месяц"
+    IDS_TIMEFILTER_LASTMONTH "В прошлом месяце"
+    IDS_TIMEFILTER_THISYEAR "За последний год"
+    IDS_TIMEFILTER_LASTYEAR "В прошлом году"
+    IDS_TIMEFILTER_CUSTOM   "Выбрать"
+    IDS_TIMEFILTER          "TimeFilterMode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FROMTIME_FILTER     "FromTimeFilter"
+    IDS_TOTIME_FILTER       "ToTimeFilter"
+    IDS_CAPTURE_ACTION_SENDTO "Отправить скриншот"
+    IDS_CAPTURE_ACTION_ASSIGNTODO "Назначить поручение"
+    IDS_CAPTURE_ACTION_PUBLISH "Опубликовать на сервере"
+    IDS_CAPTURE_ACTION_CREATEISSUE "Создать инцидент"
+    IDS_CAPTURE_ACTION_TREEHEADER "Доступные Ресурсы"
+    IDS_LOGIN_TOOLTIP_CAPTION "Пример:"
+    IDS_LOGIN_TOOLTIP_BODY  "ИмяПользователя@Домен\r\n\r\nкак, user@portal.company.com"
+    IDS_SHOWOFFLINE_USERS   "Показывать недоступных пользователей"
+    IDS_MINIMIZE_ONCLOSE    "MinimizeOnClose"
+    IDS_MESSAGE_TEMPLATES_NAME "Шаблоны сообщений"
+    IDS_TEMPLATE_NAME       "Имя"
+    IDS_TEMPLATE_TEXT       "Текст шаблона"
+    IDS_MESSAGE_TEMPLATES_REG "MessageTemplates"
+    IDS_DEFAULT_MES_TEMPLATE_XML 
+                            "<message_templates><mt><name>Привет</name><text>Привет</text></mt><mt><name>Как дела?</name><text>Как дела?</text></mt></message_templates>"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SEND_MESSAGE_TEMPLATE_AUTO "SendMTAuto"
+    IDS_TEXTCOLOR           "TextColor"
+    IDS_TEXTSIZE            "TextSize"
+    IDS_FONTNAME            "FontName"
+    IDS_GET_DEFAULT_BROWSER_FROM_REGISTRY "DefBrowserFrowRegistry"
+    IDS_SMILES_MORE         "больше ..."
+    IDS_CONTACTLIST_SORT_BY_FIRSTNAME "ContactListSortByFN"
+    IDS_DHTML_CREATE_ERROR_MGS 
+                            "Невозможно создать DHTML Editing Control.\nКод = %X\nОшибка: %s\nВы хотите скачать и установить DHTML Editing Control с сайта Microsoft?"
+    IDS_UPDATE_AUTOCHECK    "UpdateAutoCheck"
+    IDS_UPDATE_AUTOCHECK_TIME "UpdateAutoCheckTime"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_INCOMING_MESSAGE_KEY        "Incoming Message"
+    IDS_INCOMING_FILE_KEY           "Incoming File"
+    IDS_ONLINE_ALERT_KEY            "Online Alert"
+    IDS_STARTUP_KEY                 "Application Startup"
+    IDS_AUTHORIZATION_REQUEST_KEY   "Authorization Request"
+    IDS_NEW_ALERT_COME_KEY          "Incoming Alert"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\OfsTv.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

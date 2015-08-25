@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediachase.Chats.1 = s 'Chats Class'
+	{
+		CLSID = s '{9359EDFF-2973-4BB3-AC7A-E9A77DEE93B0}'
+	}
+	Mediachase.Chats = s 'Chats Class'
+	{
+		CLSID = s '{9359EDFF-2973-4BB3-AC7A-E9A77DEE93B0}'
+		CurVer = s 'Mediachase.Chats.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9359EDFF-2973-4BB3-AC7A-E9A77DEE93B0} = s 'Chats Class'
+		{
+			ProgID = s 'Mediachase.Chats.1'
+			VersionIndependentProgID = s 'Mediachase.Chats'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}

@@ -1,0 +1,27 @@
+HKCR
+{
+	McConverterSessionServer.ConvertSessi.1 = s 'ConvertSessionWrapper Class'
+	{
+		CLSID = s '{1B2174BD-86E7-4DEE-81BE-46FF3B70960A}'
+	}
+	McConverterSessionServer.ConvertSession = s 'ConvertSessionWrapper Class'
+	{
+		CLSID = s '{1B2174BD-86E7-4DEE-81BE-46FF3B70960A}'
+		CurVer = s 'McConverterSessionServer.ConvertSessi.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1B2174BD-86E7-4DEE-81BE-46FF3B70960A} = s 'ConvertSessionWrapper Class'
+		{
+			ProgID = s 'McConverterSessionServer.ConvertSessi.1'
+			VersionIndependentProgID = s 'McConverterSessionServer.ConvertSession'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{2FDEE2CB-7415-43A2-8329-92E616792B90}'
+		}
+	}
+}
