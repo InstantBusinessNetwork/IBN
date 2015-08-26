@@ -1,0 +1,23 @@
+HKCR
+{
+	Mediachase.IMMessages.1 = s 'Messages Class'
+	{
+		CLSID = s '{B515381E-E099-4ABE-95A9-3D1C9C352462}'
+	}
+	Mediachase.IMMessages = s 'Messages Class'
+	{
+		CLSID = s '{B515381E-E099-4ABE-95A9-3D1C9C352462}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {B515381E-E099-4ABE-95A9-3D1C9C352462} = s 'Messages Class'
+		{
+			ProgID = s 'Mediachase.IMMessages.1'
+			VersionIndependentProgID = s 'Mediachase.IMMessages'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}

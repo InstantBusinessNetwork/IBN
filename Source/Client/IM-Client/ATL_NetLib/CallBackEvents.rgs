@@ -1,0 +1,23 @@
+HKCR
+{
+	Mediachase.IMCallBackEvents.1 = s 'CallBackEvents Class'
+	{
+		CLSID = s '{A998B391-B30C-4101-BCE2-97067098C26C}'
+	}
+	Mediachase.IMCallBackEvents = s 'CallBackEvents Class'
+	{
+		CLSID = s '{A998B391-B30C-4101-BCE2-97067098C26C}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A998B391-B30C-4101-BCE2-97067098C26C} = s 'CallBackEvents Class'
+		{
+			ProgID = s 'Mediachase.IMCallBackEvents.1'
+			VersionIndependentProgID = s 'Mediachase.IMCallBackEvents'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}
