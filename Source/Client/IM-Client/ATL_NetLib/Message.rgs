@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediachase.IMMessage.1 = s 'Message Class'
+	{
+		CLSID = s '{D51400C0-A338-4D2E-B4CB-159CF7579909}'
+	}
+	Mediachase.IMMessage = s 'Message Class'
+	{
+		CLSID = s '{D51400C0-A338-4D2E-B4CB-159CF7579909}'
+		CurVer = s 'Mediachase.IMMessage.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D51400C0-A338-4D2E-B4CB-159CF7579909} = s 'Message Class'
+		{
+			ProgID = s 'Mediachase.IMMessage.1'
+			VersionIndependentProgID = s 'Mediachase.IMMessage'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}

@@ -1,0 +1,9 @@
+; ATL_NetLib.def : Declares the module parameters.
+
+LIBRARY      "ATL_NetLib.DLL"
+
+EXPORTS
+	DllCanUnloadNow     PRIVATE
+	DllGetClassObject   PRIVATE
+	DllRegisterServer   PRIVATE
+	DllUnregisterServer PRIVATE

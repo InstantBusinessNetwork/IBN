@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_MagRul|Win32">
+      <Configuration>Release_MagRul</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_IBN|Win32">
+      <Configuration>Release_IBN</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>IMClient</ProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)$(Configuration)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)$(Configuration)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(LibraryPath);$(SolutionDir)$(Configuration)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_DEVELOVER_VERSION_WITH_DUMP_L1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Release_MDMP\OfsTv.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>cximage.lib;jpeg.lib;msxml2.lib;wininet.lib;Version.lib;Winmm.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+    </Link>
+    <Manifest />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\Debug\OfsTv.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>cximage.lib;jpeg.lib;msxml2.lib;wininet.lib;Version.lib;Winmm.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+    </Link>
+    <Manifest />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <PreprocessorDefinitions>RADIUS;WIN32;NDEBUG;_WINDOWS;_DEVELOVER_VERSION_WITH_DUMP_L1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Midl>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>.\MagRul_Release_MDMP\OfsTv.tlb</TypeLibraryName>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>RADIUS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>cximage.lib;jpeg.lib;msxml2.lib;wininet.lib;Version.lib;Winmm.lib;Shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalManifestDependencies>type='Win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='6595b64144ccf1df' language='*';%(AdditionalManifestDependencies)</AdditionalManifestDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddUserDlg.cpp" />
+    <ClCompile Include="AddUserRequest.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\Ambients.cpp" />
+    <ClCompile Include="ccootree.cpp" />
+    <ClCompile Include="cdib.cpp" />
+    <ClCompile Include="Chat.cpp" />
+    <ClCompile Include="ChatCreateDlg.cpp" />
+    <ClCompile Include="ChatDlg.cpp" />
+    <ClCompile Include="ChooseFolder.cpp" />
+    <ClCompile Include="ColorMenu.cpp" />
+    <ClCompile Include="Inet\CoolInet2.cpp" />
+    <ClCompile Include="CoolMenu.cpp" />
+    <ClCompile Include="CxImageCtrl.cpp" />
+    <ClCompile Include="DelChatDlg.cpp" />
+    <ClCompile Include="DelUserDlg.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\DHSHWUI.CPP" />
+    <ClCompile Include="OFSDhtmlEditCtrl\DHUIHNDL.CPP" />
+    <ClCompile Include="DlgAbout.cpp" />
+    <ClCompile Include="DlgNetOptions2.cpp" />
+    <ClCompile Include="DlgPreferences.cpp" />
+    <ClCompile Include="DlgTV.cpp" />
+    <ClCompile Include="EditMessageTemplateDlg.cpp" />
+    <ClCompile Include="Inet\EventContainer.cpp" />
+    <ClCompile Include="FileDescriptioDlg.cpp" />
+    <ClCompile Include="FileDownloadDlg.cpp" />
+    <ClCompile Include="FileDownloader.cpp" />
+    <ClCompile Include="FileExplore.cpp" />
+    <ClCompile Include="FileManagerDlg.cpp" />
+    <ClCompile Include="FileUploadDlg.cpp" />
+    <ClCompile Include="FolderChangeNotfication.cpp" />
+    <ClCompile Include="GlobalFunction.cpp" />
+    <ClCompile Include="GroupAssingToDo.cpp" />
+    <ClCompile Include="GroupFileDescriptionDlg.cpp" />
+    <ClCompile Include="GroupMessageSendDlg.cpp" />
+    <ClCompile Include="HistoryDlg.cpp" />
+    <ClCompile Include="HttpDownloader.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\IADVSINK.CPP" />
+    <ClCompile Include="IbnCommandWnd.cpp" />
+    <ClCompile Include="IBNTO_MESSAGE.cpp" />
+    <ClCompile Include="IBNToHandlerWindow.cpp" />
+    <ClCompile Include="IBNUpdate.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\ICLISITE.CPP" />
+    <ClCompile Include="OFSDhtmlEditCtrl\IDOCSITE.CPP" />
+    <ClCompile Include="OFSDhtmlEditCtrl\IIPSITE.CPP" />
+    <ClCompile Include="InviteChatDlg.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="LoadSkins.cpp" />
+    <ClCompile Include="LoginDlg.cpp" />
+    <ClCompile Include="MainDlg.cpp" />
+    <ClCompile Include="McAppBar.cpp" />
+    <ClCompile Include="McAppCtrl.cpp" />
+    <ClCompile Include="mcbutton.cpp" />
+    <ClCompile Include="McLoaderImpl.cpp" />
+    <ClCompile Include="McLoginAutoCompleteSource.cpp" />
+    <ClCompile Include="McLogo.cpp" />
+    <ClCompile Include="McMessengerHost.cpp" />
+    <ClCompile Include="mcprogress.cpp" />
+    <ClCompile Include="McSettings.cpp" />
+    <ClCompile Include="McSettingsDlg.cpp" />
+    <ClCompile Include="mcticker.cpp" />
+    <ClCompile Include="McUpdateWindow.cpp" />
+    <ClCompile Include="McVersionInfo.cpp" />
+    <ClCompile Include="McWindowDetails.cpp" />
+    <ClCompile Include="mediaplayer2.cpp" />
+    <ClCompile Include="Message.cpp" />
+    <ClCompile Include="MessageDlg.cpp" />
+    <ClCompile Include="MessageSplitDlg3.cpp" />
+    <ClCompile Include="MiniDump\MiniDump.cpp" />
+    <ClCompile Include="MonitorDialog.cpp" />
+    <ClCompile Include="MonitorGraph.cpp" />
+    <ClCompile Include="mpadhtmlctrl.cpp" />
+    <ClCompile Include="MpaWebEvent.cpp" />
+    <ClCompile Include="Inet\NetLibTranslator.cpp" />
+    <ClCompile Include="NetOptionDlg.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\OfsDhtmlCtrl.cpp" />
+    <ClCompile Include="OFSNcDlg.cpp" />
+    <ClCompile Include="OFSNcDlg2.cpp" />
+    <ClCompile Include="OfsTv.cpp" />
+    <ClCompile Include="PageAlerts.cpp" />
+    <ClCompile Include="PageApps.cpp" />
+    <ClCompile Include="PageChat.cpp" />
+    <ClCompile Include="PageContactListMode.cpp" />
+    <ClCompile Include="PageDialogMode.cpp" />
+    <ClCompile Include="PageEditMode.cpp" />
+    <ClCompile Include="PageGeneral.cpp" />
+    <ClCompile Include="PageHistorySync.cpp" />
+    <ClCompile Include="PageLaunchMode.cpp" />
+    <ClCompile Include="PageMesTemplate.cpp" />
+    <ClCompile Include="PageSound.cpp" />
+    <ClCompile Include="PageStatusMode.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
+    <ClCompile Include="PictureObj.cpp" />
+    <ClCompile Include="PopupMessage.cpp" />
+    <ClCompile Include="ResizableDialog.cpp" />
+    <ClCompile Include="ResizableImage.cpp" />
+    <ClCompile Include="SaveDataBase.cpp" />
+    <ClCompile Include="ScreenShotDlg.cpp" />
+    <ClCompile Include="SelectColorListBox.cpp" />
+    <ClCompile Include="SelectServer.cpp" />
+    <ClCompile Include="SelectSmileDlg.cpp" />
+    <ClCompile Include="SENDTO_MESSAGE.cpp" />
+    <ClCompile Include="shockwaveflash.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\SITE.CPP" />
+    <ClCompile Include="SmileManager.cpp" />
+    <ClCompile Include="SortHeaderCtrl.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_IBN|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release_MagRul|Win32'">stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Subclass.cpp" />
+    <ClCompile Include="SystemTray.cpp" />
+    <ClCompile Include="TextComment.cpp" />
+    <ClCompile Include="TextCommentSettings.cpp" />
+    <ClCompile Include="OFSDhtmlEditCtrl\trifiltr.cpp" />
+    <ClCompile Include="user.cpp" />
+    <ClCompile Include="UserCollection.cpp" />
+    <ClCompile Include="UserDetailsDlg.cpp" />
+    <ClCompile Include="VariablesList.cpp" />
+    <ClCompile Include="webbrowser2.cpp" />
+    <ClCompile Include="WebWindow.cpp" />
+    <ClCompile Include="XmlDoc.cpp" />
+    <ClCompile Include="XMLParsel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="OfsTv.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddUserDlg.h" />
+    <ClInclude Include="AddUserRequest.h" />
+    <ClInclude Include="atlcrypt.h" />
+    <ClInclude Include="atlenc.h" />
+    <ClInclude Include="ccootree.h" />
+    <ClInclude Include="cdib.h" />
+    <ClInclude Include="Chat.h" />
+    <ClInclude Include="ChatCreateDlg.h" />
+    <ClInclude Include="ChatDlg.h" />
+    <ClInclude Include="ChooseFolder.h" />
+    <ClInclude Include="ColorMenu.h" />
+    <ClInclude Include="Inet\CoolInet2.h" />
+    <ClInclude Include="CoolMenu.h" />
+    <ClInclude Include="CxImageCtrl.h" />
+    <ClInclude Include="DelChatDlg.h" />
+    <ClInclude Include="DelUserDlg.h" />
+    <ClInclude Include="DlgAbout.h" />
+    <ClInclude Include="DlgNetOptions2.h" />
+    <ClInclude Include="DlgPreferences.h" />
+    <ClInclude Include="DlgTV.h" />
+    <ClInclude Include="EditMessageTemplateDlg.h" />
+    <ClInclude Include="Inet\EventContainer.h" />
+    <ClInclude Include="FileDescriptioDlg.h" />
+    <ClInclude Include="FileDownloadDlg.h" />
+    <ClInclude Include="FileDownloader.h" />
+    <ClInclude Include="FileExplore.h" />
+    <ClInclude Include="FileManagerDlg.h" />
+    <ClInclude Include="FileUploadDlg.h" />
+    <ClInclude Include="FIXATLBASE.H" />
+    <ClInclude Include="FolderChangeNotfication.h" />
+    <ClInclude Include="GlobalFunction.h" />
+    <ClInclude Include="GlobalMessengerDef.h" />
+    <ClInclude Include="GroupAssingToDo.h" />
+    <ClInclude Include="GroupFileDescriptionDlg.h" />
+    <ClInclude Include="GroupMessageSendDlg.h" />
+    <ClInclude Include="HistoryDlg.h" />
+    <ClInclude Include="HttpDownloader.h" />
+    <ClInclude Include="IbnCommandWnd.h" />
+    <ClInclude Include="IBNTO_MESSAGE.h" />
+    <ClInclude Include="IBNToHandlerWindow.h" />
+    <ClInclude Include="IBNUpdate.h" />
+    <ClInclude Include="IBNWFGlobalFunctions.h" />
+    <ClInclude Include="InviteChatDlg.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="LoadSkins.h" />
+    <ClInclude Include="LogEX.h" />
+    <ClInclude Include="LoginDlg.h" />
+    <ClInclude Include="MainDlg.h" />
+    <ClInclude Include="McAppBar.h" />
+    <ClInclude Include="McAppCtrl.h" />
+    <ClInclude Include="mcbutton.h" />
+    <ClInclude Include="McLoaderImpl.h" />
+    <ClInclude Include="McLoginAutoCompleteSource.h" />
+    <ClInclude Include="McLogo.h" />
+    <ClInclude Include="McMessengerHost.h" />
+    <ClInclude Include="mcprogress.h" />
+    <ClInclude Include="McSettings.h" />
+    <ClInclude Include="McSettingsDlg.h" />
+    <ClInclude Include="mcticker.h" />
+    <ClInclude Include="McUpdateWindow.h" />
+    <ClInclude Include="McVersionInfo.h" />
+    <ClInclude Include="McWindowDetails.h" />
+    <ClInclude Include="mediaplayer2.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageDlg.h" />
+    <ClInclude Include="MessageSplitDlg3.h" />
+    <ClInclude Include="MiniDump\MiniDump.h" />
+    <ClInclude Include="MonitorDialog.h" />
+    <ClInclude Include="MonitorGraph.h" />
+    <ClInclude Include="mpadhtmlctrl.h" />
+    <ClInclude Include="MpaWebEvent.h" />
+    <ClInclude Include="Inet\NetLibTranslator.h" />
+    <ClInclude Include="NetOptionDlg.h" />
+    <ClInclude Include="OFSConst.h" />
+    <ClInclude Include="OFSDhtmlEditCtrl\OfsDhtmlCtrl.h" />
+    <ClInclude Include="OFSNcDlg.h" />
+    <ClInclude Include="OFSNcDlg2.h" />
+    <ClInclude Include="OfsTv.h" />
+    <ClInclude Include="PageAlerts.h" />
+    <ClInclude Include="PageApps.h" />
+    <ClInclude Include="PageChat.h" />
+    <ClInclude Include="PageContactListMode.h" />
+    <ClInclude Include="PageDialogMode.h" />
+    <ClInclude Include="PageEditMode.h" />
+    <ClInclude Include="PageGeneral.h" />
+    <ClInclude Include="PageHistorySync.h" />
+    <ClInclude Include="PageLaunchMode.h" />
+    <ClInclude Include="PageMesTemplate.h" />
+    <ClInclude Include="PageSound.h" />
+    <ClInclude Include="PageStatusMode.h" />
+    <ClInclude Include="PictureEx.h" />
+    <ClInclude Include="PictureObj.h" />
+    <ClInclude Include="PopupMessage.h" />
+    <ClInclude Include="ResizableDialog.h" />
+    <ClInclude Include="ResizableImage.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SaveDataBase.h" />
+    <ClInclude Include="ScreenShotDlg.h" />
+    <ClInclude Include="SelectColorListBox.h" />
+    <ClInclude Include="SelectServer.h" />
+    <ClInclude Include="SelectSmileDlg.h" />
+    <ClInclude Include="SENDTO_MESSAGE.h" />
+    <ClInclude Include="shockwaveflash.h" />
+    <ClInclude Include="OFSDhtmlEditCtrl\SITE.H" />
+    <ClInclude Include="SmileManager.h" />
+    <ClInclude Include="SortHeaderCtrl.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="Subclass.h" />
+    <ClInclude Include="SupportXMLFunction.h" />
+    <ClInclude Include="SystemTray.h" />
+    <ClInclude Include="TextComment.h" />
+    <ClInclude Include="TextCommentSettings.h" />
+    <ClInclude Include="user.h" />
+    <ClInclude Include="UserCollection.h" />
+    <ClInclude Include="UserDetailsDlg.h" />
+    <ClInclude Include="VariablesList.h" />
+    <ClInclude Include="webbrowser2.h" />
+    <ClInclude Include="WebWindow.h" />
+    <ClInclude Include="XmlDoc.h" />
+    <ClInclude Include="XMLParsel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="atlcrypt.inl">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\bold.bmp" />
+    <CustomBuild Include="res\check_icon.ico" />
+    <CustomBuild Include="res\color.bmp" />
+    <CustomBuild Include="res\empty.ico" />
+    <CustomBuild Include="res\hand.cur" />
+    <CustomBuild Include="res\handcatch1.cur" />
+    <CustomBuild Include="res\handcatch2.cur" />
+    <CustomBuild Include="res\italic.bmp" />
+    <CustomBuild Include="res\newmessa.ico" />
+    <CustomBuild Include="res_MagRul\OfsTv.ico" />
+    <CustomBuild Include="res_IBN\OfsTv.ico" />
+    <CustomBuild Include="res\OfsTv.rc2">
+      <FileType>RC</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\pencursor.cur" />
+    <CustomBuild Include="res\select.cur" />
+    <CustomBuild Include="res\send.avi">
+      <FileType>Document</FileType>
+    </CustomBuild>
+    <CustomBuild Include="res\slith.cur" />
+    <CustomBuild Include="res\smile.bmp" />
+    <CustomBuild Include="res\Smiles.bmp" />
+    <CustomBuild Include="res\splitv.cur" />
+    <CustomBuild Include="res\textcursor.cur" />
+    <CustomBuild Include="res_MagRul\traystat.bmp" />
+    <CustomBuild Include="res_IBN\traystat.bmp" />
+    <CustomBuild Include="res\treecheck.bmp" />
+    <CustomBuild Include="res\underlin.bmp" />
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="McScreenCapture.tlb" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

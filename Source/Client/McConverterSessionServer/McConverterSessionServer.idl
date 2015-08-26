@@ -1,0 +1,38 @@
+// McConverterSessionServer.idl : IDL source for McConverterSessionServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (McConverterSessionServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(E8960C15-6EE6-492D-B074-E233652753BB),
+	dual,
+	nonextensible,
+	helpstring("IConvertSessionWrapper Interface"),
+	pointer_default(unique)
+]
+interface IConvertSessionWrapper : IDispatch{
+	[id(1), helpstring("method SaveMapiMessage")] HRESULT SaveMapiMessage([in]BSTR bstrFileName, [in]VARIANT pUnkMessage, [in]long ulEncType);
+	[id(2), helpstring("method SaveMapiMessage to tmp file")] HRESULT SaveMapiMessageTmpFile([in]VARIANT pUnkMessage, [in]long ulEncType, [out, retval]BSTR* tmpFileName);
+};
+[
+	uuid(2FDEE2CB-7415-43A2-8329-92E616792B90),
+	version(1.0),
+	helpstring("McConverterSessionServer 1.0 Type Library")
+]
+library McConverterSessionServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(1B2174BD-86E7-4DEE-81BE-46FF3B70960A),
+		helpstring("ConvertSessionWrapper Class")
+	]
+	coclass ConvertSessionWrapper
+	{
+		[default] interface IConvertSessionWrapper;
+	};
+};

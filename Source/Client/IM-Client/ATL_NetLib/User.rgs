@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediacase.IMUser.1 = s 'User Class'
+	{
+		CLSID = s '{12177FE2-D4D5-4E92-A430-D8FC3845774C}'
+	}
+	Mediacase.IMUser = s 'User Class'
+	{
+		CLSID = s '{12177FE2-D4D5-4E92-A430-D8FC3845774C}'
+		CurVer = s 'Mediacase.IMUser.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {12177FE2-D4D5-4E92-A430-D8FC3845774C} = s 'User Class'
+		{
+			ProgID = s 'Mediacase.IMUser.1'
+			VersionIndependentProgID = s 'Mediacase.IMUser'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}
