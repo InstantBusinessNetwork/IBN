@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediachase.IMlocalSID.1 = s 'localSID Class'
+	{
+		CLSID = s '{98E50CDC-5A97-48D7-98E7-3CBF7FF6A2A0}'
+	}
+	Mediachase.IMlocalSID = s 'localSID Class'
+	{
+		CLSID = s '{98E50CDC-5A97-48D7-98E7-3CBF7FF6A2A0}'
+		CurVer = s 'Mediachase.IMlocalSID.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {98E50CDC-5A97-48D7-98E7-3CBF7FF6A2A0} = s 'localSID Class'
+		{
+			ProgID = s 'Mediachase.IMlocalSID.1'
+			VersionIndependentProgID = s 'Mediachase.IMlocalSID'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}

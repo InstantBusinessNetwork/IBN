@@ -1,0 +1,23 @@
+HKCR
+{
+	Mediachase.IMConfig.1 = s 'Config Class'
+	{
+		CLSID = s '{5CA6E67E-4F0C-407E-A38C-4E564C34487F}'
+	}
+	Mediachase.IMConfig = s 'Config Class'
+	{
+		CLSID = s '{5CA6E67E-4F0C-407E-A38C-4E564C34487F}'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {5CA6E67E-4F0C-407E-A38C-4E564C34487F} = s 'Config Class'
+		{
+			ProgID = s 'Mediachase.IMConfig.1'
+			VersionIndependentProgID = s 'Mediachase.IMConfig'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'both'
+			}
+		}
+	}
+}

@@ -1,0 +1,183 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_SESSION             REGISTRY DISCARDABLE    "Session.rgs"
+IDR_USER                REGISTRY DISCARDABLE    "User.rgs"
+IDR_USERS               REGISTRY DISCARDABLE    "Users.rgs"
+IDR_PROMO               REGISTRY DISCARDABLE    "Promo.rgs"
+IDR_MESSAGE             REGISTRY DISCARDABLE    "Message.rgs"
+IDR_FILE                REGISTRY DISCARDABLE    "File.rgs"
+IDR_Config              REGISTRY DISCARDABLE    "Config.rgs"
+IDR_Messages            REGISTRY DISCARDABLE    "Messages.rgs"
+IDR_Files               REGISTRY DISCARDABLE    "Files.rgs"
+IDR_SIDs                REGISTRY DISCARDABLE    "SIDs.rgs"
+IDR_PROMOS              REGISTRY DISCARDABLE    "Promos.rgs"
+IDR_SID                 REGISTRY DISCARDABLE    "SID.rgs"
+IDR_ICHAT               REGISTRY DISCARDABLE    "IChat.rgs"
+IDR_ICHATS              REGISTRY DISCARDABLE    "IChats.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR1             CURSOR  DISCARDABLE     "cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILES_DESC          "Files Class"
+    IDS_SIDS_DESC           "SIDs Class"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "1 TYPELIB ""ATL_NetLib.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,7,718,0
+ PRODUCTVERSION 4,7,718,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileVersion", "4.7.718\0"
+            VALUE "ProductVersion", "4.7.718\0"
+            VALUE "InternalName", "ATL_NetLib.dll\0"
+            VALUE "OriginalFilename", "ATL_NetLib.dll\0"
+            VALUE "Comments", "\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "SpecialBuild", "\0"
+            VALUE "OLESelfRegister", "\0"
+#ifndef RADIUS
+            VALUE "ProductName", "IBN Client\0"
+            VALUE "FileDescription", "IBN Client Network Library\0"
+            VALUE "CompanyName", "Mediachase\0"
+            VALUE "LegalCopyright", "Copyright 2002-2010 Mediachase\0"
+#else
+            VALUE "ProductName", "MagRul Client\0"
+            VALUE "FileDescription", "MagRul Client Network Library\0"
+            VALUE "CompanyName", "Radius-Soft\0"
+            VALUE "LegalCopyright", "Copyright 2009-2010 Radius-Soft\0"
+#endif
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROJNAME            "ATL_NetLib"
+    IDS_USER_AGENT          "Mediachase IM"
+    IDS_CALLBACKEVENTS_DESC "CallBackEvents Class"
+    IDS_CONFIG_DESC         "Config Class"
+    IDS_MESSAGES_DESC       "Messages Class"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+1 TYPELIB "ATL_NetLib.tlb"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

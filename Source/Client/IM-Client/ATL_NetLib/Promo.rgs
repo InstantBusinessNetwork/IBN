@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediachase.IMPromo.1 = s 'Promo Class'
+	{
+		CLSID = s '{9F2EE1D8-F590-4A4E-92BF-274E96DEE15C}'
+	}
+	Mediachase.IMPromo = s 'Promo Class'
+	{
+		CLSID = s '{9F2EE1D8-F590-4A4E-92BF-274E96DEE15C}'
+		CurVer = s 'Mediachase.IMPromo.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9F2EE1D8-F590-4A4E-92BF-274E96DEE15C} = s 'Promo Class'
+		{
+			ProgID = s 'Mediachase.IMPromo.1'
+			VersionIndependentProgID = s 'Mediachase.IMPromo'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}

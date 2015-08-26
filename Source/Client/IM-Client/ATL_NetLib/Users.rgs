@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediachase.IMUsers.1 = s 'Users Class'
+	{
+		CLSID = s '{EB496DD1-E0DF-41FA-B63C-D7BA7D9FF3D5}'
+	}
+	Mediachase.IMUsers = s 'Users Class'
+	{
+		CLSID = s '{EB496DD1-E0DF-41FA-B63C-D7BA7D9FF3D5}'
+		CurVer = s 'Mediachase.IMUsers.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {EB496DD1-E0DF-41FA-B63C-D7BA7D9FF3D5} = s 'Users Class'
+		{
+			ProgID = s 'Mediachase.IMUsers.1'
+			VersionIndependentProgID = s 'Mediachase.IMUsers'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}

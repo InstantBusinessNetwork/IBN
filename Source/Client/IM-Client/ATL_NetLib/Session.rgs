@@ -1,0 +1,26 @@
+HKCR
+{
+	Mediacase.IMSession.1 = s 'Session Class'
+	{
+		CLSID = s '{567B302A-1DBF-4A75-8E46-65F54A58D91D}'
+	}
+	Mediacase.IMSession = s 'Session Class'
+	{
+		CLSID = s '{567B302A-1DBF-4A75-8E46-65F54A58D91D}'
+		CurVer = s 'Mediacase.IMSession.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {567B302A-1DBF-4A75-8E46-65F54A58D91D} = s 'Session Class'
+		{
+			ProgID = s 'Mediacase.IMSession.1'
+			VersionIndependentProgID = s 'Mediacase.IMSession'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{EB37EA05-FBA5-4F43-92B3-E485128055CB}'
+		}
+	}
+}
