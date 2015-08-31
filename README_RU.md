@@ -142,3 +142,15 @@ Instant Business Network Веб-портал для работы над общи
 ## Технологии
 * ASP. NET
 * MS SQL Server
+
+## Скачать & Установить
+https://github.com/InstantBusinessNetwork/IBN/blob/master/Distr/IBN_4.7.69_RU.zip
+
+## Документы
+* Администрирование портала: https://github.com/InstantBusinessNetwork/IBN/blob/master/Documents/IBN47_AdminGuide_RU.pdf
+* Инструкция пользователя: https://github.com/InstantBusinessNetwork/IBN/blob/master/Documents/IBN47_Userguide_RU.pdf
+* Все документы: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents
+
+## Open Source Лицензия
+* Serial Number: L65TS-W310C-LD61Y-V4PW3-AER87
+* License File: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents/L65TS-W310C-LD61Y-V4PW3-AER87.lic
