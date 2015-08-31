@@ -44,3 +44,15 @@ Efficiently calculate project resources costs while saving money on billing. Tim
 * Project Tasks and to-dos view
 * Sharing Project Documents and Calendars  
 * External Users (access to project space with limited rights)
+
+## Download & Install
+https://github.com/InstantBusinessNetwork/IBN/blob/master/Distr/IBN_4.7.69_RU.zip
+
+## Documents
+* Admin guide: https://github.com/InstantBusinessNetwork/IBN/blob/master/Documents/IBN47_AdminGuide_RU.pdf
+* User guide: https://github.com/InstantBusinessNetwork/IBN/blob/master/Documents/IBN47_Userguide_RU.pdf
+* All documents: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents
+
+## Open Source License
+* Serial Number: L65TS-W310C-LD61Y-V4PW3-AER87
+* License File: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents/L65TS-W310C-LD61Y-V4PW3-AER87.lic
