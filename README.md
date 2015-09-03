@@ -56,3 +56,9 @@ https://github.com/InstantBusinessNetwork/IBN/blob/master/Distr/IBN_4.7.69_RU.zi
 ## Open Source License
 * Serial Number: L65TS-W310C-LD61Y-V4PW3-AER87
 * License File: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents/L65TS-W310C-LD61Y-V4PW3-AER87.lic
+ 
+## Issues 
+If you want to report an issue, bug or make a suggestion, please do so here:
+https://github.com/InstantBusinessNetwork/IBN/issues
+
+
