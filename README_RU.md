@@ -154,3 +154,11 @@ https://github.com/InstantBusinessNetwork/IBN/blob/master/Distr/IBN_4.7.69_RU.zi
 ## Open Source Лицензия
 * Serial Number: L65TS-W310C-LD61Y-V4PW3-AER87
 * License File: https://github.com/InstantBusinessNetwork/IBN/tree/master/Documents/L65TS-W310C-LD61Y-V4PW3-AER87.lic
+
+## Как активировать лицензию
+* Запустите IBN 4.7 Server Product Activator
+* Введите серийный номер L65TS-W310C-LD61Y-V4PW3-AER87 чтобы разблокировать продукт
+* Выберите 'Activate by E-Mail' метод активации
+* Скачайте и сохнраите L65TS-W310C-LD61Y-V4PW3-AER87.lic файл лицензии в папку IBN Server
+* Запустите McActivator.exe /i L65TS-W310C-LD61Y-V4PW3-AER87.lic из командной строки чтобы активировать лицензию
+* Перезапустите IIS
